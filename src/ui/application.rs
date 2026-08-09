@@ -1211,13 +1211,37 @@ impl ArmoryApplication {
             self.imp().collections_dirty.set(true);
         }
 
-        // One account is the normal case. More than one means several
-        // Battle.net logins have used this install, and the first is as good a
-        // guess as any — the file itself names the characters, so a wrong guess
-        // shows up as attributions for characters not on this roster rather
-        // than as silently wrong data.
-        let Some(account) = crate::model::addon::accounts(&wow).into_iter().next() else {
-            return;
+        // Which Battle.net login's folder to read.
+        //
+        // One is the normal case. A second appears when a second Battle.net
+        // account has used this install, and the two are not variations on
+        // each other — different characters, different collections, different
+        // achievements. So the choice is remembered rather than guessed again
+        // every launch, and a machine with more than one says so.
+        let accounts = crate::model::addon::accounts(&wow);
+        let chosen = self.imp().settings.borrow().wow_account.clone();
+        let account = match chosen {
+            Some(named) if accounts.contains(&named) => named,
+            other => {
+                if let Some(named) = other {
+                    eprintln!(
+                        "armory: wow_account {named:?} is not in this install; using the first"
+                    );
+                }
+                let Some(first) = accounts.first().cloned() else {
+                    return;
+                };
+                if accounts.len() > 1 {
+                    eprintln!(
+                        "armory: {} Battle.net accounts in this install; reading {first:?}. \
+                         Set wow_account in settings.json to choose.",
+                        accounts.len()
+                    );
+                }
+                self.imp().settings.borrow_mut().wow_account = Some(first.clone());
+                self.save_settings();
+                first
+            }
         };
 
         let app = self.clone();
@@ -3730,6 +3754,9 @@ impl ArmoryApplication {
         let app = self.clone();
         dialog.connect_pass(move || app.share_now());
 
+        let app = self.clone();
+        dialog.connect_resend(move || app.confirm_resend());
+
         dialog.show_state(&self.sync_state());
         *self.imp().sync_dialog.borrow_mut() = Some(dialog.clone());
         dialog.present(Some(&self.window()));
@@ -3747,6 +3774,44 @@ impl ArmoryApplication {
                 *self.imp().sync_dialog.borrow_mut() = None;
             }
         }
+    }
+
+    /// Offer the whole account up again, after the server has been emptied.
+    ///
+    /// Confirmed, because on a large account it is tens of thousands of rows
+    /// and several minutes — not destructive, but not free either, and not
+    /// something to do by brushing against a button.
+    fn confirm_resend(&self) {
+        let dialog = adw::AlertDialog::new(
+            Some("Send everything again?"),
+            Some(
+                "Armory will forget what the server has been told and offer this whole \
+                 account up from scratch. Nothing here is deleted. Do this after emptying \
+                 the server for a different Battle.net account — otherwise the two would \
+                 merge into one.",
+            ),
+        );
+        dialog.add_response("cancel", "Cancel");
+        dialog.add_response("send", "Send Again");
+        dialog.set_default_response(Some("cancel"));
+        dialog.set_close_response("cancel");
+
+        let app = self.clone();
+        dialog.connect_response(None, move |dialog, response| {
+            dialog.close();
+            if response != "send" {
+                return;
+            }
+            if let Err(error) = app.store().borrow().forget_server() {
+                eprintln!("armory: could not forget the server: {error}");
+                return;
+            }
+            app.imp().failures.set(0);
+            app.share_now();
+            app.show_sync_state();
+        });
+
+        dialog.present(Some(&self.window()));
     }
 
     fn sync_state(&self) -> sync_dialog::State {

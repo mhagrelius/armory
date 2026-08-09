@@ -192,6 +192,25 @@ impl Store {
         Ok(seeded)
     }
 
+    /// Forget everything this machine believes about the server.
+    ///
+    /// For one situation: the server has been wiped and a *different* account
+    /// is going to live on it. Without this the client is quietly stuck —
+    /// its cursor is past the end of a log that no longer exists, so it pulls
+    /// nothing, and `seeded` says the account has already been offered up, so
+    /// it pushes nothing either. Both ends report themselves healthy and
+    /// nothing ever moves.
+    ///
+    /// It clears the cursor and the seed mark, so the next pass offers up
+    /// everything this machine holds from scratch. It does not touch the
+    /// account itself: this is a statement about the server, not about the
+    /// data.
+    pub fn forget_server(&self) -> Result<()> {
+        self.set_cursor(PULLED, 0)?;
+        self.set_setting("seeded", "0")?;
+        Ok(())
+    }
+
     /// Whether the account this machine already held has been offered up.
     pub fn seeded(&self) -> bool {
         self.setting("seeded").ok().flatten().as_deref() == Some("1")
@@ -1618,6 +1637,33 @@ mod tests {
             )
             .unwrap();
         assert_eq!(before, after);
+    }
+
+    #[test]
+    fn forgetting_the_server_offers_the_account_up_again() {
+        // The wiped-server case: cursor past the end of a log that no longer
+        // exists, and a seed mark saying there is nothing left to say. Both
+        // ends look healthy and nothing moves.
+        let store = store("one");
+        store.record(false).unwrap();
+        store.watch_item(4306, "Silk Cloth").unwrap();
+        store.record(true).unwrap();
+
+        store.seed_log().unwrap();
+        store.drain(store.high_water()).unwrap();
+        store.set_cursor(PULLED, 9_999).unwrap();
+        assert!(store.seeded());
+        assert!(store.queued().unwrap().is_empty());
+
+        store.forget_server().unwrap();
+
+        assert!(!store.seeded());
+        assert_eq!(store.cursor(PULLED), 0);
+        assert!(store.seed_log().unwrap() > 0);
+        assert!(
+            !store.queued().unwrap().is_empty(),
+            "nothing was offered up"
+        );
     }
 
     #[test]

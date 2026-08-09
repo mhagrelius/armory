@@ -22,6 +22,16 @@ pub struct Settings {
     pub client_id: String,
     /// Where WoW is installed, once found or chosen.
     pub wow_path: Option<PathBuf>,
+    /// Which `WTF/Account/<NAME>` folder to read, when the install has more
+    /// than one.
+    ///
+    /// One is the normal case. A second appears when a second Battle.net
+    /// login has used the same install, and the two hold different
+    /// characters, different collections and different achievements — so
+    /// reading the wrong one is not a near miss, it is somebody else's
+    /// account. Recorded on first run so it is visible and can be changed,
+    /// rather than guessed afresh every launch.
+    pub wow_account: Option<String>,
     /// Whether the person has chosen to go without a Battle.net client.
     ///
     /// Separate from `client_id` being empty, because those mean different
@@ -62,6 +72,7 @@ impl Default for Settings {
             region: Region::Us,
             client_id: String::new(),
             wow_path: None,
+            wow_account: None,
             addon_only: false,
             journal_automatic: true,
             journal_server: crate::source::journal::DEFAULT_SERVER.to_string(),
@@ -148,6 +159,7 @@ mod tests {
             region: Region::Eu,
             client_id: "abc123".into(),
             wow_path: Some(PathBuf::from("/games/wow")),
+            wow_account: Some("PLAYER1".into()),
             addon_only: false,
             journal_automatic: false,
             journal_server: "http://127.0.0.1:9090".into(),

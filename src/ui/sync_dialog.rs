@@ -28,6 +28,9 @@ type SaveHandler = Box<dyn Fn(String, Option<String>)>;
 /// Told to run a pass now.
 type PassHandler = Box<dyn Fn()>;
 
+/// Told to forget what the server knows and offer everything up again.
+type ResendHandler = Box<dyn Fn()>;
+
 /// Everything the dialog draws, gathered by the application.
 #[derive(Debug, Clone, Default)]
 pub struct State {
@@ -72,6 +75,7 @@ mod imp {
         pub state_rows: RefCell<Vec<adw::ActionRow>>,
         pub on_save: RefCell<Option<super::SaveHandler>>,
         pub on_pass: RefCell<Option<super::PassHandler>>,
+        pub on_resend: RefCell<Option<super::ResendHandler>>,
     }
 
     #[glib::object_subclass]
@@ -167,6 +171,33 @@ impl SyncDialog {
             }
         });
         last.add_suffix(&now);
+
+        // For one situation, and it is worth a control rather than a
+        // support answer: the server has been emptied and a different
+        // account is going to live on it. This machine's cursor is then past
+        // the end of a log that no longer exists and its seed mark says the
+        // account has already gone up, so nothing moves and both ends look
+        // healthy.
+        let resend = adw::ActionRow::builder()
+            .title("Send everything again")
+            .subtitle(
+                "Forget what the server has been told and offer this whole account up from \
+                 scratch. For after the server has been emptied.",
+            )
+            .build();
+        let again = gtk::Button::builder()
+            .label("Send Again")
+            .valign(gtk::Align::Center)
+            .build();
+        again.add_css_class("flat");
+        let dialog = self.clone();
+        again.connect_clicked(move |_| {
+            if let Some(resend) = dialog.imp().on_resend.borrow().as_ref() {
+                resend();
+            }
+        });
+        resend.add_suffix(&again);
+        state.add(&resend);
         page.add(&state);
 
         // -- saving -------------------------------------------------------------
@@ -286,6 +317,10 @@ impl SyncDialog {
 
     pub fn connect_pass<F: Fn() + 'static>(&self, handler: F) {
         *self.imp().on_pass.borrow_mut() = Some(Box::new(handler));
+    }
+
+    pub fn connect_resend<F: Fn() + 'static>(&self, handler: F) {
+        *self.imp().on_resend.borrow_mut() = Some(Box::new(handler));
     }
 
     fn save(&self) {
