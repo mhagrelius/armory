@@ -1,0 +1,78 @@
+{
+  "zone": "Feralas",
+  "map": 69,
+  "expansion": "Classic",
+  "summary": "Feralas is a rainforest of enormous ancient trees filling the southwest of Kalimdor, green between the wastes of Desolace and the dry plateaus east of it, and full of Highborne ruins the elves no longer hold. The Gordunni ogres do: they have Dire Maul and are cutting the forest down around it, which has pushed the Woodpaw gnolls and the Feral Scar yetis east into each other. The Horde works out of Camp Mojache and the night elves out of New Feathermoon on the Forgotten Coast, both rebuilt after the Cataclysm, while naga hold the western isles and the Grimtotem besiege New Thalanaar in the east.",
+  "history": "The Highborne city of Eldre'Thalas stood here and outlived the Sundering behind its walls, until Prince Tortheldrin bled his own people to keep a demon caged and the ogres moved into what was left; a Horde raid ended both him and Immol'thar. Cho'gall came through these woods after the Third War hunting Garona and later sent his cult back to teach the Gordunni magic, which is why the ogre expansion turned from raiding into corruption; the Stonemaul ogres and the Sentinels each broke that in their own way. The Cataclysm flooded Thalanaar and drowned the original Feathermoon on Sardor Isle, and Ysondre finally had the corrupted green dragon Taerar hunted down in the Lower Wilds.",
+  "factions": [
+    "Darnassus and the Sentinels",
+    "Alliance",
+    "Horde",
+    "Tauren of Camp Mojache",
+    "Stonemaul clan",
+    "Gordunni ogres",
+    "Grimtotem tribe",
+    "Woodpaw gnolls",
+    "Feral Scar yetis",
+    "Naga",
+    "Twilight's Hammer",
+    "Druids of the Talon"
+  ],
+  "notable": [
+    {
+      "name": "Dire Maul",
+      "what": "Eldre'Thalas as it is now — three wings of a ruined Highborne city held by the Gordunni, with satyrs and undead in the parts they do not want"
+    },
+    {
+      "name": "Feathermoon Stronghold",
+      "what": "Shandris Feathermoon's port on the Forgotten Coast, rebuilt on the mainland after the sea took the original on Sardor Isle"
+    },
+    {
+      "name": "Camp Mojache",
+      "what": "The tauren village above Wildwind Lake, swollen with refugees from the flooding of Thousand Needles"
+    },
+    {
+      "name": "New Thalanaar",
+      "what": "The night elf outpost at the eastern edge, built after the old one flooded and under Grimtotem siege ever since"
+    },
+    {
+      "name": "The Twin Colossals",
+      "what": "The two great peaks in the north, with Camp Ataya in their shade and Dreamer's Rest kept by the Druids of the Talon on the eastern side"
+    },
+    {
+      "name": "Dream Bough",
+      "what": "One of the Great Trees rooted in the Emerald Dream, prowled for years by the corrupted green dragon Taerar"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Feralas",
+      "url": "https://warcraft.wiki.gg/wiki/Feralas"
+    },
+    {
+      "title": "Dire Maul",
+      "url": "https://warcraft.wiki.gg/wiki/Dire_Maul"
+    },
+    {
+      "title": "Feathermoon Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Feathermoon_Stronghold"
+    },
+    {
+      "title": "Camp Mojache",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Mojache"
+    },
+    {
+      "title": "New Thalanaar",
+      "url": "https://warcraft.wiki.gg/wiki/New_Thalanaar"
+    },
+    {
+      "title": "Camp Ataya",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Ataya"
+    },
+    {
+      "title": "Dreamer's Rest",
+      "url": "https://warcraft.wiki.gg/wiki/Dreamer%27s_Rest"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

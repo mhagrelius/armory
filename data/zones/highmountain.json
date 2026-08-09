@@ -1,0 +1,79 @@
+{
+  "zone": "Highmountain",
+  "map": 650,
+  "expansion": "Legion",
+  "summary": "Highmountain is the northern skyline of the Broken Isles: canyons, snow peaks and green valleys around one of the tallest mountains on Azeroth, with a whole second country of caverns under it. Its tauren are the descendants of Huln Highmountain and the range carries his name; they share the mountain, uneasily, with the drogbar who live below it. Right now the drogbar king Dargrul has the Hammer of Khaz'goroth, one tauren tribe has sold itself to the Legion, and the hunters of the Unseen Path keep their lodge on a peak above all of it.",
+  "history": "Neltharion kept a lair and a vault in these mountains before he was Deathwing, and it was here that he made the Dragon Soul. When the Legion came the first time, Huln Highmountain pulled the scattered tauren tribes together and fought beside the night elves, and the range was named for him afterwards. He also fought the Old Gods' servants here, and when he could not beat them he warded their master's essence into the rock instead. His descendants and the drogbar then shared the mountain peaceably for generations. That ended with the third invasion: the drogbar took the tauren's hammer, the Bloodtotem went over to the demons as the Feltotem, and the old wards began to leak.",
+  "factions": [
+    "Highmountain Tribe",
+    "Skyhorn, Rivermane and Ironhorn tauren",
+    "Drogbar",
+    "Feltotem",
+    "Burning Legion",
+    "Unseen Path",
+    "Horde",
+    "Alpine harpies and ettin",
+    "The Necrodark"
+  ],
+  "notable": [
+    {
+      "name": "Thunder Totem",
+      "what": "The tauren capital on its own plateau, with the Hall of Chieftains and the cradle the Hammer of Khaz'goroth was kept in"
+    },
+    {
+      "name": "Neltharion's Lair",
+      "what": "The black aspect's home before Deathwing, now the drogbar underking's seat and the way into the deep roads"
+    },
+    {
+      "name": "Trueshot Lodge",
+      "what": "The Unseen Path's hall high on the peaks, where the hunters of the world gather"
+    },
+    {
+      "name": "Skyhorn",
+      "what": "The Skyhorn tribe's village in the east, up among the eagles and under attack by harpies"
+    },
+    {
+      "name": "Feltotem",
+      "what": "The Rockaway Coast village of the tauren who took the Legion's offer, with the Lair of the Devout inside it"
+    },
+    {
+      "name": "Ironhorn Enclave",
+      "what": "The miners' and smiths' village on Highmountain Peak, and the school the rest of the tribes send apprentices to"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Highmountain",
+      "url": "https://warcraft.wiki.gg/wiki/Highmountain"
+    },
+    {
+      "title": "Neltharion's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Neltharion%27s_Lair"
+    },
+    {
+      "title": "Skyhorn",
+      "url": "https://warcraft.wiki.gg/wiki/Skyhorn"
+    },
+    {
+      "title": "Feltotem",
+      "url": "https://warcraft.wiki.gg/wiki/Feltotem"
+    },
+    {
+      "title": "Ironhorn Enclave",
+      "url": "https://warcraft.wiki.gg/wiki/Ironhorn_Enclave"
+    },
+    {
+      "title": "Riverbend",
+      "url": "https://warcraft.wiki.gg/wiki/Riverbend"
+    },
+    {
+      "title": "Highmountain Tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Highmountain_Tribe"
+    },
+    {
+      "title": "Drogbar",
+      "url": "https://warcraft.wiki.gg/wiki/Drogbar"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

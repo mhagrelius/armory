@@ -1,0 +1,68 @@
+{
+  "zone": "The Forbidden Reach",
+  "map": 2107,
+  "expansion": "Dragonflight",
+  "summary": "The Forbidden Reach is the island off the Dragon Isles where Neltharion made the dracthyr and trained them, a place of storm-lashed coast, frozen spine and hollowed-out creches. It slept for an age after the battle that emptied it, and the dracthyr slept with it. It is awake now: the four weyrns are back on their old ground, morqut tuskarr have settled the western islet, and the Earth-Warder's workshops and the Zskera Vaults are being opened by people who did not build them.",
+  "history": "Neltharion shaped the island as a proving ground for soldiers he designed himself, and the dracthyr were raised and drilled in creches sunk into it — one for war, one for siege, one to support and one to heal, each weyrn made for a purpose and told nothing else. A battle ended that, and the Earth-Warder sealed the island and everything in it. Nobody landed for ages; a flier who tried was struck out of the sky. The dracthyr woke when an old enemy stirred, and coming back they found their birthplace picked over — vaults broken open, tarasek in the tunnels, and a great deal of what Neltharion left behind still working.",
+  "factions": [
+    "Dracthyr of the Obsidian Warders, Dark Talons, Ebon Scales and Healing Wings",
+    "Morqut tuskarr",
+    "Black tarasek",
+    "Blue drakonid and dragonspawn",
+    "Proto-dragons",
+    "The Sundered Flame"
+  ],
+  "notable": [
+    {
+      "name": "The creches",
+      "what": "War, Siege, Support and High — the halls the dracthyr were grown and trained in, sealed with them inside"
+    },
+    {
+      "name": "Zskera Vaults",
+      "what": "The warren of locked rooms on Morqut Islet, opened one key at a time to see what the Earth-Warder stored there"
+    },
+    {
+      "name": "Morqut Village",
+      "what": "The tuskarr settlement on the islet, and the only place on the Reach where anyone offers a stranger a meal"
+    },
+    {
+      "name": "Earth-Warder's Cauldron",
+      "what": "Neltharion's own works, where the dracthyr were made rather than merely trained"
+    },
+    {
+      "name": "Stormsunder Crater",
+      "what": "The eastern anchor under its shattered mountain, with the Siege Creche opening off it"
+    },
+    {
+      "name": "Dragonskull Island",
+      "what": "The hollowed rock off the northeastern shore, named for the shape the cliffs make"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Forbidden Reach",
+      "url": "https://warcraft.wiki.gg/wiki/The_Forbidden_Reach"
+    },
+    {
+      "title": "Morqut Village",
+      "url": "https://warcraft.wiki.gg/wiki/Morqut_Village"
+    },
+    {
+      "title": "Zskera Vaults",
+      "url": "https://warcraft.wiki.gg/wiki/Zskera_Vaults"
+    },
+    {
+      "title": "Obsidian Warders",
+      "url": "https://warcraft.wiki.gg/wiki/Obsidian_Warders"
+    },
+    {
+      "title": "Dark Talons",
+      "url": "https://warcraft.wiki.gg/wiki/Dark_Talons"
+    },
+    {
+      "title": "Stormsunder Crater",
+      "url": "https://warcraft.wiki.gg/wiki/Stormsunder_Crater"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

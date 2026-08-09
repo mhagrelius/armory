@@ -1,0 +1,86 @@
+{
+  "zone": "Netherstorm",
+  "map": 109,
+  "expansion": "The Burning Crusade",
+  "summary": "Netherstorm is the northeastern edge of Outland, seven large islands and thousands of smaller rocks hanging in a violet arcane storm where the Twisting Nether leaks through into the world. Nothing grows on the purple bedrock except inside the ethereals' eco-domes, which is why the Consortium's Stormspire is a jungle under glass in the middle of a magical desert. Goblins run Area 52 and are building a rocket, Kael'thas's Sunfury blood elves hold Tempest Keep and the manaforges, the Burning Legion works its forge bases in between, and Kirin'Var Village stands empty except for its ghosts.",
+  "history": "Before the sundering this was Farahlon, forest and open range on the Devouring Sea, grown from the corpse of the sporemound Botaan and held by the Primals. Its isolation kept it clear of fel magic longest, until Kilrogg Deadeye ferried the Bleeding Hollow across on ogre-built ships and warlocks burned the forests with power leeched from the botani. The Kirin Tor of the Alliance Expedition built Kirin'Var Village here. Ner'zhul's portals shattered the island into the floating shards it is now. The naaru arrived for that same reason, riding Tempest Keep in through borders the Nether had worn thin; A'dal went on to Shattrath and Kael'thas took what was left, stripping it for parts and raising five manaforges that pulled the land apart faster. Velen's draenei raided the Keep for one wing and flew it to Azeroth as the Exodar.",
+  "factions": [
+    "The Consortium",
+    "The Protectorate",
+    "Goblins of Area 52 and Cosmowrench",
+    "Sunfury blood elves",
+    "Burning Legion",
+    "Netherwing dragonflight",
+    "Aldor and Scryers agents",
+    "The ghosts of Kirin'Var"
+  ],
+  "notable": [
+    {
+      "name": "Tempest Keep",
+      "what": "The naaru's dimensional fortress, brought here to help Outland and seized by Kael'thas Sunstrider, who stripped it for the parts that built the manaforges"
+    },
+    {
+      "name": "Area 52",
+      "what": "A walled goblin town on the southwestern island, built around the X-52 Nether-Rocket and the intention to fly it into the Twisting Nether"
+    },
+    {
+      "name": "The Stormspire",
+      "what": "The Consortium's headquarters for all of Outland, on draenei ruins beneath two joined eco-domes, green inside and purple everywhere outside"
+    },
+    {
+      "name": "The manaforges",
+      "what": "Five of them — Ara, B'naar, Coruu, Duro and the void-infested wreck of Ultris — drawing mana out of the Nether and tearing the region up doing it"
+    },
+    {
+      "name": "Kirin'Var Village",
+      "what": "The mages' settlement on the southern island, destroyed by a blood elf mana bomb and now occupied only by apparitions"
+    },
+    {
+      "name": "Celestial Ridge",
+      "what": "A forest of arcane crystals in the northeast, and the nesting ground of the Netherwing dragons"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Netherstorm",
+      "url": "https://warcraft.wiki.gg/wiki/Netherstorm"
+    },
+    {
+      "title": "Area 52",
+      "url": "https://warcraft.wiki.gg/wiki/Area_52"
+    },
+    {
+      "title": "Stormspire",
+      "url": "https://warcraft.wiki.gg/wiki/Stormspire"
+    },
+    {
+      "title": "Consortium",
+      "url": "https://warcraft.wiki.gg/wiki/Consortium"
+    },
+    {
+      "title": "Protectorate",
+      "url": "https://warcraft.wiki.gg/wiki/Protectorate"
+    },
+    {
+      "title": "Kirin'Var Village",
+      "url": "https://warcraft.wiki.gg/wiki/Kirin%27Var_Village"
+    },
+    {
+      "title": "Sunfury",
+      "url": "https://warcraft.wiki.gg/wiki/Sunfury"
+    },
+    {
+      "title": "Netherwing",
+      "url": "https://warcraft.wiki.gg/wiki/Netherwing"
+    },
+    {
+      "title": "Primals",
+      "url": "https://warcraft.wiki.gg/wiki/Primals"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

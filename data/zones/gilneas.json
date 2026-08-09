@@ -1,0 +1,79 @@
+{
+  "zone": "Gilneas",
+  "map": 217,
+  "expansion": "Cataclysm",
+  "summary": "Gilneas is a storm-lashed peninsula in southwestern Lordaeron, sealed off from the rest of the world for a generation behind the Greymane Wall and largely emptied by the Cataclysm and the Forsaken invasion that followed it. Its people are Gilnean humans and the worgen they became, most of whom spent over a decade in exile before the kingdom was reclaimed under Queen Tess Greymane. The sun rarely reaches it: cobbled streets, gothic houses, marsh, lighthouses and a drowned town on the southwestern coast.",
+  "history": "Gilneas began as an Arathorian city-state whose sailors found and settled Kul Tiras. Genn Greymane withdrew from the Alliance after the Second War and walled the peninsula off, leaving Lord Crowley's northern villages outside the stone. The Wall held against the Scourge only because Greymane let Arugal loose the worgen on them; the curse spread inward for years while the Northgate rebellion split the kingdom from within. The Cataclysm cracked the Wall, dropped Duskhaven into the sea, and Sylvanas talked Garrosh into handing her the invasion. Night elves landed to answer for a curse of their own making, and their Ritual of Balance cooled the worgen enough to put beast and human in one line. It was not enough. Liam Greymane took the arrow meant for his father, Sylvanas plagued the capital, and the survivors sailed for Darnassus. The peninsula stood empty for over a decade, and the Scarlet Crusade eventually moved into Gilneas City and made the cathedral its headquarters. Tess Greymane brought Calia Menethil's Forsaken in alongside the Alliance offensive that took the capital back, which her father would not lead beside the people who had killed his son; when the Crusade was broken and the Horde had gone, Genn abdicated and left her the crown.",
+  "factions": [
+    "Kingdom of Gilneas",
+    "Gilnean worgen and the Bloodfang Pack",
+    "Alliance",
+    "Night elves",
+    "Forsaken",
+    "7th Legion",
+    "Scarlet Crusade",
+    "Blackhowl",
+    "Wolf Cult"
+  ],
+  "notable": [
+    {
+      "name": "The Greymane Wall",
+      "what": "The fortification Genn built across the neck of the peninsula to shut his kingdom out of everyone else's wars"
+    },
+    {
+      "name": "Gilneas City",
+      "what": "The capital: four districts of narrow cobblestone and crowded gothic houses around Light's Dawn Cathedral"
+    },
+    {
+      "name": "Greymane Manor",
+      "what": "The royal estate high in the western hills, with the king's observatory in the tower behind it"
+    },
+    {
+      "name": "Duskhaven",
+      "what": "The refuge town on the southwestern coast that an earthquake dropped into the sea during the Cataclysm"
+    },
+    {
+      "name": "Tal'doren",
+      "what": "The great tree deep in the Blackwald, which night elf lore ties to druids of the pack who lived here in ancient times"
+    },
+    {
+      "name": "Keel Harbor",
+      "what": "The northern port, and one of the few ways off a kingdom otherwise ringed by cliffs and reefs"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ruins of Gilneas",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Gilneas"
+    },
+    {
+      "title": "Gilneas (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Gilneas_(kingdom)"
+    },
+    {
+      "title": "Gilneas City",
+      "url": "https://warcraft.wiki.gg/wiki/Gilneas_City"
+    },
+    {
+      "title": "Greymane Manor",
+      "url": "https://warcraft.wiki.gg/wiki/Greymane_Manor"
+    },
+    {
+      "title": "Duskhaven",
+      "url": "https://warcraft.wiki.gg/wiki/Duskhaven"
+    },
+    {
+      "title": "Blackhowl",
+      "url": "https://warcraft.wiki.gg/wiki/Blackhowl"
+    },
+    {
+      "title": "Forsaken",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

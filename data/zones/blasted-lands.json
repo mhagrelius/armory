@@ -1,0 +1,79 @@
+{
+  "zone": "Blasted Lands",
+  "map": 17,
+  "expansion": "Classic",
+  "summary": "The Blasted Lands are the red, lightning-struck desert that the southern Black Morass was cooked into when the Dark Portal opened, and the portal still stands at the centre of them with Outland on the far side. Nethergarde Keep holds the northern rim for the Alliance and Okril'lon Hold for the Horde, both built to watch the gate rather than each other. The one green thing in the region is the Tainted Forest in the southwest, a druid's failed attempt to bring the land back, corrupted like everything else, with the fishing village of Surwich at its edge.",
+  "history": "This was the southern Black Morass, marshland, until the Dark Portal was raised in it and the orcs came through to fall on Stormwind. What bled off the gate cooked the ground into what Nethergarde's garrison took to calling the Blasted Lands; the living half to the north was renamed the Swamp of Sorrows for the Second War's dead. Khadgar and the Kirin Tor built the keep to watch the rift. Two years on Ner'zhul widened it with the Skull of Gul'dan, and Danath Trollbane's army was destroyed contesting the site — he walked back its only survivor. The Sons of Lothar marched past him and destroyed the portal from the Draenor side. Demons stayed anyway: Kazzak held the Tainted Scar, Razelikh bought the Shadowsworn a third of an amulet each, and the Ironmarch later invaded through the rebuilt gate.",
+  "factions": [
+    "Alliance and the Kirin Tor at Nethergarde Keep",
+    "Horde at Okril'lon Hold",
+    "Dreadmaul ogres",
+    "Shadowsworn",
+    "Burning Legion",
+    "Bloodwash naga",
+    "Reliquary blood elves at Sunveil Excursion",
+    "Gilnean settlers of Surwich",
+    "Ironmarch"
+  ],
+  "notable": [
+    {
+      "name": "The Dark Portal",
+      "what": "The gate the First War came through, destroyed once and rebuilt twice, and the way to Outland"
+    },
+    {
+      "name": "Nethergarde Keep",
+      "what": "Khadgar's watchtower on the portal, raised by the Kirin Tor and besieged every time the gate has opened"
+    },
+    {
+      "name": "Okril'lon Hold",
+      "what": "The old Dreadmaul ogre mound, taken by the Horde after the Cataclysm and made its garrison here"
+    },
+    {
+      "name": "The Tainted Scar",
+      "what": "Demon ground in the southwest where Kazzak's Legion remnant dug in, and where Razelikh was finally killed"
+    },
+    {
+      "name": "Surwich and the Tainted Forest",
+      "what": "A Gilnean druid's attempt to regrow the waste, which the demons corrupted, and the fishing village his followers built beside it"
+    },
+    {
+      "name": "Bloodwash Cavern",
+      "what": "The naga fortress on the Red Reaches, full of enslaved murlocs and older elven ruins"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blasted Lands",
+      "url": "https://warcraft.wiki.gg/wiki/Blasted_Lands"
+    },
+    {
+      "title": "Dark Portal",
+      "url": "https://warcraft.wiki.gg/wiki/Dark_Portal"
+    },
+    {
+      "title": "Dreadmaul Post",
+      "url": "https://warcraft.wiki.gg/wiki/Dreadmaul_Post"
+    },
+    {
+      "title": "Bloodwash Cavern",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodwash_Cavern"
+    },
+    {
+      "title": "Ironmarch",
+      "url": "https://warcraft.wiki.gg/wiki/Ironmarch"
+    },
+    {
+      "title": "Kirin Tor",
+      "url": "https://warcraft.wiki.gg/wiki/Kirin_Tor"
+    },
+    {
+      "title": "Black Morass",
+      "url": "https://warcraft.wiki.gg/wiki/Black_Morass"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

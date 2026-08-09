@@ -1,0 +1,93 @@
+{
+  "zone": "Uldum",
+  "map": 249,
+  "expansion": "Cataclysm",
+  "summary": "Uldum is a titan facility with a desert on top of it, filling the southern end of Kalimdor: dunes, half-buried pyramids and one green river running through the middle of them. It belongs to the tol'vir, split between the Ramkahen who kept faith with the titans and the Neferset who sold themselves to Deathwing for their stone bodies back. Everyone else here — Al'Akir's air elementals, Commander Schnottz's diggers, the Explorers' League and the Reliquary — came for the machinery underneath.",
+  "history": "Highkeeper Ra brought the tol'vir, anubisaths and mogu south and set the Forge of Origination here, machinery that steadies the deep earth and, at full power, would strip the planet of life to start it over. Ra vanished into the catacombs, and the soldiers Loken sent after him carried the Curse of Flesh — which is why tol'vir are flesh at all and why Deathwing had something to offer them. Thousands of years on the mogu emperor Lei Shen marched on the Forge for the eternal life in it; the tol'vir fired it at its lowest setting, killing him, his army and the country — sand ever since. They hid the passes behind magic. The Cataclysm tore that ward off and Al'Akir came through a rift for the Forge; both factions reached the machine first, then went into Skywall after him. Sargeras's sword unsealed further tombs a generation later and the Amathet came out of one — tol'vir who hold every other tol'vir a traitor to the titans' work and mean to keep the Halls of Origination to themselves. The Ramkahen made common cause with the Explorers' League and the Wastewander bandits to stop them, and that alliance, the Uldum Accord, held the Halls against the Amathet and against N'Zoth's forces at the same time.",
+  "factions": [
+    "Ramkahen tol'vir",
+    "Neferset tol'vir",
+    "Pygmies",
+    "Al'Akir and his air elementals",
+    "Schnottz's crew",
+    "Explorers' League",
+    "The Reliquary",
+    "Wastewander nomads",
+    "Uldum Accord",
+    "Amathet tol'vir",
+    "Old Gods' forces"
+  ],
+  "notable": [
+    {
+      "name": "Ramkahen",
+      "what": "Capital of the tol'vir who refused Deathwing, on the fork of the Vir'naal River at the centre of the zone"
+    },
+    {
+      "name": "Halls of Origination",
+      "what": "The pyramid complex in the east housing the Forge of Origination — the reset switch for all life on Azeroth, and what the Amathet came out of their tombs to claim"
+    },
+    {
+      "name": "Orsis",
+      "what": "The tol'vir city that turned down the offer of stone flesh, and was made an example of"
+    },
+    {
+      "name": "Neferset City",
+      "what": "Capital of the tribe that took the bargain instead, in the south of the region"
+    },
+    {
+      "name": "Lost City of the Tol'vir",
+      "what": "The largest settlement in Uldum, on the Vir'naal delta, and a dungeon in its own right"
+    },
+    {
+      "name": "Commander Schnottz",
+      "what": "Runs an over-armed excavation on the southwestern coast; the Wastewander later took his harbour and renamed it Ankhaten"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Uldum",
+      "url": "https://warcraft.wiki.gg/wiki/Uldum"
+    },
+    {
+      "title": "Ramkahen",
+      "url": "https://warcraft.wiki.gg/wiki/Ramkahen"
+    },
+    {
+      "title": "Orsis",
+      "url": "https://warcraft.wiki.gg/wiki/Orsis"
+    },
+    {
+      "title": "Neferset City",
+      "url": "https://warcraft.wiki.gg/wiki/Neferset_City"
+    },
+    {
+      "title": "Lost City of the Tol'vir",
+      "url": "https://warcraft.wiki.gg/wiki/Lost_City_of_the_Tol%27vir"
+    },
+    {
+      "title": "Schnottz's crew",
+      "url": "https://warcraft.wiki.gg/wiki/Schnottz%27s_crew"
+    },
+    {
+      "title": "Ankhaten Harbor",
+      "url": "https://warcraft.wiki.gg/wiki/Ankhaten_Harbor"
+    },
+    {
+      "title": "Uldum Accord",
+      "url": "https://warcraft.wiki.gg/wiki/Uldum_Accord"
+    },
+    {
+      "title": "Amathet",
+      "url": "https://warcraft.wiki.gg/wiki/Amathet"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

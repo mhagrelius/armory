@@ -1,0 +1,88 @@
+{
+  "zone": "Spires of Arak",
+  "map": 542,
+  "expansion": "Warlords of Draenor",
+  "summary": "Spires of Arak is southern Draenor: a forest under the broken stumps of what was once a single enormous spire. The winged arakkoa rule from Skyreach at the top of the tallest of them and treat their wingless kin as refuse, while the outcasts keep to the shade below. Round the edges the Shattered Hand clan hunts arakkoa for sport from Bladefist Hold, goblins run a gearworks on the coast, and both Azerothian factions have put ships ashore.",
+  "history": "Arak was one vast spire, and the arakkoa on it built the Apexis empire around it — until their priests and their sorcerers fell out over who could read the empire's knowledge, and the sabotaged Breath of Rukhmar blew the mountain into the ridges the zone now carries as a name. What grew back was a theocracy. Heretics were thrown into Sethekk Hollow, where the blood of the dead wind serpent Sethe twisted them into flightless outcasts, and King Terokk — who built Skyreach and tried to take the priests' power off them — went into those pools himself. Kargath Bladefist finished the argument for both sides: he bought the outcasts' help to sabotage Skyreach's solar weapon, slaughtered the winged, then forced the survivors into the pools as well. Of all of it, only Skettis survived into Outland.",
+  "factions": [
+    "Arakkoa Outcasts",
+    "Adherents of Rukhmar",
+    "Sethekk",
+    "Shattered Hand clan",
+    "Iron Horde",
+    "Bloodmane saberon",
+    "Steamwheedle goblins",
+    "Alliance",
+    "Horde",
+    "Ogron and podlings"
+  ],
+  "notable": [
+    {
+      "name": "Skyreach",
+      "what": "The palace on the tallest remaining spire, from which the winged arakkoa rule everything below them"
+    },
+    {
+      "name": "Bladefist Hold",
+      "what": "Kargath Bladefist's seat and the Shattered Hand clan's capital on Draenor"
+    },
+    {
+      "name": "Veil Terokk",
+      "what": "The outcasts' refuge, named for the king the wingless still count as theirs"
+    },
+    {
+      "name": "Admiral Taylor's Garrison",
+      "what": "The Alliance forward camp that ended in mutiny under the necromancer Ephial, and is now haunted by its own dead"
+    },
+    {
+      "name": "Pinchwhistle Gearworks",
+      "what": "The goblin works on the east coast, built after spores took their previous town at Pinchwhistle Point"
+    },
+    {
+      "name": "Camp Thornscar",
+      "what": "The Shattered Hand camp in Shadowglade where captured arakkoa are tortured and ravagers are broken to the saddle"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spires of Arak",
+      "url": "https://warcraft.wiki.gg/wiki/Spires_of_Arak"
+    },
+    {
+      "title": "Bladefist Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Bladefist_Hold"
+    },
+    {
+      "title": "Admiral Taylor's Garrison",
+      "url": "https://warcraft.wiki.gg/wiki/Admiral_Taylor%27s_Garrison"
+    },
+    {
+      "title": "Pinchwhistle Gearworks",
+      "url": "https://warcraft.wiki.gg/wiki/Pinchwhistle_Gearworks"
+    },
+    {
+      "title": "Pinchwhistle Point",
+      "url": "https://warcraft.wiki.gg/wiki/Pinchwhistle_Point"
+    },
+    {
+      "title": "Camp Thornscar",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Thornscar"
+    },
+    {
+      "title": "Arakkoa",
+      "url": "https://warcraft.wiki.gg/wiki/Arakkoa"
+    },
+    {
+      "title": "Sethekk Hollow",
+      "url": "https://warcraft.wiki.gg/wiki/Sethekk_Hollow"
+    },
+    {
+      "title": "Terokk",
+      "url": "https://warcraft.wiki.gg/wiki/Terokk"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

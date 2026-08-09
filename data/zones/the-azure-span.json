@@ -1,0 +1,70 @@
+{
+  "zone": "The Azure Span",
+  "map": 2024,
+  "expansion": "Dragonflight",
+  "summary": "The Azure Span is the cold half of the Dragon Isles: frozen lakes and stalled waterfalls, misty forest tundra, and ice cliffs climbing to the Vakthros range, all of it laid over old arcane ruins and leyline nexuses. The blue dragonflight's ground by right, but ten thousand years of absence left it to other people — the Iskaara tuskarr on the southwestern coast, gorlocs and furbolg in the woods, and the Brackenhide gnolls squatting on the ley crystals. The Kirin Tor came to study the leylines and stayed to fight over them.",
+  "history": "Blue dragons held this country before the War of the Ancients. Their departure left the ley crystals unguarded, and the Brackenhide gnolls took the ground they sat in without ever grasping what they had. When the isles woke, the Kirin Tor arrived to read the arcane energies, the Dragonscale Expedition camped in the south, and the Primalists came for both — Camp Antonidas was attacked outright, and Zaqali djaradin planted a siege camp in the Upper Frostlands before the locals threw them out. Meanwhile the tuskarr were fighting gnolls whose magic had turned to rot, and their matriarch escaped the reckoning. Kalecgos came home to a flight in pieces, made common cause with the tuskarr, and used an echo of Sindragosa to wake the Azure Oathstone.",
+  "factions": [
+    "Blue dragonflight and the Cobalt Assembly",
+    "Iskaara, Imbu and Kauriq tuskarr",
+    "Brackenhide gnolls",
+    "Winterpelt furbolg",
+    "Brinetooth gorlocs",
+    "Kirin Tor",
+    "Dragonscale Expedition",
+    "Primalists and Zaqali djaradin"
+  ],
+  "notable": [
+    {
+      "name": "Azure Archives",
+      "what": "Sindragosa's own library, holding the Azure Oathstone and the way down into the Azure Vault"
+    },
+    {
+      "name": "Iskaara",
+      "what": "The tuskarr village on the southwest coast, and the hearth the Community Feast is cooked on"
+    },
+    {
+      "name": "Brackenhide Hollow",
+      "what": "The gnoll warren at the heart of the decay, where the Decatriarch works her rot and from which she got away"
+    },
+    {
+      "name": "Cobalt Assembly",
+      "what": "A blue dragon enclave in the north-central span, its cache of arcana ransacked by the Sundered Flame"
+    },
+    {
+      "name": "Camp Antonidas",
+      "what": "The Kirin Tor's field camp, named for the archmage who did not leave Dalaran, and the first thing the Primalists hit"
+    },
+    {
+      "name": "Imbu",
+      "what": "A tuskarr town in the southeast overrun by Primalists and renegade furbolg, and fought back for door by door"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Azure Span",
+      "url": "https://warcraft.wiki.gg/wiki/The_Azure_Span"
+    },
+    {
+      "title": "Azure Archives",
+      "url": "https://warcraft.wiki.gg/wiki/Azure_Archives"
+    },
+    {
+      "title": "Iskaara",
+      "url": "https://warcraft.wiki.gg/wiki/Iskaara"
+    },
+    {
+      "title": "Brackenhide Hollow",
+      "url": "https://warcraft.wiki.gg/wiki/Brackenhide_Hollow"
+    },
+    {
+      "title": "Cobalt Assembly",
+      "url": "https://warcraft.wiki.gg/wiki/Cobalt_Assembly"
+    },
+    {
+      "title": "Camp Antonidas",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Antonidas"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

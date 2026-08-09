@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Armory
+GenericName=World of Warcraft Companion
+Comment=Track a WoW account, and replay the content it already remembers
+Exec=armory
+Icon=us.hagreli.Armory
+Terminal=false
+Categories=Game;Utility;
+Keywords=warcraft;wow;achievements;collection;auction;warband;
+StartupNotify=true
+StartupWMClass=us.hagreli.Armory

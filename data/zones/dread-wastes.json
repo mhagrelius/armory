@@ -1,0 +1,91 @@
+{
+  "zone": "Dread Wastes",
+  "map": 422,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Dread Wastes are the mantid homeland, the southern half of the country beyond the Serpent's Spine, and they are rotting: sha corruption has run through the soil and up into the kypari trees the whole civilisation draws its amber from. The Heart of Fear at the centre is the empress's palace and the source of it. Klaxxi'vess is the one place an outsider is made welcome, because the Klaxxi have decided their empress must die and are short of hands.",
+  "history": "The mantid have always swarmed and always recovered from it. What broke the pattern was the Sha of Fear taking Grand Empress Shek'zeer. Under her the swarm stopped resisting corruption and embraced it — in themselves, in the amber, in the sacred trees the culture is built around — and hurled itself at the wall a decade early, on more fronts than it could feed. The Klaxxi, elders who keep what the mantid actually are and who wake their paragons out of amber when the need is real, read that as the end of their people and called for the empress's death. A dying elder cut Kil'ruk the Wind-Reaver free to begin it. She fell in the Heart of Fear; the sha saw the odds and fled the wastes.",
+  "factions": [
+    "Mantid Empire and the swarm",
+    "The Klaxxi",
+    "Sha of Fear",
+    "Pandaren brewers of the Sunset Brewgarden",
+    "Anglers at Soggy's Gamble",
+    "Rikkitun sprites",
+    "Mistblade saurok",
+    "Mogu",
+    "Yaungol"
+  ],
+  "notable": [
+    {
+      "name": "Heart of Fear",
+      "what": "The mantid imperial palace at the centre of the wastes, and the Sha of Fear's seat through the empress it possesses"
+    },
+    {
+      "name": "Klaxxi'vess",
+      "what": "The Klaxxi's base in the middle of the zone, where their paragons are woken one at a time"
+    },
+    {
+      "name": "Kor'vess",
+      "what": "The enormous kypari on the northern border that supplies most of the swarm's amber"
+    },
+    {
+      "name": "Soggy's Gamble",
+      "what": "Huts on the southeast coast built by the wrecked crew of an Anglers boat, the only fishermen beyond the wall"
+    },
+    {
+      "name": "The Sunset Brewgarden",
+      "what": "Brewers up against the Townlong border working with kypari sap, with the Stormstouts among them"
+    },
+    {
+      "name": "Zan'vess",
+      "what": "A kypari island off the southwest coast, with an amber quarry and standing stones on its far side"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dread Wastes",
+      "url": "https://warcraft.wiki.gg/wiki/Dread_Wastes"
+    },
+    {
+      "title": "Heart of Fear",
+      "url": "https://warcraft.wiki.gg/wiki/Heart_of_Fear"
+    },
+    {
+      "title": "Klaxxi'vess",
+      "url": "https://warcraft.wiki.gg/wiki/Klaxxi%27vess"
+    },
+    {
+      "title": "Kor'vess",
+      "url": "https://warcraft.wiki.gg/wiki/Kor%27vess"
+    },
+    {
+      "title": "Zan'vess",
+      "url": "https://warcraft.wiki.gg/wiki/Zan%27vess"
+    },
+    {
+      "title": "Soggy's Gamble",
+      "url": "https://warcraft.wiki.gg/wiki/Soggy%27s_Gamble"
+    },
+    {
+      "title": "Sunset Brewgarden",
+      "url": "https://warcraft.wiki.gg/wiki/Sunset_Brewgarden"
+    },
+    {
+      "title": "Rikkitun Village",
+      "url": "https://warcraft.wiki.gg/wiki/Rikkitun_Village"
+    },
+    {
+      "title": "Mantid Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Mantid_Empire"
+    },
+    {
+      "title": "Serpent's Spine",
+      "url": "https://warcraft.wiki.gg/wiki/Serpent%27s_Spine"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

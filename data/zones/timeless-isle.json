@@ -1,0 +1,85 @@
+{
+  "zone": "Timeless Isle",
+  "map": 554,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Timeless Isle sits east of the Jade Forest and is, for the moment, findable at all — it drifts in and out of Pandaria's mists, and while it is here the sun never moves off sunset. The Celestial Court in the middle is where the August Celestials test whoever turns up; the Ordon yaungol hold the heights around their fire god, and the shoreline below is a scramble of chests, rare beasts and timeless coins. Two small pandaren beachheads sit on the western shore and have been asked politely not to go further in.",
+  "history": "The island was a proving ground. Pandaren came to be judged in front of the Celestials on wisdom, hope, strength and fortitude, following the example Emperor Shaohao set, and they lived alongside a yaungol tribe who built their entire culture on fire — the Ordon, whose shaman burned himself into a demigod. Then the place vanished. What the scrolls record since is glimpses at a distance, in a different position each time, and adventurers who went ashore during those glimpses were lost to the Timeways and never came home. It has surfaced again, which is what drew the bronze dragonflight, pandaren scholars and the black dragon Wrathion. Even lately, visitors have found it unreachable as often as not.",
+  "factions": [
+    "Ordon yaungol",
+    "August Celestials and their servants",
+    "Emperor Shaohao's spirit",
+    "Huojin pandaren of the Horde",
+    "Tushui pandaren of the Alliance",
+    "Bronze dragonflight",
+    "Wrathion's agents"
+  ],
+  "notable": [
+    {
+      "name": "Celestial Court",
+      "what": "The courtyard at the centre of the isle where the Celestials hold their trials, with half of Pandaria gathered to watch"
+    },
+    {
+      "name": "Ordon Sanctuary",
+      "what": "Ordos's home on a rise above everything else, reached by a bridge span that no longer exists"
+    },
+    {
+      "name": "Old Pi'jiu",
+      "what": "A ruined pandaren fishing town in the southwest that used to have a brewery"
+    },
+    {
+      "name": "Huojin Landing and Tushui Landing",
+      "what": "The Horde and Alliance beachheads at either end of the Timeless Shore, kept out of the interior at the Celestials' request"
+    },
+    {
+      "name": "Cavern of Lost Spirits",
+      "what": "The cave under the sanctuary; Zarhym is usually in it, and starts a timed run through the dark"
+    },
+    {
+      "name": "Ruby Lake",
+      "what": "Water stained red, most likely by the ruby crystals inside the island's mountains"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Timeless Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Timeless_Isle"
+    },
+    {
+      "title": "Celestial Court",
+      "url": "https://warcraft.wiki.gg/wiki/Celestial_Court"
+    },
+    {
+      "title": "Ordon Sanctuary",
+      "url": "https://warcraft.wiki.gg/wiki/Ordon_Sanctuary"
+    },
+    {
+      "title": "Ordon",
+      "url": "https://warcraft.wiki.gg/wiki/Ordon"
+    },
+    {
+      "title": "Old Pi'jiu",
+      "url": "https://warcraft.wiki.gg/wiki/Old_Pi%27jiu"
+    },
+    {
+      "title": "Huojin Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Huojin_Landing"
+    },
+    {
+      "title": "Tushui Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Tushui_Landing"
+    },
+    {
+      "title": "Cavern of Lost Spirits",
+      "url": "https://warcraft.wiki.gg/wiki/Cavern_of_Lost_Spirits"
+    },
+    {
+      "title": "August Celestials (faction)",
+      "url": "https://warcraft.wiki.gg/wiki/August_Celestials_(faction)"
+    },
+    {
+      "title": "Emperor Shaohao (faction)",
+      "url": "https://warcraft.wiki.gg/wiki/Emperor_Shaohao_(faction)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,68 @@
+{
+  "zone": "The Ringing Deeps",
+  "map": null,
+  "expansion": "The War Within",
+  "summary": "The Ringing Deeps is the industrial layer of Khaz Algar, directly under the Isle of Dorn: forges, golem works, waterworks and mine after mine, all of it still running. The earthen Machine Speakers keep it going, and High Speaker Brinthe leads them and speaks for them on the Council of Dornogal. They share the caverns with kobold tribes, with Gallywix's goblins who arrived to sell them things, and with nerubians coming up from below.",
+  "history": "The machinery here was sunk by the titan-forged, and the Speakers were made to tend it — a job description that means talking to machines rather than to people, carried out without interruption for thousands of years. Brinthe held a speakership for millennia and asked more questions than the office wanted; she was sent up to Dornogal to be out of the way. It turned out she was right to ask. In her absence the high speaker took his people into the Stonevault and the Void took him, and by the time anyone from the surface came down the works had kobolds in the tunnels, a goblin concern at the southern elevator, and nerubians using the river as a road.",
+  "factions": [
+    "Machine Speakers and the Assembly of the Deeps",
+    "The Stonevault",
+    "Quickwick kobolds",
+    "Opportunity Acquisitions, working for Gallywix",
+    "Nerubians of Azj-Kahet",
+    "The Council of Dornogal"
+  ],
+  "notable": [
+    {
+      "name": "Gundargaz",
+      "what": "The largest settlement in the caverns, west-central, and the Assembly of the Deeps' seat"
+    },
+    {
+      "name": "The Stonevault",
+      "what": "The hold in the north where the high speaker took his followers, and what the Void made of him there"
+    },
+    {
+      "name": "The Waterworks",
+      "what": "The dam in the west that powers half the machinery down here, overrun by kobolds"
+    },
+    {
+      "name": "Opportunity Point",
+      "what": "The southern hub and the elevator up to the Isle of Dorn, both currently the property of Gallywix's people"
+    },
+    {
+      "name": "The Cataract River",
+      "what": "Fed from Shimmermist Falls and draining through the Living Grotto into Azj-Kahet, which is how what lives down there gets up here"
+    },
+    {
+      "name": "Camp Murroch",
+      "what": "The camp in the south between the grotto and the lost mine at Taelloch, and the base for everything worked on in that half of the cavern"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Ringing Deeps",
+      "url": "https://warcraft.wiki.gg/wiki/The_Ringing_Deeps"
+    },
+    {
+      "title": "Brinthe",
+      "url": "https://warcraft.wiki.gg/wiki/Brinthe"
+    },
+    {
+      "title": "Gundargaz",
+      "url": "https://warcraft.wiki.gg/wiki/Gundargaz"
+    },
+    {
+      "title": "Waterworks",
+      "url": "https://warcraft.wiki.gg/wiki/Waterworks"
+    },
+    {
+      "title": "Opportunity Point",
+      "url": "https://warcraft.wiki.gg/wiki/Opportunity_Point"
+    },
+    {
+      "title": "Cataract River",
+      "url": "https://warcraft.wiki.gg/wiki/Cataract_River"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

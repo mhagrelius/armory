@@ -1,0 +1,82 @@
+{
+  "zone": "Zul'Drak",
+  "map": 121,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Zul'Drak is eastern Northrend's ice troll country, and it is less a region with a city in it than a city the size of a region: terraced plazas, aqueducts and ziggurats running to the horizon, with the capital of Gundrak at the top. The Drakkari who built it are losing it — pressed by the Scourge, they began killing and consuming their own loa for power, and much of what remains of them is deranged or already undead. The Argent Crusade holds the Argent Stand, the Knights of the Ebon Blade keep the Ebon Watch, and a Zandalari expedition has come north to save what it can of the loa and to write down the rest.",
+  "history": "The Drakkari came north as an army. Hunting the aqir to extinction after the insects nearly finished the trolls, the Zandalari sent their fiercest tribes out with the promise of keeping whatever ground they cleared; the Drakkari drew the frozen end of it, fought an aqir colony and the titan-forged the insects had turned against them, and stayed. What they raised here became one of the largest troll nations that ever stood, and it outlasted Azjol-Nerub and every winter since. It did not outlast the Scourge. When Drakuru turned traitor and began raising blighted chieftains, the Drakkari butchered their own loa for the strength to hold, which did not save them and left the land stained with the gods' suffering rather than the Scourge's work. The Zandalari came to intervene and stayed to chronicle the end.",
+  "factions": [
+    "Drakkari tribe",
+    "Loa of Zul'Drak",
+    "Argent Crusade",
+    "Knights of the Ebon Blade",
+    "Zandalar tribe",
+    "Scourge and the Cult of the Damned",
+    "Hath'ar nerubians",
+    "Rageclaw wolvar"
+  ],
+  "notable": [
+    {
+      "name": "Gundrak",
+      "what": "The Drakkari capital at the top of the terraces, still holding out against the Scourge when everything below it has not"
+    },
+    {
+      "name": "The loa altars",
+      "what": "Shrines to Har'koa, Quetz'lun, Rhunok, Sseratus and Mam'toth, where Wild Gods were worshipped and then sacrificed by their own people"
+    },
+    {
+      "name": "The Argent Stand",
+      "what": "The Argent Crusade's base, built into a Drakkari structure that may once have been an open-air market"
+    },
+    {
+      "name": "Ebon Watch",
+      "what": "The Knights of the Ebon Blade's outpost, from which the infiltration of Drakuru's Scourge operation is run"
+    },
+    {
+      "name": "Zim'Torga",
+      "what": "The Zandalari camp, where Witch Doctor Khufu's expedition works to reach the loa before the Drakkari do"
+    },
+    {
+      "name": "Amphitheater of Anguish",
+      "what": "Gurgthock's blood-sport arena, imported wholesale into the ruins along with Korrak the Bloodrager"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zul'Drak",
+      "url": "https://warcraft.wiki.gg/wiki/Zul%27Drak"
+    },
+    {
+      "title": "Drakkari Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Drakkari_Empire"
+    },
+    {
+      "title": "Drakkari tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Drakkari_tribe"
+    },
+    {
+      "title": "Gundrak",
+      "url": "https://warcraft.wiki.gg/wiki/Gundrak"
+    },
+    {
+      "title": "Argent Stand",
+      "url": "https://warcraft.wiki.gg/wiki/Argent_Stand"
+    },
+    {
+      "title": "Ebon Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Ebon_Watch"
+    },
+    {
+      "title": "Altar of Har'koa",
+      "url": "https://warcraft.wiki.gg/wiki/Altar_of_Har%27koa"
+    },
+    {
+      "title": "Argent Crusade",
+      "url": "https://warcraft.wiki.gg/wiki/Argent_Crusade"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

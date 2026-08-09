@@ -1,0 +1,79 @@
+{
+  "zone": "Azsuna",
+  "map": 630,
+  "expansion": "Legion",
+  "summary": "Azsuna is the south-western Broken Isles, a coast of pale ruins and olive groves left over from the night elf empire and haunted by the people who lived in them. Prince Farondis and his court are still here and cannot die, drifting through Nar'thalas; the blue dragons of the Azurewing keep a ley pool inland, and the naga work the shallows for what Azshara wants. Above it all the Wardens hold their prison on the Isle of the Watchers, and the Legion has burned a landing at Faronaar.",
+  "history": "Prince Farondis was one of the few Highborne rulers who would not follow Queen Azshara into her bargain with Sargeras. His plan was to destroy the Well of Eternity outright, using the Tidestone of Golganneth kept in Nar'thalas Academy, and a young noble of his own court sold him to the queen before he could. Azshara's answer was to break the Tidestone and let what came out of it wash over the whole province: the city fell and its people were left unable to die, which is why the ghosts still keep their courtesies. The Sundering left the ruins as an island. Ten thousand years on, the Tidestone was fought over again, this time with Azshara's naga.",
+  "factions": [
+    "Court of Farondis",
+    "The Wardens",
+    "Illidari",
+    "Azurewing brood of the blue dragonflight",
+    "Nazjatar Empire naga",
+    "Burning Legion",
+    "Nightfallen and the Withered",
+    "Kirin Tor of Dalaran",
+    "Gilblin and makrura of the coast"
+  ],
+  "notable": [
+    {
+      "name": "Ruins of Nar'thalas",
+      "what": "Farondis' drowned capital, built around the academy that held the Tidestone, still keeping its lessons and its dances"
+    },
+    {
+      "name": "Vault of the Wardens",
+      "what": "Maiev's maximum-security prison on the Isle of the Watchers, which held Illidan's body and the Illidari until the Legion opened it"
+    },
+    {
+      "name": "Azurewing Repose",
+      "what": "The blue dragonflight's pool of ley energy, where what is left of Senegos' brood shelters"
+    },
+    {
+      "name": "Temple of a Thousand Lights",
+      "what": "A temple raised to Queen Azshara in the south-east, standing over the Garden of Elune below it"
+    },
+    {
+      "name": "Eye of Azshara",
+      "what": "The storm-wrapped island offshore where the naga worked at the Tidestone"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Azsuna",
+      "url": "https://warcraft.wiki.gg/wiki/Azsuna"
+    },
+    {
+      "title": "Ruins of Nar'thalas",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Nar%27thalas"
+    },
+    {
+      "title": "Vault of the Wardens",
+      "url": "https://warcraft.wiki.gg/wiki/Vault_of_the_Wardens"
+    },
+    {
+      "title": "Azurewing Repose",
+      "url": "https://warcraft.wiki.gg/wiki/Azurewing_Repose"
+    },
+    {
+      "title": "Temple of a Thousand Lights",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_a_Thousand_Lights"
+    },
+    {
+      "title": "Prince Farondis",
+      "url": "https://warcraft.wiki.gg/wiki/Prince_Farondis"
+    },
+    {
+      "title": "Court of Farondis",
+      "url": "https://warcraft.wiki.gg/wiki/Court_of_Farondis"
+    },
+    {
+      "title": "Azurewing",
+      "url": "https://warcraft.wiki.gg/wiki/Azurewing"
+    },
+    {
+      "title": "Nazjatar Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Nazjatar_Empire"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

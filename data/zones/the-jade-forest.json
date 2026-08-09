@@ -1,0 +1,82 @@
+{
+  "zone": "The Jade Forest",
+  "map": 371,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Jade Forest is the rainforest along Pandaria's eastern coast — bamboo, cloud-ringed spires and pandaren temples — and it is where both invading armies came ashore. Paw'don Village in the south has taken the Alliance's side and Honeydew Village in the northwest the Horde's, while Dawn's Blossom in the middle refuses to choose. Yu'lon's temple on the eastern shore, the first dungeon anyone new to the continent walks into, has been overrun by the Sha of Doubt.",
+  "history": "The mogu ruled here first, and their work still stands: the Terrace of Ten Thunders in the north, with servants of the Thunder King waking inside it. Yu'lon's own story is local. Told she was teaching his pandaren slaves to think for themselves, Lei Shen pulled a bolt out of the sky and knocked her down into this forest, and the pandaren who found her dying have carved her a fresh jade body every hundred years since. The newest one was almost finished when the Alliance wrecked on the coast, the Horde followed to hunt Anduin Wrynn and Admiral Taylor, and the fighting at Serpent's Heart put it on the ground. Nobody outside Pandaria knew the statue was also the seal on the Sha of Doubt.",
+  "factions": [
+    "Alliance",
+    "Horde",
+    "Order of the Cloud Serpent",
+    "Forest Hozen of the Grookin tribe",
+    "Pearlfin jinyu",
+    "Mogu and the reawakened servants of the Thunder King",
+    "Sha of Doubt",
+    "Saurok"
+  ],
+  "notable": [
+    {
+      "name": "Temple of the Jade Serpent",
+      "what": "Yu'lon's seat on the eastern shore, with the scrollkeepers' library under it, taken over by the Sha of Doubt"
+    },
+    {
+      "name": "Dawn's Blossom",
+      "what": "The town at the centre of the forest and of pandaren life in it, neutral in the war by its own decision"
+    },
+    {
+      "name": "Order of the Cloud Serpent",
+      "what": "Riders sworn to Yu'lon and to the forest's defence, and the only people who will teach an outsider to fly one"
+    },
+    {
+      "name": "Grookin Hill",
+      "what": "The Forest Hozen's main village west of the Slicky Stream, where their chief holds court"
+    },
+    {
+      "name": "Garrosh'ar Point",
+      "what": "The Horde landing site, hammered from the air by the Skyfire during the hunt for Anduin Wrynn and Admiral Taylor"
+    },
+    {
+      "name": "Honeydew Village",
+      "what": "Brewers and farmers in the northwest; the Honeypaws run the brewery and claim the best honeybrew anywhere"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jade Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Jade_Forest"
+    },
+    {
+      "title": "Dawn's Blossom",
+      "url": "https://warcraft.wiki.gg/wiki/Dawn%27s_Blossom"
+    },
+    {
+      "title": "Honeydew Village",
+      "url": "https://warcraft.wiki.gg/wiki/Honeydew_Village"
+    },
+    {
+      "title": "Paw'don Village",
+      "url": "https://warcraft.wiki.gg/wiki/Paw%27don_Village"
+    },
+    {
+      "title": "Garrosh'ar Point",
+      "url": "https://warcraft.wiki.gg/wiki/Garrosh%27ar_Point"
+    },
+    {
+      "title": "Grookin Hill",
+      "url": "https://warcraft.wiki.gg/wiki/Grookin_Hill"
+    },
+    {
+      "title": "Order of the Cloud Serpent",
+      "url": "https://warcraft.wiki.gg/wiki/Order_of_the_Cloud_Serpent"
+    },
+    {
+      "title": "Forest Hozen",
+      "url": "https://warcraft.wiki.gg/wiki/Forest_Hozen"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

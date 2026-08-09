@@ -1,0 +1,71 @@
+{
+  "zone": "Nazjatar",
+  "map": 1355,
+  "expansion": "Battle for Azeroth",
+  "summary": "Nazjatar is the naga capital, sunk in a trench under the Great Sea where the night elf city of Zin-Azshari once stood. Queen Azshara pulled the water back off it, leaving a drowned landscape walled in by standing waterfalls, with the Eternal Palace at its heart. The Alliance and Horde fleets she wrecked here are stranded among makrura, sea giants and the naga's slaves, and have thrown in with the escaped Unshackled and the Waveblade Ankoan to survive.",
+  "history": "When the Well of Eternity collapsed and the Highborne who followed Azshara were reshaped into naga, they went down to where their old capital had drowned and built a new one over it. Azshara took the drowned Zin-Azshari into it and told her people their empire beneath the sea would outgrow anything the night elves had held. For ten thousand years almost nobody saw it. Then Sylvanas sent a fleet out from Zuldazar following Xal'atath's blade, Jaina's ships chased it, and Azshara used the Tidestone of Golganneth to open the sea and drop both fleets onto her reefs. Her masters wanted her prisoners; her prisoners eventually reached the palace and put her down, which left the naga to fracture among themselves.",
+  "factions": [
+    "Nazjatar Empire and Queen Azshara",
+    "The Unshackled",
+    "Waveblade Ankoan",
+    "Horde",
+    "Alliance",
+    "Old Gods' forces",
+    "Kil'karrok makrura",
+    "Bloodfin murlocs",
+    "Sea giants and gilgoblins"
+  ],
+  "notable": [
+    {
+      "name": "The Eternal Palace",
+      "what": "Azshara's throne, raised with the rest of the city after the Sundering, and where she invited her shipwrecked enemies in"
+    },
+    {
+      "name": "Zin-Azshari",
+      "what": "The night elf capital that drowned with the Well of Eternity, its estates and market still standing inside the naga city"
+    },
+    {
+      "name": "Newhome",
+      "what": "The Unshackled's refuge — naga and others who got out from under the empire, and the Horde's base on the seabed"
+    },
+    {
+      "name": "Mezzamere",
+      "what": "The Waveblade Ankoan camp built into kaldorei ruins on the Hanging Reef, and the Alliance's foothold"
+    },
+    {
+      "name": "The Tidal Conflux",
+      "what": "Where Azshara's work on the Tidestone and the sea itself was carried out"
+    },
+    {
+      "name": "Deepcoil Tunnels",
+      "what": "Naga hatcheries and slave pens below the city, with something under them that whispers"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nazjatar",
+      "url": "https://warcraft.wiki.gg/wiki/Nazjatar"
+    },
+    {
+      "title": "Eternal Palace",
+      "url": "https://warcraft.wiki.gg/wiki/Eternal_Palace"
+    },
+    {
+      "title": "Nazjatar Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Nazjatar_Empire"
+    },
+    {
+      "title": "Newhome",
+      "url": "https://warcraft.wiki.gg/wiki/Newhome"
+    },
+    {
+      "title": "Mezzamere",
+      "url": "https://warcraft.wiki.gg/wiki/Mezzamere"
+    },
+    {
+      "title": "Kil'karrok",
+      "url": "https://warcraft.wiki.gg/wiki/Kil%27karrok"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

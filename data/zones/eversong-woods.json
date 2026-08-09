@@ -1,0 +1,75 @@
+{
+  "zone": "Eversong Woods",
+  "map": 94,
+  "expansion": "Midnight",
+  "summary": "Eversong Woods is now the whole mainland of Quel'Thalas: the golden forest held in perpetual spring, the old Ghostlands folded back into it, Silvermoon rebuilt at the northern tip and the Isle of Quel'Danas beyond that. The Dead Scar has closed over into the Tranquil Repose, though the Ruins of Deatholme at its southern end are held by the Twilight's Blade, the Amani still come down out of Zul'Aman in the east, and Daggerspine naga have taken the island off the western shore. Tranquillien, Fairbreeze and Suncrown are elven towns again, and the road through the Thalassian Pass joins the kingdom to the rest of the continent by land.",
+  "history": "The Highborne took these woods from the Amani, made the Sunwell, and used its power to raise their cities and shape the forest, setting runestones through it to damp any magic that was not their own and locking the whole region into a permanent spring. Quel'Thalas stood for over seven thousand years. Red dragons enslaved by the Old Horde burned a third of the forest in the Second War without breaking Silvermoon's defences. Arthas managed what they could not: the Dead Scar torn through the middle of the woods, Sylvanas Windrunner killed, the capital broken and the south left a waste. Kael'thas destroyed the poisoned Sunwell and renamed his people for the dead, and Lor'themar and Rommath began the rebuilding that has now reached the far south.",
+  "factions": [
+    "Kingdom of Quel'Thalas",
+    "Horde",
+    "Silver Covenant",
+    "Alliance",
+    "Amani tribe",
+    "Twilight's Blade",
+    "Daggerspine naga",
+    "Haranir",
+    "The Wretched"
+  ],
+  "notable": [
+    {
+      "name": "Silvermoon City",
+      "what": "The blood elves' capital at the northern edge of the forest, sacked in the Third War and rebuilt since"
+    },
+    {
+      "name": "Tranquil Repose",
+      "what": "The Dead Scar as it is now — the plague strip Arthas cut through the woods, grown over at last"
+    },
+    {
+      "name": "Ruins of Deatholme",
+      "what": "What is left of the Scourge citadel in the south, taken over by the Twilight's Blade and the enclave beneath it"
+    },
+    {
+      "name": "Windrunner Spire",
+      "what": "The Windrunner family's coastal home, and where the three sisters came from"
+    },
+    {
+      "name": "Fairbreeze Village",
+      "what": "The southern village where young elves are taught their trades before going any further"
+    },
+    {
+      "name": "Daggerspine Point",
+      "what": "The western island, once Shalandis Isle, now held by naga"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eversong Woods",
+      "url": "https://warcraft.wiki.gg/wiki/Eversong_Woods"
+    },
+    {
+      "title": "Silvermoon City",
+      "url": "https://warcraft.wiki.gg/wiki/Silvermoon_City"
+    },
+    {
+      "title": "Fairbreeze Village",
+      "url": "https://warcraft.wiki.gg/wiki/Fairbreeze_Village"
+    },
+    {
+      "title": "Ruins of Deatholme",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Deatholme"
+    },
+    {
+      "title": "Daggerspine Point",
+      "url": "https://warcraft.wiki.gg/wiki/Daggerspine_Point"
+    },
+    {
+      "title": "Saltheril's Haven",
+      "url": "https://warcraft.wiki.gg/wiki/Saltheril%27s_Haven"
+    },
+    {
+      "title": "Quel'Thalas (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Quel%27Thalas_(kingdom)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

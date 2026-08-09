@@ -1,0 +1,92 @@
+{
+  "zone": "Shadowmoon Valley",
+  "map": 104,
+  "expansion": "The Burning Crusade",
+  "summary": "Shadowmoon Valley is the southeastern corner of Outland and the most thoroughly ruined ground in it: black rock and ash under a yellow-green sky, green lava running off the volcano at its centre, and infernals falling out of the clouds without pause. The Black Temple stands on the coast, held in turn by the Shadow Council, a pit lord, Illidan Stormrage and finally Akama's Broken. Around it are Legion holdings, Dragonmaw fel orcs breaking nether drakes to the saddle, Coilskar naga, and small camps of everybody else — Aldor, Scryers, Wildhammer dwarves and the Horde — all here because of what is in the temple.",
+  "history": "The valley was a moor under permanent night, lit by two moons. Orcs out of Gorgrond settled it, took its name and charted its stars. The draenei crash-landed afterwards; their vessel ejected the darkened naaru K'ara as the Dark Star, whose power the Shadowmoon chieftain forbade for what it did to minds that touched it. The draenei raised the Temple of Karabor on the coast, and Gul'dan shattered the firelord Cyrukh outside it, leaving the Hand of Gul'dan. The Shadow Council then called K'ara's void down on Karabor, killing hundreds and making the Black Temple. Ner'zhul's ritual on its highest tower tore the world apart. Magtheridon held the ruin until Illidan Stormrage took it from him; Akama turned on Illidan at the end and freed Maiev Shadowsong, who carried his body and his demon hunters back to Azeroth in crystal.",
+  "factions": [
+    "Illidari",
+    "Ashtongue Broken",
+    "Burning Legion",
+    "Dragonmaw clan",
+    "Coilskar naga",
+    "Aldor",
+    "Scryers",
+    "Wildhammer dwarves and the Alliance",
+    "Kor'kron and the Horde",
+    "Netherwing dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "The Black Temple",
+      "what": "Once the Temple of Karabor and the spiritual heart of draenei society, it has changed hands from the Shadow Council to Magtheridon to Illidan and back to Akama"
+    },
+    {
+      "name": "The Hand of Gul'dan",
+      "what": "The volcano where Gul'dan broke the elements' last champion and severed the orcs from them for good — still erupting green lava in the middle of the zone"
+    },
+    {
+      "name": "Akama",
+      "what": "Elder sage of the Ashtongue, once a Vindicator on Velen's Council of Exarchs, who served Illidan long enough to get close to him"
+    },
+    {
+      "name": "Netherwing Ledge",
+      "what": "The Dragonmaw fel orcs' mines and camps in the southeast, where the nether drakes are worked and where outsiders go in under a false face"
+    },
+    {
+      "name": "Altar of Sha'tar",
+      "what": "The Aldor's staging ground in the north, built on the site of the lost draenei city of Elodor; the Scryers keep the Sanctum of the Stars for the same purpose"
+    },
+    {
+      "name": "Wildhammer Stronghold and Shadowmoon Village",
+      "what": "The Alliance and Horde towns — dwarven gryphon riders on one side, the Horde's outpost on the other"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shadowmoon Valley",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowmoon_Valley"
+    },
+    {
+      "title": "Black Temple",
+      "url": "https://warcraft.wiki.gg/wiki/Black_Temple"
+    },
+    {
+      "title": "Akama",
+      "url": "https://warcraft.wiki.gg/wiki/Akama"
+    },
+    {
+      "title": "Altar of Sha'tar",
+      "url": "https://warcraft.wiki.gg/wiki/Altar_of_Sha%27tar"
+    },
+    {
+      "title": "Dragonmaw Base Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonmaw_Base_Camp"
+    },
+    {
+      "title": "Dragonmaw Fortress",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonmaw_Fortress"
+    },
+    {
+      "title": "Illidari",
+      "url": "https://warcraft.wiki.gg/wiki/Illidari"
+    },
+    {
+      "title": "Crimson Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Crimson_Watch"
+    },
+    {
+      "title": "Hand of Gul'dan",
+      "url": "https://warcraft.wiki.gg/wiki/Hand_of_Gul%27dan_(volcano)"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

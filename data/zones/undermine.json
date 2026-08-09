@@ -1,0 +1,68 @@
+{
+  "zone": "Undermine",
+  "map": 2346,
+  "expansion": "The War Within",
+  "summary": "Undermine is the goblin capital, a city of tunnels, vaults and lava tubes wound through Mount Kajaro under the Isle of Kezan, with air like a hot workshop. The part anyone walks is downtown: the Gallagio casino on its hill, the tenements of Hovel Hill, Blackwater Marina, the Vatworks and the Heaps, with rockets at Slam Central Station running out to the districts nobody shows visitors. Gallywix ran it as Overboss until the city pulled him down, and Gazlowe and the cartel heads have been putting it back together since.",
+  "history": "The Zandalari worked goblin slaves in these shafts for kaja'mite, and the ore made the miners clever enough to throw them off; the camps they revolted from became the city. Genius did not last — the kaja'mite ran out, the goblins got ordinary again and turned to selling things instead, after a stretch of gang wars nobody misses. Deathwing set Kajaro erupting during the Cataclysm and for a while everyone assumed Kezan was slag. Then Gallywix came home with a promise to Xal'atath to keep, took the cartels one hostage at a time, called himself Overboss and put Darkfuse enforcers in the streets. When his gunman killed Renzik in front of a crowd, the city marched on his casino.",
+  "factions": [
+    "Cartels of Undermine — Bilgewater, Blackwater, Steamwheedle and the Venture Company",
+    "Darkfuse Solutions",
+    "Tinkers' Union",
+    "Trade Coalition",
+    "Ethereals, hunting the Dark Heart",
+    "Troll labourers, still not free"
+  ],
+  "notable": [
+    {
+      "name": "The Gallagio",
+      "what": "Gallywix's casino and fortress on the heights, complete with golf course, and the last place he had to be dug out of"
+    },
+    {
+      "name": "Hovel Hill",
+      "what": "Where most of Undermine actually lives — flea markets, a motel with a leaking roof, an orphanage and a bank of last resort"
+    },
+    {
+      "name": "Blackwater Marina",
+      "what": "The port district and the Blackwater Cartel's ground, and the route the Black Blood shipments went out by"
+    },
+    {
+      "name": "The Heaps",
+      "what": "Venture Company country — storage, payroll and the Venturewood, where the stockpiles were kept"
+    },
+    {
+      "name": "Slam Central Station",
+      "what": "The rocket terminal linking downtown to the rest of the city, most of which no outsider has seen"
+    },
+    {
+      "name": "Demolition Dome",
+      "what": "An arena for settling arguments with machinery, guarded by the Gobfather"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Undermine",
+      "url": "https://warcraft.wiki.gg/wiki/Undermine"
+    },
+    {
+      "title": "Cartels of Undermine",
+      "url": "https://warcraft.wiki.gg/wiki/Cartels_of_Undermine"
+    },
+    {
+      "title": "Darkfuse Solutions",
+      "url": "https://warcraft.wiki.gg/wiki/Darkfuse_Solutions"
+    },
+    {
+      "title": "Mount Kajaro",
+      "url": "https://warcraft.wiki.gg/wiki/Mount_Kajaro"
+    },
+    {
+      "title": "Demolition Dome",
+      "url": "https://warcraft.wiki.gg/wiki/Demolition_Dome"
+    },
+    {
+      "title": "Bilgewater Cartel",
+      "url": "https://warcraft.wiki.gg/wiki/Bilgewater_Cartel"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

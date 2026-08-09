@@ -1,0 +1,75 @@
+{
+  "zone": "Dustwallow Marsh",
+  "map": 70,
+  "expansion": "Classic",
+  "summary": "Dustwallow Marsh is a hot fog-bound swamp on Kalimdor's southeastern coast, thinly settled and mostly left to crocolisks, raptors and murlocs. The rocky island off its eastern shore held Theramore until Garrosh Hellscream's mana bomb erased the city, and the roads that once ran out to it are going back to the marsh. What is left is scattered: Brackenwall Village where the Stonemaul ogres take in the Horde, the goblin town of Mudsprocket in the southwest, Grimtotem at Blackhoof Village in the north, and the black dragonflight holding the Wyrmbog and the Dragonmurk in the south around Onyxia's Lair.",
+  "history": "Nothing lived in this swamp but animals until Jaina Proudmoore brought her survivors here after Mount Hyjal and founded Theramore, throwing scout towers up along the road to the Barrens. Her father's fleet followed to destroy the young Horde and Daelin died in the fighting, which ended any pretence of peace between the factions. Rexxar killed the Stonemaul's tyrant and brought the ogres into the Horde; the black dragons later drove them out of their own village and up to Brackenwall. The Steamwheedle founded Mudsprocket and the Grimtotem took the north. The Shattering barely touched the place. Then Garrosh dropped a mana bomb on Theramore and the marsh has been quiet in a different way since.",
+  "factions": [
+    "Alliance",
+    "Theramore remnants and deserters",
+    "Horde",
+    "Stonemaul clan",
+    "Steamwheedle Cartel",
+    "Grimtotem tribe",
+    "Black dragonflight",
+    "Naga and murlocs",
+    "Doctor Weavil's gnomes"
+  ],
+  "notable": [
+    {
+      "name": "Ruins of Theramore",
+      "what": "Jaina Proudmoore's city-state on its island, and now the crater a mana bomb left where it stood"
+    },
+    {
+      "name": "Brackenwall Village",
+      "what": "The Stonemaul ogres' huts and mound in the northwest, the Horde's only real foothold in the marsh"
+    },
+    {
+      "name": "Onyxia's Lair",
+      "what": "The brood mother's den under the Wyrmbog, with the Den of Flame and the ruins the Stonemaul were driven out of nearby"
+    },
+    {
+      "name": "Mudsprocket",
+      "what": "A goblin town dug into the southwest, tied to Gadgetzan and the only place in the swamp with a forge and an inn together"
+    },
+    {
+      "name": "Alcaz Island",
+      "what": "The tropical island off the northeast coast, once the prison Varian Wrynn was held in and later Doctor Weavil's laboratory"
+    },
+    {
+      "name": "Blackhoof Village",
+      "what": "The Grimtotem camp in the north, holding captured Theramore guards and the answer to who burned the Shady Rest Inn"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dustwallow Marsh",
+      "url": "https://warcraft.wiki.gg/wiki/Dustwallow_Marsh"
+    },
+    {
+      "title": "Brackenwall Village",
+      "url": "https://warcraft.wiki.gg/wiki/Brackenwall_Village"
+    },
+    {
+      "title": "Mudsprocket",
+      "url": "https://warcraft.wiki.gg/wiki/Mudsprocket"
+    },
+    {
+      "title": "Blackhoof Village",
+      "url": "https://warcraft.wiki.gg/wiki/Blackhoof_Village"
+    },
+    {
+      "title": "Alcaz Island",
+      "url": "https://warcraft.wiki.gg/wiki/Alcaz_Island"
+    },
+    {
+      "title": "Den of Flame",
+      "url": "https://warcraft.wiki.gg/wiki/Den_of_Flame"
+    },
+    {
+      "title": "Lost Point",
+      "url": "https://warcraft.wiki.gg/wiki/Lost_Point"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

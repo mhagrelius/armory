@@ -1,0 +1,75 @@
+{
+  "zone": "Azuremyst Isle",
+  "map": 97,
+  "expansion": "Classic",
+  "summary": "Azuremyst Isle is the southern half of the Azuremyst Isles off northwestern Kalimdor, evergreen and purple-flowered, with fog, thunderstorms and the occasional arcane squall rolling over it. The draenei live here because their ship came down here: the Exodar's hull is now their capital, Azure Watch is the town between it and the sheltered Ammen Vale where every draenei starts, and the crystals thrown out by the crash are still working their way through the local wildlife. The Stillpine furbolgs are friends, the Bristlelimb are not, and Wrathscale naga hold the night elf ruins on the west coast.",
+  "history": "The isles were the untamed western edge of ancient Kalimdor, left unsettled on purpose by the Kaldorei Empire as hunting ground, and the Sundering broke them off the continent with their plants and animals aboard. The night elves eventually abandoned them and the furbolgs and wildkin had the place to themselves for centuries. Then the Exodar, sabotaged by Kael'thas's followers, came down on the isle; the survivors salvaged what they could, built Azure Watch and started hunting down what the crystals had poisoned. Admiral Odesyus's flotilla was grounded on the south shore around the same time, which is how the draenei met the Alliance. The Legion came for the naaru O'ros later and was beaten off.",
+  "factions": [
+    "Exodar draenei",
+    "Hand of Argus",
+    "Alliance",
+    "Stillpine tribe",
+    "Bristlelimb tribe",
+    "Wrathscale naga",
+    "Siltfin murlocs",
+    "Sunfury blood elves",
+    "Wildkin"
+  ],
+  "notable": [
+    {
+      "name": "The Exodar",
+      "what": "A piece of Tempest Keep that fell out of the sky and became a city, and the draenei nation's capital ever since"
+    },
+    {
+      "name": "Ammen Vale",
+      "what": "The hill-ringed eastern valley across the Crystalbrook where the escape pods came down and every draenei begins"
+    },
+    {
+      "name": "Azure Watch",
+      "what": "The Hand of Argus's forward outpost, and the first thing the draenei built on Azeroth with their own hands"
+    },
+    {
+      "name": "Stillpine Hold",
+      "what": "The northern furbolg settlement whose tribe allied with the draenei, its inner caves taken over by corrupted moonkin"
+    },
+    {
+      "name": "Odesyus' Landing",
+      "what": "A campfire behind a log wall on the southern beach, where an Alliance fleet ran aground and stayed"
+    },
+    {
+      "name": "Silvermyst Isle",
+      "what": "The islet off the southwest, close enough to swim to, home to the Moonwing wildkin and the last night elf family on the isles"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Azuremyst Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Azuremyst_Isle"
+    },
+    {
+      "title": "Exodar",
+      "url": "https://warcraft.wiki.gg/wiki/Exodar"
+    },
+    {
+      "title": "Ammen Vale",
+      "url": "https://warcraft.wiki.gg/wiki/Ammen_Vale"
+    },
+    {
+      "title": "Azure Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Azure_Watch"
+    },
+    {
+      "title": "Stillpine Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Stillpine_Hold"
+    },
+    {
+      "title": "Odesyus' Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Odesyus%27_Landing"
+    },
+    {
+      "title": "Bristlelimb Village",
+      "url": "https://warcraft.wiki.gg/wiki/Bristlelimb_Village"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

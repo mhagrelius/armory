@@ -1,0 +1,37 @@
+{
+  "instance": "Gruul's Lair",
+  "journal": 746,
+  "expansion": "The Burning Crusade",
+  "summary": "A cave north of Ruuan Weald in the Blade's Edge Mountains, held by Gruul the Dragonkiller, overlord of the gronn, and by the ogres who worship him as a god. Two encounters, twenty-five people, and no attunement of any kind.",
+  "history": "Deathwing found the Dark Portal and Draenor long before anyone on Azeroth was looking, and judged the place safe enough that he scattered clutches of black dragon eggs across it under light guard. He was wrong about Blade's Edge. The gronn who live in that range pulled the guardian dragons out of the sky, and Gruul impaled the wyrms he beat himself on the stone spires the mountains are named for — which is where the epithet came from and why the skyline is what it is. The ogres of Blade's Edge took him for a deity and have worshipped him ever since. His sons range across the spires and down onto the plains of Nagrand, and High King Maulgar holds the approach to the lair with his own council of ogre lords. Nobody in Outland had provoked him and he had not moved against either faction. The reasoning for going in first was simply that his strength and his experience would be an unanswerable problem for the Horde or the Alliance if he ever decided to use them.",
+  "assumes": "The bones on the spires are the whole story and the raid never tells it. They are Deathwing's, left in Blade's Edge with too few guards, and killing them is what made a gronn into a god.",
+  "notable": [
+    {
+      "name": "Gruul the Dragonkiller",
+      "what": "Overlord of the gronn, and the reason the mountains have dragons on their spires"
+    },
+    {
+      "name": "High King Maulgar",
+      "what": "Holds the entrance with four lieutenants, and is the whole first encounter"
+    },
+    {
+      "name": "The spires of Blade's Edge",
+      "what": "The peaks Gruul used to display the black dragons he killed"
+    },
+    {
+      "name": "The gronn",
+      "what": "Gruul's own sons, who range from here across Nagrand"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gruul's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Gruul%27s_Lair"
+    },
+    {
+      "title": "Blade's Edge Mountains",
+      "url": "https://warcraft.wiki.gg/wiki/Blade%27s_Edge_Mountains"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

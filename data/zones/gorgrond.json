@@ -1,0 +1,97 @@
+{
+  "zone": "Gorgrond",
+  "map": 543,
+  "expansion": "Warlords of Draenor",
+  "summary": "Gorgrond is northern Draenor, and it is a dead giant with a war being fought across him. The Breakers hold the dry north-west of mesas, geysers and sulphur pools; the Primals hold the green south-east, where the plants hunt; and the line between the two moves. Behind that natural wall the Blackrock clan works the Foundry on the north coast, feeding the Iron Horde its guns, its trains and its docks.",
+  "history": "Aggramar shaped the giant Grond out of a mountain to fight the Evergrowth, and where he fell his body became this country — the ore is his blood, the ridges his spine. The fragments that broke off him fought on as the colossals and brought down Botaan, greatest of the sporemounds; the spores that burst out of it fell on plants to make the botani and on stone to begin the line that runs gronn, ogron, ogre and finally orc. Both halves of that inheritance are still here and still arguing over what the ground should be. The orcs came out of caves beneath it: the Blackrock learned to work blackrock ore here, the Dragonmaw broke rylaks to the saddle, and when the caverns overflowed, the clans that walked out became every clan there is. Gul'dan was born to one of them at the region's edge, exiled for his deformity, and killed them all when he came back holding fel. The Blackrock later built the Iron Horde's foundry here, and generations on the Mag'har held it against Yrel's Lightbound.",
+  "factions": [
+    "Blackrock clan",
+    "Iron Horde",
+    "Laughing Skull clan",
+    "Breakers, from goren to gronn",
+    "Primals, botani and genesaur",
+    "Gorian Empire ogres",
+    "Rangari draenei",
+    "Alliance",
+    "Horde",
+    "Saberon",
+    "Mag'har and the Lightbound, generations later"
+  ],
+  "notable": [
+    {
+      "name": "Blackrock Foundry",
+      "what": "The Blackrock clan's ancestral works on the north coast and the industrial heart of the Iron Horde, later opened as a raid"
+    },
+    {
+      "name": "Grimrail Depot",
+      "what": "The rail yard that moves Iron Horde ordnance out of the foundry, and the train itself as a dungeon"
+    },
+    {
+      "name": "Deadgrin",
+      "what": "The Laughing Skull's old village under an earth giant's skull, overrun by goren and abandoned"
+    },
+    {
+      "name": "Broken Horn Village",
+      "what": "Where the Laughing Skull survivors rebuilt in the north-east, and the next thing the Iron Horde meant to burn"
+    },
+    {
+      "name": "Highpass and Bastion Rise",
+      "what": "The outposts driven into the middle of the war, each becoming whatever its commander chose to build there"
+    },
+    {
+      "name": "Hellsreach Citadel",
+      "what": "The Mag'har clans' fortress in a much later Draenor, wired into the old foundry and rail lines"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gorgrond",
+      "url": "https://warcraft.wiki.gg/wiki/Gorgrond"
+    },
+    {
+      "title": "Blackrock Foundry",
+      "url": "https://warcraft.wiki.gg/wiki/Blackrock_Foundry"
+    },
+    {
+      "title": "Grimrail Depot",
+      "url": "https://warcraft.wiki.gg/wiki/Grimrail_Depot"
+    },
+    {
+      "title": "Deadgrin",
+      "url": "https://warcraft.wiki.gg/wiki/Deadgrin"
+    },
+    {
+      "title": "Broken Horn Village",
+      "url": "https://warcraft.wiki.gg/wiki/Broken_Horn_Village"
+    },
+    {
+      "title": "Highpass",
+      "url": "https://warcraft.wiki.gg/wiki/Highpass"
+    },
+    {
+      "title": "Bastion Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Bastion_Rise"
+    },
+    {
+      "title": "Hellsreach Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Hellsreach_Citadel"
+    },
+    {
+      "title": "Primals",
+      "url": "https://warcraft.wiki.gg/wiki/Primals"
+    },
+    {
+      "title": "Breakers",
+      "url": "https://warcraft.wiki.gg/wiki/Breakers"
+    },
+    {
+      "title": "Orc",
+      "url": "https://warcraft.wiki.gg/wiki/Orc"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

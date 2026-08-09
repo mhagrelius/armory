@@ -1,0 +1,74 @@
+{
+  "zone": "Arathi Highlands",
+  "map": 14,
+  "expansion": "Classic",
+  "summary": "The Arathi Highlands are rolling green hills and pine in southeastern Lordaeron, dry, cool and poor in everything except history: this is where Thoradin raised Strom and the first human empire. Stromgarde Keep in the southwest was contested for years by the Syndicate, the ogres and the trolls before the Alliance won it back under Danath Trollbane; Refuge Pointe is the Alliance camp in the north and Hammerfall, an old internment camp for orc prisoners, is the Horde's. Boulderfist ogres, Witherbark forest trolls and kobolds hold most of the ground between, and the entrances to Arathi Basin are here as well.",
+  "history": "Thoradin united the human tribes some twenty-eight centuries before the Dark Portal and built Strom on this dry ground, chosen because the Amani could not ambush across it, with a great wall thrown up for good measure. Strom carried the empire through the Troll Wars and long after, until its noble families left for richer land in the north and Faldir took the last of Thoradin's line south to found Stormwind; what remained became Stromgarde. The Second War rolled over the highlands before the Alliance forced the orcs back across the Thandol Span. Stromgarde wanted the prisoners executed afterwards and was overruled, and Danath Trollbane ended up running the camps built instead — one of them here, at the village that became Hammerfall, until Thrall and Doomhammer emptied it. After Thoras Trollbane died the kingdom fell apart from within. His son Galen held a quarter of Stromgarde for years against the Syndicate, the Witherbark and the Boulderfist, was killed by Horde agents hunting Trol'kalar, and came back Forsaken; he turned on the Forsaken to take the keep for himself, and when the Ebon Blade destroyed him it came out that he had murdered his father in the first place. Both armies came back for the ruin in the Fourth War, and Stromgarde came out of that fight with Danath Trollbane crowned king.",
+  "factions": [
+    "League of Arathor and the Kingdom of Stromgarde",
+    "Alliance",
+    "Horde and the Mag'har at Hammerfall",
+    "Forsaken and the Defilers",
+    "Syndicate",
+    "Witherbark forest trolls",
+    "Boulderfist ogres",
+    "Drywhisker kobolds"
+  ],
+  "notable": [
+    {
+      "name": "Stromgarde Keep",
+      "what": "The ruin of Strom, oldest human city on the continent, fought over by everyone in the zone and held again by the Trollbanes"
+    },
+    {
+      "name": "Thoradin's Wall",
+      "what": "The rampart raised against Amani raids, now collapsed and open along the Hillsbrad border"
+    },
+    {
+      "name": "Hammerfall",
+      "what": "The camp built to hold orc prisoners after the Second War, freed by Thrall and Doomhammer and named for the fallen warchief"
+    },
+    {
+      "name": "Refuge Pointe",
+      "what": "The canyon north of the capital where Stromgarde's surviving soldiers went when they lost it"
+    },
+    {
+      "name": "The Circles of Binding",
+      "what": "Four elemental-guarded rings in the hills, holding something nobody has satisfactorily named"
+    },
+    {
+      "name": "Boulderfist Hall",
+      "what": "The ogres' fortified mound near the Thandol Span, with Kor'gresh Coldrage in the deepest cave"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Arathi Highlands",
+      "url": "https://warcraft.wiki.gg/wiki/Arathi_Highlands"
+    },
+    {
+      "title": "Boulderfist Hall",
+      "url": "https://warcraft.wiki.gg/wiki/Boulderfist_Hall"
+    },
+    {
+      "title": "Dabyrie's Farmstead",
+      "url": "https://warcraft.wiki.gg/wiki/Dabyrie%27s_Farmstead"
+    },
+    {
+      "title": "Faldir's Cove",
+      "url": "https://warcraft.wiki.gg/wiki/Faldir%27s_Cove"
+    },
+    {
+      "title": "Galen's Fall",
+      "url": "https://warcraft.wiki.gg/wiki/Galen%27s_Fall"
+    },
+    {
+      "title": "Boulderfist clan",
+      "url": "https://warcraft.wiki.gg/wiki/Boulderfist_clan"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

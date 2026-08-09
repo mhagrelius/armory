@@ -1,0 +1,80 @@
+{
+  "zone": "Isle of Thunder",
+  "map": 504,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Isle of Thunder is what stayed above water when the Thundering Mountain sank: the peak of Lei Shen's original seat, northwest of Townlong Steppes and walled off by mists until he came back to it. The Throne of Thunder stands on it, and the resurrected Thunder King has rebuilt an army there out of mogu, Zandalari and whatever his forges can turn out. The Kirin Tor Offensive and the Sunreaver Onslaught have landed on opposite shores and are racing each other inland as much as they are fighting him.",
+  "history": "Before Lei Shen there was something the mogu answered to on this mountain. He killed it and took the title, then ruled Pandaria from here until he died, after which his successors moved the capital to Mogu'shan Palace and let the place empty. The Sundering dropped the mountain into the sea and left only the summit above the waves, and over the following ten thousand years Pandaria filed the island under legend. The Zandalari corrected that: they carried Lei Shen's body away to be resurrected, and he returned to a fortress that had been waiting for him. Dalaran's own split answered it — Jaina's mages on one shore, Lor'themar's Sunreavers on the other, and the Shado-Pan Assault interested only in the throne.",
+  "factions": [
+    "Mogu empire",
+    "Zandalari Empire",
+    "Kirin Tor Offensive",
+    "Sunreaver Onslaught",
+    "Shado-Pan Assault",
+    "Skumblade saurok"
+  ],
+  "notable": [
+    {
+      "name": "Throne of Thunder",
+      "what": "Lei Shen's citadel at the top of the isle, and the raid that ended him for the second time"
+    },
+    {
+      "name": "Violet Rise",
+      "what": "The Kirin Tor Offensive's foothold on a small island southeast of the isle, phased in once Shaol'mara is taken"
+    },
+    {
+      "name": "Dawnseeker Promontory",
+      "what": "The Sunreaver Onslaught's matching foothold off the northwest coast, phased in once Zeb'tula is taken"
+    },
+    {
+      "name": "Ihgaluk Crag",
+      "what": "The Skumblade saurok's home, with a commanding view over the southern half of the isle"
+    },
+    {
+      "name": "Za'Tual",
+      "what": "Zandalari ground in the southwest, below the Court of Bones and the Diremoor"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Isle of Thunder",
+      "url": "https://warcraft.wiki.gg/wiki/Isle_of_Thunder"
+    },
+    {
+      "title": "Throne of Thunder",
+      "url": "https://warcraft.wiki.gg/wiki/Throne_of_Thunder"
+    },
+    {
+      "title": "Violet Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Violet_Rise"
+    },
+    {
+      "title": "Dawnseeker Promontory",
+      "url": "https://warcraft.wiki.gg/wiki/Dawnseeker_Promontory"
+    },
+    {
+      "title": "Ihgaluk Crag",
+      "url": "https://warcraft.wiki.gg/wiki/Ihgaluk_Crag"
+    },
+    {
+      "title": "Za'Tual",
+      "url": "https://warcraft.wiki.gg/wiki/Za%27Tual"
+    },
+    {
+      "title": "Kirin Tor Offensive",
+      "url": "https://warcraft.wiki.gg/wiki/Kirin_Tor_Offensive"
+    },
+    {
+      "title": "Sunreaver Onslaught",
+      "url": "https://warcraft.wiki.gg/wiki/Sunreaver_Onslaught"
+    },
+    {
+      "title": "Skumblade tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Skumblade_tribe"
+    },
+    {
+      "title": "Zandalari Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Zandalari_Empire"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

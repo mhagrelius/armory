@@ -1,0 +1,45 @@
+{
+  "instance": "The Eye",
+  "journal": 749,
+  "expansion": "The Burning Crusade",
+  "summary": "The Eye is the inner sanctum of Tempest Keep, hanging in the Netherstorm. The naaru built the fortress and can move it between dimensions; Kael'thas Sunstrider took it and set his court up at its heart.",
+  "history": "Tempest Keep was made by the naaru, beings of pure energy and the Legion's oldest enemies, and it is more than a base — the structure can teleport itself between dimensions in a blink. Kael'thas Sunstrider took it from them. Having destroyed his own people's corrupted Sunwell rather than leave it in Scourge hands, and then brought the survivors to Outland and bound them to Illidan, he installed himself in the Eye at the fortress's core and left the three outlying wings — the Arcatraz, the Botanica and the Mechanar — to subordinates. Sunfury blood elves fill it: astromancers under High Astromancer Solarian in the Solarium, bloodwarders on the bridges, and in the Phoenix Hall the phoenix Al'ar, which is his. In the Crucible stands the Void Reaver, a Legion construct. Killing Al'ar was part of what Akama used to persuade Illidan that he was still loyal. At the end of it Kael'thas waits on the Tempest Bridge with four advisors — Thaladred the Darkener, Lord Sanguinar, Grand Astromancer Capernian and Master Engineer Telonicus — and a fortress that can leave.",
+  "assumes": "The raid never explains what Kael'thas is. He is the last Sunstrider, the prince who destroyed his people's own Sunwell to save them from it, and by the time you reach him he is working for the Legion behind Illidan's back — a betrayal revealed in Serpentshrine Cavern, not here.",
+  "disputed": [
+    "The raid apparently went by the name Eye of the Storm while it was in development, and that name was printed on the Outland map published in the Burning Crusade Townhall.",
+    "In game and out, this raid is usually just called Tempest Keep, though the name properly covers the whole complex, including the three five-player dungeons."
+  ],
+  "notable": [
+    {
+      "name": "Kael'thas Sunstrider",
+      "what": "The Sun King, waiting on the Tempest Bridge with four advisors"
+    },
+    {
+      "name": "Al'ar",
+      "what": "The phoenix in the Phoenix Hall; killing it was Akama's proof of loyalty to Illidan"
+    },
+    {
+      "name": "Void Reaver",
+      "what": "A Legion construct standing in the Crucible"
+    },
+    {
+      "name": "High Astromancer Solarian",
+      "what": "Runs the Solarium and the blood elves studying the stars in it"
+    },
+    {
+      "name": "Tempest Keep",
+      "what": "A naaru fortress that can teleport across dimensions, of which this is only the core"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Eye (Tempest Keep)",
+      "url": "https://warcraft.wiki.gg/wiki/The_Eye_%28Tempest_Keep%29"
+    },
+    {
+      "title": "Netherstorm",
+      "url": "https://warcraft.wiki.gg/wiki/Netherstorm"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

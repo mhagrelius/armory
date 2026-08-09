@@ -1,0 +1,45 @@
+{
+  "instance": "The Eye of Eternity",
+  "journal": 756,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Malygos's own chamber at the top of the Nexus on Coldarra, and a raid with exactly one thing in it. The Aspect of Magic decided that mortals could not be trusted with the arcane and set about taking it back from them.",
+  "history": "Malygos came out of ten thousand years of madness with a purpose: the Kirin Tor and every other mortal spellcaster had been abusing magic since the Well of Eternity, and it was going to stop. He redirected Azeroth's ley lines into the Nexus and began draining the world's arcane, killing mages who objected — and taking in some of the Kirin Tor who did not, which was the part Dalaran had not expected. The city picked itself up and moved into the sky over Northrend to fight him, and still could not manage it alone. At Wyrmrest Temple the other flights met, heard what he had become, and reluctantly concluded he was past saving; Alexstrasza, who thought of him as a brother, agreed to it anyway, and the agreement became the Wyrmrest Accord. The red flight carried mortals into the Eye of Eternity itself, where the fight ends on hovering discs above an open platform, and Malygos was killed there. The Kirin Tor spent years afterwards putting the ley lines back. What nobody had an answer for is that killing him left the world's magic with no Aspect appointed to watch it.",
+  "assumes": "It assumes you already accept that killing him is the right answer. Malygos is not corrupted, not possessed and not wrong about what mortals did with magic — he is an Aspect doing his job past the point of reason, and the raid is the other dragons voting to put him down.",
+  "disputed": [
+    "Thrall: Twilight of the Aspects tells Arygos's death here differently from the game. In the novel he is killed in the Eye by an alternate-timeline Aedelas Blackmoore, and his blood is what activates the Focusing Iris. The wiki records both versions side by side rather than choosing.",
+    "Until patch 4.2.0 the fight could not be started at all without the Key to the Focusing Iris, a Sapphiron drop out of Naxxramas, so the raid was gated behind a different raid rather than behind anything in its own story."
+  ],
+  "notable": [
+    {
+      "name": "Malygos",
+      "what": "The Spell-Weaver, Aspect of Magic, and the only encounter in the instance"
+    },
+    {
+      "name": "The Focusing Iris",
+      "what": "The artifact the fight turns on, and the reason people keep coming back for it"
+    },
+    {
+      "name": "The Nexus",
+      "what": "Malygos's spire on Coldarra, of which this is the summit"
+    },
+    {
+      "name": "The Wyrmrest Accord",
+      "what": "The agreement between the flights that authorised his death"
+    },
+    {
+      "name": "The hover discs",
+      "what": "The last phase is fought in the air, on drakes lent by the red flight"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eye of Eternity",
+      "url": "https://warcraft.wiki.gg/wiki/Eye_of_Eternity"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

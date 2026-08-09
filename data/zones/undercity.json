@@ -1,0 +1,72 @@
+{
+  "zone": "Undercity",
+  "map": 90,
+  "expansion": "Classic",
+  "summary": "Undercity was the Forsaken capital, a ring of quarters dug into Lordaeron's old crypts and sewers beneath the ruined palace in Tirisfal Glades — and Sylvanas blighted it herself rather than hand it to the Alliance. The catacombs below are still poison. What is walkable now is the surface: the courtyard, the bell, the throne room where Arthas killed his father and King Terenas' memorial, retaken and cleaned by the Desolate Council, who govern the Forsaken in Sylvanas' place.",
+  "history": "The name is older than the undead who took it — beneath Lordaeron's palace lay the royal crypts, the dungeons and the sewers, and the city's poorest lived there among the prisoners. Orgrim Doomhammer was locked in these cells after the Second War and got out of them again, and nobody has explained how. After the Scourge razed the capital, Arthas set a work crew to hollow out something bigger and was recalled to Northrend before it was done. Sylvanas' breakaway undead won the war for the ruins that followed, named themselves the Forsaken and completed the maze. It survived a coup by Varimathras and Putress, and a joint Horde and Alliance assault that Jaina had to freeze before the two sides destroyed each other. At the opening of the Fourth War Sylvanas abandoned it and drowned it in blight.",
+  "factions": [
+    "Forsaken",
+    "Desolate Council",
+    "Royal Apothecary Society",
+    "Horde",
+    "Val'kyr and darkfallen",
+    "The Scourge and the dreadlords who held it before"
+  ],
+  "notable": [
+    {
+      "name": "Ruins of Lordaeron",
+      "what": "The wrecked capital on the surface, with the throne room, the rose petals still on the flagstones and the bell that rang for Arthas' homecoming"
+    },
+    {
+      "name": "King Terenas' memorial",
+      "what": "A tomb without a body, raised by the humans who stayed so the last true king of Lordaeron would not be forgotten"
+    },
+    {
+      "name": "The Apothecarium",
+      "what": "The Royal Apothecary Society's laboratories in the southwest, where the new plague was worked out on live and dead humans alike"
+    },
+    {
+      "name": "The Trade Quarter",
+      "what": "The hub at the foot of the elevators, bank and auction house at the centre of the wheel"
+    },
+    {
+      "name": "The Royal Quarter",
+      "what": "Sylvanas' court, reached through the Apothecarium and threaded with passages she kept to herself"
+    },
+    {
+      "name": "Orb of Translocation",
+      "what": "The blood elf device outside the ruins that steps a traveller straight into the Sunfury Spire in Silvermoon"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Undercity",
+      "url": "https://warcraft.wiki.gg/wiki/Undercity"
+    },
+    {
+      "title": "Ruins of Lordaeron",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Lordaeron"
+    },
+    {
+      "title": "Forsaken (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken_(kingdom)"
+    },
+    {
+      "title": "Apothecarium",
+      "url": "https://warcraft.wiki.gg/wiki/Apothecarium"
+    },
+    {
+      "title": "Desolate Council",
+      "url": "https://warcraft.wiki.gg/wiki/Desolate_Council"
+    },
+    {
+      "title": "Orb of Translocation",
+      "url": "https://warcraft.wiki.gg/wiki/Orb_of_Translocation"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

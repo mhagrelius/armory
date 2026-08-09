@@ -1,0 +1,54 @@
+{
+  "instance": "Trial of the Crusader",
+  "journal": 757,
+  "expansion": "Wrath of the Lich King",
+  "summary": "An arena rather than a fortress. Tirion Fordring built the Crusaders' Coliseum on the Argent Tournament grounds in Icecrown to work out who was fit to go into Icecrown Citadel, and the trial is the audition.",
+  "history": "By this point the war in Northrend had gone well enough that only the citadel was left, and both Garrosh Hellscream and Varian Wrynn wanted to storm it. Tirion Fordring told them to wait. The Ebon Blade's death knights and the Argent Crusade had both spent weeks watching the Scourge from footholds near the citadel and, despite having every reason to distrust each other, reached the same conclusion: a mass assault was exactly what the Lich King was inviting, because everyone who died in it would stand up again on his side. What might work was a small strike force. To find one, Tirion held a tournament, and both factions trusted him to run it — he had held Light's Hope Chapel, and the Horde had not forgotten what he once gave up for an orc. The trial itself sends beasts of Northrend across the floor, then the eredar Lord Jaraxxus, then champions of the opposing faction fought as a team, then the Twin Val'kyr, and then the floor gives way and the raid is dropped on Anub'arak. Tirion got his champions, and the Ashen Verdict formed around them.",
+  "assumes": "The raid never says why the Argent Crusade is holding a tournament in the middle of Scourge country. It is a selection process, and the reasoning behind it — that a frontal assault on Icecrown Citadel would hand the Lich King an army — is delivered somewhere else entirely.",
+  "disputed": [
+    "The wiki's own infobox lists the raid's status as unavailable and on the public test realm, which is stale data rather than a description of anything.",
+    "Whether Anub'arak breaking through the coliseum floor is Scourge sabotage of the tournament or simply where the building happens to sit is never stated. The wiki records only that the raid is dropped in on him.",
+    "The heroic version is treated as a differently named raid, Trial of the Grand Crusader, rather than a difficulty of this one."
+  ],
+  "notable": [
+    {
+      "name": "Beasts of Northrend",
+      "what": "Gormok the Impaler, then the jormungar Acidmaw and Dreadscale, then the wendigo Icehowl"
+    },
+    {
+      "name": "Lord Jaraxxus",
+      "what": "A man'ari eredar loose in the arena, and not part of anyone's plan"
+    },
+    {
+      "name": "Faction Champions",
+      "what": "A team of the opposing faction fought like players rather than like a boss"
+    },
+    {
+      "name": "The Twin Val'kyr",
+      "what": "Eydis Darkbane and Fjola Lightbane, who have to be killed in step with each other"
+    },
+    {
+      "name": "Anub'arak",
+      "what": "Comes up through the coliseum floor as a fifth encounter nobody was told about"
+    },
+    {
+      "name": "Crusaders' Coliseum",
+      "what": "Built on the Argent Tournament grounds in Icecrown for exactly this purpose"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trial of the Crusader",
+      "url": "https://warcraft.wiki.gg/wiki/Trial_of_the_Crusader"
+    },
+    {
+      "title": "Icecrown Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Icecrown_Citadel"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

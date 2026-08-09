@@ -1,0 +1,69 @@
+{
+  "zone": "Azj-Kahet",
+  "map": 2255,
+  "expansion": "The War Within",
+  "summary": "Azj-Kahet is the bottom of Khaz Algar and the last kingdom of living nerubians — the one the Scourge never took. Most of it is the City of Threads, a capital rebuilt on its own ruins so many times that height is rank: the favoured live at the top and the rest live in what is decaying underneath them. Queen Ansurek rules it in partnership with Xal'atath, which is not a popular arrangement; the wilds beyond the city hold niffen traders, deepwalkers and haranir, and a conspiracy called the Severed Threads is working the whole time to cut the queen down.",
+  "history": "This kingdom survived what Azjol-Nerub did not. Its people came through mythic wars that repeated across millennia by outliving everyone who started them, and then kept to their own depths for a very long time. Xal'atath arrived after the Old Gods were dead and the Black Empire finished, and offered Ansurek the end of that isolation: a way back to power, and a means of remaking chosen nerubians into something stronger. The queen took it. Her people now harvest the Black Blood of the Old Gods inside Nerub-ar Palace and throw swarm after swarm at the Arathi in the cavern above. Enough nerubians disagreed to start conspiring instead.",
+  "factions": [
+    "Kingdom of Azj-Kahet under Queen Ansurek",
+    "Severed Threads",
+    "Xal'atath and the Void",
+    "Niffen of Mmarl",
+    "Haranir and deepwalkers",
+    "Kobyss",
+    "Arathi and the survivors of Dalaran, at Faerin's camp"
+  ],
+  "notable": [
+    {
+      "name": "City of Threads",
+      "what": "The capital filling the southern third of the kingdom, built on top of itself over and over until the ruins became the poor districts"
+    },
+    {
+      "name": "Nerub-ar Palace",
+      "what": "The queen's court, and the works where the Black Blood of the Old Gods is drawn and used"
+    },
+    {
+      "name": "The Weaver's Lair",
+      "what": "The Severed Threads' headquarters, with a portal to Dornogal in it — treason with a supply line"
+    },
+    {
+      "name": "Mmarl",
+      "what": "A niffen settlement older than Loamm, whose people trade with the nerubians and are tolerated in the capital"
+    },
+    {
+      "name": "Rak-Ahat",
+      "what": "Where most of the kingdom's silk is spun, from veils to warsilk — and where the conspiracy weaves its messages into the cloth"
+    },
+    {
+      "name": "Faerin's Advance",
+      "what": "The camp Faerin Lothar set up after the Reckoning came down, and where Dalaran's survivors finally stopped running"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Azj-Kahet",
+      "url": "https://warcraft.wiki.gg/wiki/Azj-Kahet"
+    },
+    {
+      "title": "Azj-Kahet (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Azj-Kahet_(kingdom)"
+    },
+    {
+      "title": "City of Threads",
+      "url": "https://warcraft.wiki.gg/wiki/City_of_Threads"
+    },
+    {
+      "title": "Severed Threads",
+      "url": "https://warcraft.wiki.gg/wiki/Severed_Threads"
+    },
+    {
+      "title": "Weaver's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Weaver%27s_Lair"
+    },
+    {
+      "title": "Mmarl",
+      "url": "https://warcraft.wiki.gg/wiki/Mmarl"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

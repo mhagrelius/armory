@@ -1,0 +1,82 @@
+{
+  "zone": "Valley of the Four Winds",
+  "map": 376,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Valley of the Four Winds is Pandaria's farmland, a wide plain of rolling fields and pools fed by water running down out of the Vale, which is why the vegetables grown here come up the size of a person. Halfhill's market sits dead centre and is the Tillers' home ground; the Stormstout Brewery stands at the western end. That end is closed by the Serpent's Spine, and the mantid behind it are pushing hard enough that the wall has started to crack.",
+  "history": "Farmers have worked this plain for as long as anyone has bothered counting, watered by streams off the Vale, and the corn and lotus they grew fed an empire. They also built its wall: Lei Shen set the valley's pandaren to raising the Serpent's Spine along their western edge, a job that took generations and ended up running the length of the continent. Behind it the mantid hatch a killing generation every century, and the valley sits on their road. The Stormstouts brewed at the western end until the family scattered, and Chen came back generations later to a brewhall full of things that should not have been in it — in time to drill the farmers into a militia when the swarm arrived ten years early.",
+  "factions": [
+    "The Tillers",
+    "Pandaren farmers of Halfhill, Stoneplow and the Thunderfoot Fields",
+    "Virmen",
+    "Kunzen hozen",
+    "Mantid pressing on the Serpent's Spine",
+    "Nesingwary's safari",
+    "Jinyu",
+    "Alliance and Horde travellers"
+  ],
+  "notable": [
+    {
+      "name": "Halfhill",
+      "what": "The valley's market town and social centre, built up a hillside, and the Tillers' headquarters"
+    },
+    {
+      "name": "Stormstout Brewery",
+      "what": "The ancestral Stormstout brewhall at the western end, cleaned out room by room alongside Chen"
+    },
+    {
+      "name": "Stoneplow",
+      "what": "A farming village hard against the wall to the Dread Wastes, worked by four families"
+    },
+    {
+      "name": "Kunzen Village",
+      "what": "Chief Yip-Yip's hozen, on top of the Skyrange in the northwest and reachable only by flying"
+    },
+    {
+      "name": "Nesingwary's Safari",
+      "what": "Hemet Nesingwary and his son, camped in the southwest corner and shooting at things again"
+    },
+    {
+      "name": "Pools of Purity",
+      "what": "The lotus pools above New Cifera, whose flowers are sorted in the village and sent across Pandaria"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Valley of the Four Winds",
+      "url": "https://warcraft.wiki.gg/wiki/Valley_of_the_Four_Winds"
+    },
+    {
+      "title": "Halfhill",
+      "url": "https://warcraft.wiki.gg/wiki/Halfhill"
+    },
+    {
+      "title": "Tillers",
+      "url": "https://warcraft.wiki.gg/wiki/Tillers"
+    },
+    {
+      "title": "Stormstout Brewery",
+      "url": "https://warcraft.wiki.gg/wiki/Stormstout_Brewery"
+    },
+    {
+      "title": "Stoneplow",
+      "url": "https://warcraft.wiki.gg/wiki/Stoneplow"
+    },
+    {
+      "title": "Kunzen Village",
+      "url": "https://warcraft.wiki.gg/wiki/Kunzen_Village"
+    },
+    {
+      "title": "Nesingwary's Safari",
+      "url": "https://warcraft.wiki.gg/wiki/Nesingwary%27s_Safari"
+    },
+    {
+      "title": "New Cifera",
+      "url": "https://warcraft.wiki.gg/wiki/New_Cifera"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

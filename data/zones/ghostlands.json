@@ -1,0 +1,75 @@
+{
+  "zone": "Ghostlands",
+  "map": 95,
+  "expansion": "Classic",
+  "summary": "The Ghostlands are the southern half of the old Eversong forest, killed by the Scourge on their march to Silvermoon and left outside the magic that keeps the rest of Quel'Thalas in permanent spring. The Dead Scar runs up from Deatholme, the ruined villages are still walked by the elves who died defending them, and the blood elves hold only Tranquillien, the Farstrider Enclave and the Sanctum of the Sun, propped up by Forsaken help. Amani and Shadowpine trolls press from the east, where Zul'Aman sits behind its gate.",
+  "history": "The Elrendar once merely divided this forest from the northern woods. Tranquillien was the largest town, the Windrunner family lived here, and three hidden ley-line nexuses held mooncrystals feeding the great shield over Silvermoon, while the Amani based their own power at Zul'Aman. The Old Horde burned the southern stretches in the Second War, the red dragons' fire outpacing Khadgar's storm. Then Arthas came: the elfgates fell, the mooncrystals were taken and their guardians killed, villages were razed and their dead raised as Scourge. Sylvanas's Farstriders were driven north, and the survivors named what was left the Ghostlands because the dead now outnumbered the living. Dar'Khan Drathir ruled the remnant from Deatholme until the elves killed him a second time.",
+  "factions": [
+    "Kingdom of Quel'Thalas and the blood elves",
+    "Farstriders",
+    "Horde",
+    "Forsaken",
+    "Scourge and the Deatholme cult",
+    "Amani tribe",
+    "Shadowpine trolls",
+    "Night elf Sentinel spies",
+    "Blackpaw gnolls"
+  ],
+  "notable": [
+    {
+      "name": "Deatholme",
+      "what": "The Scourge citadel in the southwest with the Tower of the Damned at its centre, where the Dead Scar begins"
+    },
+    {
+      "name": "Tranquillien",
+      "what": "The reclaimed town the whole elven and Forsaken effort in the region is run out of"
+    },
+    {
+      "name": "Zul'Aman",
+      "what": "The Amani capital behind its gate in the east, and the last real territory that empire holds"
+    },
+    {
+      "name": "Windrunner Spire",
+      "what": "The Windrunner family's home on the coast, and the birthplace of the sisters who came out of it"
+    },
+    {
+      "name": "Farstrider Enclave",
+      "what": "The rangers' base on the south shore of Lake Elrendar, cut off from everything friendly and surrounded by trolls"
+    },
+    {
+      "name": "The Dead Scar",
+      "what": "The strip of plagued ground Arthas's army left running the length of Quel'Thalas"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ghostlands",
+      "url": "https://warcraft.wiki.gg/wiki/Ghostlands"
+    },
+    {
+      "title": "Deatholme",
+      "url": "https://warcraft.wiki.gg/wiki/Deatholme"
+    },
+    {
+      "title": "Farstrider Enclave",
+      "url": "https://warcraft.wiki.gg/wiki/Farstrider_Enclave"
+    },
+    {
+      "title": "Goldenmist Village",
+      "url": "https://warcraft.wiki.gg/wiki/Goldenmist_Village"
+    },
+    {
+      "title": "Dawnstar Spire",
+      "url": "https://warcraft.wiki.gg/wiki/Dawnstar_Spire"
+    },
+    {
+      "title": "Amani tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Amani_tribe"
+    },
+    {
+      "title": "Quel'Thalas (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Quel%27Thalas_(kingdom)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

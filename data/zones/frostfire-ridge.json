@@ -1,0 +1,87 @@
+{
+  "zone": "Frostfire Ridge",
+  "map": 525,
+  "expansion": "Warlords of Draenor",
+  "summary": "Frostfire Ridge is the north-western corner of Draenor, where glaciers and lava fields sit side by side and neither gives ground. The Frostwolf clan winters here among the great wolves, the Thunderlords hold the north from villages built inside the skeletons of dead colossals, and ogres hold the high rock above both. It is where the Horde's war on Draenor starts, and Bladespire Citadel is the prize that starts it.",
+  "history": "Frostwolves and Whiteclaws settled the cold valleys when the clans scattered out of Gorgrond, living with the great wolves rather than against them; the Thunderlords made their name hunting gronn and their homes in the bones of what they killed. Above both sat the Gorian Empire, whose northern outpost was the fortress cut into Blade's Edge Mountain, and after Goria fell the Bladespire imperator bred ogres to orcs for numbers he lacked. Garad worked out that those Mok'Nathal were slaves, not soldiers; the rebellion he arranged with Leoroxx brought the fortress down and cost him a son. Generations on, the Iron Horde put its siege works in the middle of Frostwolf country, and Durotan's people took the citadel off the ogres with outside help. In the other Draenor, this land and Gorgrond were crushed together into the Blade's Edge Mountains.",
+  "factions": [
+    "Frostwolf clan",
+    "Thunderlord clan",
+    "Bladespire ogres",
+    "Bloodmaul ogres",
+    "Grimfrost ogres",
+    "Iron Horde",
+    "Horde",
+    "Gronn, ogron and magnaron",
+    "Breakers"
+  ],
+  "notable": [
+    {
+      "name": "Bladespire Citadel",
+      "what": "The Bladespire ogres' capital, hewn into Blade's Edge Mountain, taken by the Frostwolves and Thrall and kept as the Horde's seat on Draenor"
+    },
+    {
+      "name": "Frostwall",
+      "what": "The Horde garrison, dug into the ice and grown from a stockade into a fortress by whoever commands it"
+    },
+    {
+      "name": "Grom'gar",
+      "what": "The Thunderlord clan's ancestral home, raised inside the ribs of the last colossal they say they killed"
+    },
+    {
+      "name": "Iron Siegeworks",
+      "what": "The Iron Horde's engine yard, and the source of nearly every weapon pointed at the Frostwolves"
+    },
+    {
+      "name": "Bloodmaul Slag Mines",
+      "what": "The Bloodmaul ogres' slave pits in the north, worked with the volcanic heat under the glacier"
+    },
+    {
+      "name": "Grimfrost Hill",
+      "what": "An ogre village in the east whose people worship something in the Pit of the Devourer and steal frostwolves to feed it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Frostfire Ridge",
+      "url": "https://warcraft.wiki.gg/wiki/Frostfire_Ridge"
+    },
+    {
+      "title": "Bladespire Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Bladespire_Citadel"
+    },
+    {
+      "title": "Frostwall",
+      "url": "https://warcraft.wiki.gg/wiki/Frostwall"
+    },
+    {
+      "title": "Grom'gar",
+      "url": "https://warcraft.wiki.gg/wiki/Grom%27gar"
+    },
+    {
+      "title": "Iron Siegeworks",
+      "url": "https://warcraft.wiki.gg/wiki/Iron_Siegeworks"
+    },
+    {
+      "title": "Bloodmaul Slag Mines",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodmaul_Slag_Mines"
+    },
+    {
+      "title": "Grimfrost Hill",
+      "url": "https://warcraft.wiki.gg/wiki/Grimfrost_Hill"
+    },
+    {
+      "title": "Frostwolf Orcs",
+      "url": "https://warcraft.wiki.gg/wiki/Frostwolf_Orcs"
+    },
+    {
+      "title": "Bladespire clan",
+      "url": "https://warcraft.wiki.gg/wiki/Bladespire_clan"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

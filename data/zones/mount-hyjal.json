@@ -1,0 +1,88 @@
+{
+  "zone": "Mount Hyjal",
+  "map": 198,
+  "expansion": "Cataclysm",
+  "summary": "Mount Hyjal is the sacred peak of northern Kalimdor, crowned by the World Tree Nordrassil and the second Well of Eternity beneath it. It is druid country: the Cenarion Circle and the Guardians of Hyjal keep the shrines to the Ancients here, alongside the night elves of Nordrassil and the green dragonflight that has watched the mountain since the world was ordered. The forest is still visibly recovering from the fire that came up out of the Firelands during the Cataclysm.",
+  "history": "Freya bound her Wild Gods' spirits to the Emerald Dream here and left Ysera's flight guarding them. Dark trolls lived in caverns under it and Azshara's empire never came up the slope. When the first Well of Eternity imploded and broke the world, Hyjal endured and the survivors climbed to it; Illidan poured a second Well on the summit from stolen vials, and the kaldorei planted Nordrassil over it with three Aspects' blessing and sealed its maker into one of the barrow dens beneath the mountain. Archimonde came for that Well in the Third War and the wisps destroyed him, taking night elven immortality with him. Deathwing tore the Firelands open on the summit and Ragnaros came up through it; the druids called the Wild Gods back to the mountain, Cenarius among them, then carried the war down into the fire and killed him in his own hall. The Aspects healed Nordrassil afterwards.",
+  "factions": [
+    "Guardians of Hyjal",
+    "Cenarion Circle",
+    "Druids of the Talon",
+    "Night elves of Nordrassil",
+    "Green dragonflight",
+    "Twilight's Hammer",
+    "Druids of the Flame and Ragnaros's fire elementals",
+    "Twilight dragonflight",
+    "Black dragonflight",
+    "Gar'gol's ogres"
+  ],
+  "notable": [
+    {
+      "name": "Nordrassil",
+      "what": "The original World Tree, grown over the second Well of Eternity at the summit and blessed by Alexstrasza, Nozdormu and Ysera"
+    },
+    {
+      "name": "Sulfuron Spire",
+      "what": "The burning southern peak that serves as the doorway into Ragnaros's Firelands"
+    },
+    {
+      "name": "Grove of Aessina",
+      "what": "Night elf ruins in the northwest devoted to the wilderness spirit, and the base from which the burned forest was regrown"
+    },
+    {
+      "name": "Shrine of Aviana",
+      "what": "The Druids of the Talon's shrine, where the goddess of winged creatures was brought back before the Legion later destroyed it"
+    },
+    {
+      "name": "Darkwhisper Gorge",
+      "what": "Twilight's Hammer country in the southeast, holding Ascendant's Rise where the cult's best make themselves part elemental, and Doom's Vigil where its failures are sent to die"
+    },
+    {
+      "name": "Malfurion Stormrage",
+      "what": "The archdruid who returned from the Emerald Dream to lead the defence of the mountain and the counterattack that followed"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mount Hyjal",
+      "url": "https://warcraft.wiki.gg/wiki/Mount_Hyjal"
+    },
+    {
+      "title": "Nordrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Nordrassil"
+    },
+    {
+      "title": "Guardians of Hyjal",
+      "url": "https://warcraft.wiki.gg/wiki/Guardians_of_Hyjal"
+    },
+    {
+      "title": "Grove of Aessina",
+      "url": "https://warcraft.wiki.gg/wiki/Grove_of_Aessina"
+    },
+    {
+      "title": "Firelands",
+      "url": "https://warcraft.wiki.gg/wiki/Firelands"
+    },
+    {
+      "title": "Ascendant's Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Ascendant%27s_Rise"
+    },
+    {
+      "title": "Doom's Vigil",
+      "url": "https://warcraft.wiki.gg/wiki/Doom%27s_Vigil"
+    },
+    {
+      "title": "Cenarion Circle",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Circle"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

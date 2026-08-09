@@ -1,0 +1,70 @@
+{
+  "zone": "Zaralek Cavern",
+  "map": 2133,
+  "expansion": "Dragonflight",
+  "summary": "Zaralek Cavern is the enormous cave system under the Dragon Isles, reached through a mouth in the hills between the Ohn'ahran Plains and Valdrakken. Two peoples live down here and neither had much interest in surface politics until the surface arrived: the molelike niffen of Loamm and the drogbar of Glimmerogg, who race snails and lift heavy things. Above them in the rock sit the Zaqali djaradin's caldera and Aberrus, Neltharion's hidden laboratory, directly beneath the citadel he defended the isles from.",
+  "history": "The Earth-Warder wanted somewhere the other Aspects could not look, and he dug it here. Aberrus is where his worst work was done, and the shadow chamber inside it is where he first answered the Old Gods — every later thing Deathwing did began in this cave. Long after he was gone, the niffen and the drogbar made their own lives underground while the Zaqali held the volcanic south, and a titan facility sat quietly in the southeast. Then Raszageth died on the surface and the Primalists came looking for older allies. Iridikron went down into the deep, everyone chasing him followed, and the crucible was opened by people who did not know what was still in it.",
+  "factions": [
+    "Loamm Niffen",
+    "Drogbar of Glimmerogg",
+    "Zaqali djaradin",
+    "Primalists",
+    "The Sundered Flame",
+    "Valdrakken Accord and Wrathion's Blacktalon",
+    "Dragonscale Expedition",
+    "Obsidian Brood"
+  ],
+  "notable": [
+    {
+      "name": "Aberrus, the Shadowed Crucible",
+      "what": "Neltharion's laboratory beneath the Obsidian Citadel, where the dracthyr and worse were made and where he first listened to the Old Gods"
+    },
+    {
+      "name": "Loamm",
+      "what": "The niffen town, run on scent, trade and gossip, and the base every expedition into the cavern works out of"
+    },
+    {
+      "name": "Glimmerogg",
+      "what": "The drogbar settlement in the southwest, host of the Glimmerogg Games and the snail racing that goes with them"
+    },
+    {
+      "name": "Zaqali Caldera",
+      "what": "The djaradin stronghold in the molten south, held by the tribe that came up out of hibernation looking for dragons"
+    },
+    {
+      "name": "Nal ks'kol",
+      "what": "A titan facility in the southeast, and the place the question of what comes after the Aspects got asked"
+    },
+    {
+      "name": "Obsidian Rest",
+      "what": "The Accord and Blacktalon's forward camp on the northern road to Aberrus"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zaralek Cavern",
+      "url": "https://warcraft.wiki.gg/wiki/Zaralek_Cavern"
+    },
+    {
+      "title": "Aberrus, the Shadowed Crucible",
+      "url": "https://warcraft.wiki.gg/wiki/Aberrus,_the_Shadowed_Crucible"
+    },
+    {
+      "title": "Loamm",
+      "url": "https://warcraft.wiki.gg/wiki/Loamm"
+    },
+    {
+      "title": "Loamm Niffen",
+      "url": "https://warcraft.wiki.gg/wiki/Loamm_Niffen"
+    },
+    {
+      "title": "Glimmerogg",
+      "url": "https://warcraft.wiki.gg/wiki/Glimmerogg"
+    },
+    {
+      "title": "Nal ks'kol",
+      "url": "https://warcraft.wiki.gg/wiki/Nal_ks%27kol"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

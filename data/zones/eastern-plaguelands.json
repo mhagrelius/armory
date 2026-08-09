@@ -1,0 +1,82 @@
+{
+  "zone": "Eastern Plaguelands",
+  "map": 23,
+  "expansion": "Classic",
+  "summary": "The Eastern Plaguelands are the badly damaged half of old Lordaeron's east: brown ground under an orange haze, enormous fungus, and animals that ought to have died years ago. Stratholme stands ruined at the northern edge, the Argent Crusade holds Light's Hope Chapel and a ring of retaken watchtowers meant as points of light across the middle, and Acherus, the death knights' floating hold, hangs over the far east. The Scourge's grip has been loosening for years, but Plaguewood, Tyr's Hand and the emptied towns between them are still nowhere to travel alone.",
+  "history": "This was the Eastweald: farms and villages under Stratholme, the second city of the kingdom, and the ground the Church of the Holy Light chose for its greatest houses — Light's Hope and Tyr's Hand among them. Arthas came hunting Mal'Ganis, found Stratholme's people already carrying the plague, and killed them himself when Uther refused the order, which broke the Silver Hand and him with it. Lordaeron fell and the blight spread over everything. Alexandros Mograine's crusade held Tyr's Hand before splitting three ways, and Naxxramas hung over the Plaguewood until Kel'Thuzad was beaten inside it. Light's Hope Chapel bore the weight twice: his son Darion ran himself through on the corrupted Ashbringer there to free him, and the Lich King's own attack on the chapel later cost him the blade, his death knights and Tirion Fordring both.",
+  "factions": [
+    "Argent Crusade",
+    "Brotherhood of the Light",
+    "Knights of the Ebon Blade",
+    "Knights of the Silver Hand",
+    "Scourge and the Cult of the Damned",
+    "Scarlet Crusade",
+    "Mossflayer forest trolls",
+    "High elves of Quel'Lithien Lodge"
+  ],
+  "notable": [
+    {
+      "name": "Stratholme",
+      "what": "The city Arthas purged and the Scourge then made its southern capital under Kel'Thuzad, still standing and still held"
+    },
+    {
+      "name": "Light's Hope Chapel",
+      "what": "A country chapel that became the Argent Crusade's fortress, and the one safe place in the region"
+    },
+    {
+      "name": "Acherus: The Ebon Hold",
+      "what": "The necropolis over the eastern end, built by the Lich King and kept by the death knights who turned on him"
+    },
+    {
+      "name": "Tyr's Hand",
+      "what": "The Scarlet Crusade's walled town and abbey in the southeast, the last of the old Scarlet Enclave"
+    },
+    {
+      "name": "Darrowshire",
+      "what": "The village the Scourge broke by corrupting its own captain, and where his militia's ghosts are still fighting"
+    },
+    {
+      "name": "The Argent towers",
+      "what": "Crown Guard, Northpass, Eastwall and Plaguewood — Lordaeron's ruined watchtowers, fought over by the factions and now beacons"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eastern Plaguelands",
+      "url": "https://warcraft.wiki.gg/wiki/Eastern_Plaguelands"
+    },
+    {
+      "title": "Light's Hope Chapel",
+      "url": "https://warcraft.wiki.gg/wiki/Light%27s_Hope_Chapel"
+    },
+    {
+      "title": "Darrowshire",
+      "url": "https://warcraft.wiki.gg/wiki/Darrowshire"
+    },
+    {
+      "title": "Corin's Crossing",
+      "url": "https://warcraft.wiki.gg/wiki/Corin%27s_Crossing"
+    },
+    {
+      "title": "Crown Guard Tower",
+      "url": "https://warcraft.wiki.gg/wiki/Crown_Guard_Tower"
+    },
+    {
+      "title": "Knights of the Ebon Blade",
+      "url": "https://warcraft.wiki.gg/wiki/Knights_of_the_Ebon_Blade"
+    },
+    {
+      "title": "Brotherhood of the Light",
+      "url": "https://warcraft.wiki.gg/wiki/Brotherhood_of_the_Light"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,90 @@
+{
+  "zone": "Hellfire Peninsula",
+  "map": 100,
+  "expansion": "The Burning Crusade",
+  "summary": "Hellfire Peninsula is the red, bone-strewn plain on the Outland side of the Dark Portal, and the first ground almost everybody sets foot on when they cross. Fel orcs hold Hellfire Citadel at its centre, the Burning Legion pours reinforcements onto the Stair of Destiny, and the Alliance at Honor Hold and the Horde at Thrallmar face each other across the middle of it. Blood elves, draenei and Cenarion druids all keep smaller outposts here, and three ruined forts between the citadel and the two towns change hands whenever either faction bothers to take them.",
+  "history": "Tanaan Jungle grew out of a sporemound's corpse, and the Bleeding Hollow and Bonechewer lived under its canopy. Blackhand's masons raised the Citadel in the west as a council hall for the chieftains and a warlock workshop. On a peak beside it the clans drank Mannoroth's blood, and Gul'dan tore the mountain open in celebration: the Throne of Kil'jaeden. Warlock magic dried the jungle to red hardpan and reddened the sky, naming both peninsula and fortress. The Alliance Expedition came back through the Dark Portal, took the citadel in a day and sealed the rift as Draenor broke. When the portal reopened Kil'jaeden spent Kruul and Kazzak holding it, wanting both factions ashore and aimed at Illidan. The Alliance found Honor Hold still standing under Danath Trollbane, the Horde raised Thrallmar; the citadel fell last, Magtheridon bled dry inside.",
+  "factions": [
+    "Honor Hold",
+    "Thrallmar",
+    "Fel Horde",
+    "Burning Legion",
+    "Mag'har",
+    "Cenarion Expedition",
+    "Sunfury blood elves of Falcon Watch",
+    "Haal'eshi arakkoa"
+  ],
+  "notable": [
+    {
+      "name": "The Dark Portal and the Stair of Destiny",
+      "what": "The far side of the gateway between worlds, and the permanent battle line where Legion demons and the combined Alliance and Horde garrison grind against each other"
+    },
+    {
+      "name": "Hellfire Citadel",
+      "what": "Blackhand's fortress in the First and Second Wars, now the fel orcs' stronghold and the shell holding the zone's dungeons"
+    },
+    {
+      "name": "Honor Hold and Thrallmar",
+      "what": "The Alliance and Horde towns — Honor Hold descended from the stranded Sons of Lothar, Thrallmar founded by the new Horde"
+    },
+    {
+      "name": "The Path of Glory",
+      "what": "The road to the portal the orcs surfaced with draenei bones; you can still hear them break underfoot"
+    },
+    {
+      "name": "Force Commander Danath Trollbane",
+      "what": "The human commander at Honor Hold, left on this side of the portal when it closed"
+    },
+    {
+      "name": "Broken Hill, The Overlook and The Stadium",
+      "what": "Three ruined forts west of the citadel, a world PvP objective; holding all three gives your faction a zone-wide damage bonus"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hellfire Peninsula",
+      "url": "https://warcraft.wiki.gg/wiki/Hellfire_Peninsula"
+    },
+    {
+      "title": "Hellfire Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Hellfire_Citadel"
+    },
+    {
+      "title": "Honor Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Honor_Hold"
+    },
+    {
+      "title": "Fel Horde",
+      "url": "https://warcraft.wiki.gg/wiki/Fel_Horde"
+    },
+    {
+      "title": "Falcon Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Falcon_Watch"
+    },
+    {
+      "title": "Cenarion Post",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Post"
+    },
+    {
+      "title": "Den of Haal'esh",
+      "url": "https://warcraft.wiki.gg/wiki/Den_of_Haal%27esh"
+    },
+    {
+      "title": "Expedition Armory",
+      "url": "https://warcraft.wiki.gg/wiki/Expedition_Armory"
+    },
+    {
+      "title": "Throne of Kil'jaeden",
+      "url": "https://warcraft.wiki.gg/wiki/Throne_of_Kil%27jaeden"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

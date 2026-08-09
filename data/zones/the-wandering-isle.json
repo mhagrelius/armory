@@ -1,0 +1,85 @@
+{
+  "zone": "The Wandering Isle",
+  "map": null,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Wandering Isle is not an island. It is the shell of Shen-zin Su, a sea turtle grown big enough to carry villages, forest, farmland and small mountains, and it has been circling Azeroth since the pandaren who first rode it decided not to get off. This is where a pandaren character starts, at Master Shang Xi's training grounds, and since the Legion burned the Peak of Serenity it is also home to the monks who survived, gathered at the Temple of Five Dawns as the Order of the Broken Temple.",
+  "history": "Liu Lang rode this turtle away from Pandaria to find out whether anything of the world had survived the Sundering, and his descendants never got off; over the centuries they stopped calling home at all. What ended that was a collision. The Skyseeker, an Alliance gunship carrying Horde prisoners, came out of the mist into Shen-zin Su's flank, and the prisoners walked free in the confusion — so both factions were ashore at once and the pandaren took sides around them. Ji Firepaw blew the wreck clear rather than pick it out, which opened the wound instead of closing it and left the turtle dying and drifting towards the Maelstrom. Horde druids and Alliance priests had to heal him together.",
+  "factions": [
+    "Shang Xi's Academy",
+    "Order of the Broken Temple",
+    "Fe-Feng hozen",
+    "Amberleaf sprites",
+    "Plump virmen",
+    "Deepscale saurok",
+    "Shipwrecked Alliance and Horde crews of the Skyseeker"
+  ],
+  "notable": [
+    {
+      "name": "Shen-zin Su",
+      "what": "The turtle itself — the ground everyone is standing on, and the only patient on the island"
+    },
+    {
+      "name": "Temple of Five Dawns",
+      "what": "The isle's temple, and the Order of the Broken Temple's home since the Peak of Serenity was destroyed"
+    },
+    {
+      "name": "Shang Xi Training Grounds",
+      "what": "A monastery in the northeast where new pandaren wake up and are taught by Master Shang Xi"
+    },
+    {
+      "name": "The Dai-Lo Farmstead",
+      "what": "The large farm in the southeast, its soil drying out since the earth spirit fell asleep and its crops stolen by virmen"
+    },
+    {
+      "name": "Wreck of the Skyseeker",
+      "what": "The Alliance gunship embedded in the turtle's flank, in the forbidden Pei-Wu Forest"
+    },
+    {
+      "name": "Fe-Feng Village",
+      "what": "Ruk-Ruk's hozen, northwest of Morning Breeze Village and stealing anything left unattended"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wandering Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Wandering_Isle"
+    },
+    {
+      "title": "Shang Xi Training Grounds",
+      "url": "https://warcraft.wiki.gg/wiki/Shang_Xi_Training_Grounds"
+    },
+    {
+      "title": "Shang Xi's Academy",
+      "url": "https://warcraft.wiki.gg/wiki/Shang_Xi%27s_Academy"
+    },
+    {
+      "title": "Order of the Broken Temple",
+      "url": "https://warcraft.wiki.gg/wiki/Order_of_the_Broken_Temple"
+    },
+    {
+      "title": "Dai-Lo Farmstead",
+      "url": "https://warcraft.wiki.gg/wiki/Dai-Lo_Farmstead"
+    },
+    {
+      "title": "Fe-Feng Village",
+      "url": "https://warcraft.wiki.gg/wiki/Fe-Feng_Village"
+    },
+    {
+      "title": "Fe-Feng tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Fe-Feng_tribe"
+    },
+    {
+      "title": "Amberleaf",
+      "url": "https://warcraft.wiki.gg/wiki/Amberleaf"
+    },
+    {
+      "title": "Mandori Village",
+      "url": "https://warcraft.wiki.gg/wiki/Mandori_Village"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

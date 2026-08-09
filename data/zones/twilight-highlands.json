@@ -1,0 +1,77 @@
+{
+  "zone": "Twilight Highlands",
+  "map": 241,
+  "expansion": "Cataclysm",
+  "summary": "The Twilight Highlands are the northeastern corner of Khaz Modan, a coastal highland that used to be pleasant and is now half-swallowed by Void corruption bleeding out of the Twilight's Hammer's citadel. Wildhammer dwarves hold the north and west, Dragonmaw orcs the south and the port, and the red dragonflight keeps a watch from the Vermillion Redoubt over the cursed fortress of Grim Batol. Ogres, naga and twilight dragonkin fill in the gaps.",
+  "history": "The Wildhammers returned to Grim Batol after the War of the Three Hammers and found Modgud's curse still in the stone; most left for the Hinterlands and the rest settled the highlands nearby. The Dragonmaw orcs who survived Grim Batol built a fortress on the coast, and the two have fought over the ground ever since. Then Cho'gall brought the Twilight's Hammer here, carved the Bastion of Twilight out of a spire, and the Void seeping from it warped the land and gave the region its present name. Both factions came for it during the war on Deathwing — Kurdran Wildhammer uniting the dwarf clans, Garrosh buying the Dragonmaw with promises of blood. Deathwing fought Alexstrasza above Grim Batol and left wounded; Cho'gall died in his own citadel. The corruption has not receded.",
+  "factions": [
+    "Wildhammer clan",
+    "Dragonmaw clan",
+    "Alliance",
+    "Horde",
+    "Twilight's Hammer",
+    "Twilight dragonflight",
+    "Red dragonflight",
+    "Black dragonflight",
+    "Bloodeye ogres and ettins",
+    "Glopgut ogres",
+    "Blackscale naga"
+  ],
+  "notable": [
+    {
+      "name": "Grim Batol",
+      "what": "The abandoned Wildhammer fortress under Modgud's curse — dragon prison, cult stronghold, and later a hiding place nobody thought to search"
+    },
+    {
+      "name": "The Bastion of Twilight",
+      "what": "Cho'gall's citadel, cut into a spire as the cult's seat of worship; it is still leaking Void into the country around it"
+    },
+    {
+      "name": "Vermillion Redoubt",
+      "what": "The red dragonflight's roost, where Alexstrasza keeps a standing watch on the corruption"
+    },
+    {
+      "name": "Thundermar",
+      "what": "The Wildhammer town of Colin Thundermar's clan, and the Alliance's foothold in the highlands"
+    },
+    {
+      "name": "Bloodgulch",
+      "what": "The heart of the Dragonmaw presence here, decorated with the remains of black dragons"
+    },
+    {
+      "name": "Cho'gall",
+      "what": "The two-headed ogre mage who led the Twilight's Hammer into the region and was killed in the Bastion he built"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Twilight Highlands",
+      "url": "https://warcraft.wiki.gg/wiki/Twilight_Highlands"
+    },
+    {
+      "title": "Bastion of Twilight",
+      "url": "https://warcraft.wiki.gg/wiki/Bastion_of_Twilight"
+    },
+    {
+      "title": "Bloodgulch",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodgulch"
+    },
+    {
+      "title": "Dragonmaw clan",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonmaw_clan"
+    },
+    {
+      "title": "Firebeard's Patrol",
+      "url": "https://warcraft.wiki.gg/wiki/Firebeard%27s_Patrol"
+    },
+    {
+      "title": "Glopgut's Hollow",
+      "url": "https://warcraft.wiki.gg/wiki/Glopgut%27s_Hollow"
+    },
+    {
+      "title": "Blackscale naga",
+      "url": "https://warcraft.wiki.gg/wiki/Blackscale_naga"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

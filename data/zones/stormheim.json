@@ -1,0 +1,89 @@
+{
+  "zone": "Stormheim",
+  "map": 634,
+  "expansion": "Legion",
+  "summary": "Stormheim is the eastern end of the Broken Isles: fjords, ravines and amber woods cut out of the rock by the sea, covered in vrykul monuments. The vrykul here live between two afterlives that are both directly overhead — Odyn's Halls of Valor in the clouds and Helya's Helheim under the water — and the clans are split over which one they serve. The Legion's bargain has already taken the Tideskorn, and the Alliance and Horde have landed on the same coast looking for the Aegis of Aggramar.",
+  "history": "The vrykul took this land from Highborne occupants under King Magnar Icebreaker, only for Helya's followers to murder Magnar and his son in the hour of their victory. Millennia later, with the Halls of Valor hanging in the sky as Odyn's prison, vrykul crossed from Northrend in numbers to live beneath them and hope for a place among the Valarjar; Helya's kvaldir have been picking off their dead ever since. When the Legion returned, Prince Skovald of the Tideskorn made a pact with the demons, killed his father, then his brothers, then his mother, and made himself God-King with fel-corrupted Felskorn at his back. The two Azerothian factions arrived, and promptly fought each other.",
+  "factions": [
+    "Tideskorn clan",
+    "Drekirjar",
+    "Bonespeakers",
+    "Valkyra",
+    "Valarjar and Odyn",
+    "Helarjar kvaldir and Helya",
+    "Felskorn",
+    "Burning Legion",
+    "Thorignir storm drakes",
+    "Alliance and the Gilneas Brigade",
+    "Horde and the Forsaken fleet"
+  ],
+  "notable": [
+    {
+      "name": "Halls of Valor",
+      "what": "Odyn's hall in the clouds and the vrykul afterlife they are all trying to earn, reached through the Gates of Valor in the east"
+    },
+    {
+      "name": "Helheim",
+      "what": "Helya's realm beneath the water, where the souls she steals are put to work as kvaldir"
+    },
+    {
+      "name": "Skold-Ashil",
+      "what": "The town on Ashil's Bay built around the Vault of Eyir, where val'kyr are made and Sylvanas went to make her own"
+    },
+    {
+      "name": "Hrydshal",
+      "what": "The Drekirjar's city in the south, whose people rode the Thorignir storm drakes until they enslaved them instead"
+    },
+    {
+      "name": "Greywatch",
+      "what": "Genn Greymane's camp in the east and the centre of the Gilneas Brigade's war here"
+    },
+    {
+      "name": "Dreadwake's Landing",
+      "what": "The Forsaken beachhead on the same bay, with Sylvanas' flagship moored offshore"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stormheim",
+      "url": "https://warcraft.wiki.gg/wiki/Stormheim"
+    },
+    {
+      "title": "Halls of Valor",
+      "url": "https://warcraft.wiki.gg/wiki/Halls_of_Valor"
+    },
+    {
+      "title": "Hrydshal",
+      "url": "https://warcraft.wiki.gg/wiki/Hrydshal"
+    },
+    {
+      "title": "Skold-Ashil",
+      "url": "https://warcraft.wiki.gg/wiki/Skold-Ashil"
+    },
+    {
+      "title": "Greywatch",
+      "url": "https://warcraft.wiki.gg/wiki/Greywatch"
+    },
+    {
+      "title": "Dreadwake's Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Dreadwake%27s_Landing"
+    },
+    {
+      "title": "Drekirjar",
+      "url": "https://warcraft.wiki.gg/wiki/Drekirjar"
+    },
+    {
+      "title": "Tideskorn",
+      "url": "https://warcraft.wiki.gg/wiki/Tideskorn"
+    },
+    {
+      "title": "Helarjar",
+      "url": "https://warcraft.wiki.gg/wiki/Helarjar"
+    },
+    {
+      "title": "Thorignir",
+      "url": "https://warcraft.wiki.gg/wiki/Thorignir"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

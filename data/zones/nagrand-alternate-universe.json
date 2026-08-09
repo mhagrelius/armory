@@ -1,0 +1,89 @@
+{
+  "zone": "Nagrand (alternate universe)",
+  "map": 550,
+  "expansion": "Warlords of Draenor",
+  "summary": "Nagrand is the windswept west of Draenor: open plains under impossible arches of floating rock, with the crystal mountain of Oshu'gun at the centre and the elements stirring at the Throne of the Elements. Seafaring ogres of the Gorian Empire hold the south from Highmaul, where Imperator Mar'gok rules what is left of their empire. The Warsong and Burning Blade clans hold the east for the Iron Horde out of Grommashar and Hallvalor, and the Black Market has moved its business into the Ring of Blood.",
+  "history": "The giant Grond's head came to rest here, and the elementals born out of his remains never left it; the orcs cut a temple into the skull and called the place the Throne of the Elements, and shamanism began there. Gorian sorcerers blew that temple apart trying to take the power for themselves, and the war it provoked ended with the elements swallowing the ogre capital whole. Nagrand — \"land of winds\" — was the clans' common ground afterwards: twice a year they gathered beneath Oshu'gun for the Kosh'harg and set their feuds down. The Warsong later claimed the plains outright and paid in ogre raids, one of which killed Grommash Hellscream's mate Golka. At Highmaul a slave revolt cost the emperor his head to Kargath Bladefist; Mar'gok's diminished empire now keeps an uneasy bargain with the Iron Horde.",
+  "factions": [
+    "Warsong clan",
+    "Burning Blade clan",
+    "Iron Horde",
+    "Gorian Empire ogres",
+    "Frostwolf clan, in season",
+    "Draenei of Telaar and the Rangari",
+    "Alliance",
+    "Horde",
+    "Sabermaw saberon",
+    "Ogron and gronn",
+    "Elementals of the Throne"
+  ],
+  "notable": [
+    {
+      "name": "Highmaul",
+      "what": "The Gorian Empire's capital in the west, ogre civilisation at its height, and the first raid of the war"
+    },
+    {
+      "name": "Oshu'gun",
+      "what": "The crystal mountain the clans held sacred and met beneath, and the reason the Kosh'harg happened here"
+    },
+    {
+      "name": "Grommashar",
+      "what": "The Warsong fortress on the south-east coast, named for Hellscream, from which the clan holds the eastern half of the plain"
+    },
+    {
+      "name": "Hallvalor",
+      "what": "The Burning Blade clan's ancestral home in the east"
+    },
+    {
+      "name": "Telaar",
+      "what": "A draenei town in the south, taken by the Iron Horde and watched from the Rangari's overlook above it"
+    },
+    {
+      "name": "Lok-rath",
+      "what": "An Iron Horde village on a river island, stockpiling currencies that plainly came from another world"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nagrand (alternate universe)",
+      "url": "https://warcraft.wiki.gg/wiki/Nagrand_(alternate_universe)"
+    },
+    {
+      "title": "Highmaul",
+      "url": "https://warcraft.wiki.gg/wiki/Highmaul"
+    },
+    {
+      "title": "Grommashar",
+      "url": "https://warcraft.wiki.gg/wiki/Grommashar"
+    },
+    {
+      "title": "Hallvalor",
+      "url": "https://warcraft.wiki.gg/wiki/Hallvalor"
+    },
+    {
+      "title": "Telaar (alternate universe)",
+      "url": "https://warcraft.wiki.gg/wiki/Telaar_(alternate_universe)"
+    },
+    {
+      "title": "Lok-rath",
+      "url": "https://warcraft.wiki.gg/wiki/Lok-rath"
+    },
+    {
+      "title": "Ironfist Harbor",
+      "url": "https://warcraft.wiki.gg/wiki/Ironfist_Harbor"
+    },
+    {
+      "title": "Mar'gok's Overwatch",
+      "url": "https://warcraft.wiki.gg/wiki/Mar%27gok%27s_Overwatch"
+    },
+    {
+      "title": "Throne of the Elements",
+      "url": "https://warcraft.wiki.gg/wiki/Throne_of_the_Elements"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

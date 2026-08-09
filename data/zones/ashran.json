@@ -1,0 +1,78 @@
+{
+  "zone": "Ashran",
+  "map": 588,
+  "expansion": "Warlords of Draenor",
+  "summary": "Ashran is an island in the Barrier Sea off the coast of Tanaan Jungle: ruined ogre country that both Azerothian factions landed on because the ground is full of artifacts. Stormshield and Warspear face each other across it as the expansion's faction cities, and the contested ground between them was Warlords of Draenor's open-world player-versus-player zone. Since Battle for Azeroth that fight has been folded into an instanced epic battleground, and the open island is still there, quiet, with its events switched off.",
+  "history": "The island belonged to the Gorian Empire, ruled at one point by Kor'lok, and its towers, arenas and worked-out mines are what is left of that. Two ogre clans divide the ruins: the Ashmaul, who bind fire and field pyromancers and summoned elementals, and the smaller Gor'vosh in the south-eastern burial grounds, who raise the Ashmaul dead back up. The two loathe each other and everything else on the island. The Alliance and Horde came for the artifact fragments scattered across it, Harrison Jones digging for one side and Belloc Brightblade for the other, the Reliquary wanting the power and the Steamwheedle goblins stringing fragments into souvenirs; each faction has since cut its own entrance into the mines beneath.",
+  "factions": [
+    "Alliance and Wrynn's Vanguard",
+    "Horde and Vol'jin's Spear",
+    "Ashmaul ogres",
+    "Gor'vosh ogres",
+    "The Reliquary",
+    "Steamwheedle Cartel",
+    "Sharpclaw and Panthran saberon",
+    "Podlings and goren"
+  ],
+  "notable": [
+    {
+      "name": "Stormshield",
+      "what": "The Alliance's island city and staging ground, walled off from the fight it overlooks"
+    },
+    {
+      "name": "Warspear",
+      "what": "The Horde's answering outpost on the far side, keep, infirmary and cells included"
+    },
+    {
+      "name": "Ring of Conquest",
+      "what": "The old ogre arena in the west, held by the Ashmaul and fought over by everyone who wants the road"
+    },
+    {
+      "name": "Ashmaul Burial Grounds",
+      "what": "The Gor'vosh's home in the south-west, where their necromancers work on graves that are not theirs"
+    },
+    {
+      "name": "Ashran Excavation",
+      "what": "The mines under the island, dug at from both sides, with Rukmaz's Vault and the artifact both factions want at the end of them"
+    },
+    {
+      "name": "Crestfall Rise and Emberfall Watch",
+      "what": "The two guardian towers, one Alliance and one Horde, each with a mage on top of it shooting whatever comes in range"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ashran",
+      "url": "https://warcraft.wiki.gg/wiki/Ashran"
+    },
+    {
+      "title": "Ashmaul",
+      "url": "https://warcraft.wiki.gg/wiki/Ashmaul"
+    },
+    {
+      "title": "Gor'vosh",
+      "url": "https://warcraft.wiki.gg/wiki/Gor%27vosh"
+    },
+    {
+      "title": "Ashmaul Burial Grounds",
+      "url": "https://warcraft.wiki.gg/wiki/Ashmaul_Burial_Grounds"
+    },
+    {
+      "title": "Brute's Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Brute%27s_Rise"
+    },
+    {
+      "title": "Crestfall Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Crestfall_Rise"
+    },
+    {
+      "title": "Emberfall Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Emberfall_Watch"
+    },
+    {
+      "title": "Gorian Falls",
+      "url": "https://warcraft.wiki.gg/wiki/Gorian_Falls"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

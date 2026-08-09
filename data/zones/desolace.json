@@ -1,0 +1,79 @@
+{
+  "zone": "Desolace",
+  "map": 66,
+  "expansion": "Classic",
+  "summary": "Desolace is the centaur homeland on the western coast, a grey bone-strewn waste under permanent storm — except that it is not entirely a waste any more. The Cataclysm brought water back to the middle of the zone and the Cenarion Circle has grown the Cenarion Wildlands there, green and treed, with Karnum's Glade at its heart. Around that the old zone continues: four centaur tribes at each other's throats, the Burning Blade dug in at Thunder Axe Fortress, demons at Mannoroc Coven, Hatefury satyrs in the ruins of Sargeron, naga pushing onto the northern shore, and Maraudon still open in the Valley of Spears.",
+  "history": "This was Mashan'she, fertile grassland the tauren grazed, until their shaman spent decades trying to wake what they took for the Earth Mother beneath it and woke Princess Theradras instead. She drank the land dry to rebuild herself, and the dying was felt as far as the Emerald Dream. Cenarius's son Zaetar came to imprison her, fell in love with her instead, and fathered the centaur — who murdered him, drove the tauren out, and spent centuries at war with them. Much later Theradras drove her children into a killing frenzy to save them from the Horde; the Horde allied with Warug's Magram, went into Maraudon and killed her, and the Magram have led the united tribes uneasily since. Alexstrasza withdrew into this waste in grief after Wyrmrest, and Thrall came here to show her what Korialstrasz had really done.",
+  "factions": [
+    "Kolkar, Magram, Gelkis and Maraudine centaur",
+    "Cenarion Circle",
+    "Horde",
+    "Alliance",
+    "Burning Blade clan",
+    "Burning Legion",
+    "Hatefury satyrs",
+    "Naga and sea giants",
+    "Explorer's League"
+  ],
+  "notable": [
+    {
+      "name": "Maraudon",
+      "what": "Centaur burial ground and elemental temple in the Valley of Spears, where Zaetar's line began and Theradras finally died"
+    },
+    {
+      "name": "The Cenarion Wildlands",
+      "what": "The green heart the Cataclysm made possible, a giant tree at its centre and Karnum's Glade beneath it"
+    },
+    {
+      "name": "Kodo Graveyard",
+      "what": "Where kodo go to die, now split — half fallen into a chasm running west to the sea, half grown over"
+    },
+    {
+      "name": "Mannoroc Coven",
+      "what": "Night elf ruins named for the pit lord, blasted with fel magic and held by the demons that live in them"
+    },
+    {
+      "name": "Sargeron",
+      "what": "A night elf city ruined since the War of the Ancients, renamed by the satyrs who now bleed the artifacts of Elune left in it"
+    },
+    {
+      "name": "Shadowprey Village and Nijel's Point",
+      "what": "The Horde's port on the western shore and the Alliance's mountain post in the north, the two footholds outsiders have kept here"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Desolace",
+      "url": "https://warcraft.wiki.gg/wiki/Desolace"
+    },
+    {
+      "title": "Maraudon",
+      "url": "https://warcraft.wiki.gg/wiki/Maraudon"
+    },
+    {
+      "title": "Karnum's Glade",
+      "url": "https://warcraft.wiki.gg/wiki/Karnum%27s_Glade"
+    },
+    {
+      "title": "Mannoroc Coven",
+      "url": "https://warcraft.wiki.gg/wiki/Mannoroc_Coven"
+    },
+    {
+      "title": "Sargeron",
+      "url": "https://warcraft.wiki.gg/wiki/Sargeron"
+    },
+    {
+      "title": "Ghost Walker Post",
+      "url": "https://warcraft.wiki.gg/wiki/Ghost_Walker_Post"
+    },
+    {
+      "title": "Nijel's Point",
+      "url": "https://warcraft.wiki.gg/wiki/Nijel%27s_Point"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

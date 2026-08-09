@@ -1,0 +1,74 @@
+{
+  "zone": "Elwynn Forest",
+  "map": 37,
+  "expansion": "Classic",
+  "summary": "Elwynn Forest is the wooded heartland of Stormwind, a country of hardwoods, rivers and small farms running down from the foothills of the Burning Steppes to the Nazferiti, with the capital itself standing in its northwestern hills. Goldshire is its market town and Eastvale its lumber camp, and between them the smallholdings grow wheat, melons, pumpkins and grapes under heavy guard patrols. Kobolds hold the mines, Riverpaw gnolls camp along the forest's edge and murlocs have taken the lakes, but none of it threatens the kingdom.",
+  "history": "Faldir's Arathi settlers came south from Lordaeron about twelve centuries before the Dark Portal and founded Stormwind in the valley this forest surrounds; villages followed. Gnolls burned Goldshire during the Gnoll War. In the First War thousands of orcs marched through these trees to ring the capital, and it was back through them that Lothar's knights, landed by sea behind the siege lines, charged to break the first assault; Goldshire was one of the last two towns to fall before the keep was finally sacked. Turalyon oversaw the return afterwards and Alonsus Faol saw Northshire Abbey rebuilt, but the masons who rebuilt the city were never paid, and the riots that followed killed Queen Tiffin and made the Defias. Much later the Shattering cracked the mountain wall open and Blackrock orcs burned the Northshire vineyards.",
+  "factions": [
+    "Kingdom of Stormwind",
+    "Stormwind Guard",
+    "Brotherhood of Northshire",
+    "Defias Brotherhood",
+    "Riverpaw gnolls",
+    "Kobolds of the Fargodeep and Jasperlode mines",
+    "Murlocs of Crystal Lake and Stone Cairn Lake",
+    "Blackrock orcs"
+  ],
+  "notable": [
+    {
+      "name": "Goldshire",
+      "what": "The town at the crossroads south of the capital, with roads out to Westfall, Redridge and the abbey, and the busiest inn in the Alliance"
+    },
+    {
+      "name": "Northshire Abbey",
+      "what": "Seat of the Brotherhood of Northshire, walled off in its own valley east of Stormwind and rebuilt after the Second War"
+    },
+    {
+      "name": "Eastvale Logging Camp",
+      "what": "The mills on the Redridge border that keep the kingdom in timber, working to deadlines it never quite meets"
+    },
+    {
+      "name": "Tower of Azora",
+      "what": "The mages' tower on the Goldshire road, where arcane work is done well away from anyone it might inconvenience"
+    },
+    {
+      "name": "Stonefield Farm and the Maclure Vineyards",
+      "what": "Two neighbouring families who have hated each other for years, and whose children have not"
+    },
+    {
+      "name": "Westbrook Garrison",
+      "what": "The barracks holding Elwynn's western border against whatever comes up the road from Westfall"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Elwynn Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Elwynn_Forest"
+    },
+    {
+      "title": "Goldshire",
+      "url": "https://warcraft.wiki.gg/wiki/Goldshire"
+    },
+    {
+      "title": "Northshire Abbey",
+      "url": "https://warcraft.wiki.gg/wiki/Northshire_Abbey"
+    },
+    {
+      "title": "Eastvale Logging Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Eastvale_Logging_Camp"
+    },
+    {
+      "title": "Maclure Vineyards",
+      "url": "https://warcraft.wiki.gg/wiki/Maclure_Vineyards"
+    },
+    {
+      "title": "Stormwind (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Stormwind_(kingdom)"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

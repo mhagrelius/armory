@@ -1,0 +1,79 @@
+{
+  "zone": "Wetlands",
+  "map": 56,
+  "expansion": "Classic",
+  "summary": "The Wetlands are a cold grey marsh below the broken Stonewrought Dam, mist on the ground and mountains on three sides with the open sea on the fourth. Menethil Harbor is the Alliance port here and the sailing point for Kalimdor and Northrend, though the Cataclysm put a good deal of it under water. Dragonmaw orcs hold the Angerfang camp, gnolls the fen and Bluegill murlocs the shallows, night elves keep a grove around the plant-man of local legend, and Grim Batol sits shut at the eastern end.",
+  "history": "The Wildhammers built their capital at Grim Batol after Ironforge fell out with itself, and left it when the Dark Iron invasion had fouled the mountain past living in; Ironforge later threw the Thandol Span across the canyon to keep the two dwarven countries joined. Doomhammer refused that crossing in the Second War and had his invasion fleet built instead in a hidden anchorage on this coast, goblin shipwrights and troll boatbuilders working under guard, while the Dragonmaw held Grim Batol; the marsh was stripped near bare feeding orcs and dragons. The Alliance took the coast back and rebuilt the yard as Menethil Harbor, named for Lordaeron's king — which is why Ner'zhul's death knights came back to it to steal ships. Freed red dragons broke the Dragonmaw, and the Cataclysm drowned the western marsh.",
+  "factions": [
+    "Kingdom of Ironforge and the Alliance",
+    "Explorers' League",
+    "Night elves of Greenwarden's Grove",
+    "Angerfang and the Dragonmaw clan",
+    "Dark Iron clan and the Twilight's Hammer",
+    "Mosshide gnolls",
+    "Bluegill murlocs",
+    "Black dragonflight",
+    "Red dragonflight at Grim Batol"
+  ],
+  "notable": [
+    {
+      "name": "Menethil Harbor",
+      "what": "The Alliance port on the western coast, built on the yard where the Horde's fleet was, and half sunk since the Shattering"
+    },
+    {
+      "name": "Grim Batol",
+      "what": "The Wildhammers' abandoned mountain fortress at the eastern edge, held in turn by orcs, red dragons and the Twilight's Hammer"
+    },
+    {
+      "name": "Thandol Span",
+      "what": "The dwarven bridge over the canyon to Arathi, the only land route between Khaz Modan and Lordaeron, and damaged"
+    },
+    {
+      "name": "Dun Modr",
+      "what": "The fortified dwarven town south of the span, taken by Dark Irons in Twilight's Hammer service and retaken for Ironforge"
+    },
+    {
+      "name": "Angerfang Encampment",
+      "what": "The largest Dragonmaw camp left in the region, under Gorfax Angerfang"
+    },
+    {
+      "name": "Greenwarden's Grove",
+      "what": "The night elf outpost founded to look after Rethiel the Greenwarden, the plant-man a dwarven story sent them looking for"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wetlands",
+      "url": "https://warcraft.wiki.gg/wiki/Wetlands"
+    },
+    {
+      "title": "Dun Modr",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Modr"
+    },
+    {
+      "title": "Dun Algaz",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Algaz"
+    },
+    {
+      "title": "Angerfang Encampment",
+      "url": "https://warcraft.wiki.gg/wiki/Angerfang_Encampment"
+    },
+    {
+      "title": "Greenwarden's Grove",
+      "url": "https://warcraft.wiki.gg/wiki/Greenwarden%27s_Grove"
+    },
+    {
+      "title": "Dragonmaw clan",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonmaw_clan"
+    },
+    {
+      "title": "Bluegill tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Bluegill_tribe"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

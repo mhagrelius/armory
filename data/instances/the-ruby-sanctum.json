@@ -1,0 +1,49 @@
+{
+  "instance": "The Ruby Sanctum",
+  "journal": 761,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The red dragonflight's chamber in the Chamber of Aspects under Wyrmrest Temple, a door along from the Obsidian Sanctum. One boss, and the first sight of what the Cataclysm was going to be.",
+  "history": "When adventurers destroyed the twilight eggs in the Obsidian Sanctum it was done fast and quietly, without fanfare and without much acknowledgement. Then the Ruby Sanctum stopped answering. The guards on the portal were dead, the mystic stones were shattered, and the red flight could not work out who had managed it — the black dragonflight's numbers in Northrend were nowhere near enough for an attack of that kind. What the attackers had come for was the red flight's eggs. Behind them was Halion, a twilight dragon, with General Zarithrian, Baltharus the Warborn and Saviana Ragefire between him and the door, and Sanctum Guardian Xerestrasza the only defender still standing. It did not end there. Once the Shattering had come and gone, the Twilight's Hammer arrived to corrupt what was kept in the chamber, and Korialstrasz destroyed himself and every sanctum at once to stop them, leaving nothing behind but traces of the energy he used. The Ruby Sanctum was later rebuilt, and it is where the last red dragon eggs were kept.",
+  "assumes": "It assumes you ran the Obsidian Sanctum. This is the retaliation for that raid, and the two chambers are doors off the same corridor under Wyrmrest Temple.",
+  "disputed": [
+    "The wiki hedges the rebuilding openly: the last red dragon eggs were probably moved here before the Dragon Soul raid, since the flight was sterile afterwards — or the eggs were elsewhere all along and the sanctum was rebuilt around them once it was clear there would be no more. It does not decide.",
+    "How the black dragonflight breached the sanctum undetected is posed as a question rather than answered, on the same page that names Halion as the one who did it."
+  ],
+  "notable": [
+    {
+      "name": "Halion",
+      "what": "The twilight dragon at the end of it, and the raid's only real encounter"
+    },
+    {
+      "name": "Baltharus the Warborn",
+      "what": "A drakonid holding the approach, who splits himself to fight"
+    },
+    {
+      "name": "General Zarithrian",
+      "what": "Commands the Charscale force occupying the chamber"
+    },
+    {
+      "name": "Saviana Ragefire",
+      "what": "A black drake fought in the air above the sanctum floor"
+    },
+    {
+      "name": "Sanctum Guardian Xerestrasza",
+      "what": "The last of the red flight's guardians left alive in the room"
+    },
+    {
+      "name": "The Chamber of Aspects",
+      "what": "One sanctum per dragonflight beneath Wyrmrest Temple; the Obsidian Sanctum is the next door along"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ruby Sanctum",
+      "url": "https://warcraft.wiki.gg/wiki/Ruby_Sanctum"
+    },
+    {
+      "title": "Obsidian Sanctum",
+      "url": "https://warcraft.wiki.gg/wiki/Obsidian_Sanctum"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

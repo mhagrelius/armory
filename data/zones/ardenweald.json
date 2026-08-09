@@ -1,0 +1,75 @@
+{
+  "zone": "Ardenweald",
+  "map": 1565,
+  "expansion": "Shadowlands",
+  "summary": "Ardenweald is where nature's spirits go to sleep and be made ready to wake up somewhere else. Wild Gods, ancients and loa arrive in the Winter Queen's forest as wildseeds, and the night fae pour anima into them until they are whole enough to be sent back through the Grove of Awakening. Enormous celestial trees anchor each grove and do the drawing; several of them are dead, because there has not been enough anima to go round for a long time.",
+  "history": "The forest began with the Winter Queen and Marasmius alone, and grew as she raised the celestial trees; the tirnenn came with them and built the groves around each one. Every grove has its tree and its name, and the loss of one is permanent — Tirna Marwol went dark in the Darkreach long ago, Tirna Noch fell early in the drought and Tirna Rowen has held no wildseed since. When the anima stopped arriving the night fae had to start choosing which sleeping spirits to sustain and which to let end. The Drust, cursed to sit outside the cycle altogether, took the chance to force their way into the mists and try to steal a rebirth they were never owed.",
+  "factions": [
+    "Night Fae Covenant",
+    "The Winter Queen and the Court of Night",
+    "Wild Hunt",
+    "Sylvar, tirnenn and faerie",
+    "Marasmius",
+    "Spriggans and boggarts",
+    "Gorm",
+    "The Drust",
+    "Vorkai"
+  ],
+  "notable": [
+    {
+      "name": "Heart of the Forest",
+      "what": "The tree Tirna Achiad at the centre of the weald, where the Winter Queen holds her court and the night fae keep their sanctum"
+    },
+    {
+      "name": "Grove of Awakening",
+      "what": "The portal, held open by four focuses, that carries a restored spirit back out to the living world"
+    },
+    {
+      "name": "Queen's Conservatory",
+      "what": "Where wildseeds are tended and fed until the spirit inside is ready to be reborn"
+    },
+    {
+      "name": "Mists of Tirna Scithe",
+      "what": "A grove whose mists turn back anything that does not belong, and where the Drust broke in"
+    },
+    {
+      "name": "Fungal Terminus",
+      "what": "Marasmius' heart, the fungus threaded through every tree's roots and the way the night fae get anywhere quickly"
+    },
+    {
+      "name": "Starlit Overlook",
+      "what": "The plateau above the Shrouded Mire, the highest point in the forest and the first of it a visitor sees"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ardenweald",
+      "url": "https://warcraft.wiki.gg/wiki/Ardenweald"
+    },
+    {
+      "title": "Night Fae Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Night_Fae_Covenant"
+    },
+    {
+      "title": "Winter Queen",
+      "url": "https://warcraft.wiki.gg/wiki/Winter_Queen"
+    },
+    {
+      "title": "Heart of the Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Heart_of_the_Forest"
+    },
+    {
+      "title": "Marasmius",
+      "url": "https://warcraft.wiki.gg/wiki/Marasmius"
+    },
+    {
+      "title": "Mists of Tirna Scithe",
+      "url": "https://warcraft.wiki.gg/wiki/Mists_of_Tirna_Scithe"
+    },
+    {
+      "title": "Court of Night",
+      "url": "https://warcraft.wiki.gg/wiki/Court_of_Night"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

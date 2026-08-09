@@ -1,0 +1,644 @@
+/* The Almanac.
+ *
+ * The colour tokens this file reads — `--al-*` — are not written here. They are
+ * generated from `almanac::Palette` at load time and swapped when the colour
+ * scheme changes, so the Cairo draw functions and these rules are the same
+ * literals rather than two lists that drift. See `ui/almanac.rs`.
+ *
+ * Rules of the direction, in one place:
+ *   · gold is only ever work the run can claim;
+ *   · numbers are monospaced, narrative is serif, everything else is the
+ *     platform font;
+ *   · the page's asides live in the right rail, never in the main column.
+ */
+
+/* -- type ------------------------------------------------------------------ */
+
+/* EB Garamond and IBM Plex Mono are the design's faces. Both are OFL and can be
+   bundled; where they are not installed the system serif and the system
+   monospace render instead, which is why each stack names them last. Do not
+   substitute a second sans for the serif — the contrast between the two is what
+   tells a number from a sentence about somebody's evening. */
+.al-serif {
+  font-family: "EB Garamond", "Noto Serif", "DejaVu Serif", serif;
+}
+
+.al-mono {
+  font-family: "IBM Plex Mono", "Source Code Pro", "DejaVu Sans Mono", monospace;
+  font-feature-settings: "tnum";
+}
+
+/* Counts that sit next to a label and must not shift as they change. */
+.tabular {
+  font-feature-settings: "tnum";
+}
+
+/* Narrative. */
+.al-prose {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.al-quote {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.al-hero-title {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.al-page-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.al-headline {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.al-card-title {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.al-entry-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.al-item-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* The first letter of a journal entry, floated into the margin. A drop cap is
+   the least structural thing in this design and the first to go if it fights
+   the text view — the serif is what matters. */
+.al-drop-cap {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--al-gold-text);
+}
+
+/* Numerals. */
+.al-figure {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--al-gold-text);
+}
+
+.al-figure-small {
+  font-size: 17px;
+}
+
+.al-figure-large {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--al-gold-text);
+}
+
+.al-stat-figure {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.al-price {
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+/* A character's figures on a roster card. Eleven-point, which is what fits
+   beside a portrait and a switch in half a column at a narrow window. Must sit
+   after `.al-price`, which it overrides. */
+.al-figures {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* The hours an account has spent in a place, on the zone hero. Between a
+   figure and the ring's, because it is the one number that band exists for. */
+.al-figure-hero {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--al-gold-text);
+}
+
+/* The day number in the Chronicle's date gutter. Larger than a caption and
+   quieter than a figure: it locates a card on the calendar rather than saying
+   anything about the evening. */
+.al-day {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.al-day.al-gold {
+  opacity: 1;
+}
+
+/* Reference prose: a zone's history, a dungeon's account, what a place assumes
+   you know. The platform font and held back, because it is not written about
+   the player — the serif would say it was the same kind of thing. */
+.al-passage {
+  font-size: 12.5px;
+  opacity: 0.72;
+}
+
+.al-ring-figure {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--al-gold-text);
+}
+
+.al-ring-detail {
+  font-size: 10.5px;
+  opacity: 0.45;
+}
+
+/* "WITHIN REACH", "LAST NIGHT", "WHERE THEY COME FROM". A section label is a
+   caption for a whole block, and it is set apart by tracking rather than by a
+   rule so it costs no vertical space. */
+.al-section {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+/* "20:14 — 3H 41M · 12 QUESTS · 1 DEATH". */
+.al-meta {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.al-caption {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.al-footnote {
+  font-size: 11px;
+  opacity: 0.42;
+}
+
+.al-row-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.al-column-header {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.42;
+}
+
+/* An item the auction house has named only by its id, and a value the client
+   does not maintain a total for. Both are honest states rather than missing
+   data, and both are said quietly. */
+.al-unknown {
+  opacity: 0.5;
+}
+
+.al-unwatched {
+  opacity: 0.3;
+}
+
+/* -- tone ------------------------------------------------------------------ */
+
+/* Gold means "you earned this", and nothing else may take it. */
+.al-gold {
+  color: var(--al-gold-text);
+}
+
+.al-positive {
+  color: var(--al-positive);
+}
+
+.al-negative {
+  color: var(--al-negative);
+}
+
+/* -- surfaces -------------------------------------------------------------- */
+
+/* The page ground. Set on the scroller so it covers the whole column rather
+   than only the part with widgets in it. */
+.al-main,
+.al-main > viewport {
+  background-color: var(--al-ground);
+}
+
+.al-main-column {
+  margin: 20px 26px 24px 30px;
+}
+
+/* The right rail: the page's standing, filters, caveats and legends. Its own
+   ground and a hairline, so it reads as an aside rather than as more page. */
+.al-rail,
+.al-rail > viewport {
+  background-color: var(--al-rail);
+  border-left: 1px solid var(--al-hairline);
+}
+
+.al-rail-column {
+  margin: 20px 18px;
+}
+
+.al-card {
+  background-color: var(--al-card);
+  border: 1px solid var(--al-card-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.al-card.al-tight {
+  padding: 10px 13px;
+}
+
+.al-card.al-roomy {
+  border-radius: 14px;
+  padding: 14px 18px;
+}
+
+/* Zebra, inside a group of rows that are all one card. */
+.al-card.al-alternate {
+  background-color: var(--al-card-alt);
+}
+
+/* A card about work the run can claim, or the one being recommended. */
+.al-card.al-earned {
+  background-color: var(--al-gold-tint);
+  border-color: var(--al-gold-border);
+}
+
+/* Something the page could not price, could not measure, or could not tell.
+   Dashed, because an absence should not look like a result. */
+.al-card.al-unmeasured {
+  border-style: dashed;
+  background-color: transparent;
+}
+
+.al-card.al-activatable:hover {
+  background-color: var(--al-card-hover);
+}
+
+/* A card whose header art runs to its edges. `.al-band` already supplies the
+   top corners, so the padding moves to the body inside it. */
+.al-card.al-flush {
+  padding: 0;
+  border-radius: 14px;
+}
+
+.al-stat {
+  border-radius: 11px;
+  padding: 10px 13px;
+}
+
+.al-stat.al-stat-small {
+  padding: 9px 12px;
+}
+
+.al-hairline {
+  background-color: var(--al-hairline);
+  min-height: 1px;
+}
+
+.al-chip {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  background-color: var(--al-card);
+}
+
+.al-chip.al-gold {
+  background-color: var(--al-gold-tint);
+  color: var(--al-gold-text);
+}
+
+.al-chip.al-negative {
+  background-color: var(--al-negative-tint);
+  color: var(--al-negative-text);
+}
+
+.al-chip.al-positive {
+  background-color: var(--al-positive-tint);
+  color: var(--al-positive);
+}
+
+/* A caveat the page is required to keep saying — the licence attribution, the
+   assumptions behind a crafting figure, the reason a bar is not drawn. */
+.al-callout {
+  border: 1px solid var(--al-gold-border);
+  border-radius: 10px;
+  padding: 9px 12px;
+  background-color: var(--al-gold-tint);
+}
+
+/* One overheard line, pulled out of the evening. */
+.al-said {
+  border-left: 2px solid var(--al-gold);
+  padding-left: 12px;
+}
+
+/* -- artwork --------------------------------------------------------------- */
+
+/* Blizzard's renders are square with the subject centred and no transparency,
+   so they want a corner radius and a clip rather than a frame. */
+.art {
+  border-radius: 9px;
+  background-color: var(--al-card);
+}
+
+.art-large {
+  border-radius: 12px;
+}
+
+/* An icon is small enough that a large radius reads as a circle. */
+.achievement-icon {
+  border-radius: 6px;
+}
+
+/* A character's portrait, ringed in their class colour.
+   The ring is a border rather than an inset shadow: the picture is a child
+   widget and is laid out inside the content box, so a border sits on top of it
+   where a shadow would be painted underneath and never seen. */
+.portrait {
+  border-radius: 999px;
+  border: 2px solid var(--class-colour, var(--al-card-border));
+  padding: 2px;
+}
+
+/* The class colour as a dot beside a name, where there is no portrait to ring.
+   Seven pixels, because it is an identifier and not a decoration. */
+.class-dot {
+  background-color: var(--class-colour, var(--al-pale));
+  border-radius: 999px;
+  min-width: 7px;
+  min-height: 7px;
+}
+
+/* Key art, and the wash that lets a title sit on it. */
+.al-band {
+  border-radius: 14px 14px 0 0;
+  background-color: var(--al-card);
+}
+
+/* The same band as a page's own hero rather than a card's header. Square,
+   because it meets the window on three sides and a rounded corner there leaves
+   two notches of ground showing through. */
+.al-band.al-square {
+  border-radius: 0;
+}
+
+.al-scrim {
+  background-image: linear-gradient(to top, var(--al-scrim-strong), var(--al-scrim-weak));
+}
+
+.al-hero-scrim {
+  background-image: linear-gradient(to top, var(--al-scrim-strong), var(--al-scrim-weak));
+}
+
+/* -- the collection grid --------------------------------------------------- */
+
+.al-tile {
+  border-radius: 12px;
+  border: 1px solid var(--al-card-border);
+  background-color: var(--al-card);
+}
+
+/* Closest to earning: a real drop-rate estimate, or the reagents nearly held. */
+.al-tile.al-notable {
+  border-color: var(--al-gold-border-strong);
+  box-shadow: 0 0 0 3px var(--al-gold-halo);
+}
+
+/* Owned by this account and impossible to earn again. Dashed and dimmed rather
+   than ticked: in a run "already owned" is bad news, not a checkmark. */
+.al-tile.al-spent {
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+/* The name under a grid tile. Its own rule because the three tile states differ
+   only in how loud the name is, and CSS opacity multiplies with the widget's
+   rather than replacing it — a gold name inside a 0.5 tile would be gold at
+   half strength, which is the one thing the notable state exists to avoid. */
+.al-tile-name {
+  font-size: 10.5px;
+  opacity: 0.6;
+}
+
+.al-tile-name.al-gold {
+  opacity: 1;
+}
+
+.al-tile-name.al-spent {
+  opacity: 0.35;
+}
+
+.collection-cell {
+  border-radius: 12px;
+}
+
+/* `GtkGridView` carries the `view` style class and paints a panel behind the
+   tiles. The grid is the page here, so it takes the page's ground. */
+.collection-grid {
+  background-color: var(--al-ground);
+}
+
+.collection-grid > child:hover .collection-cell {
+  background-color: var(--al-card-hover);
+}
+
+/* -- controls -------------------------------------------------------------- */
+
+/* Three equal segments in a track. Adwaita's own toggle group has no gold
+   state, and the active segment carrying the accent is the whole point of the
+   control here. */
+.al-segments {
+  background-color: var(--al-card);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.al-segment {
+  min-height: 26px;
+  padding: 3px 14px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  background-color: transparent;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.al-segment:hover {
+  background-color: var(--al-card-hover);
+}
+
+.al-segment:checked {
+  background-color: var(--al-gold-tint-strong);
+  color: var(--al-gold-text);
+  font-weight: 700;
+}
+
+/* An equal-width switcher: three segments of one size, so the widest label does
+   not decide the shape of the control. */
+.al-segment.al-fixed {
+  min-width: 118px;
+}
+
+.al-switch-row {
+  padding: 9px 2px;
+}
+
+/* The design's switch is smaller than Adwaita's, and gold when it is on because
+   enrolling a character is the page saying this one counts. Both the track and
+   the knob are pinned: a switch beside a long title is squashed into an oval
+   otherwise. */
+switch.al-switch {
+  min-width: 36px;
+  min-height: 21px;
+}
+
+switch.al-switch > slider {
+  min-width: 17px;
+  min-height: 17px;
+}
+
+switch.al-switch:checked {
+  background-color: var(--al-gold);
+}
+
+/* The one action on the Browse page. */
+button.al-gold-button {
+  background-color: var(--al-gold-tint-strong);
+  color: var(--al-gold-text);
+  border: 1px solid var(--al-gold-border);
+  font-weight: 700;
+}
+
+button.al-gold-button:hover {
+  background-color: var(--al-gold-border);
+}
+
+/* A source in the rail's list, and the one being filtered on. */
+.al-source-active {
+  color: var(--al-gold-text);
+  font-weight: 700;
+}
+
+/* A row in a table. Baseline-aligned, because a row mixes 13px sans with 12px
+   mono and the two must sit on one line. */
+.al-table-row {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--al-hairline);
+}
+
+.al-table-row:hover {
+  background-color: var(--al-card);
+}
+
+/* The row whose order book the rail is showing. Gold, because a selection here
+   is the page saying "this is the one you asked about" rather than the
+   platform's own accent claiming it. */
+.al-table-row.al-selected {
+  background-color: var(--al-gold-tint);
+}
+
+/* One mark, not two: the row carries it, so the list view must not draw its
+   own selection underneath. */
+listview.al-table > row:selected {
+  background-image: none;
+  background-color: transparent;
+}
+
+/* -- run --------------------------------------------------------------------*/
+
+/* A goal that came partly from a character nobody enrolled. Warning rather than
+   error: the data is real, it just is not the run's. */
+.inherited {
+  color: var(--warning-color);
+}
+
+/* Excluded goals are shown once, in a report, and read as settled rather than
+   failed. */
+.excluded {
+  opacity: 0.65;
+}
+
+/* -- class colours --------------------------------------------------------- */
+
+/* The one place in the application with literal colours in it, and the reason
+   is that these are not the platform's to choose: they are World of Warcraft's,
+   fixed since 2004, and a player reads them faster than any label. The same
+   argument as drawing a logo in its own colour rather than the accent.
+
+   They tint a ring around a portrait or a dot beside a name and never any text,
+   so no combination of class and theme can produce something unreadable — which
+   matters here, because Priest is white and Rogue is pale yellow. */
+.class-death-knight { --class-colour: #c41e3a; }
+.class-demon-hunter { --class-colour: #a330c9; }
+.class-druid        { --class-colour: #ff7c0a; }
+.class-evoker       { --class-colour: #33937f; }
+.class-hunter       { --class-colour: #aad372; }
+.class-mage         { --class-colour: #3fc7eb; }
+.class-monk         { --class-colour: #00ff98; }
+.class-paladin      { --class-colour: #f48cba; }
+.class-priest       { --class-colour: #ffffff; }
+.class-rogue        { --class-colour: #fff468; }
+.class-shaman       { --class-colour: #0070dd; }
+.class-warlock      { --class-colour: #8788ee; }
+.class-warrior      { --class-colour: #c69b6d; }
+
+/* A roster card's activatable half. The card already draws the background and
+   the border, so the button inside it is only a hit area and a focus ring —
+   Adwaita's flat button still paints padding and a hover fill, and both would
+   draw a second card inside the first. */
+.al-card-button {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  min-height: 0;
+}
+
+.al-card-button:hover {
+  background: none;
+}
+
+/* The character page's stat strip: four cells that have to read as one object.
+
+   The separation is the strip's own background showing through a one-pixel gap
+   between the cells, which is why the cells carry no border of their own — four
+   bordered boxes in a row is four boxes, and the point of the strip is that the
+   figures in it are compared with each other. The strip clips, so the cells get
+   the rounded corners without having any. */
+.al-strip {
+  background-color: var(--al-card-border);
+  border-radius: 13px;
+}
+
+/* The ends are rounded on the cells rather than clipped by the strip: GTK has
+   no `overflow`, so a rounded parent does not cut its children's corners and a
+   square cell would sit proud of the strip at both ends. */
+.al-strip-cell {
+  background-color: var(--al-card);
+  padding: 14px 16px;
+}
+
+.al-strip-cell:first-child {
+  border-radius: 13px 0 0 13px;
+}
+
+.al-strip-cell:last-child {
+  border-radius: 0 13px 13px 0;
+}

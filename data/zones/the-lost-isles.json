@@ -1,0 +1,84 @@
+{
+  "zone": "The Lost Isles",
+  "map": 174,
+  "expansion": "Cataclysm",
+  "summary": "The Lost Isles are a small tropical archipelago in the Great Sea between Kezan and the Maelstrom — jungle, raptors, a volcanic peak and a caldera full of pygmy villages. This is where the Bilgewater Cartel washed up after fleeing the eruption of Mount Kajaro, and where the goblins ended up joining the Horde before rebuilding in Azshara. The isles are reachable only during the goblin starting experience.",
+  "history": "The islands' recorded history is mostly other people's shipwrecks. Fleeing Mount Kajaro aboard Trade Prince Gallywix's yacht — paying evacuees above deck, the ones he had put in chains below — the Bilgewater Cartel was attacked by an Alliance fleet and scattered across the beaches. The isles were already occupied: pygmy tribes at Oostan and Oomlot, Southsea Freebooters who rounded the castaways up again into slave pits, naga in the drowned ruins of Vashj'elan, and monkeys mining kaja'mite out of a cavern. The Horde's own ship, the Draka's Fury, went down offshore in the same waters, putting Thrall's orcs under Aggra on the same coast. The goblins fought their way clear, unpacked a town out of a crate, and left with the Horde when the peak erupted.",
+  "factions": [
+    "Bilgewater Cartel",
+    "Pygmy tribes",
+    "Southsea Freebooters",
+    "Horde",
+    "Alliance",
+    "Naga of Vashj'elan"
+  ],
+  "notable": [
+    {
+      "name": "Shipwreck Shore",
+      "what": "The beach the Kezanian evacuees washed up on, with the bow section of the yacht turned into a shelter"
+    },
+    {
+      "name": "Horde Base Camp",
+      "what": "Aggra's camp of orc survivors from the Draka's Fury, overlooking the wreck and a set of ancient night elf ruins"
+    },
+    {
+      "name": "Town-In-A-Box",
+      "what": "A goblin settlement shipped flat and assembled in the middle of the jungle, whose people the Oomlot pygmies set about turning into zombies"
+    },
+    {
+      "name": "Oostan",
+      "what": "Pygmy territory in the western part of Lost Peak's caldera, made up of three villages"
+    },
+    {
+      "name": "The Slave Pits",
+      "what": "A Southsea Freebooter camp on the northwestern shore holding the recaptured goblins, run in Gallywix's name"
+    },
+    {
+      "name": "Gallywix Docks",
+      "what": "The port the trade prince removed from Town-In-A-Box and re-erected for himself, complete with a replacement yacht"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lost Isles",
+      "url": "https://warcraft.wiki.gg/wiki/Lost_Isles"
+    },
+    {
+      "title": "Shipwreck Shore",
+      "url": "https://warcraft.wiki.gg/wiki/Shipwreck_Shore"
+    },
+    {
+      "title": "Horde Base Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Horde_Base_Camp"
+    },
+    {
+      "title": "Oomlot Village",
+      "url": "https://warcraft.wiki.gg/wiki/Oomlot_Village"
+    },
+    {
+      "title": "Oostan",
+      "url": "https://warcraft.wiki.gg/wiki/Oostan"
+    },
+    {
+      "title": "Slave Pits",
+      "url": "https://warcraft.wiki.gg/wiki/Slave_Pits"
+    },
+    {
+      "title": "Gallywix Docks",
+      "url": "https://warcraft.wiki.gg/wiki/Gallywix_Docks"
+    },
+    {
+      "title": "Bilgewater Cartel",
+      "url": "https://warcraft.wiki.gg/wiki/Bilgewater_Cartel"
+    },
+    {
+      "title": "Pygmy",
+      "url": "https://warcraft.wiki.gg/wiki/Pygmy"
+    },
+    {
+      "title": "Southsea Freebooters",
+      "url": "https://warcraft.wiki.gg/wiki/Southsea_Freebooters"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

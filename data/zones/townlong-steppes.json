@@ -1,0 +1,90 @@
+{
+  "zone": "Townlong Steppes",
+  "map": 388,
+  "expansion": "Mists of Pandaria",
+  "summary": "Townlong Steppes is the northern half of the land on the wrong side of the Serpent's Spine: red-leafed hills, bare crags in the northeast, and a scatter of islands off the western coast. Niuzao's temple stands on one of those islands and has been besieged twice, first by mantid out of the Dread Wastes and then by mogu. The Shado-Pan hold the rest from a garrison and a handful of outposts, hunting the Sha of Hatred while Osul yaungol raid out of their fire camp below the Ox Gate.",
+  "history": "The mantid have thrown themselves at the wall on a hundred-year rhythm for as long as anyone has kept records, and these hills are where they land. This time they came a decade early and got through, which told the pandaren the fault lay with the mantid rather than with the wall. The Sha of Hatred, loose from the Kun-Lai monastery, came west and set the yaungol killing each other along the border; Taran Zhu followed it, held the Gao-Ran line while the swarm threw everything it had at the blockade, and finally cornered it in the kypari Kri'vess. Then the mantid massed again on Niuzao's island temple under an empress the Sha of Fear had taken, and after that came Shan Bu's mogu.",
+  "factions": [
+    "Shado-Pan",
+    "Niuzao Sentinels",
+    "Mantid of the Sra'thik and Kri'thik swarms",
+    "Osul yaungol",
+    "Shan'ze mogu",
+    "Sha of Hatred",
+    "Alliance and Horde detachments on the wall",
+    "Sprites and cloud serpents of the northern islands"
+  ],
+  "notable": [
+    {
+      "name": "Niuzao Temple",
+      "what": "The Black Ox's temple on an island off the west coast, home of his sentinels and reached by a bridge from the garrison"
+    },
+    {
+      "name": "Serpent's Spine",
+      "what": "The wall Lei Shen's slaves raised to keep the mantid out of Pandaria, manned by Shado-Pan wallwatchers ever since"
+    },
+    {
+      "name": "Shado-Pan Garrison",
+      "what": "The order's base in the southwest and the crossroads for everything on this side of the wall"
+    },
+    {
+      "name": "Fire Camp Osul",
+      "what": "The Osul yaungol's camp below the Ox Gate, driven this far by the mantid and now raiding what they find"
+    },
+    {
+      "name": "Shan'ze Dao",
+      "what": "The northernmost island, left garrisoned for the Thunder King when Shan Bu withdrew to the Isle of Thunder"
+    },
+    {
+      "name": "Kri'vess",
+      "what": "A kypari tree on the mainland, and evidence of how far north the mantid have pushed"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Townlong Steppes",
+      "url": "https://warcraft.wiki.gg/wiki/Townlong_Steppes"
+    },
+    {
+      "title": "Niuzao Temple",
+      "url": "https://warcraft.wiki.gg/wiki/Niuzao_Temple"
+    },
+    {
+      "title": "Niuzao",
+      "url": "https://warcraft.wiki.gg/wiki/Niuzao"
+    },
+    {
+      "title": "Serpent's Spine",
+      "url": "https://warcraft.wiki.gg/wiki/Serpent%27s_Spine"
+    },
+    {
+      "title": "Mantid",
+      "url": "https://warcraft.wiki.gg/wiki/Mantid"
+    },
+    {
+      "title": "Shado-Pan Garrison",
+      "url": "https://warcraft.wiki.gg/wiki/Shado-Pan_Garrison"
+    },
+    {
+      "title": "Fire Camp Osul",
+      "url": "https://warcraft.wiki.gg/wiki/Fire_Camp_Osul"
+    },
+    {
+      "title": "Shan'ze Dao",
+      "url": "https://warcraft.wiki.gg/wiki/Shan%27ze_Dao"
+    },
+    {
+      "title": "Kri'vess",
+      "url": "https://warcraft.wiki.gg/wiki/Kri%27vess"
+    },
+    {
+      "title": "Lei Shen",
+      "url": "https://warcraft.wiki.gg/wiki/Lei_Shen"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

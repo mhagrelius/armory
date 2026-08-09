@@ -1,0 +1,65 @@
+{
+  "zone": "Siren Isle",
+  "map": 2369,
+  "expansion": "The War Within",
+  "summary": "Siren Isle is a storm-battered rock in the Great Sea that Kul Tiras mined for azerite during the Fourth War, until everyone who worked it stopped being there. A goblin salvage crew found it again, along with a crystal at its heart that sings, and the Hallowfall Arathi, the earthen of Dornogal and Gazlowe's Greasemonkeys have thrown in together to work out what it is — the Arathi call it Lorandel and say it is Beledar's twin. Bloodwake vrykul, Darktide naga and Bilge Rat pirates are all trying to take the island off them.",
+  "history": "The vrykul knew this place as Cyrandall. Twenty thousand years ago the iron vrykul Cyrce brought the Sturmvyn clan here to sit out the Winterskorn War, and they named the place the Cradle of Hymosul and lived on it for ten thousand years. Then the Sundering, and after it the naga, who came out of the water in numbers the clan could not fight — Cyrce ordered a retreat into a vault beneath the island and the door shut on them. Nothing much happened for a long age afterwards except a Kul Tiran azerite dig, and everyone on that vanished too. In 42 ADP a goblin salvage team put in, heard the crystal, and the whole of Khaz Algar came looking.",
+  "factions": [
+    "Hallowfall Arathi",
+    "Algari earthen of Dornogal",
+    "Gazlowe's Greasemonkeys and the Bilgewater Cartel",
+    "Bloodwake vrykul",
+    "Darktide naga",
+    "Bilge Rats",
+    "Hozen, kobolds, saurok and everything else washed up here"
+  ],
+  "notable": [
+    {
+      "name": "Lorandel",
+      "what": "The singing crystal at the island's centre, which the Arathi recognised as the same kind of thing as the star they live under"
+    },
+    {
+      "name": "The Forgotten Vault",
+      "what": "The Sturmvyn's last refuge under the island, opened by a Singing Tablet in the Sacred Hollow"
+    },
+    {
+      "name": "Flotsam Shoal",
+      "what": "The expedition's camp on the eastern shore, three peoples who barely know one another sharing one beach"
+    },
+    {
+      "name": "Ghoststone Diggings",
+      "what": "What the Kul Tiran azerite operation left behind, and the last place its miners were"
+    },
+    {
+      "name": "Bilge Rat Corsair",
+      "what": "The pirates' wreck of a base, and the third party in every fight over the island"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siren Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Siren_Isle"
+    },
+    {
+      "title": "Forgotten Vault (Siren Isle)",
+      "url": "https://warcraft.wiki.gg/wiki/Forgotten_Vault_(Siren_Isle)"
+    },
+    {
+      "title": "Flotsam Shoal",
+      "url": "https://warcraft.wiki.gg/wiki/Flotsam_Shoal"
+    },
+    {
+      "title": "Hallowfall Arathi",
+      "url": "https://warcraft.wiki.gg/wiki/Hallowfall_Arathi"
+    },
+    {
+      "title": "Bloodwake",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodwake"
+    },
+    {
+      "title": "Bilge Rats",
+      "url": "https://warcraft.wiki.gg/wiki/Bilge_Rats"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

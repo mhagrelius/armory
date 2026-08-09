@@ -1,0 +1,77 @@
+{
+  "zone": "Tol Barad",
+  "map": 244,
+  "expansion": "Cataclysm",
+  "summary": "Tol Barad is a fortified island west of Gilneas that has been a battlefield, a ruin and a magical prison in turn. Baradin Hold sits at its centre holding things nobody could safely destroy — demons among them — and the Baradin's Wardens who guard it are no longer entirely reliable. The island is fought over as an outdoor PvP objective: the Wardens for the Alliance, Hellscream's Reach for the Horde, and whoever holds the three fortifications holds the Hold.",
+  "history": "Arathor raised the citadel more than twelve centuries ago and Stromgarde held the island after the empire came apart. In the Second War the Alliance staged from it to retake Dun Modr, and the orcs answered by storming the place, razing the fortress and killing most of the people on it. Kul Tiran arcanists claimed the ruin afterwards, rebuilt the walls and turned the defences inward: a prison for what could not safely be killed, kept by a Stromic and Tirasian garrison who became the Baradin's Wardens. The Cataclysm made it a front again when Garrosh sent Hellscream's Reach to take it, and while the two armies traded the island back and forth something inside Baradin Hold began driving the wardens mad — guards opening cells, the long-dead getting up to fight their last battle again.",
+  "factions": [
+    "Baradin's Wardens",
+    "Hellscream's Reach",
+    "Alliance",
+    "Horde",
+    "The demons imprisoned in Baradin Hold",
+    "The risen dead of the Second War",
+    "Pirates of Rustberg Village"
+  ],
+  "notable": [
+    {
+      "name": "Baradin Hold",
+      "what": "The fortress at the island's centre and the prison beneath it; whoever holds the three outworks holds it, and the raid inside"
+    },
+    {
+      "name": "Ironclad Garrison, Slagworks and Warden's Vigil",
+      "what": "The three fortifications around the Hold — an attacking force has to hold all of them at once to take the island"
+    },
+    {
+      "name": "Baradin's Wardens",
+      "what": "The Stromic and Tirasian jailers sworn to keep Baradin Hold's prisoners off Azeroth, now losing that argument with themselves"
+    },
+    {
+      "name": "Hellscream's Reach",
+      "what": "The elite force Garrosh Hellscream sent to take the island from the humans"
+    },
+    {
+      "name": "Argaloth",
+      "what": "The pit lord held in the vaults, the first of the Hold's inmates any raid meets"
+    },
+    {
+      "name": "Rustberg Village",
+      "what": "A Stromgarde town on the peninsula, abandoned when its people were recalled home and taken over by pirates raiding Baradin Bay"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tol Barad",
+      "url": "https://warcraft.wiki.gg/wiki/Tol_Barad"
+    },
+    {
+      "title": "Baradin Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Baradin_Hold"
+    },
+    {
+      "title": "Baradin's Wardens",
+      "url": "https://warcraft.wiki.gg/wiki/Baradin%27s_Wardens"
+    },
+    {
+      "title": "Hellscream's Reach",
+      "url": "https://warcraft.wiki.gg/wiki/Hellscream%27s_Reach"
+    },
+    {
+      "title": "Arathor",
+      "url": "https://warcraft.wiki.gg/wiki/Arathor"
+    },
+    {
+      "title": "Ironclad Garrison",
+      "url": "https://warcraft.wiki.gg/wiki/Ironclad_Garrison"
+    },
+    {
+      "title": "Slagworks",
+      "url": "https://warcraft.wiki.gg/wiki/Slagworks"
+    },
+    {
+      "title": "Kul Tiras (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Kul_Tiras_(kingdom)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

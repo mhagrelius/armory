@@ -1,0 +1,88 @@
+{
+  "zone": "Ashenvale",
+  "map": 63,
+  "expansion": "Classic",
+  "summary": "Ashenvale is the old-growth forest that is the night elves' mainland home, kept by the Sentinels and by the dryads and keepers who are Cenarius's children, with Astranaar on its island in a lake at the centre of the road. The Horde has held the eastern woods since the Third War and works them for timber out of Splintertree Post and the Warsong Lumber Camp, which is what the fighting here is about and why the Warsong Gulch battleground opens off Silverwing Grove in the south. Satyrs hold Xavian and Satyrnaar, furbolg tribes have gone feral in their villages, and naga come ashore on the Zoram Strand beside Blackfathom Deeps.",
+  "history": "The kaldorei rebuilt into these woods over centuries after the Sundering and fought the War of the Satyr through them; when that ended the Cenarion Circle turned on the Druids of the Scythe, and Mel'Thandris Starsong died holding their worgen off her own people — she and the Scythe of Elune went into the ground at the shrine that carries her name. The Highborne who raised an arcane storm here were exiled rather than executed. When saronite began surfacing across the world, Fandral Staghelm's druids secretly cut six branches from Nordrassil and planted one of them in Ashenvale; it rooted into a great tree that fed the Emerald Dream into the forest and scoured the deposits out of it. Through the Long Vigil the druids slept in barrow dens under Tyrande's Sentinels. In the Third War the Warsong clan came for the timber, and Grommash Hellscream drank the Legion's blood and killed Cenarius with it; then Archimonde's host burned inland toward Hyjal, and Tichondrius's corruption of the northern woods made Felwood out of them. Illidan killed Tichondrius for the Skull of Gul'dan and stopped the taint spreading. Garrosh Hellscream came back for the timber after the Cataclysm with goblin shredders to cut it faster; Varian Wrynn and Genn Greymane's worgen fought the advance to a stop beside the Sentinels, and the Horde kept most of what it took.",
+  "factions": [
+    "Darnassus and the Sentinel army",
+    "Silverwing Sentinels",
+    "Alliance",
+    "Horde",
+    "Warsong Outriders",
+    "Furbolg tribes — Thistlefur, Foulweald and Blackwood",
+    "Satyrs of Xavian and Satyrnaar",
+    "Naga of the Zoram Strand",
+    "Draenei of Forest Song",
+    "Burning Legion remnants"
+  ],
+  "notable": [
+    {
+      "name": "Astranaar",
+      "what": "The largest night elf town in the forest, built on an island in a lake and reached by two bridges, straddling the main road"
+    },
+    {
+      "name": "Splintertree Post",
+      "what": "The Horde's base in the eastern woods and the anchor of everything it holds in Ashenvale"
+    },
+    {
+      "name": "Warsong Lumber Camp",
+      "what": "The logging operation the whole conflict here comes down to, still cutting the trees the Warsong first came for"
+    },
+    {
+      "name": "Silverwing Grove",
+      "what": "The Alliance entrance to Warsong Gulch in the south, where the Silverwing Sentinels answer the Warsong directly"
+    },
+    {
+      "name": "Zoram Strand",
+      "what": "The western beach, held by naga, with the sunken temple of Blackfathom Deeps at its northern end"
+    },
+    {
+      "name": "Dor'Danil Barrow Den",
+      "what": "A druids' sleeping place south of Splintertree, left behind enemy lines when the Horde moved in"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ashenvale",
+      "url": "https://warcraft.wiki.gg/wiki/Ashenvale"
+    },
+    {
+      "title": "Astranaar",
+      "url": "https://warcraft.wiki.gg/wiki/Astranaar"
+    },
+    {
+      "title": "Dor'Danil Barrow Den",
+      "url": "https://warcraft.wiki.gg/wiki/Dor%27Danil_Barrow_Den"
+    },
+    {
+      "title": "Blackfathom Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Blackfathom_Camp"
+    },
+    {
+      "title": "Greenpaw Village",
+      "url": "https://warcraft.wiki.gg/wiki/Greenpaw_Village"
+    },
+    {
+      "title": "Forest Song",
+      "url": "https://warcraft.wiki.gg/wiki/Forest_Song"
+    },
+    {
+      "title": "Hellscream's Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Hellscream%27s_Watch"
+    },
+    {
+      "title": "Scythe of Elune",
+      "url": "https://warcraft.wiki.gg/wiki/Scythe_of_Elune"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

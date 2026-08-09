@@ -1,0 +1,50 @@
+{
+  "instance": "Karazhan",
+  "journal": 745,
+  "expansion": "The Burning Crusade",
+  "summary": "Karazhan is Medivh's tower in southern Deadwind Pass, standing on a nexus of ley lines and sealed since the day its master died. It reopened full of ghosts, afterimages and demons, with the Guardian's magic still running through the walls.",
+  "history": "Aegwynn built the tower in secret roughly six hundred years before the First War, on ground an older catastrophe had already weakened, wanting both a refuge from a Council she had stopped trusting and a tap into the ley lines beneath. Her son Medivh inherited it. Possessed by Sargeras, he threw parties for the nobility while the Dark Portal was opened behind the pretence, and when Aegwynn came to confront him the duel shook the tower to its foundations. Losing, he drained the life out of nearly everyone inside to feed his own strength, then banished his mother rather than kill her, leaving the place stocked with its own dead. Khadgar and Anduin Lothar killed him not long after and the tower sealed itself, and the curse spread out over Deadwind Pass and the region now called Duskwood. Kirin Tor mages picked the ruin over and took Atiesh away; the Violet Eye were set to watch what was left. When it opened again their own agents were trapped inside and dying, demons had already got in through what is effectively a beacon into the Twisting Nether, and Prince Malchezaar held the top.",
+  "assumes": "Karazhan assumes you know who Medivh was — the last Guardian of Tirisfal, possessed by Sargeras, the man who opened the Dark Portal and started the First War — and that the ghosts are his household. The raid furnishes the place as though you had already grieved for it and never once says so.",
+  "disputed": [
+    "The wiki flags parts of the tower's origin as speculation, including Medivh's own theory that the crater and the tower only ever existed because he would one day live there.",
+    "It also says every ley line on Azeroth converges under Karazhan, then notes in the next breath that this stopped being true once Malygos redirected them to the Nexus.",
+    "The tower's inhabitants are probably not killed permanently. Moroes, the Curator and Terestian Illhoof have all been fought again since, which the wiki records as a likelihood rather than a fact."
+  ],
+  "notable": [
+    {
+      "name": "Prince Malchezaar",
+      "what": "A man'ari eredar holding the summit, out in Netherspace above the tower"
+    },
+    {
+      "name": "Moroes",
+      "what": "Medivh's steward, still keeping house, and still wearing his blinders"
+    },
+    {
+      "name": "The Opera Hall",
+      "what": "Where the tower's cursed visions play, including the true one of Aredhel's death"
+    },
+    {
+      "name": "The Curator",
+      "what": "The construct that keeps the Menagerie, and the one thing here that has been switched off more than once"
+    },
+    {
+      "name": "Shade of Aran",
+      "what": "The ghost of the mage Nielas Aran, still in the tower and still hostile to anyone who reaches him"
+    },
+    {
+      "name": "Terestian Illhoof",
+      "what": "The satyr who killed the paladin Dougan and left his spirit trapped in the tower"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Karazhan",
+      "url": "https://warcraft.wiki.gg/wiki/Karazhan"
+    },
+    {
+      "title": "Deadwind Pass",
+      "url": "https://warcraft.wiki.gg/wiki/Deadwind_Pass"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

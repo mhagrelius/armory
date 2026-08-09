@@ -1,0 +1,74 @@
+{
+  "zone": "Un'Goro Crater",
+  "map": 78,
+  "expansion": "Classic",
+  "summary": "Un'Goro Crater is a bowl of steaming jungle dropped into the middle of southern Kalimdor's deserts, walled off from Tanaris, Silithus and Uldum by its own rim. Devilsaurs and other dinosaurs range it freely, a volcano called Fire Plume Ridge burns at the centre, and strange crystals and titan machinery are scattered through the undergrowth for anyone willing to survive long enough to study them. The people here are a handful of explorers and profiteers — Marshal's Stand, Mossy Pile — and everything else is either very large or watching from the Shaper's Terrace.",
+  "history": "Freya built this crater as a place to experiment, one of three sites where the Well of Eternity's power had pooled, and Wild Gods came out of cradles like it. She worked from the Shaper's Terrace, and when she left, the watcher Nablya took over the observing; in Un'Goro the titan watchers are permitted to interfere directly, which they are not elsewhere. During the War of the Shifting Sands the qiraji drove the night elf army back through the crater and then could not take it — nobody has satisfactorily explained why. Much later the Marshal expedition arrived to catalogue it, was overrun twice, and rebuilt higher up each time. The Cult of the Damned briefly held the Terrace during the Northrend war.",
+  "factions": [
+    "Marshal Expeditions",
+    "Steamwheedle Cartel",
+    "Titan watchers and stone guardians",
+    "Silithid",
+    "Qiraji",
+    "Cult of the Damned",
+    "Horde",
+    "Alliance"
+  ],
+  "notable": [
+    {
+      "name": "Fire Plume Ridge",
+      "what": "The volcano at the centre of the crater, its slopes running with lava and held by fire elementals under Blazerunner"
+    },
+    {
+      "name": "Shaper's Terrace",
+      "what": "Khaz'goroth's works on the eastern bluffs, where Freya ran her experiments, with a waygate through to Sholazar Basin"
+    },
+    {
+      "name": "Marshal's Stand",
+      "what": "The fortified camp Williden and Hol'anyee Marshal built after the crater ran them out of two previous ones"
+    },
+    {
+      "name": "The crystal pylons",
+      "what": "Titan devices standing over the crater, powered by coloured crystals, whose purpose nobody camped here has established"
+    },
+    {
+      "name": "Lakkari Tar Pits",
+      "what": "The tar beds in the southeast, and since the Cataclysm the edge of a bloom of flowers that has thrown the crater's balance off"
+    },
+    {
+      "name": "Mossy Pile",
+      "what": "A small stockade northwest of the volcano where Gadgetzan goblins work the crater for what they can sell"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Un'Goro Crater",
+      "url": "https://warcraft.wiki.gg/wiki/Un%27Goro_Crater"
+    },
+    {
+      "title": "Shaper's Terrace",
+      "url": "https://warcraft.wiki.gg/wiki/Shaper%27s_Terrace"
+    },
+    {
+      "title": "Marshal's Stand",
+      "url": "https://warcraft.wiki.gg/wiki/Marshal%27s_Stand"
+    },
+    {
+      "title": "Marshal's Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Marshal%27s_Refuge"
+    },
+    {
+      "title": "Marshal Expeditions",
+      "url": "https://warcraft.wiki.gg/wiki/Marshal_Expeditions"
+    },
+    {
+      "title": "Fire Plume Ridge",
+      "url": "https://warcraft.wiki.gg/wiki/Fire_Plume_Ridge"
+    },
+    {
+      "title": "Mossy Pile",
+      "url": "https://warcraft.wiki.gg/wiki/Mossy_Pile"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

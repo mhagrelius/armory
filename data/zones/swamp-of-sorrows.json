@@ -1,0 +1,78 @@
+{
+  "zone": "Swamp of Sorrows",
+  "map": 51,
+  "expansion": "Classic",
+  "summary": "The Swamp of Sorrows is the surviving northern half of the Black Morass: mud, standing water, crocolisks and spiders, east of Deadwind Pass and north of the Blasted Lands. The Temple of Atal'Hakkar lies drowned in the middle of it and is still watched by green dragons, and around it sit the Horde's rebuilt Stonard, the Alliance outpost at Marshtide Watch and Bogpaddle, a goblin resort happy to sell to both. The Broken at the Harborage and the feral Lost Ones at Fallow Sanctuary are the same refugees, divided only by who kept their mind.",
+  "history": "The Atal'ai fled here when the Gurubashi Empire fell and raised a temple to Hakkar, meaning to pull the loa bodily into the world; their magic twisted everything around it, so Ysera sank the temple into the bog and left Eranikus to watch it. The orcs came through the Dark Portal into the same marshland and built three towns, of which only Stonard survived the First War. When the portal was destroyed the southern half of the Morass burned away into the Blasted Lands, and what was left took its name from the dead of the Second War. Kilrogg Deadeye's clan hid in these bogs for years and was still there when the Horde came back, and the Warsong fell back here once Draenor was destroyed. Draenei survivors, goblin developers and an Alliance garrison have settled in since.",
+  "factions": [
+    "Horde",
+    "Kingdom of Stormwind and the Alliance",
+    "Steamwheedle goblins of Bogpaddle",
+    "Green dragonflight",
+    "Atal'ai trolls",
+    "Broken exiles of the Harborage",
+    "Lost Ones",
+    "Murlocs and gilblins of the coast"
+  ],
+  "notable": [
+    {
+      "name": "Temple of Atal'Hakkar",
+      "what": "The Atal'ai's sunken temple, drowned by Ysera before Hakkar could be summoned into it and guarded ever since"
+    },
+    {
+      "name": "Stonard",
+      "what": "The one orc settlement in the swamp to survive the First War, rebuilt and now the Horde's hold here"
+    },
+    {
+      "name": "Marshtide Watch",
+      "what": "The Alliance port north of the temple, cannon towers and a forge, raised after the Cataclysm to press on Stonard"
+    },
+    {
+      "name": "Bogpaddle",
+      "what": "Trade Baron Silversnap's beachfront resort and weapons yard, drinking custom from both sides of the war"
+    },
+    {
+      "name": "The Harborage",
+      "what": "The village of Broken who crossed from Draenor and stayed sane, helped by draenei off the Exodar"
+    },
+    {
+      "name": "Fallow Sanctuary",
+      "what": "Where the Lost Ones live — the same people, driven mad by homesickness after the portal closed"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Swamp of Sorrows",
+      "url": "https://warcraft.wiki.gg/wiki/Swamp_of_Sorrows"
+    },
+    {
+      "title": "Stonard",
+      "url": "https://warcraft.wiki.gg/wiki/Stonard"
+    },
+    {
+      "title": "Marshtide Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Marshtide_Watch"
+    },
+    {
+      "title": "Bogpaddle",
+      "url": "https://warcraft.wiki.gg/wiki/Bogpaddle"
+    },
+    {
+      "title": "Harborage",
+      "url": "https://warcraft.wiki.gg/wiki/Harborage"
+    },
+    {
+      "title": "Fallow Sanctuary",
+      "url": "https://warcraft.wiki.gg/wiki/Fallow_Sanctuary"
+    },
+    {
+      "title": "Green dragonflight",
+      "url": "https://warcraft.wiki.gg/wiki/Green_dragonflight"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

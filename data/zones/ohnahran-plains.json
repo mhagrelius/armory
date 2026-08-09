@@ -1,0 +1,64 @@
+{
+  "zone": "Ohn'ahran Plains",
+  "map": 2023,
+  "expansion": "Dragonflight",
+  "summary": "The Ohn'ahran Plains are open grassland in the middle of the Dragon Isles, shared between the green dragonflight in the wooded groves and the Maruuk Centaur out on the grass. They are named for Ohn'ahra, the eagle Wild God who brought the centaur here, and the four clans still order themselves around her — mystics at the springs, hunters on the range, keepers of the old ways, and a caravan that never stops moving. The exception is Clan Nokhud, which took the Primalists' offer and turned on everyone else.",
+  "history": "Ohn'ahra led Maruuk and Teera's people to these plains, where they promptly went to war with the green flight over them. Neither side could win, so they divided the land instead: dragons in the groves, centaur on the open ground. That settlement outlived the settlers. The Sundering drained the isles, the flights withdrew, and the centaur were left to themselves for ten thousand years — long enough to build a whole culture out of what had been a bargain, with clans, khans and a burial ground for their ancestors. It held until the Nokhud, newest of the great clans and the one with the largest army, took power from the Primal Incarnates' followers and set about the others.",
+  "factions": [
+    "Maruuk Centaur — clans Aylaag, Ohn'ir, Shikaar and Teerai",
+    "Clan Nokhud and their Primalist allies",
+    "Green dragonflight",
+    "Ukhel death-worshippers",
+    "Dragonscale Expedition",
+    "Tauren and dryads at the springs"
+  ],
+  "notable": [
+    {
+      "name": "Maruukai",
+      "what": "The centaur's common ground, where the clans meet and where an outsider has to earn the right to be spoken to"
+    },
+    {
+      "name": "Ohn'iri Springs",
+      "what": "Clan Ohn'ir's seat, held by the mystics who claim the closest hearing with Ohn'ahra and advise the other clans"
+    },
+    {
+      "name": "Nokhudon Hold",
+      "what": "The Nokhud's fortress, and the muster point for the largest standing force on the plains"
+    },
+    {
+      "name": "The Aylaag caravan",
+      "what": "A whole clan that lives on the move, striking camp and raising it again somewhere else across the grass"
+    },
+    {
+      "name": "The Eternal Kurgans",
+      "what": "The burial mounds of centaur ancestors, and the reason the Ukhel's necromancy is not a doctrinal quarrel but a desecration"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ohn'ahran Plains",
+      "url": "https://warcraft.wiki.gg/wiki/Ohn%27ahran_Plains"
+    },
+    {
+      "title": "Green dragonflight",
+      "url": "https://warcraft.wiki.gg/wiki/Green_dragonflight"
+    },
+    {
+      "title": "Clan Nokhud",
+      "url": "https://warcraft.wiki.gg/wiki/Clan_Nokhud"
+    },
+    {
+      "title": "Clan Ohn'ir",
+      "url": "https://warcraft.wiki.gg/wiki/Clan_Ohn%27ir"
+    },
+    {
+      "title": "Clan Aylaag",
+      "url": "https://warcraft.wiki.gg/wiki/Clan_Aylaag"
+    },
+    {
+      "title": "Primalists",
+      "url": "https://warcraft.wiki.gg/wiki/Primalists"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

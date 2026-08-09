@@ -1,0 +1,70 @@
+{
+  "zone": "Kezan",
+  "map": 194,
+  "expansion": "Cataclysm",
+  "summary": "Kezan is the goblins' home island in the South Seas, a tropical volcanic rock carved into trade districts by the trade princes and paved wherever paving could be sold. Its real capital is Undermine, a sprawl of tunnels, vaults and lava tubes running through Mount Kajaro beneath it. The volcano erupted during the Cataclysm and drove the Bilgewater Cartel off the island for good; only the goblin starting experience is played here, and the survivors now live in Azshara.",
+  "history": "Goblins reached Kezan roughly ten thousand years ago, after the Sundering. The Zandalari came for the kaja'mite beneath the island, found more of it than they could ever need, and put the goblins to work in the mines instead of digging themselves; breathing the ore dust woke an intelligence the goblins had long forgotten they had. A century before the Dark Portal opened they came out of the tunnels armed with things the trolls had no answer to and took the island. Freedom went straight into feuding, the feuds hardened into cartels, and the cartels made a truce and competed over money instead. When the kaja'mite ran out and the inventions started failing, trade was what was left. Then Deathwing's return set Mount Kajaro off and the harbours went under.",
+  "factions": [
+    "Goblin cartels",
+    "The trade princes and the Trade Coalition",
+    "Bilgewater Cartel",
+    "Trade Fleets",
+    "Venture Company",
+    "Hobgoblins",
+    "Forest and jungle trolls",
+    "Zandalari Empire"
+  ],
+  "notable": [
+    {
+      "name": "Undermine",
+      "what": "The goblin capital, threaded through the volcanic tunnels beneath the island; it survived the eruption that the surface did not"
+    },
+    {
+      "name": "Mount Kajaro",
+      "what": "The still-active volcano in the south, and the source of both the kaja'mite and the eruption that ended goblin Kezan"
+    },
+    {
+      "name": "Bilgewater Port",
+      "what": "The island's main harbour on the northern coast and the Bilgewater Cartel's headquarters, destroyed in the eruption"
+    },
+    {
+      "name": "Trade Prince Gallywix",
+      "what": "The Bilgewater trade prince who sold his own cartel into slavery on the way out, and later admitted his digging may have helped set the volcano off"
+    },
+    {
+      "name": "Crapopolis",
+      "what": "A town on the southern shore that came through the eruption, later dug over for Azerite by the Venture Company"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kezan",
+      "url": "https://warcraft.wiki.gg/wiki/Kezan"
+    },
+    {
+      "title": "Undermine",
+      "url": "https://warcraft.wiki.gg/wiki/Undermine"
+    },
+    {
+      "title": "Mount Kajaro",
+      "url": "https://warcraft.wiki.gg/wiki/Mount_Kajaro"
+    },
+    {
+      "title": "Bilgewater Port",
+      "url": "https://warcraft.wiki.gg/wiki/Bilgewater_Port"
+    },
+    {
+      "title": "Crapopolis",
+      "url": "https://warcraft.wiki.gg/wiki/Crapopolis"
+    },
+    {
+      "title": "Trade Coalition",
+      "url": "https://warcraft.wiki.gg/wiki/Trade_Coalition"
+    },
+    {
+      "title": "Zandalari Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Zandalari_Empire"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

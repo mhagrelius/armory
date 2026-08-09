@@ -1,0 +1,75 @@
+{
+  "zone": "Tiragarde Sound",
+  "map": 895,
+  "expansion": "Battle for Azeroth",
+  "summary": "Tiragarde Sound is the middle and largest of Kul Tiras' three regions, a rugged stretch of hills and forest split nearly in two by a bay that runs from one side of the island to the other. Boralus sits on that strait, seat of House Proudmoore and of the kingdom itself, so every road and shipping lane in Kul Tiras passes through here. The people of the Sound are sailors, monster hunters and nobles in roughly equal measure, and they share the coast with the pirate fleets of Freehold.",
+  "history": "The Sound is where the Proudmoores come from, and their rise made Boralus the capital of a kingdom built on the sea. Its people learned to hunt the things the ocean threw at them and to fight the raiders who worked the same water, tolerating the free port at Freehold so long as it stayed offshore. By the Fourth War that arrangement had broken down: the Irontide were striking the mainland, House Ashvane's money was quietly backing them from Bridgeport, and the nobles were too busy with each other to notice. The Alliance arrived to court Kul Tiras, made Boralus its base for the war against the Horde, and left with a navy.",
+  "factions": [
+    "House Proudmoore and the Proudmoore Admiralty",
+    "Alliance",
+    "House Ashvane and the Ashvane Trading Company",
+    "Irontide Raiders",
+    "Fogsail Freebooters",
+    "The Outriggers",
+    "Tidesages",
+    "Roughneck riders",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Boralus",
+      "what": "The capital, straddling the strait at the centre of the Sound; Proudmoore Keep, the harbour and the whole kingdom's trade"
+    },
+    {
+      "name": "Freehold",
+      "what": "A pirate port on the southern coast that asks no questions of any ship that ties up, and the Irontide's home water"
+    },
+    {
+      "name": "Bridgeport",
+      "what": "House Ashvane's own town just south of the capital, and the trading arm that made the family rich"
+    },
+    {
+      "name": "Anglepoint Wharf",
+      "what": "A fishing village on the western coast, sickened by tainted cargo and tended by tidesages"
+    },
+    {
+      "name": "Norwington Estate",
+      "what": "The Norwingtons' manor and the yearly riding and hunting festival that draws every noble on the island"
+    },
+    {
+      "name": "Tol Dagor",
+      "what": "The island prison in the Sound, run under Ashvane authority and holding whoever the family found inconvenient"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tiragarde Sound",
+      "url": "https://warcraft.wiki.gg/wiki/Tiragarde_Sound"
+    },
+    {
+      "title": "Boralus",
+      "url": "https://warcraft.wiki.gg/wiki/Boralus"
+    },
+    {
+      "title": "Freehold",
+      "url": "https://warcraft.wiki.gg/wiki/Freehold"
+    },
+    {
+      "title": "House Proudmoore",
+      "url": "https://warcraft.wiki.gg/wiki/House_Proudmoore"
+    },
+    {
+      "title": "House Ashvane",
+      "url": "https://warcraft.wiki.gg/wiki/House_Ashvane"
+    },
+    {
+      "title": "Irontide Raiders",
+      "url": "https://warcraft.wiki.gg/wiki/Irontide_Raiders"
+    },
+    {
+      "title": "Outriggers",
+      "url": "https://warcraft.wiki.gg/wiki/Outriggers"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

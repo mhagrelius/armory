@@ -1,0 +1,88 @@
+{
+  "zone": "Val'sharah",
+  "map": 641,
+  "expansion": "Legion",
+  "summary": "Val'sharah is the forested north-west of the Broken Isles and the place druidism was invented: Cenarius taught it here, Malfurion learned it here, and the woods were shaped deliberately to sit as close to the Emerald Dream as waking ground can. The World Tree Shaladrassil stands over the north of it, and the Nightmare has taken the tree. Xavius' satyrs are pushing that corruption outward, the Dreamweavers hold the Dreamgrove against it, and the Gilneans of Bradensbrook are simply trying to live on the coast.",
+  "history": "Cenarius kept this forest when Kalimdor was still whole, and taught the first night elf druid in it; his students then shaped the woods into an echo of the Emerald Dream, and Shaladrassil was planted to watch over them. The Ravencrests cut Black Rook Hold out of the rock and rose on the strength of it. The War of the Ancients cost the forest dearly: the Wild God Ashamane died killing a pit lord here, buying Suramar the hours it needed to raise its shield, and Illidan drained the Moon Guard to hold Black Rook. Afterwards the defeated satyrs were put to sleep under Shaladrassil's roots, which is where the Nightmare found them.",
+  "factions": [
+    "Dreamweavers",
+    "Cenarion Circle",
+    "Sisterhood of Elune",
+    "Wild Gods, dryads and keepers of the grove",
+    "Xavius and his satyrs",
+    "The Emerald Nightmare",
+    "Gilneans of Bradensbrook",
+    "The Rooksguard of Black Rook Hold",
+    "Naga of Gloaming Reef",
+    "Furbolgs and harpies"
+  ],
+  "notable": [
+    {
+      "name": "Shaladrassil",
+      "what": "The World Tree that protected the region for thousands of years and is now the root of the Nightmare growing out of it"
+    },
+    {
+      "name": "The Dreamgrove",
+      "what": "The druids' hall, warded and tied straight into the Emerald Dreamway that connects the Dream's places across Azeroth"
+    },
+    {
+      "name": "Black Rook Hold",
+      "what": "The Ravencrest fortress carved into the mountain, held against the Legion in the War of the Ancients and darkened ever since"
+    },
+    {
+      "name": "Temple of Elune",
+      "what": "The temple in the Crescent Vale, older than the War of the Ancients, and where the Tears of Elune were hidden"
+    },
+    {
+      "name": "Bradensbrook",
+      "what": "A Gilnean village on the bleak shore, wedged between the rocks and whatever comes out of the woods"
+    },
+    {
+      "name": "Grove of Cenarius",
+      "what": "Where the Lord of the Forest himself lives, in the forest he taught the night elves in"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Val'sharah",
+      "url": "https://warcraft.wiki.gg/wiki/Val%27sharah"
+    },
+    {
+      "title": "Shaladrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Shaladrassil"
+    },
+    {
+      "title": "Dreamgrove",
+      "url": "https://warcraft.wiki.gg/wiki/Dreamgrove"
+    },
+    {
+      "title": "Black Rook Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Black_Rook_Hold"
+    },
+    {
+      "title": "Darkheart Thicket",
+      "url": "https://warcraft.wiki.gg/wiki/Darkheart_Thicket"
+    },
+    {
+      "title": "Bradensbrook",
+      "url": "https://warcraft.wiki.gg/wiki/Bradensbrook"
+    },
+    {
+      "title": "Lorlathil",
+      "url": "https://warcraft.wiki.gg/wiki/Lorlathil"
+    },
+    {
+      "title": "Dreamweavers",
+      "url": "https://warcraft.wiki.gg/wiki/Dreamweavers"
+    },
+    {
+      "title": "Emerald Nightmare",
+      "url": "https://warcraft.wiki.gg/wiki/Emerald_Nightmare"
+    },
+    {
+      "title": "Rooksguard",
+      "url": "https://warcraft.wiki.gg/wiki/Rooksguard"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

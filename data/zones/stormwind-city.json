@@ -1,0 +1,69 @@
+{
+  "zone": "Stormwind City",
+  "map": 84,
+  "expansion": "Classic",
+  "summary": "Stormwind is the Alliance's working capital: a walled human city on the northwest coast of Elwynn Forest, its districts strung along canals beneath the Cathedral of Light, patrolled by the City Guard and quietly worked by SI:7. The throne is the Wrynn line's, though Anduin has spent years away from it and Turalyon has held the kingdom in his stead. Every Alliance race keeps a quarter, a shop or an embassy here, and the harbour and the Deeprun Tram make it the easiest place on Azeroth to leave from.",
+  "history": "Arathi settlers under Faldir came south from Lordaeron roughly twelve centuries before the Dark Portal and founded a kingdom in a fertile valley on a continent they named Azeroth. The Wrynn line held it through a gnoll uprising and then a Gurubashi war that ended with the trolls at these walls, King Barathen dead in a counterattack and Medivh burning their army off the field. The orcs came next: a first siege broken when Lothar landed knights behind their lines, a second that got into the streets, and Garona's dagger in King Llane in front of his son. The survivors sailed for Lordaeron and burned the ships they could not take. Terenas paid for the rebuilding, the Stonemasons' Guild did the work and Turalyon brought the exiles home. The debt and the quarrel over that work were both being steered by Lady Katrana Prestor, a royal adviser who was the black dragon Onyxia; Varian unmasked her in the keep on his own return and hung her head from the gates. Deathwing tore the Park off the western flank in the Cataclysm and took the head away with him. Varian died on the Broken Shore a few years after that, and the ruined Park was rebuilt as Lion's Rest — his tomb, and the memorial for everyone else lost there — with Anduin crowned over it.",
+  "factions": [
+    "Kingdom of Stormwind",
+    "Alliance",
+    "Church of the Holy Light",
+    "Stormwind City Guard",
+    "SI:7",
+    "Explorers' League and the Earthen Ring at the Eastern Earthshrine",
+    "Every Alliance race, from the dwarves of the Dwarven District to the exiles of Gilneas"
+  ],
+  "notable": [
+    {
+      "name": "Stormwind Keep",
+      "what": "The seat of the kingdom, where the throne, the war table and most of the arguments about what the Alliance should do next are found"
+    },
+    {
+      "name": "Cathedral of Light",
+      "what": "The Church's great house in Cathedral Square, its bell marking the hours and warning the city when something is wrong"
+    },
+    {
+      "name": "Valley of Heroes",
+      "what": "The statue-lined approach through the front gates; the five at its head are Turalyon, Khadgar, Alleria, Kurdran and Danath, raised when the Sons of Lothar did not come back through the Dark Portal"
+    },
+    {
+      "name": "Stormwind Harbor",
+      "what": "The dockyard and shipyard in the northwest, and the route to Kalimdor, Northrend and everywhere else the fleet sails"
+    },
+    {
+      "name": "The Stockade",
+      "what": "The prison beneath the canals for ordinary criminals; the more dangerous sort are kept in the Vault, ringed by water"
+    },
+    {
+      "name": "Deeprun Tram",
+      "what": "The gnomish underground line running the length of the mountains between here and Ironforge"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stormwind City",
+      "url": "https://warcraft.wiki.gg/wiki/Stormwind_City"
+    },
+    {
+      "title": "Stormwind (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Stormwind_(kingdom)"
+    },
+    {
+      "title": "Stormwind Keep",
+      "url": "https://warcraft.wiki.gg/wiki/Stormwind_Keep"
+    },
+    {
+      "title": "Stormwind Harbor",
+      "url": "https://warcraft.wiki.gg/wiki/Stormwind_Harbor"
+    },
+    {
+      "title": "Church of the Holy Light",
+      "url": "https://warcraft.wiki.gg/wiki/Church_of_the_Holy_Light"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

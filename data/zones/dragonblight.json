@@ -1,0 +1,80 @@
+{
+  "zone": "Dragonblight",
+  "map": 115,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Dragonblight is the frozen wasteland at the heart of southern Northrend, and it is where dragons go to die — the plain is littered with their bones, and a shrine for each of the five flights stands among them. Wyrmrest Temple rises at the centre, titan-built and neutral ground for the dragonflights. Around the edges sit everybody else: Alliance at Wintergarde Keep and Fordragon Hold, Horde at Agmar's Hammer and Venomspite, tuskarr at Moa'ki Harbor, Argent Crusade in the south, the Scarlet Onslaught on the eastern coast, and the entrance to nerubian Azjol-Nerub in the west.",
+  "history": "Galakrond ate his way across the north until the keeper Tyr talked five proto-dragons into hunting him; the monster came down on this plain and his bones are still in it. The keepers returned to pour the Pantheon's power into those five, making them the Aspects, and raised Wyrmrest Temple over the site; dragons have died here ever since. Aegwynn fought the Avatar of Sargeras here. Arthas landed at the Forgotten Shore, burned his own ships and went north for Frostmourne. Kel'Thuzad brought Naxxramas down over Wintergarde and was boarded and gutted for it. Both armies then took Angrathar, the gate into Icecrown — and Forsaken apothecaries shelled the field with plague, killing Bolvar Fordragon, Dranosh Saurfang and everyone else on it. In the Cataclysm the Twilight's Hammer besieged Wyrmrest while the Aspects and Thrall charged the Dragon Soul inside.",
+  "factions": [
+    "Wyrmrest Accord",
+    "Alliance",
+    "Horde",
+    "Argent Crusade",
+    "Kalu'ak tuskarr",
+    "Taunka of Icemist Village",
+    "Scourge",
+    "Anub'ar nerubians",
+    "Scarlet Onslaught",
+    "Magnataur"
+  ],
+  "notable": [
+    {
+      "name": "Wyrmrest Temple",
+      "what": "The spire the keepers forged at the centre of the plain to be the dragons' common ground, and where the flights still parley"
+    },
+    {
+      "name": "The Dragonshrines",
+      "what": "One resting place for each flight — ruby, azure, emerald, bronze and obsidian — scattered around the wastes"
+    },
+    {
+      "name": "Angrathar the Wrathgate",
+      "what": "The gate into Icecrown at the northern edge, with Fordragon Hold camped at its foot"
+    },
+    {
+      "name": "Naxxramas",
+      "what": "Kel'Thuzad's flying necropolis, brought over Wintergarde Keep for the Scourge's first counterattack of the war"
+    },
+    {
+      "name": "Agmar's Hammer",
+      "what": "The Horde's main hold in the zone, a Kor'kron stronghold in the new hard-edged Orgrimmar style, orphanage included"
+    },
+    {
+      "name": "Moa'ki Harbor",
+      "what": "The tuskarr port on the southern coast, and the turtle ferry between the Borean Tundra and the Howling Fjord"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dragonblight",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonblight"
+    },
+    {
+      "title": "Dragonshrine",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonshrine"
+    },
+    {
+      "title": "Fordragon Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Fordragon_Hold"
+    },
+    {
+      "title": "Agmar's Hammer",
+      "url": "https://warcraft.wiki.gg/wiki/Agmar%27s_Hammer"
+    },
+    {
+      "title": "Anub'ar",
+      "url": "https://warcraft.wiki.gg/wiki/Anub%27ar"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Kalu'ak",
+      "url": "https://warcraft.wiki.gg/wiki/Kalu%27ak"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

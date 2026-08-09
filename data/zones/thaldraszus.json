@@ -1,0 +1,69 @@
+{
+  "zone": "Thaldraszus",
+  "map": 2025,
+  "expansion": "Dragonflight",
+  "summary": "Thaldraszus is the high country of the Dragon Isles and the dragons' seat of power — the one region where the architecture is still standing rather than sunk in moss. Valdrakken sits in its valley, Tyrhold's titan aqueducts run across it, the Algeth'ar Academy teaches again, and the bronze flight keeps the timeways from the Temporal Conflux. Beneath all of it is the Vault of the Incarnates, which is where the Primalists were headed the whole time.",
+  "history": "When the Aspects settled the isles after the war with Galakrond, the keeper Tyr built them a waterworks in these mountains, and the dragons have revered him for it ever since he stopped being there to thank. From here the flights governed their kingdom and taught their young, until the Sundering drained the isles and everyone with wings left; the titan keepers stayed on and kept the machinery turning for ten thousand years without an audience. The flights came back to find it intact. They rebuilt their capital, reopened the academy, and then had to hold the vault under their own feet against the Primalists, who wanted the Incarnates sealed inside it out and elemental.",
+  "factions": [
+    "Valdrakken Accord and the five flights",
+    "Dracthyr",
+    "Drakonid and dragonspawn",
+    "Titan keepers of Tyrhold",
+    "Netherwing, roosting in the peaks since Amirdrassil",
+    "Thorignir storm drakes",
+    "Primalists and black tarasek"
+  ],
+  "notable": [
+    {
+      "name": "Tyrhold",
+      "what": "The keeper Tyr's reservoir and aqueducts, ten thousand years old and still watering the valley below"
+    },
+    {
+      "name": "Algeth'ar Academy",
+      "what": "The dragons' school, where every flight sent its knowledge and its young, dormant with the isles and open again"
+    },
+    {
+      "name": "Vault of the Incarnates",
+      "what": "The prison holding the proto-dragons who refused the titans' gift, and the thing the whole Primalist war was about"
+    },
+    {
+      "name": "Temporal Conflux",
+      "what": "The bronze flight's post over the timeways, and where a threat to the past is noticed before it becomes a threat to now"
+    },
+    {
+      "name": "Gelikyr Post",
+      "what": "A drakonid and dragonspawn town with Primalists dug in on the overlook across the bridge, pushing at it"
+    },
+    {
+      "name": "Garden Shrine",
+      "what": "A tea house on the southwestern road to the capital, turned into a triage camp when the war reached it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thaldraszus",
+      "url": "https://warcraft.wiki.gg/wiki/Thaldraszus"
+    },
+    {
+      "title": "Algeth'ar Academy",
+      "url": "https://warcraft.wiki.gg/wiki/Algeth%27ar_Academy"
+    },
+    {
+      "title": "Valdrakken Accord",
+      "url": "https://warcraft.wiki.gg/wiki/Valdrakken_Accord"
+    },
+    {
+      "title": "Kingdom of dragons",
+      "url": "https://warcraft.wiki.gg/wiki/Kingdom_of_dragons"
+    },
+    {
+      "title": "Gelikyr Post",
+      "url": "https://warcraft.wiki.gg/wiki/Gelikyr_Post"
+    },
+    {
+      "title": "Garden Shrine",
+      "url": "https://warcraft.wiki.gg/wiki/Garden_Shrine"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

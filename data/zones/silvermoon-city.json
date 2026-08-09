@@ -1,0 +1,69 @@
+{
+  "zone": "Silvermoon City",
+  "map": 110,
+  "expansion": "The Burning Crusade",
+  "summary": "Silvermoon is the capital of Quel'Thalas and the blood elves' own city, white stone under crimson banners in the north of Eversong Woods, guarding the road to the Sunwell. Lor'themar Theron rules as regent lord for a dynasty with no heir left, advised by Grand Magister Rommath and Ranger-General Halduron Brightwing. Only the eastern half is a city: the Dead Scar still cuts past it, and the western districts beyond are ruins full of Wretched and arcane constructs that never stopped working.",
+  "history": "Highborne exiles under Dath'Remar Sunstrider crossed the sea about sixty-eight centuries before the Dark Portal, poured a stolen measure of the Well of Eternity into a new one, and raised a capital on its power — on ground the Amani held sacred, which bought them an enemy for the rest of their history. The Troll Wars made allies of them and Arathor, and a Sunwell-fed shield kept invaders out for seven thousand years. Gul'dan broke that shield in the Second War by turning the elves' own runestones against it, and still the siege failed. What did not fail was Arthas: he cut a scar the length of the kingdom, took the city and fouled the Sunwell. The magisters rebuilt with borrowed fel until Quel'Danas gave the well back.",
+  "factions": [
+    "Kingdom of Quel'Thalas",
+    "Magisters",
+    "Farstriders",
+    "Blood Knights",
+    "The Reliquary",
+    "Horde",
+    "Wretched, in the western ruins"
+  ],
+  "notable": [
+    {
+      "name": "Sunfury Spire",
+      "what": "The royal palace in the Court of the Sun, where the regent lord and his advisors argue out the future of a kingdom with no king"
+    },
+    {
+      "name": "The Dead Scar",
+      "what": "The dead furrow Arthas' army burned through Eversong on its way to the Sunwell, still dividing the living city from its ruined half"
+    },
+    {
+      "name": "Shepherd's Gate",
+      "what": "The only real way in since the Third War destroyed the old gate, under a statue of the prince who betrayed them"
+    },
+    {
+      "name": "The Royal Exchange",
+      "what": "The larger of the two market squares, with the Reliquary's headquarters and the jewelcrafters who were once the only ones in the world"
+    },
+    {
+      "name": "Murder Row",
+      "what": "The lane behind the Exchange where the rogues and the warlocks keep their halls, exactly as advertised"
+    },
+    {
+      "name": "The Sunwell",
+      "what": "The font on Quel'Danas the whole city was built to guard, destroyed by the Scourge and rekindled as both arcane and Light"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Silvermoon City",
+      "url": "https://warcraft.wiki.gg/wiki/Silvermoon_City"
+    },
+    {
+      "title": "Quel'Thalas (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Quel%27Thalas_(kingdom)"
+    },
+    {
+      "title": "Sunwell",
+      "url": "https://warcraft.wiki.gg/wiki/Sunwell"
+    },
+    {
+      "title": "Sunfury Spire",
+      "url": "https://warcraft.wiki.gg/wiki/Sunfury_Spire"
+    },
+    {
+      "title": "Lor'themar Theron",
+      "url": "https://warcraft.wiki.gg/wiki/Lor%27themar_Theron"
+    },
+    {
+      "title": "Magisters",
+      "url": "https://warcraft.wiki.gg/wiki/Magisters"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

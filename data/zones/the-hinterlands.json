@@ -1,0 +1,78 @@
+{
+  "zone": "The Hinterlands",
+  "map": 26,
+  "expansion": "Classic",
+  "summary": "The Hinterlands are steep wooded mountains on the eastern edge of Lordaeron, and the ground is disputed between the Wildhammer dwarves at Aerie Peak, who breed and ride the gryphons the region is famous for, and the forest trolls whose empire began here. Vilebranch trolls hold Jintha'Alor and the Altar of Zul in the south, Witherbark the old temples in the middle, and the Revantusk, who took the Horde's offer, have a village on the coast. In the north stands Seradane, one of the four great trees, with a portal into the Emerald Dream and green dragons around it that the Nightmare has reached at least once.",
+  "history": "The Amani Empire started in these hills and ruled most of eastern Lordaeron until the Troll Wars broke it: the high elves taught the Arathi arcane magic in exchange for their armies, and what survived was reduced to remnants here and in the north. The Wildhammers arrived after the War of the Three Hammers, giving up Grim Batol for life above ground at Aerie Peak, and the trolls have treated them as squatters ever since. They were isolated enough to learn of the Second War only when the Horde marched into it: Kurdran's gryphon riders bled the column from the clouds, Doomhammer threw half his army at Aerie Peak while the rest slipped north, and Lothar came to drive the orcs into the forest. Kurdran took the Alliance's oath afterwards. Only the landless Revantusk later took the New Horde's offer.",
+  "factions": [
+    "Wildhammer clan",
+    "Highvale high elves",
+    "Alliance",
+    "Revantusk tribe",
+    "Horde and the Forsaken",
+    "Vilebranch tribe",
+    "Witherbark tribe",
+    "Green dragonflight at Seradane"
+  ],
+  "notable": [
+    {
+      "name": "Aerie Peak",
+      "what": "The Wildhammer capital in the northwest, built above ground, with a gryphon carved into the mountainside"
+    },
+    {
+      "name": "Jintha'Alor",
+      "what": "The Amani city the Vilebranch hold, second in size only to Zul'Aman and terraced up the whole hillside"
+    },
+    {
+      "name": "Seradane",
+      "what": "One of the four great trees, with a way into the Emerald Dream in its side and green dragons keeping it"
+    },
+    {
+      "name": "Quel'Danil Lodge",
+      "what": "The Highvale high elves' hall, and the reason there are elves in Aerie Peak at all"
+    },
+    {
+      "name": "Revantusk Village",
+      "what": "The first fixed settlement the Revantusk have ever had, built with Horde help on the eastern shore"
+    },
+    {
+      "name": "The Altar of Zul",
+      "what": "The Vilebranch altar above Jintha'Alor, kept by Qiaga and used for what altars here are used for"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Hinterlands",
+      "url": "https://warcraft.wiki.gg/wiki/The_Hinterlands"
+    },
+    {
+      "title": "Aerie Peak",
+      "url": "https://warcraft.wiki.gg/wiki/Aerie_Peak"
+    },
+    {
+      "title": "Jintha'Alor",
+      "url": "https://warcraft.wiki.gg/wiki/Jintha%27Alor"
+    },
+    {
+      "title": "Altar of Zul",
+      "url": "https://warcraft.wiki.gg/wiki/Altar_of_Zul"
+    },
+    {
+      "title": "Agol'watha",
+      "url": "https://warcraft.wiki.gg/wiki/Agol%27watha"
+    },
+    {
+      "title": "Highvale",
+      "url": "https://warcraft.wiki.gg/wiki/Highvale"
+    },
+    {
+      "title": "Amani Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Amani_Empire"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

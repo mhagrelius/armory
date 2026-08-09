@@ -1,0 +1,68 @@
+{
+  "zone": "K'aresh",
+  "map": null,
+  "expansion": "The War Within",
+  "summary": "K'aresh is the ethereals' homeworld, and it is in pieces: an arid desert planet whose twin suns were eaten and whose sky went from saffron to Void-purple, now a husk with habitable fragments strung around it. Ve'nari's K'aresh Trust has moved Tazavesh back home and is trying to grow the place green again under purchased eco-domes, while the Wastelanders survive on the debris and the Shadowguard feed the Manaforge at Shadow Point. What that manaforge is for is bringing Dimensius back.",
+  "history": "Before the Void, this was a desert world of city-states — Tazavesh, Ma'nussa, Sufaad and the rest — ruled by a Council of Oracles who could hear the planet's worldsoul sing and renewed their oaths to him in ritual. Then Dimensius arrived and opened gateways to the Void all around the sky. The K'areshi threw up shields fed by ribbons that turned any energy into arcane; the shields held, and the arcane burned their bodies off them, which is where ethereals come from. They fought him to a standstill until he could summon armies, and fled into the Nether and the Shadowlands. Everyone believes he destroyed the world. He did not — their own people broke it, to keep him from swallowing the worldsoul.",
+  "factions": [
+    "K'aresh Trust — the broker cartels with the Consortium's ethereals",
+    "Wastelanders",
+    "Ethereum",
+    "Shadowguard, under Nexus-King Salhadaar",
+    "The Ravel",
+    "Xal'atath, in an alliance nobody is comfortable with"
+  ],
+  "notable": [
+    {
+      "name": "Tazavesh",
+      "what": "The veiled market, a city-state old enough to predate the world's ruin, bought outright by Ve'nari and brought back to orbit its own planet"
+    },
+    {
+      "name": "Manaforge Omega",
+      "what": "The Shadowguard's enormous works at Shadow Point, running the process meant to resurrect the void lord"
+    },
+    {
+      "name": "The Oasis",
+      "what": "The chief eco-dome and the proof of concept for Project Eco-Dome: a patch of living K'aresh, made rather than remembered"
+    },
+    {
+      "name": "Eco-Dome Al'dani",
+      "what": "A dome raised over the site of the High Temple, the most sacred ground the K'areshi had"
+    },
+    {
+      "name": "Shan'dorah",
+      "what": "The Trust's forward position, and where the counterattack on Shadow Point was launched from"
+    },
+    {
+      "name": "The Merciless Wastes",
+      "what": "The open debris the Wastelanders live on, where surviving the day is the whole of the work"
+    }
+  ],
+  "sources": [
+    {
+      "title": "K'aresh",
+      "url": "https://warcraft.wiki.gg/wiki/K%27aresh"
+    },
+    {
+      "title": "K'aresh Trust",
+      "url": "https://warcraft.wiki.gg/wiki/K%27aresh_Trust"
+    },
+    {
+      "title": "Ve'nari",
+      "url": "https://warcraft.wiki.gg/wiki/Ve%27nari"
+    },
+    {
+      "title": "Wastelanders",
+      "url": "https://warcraft.wiki.gg/wiki/Wastelanders"
+    },
+    {
+      "title": "Manaforge Omega",
+      "url": "https://warcraft.wiki.gg/wiki/Manaforge_Omega"
+    },
+    {
+      "title": "Eco-Dome Al'dani",
+      "url": "https://warcraft.wiki.gg/wiki/Eco-Dome_Al%27dani"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,78 @@
+{
+  "zone": "The Cape of Stranglethorn",
+  "map": 210,
+  "expansion": "Classic",
+  "summary": "The Cape of Stranglethorn is the southern tail of the vale, everything below the Gurubashi Arena, and Booty Bay is why anyone goes there. The goblin port built into the cliffs of the lagoon keeps a neutral auction house, a bank, trainers and a boat to Ratchet, and Baron Revilgaz runs it in permanent low-grade war with the Bloodsail Buccaneers offshore. Beyond the town the Horde has its resort at Hardwrench Hideaway, the Explorers' League digs near Mistvale Valley, and the arena still fills on schedule.",
+  "history": "The arena on the cliffs above Booty Bay is Gurubashi work, left from an empire that once held the whole south of the continent, and so are the ruins strung along the coast below. Goblins took the lagoon afterwards and built a port in it, and the Steamwheedle Cartel has kept it profitably neutral since: anyone may trade there and nobody should be trusted. The cartel sold the Old Horde its charts, engineering and shipwrights for the invasion of Lordaeron, and was paid in Stormwind's plundered gold and treated as an equal for it. The Bloodsail Buccaneers wanted the harbour for themselves, were pushed out to a camp up the western shore, and have raided the lanes since. The Cataclysm cut the cape off from the jungle to the north, and Sassy Hardwrench landed her evacuated goblins not long after.",
+  "factions": [
+    "Blackwater Raiders and the Steamwheedle Cartel",
+    "Bloodsail Buccaneers",
+    "Bilgewater Cartel",
+    "Horde",
+    "Alliance",
+    "Explorers' League",
+    "Gurubashi trolls",
+    "Naga and sea giants of the coast"
+  ],
+  "notable": [
+    {
+      "name": "Booty Bay",
+      "what": "The pirate port in the lagoon, entered through the jaws of a shark, neutral ground and the busiest market south of Stormwind"
+    },
+    {
+      "name": "Gurubashi Arena",
+      "what": "An empire's fighting pit left standing north of town, still used by anyone who fancies the odds"
+    },
+    {
+      "name": "Bloodsail Compound",
+      "what": "The Buccaneers' camp up the western coast, and the reason Fleet Master Seahorn keeps hiring"
+    },
+    {
+      "name": "Hardwrench Hideaway",
+      "what": "Sassy Hardwrench's port behind the arena, half salvage yard and half holiday resort"
+    },
+    {
+      "name": "Nek'mani Wellspring",
+      "what": "A spring in the cliffs over the Savage Coast, and the only clean fresh water this far south"
+    },
+    {
+      "name": "Explorers' League Digsite",
+      "what": "The dwarves' excavation near Mistvale Valley, and the Alliance's foothold on the cape"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cape of Stranglethorn",
+      "url": "https://warcraft.wiki.gg/wiki/Cape_of_Stranglethorn"
+    },
+    {
+      "title": "Booty Bay",
+      "url": "https://warcraft.wiki.gg/wiki/Booty_Bay"
+    },
+    {
+      "title": "Gurubashi Arena",
+      "url": "https://warcraft.wiki.gg/wiki/Gurubashi_Arena"
+    },
+    {
+      "title": "Bloodsail Compound",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodsail_Compound"
+    },
+    {
+      "title": "Hardwrench Hideaway",
+      "url": "https://warcraft.wiki.gg/wiki/Hardwrench_Hideaway"
+    },
+    {
+      "title": "Nek'mani Wellspring",
+      "url": "https://warcraft.wiki.gg/wiki/Nek%27mani_Wellspring"
+    },
+    {
+      "title": "Steamwheedle Cartel",
+      "url": "https://warcraft.wiki.gg/wiki/Steamwheedle_Cartel"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

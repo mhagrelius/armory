@@ -1,0 +1,37 @@
+{
+  "instance": "The Obsidian Sanctum",
+  "journal": 755,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The black dragonflight's room in the Chamber of Aspects beneath Wyrmrest Temple, reached down a crack in the ice off the Path of the Titans. Sartharion is standing over a clutch of twilight eggs, with three drakes in side chambers who will join him if you leave them alive.",
+  "history": "Neltharion went into hiding after the other Aspects drove him out, but the flight he left behind kept working. Hunted and dwindling, it first tried simply to breed its numbers back; then its agents began crossing the blood of other dragonflights, and what came out of that was the twilight dragons. Those were believed destroyed after an attack on Grim Batol. In the wake of the Nexus War, with Alexstrasza setting her children to look for treachery inside the Wyrmrest Accord's own house, they found a fresh clutch of twilight eggs sitting in the black flight's chamber directly under the temple. The Accord was already stretched between the Scourge and the blue dragonflight, so Korialstrasz sent word to Dalaran's Council of Six and asked for mortal adventurers instead of dragons. They went down and destroyed the brood. Sartharion the Onyx Guardian stood over it with Shadron, Tenebron and Vesperon in the side chambers, and a raid could clear the drakes first or leave any of them alive, which made the fight and the reward heavier together. The black flight retaliated by attacking the Ruby Sanctum next door.",
+  "assumes": "It assumes you know what a twilight dragon is and why a clutch of them under the dragons' own capital is alarming. The Chamber of Aspects has a room for each flight, and this is the room nobody was watching.",
+  "notable": [
+    {
+      "name": "Sartharion the Onyx Guardian",
+      "what": "Standing over the eggs, and stronger for every drake left alive"
+    },
+    {
+      "name": "Shadron, Tenebron and Vesperon",
+      "what": "Twilight drakes in three side chambers, each optional and each a difficulty setting"
+    },
+    {
+      "name": "The Chamber of Aspects",
+      "what": "One sanctum per dragonflight, beneath Wyrmrest Temple in the Dragonblight"
+    },
+    {
+      "name": "The twilight dragonflight",
+      "what": "Bred from the blood of the other flights, and thought wiped out at Grim Batol"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Obsidian Sanctum",
+      "url": "https://warcraft.wiki.gg/wiki/Obsidian_Sanctum"
+    },
+    {
+      "title": "Dragonblight",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonblight"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

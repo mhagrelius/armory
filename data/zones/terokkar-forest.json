@@ -1,0 +1,90 @@
+{
+  "zone": "Terokkar Forest",
+  "map": 108,
+  "expansion": "The Burning Crusade",
+  "summary": "Terokkar Forest fills the south of Outland with dusky green olemba pines, and it holds both the best and the worst of the continent: Shattrath City in the northwest, where the naaru and the draenei take in refugees of every race, and the Bone Wastes in the south, where the shattered mausoleum of Auchindoun sits in a crater of ash. Arakkoa hold the mountains at Skettis and the veils scattered through the trees, the Alliance and Horde keep towns at Allerian Stronghold and Stonebreaker Hold, and Kael'thas's blood elves, Shadow Council warlocks and fel orc remnants all have holdings in between.",
+  "history": "This was Talador, red and orange olemba forest standing in perpetual autumn around Shattrath and around Auchindoun, the mausoleum raised to hold the remains of the naaru D'ore and the ancestral spirits it drew. Only the strip nearest the Spires of Arak was Terokkar then, and the arakkoa outcasts held it. Talador became the draenei's last stand; the orcs cut through to Shattrath once they had drunk Mannoroth's blood, and their fel magic bleached the trees to the dusky green they are now. Those who fled to Auchindoun held the crypts until Teron'gor's warlocks, losing, tore a hole in reality and pulled Murmur through it. The blast levelled the tomb city and the forest around it, and that is the Bone Wastes. The outcasts took the whole region afterwards and renamed it for Terokk, their lost king.",
+  "factions": [
+    "Sha'tar",
+    "Aldor",
+    "Scryers",
+    "Auchenai",
+    "Skettis arakkoa",
+    "Sha'tari Skyguard",
+    "Alliance at Allerian Stronghold",
+    "Horde at Stonebreaker Hold",
+    "Sunfury blood elves of Firewing Point",
+    "Shadow Council",
+    "Bleeding Hollow and Bonechewer fel orcs",
+    "Cenarion Expedition"
+  ],
+  "notable": [
+    {
+      "name": "Shattrath City",
+      "what": "The neutral capital of Outland, rebuilt around the naaru A'dal after the Old Horde razed it, and the one place every race on the continent is welcome"
+    },
+    {
+      "name": "Auchindoun and the Bone Wastes",
+      "what": "The draenei city of the dead, blown open when Shadow Council warlocks summoning a demon dragged in Murmur instead — its four wings are dungeons, Murmur is still at the bottom of one of them, and the blast crater around it is the wasteland the zone is remembered for"
+    },
+    {
+      "name": "Skettis",
+      "what": "The arakkoa city in the southeastern mountains, hostile to everyone, watched from Blackwind Landing by the Sha'tari Skyguard"
+    },
+    {
+      "name": "Allerian Stronghold and Stonebreaker Hold",
+      "what": "The Alliance and Horde towns — the first named for Alleria Windrunner and full of high elves"
+    },
+    {
+      "name": "Firewing Point",
+      "what": "Kael'thas's blood elf outpost in the northeast, holding a mana bomb of the kind his forces set off at Kirin'Var Village"
+    },
+    {
+      "name": "Archmage Khadgar",
+      "what": "Stands at the centre of Shattrath — the mage who closed the Dark Portal from this side and never left"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Terokkar Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Terokkar_Forest"
+    },
+    {
+      "title": "Auchindoun",
+      "url": "https://warcraft.wiki.gg/wiki/Auchindoun"
+    },
+    {
+      "title": "Auchenai",
+      "url": "https://warcraft.wiki.gg/wiki/Auchenai"
+    },
+    {
+      "title": "Allerian Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Allerian_Stronghold"
+    },
+    {
+      "title": "Firewing Point",
+      "url": "https://warcraft.wiki.gg/wiki/Firewing_Point"
+    },
+    {
+      "title": "Blackwind Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Blackwind_Landing"
+    },
+    {
+      "title": "Grangol'var Village",
+      "url": "https://warcraft.wiki.gg/wiki/Grangol%27var_Village"
+    },
+    {
+      "title": "Bleeding Hollow Ruins",
+      "url": "https://warcraft.wiki.gg/wiki/Bleeding_Hollow_Ruins"
+    },
+    {
+      "title": "Murmur",
+      "url": "https://warcraft.wiki.gg/wiki/Murmur"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

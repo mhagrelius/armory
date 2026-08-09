@@ -1,0 +1,74 @@
+{
+  "zone": "Redridge Mountains",
+  "map": 49,
+  "expansion": "Classic",
+  "summary": "The Redridge Mountains are green valley country east of Elwynn: elms, red canyon walls and the long water of Lake Everstill, with the town of Lakeshire on its western shore and the Three Corners crossroads in the southwest. Stonewatch Keep guards the eastern heights, held for years by Blackrock orcs and taken back with the help of the reformed Bravo Company. The Lakeridge Highway between them is still a road nobody walks alone, worked by Shadowhide gnolls, murlocs and orc camps.",
+  "history": "The range is the spine of the continent, and the Dragon Soul lay warded beneath it for ten thousand years, kept by the red dragon Orastrasz until Deathwing drew the Dragonmaw here in dreams and they killed him for it. Two centuries before the Dark Portal, Thaurissan's summoning of Ragnaros raised Blackrock Mountain and burned the northern reaches into ash, leaving Redridge only its southern half. In the First War the orcs took Lakeshire and everything around it — Lothar nearly killed Blackhand in an ambush here first — and the beaten Horde fell back on these valleys after its first assault on Stormwind failed. The humans returned to rebuild, the Blackrock clan returned too and seized Stonewatch with the warlock Morganth, and after the Cataclysm the Dark Horde came again behind the dragon Darkblaze.",
+  "factions": [
+    "Kingdom of Stormwind",
+    "Redridge Watchmen and the Stormwind Guard",
+    "Bravo Company",
+    "Blackrock clan and the Dark Horde",
+    "Shadowhide gnolls",
+    "Redridge gnolls",
+    "Everstill murlocs",
+    "Black dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "Lakeshire",
+      "what": "The town on Lake Everstill, run by Magistrate Solomon and the Court of Lakeshire, with a bridge that took five years to finish"
+    },
+    {
+      "name": "Stonewatch",
+      "what": "The keep in the centre of the zone, built to hold the orc road down from the Burning Steppes and lost to it for a while"
+    },
+    {
+      "name": "Render's Valley",
+      "what": "The Blackrock outpost in the southeast that grew dangerous after Deathwing's return, and was blown up for it"
+    },
+    {
+      "name": "Tower of Ilgalar",
+      "what": "The warlock Morganth's tower, with Shadowhide gnoll camps around its base"
+    },
+    {
+      "name": "Three Corners",
+      "what": "The junction to Elwynn and Duskwood, now watched over by the garrison at Tower Watch"
+    },
+    {
+      "name": "Shalewind Canyon",
+      "what": "The camp near Stonewatch Falls where John J. Keeshan turns up when the fighting starts"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redridge Mountains",
+      "url": "https://warcraft.wiki.gg/wiki/Redridge_Mountains"
+    },
+    {
+      "title": "Lakeshire",
+      "url": "https://warcraft.wiki.gg/wiki/Lakeshire"
+    },
+    {
+      "title": "Stonewatch",
+      "url": "https://warcraft.wiki.gg/wiki/Stonewatch"
+    },
+    {
+      "title": "Render's Valley",
+      "url": "https://warcraft.wiki.gg/wiki/Render%27s_Valley"
+    },
+    {
+      "title": "Shalewind Canyon",
+      "url": "https://warcraft.wiki.gg/wiki/Shalewind_Canyon"
+    },
+    {
+      "title": "Dark Horde",
+      "url": "https://warcraft.wiki.gg/wiki/Dark_Horde"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

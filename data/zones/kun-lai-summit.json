@@ -1,0 +1,81 @@
+{
+  "zone": "Kun-Lai Summit",
+  "map": 379,
+  "expansion": "Mists of Pandaria",
+  "summary": "Kun-Lai Summit is northern Pandaria: dry autumn plains in the south climbing into the coldest mountains on the continent, with Mount Neverest over everything. Xuen's Temple of the White Tiger and the Shado-Pan's monastery are both up here and both are in trouble — yaungol driven out of Townlong have burned their way across the farmland, and the sha have risen inside the monastery itself. On the northern coast a Zandalari fleet has landed and made common cause with the mogu again.",
+  "history": "The mountains are titan work shaped by mogu hands, and mogu clans fought over them long before the Thunder King united anyone. Lei Shen offered the summit's people their freedom on a single duel; Xuen took it, fought him for thirty days and nights, lost, and was chained on Mount Neverest to watch the empire rise. Generations later the pandaren Kang climbed up and found him still willing to teach. Ten thousand quiet years followed the revolution. Then both armies carried their wounded to Binan for its healers, yaungol crossed the wall ahead of the mantid and burned Westwind Rest, and Xuen — having tested the outsiders and opened the road to the Vale — sent Taran Zhu home angry enough to wake the sha under his own monastery.",
+  "factions": [
+    "Shado-Pan",
+    "Pandaren of Binan, Zouchin and the Yaungol Advance",
+    "Grummles of the Burlap Trail",
+    "Yaungol of the Ordo, Ruqin, Yongqi and Bataari fire camps",
+    "Mogu",
+    "Zandalari trolls",
+    "Ookin hozen",
+    "Inkgill jinyu",
+    "Alliance",
+    "Horde",
+    "Sha of Hatred and Sha of Anger"
+  ],
+  "notable": [
+    {
+      "name": "Temple of the White Tiger",
+      "what": "Xuen's training ground on the high peaks, guarded by martial priests and by the White Tiger himself"
+    },
+    {
+      "name": "Shado-Pan Monastery",
+      "what": "The order's home deep in the mountains, attacked from the inside by the Sha of Hatred"
+    },
+    {
+      "name": "Mount Neverest",
+      "what": "The highest peak in Pandaria, where Lei Shen bound Xuen and where Kang went to meditate and found him"
+    },
+    {
+      "name": "Binan Village",
+      "what": "By Inkgill Mere in the southeast, home to the finest healers on the continent and under attack from Fire Camp Bataar"
+    },
+    {
+      "name": "The Burlap Trail",
+      "what": "The grummles' trade road across the middle of the summit, with their bazaar at its eastern end"
+    },
+    {
+      "name": "Isle of Reckoning",
+      "what": "The Zandalari beachhead off the north coast, where Prophet Khar'zul brought the Thunder King back to life"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kun-Lai Summit",
+      "url": "https://warcraft.wiki.gg/wiki/Kun-Lai_Summit"
+    },
+    {
+      "title": "Binan Village",
+      "url": "https://warcraft.wiki.gg/wiki/Binan_Village"
+    },
+    {
+      "title": "Inkgill Mere",
+      "url": "https://warcraft.wiki.gg/wiki/Inkgill_Mere"
+    },
+    {
+      "title": "Dooker Dome",
+      "url": "https://warcraft.wiki.gg/wiki/Dooker_Dome"
+    },
+    {
+      "title": "Firebough Nook",
+      "url": "https://warcraft.wiki.gg/wiki/Firebough_Nook"
+    },
+    {
+      "title": "Eastwind Rest",
+      "url": "https://warcraft.wiki.gg/wiki/Eastwind_Rest"
+    },
+    {
+      "title": "Mogu empire",
+      "url": "https://warcraft.wiki.gg/wiki/Mogu_empire"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

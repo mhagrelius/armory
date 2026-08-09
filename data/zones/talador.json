@@ -1,0 +1,90 @@
+{
+  "zone": "Talador",
+  "map": 535,
+  "expansion": "Warlords of Draenor",
+  "summary": "Talador is the middle of Draenor and the draenei's own country: rivers running down from the Sea of Zangar, olemba forests held in a permanent autumn, and the cathedral city of Shattrath at the crossroads. South of it lies Auchindoun, the vault where the draenei keep their dead. As things stand the Iron Horde has landed on the northern coast and taken Shattrath, the Legion's converts are working at Auchindoun, and the Alliance and Horde have each planted a fort in the north-east.",
+  "history": "The Botani held Talador first, and it was here they grew a new sporemound to throw at the arakkoa of Arak, who burned the forest to ash to stop it. Ogres razed orc settlements across these woods centuries before the draenei landed. The draenei then made the region their heart: Shattrath at the river crossing, Auchindoun to the south to hold their souls, Tuurem on the road between the two and Telmor hidden in the trees. A Bladewind clan village near Shattrath was where Gul'dan first turned the orcs on the draenei, and the lie he told about the raid that destroyed it is what unified the clans. Warlord Blackhand has since taken the Orunai Coast and Shattrath itself for the Iron Horde, and the Sargerei have opened the way for Teron'gor to reach Auchindoun.",
+  "factions": [
+    "Draenei of Shattrath",
+    "Auchenai",
+    "Iron Horde",
+    "Burning Blade clan",
+    "Sargerei",
+    "Shadow Council and the Burning Legion",
+    "Alliance",
+    "Horde",
+    "Sunsworn blood elves",
+    "Kirin Tor",
+    "Arakkoa outcasts",
+    "Rangari"
+  ],
+  "notable": [
+    {
+      "name": "Shattrath City",
+      "what": "The draenei trade capital, a preserved monument to their own architecture, and the first thing the Iron Horde took"
+    },
+    {
+      "name": "Auchindoun",
+      "what": "The mausoleum south of the city where draenei souls rest, and therefore the reason the Legion came to this zone at all"
+    },
+    {
+      "name": "Tuurem",
+      "what": "The draenei town at the crossroads between Shattrath and Karabor, which anyone travelling between the two passed through"
+    },
+    {
+      "name": "Telmor",
+      "what": "The hidden draenei city in the woods, where Durotan and Orgrim Doomhammer were once guests — one of the last friendly meetings the two races had"
+    },
+    {
+      "name": "Khadgar's Tower",
+      "what": "The mage tower Khadgar called up over the ley lines at Zangarra, where Garona found and stabbed him"
+    },
+    {
+      "name": "Aruuna",
+      "what": "A draenei town in the east, burned by Rukhmar's arakkoa hunting for what the draenei had dug up"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Talador",
+      "url": "https://warcraft.wiki.gg/wiki/Talador"
+    },
+    {
+      "title": "Tuurem",
+      "url": "https://warcraft.wiki.gg/wiki/Tuurem"
+    },
+    {
+      "title": "Telmor",
+      "url": "https://warcraft.wiki.gg/wiki/Telmor"
+    },
+    {
+      "title": "Khadgar's Tower",
+      "url": "https://warcraft.wiki.gg/wiki/Khadgar%27s_Tower"
+    },
+    {
+      "title": "Aruuna",
+      "url": "https://warcraft.wiki.gg/wiki/Aruuna"
+    },
+    {
+      "title": "Bladefury's Command",
+      "url": "https://warcraft.wiki.gg/wiki/Bladefury%27s_Command"
+    },
+    {
+      "title": "Sunsworn Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Sunsworn_Camp"
+    },
+    {
+      "title": "Fort Wrynn",
+      "url": "https://warcraft.wiki.gg/wiki/Fort_Wrynn"
+    },
+    {
+      "title": "Vol'jin's Pride",
+      "url": "https://warcraft.wiki.gg/wiki/Vol%27jin%27s_Pride"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

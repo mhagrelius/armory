@@ -1,0 +1,74 @@
+{
+  "zone": "Loch Modan",
+  "map": 48,
+  "expansion": "Classic",
+  "summary": "Loch Modan is dwarf country east of Dun Morogh, grey hills lightly wooded in pine and birch around the basin the loch used to fill. The Stonewrought Dam broke when Deathwing came up through Azeroth and the water drained out of it, leaving mudflats, islands that are no longer islands and Second War siege engines lying where they sank. Thelsamar is the town, Ironband's excavation is why the troggs are out of the ground, and Mo'grosh ogres, kobolds and Bluegill murlocs share what the loch left behind.",
+  "history": "The dwarves dammed the valley and made the loch, and the Stonewrought Dam that held it was reckoned to have no equal anywhere on Azeroth. When the Horde came for Khaz Modan's ore and oil in the Second War it overran this valley too, and the broken catapults and ballistae lying about the basin are from that campaign; Kilrogg Deadeye's clan was left behind to hold the region and was hunted out of it when the Alliance swept south, which gave Ironforge the ground back. Digging under the hills for titan relics brought the troggs up instead, and they have camped in the mountains ever since, alongside the Mo'grosh ogres in the northeast. Then Deathwing burst out of the earth, cracked the dam and emptied the loch, which is why the map no longer matches anyone's memory of it.",
+  "factions": [
+    "Kingdom of Ironforge and the Alliance",
+    "Stonesplinter troggs",
+    "Mo'grosh ogres",
+    "Twilight's Hammer",
+    "Dark Iron clan",
+    "Tunnel Rat kobolds",
+    "Bluegill murlocs",
+    "Mosshide gnolls"
+  ],
+  "notable": [
+    {
+      "name": "Stonewrought Dam",
+      "what": "The dwarven wall that held the loch in, and the breach in it that let the loch out"
+    },
+    {
+      "name": "Thelsamar",
+      "what": "The town on the western shore, the region's only real settlement and its flight hub"
+    },
+    {
+      "name": "Mo'grosh Stronghold",
+      "what": "The ogre caves in the northeast, whose occupants have taken up with the Twilight's Hammer"
+    },
+    {
+      "name": "Ironband's Excavation Site",
+      "what": "Prospector Ironband's dig, which found troggs and a route towards Uldaman rather than what it wanted"
+    },
+    {
+      "name": "Farstrider Lodge",
+      "what": "The hunters' lodge in the southeast, trainers and beasts and the road on to the Badlands"
+    },
+    {
+      "name": "Valley of Kings",
+      "what": "The southwestern approach, watched by Ironforge troops, with Stonewrought Pass beyond it into the Searing Gorge"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loch Modan",
+      "url": "https://warcraft.wiki.gg/wiki/Loch_Modan"
+    },
+    {
+      "title": "Mo'grosh Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Mo%27grosh_Stronghold"
+    },
+    {
+      "title": "Farstrider Lodge",
+      "url": "https://warcraft.wiki.gg/wiki/Farstrider_Lodge"
+    },
+    {
+      "title": "Algaz Station",
+      "url": "https://warcraft.wiki.gg/wiki/Algaz_Station"
+    },
+    {
+      "title": "Ironforge (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Ironforge_(kingdom)"
+    },
+    {
+      "title": "Mosshide tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Mosshide_tribe"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

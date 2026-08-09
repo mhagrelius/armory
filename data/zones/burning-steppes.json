@@ -1,0 +1,90 @@
+{
+  "zone": "Burning Steppes",
+  "map": 36,
+  "expansion": "Classic",
+  "summary": "The Burning Steppes are ash, black rock and open lava between Redridge and the Searing Gorge, and the only overland road from Stormwind north to Khaz Modan runs across them. Blackrock Mountain stands on the northern ridge, and the Blackrock orcs, the black dragonflight and the Firegut ogres hold most of the ground under it. Against them there is Chiselgrip and Flamestar Post, run by the Thorium Brotherhood, the Horde's perch at Flame Crest and whatever the Alliance still keeps at Morgan's Vigil.",
+  "history": "This was the northern Redridge range, green once like the rest of it. Then came the War of the Three Hammers: Sorcerer-Thane Thaurissan, exiled from Ironforge, reached for something to win it and woke Ragnaros. Mountains melted, Blackrock Mountain rose out of the blast, and the country either side of it became the Searing Gorge and these steppes. Orcs arrived in the First War and reached for the same power; Ragnaros burned the warlocks who tried it, and Cho'gall's bargaining with the Old Gods won the Shadow Council only Blackrock Spire, as a hiding place. They held it until the Alliance besieged it late in the Second War — Orgrim Doomhammer killed Anduin Lothar at the volcano's foot and lost the war for the trouble. The Cataclysm put Deathwing's own cult in the depths of the mountain, and what the Twilight's Hammer wanted from the two dead dragons it dug up there — Nefarian, killed in his own lair, and Sinestra, Deathwing's consort — was not muscle but method: reanimated on void magic and obedient, she went back to breeding twilight dragons and he to forcing out another generation of chromatics. The Blackrock clan returned above them, pushed south into Redridge, and was pardoned into the Horde.",
+  "factions": [
+    "Blackrock clan and the Dark Horde",
+    "Black dragonflight",
+    "Firegut ogres",
+    "Smolderthorn trolls",
+    "Thorium Brotherhood",
+    "Dark Iron clan",
+    "Alliance and Morgan's Militia",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Blackrock Mountain",
+      "what": "The volcano Ragnaros's summoning raised, hollow with dwarven and orcish works and the way between the two zones it divides"
+    },
+    {
+      "name": "Blackrock Stronghold",
+      "what": "The orc fortress outside the Spire, with the Fields of Honor in front of it where the clan and its allies muster"
+    },
+    {
+      "name": "Ruins of Thaurissan",
+      "what": "What is left of the Dark Iron capital, flattened by the same summoning that made the mountain"
+    },
+    {
+      "name": "Chiselgrip",
+      "what": "The Thorium Brotherhood's town in the middle of the waste, and where the work against the Blackrock clan is organised"
+    },
+    {
+      "name": "Dreadmaul Rock",
+      "what": "The Firegut ogres' peak and its warren of caves, guarding the orcs' mineral supply"
+    },
+    {
+      "name": "Morgan's Vigil",
+      "what": "The Alliance camp in the southeast, on the ruins of a town belonging to the family it is named for"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Burning Steppes",
+      "url": "https://warcraft.wiki.gg/wiki/Burning_Steppes"
+    },
+    {
+      "title": "Blackrock Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Blackrock_Stronghold"
+    },
+    {
+      "title": "Blackrock Spire",
+      "url": "https://warcraft.wiki.gg/wiki/Blackrock_Spire"
+    },
+    {
+      "title": "Chiselgrip",
+      "url": "https://warcraft.wiki.gg/wiki/Chiselgrip"
+    },
+    {
+      "title": "Dreadmaul Rock",
+      "url": "https://warcraft.wiki.gg/wiki/Dreadmaul_Rock"
+    },
+    {
+      "title": "Thorium Brotherhood",
+      "url": "https://warcraft.wiki.gg/wiki/Thorium_Brotherhood"
+    },
+    {
+      "title": "Firegut",
+      "url": "https://warcraft.wiki.gg/wiki/Firegut"
+    },
+    {
+      "title": "Shadow Council",
+      "url": "https://warcraft.wiki.gg/wiki/Shadow_Council"
+    },
+    {
+      "title": "Blackrock Mountain",
+      "url": "https://warcraft.wiki.gg/wiki/Blackrock_Mountain"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

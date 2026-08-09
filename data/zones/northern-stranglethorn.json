@@ -1,0 +1,80 @@
+{
+  "zone": "Northern Stranglethorn",
+  "map": 50,
+  "expansion": "Classic",
+  "summary": "Northern Stranglethorn is the upper half of the vale, dense tropical jungle running from the Duskwood border down to the channel the Cataclysm tore through the middle of the region. Nobody owns it: the Gurubashi hold Zul'Gurub, the Bloodscalp and Skullsplitter hold the ruins between, the Horde moves supplies through Grom'gol and the Alliance answers from Fort Livingston and the Rebel Camp. The Venture Company strips whatever it can carry, Kurzen's old expedition has gone feral in its own compound, and Nesingwary's safari shoots the rest.",
+  "history": "The vale was the heart of the Gurubashi Empire, which held a great stretch of the southern continent until its trolls turned on the loa Hakkar and broke themselves doing it, some fifteen centuries before the Dark Portal. The survivors split into Bloodscalp, Skullsplitter and the rest and began fighting over the jungle at once; the Darkspear were driven out altogether and only came back generations later, founding Bambala. Stormwind's expansion down the coast brought war back to the vale: Prince Llane, Lothar and Medivh came in to kill the Gurubashi leadership, the trolls marched on the capital in answer, and Medivh burned their army off the field at its gates. The Bleeding Hollow tried the jungle next in the First War and were bled white in it until Blackhand recalled them. The Shattering split the vale in two.",
+  "factions": [
+    "Gurubashi tribe",
+    "Bloodscalp tribe",
+    "Skullsplitter tribe",
+    "Darkspear tribe",
+    "Horde",
+    "Alliance and the Kingdom of Stormwind",
+    "Venture Company",
+    "Kurzen's Expedition",
+    "Mosh'Ogg ogres",
+    "Nesingwary Safari"
+  ],
+  "notable": [
+    {
+      "name": "Zul'Gurub",
+      "what": "The Gurubashi capital in the eastern jungle, where the tribe's priesthood keeps trying to call Hakkar back"
+    },
+    {
+      "name": "Grom'gol Base Camp",
+      "what": "The orc camp on the southwestern coast, the link in the Horde's supply chain up to Stonard"
+    },
+    {
+      "name": "Fort Livingston",
+      "what": "The Alliance's answer to Grom'gol, planted in the southern jungle after the Shattering"
+    },
+    {
+      "name": "Bambala",
+      "what": "The first Darkspear village in the vale since the tribe's exile, built outside Zul'Gurub on ground the Zandalari left"
+    },
+    {
+      "name": "Kurzen's Compound",
+      "what": "A Stormwind expedition's camp that never came home, now run by the chiefs who outlived its colonel"
+    },
+    {
+      "name": "The Sundering",
+      "what": "The whirlpool at the southern edge, where the Cataclysm cut the vale into two zones"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Northern Stranglethorn",
+      "url": "https://warcraft.wiki.gg/wiki/Northern_Stranglethorn"
+    },
+    {
+      "title": "Grom'gol Base Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Grom%27gol_Base_Camp"
+    },
+    {
+      "title": "Bambala",
+      "url": "https://warcraft.wiki.gg/wiki/Bambala"
+    },
+    {
+      "title": "Kurzen's Compound",
+      "url": "https://warcraft.wiki.gg/wiki/Kurzen%27s_Compound"
+    },
+    {
+      "title": "Gurubashi tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Gurubashi_tribe"
+    },
+    {
+      "title": "Bloodscalp tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodscalp_tribe"
+    },
+    {
+      "title": "Kurzen's Expedition",
+      "url": "https://warcraft.wiki.gg/wiki/Kurzen%27s_Expedition"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

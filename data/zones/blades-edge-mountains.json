@@ -1,0 +1,90 @@
+{
+  "zone": "Blade's Edge Mountains",
+  "map": 105,
+  "expansion": "The Burning Crusade",
+  "summary": "Blade's Edge Mountains is northwestern Outland: forested mesas and dusty canyons separated by ridges of stone spikes sharp enough to have given the place its name, with the highest plateaus reachable only by flight. It is ogre country, ruled from the top by the gronn and by Gruul the Dragonkiller, whose Bladespire and Bloodmaul subjects fight each other for his favour. Sharing it are the half-ogre Mok'Nathal, arakkoa in the northern woods, druids at Evergrove, gnomish tinkers at Toshley's Station, and the black dragons and nether drakes left over from Deathwing's visit.",
+  "history": "Two places became one here: Gorgrond and Frostfire Ridge, fused when Draenor broke apart, keeping the spikes Frostfire was known for. This was ogre country, and Thunderlord country. Bladespire Hold was a Gorian stronghold left an isolated city-state once the orcs destroyed Goria, and its imperator bred ogres to orcs for an army — the Mok'Nathal, who rebelled under Leoroxx, pulled the fortress down and withdrew. After the Second War Deathwing bargained passage to Draenor and hid clutches of eggs here, and the gronn fought his flight for the ground. Khadgar stripped the plates off Deathwing's back while Gruul nearly finished him by hand; the dragons left behind were dragged out of the sky and impaled on the spires, and that is how he became the Dragonkiller. The eggs that survived hatched, warped by the nether, as the Netherwing.",
+  "factions": [
+    "Gruul and the gronn",
+    "Bladespire clan",
+    "Bloodmaul clan",
+    "Ogri'la",
+    "Mok'Nathal",
+    "Cenarion Expedition",
+    "Alliance at Sylvanaar",
+    "Horde at Thunderlord Stronghold",
+    "Razak's Roughriders",
+    "Grishna arakkoa",
+    "Black dragonflight",
+    "Netherwing dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "Gruul's Lair",
+      "what": "The open cavern north of Ruuan Weald where the gronn overlord rules the ogres of the zone — and where the dragon corpses on the spires outside came from"
+    },
+    {
+      "name": "Bladespire Hold",
+      "what": "The stronghold of the dominant ogre clan, in the central valley, raided constantly by their Bloodmaul rivals"
+    },
+    {
+      "name": "Mok'Nathal Village",
+      "what": "Home of the orc-ogre Mok'Nathal, bred as slave-soldiers by the Bladespire and kept apart ever since, led by Leoroxx — Rexxar's father, and Rexxar himself is over at Thunderlord Stronghold"
+    },
+    {
+      "name": "Evergrove",
+      "what": "The Cenarion Expedition's outpost in Ruuan Weald, manned almost entirely by night elves rather than the usual mix"
+    },
+    {
+      "name": "The Circle of Blood",
+      "what": "An ogre fighting pit turned into one of Outland's arenas"
+    },
+    {
+      "name": "Sylvanaar and Thunderlord Stronghold",
+      "what": "The Alliance and Horde towns, both wedged into ogre territory"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blade's Edge Mountains",
+      "url": "https://warcraft.wiki.gg/wiki/Blade%27s_Edge_Mountains"
+    },
+    {
+      "title": "Gruul's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Gruul%27s_Lair"
+    },
+    {
+      "title": "Bladespire clan",
+      "url": "https://warcraft.wiki.gg/wiki/Bladespire_clan"
+    },
+    {
+      "title": "Bladespire Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Bladespire_Hold"
+    },
+    {
+      "title": "Bloodmaul clan",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodmaul_clan"
+    },
+    {
+      "title": "Evergrove",
+      "url": "https://warcraft.wiki.gg/wiki/Evergrove"
+    },
+    {
+      "title": "Grishnath",
+      "url": "https://warcraft.wiki.gg/wiki/Grishnath"
+    },
+    {
+      "title": "Black dragonflight",
+      "url": "https://warcraft.wiki.gg/wiki/Black_dragonflight"
+    },
+    {
+      "title": "Mok'Nathal",
+      "url": "https://warcraft.wiki.gg/wiki/Mok%27Nathal"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,27 @@
+# The build context is the workspace root, because armory-server depends on
+# armory-core by path and a context of `server/` alone cannot see it. That
+# makes this file matter before the first build rather than after: `target/`
+# alone is gigabytes, and it is uploaded to the daemon before any instruction
+# in the Containerfile runs.
+#
+# The Containerfile then copies an explicit list rather than the whole context,
+# so this only has to stop the large and the secret.
+target/
+.git/
+.flatpak-build/
+dist/
+
+# The GTK half. armory-server compiles none of it, and `data/` is eight
+# megabytes of zone and instance JSON that only the shell links in.
+src/
+tests/
+examples/
+packaging/
+addon/
+docs/
+scripts/
+
+# These reach the container through the environment, never through a layer,
+# where they would survive in the image whatever the running process does.
+server/.env
+packaging/.env

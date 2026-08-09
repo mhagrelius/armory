@@ -1,0 +1,68 @@
+{
+  "zone": "Ironforge",
+  "map": 87,
+  "expansion": "Classic",
+  "summary": "Ironforge is the dwarven capital, hollowed out of the mountain above Dun Morogh in rings around the Great Forge that named it — equal parts foundry, fortress and market, with stone overhead as well as underfoot. The Council of Three Hammers rules from the High Seat, Bronzebeard, Wildhammer and Dark Iron sharing a throne none of them won outright. The Deeprun Tram surfaces in Tinker Town, the Explorers' League runs its digs from the Hall of Explorers, and gnomes displaced from Gnomeregan make up much of the population.",
+  "history": "The first dwarves left Uldaman around 2,500 BDP, delved into the tallest peak in Dun Morogh and raised a forge beside an altar to Khaz'goroth; the city grew around it and took its name. Gnomes were already neighbours and traded technology for masonry. When High King Modimus Anvilmar died the three clans went to war — the Bronzebeards kept the city, the Wildhammers and Dark Irons were driven out, and Thaurissan's revenge ended with Ragnaros pulled into the world. Every other dwarven hold fell to the Horde in the Second War and this one did not: Doomhammer weighed what storming it would cost, gave up, and left a clan to seal the gates instead. The nation sat the war out inside it. Word came in the Third War that Arthas had killed Muradin, and Magni took his grief to the Great Anvil and beat it into the Ashbringer, a blade made to answer Frostmourne; he gave it to Alexandros Mograine rather than carry it himself. Much later Magni turned to diamond, Moira seized the city, and the Council was the settlement that followed.",
+  "factions": [
+    "Kingdom of Ironforge",
+    "Council of Three Hammers",
+    "Bronzebeard, Wildhammer and Dark Iron dwarves",
+    "Gnomes of Gnomeregan",
+    "Explorers' League",
+    "Alliance"
+  ],
+  "notable": [
+    {
+      "name": "The Great Forge",
+      "what": "The molten heart of the city and the oldest thing in it; everything else was built in circles around this"
+    },
+    {
+      "name": "The High Seat",
+      "what": "The council chamber at the back of the city, where three clans that once fought a war now rule together"
+    },
+    {
+      "name": "Hall of Explorers",
+      "what": "The Explorers' League's museum and headquarters, and the reason half the dwarves in Azeroth are found in a dig site"
+    },
+    {
+      "name": "Old Ironforge",
+      "what": "The buried original city under the High Seat, opened again when Magni went looking for a way to answer the shuddering earth"
+    },
+    {
+      "name": "Tinker Town",
+      "what": "The gnomish quarter, built around the Deeprun Tram terminal and full of refugees who still intend to retake Gnomeregan"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ironforge",
+      "url": "https://warcraft.wiki.gg/wiki/Ironforge"
+    },
+    {
+      "title": "Ironforge (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Ironforge_(kingdom)"
+    },
+    {
+      "title": "Council of Three Hammers",
+      "url": "https://warcraft.wiki.gg/wiki/Council_of_Three_Hammers"
+    },
+    {
+      "title": "Great Forge",
+      "url": "https://warcraft.wiki.gg/wiki/Great_Forge"
+    },
+    {
+      "title": "Old Ironforge",
+      "url": "https://warcraft.wiki.gg/wiki/Old_Ironforge"
+    },
+    {
+      "title": "Gnomeregan",
+      "url": "https://warcraft.wiki.gg/wiki/Gnomeregan"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

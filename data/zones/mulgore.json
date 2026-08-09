@@ -1,0 +1,75 @@
+{
+  "zone": "Mulgore",
+  "map": 7,
+  "expansion": "Classic",
+  "summary": "Mulgore is the tauren's valley: green rolling grassland walled in by mountains on every side, with one pass out to the east that the Great Gate now closes. Thunder Bluff stands on mesas hundreds of feet above the plain in the north, Bloodhoof Village sits on Stonebull Lake in the middle, and Camp Narache on Red Cloud Mesa is where young tauren are trained. It is pastoral rather than peaceful — Bristleback quilboar press out of Brambleblade Ravine, Palemane gnolls hold the western caves, Windfury harpies the far north, and the Venture Company and the Grimtotem both go after the water.",
+  "history": "This valley is remembered as the tauren's oldest home, and they were driven out of it into centuries of nomadic wandering and running war with the centaur. Cairne Bloodhoof met Thrall's orcs when they landed on Kalimdor, and with their help took the plains back and raised Thunder Bluff on the mesas, a city open to every tauren tribe. The scattered tribes gathered under him there. After the war against the Lich King, Garrosh Hellscream killed Cairne in a duel that Magatha Grimtotem had poisoned, and the Grimtotem seized Thunder Bluff before the tauren retook it; Baine rules from his father's place now. Then the Cataclysm roused the earth spirits under the dwarven dig and let the quilboar loose across Red Cloud Mesa.",
+  "factions": [
+    "Thunder Bluff",
+    "Bloodhoof tribe",
+    "Horde",
+    "Grimtotem tribe",
+    "Bristleback quilboar",
+    "Palemane gnolls",
+    "Windfury harpies",
+    "Venture Company",
+    "Bael'dun dwarves"
+  ],
+  "notable": [
+    {
+      "name": "Thunder Bluff",
+      "what": "The tauren capital, built across mesas reached only by elevator and lift, and the seat of the united tribes"
+    },
+    {
+      "name": "Bloodhoof Village",
+      "what": "The Bloodhoof tribe's town in the centre of the valley, ringed by the waters of Stonebull Lake"
+    },
+    {
+      "name": "Camp Narache",
+      "what": "Chief Hawkwind's village on Red Cloud Mesa, where every tauren character starts"
+    },
+    {
+      "name": "Brambleblade Ravine",
+      "what": "The Bristleback quilboar hold on the edge of Red Cloud Mesa, and the source of the raids on the mesa's camps"
+    },
+    {
+      "name": "Palemane Rock",
+      "what": "The gnoll cave in the western hills, with camps scattered along the southern mountains below it"
+    },
+    {
+      "name": "The water wells",
+      "what": "Thunderhorn, Wildmane and Winterhoof — the valley's sacred springs, seized by the Venture Company and later poisoned by Grimtotem holdouts"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mulgore",
+      "url": "https://warcraft.wiki.gg/wiki/Mulgore"
+    },
+    {
+      "title": "Thunder Bluff",
+      "url": "https://warcraft.wiki.gg/wiki/Thunder_Bluff"
+    },
+    {
+      "title": "Bloodhoof Village",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodhoof_Village"
+    },
+    {
+      "title": "Camp Narache",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Narache"
+    },
+    {
+      "title": "Brambleblade Ravine",
+      "url": "https://warcraft.wiki.gg/wiki/Brambleblade_Ravine"
+    },
+    {
+      "title": "Palemane Rock",
+      "url": "https://warcraft.wiki.gg/wiki/Palemane_Rock"
+    },
+    {
+      "title": "Baine Bloodhoof",
+      "url": "https://warcraft.wiki.gg/wiki/Baine_Bloodhoof"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

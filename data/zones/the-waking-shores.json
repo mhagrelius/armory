@@ -1,0 +1,69 @@
+{
+  "zone": "The Waking Shores",
+  "map": 2022,
+  "expansion": "Dragonflight",
+  "summary": "The Waking Shores are where anyone sailing to the Dragon Isles lands first: a coast of geysers, hot springs and coloured rock that climbs west into volcanic mountains, and the old ground of the red and black dragonflights. The red flight keeps the Ruby Lifeshrine and its life pools in the southeast; the black flight's Obsidian Citadel sits in the heights, held for a long time by djaradin rather than dragons. The Dragonscale Expedition has its base camp here, and the Uktulut tuskarr the shoreline.",
+  "history": "This was the Broodlands' seaward edge, and the black flight raised a fortress in the mountains above it so that the Earth-Warder could answer anything that came at the isles. Then the Sundering pulled the magic out of the land, the flights left, and their halls went to moss and rubble over ten thousand years. The djaradin who had hunted dragons here slept through most of it and woke when the isles did, taking the citadel and the northern coast, with the Qalashi the fiercest of them. So the expedition that made landfall found a place with two owners: Alexstrasza calling both mortal factions in to help her flight hold it, and Wrathion trying to take back a seat for a flight that hardly exists.",
+  "factions": [
+    "Red dragonflight",
+    "Black dragonflight and Wrathion's Blacktalon agents",
+    "Djaradin of the Qalashi tribe",
+    "Dragonscale Expedition",
+    "Uktulut tuskarr",
+    "Explorers' League and the Reliquary",
+    "Primalists"
+  ],
+  "notable": [
+    {
+      "name": "Ruby Lifeshrine",
+      "what": "The red flight's seat above the life pools, where eggs are tended and the Ruby Oathstone stands"
+    },
+    {
+      "name": "Obsidian Citadel",
+      "what": "Neltharus, the black flight's ancient hold in the western peaks, built to defend the whole of the isles and lost to their enemies for an age"
+    },
+    {
+      "name": "Scalecracker Keep",
+      "what": "The Qalashi stronghold on the northern coast, a settlement of people whose entire trade is killing dragons"
+    },
+    {
+      "name": "Dragonscale Basecamp",
+      "what": "The expedition's headquarters, and where every mortal on the isles reports in"
+    },
+    {
+      "name": "Skytop Observatory",
+      "what": "A ruined dragon post on a southwestern peak, taken over by riders of the Accord who teach outsiders to fly"
+    },
+    {
+      "name": "Dragonbane Keep",
+      "what": "A djaradin holding south of the citadel, emptied when they went into hibernation and worth retaking when they did not stay asleep"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Waking Shores",
+      "url": "https://warcraft.wiki.gg/wiki/The_Waking_Shores"
+    },
+    {
+      "title": "Ruby Lifeshrine",
+      "url": "https://warcraft.wiki.gg/wiki/Ruby_Lifeshrine"
+    },
+    {
+      "title": "Obsidian Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Obsidian_Citadel"
+    },
+    {
+      "title": "Qalashi tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Qalashi_tribe"
+    },
+    {
+      "title": "Dragonscale Basecamp",
+      "url": "https://warcraft.wiki.gg/wiki/Dragonscale_Basecamp"
+    },
+    {
+      "title": "Skytop Observatory",
+      "url": "https://warcraft.wiki.gg/wiki/Skytop_Observatory"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

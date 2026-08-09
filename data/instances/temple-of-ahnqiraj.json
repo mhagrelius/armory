@@ -1,0 +1,53 @@
+{
+  "instance": "Temple of Ahn'Qiraj",
+  "journal": 744,
+  "expansion": "Classic",
+  "summary": "The Temple is the inner city: a complex built before anyone was writing anything down, part monument to gods nobody names and part breeding ground for the qiraji army. Underneath it is the vault where C'Thun was chained, which makes this the only place in Classic where an Old God can be reached at all.",
+  "history": "The War of the Shifting Sands ended not with the qiraji beaten but with them shut in. The barrier held the Twin Emperors Vek'lor and Vek'nilash inside their own temple for a thousand years, and the dragons who paid for that seal were left weakened or, later, enslaved within it. C'Thun, chained below, was freed when the Twilight's Hammer worked a ritual from outside the Scarab Wall that pierced into the prison chamber; the energy released killed most of the cultists who cast it and left the survivors catatonic in the desert. Once the Scepter of the Shifting Sands opened the gates, the Horde was given the ruins above and the Alliance the descent. They fought down through the hives and through C'Thun's own servants — the Prophet Skeram, the emperors, the things kept in the pits — and into the vault. Their march was described afterwards as a path of madness; men came out with their bodies mostly intact and their minds much less so. An Old God was killed, and both the Aspects and the Old Gods still buried elsewhere took the point.",
+  "assumes": "It assumes the gates were opened, once, by somebody. On every realm a single player assembled the Scepter of the Shifting Sands and rang the gong, in a server-wide war effort that has not run since and cannot be repeated; the raid begins after that has already happened.",
+  "disputed": [
+    "The wiki's account of the Ahn'Qiraj War is flagged as an unfinished stub pending Chronicle Volume 3. What it does say — Alliance into the temple, Horde into the ruins — is a summary of Blizzard's own retelling rather than a division of labour anybody was held to in play.",
+    "Whether the qiraji were ever defeated or merely contained is left deliberately unresolved by the sources: the same event is described as imprisonment behind a barrier and as the end of the war."
+  ],
+  "notable": [
+    {
+      "name": "C'Thun",
+      "what": "The Old God in the vault beneath the temple, awake and regenerating"
+    },
+    {
+      "name": "The Twin Emperors",
+      "what": "Vek'lor and Vek'nilash, trapped inside their own capital for a thousand years"
+    },
+    {
+      "name": "The Prophet Skeram",
+      "what": "C'Thun's mouthpiece, and the first thing past the gates"
+    },
+    {
+      "name": "Ouro",
+      "what": "A sandworm that surfaces through the floor of its own tunnels"
+    },
+    {
+      "name": "Princess Huhuran",
+      "what": "The reason nature resistance is worth carrying here"
+    },
+    {
+      "name": "The Vault of C'Thun",
+      "what": "The chamber the whole temple was built over"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Temple of Ahn'Qiraj",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_Ahn%27Qiraj"
+    },
+    {
+      "title": "Ruins of Ahn'Qiraj",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Ahn%27Qiraj"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

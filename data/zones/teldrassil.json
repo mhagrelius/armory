@@ -1,0 +1,72 @@
+{
+  "zone": "Teldrassil",
+  "map": 57,
+  "expansion": "Classic",
+  "summary": "Teldrassil is the World Tree the night elves grew in the Veiled Sea off northwestern Kalimdor, so vast that its crown carries a forested island with its own weather, rivers and wildlife — Darnassus in the west of it, Dolanaar on the road, Shadowglen in the northeast corner where night elf characters wake up, and the port of Rut'theran down among the roots. The Horde burned it during the War of the Thorns and the husk is still smouldering, so the green version anyone walks through now is the tree as it stood before the fire. Gnarlpine furbolgs and satyrs hold pockets of that forest, a corruption the night elves spent years trying to name.",
+  "history": "Fandral Staghelm took over the Cenarion Circle while Malfurion was lost in the Emerald Dream, persuaded the Ancients of Darkshore, and grew the tree to win the kaldorei's immortality back. Nozdormu called the wish arrogant and withheld his blessing, so it never did. Worse, Fandral had grafted a branch of Xavius into it, which tied the tree to the Nightmare and is what drove the furbolgs mad. Malfurion cut the branch out on his return from the Dream; Alexstrasza blessed the tree belatedly, Ysera joined her at his wedding, and the last of the taint was forced out and destroyed. Then Sylvanas ordered it burned, in the largest fire Azeroth has seen, and the survivors scattered to Stormwind and Darkshore.",
+  "factions": [
+    "Darnassus",
+    "Alliance",
+    "Gnarlpine tribe",
+    "Satyrs",
+    "Worgen of Gilneas",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Darnassus",
+      "what": "The night elf capital in the tree's western boughs, with Tyrande in the Temple of the Moon — now the Remains of Darnassus"
+    },
+    {
+      "name": "Shadowglen and Aldrassil",
+      "what": "The sheltered northeastern corner and the tree at its centre, where Tenaron Stormgrip starts every young night elf on their way"
+    },
+    {
+      "name": "Dolanaar",
+      "what": "The village on the central road, the first real town out of Shadowglen and the coordinating point for everything happening on the tree"
+    },
+    {
+      "name": "Rut'theran Village",
+      "what": "The port at the base of the trunk, with a portal up to Darnassus and boats to Stormwind and the Exodar"
+    },
+    {
+      "name": "Gnarlpine Hold",
+      "what": "The furbolg stronghold in the far southwest, taken over by the corruption and by demons"
+    },
+    {
+      "name": "Starbreeze Village",
+      "what": "A night elf hamlet east of Dolanaar overrun by the Gnarlpine and never taken back"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Teldrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Teldrassil"
+    },
+    {
+      "title": "Darnassus",
+      "url": "https://warcraft.wiki.gg/wiki/Darnassus"
+    },
+    {
+      "title": "Aldrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Aldrassil"
+    },
+    {
+      "title": "Dolanaar",
+      "url": "https://warcraft.wiki.gg/wiki/Dolanaar"
+    },
+    {
+      "title": "Rut'theran Village",
+      "url": "https://warcraft.wiki.gg/wiki/Rut%27theran_Village"
+    },
+    {
+      "title": "Gnarlpine Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Gnarlpine_Hold"
+    },
+    {
+      "title": "Starbreeze Village",
+      "url": "https://warcraft.wiki.gg/wiki/Starbreeze_Village"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

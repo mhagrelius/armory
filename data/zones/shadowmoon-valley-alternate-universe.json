@@ -1,0 +1,88 @@
+{
+  "zone": "Shadowmoon Valley (alternate universe)",
+  "map": 539,
+  "expansion": "Warlords of Draenor",
+  "summary": "Shadowmoon Valley is the south-eastern corner of Draenor and the draenei heartland: a green valley under permanent night, lit by a moon bright enough to stand in for the sun. The temple of Karabor holds the coast, Elodor feeds the valley and seats the Council of Exarchs, and Velen himself is here. Against that, the Shadowmoon orcs have turned to the void in the fortress above their burial grounds and the Iron Horde is striking the shore, while the Alliance expedition digs in at Lunarfall.",
+  "history": "Orcs came out of Gorgrond some eight centuries ago and named themselves for this valley. Their mystics found the Throne of the Elements, gave orcish shamanism its shape and called the first Kosh'harg, and their chieftains outlawed the Dark Star over the slopes after it shattered the minds of everyone who reached for it. The draenei then made the valley the centre of their faith, raising Karabor on the coast to steady a land their crash had wrecked, with Elodor, Embaari and the observatory at Teluuna behind it. Now Ner'zhul has turned from the ancestors to the void; his clan fills Anguish Fortress with draenei captives and spends their deaths calling void things into the world, and those who refused — Rulkan among them — fled up Mount Kra'gor. In the timeline that produced Outland, Karabor became the Black Temple.",
+  "factions": [
+    "Draenei of Karabor",
+    "Council of Exarchs",
+    "Shadowmoon clan",
+    "Shadowmoon Exiles",
+    "Alliance",
+    "Iron Horde",
+    "Shadow Council",
+    "Sargerei",
+    "Rangari",
+    "Botani and podlings of Gloomshade Grove"
+  ],
+  "notable": [
+    {
+      "name": "Karabor",
+      "what": "The draenei capital and their holiest temple, Velen's home, standing over its own harbour"
+    },
+    {
+      "name": "Anguish Fortress",
+      "what": "The Shadowmoon clan's hold, where captives are sacrificed to summon the void and the burial grounds beneath are pulled apart"
+    },
+    {
+      "name": "Lunarfall",
+      "what": "The Alliance garrison, built over Shadowmoon ruins and grown into a castle by whoever commands it"
+    },
+    {
+      "name": "Elodor",
+      "what": "The farm city north-west of Karabor that feeds the valley, and the seat of the five exarchs beneath Velen"
+    },
+    {
+      "name": "Exile's Rise",
+      "what": "The village on Mount Kra'gor where Rulkan's Shadowmoon exiles live, having walked away from Ner'zhul"
+    },
+    {
+      "name": "Gul'var",
+      "what": "Gul'dan's own base in the valley, named for him and run in his absence by Razuun"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shadowmoon Valley (alternate universe)",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowmoon_Valley_(alternate_universe)"
+    },
+    {
+      "title": "Karabor",
+      "url": "https://warcraft.wiki.gg/wiki/Karabor"
+    },
+    {
+      "title": "Anguish Fortress",
+      "url": "https://warcraft.wiki.gg/wiki/Anguish_Fortress"
+    },
+    {
+      "title": "Shadowmoon Burial Grounds",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowmoon_Burial_Grounds"
+    },
+    {
+      "title": "Lunarfall",
+      "url": "https://warcraft.wiki.gg/wiki/Lunarfall"
+    },
+    {
+      "title": "Elodor",
+      "url": "https://warcraft.wiki.gg/wiki/Elodor"
+    },
+    {
+      "title": "Exile's Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Exile%27s_Rise"
+    },
+    {
+      "title": "Gul'var",
+      "url": "https://warcraft.wiki.gg/wiki/Gul%27var"
+    },
+    {
+      "title": "Shadowmoon clan",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowmoon_clan"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

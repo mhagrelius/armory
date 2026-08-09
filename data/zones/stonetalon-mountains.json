@@ -1,0 +1,73 @@
+{
+  "zone": "Stonetalon Mountains",
+  "map": 65,
+  "expansion": "Classic",
+  "summary": "The Stonetalon Mountains are the wooded range between Ashenvale and Desolace, evergreen at the top and thinning to bare rock below, and they are where night elf and tauren country have always met. Years of logging by the Venture Company and then by both war machines have stripped Windshear Crag down to soot and oiled water, Krom'gar Fortress sits above the valley the Horde is fighting for, and the Charred Vale in the west is a burnt plain of fire elementals and black dragons. Sun Rock Retreat holds the centre for the tauren, Malaka'jin the south for the Darkspear, and the Alliance works out of Windshear Hold and Farwatcher's Glen.",
+  "history": "Elune blessed a fountain in these mountains in the ancient world, and the first tauren to settle them carried burning totems to the highest peaks in honour of An'she. Stonetalon Peak was sacred to night elf and tauren alike and was the home of the Oracle. During the Third War the harpies fouled Elune's fountain; Thrall and Cairne Bloodhoof took a glyph from the centaur to cleanse it and freed the captive wyverns that carried them up to the peak, where Horde and Alliance briefly stood together against the Legion. Goblin logging and mining then stripped the range and the spirits cried out over it. After the Cataclysm the peak came under Old God attack, and Overlord Krom'gar destroyed a grove of druid students on a suspicion.",
+  "factions": [
+    "Horde",
+    "Krom'gar's forces",
+    "Tauren of Cliffwalker Post and Sun Rock Retreat",
+    "Darkspear tribe",
+    "Alliance",
+    "Darnassus",
+    "Northwatch Expeditionary Unit",
+    "Venture Company",
+    "Grimtotem tribe",
+    "Harpies",
+    "Black dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "Stonetalon Peak",
+      "what": "The highest mountain in the range, sacred to both night elves and tauren, once the seat of the Oracle and now under assault from the Old Gods' servants"
+    },
+    {
+      "name": "Windshear Crag",
+      "what": "The clear-cut valley at the heart of the zone, logged flat and left with fouled water and smoke in the air"
+    },
+    {
+      "name": "Charred Vale",
+      "what": "A dead western valley running to the sea, home to black dragons and fire elementals, with a spire of lava pushed up through its southern end by the Cataclysm"
+    },
+    {
+      "name": "Krom'gar Fortress",
+      "what": "The overlord's stronghold, and the place the order came from to burn Cliffwalker Post and destroy Thal'darah Grove"
+    },
+    {
+      "name": "Cliffwalker Post",
+      "what": "The tauren village of the Cliffwalker family in the north, burned on Krom'gar's orders after his general was killed"
+    },
+    {
+      "name": "Grimtotem Post",
+      "what": "Grundig Darkcloud's base of operations, from which the Grimtotem destroyed the tauren village of Camp Aparaje"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stonetalon Mountains",
+      "url": "https://warcraft.wiki.gg/wiki/Stonetalon_Mountains"
+    },
+    {
+      "title": "Cliffwalker Post",
+      "url": "https://warcraft.wiki.gg/wiki/Cliffwalker_Post"
+    },
+    {
+      "title": "High Chieftain Cliffwalker",
+      "url": "https://warcraft.wiki.gg/wiki/High_Chieftain_Cliffwalker"
+    },
+    {
+      "title": "Grimtotem Post",
+      "url": "https://warcraft.wiki.gg/wiki/Grimtotem_Post"
+    },
+    {
+      "title": "Camp Aparaje",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Aparaje"
+    },
+    {
+      "title": "Farwatcher's Glen",
+      "url": "https://warcraft.wiki.gg/wiki/Farwatcher%27s_Glen"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

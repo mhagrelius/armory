@@ -1,0 +1,74 @@
+{
+  "zone": "The Maw",
+  "map": 1543,
+  "expansion": "Shadowlands",
+  "summary": "The Maw is where the Shadowlands put the souls it had decided were beyond saving, and the Jailer is the only authority in it. There are no towns, no inns and nowhere to stop; the land itself belongs to Zovaal and rearranges to suit him, and his Eye finds anyone who stays too long. Torghast stands at the centre holding his most valuable prisoners, and since the machinery of death broke every soul that dies now arrives here regardless of what they did in life.",
+  "history": "Zovaal was one of the Eternal Ones, given this realm and the keeping of the irredeemable. He decided the order the First Ones had laid down was worth overthrowing, and the others put him down, stripped him of his sigil and shut him inside the prison he had been running. It held for a very long time, and the Maw was a place nobody escaped and few would name. What broke it was the Arbiter being struck down: judgement stopped, every soul began falling here instead, and the realm swelled on them while the rest of the Shadowlands starved. Ve'nari's refuge was the first foothold anyone from outside managed to keep.",
+  "factions": [
+    "Zovaal the Jailer",
+    "Mawsworn",
+    "Maw guards, casters and necromancers",
+    "Death's Advance",
+    "Ve'nari and the brokers",
+    "Helya's forces at Helgarde",
+    "The four covenants' expeditions",
+    "Devourers"
+  ],
+  "notable": [
+    {
+      "name": "Torghast, Tower of the Damned",
+      "what": "The prison at the centre of the realm, endlessly rebuilt to suit its master, with the Sanctum of Domination at the top"
+    },
+    {
+      "name": "The Tremaculum",
+      "what": "The northwestern holding pens, where prisoners the Jailer values wait for transfer into the tower"
+    },
+    {
+      "name": "Ve'nari's Refuge",
+      "what": "A broker's hideout at the end of Cocyrus, the one patch of ground where the Eye of the Jailer does not reach"
+    },
+    {
+      "name": "Zovaal's Cauldron",
+      "what": "Forges and lava where souls are melted down into weapons and armour for the Mawsworn"
+    },
+    {
+      "name": "Gorgoa: River of Souls",
+      "what": "The river of the damned running through the middle of the realm"
+    },
+    {
+      "name": "Desmotaeron and Helgarde Keep",
+      "what": "The eastern hold on the Beastwarrens island, taken over by Helya's forces and the way into the Sanctum of Domination"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Maw",
+      "url": "https://warcraft.wiki.gg/wiki/The_Maw"
+    },
+    {
+      "title": "Torghast, Tower of the Damned",
+      "url": "https://warcraft.wiki.gg/wiki/Torghast,_Tower_of_the_Damned"
+    },
+    {
+      "title": "Zovaal",
+      "url": "https://warcraft.wiki.gg/wiki/Zovaal"
+    },
+    {
+      "title": "Mawsworn",
+      "url": "https://warcraft.wiki.gg/wiki/Mawsworn"
+    },
+    {
+      "title": "Ve'nari's Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Ve%27nari%27s_Refuge"
+    },
+    {
+      "title": "Tremaculum",
+      "url": "https://warcraft.wiki.gg/wiki/Tremaculum"
+    },
+    {
+      "title": "Zovaal's Cauldron",
+      "url": "https://warcraft.wiki.gg/wiki/Zovaal%27s_Cauldron"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

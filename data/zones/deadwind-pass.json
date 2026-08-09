@@ -1,0 +1,77 @@
+{
+  "zone": "Deadwind Pass",
+  "map": 42,
+  "expansion": "Classic",
+  "summary": "Deadwind Pass is a dead grey canyon between Duskwood and the Swamp of Sorrows: no herbs, no ore, nothing living but vultures and spiders, and a wind off the rock that never lets up. Karazhan stands at the southern end, Medivh's tower on its nexus of ley lines, abandoned and full of dark enchantment since Khadgar and Lothar killed him inside it. Deadwind ogres camp in the Vice, ghosts fill the ruined village and the cellars under it, and the only welcome company is the handful of Violet Eye mages sent to find out what the tower is doing.",
+  "history": "This land was killed on purpose. Sargeras sent Sataiel, the first necrolyte on Azeroth, with the scythe Ulthalesh to reap everything living here, and when they were gone she turned the blade on the ground: the trees withered, the marsh dried, the sky went the colour of a shroud, and the nexus she made blew open the crater. Aegwynn built Karazhan on it in secret six hundred years before the First War, and her son Medivh came there as a young man for the year she spent teaching him what a guardian was. The Kirin Tor sent Khadgar as an apprentice who was really a spy, and it was Khadgar who put the blade in when Lothar's war party came for the possessed guardian. The fel energy loosed by that death cursed the pass and blighted Brightwood into Duskwood.",
+  "factions": [
+    "Violet Eye of the Kirin Tor",
+    "Deadwind ogres",
+    "Dark Riders",
+    "Undead of the Master's Cellar and the catacombs",
+    "Nightbane worgen",
+    "Burning Legion",
+    "Kingdom of Stormwind, on paper"
+  ],
+  "notable": [
+    {
+      "name": "Karazhan",
+      "what": "Aegwynn's secret tower and Medivh's home, sitting on the ley lines that made the whole region unstable"
+    },
+    {
+      "name": "Karazhan Catacombs",
+      "what": "The vaults under the tower, the Dark Riders' hideout and where the artefacts they stole ended up"
+    },
+    {
+      "name": "The Master's Cellar",
+      "what": "The ruined village at the tower's foot and the ghost-filled cellars beneath it, probably the servants' quarter"
+    },
+    {
+      "name": "Morgan's Plot",
+      "what": "The derelict church and graveyard behind Karazhan, where anyone who dies inside the tower comes back to"
+    },
+    {
+      "name": "Grosh'gok Compound",
+      "what": "The Deadwind ogres' largest cave in the Vice, on the bend of the road south"
+    },
+    {
+      "name": "Ariden's Camp",
+      "what": "Where a gang of forgers tried to sell Medivh counterfeit artefacts and were cursed into the Dark Riders for it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Deadwind Pass",
+      "url": "https://warcraft.wiki.gg/wiki/Deadwind_Pass"
+    },
+    {
+      "title": "Karazhan",
+      "url": "https://warcraft.wiki.gg/wiki/Karazhan"
+    },
+    {
+      "title": "Karazhan Catacombs",
+      "url": "https://warcraft.wiki.gg/wiki/Karazhan_Catacombs"
+    },
+    {
+      "title": "Master's Cellar",
+      "url": "https://warcraft.wiki.gg/wiki/Master%27s_Cellar"
+    },
+    {
+      "title": "Morgan's Plot",
+      "url": "https://warcraft.wiki.gg/wiki/Morgan%27s_Plot"
+    },
+    {
+      "title": "Ariden's Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Ariden%27s_Camp"
+    },
+    {
+      "title": "Deadwind ogres",
+      "url": "https://warcraft.wiki.gg/wiki/Deadwind_ogres"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

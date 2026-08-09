@@ -1,0 +1,78 @@
+{
+  "zone": "Silithus",
+  "map": 81,
+  "expansion": "Classic",
+  "summary": "Silithus is the southwestern corner of Kalimdor and it is no longer really a desert: Sargeras drove his sword into it and most of the zone is now the Wound, a torn crater with the world-soul's blood pooling at the bottom of it and Azerite crystallising out of the rock. Magni Bronzebeard works the site with the Cenarion Circle and the Earthen Ring beside him, and the Horde mines the same seams from the ruins of Southwind Village. South of all that the old Silithus is still there — the Scarab Wall, the gates of Ahn'Qiraj, silithid hives, and the Cenarion Circle holding its keep.",
+  "history": "Highkeeper Ra raised Ahn'Qiraj over the pit C'Thun was entombed in and posted anubisath giants above it. Ages later the aqir, underground since the trolls broke their empire, crept into the empty fortress, and the Old God reworked them into the qiraji. Nobody remembered they were there until Fandral Staghelm's druids came to green the desert and his son Valstan walked in. The War of the Shifting Sands cost Valstan his life and ended with the swarm walled in rather than killed. Millennia later it came out again; Anachronos named C'Thun as the cause, both factions put Varok Saurfang over one army, and they reforged the Scepter of the Shifting Sands, opened the wall themselves and killed the Old God underneath it. Then Sargeras's blade came down, and everything since has been about the bleeding.",
+  "factions": [
+    "Cenarion Circle",
+    "Earthen Ring",
+    "Champions of Azeroth",
+    "Horde",
+    "Alliance",
+    "Twilight's Hammer",
+    "Qiraji Empire",
+    "Silithid"
+  ],
+  "notable": [
+    {
+      "name": "The Wound",
+      "what": "Where the Sword of Sargeras entered the world, still standing in it, with Azeroth's blood pooled around the blade"
+    },
+    {
+      "name": "Ahn'Qiraj",
+      "what": "The fortress Highkeeper Ra built over C'Thun's prison, taken by the aqir and grown into the qiraji city-state under the Twin Emperors"
+    },
+    {
+      "name": "The Scarab Wall",
+      "what": "The barrier Fandral Staghelm and Anachronos of the bronze flight raised to seal the gates after the War of the Shifting Sands, and the thing mortals later chose to open"
+    },
+    {
+      "name": "Cenarion Hold",
+      "what": "The druids' fortress, one of the largest of its kind on Kalimdor and the reason the silithid never had the zone entirely"
+    },
+    {
+      "name": "Magni's Encampment",
+      "what": "The camp west of the sword where the Speaker, the Cenarion Circle and the Earthen Ring work at healing the wound"
+    },
+    {
+      "name": "Southwind Village",
+      "what": "A night elf base destroyed by the qiraji in the ancient war, and now the Horde's Azerite mining operation"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Silithus",
+      "url": "https://warcraft.wiki.gg/wiki/Silithus"
+    },
+    {
+      "title": "Ahn'Qiraj",
+      "url": "https://warcraft.wiki.gg/wiki/Ahn%27Qiraj"
+    },
+    {
+      "title": "Cenarion Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Hold"
+    },
+    {
+      "title": "Magni's Encampment",
+      "url": "https://warcraft.wiki.gg/wiki/Magni%27s_Encampment"
+    },
+    {
+      "title": "Southwind Village",
+      "url": "https://warcraft.wiki.gg/wiki/Southwind_Village"
+    },
+    {
+      "title": "Twilight's Hammer",
+      "url": "https://warcraft.wiki.gg/wiki/Twilight%27s_Hammer"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

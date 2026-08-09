@@ -1,0 +1,80 @@
+{
+  "zone": "Hillsbrad Foothills",
+  "map": 25,
+  "expansion": "Classic",
+  "summary": "Hillsbrad is the best-preserved corner of old Lordaeron, pine and pasture and working farmland that the plague largely missed, and it belongs to the Forsaken now. Tarren Mill is the largest town, the Sludge Fields beside it are an experiment carried out in the open, and Southshore was rendered uninhabitable with the New Plague before the Alliance came back to start clearing it. The Alterac Mountains along the north hold Crushridge ogres in the ruined capital, the crater where Dalaran used to stand, and the Stormpike dwarves who keep trying to come down out of them.",
+  "history": "For pleasant farming country this has been fought over more often than anywhere else on Azeroth. Stormwind's refugees landed near Southshore after the First War and settled there. The Alliance of Lordaeron then mustered its whole strength in these foothills and the Horde came ashore unopposed anyway, dragonfire having scattered the fleet sent to stop it; the battle that followed was the first great land engagement of the Second War, where Gul'dan's death knights were used for the first time and the new paladins burned their fog off the field. Doomhammer broke into Durnholde himself to free Zul'jin from the cells. Thrall's orcs later took Southshore's ships to reach Kalimdor. The Forsaken finished what the wars started: Tarren Mill, the Sludge Fields, and Southshore poisoned outright.",
+  "factions": [
+    "Forsaken",
+    "Horde",
+    "Alliance",
+    "Stormpike clan",
+    "Bloodfang worgen",
+    "Syndicate",
+    "Crushridge ogres",
+    "Daggerspine naga",
+    "Mudsnout gnolls",
+    "Torn Fin murlocs"
+  ],
+  "notable": [
+    {
+      "name": "Tarren Mill",
+      "what": "The Forsaken's largest holding in the region and the front line of their push south for decades"
+    },
+    {
+      "name": "Ruins of Southshore",
+      "what": "The port the New Plague emptied, taken back by the Alliance after the armistice and being rebuilt"
+    },
+    {
+      "name": "Durnholde Keep",
+      "what": "The keep east of Tarren Mill that held orc prisoners after the Second War, now a ruin the Syndicate moved into"
+    },
+    {
+      "name": "The Sludge Fields",
+      "what": "Hillsbrad's farmland as the Forsaken have repurposed it, and where their plague work is done"
+    },
+    {
+      "name": "Dalaran Crater",
+      "what": "The hole in the ground on Lordamere Lake where the mages' city stood until Archimonde"
+    },
+    {
+      "name": "Ruins of Alterac",
+      "what": "The old Alteraci capital in the northern mountains, held by Crushridge ogres since the kingdom's betrayal and fall"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hillsbrad Foothills",
+      "url": "https://warcraft.wiki.gg/wiki/Hillsbrad_Foothills"
+    },
+    {
+      "title": "Durnholde Keep",
+      "url": "https://warcraft.wiki.gg/wiki/Durnholde_Keep"
+    },
+    {
+      "title": "Dalaran Crater",
+      "url": "https://warcraft.wiki.gg/wiki/Dalaran_Crater"
+    },
+    {
+      "title": "Dun Garok",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Garok"
+    },
+    {
+      "title": "Brazie Farmstead",
+      "url": "https://warcraft.wiki.gg/wiki/Brazie_Farmstead"
+    },
+    {
+      "title": "Crushridge",
+      "url": "https://warcraft.wiki.gg/wiki/Crushridge"
+    },
+    {
+      "title": "Forsaken",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

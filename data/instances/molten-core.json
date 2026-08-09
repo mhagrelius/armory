@@ -1,0 +1,45 @@
+{
+  "instance": "Molten Core",
+  "journal": 741,
+  "expansion": "Classic",
+  "summary": "The Molten Core is the bottom of Blackrock Depths, where the rock gives out and a lake of fire begins. It is a rift onto the Firelands and the seat of Ragnaros the Firelord, and the Dark Iron dwarves working the mountain above it are his property rather than his allies.",
+  "history": "About two centuries before the Dark Portal, near the end of the War of the Three Hammers, the Dark Iron leader Sorcerer-Thane Thaurissan reached for elemental power to finish his enemies. Grief for his dead wife drove the spell past what he intended: it breached the Firelands and pulled Ragnaros bodily into the world. The eruption shattered the Redridge Mountains and raised Blackrock Mountain over the wound, and the Firelord withdrew into the burning heart of it and put the surviving Dark Irons to work. Generations later, Emperor Dagran Thaurissan's death left his widow Moira ruling a court in chaos, and rather than fight the elementals she spread word across Azeroth that Blackrock Mountain held riches and an army in the making. The Hydraxian Waterlords, elementals of water and natural enemies of fire, took up the invitation and paid champions to go down. Those raiders worked through the Core, doused the runes of warding that shielded the lake, broke Majordomo Executus, and forced Ragnaros back to the Elemental Plane. The Dark Irons were free. The rift is still there.",
+  "assumes": "The raid never says why dwarves live in a volcano. Ragnaros was summoned by their own leader during a dwarven civil war two hundred years earlier, and they have belonged to him ever since; the Hydraxian Waterlords who pay you are elementals recruiting mortals for a feud of their own.",
+  "disputed": [
+    "Which Thaurissan summoned Ragnaros is told two ways on the same page. The history credits the Sorcerer-Thane at the end of the War of the Three Hammers; the quoted game guide credits Emperor Thaurissan, who is a much later descendant.",
+    "Ragnaros was banished rather than destroyed, which is how he is available to be fought again in the Firelands. The wiki uses defeat and banishment interchangeably for what happens here."
+  ],
+  "notable": [
+    {
+      "name": "Ragnaros",
+      "what": "The Firelord, asleep in the burning lake, and the game's first end boss"
+    },
+    {
+      "name": "Majordomo Executus",
+      "what": "The only elemental able to call Ragnaros out of the lake, which is why he has to fall first"
+    },
+    {
+      "name": "The runes of warding",
+      "what": "Seven runes guarded by the other bosses; dousing them all is what summons the Majordomo"
+    },
+    {
+      "name": "Magmadar",
+      "what": "Father of the core hounds, in the cavern named for him"
+    },
+    {
+      "name": "Ragnaros' Lair",
+      "what": "The lake at the far end, which is the rift onto the plane of fire itself"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Molten Core",
+      "url": "https://warcraft.wiki.gg/wiki/Molten_Core"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

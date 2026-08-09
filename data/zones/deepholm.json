@@ -1,0 +1,82 @@
+{
+  "zone": "Deepholm",
+  "map": 207,
+  "expansion": "Cataclysm",
+  "summary": "Deepholm is the earth domain of the Elemental Plane: one enormous cavern of ageless stone with no sun, no wind and no ceiling anyone has found, lit only by mineral clusters the size of buildings. Therazane the Stonemother rules it and has no patience for outsiders, which is most of the reason visitors have a hard time here. The Earthen Ring hold the Temple of Earth at its centre, with stone troggs, the Deepholm earthen and the Twilight's Hammer sharing the rest.",
+  "history": "Therazane the Stonemother was one of four Elemental Lords who held Azeroth for the Old Gods. Archaedas undermined the citadel she shut herself in and Freya's roots pulled it down on her; Ra and Helya then built the Elemental Plane out of four linked domains and put her in this one with every earth elemental alive. Deathwing knew the place: carried here to recover after Grim Batol, he had elementium plates bolted over his splitting hide in the Stonecore beneath the Temple of Earth. Whole again, he tore up through the roof of the world, shattering the World Pillar that held Deepholm and Azeroth apart. That break is the Cataclysm: two realms grinding together, elementals loose on the surface. Therazane has treated every outsider as an enemy since. The Earthen Ring took the temple back and reassembled the pillar.",
+  "factions": [
+    "Therazane and her earth elementals",
+    "The Stone Lords",
+    "Earthen Ring",
+    "Deepholm earthen of Stonehearth",
+    "Felrock stone troggs",
+    "Verlok stone troggs",
+    "Twilight's Hammer",
+    "Twilight dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "Temple of Earth",
+      "what": "The structure at the centre of Deepholm that housed the World Pillar, retaken from the Twilight's Hammer by the Earthen Ring"
+    },
+    {
+      "name": "The Stonecore",
+      "what": "The depths below the temple, where the cult nursed Deathwing back to health and forged his elementium armour"
+    },
+    {
+      "name": "Therazane's Throne",
+      "what": "The Stonemother's seat in the north, floored with the most polished crystal in the realm — which she pays gold to have brought to her"
+    },
+    {
+      "name": "Deathwing's Fall",
+      "what": "The wound in the cavern roof where he broke through into Azeroth"
+    },
+    {
+      "name": "Stonehearth",
+      "what": "The earthen's town on the upper shelf in the far southwest, under near-constant trogg attack"
+    },
+    {
+      "name": "Needlerock Slag",
+      "what": "Home of the Felrock stone troggs, who were led by Bouldergut until adventurers killed him"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Deepholm",
+      "url": "https://warcraft.wiki.gg/wiki/Deepholm"
+    },
+    {
+      "title": "Therazane",
+      "url": "https://warcraft.wiki.gg/wiki/Therazane"
+    },
+    {
+      "title": "Temple of Earth",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_Earth"
+    },
+    {
+      "title": "Therazane's Throne",
+      "url": "https://warcraft.wiki.gg/wiki/Therazane%27s_Throne"
+    },
+    {
+      "title": "Stonehearth",
+      "url": "https://warcraft.wiki.gg/wiki/Stonehearth"
+    },
+    {
+      "title": "Needlerock Slag",
+      "url": "https://warcraft.wiki.gg/wiki/Needlerock_Slag"
+    },
+    {
+      "title": "Felrock",
+      "url": "https://warcraft.wiki.gg/wiki/Felrock"
+    },
+    {
+      "title": "Earthen Ring",
+      "url": "https://warcraft.wiki.gg/wiki/Earthen_Ring"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

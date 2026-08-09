@@ -1,0 +1,76 @@
+{
+  "zone": "Bloodmyst Isle",
+  "map": 106,
+  "expansion": "Classic",
+  "summary": "Bloodmyst Isle is the northern half of the Azuremyst Isles and it is red: crystals from the Exodar's crash buried themselves in the ground here, and what leaked out of them stained the soil, tinged the pines crimson and turned most of the wildlife hostile. Blood Watch, built out of salvaged ship pods, is where the draenei work at undoing it, with Kessel's Crossing on the clean southern strip that the blight never reached. Satyrs hold Axxarien and Nazzivian, naga hold the reef, and the ship's leaking power core still sits in the middle of it all at the Vector Coil.",
+  "history": "The night elf city of Loreth'Aran stood on this island, and its riders rode green dragons that Ysera herself had blessed, until Razormaw led the black flight down on them in the Dragon Wars and killed the city and its dragons together; the Sundering finished the job and left ruins on scattered islets. The draenei arrived and named the place Silvergale before they understood what their crash had done to it. The Sunhawks, under the eredar Sironas, tried to turn the wrecked power core into a gate for reinforcements out of Outland and were broken. Years later Velen found demons had been feeding the corruption all along, and only once they were burned out could the island start to heal.",
+  "factions": [
+    "Exodar draenei",
+    "Hand of Argus",
+    "Alliance",
+    "Bristlelimb furbolgs",
+    "Ragefeather wildkin",
+    "Axxarien and Nazzivus satyrs",
+    "Bloodcursed naga",
+    "Wrathscale naga",
+    "Sunhawks",
+    "Burning Legion"
+  ],
+  "notable": [
+    {
+      "name": "Blood Watch",
+      "what": "The Hand of Argus outpost and the island's only real settlement, assembled from Exodar pods and crystal wreckage"
+    },
+    {
+      "name": "The Vector Coil",
+      "what": "The dimensional ship's power core, dropped here and leaking, and the thing the Sunhawks wanted for their Sun Gate"
+    },
+    {
+      "name": "Ruins of Loreth'Aran",
+      "what": "What is left of the night elf city whose Dragon Riders flew green dragons, wiped out by Deathwing's lieutenant"
+    },
+    {
+      "name": "Wyrmscar Island",
+      "what": "The islet haunted by the ghosts of slain green whelplings and by the captain of a ship the bloodcurse sank offshore"
+    },
+    {
+      "name": "Nazzivian",
+      "what": "The satyr camp in the southwest, base of the sect that was still ambushing draenei pilgrims decades after the crash"
+    },
+    {
+      "name": "Kessel's Crossing",
+      "what": "The draenei camp on the southern strip, past the water and outside the red mist, and the way in from Azuremyst"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bloodmyst Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodmyst_Isle"
+    },
+    {
+      "title": "Blood Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Blood_Watch"
+    },
+    {
+      "title": "Kessel's Crossing",
+      "url": "https://warcraft.wiki.gg/wiki/Kessel%27s_Crossing"
+    },
+    {
+      "title": "Axxarien",
+      "url": "https://warcraft.wiki.gg/wiki/Axxarien"
+    },
+    {
+      "title": "Nazzivian",
+      "url": "https://warcraft.wiki.gg/wiki/Nazzivian"
+    },
+    {
+      "title": "Sunhawk",
+      "url": "https://warcraft.wiki.gg/wiki/Sunhawk"
+    },
+    {
+      "title": "Bloodcursed",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodcursed"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

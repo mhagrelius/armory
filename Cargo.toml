@@ -1,0 +1,66 @@
+[workspace]
+members = ["core", "server"]
+
+[package]
+name = "armory"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "A World of Warcraft companion for the GNOME desktop"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "armory"
+path = "src/main.rs"
+
+# A library as well as a binary, so integration tests and examples can drive the
+# real application rather than a copy of it.
+[lib]
+name = "armory"
+path = "src/lib.rs"
+
+[dependencies]
+# The account, the run, the sources, the store and the sync vocabulary. Links
+# no UI toolkit, so it is the half `armory-server` shares and the half a shell
+# on another platform would keep. Re-exported from src/lib.rs as
+# `armory::model`, which is the path every call site here uses.
+armory-core = { path = "core" }
+gtk = { package = "gtk4", version = "0.11", features = ["v4_22"] }
+adw = { package = "libadwaita", version = "0.9", features = ["v1_9"] }
+# Direct dependency purely to raise the API level above what gtk4 pulls in: the
+# SavedVariables watch wants the v2_80 GFileMonitor signal shape, and
+# ApplicationCommandLine::print_literal is gated behind it. Leave it.
+gio = { version = "0.22", features = ["v2_80"] }
+# `glib::Uri` parses the OAuth callback's query string, so the redirect listener
+# needs no percent-decoding of its own. Already in the tree; this only names it.
+glib = "0.22"
+# The shell's own wire types: the shapes armory-server's routes answer with.
+# Everything the account is made of is armory-core's to serialise.
+serde = { version = "1", features = ["derive"] }
+# Blizzard's responses are deeply optional and irregular — a mount may carry no
+# `source` at all, a criteria node may or may not have `amount`, and whole
+# sections appear only for some classes. They are read out of a
+# `serde_json::Value` by hand rather than derived into structs that would reject
+# a field Blizzard renamed, which is the same call Sleeve and Magpie made.
+serde_json = "1"
+# The platform's HTTP client, and here it is doing two jobs rather than one.
+# `soup::Session` makes the API calls, and `soup::Server` is the loopback
+# listener the OAuth redirect lands on — Battle.net rejects custom URI schemes,
+# so a real HTTP server on 127.0.0.1 is not optional. Getting both from one
+# library that already ships in org.gnome.Sdk is why there is no second
+# dependency here for a web server. Needs `libsoup-3.0-dev` to build; nothing
+# extra for Flatpak. Same call Familiar, Magpie, Scribe and Sleeve make.
+soup = { package = "soup3", version = "0.9" }
+# Baselines are dated, tokens expire, auction snapshots are hourly, and the API
+# terms mandate dropping cached data at 30 days — all of which is calendar
+# arithmetic across a boundary the user can see. Same feature set as the
+# siblings.
+chrono = { version = "0.4", default-features = false, features = [
+    "std",
+    "clock",
+    "serde",
+] }
+
+[dev-dependencies]
+tempfile = "3"
+adw = { package = "libadwaita", version = "0.9", features = ["v1_9"] }

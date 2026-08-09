@@ -1,0 +1,74 @@
+{
+  "zone": "Borean Tundra",
+  "map": 114,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Borean Tundra is the flat, treeless southwestern corner of Northrend, a wind-scoured plain of red and brown lichen where mammoth and rhino herds graze and tuskarr stone elders mark the fishing routes along the coast. It is where most travellers first set foot on the continent: the Horde's Warsong Hold and the Alliance's Valiance Keep sit within a few days' march of each other, neither zone belonging to either side. Tuskarr, taunka, magnataur and blue dragons share it with naga at the southern ruins and Scourge holding the old nerubian temple city in the east.",
+  "history": "The ruins here are nerubian, and they are the oldest thing in the tundra — some hold that this coast was once a stretch of Azjol-Nerub pushed up into daylight, and that whoever tried living above ground gave it up. The tuskarr came next; Kaskala has stood for centuries, with the smaller villages budding off it as families divided. Drakkari hunting parties drifted down from Zul'Drak more recently and keep no fixed ground. When the war against the Lich King opened, both armies chose this shore to land on. The Horde raised Warsong Hold under Garrosh Hellscream and found the taunka, an offshoot of the tauren long thought lost; the Alliance built Valiance Keep and the farms of Farshire behind it.",
+  "factions": [
+    "Valiance Expedition",
+    "Warsong Offensive",
+    "Kalu'ak tuskarr",
+    "Taunka",
+    "Blue dragonflight",
+    "Kirin Tor",
+    "D.E.H.T.A.",
+    "Winterfin murlocs",
+    "Riplash naga",
+    "Kvaldir",
+    "Magnataur",
+    "Scourge"
+  ],
+  "notable": [
+    {
+      "name": "Warsong Hold",
+      "what": "The Horde's fortress on the western shore, raised by Garrosh Hellscream, with a zeppelin tower back to Orgrimmar"
+    },
+    {
+      "name": "Valiance Keep",
+      "what": "The Alliance beachhead in the south, supplied by the farms and mine of Farshire and a steam boat to Stormwind Harbour"
+    },
+    {
+      "name": "Coldarra and the Nexus",
+      "what": "The plateau island off the west coast where the blue dragonflight keeps its spire, reached from Amber Ledge and the Transitus Shield"
+    },
+    {
+      "name": "Temple City of En'kilah",
+      "what": "A nerubian ruin in the east taken by the Scourge, with the floating necropolis of Naxxanar above it"
+    },
+    {
+      "name": "Kaskala and Unu'pe",
+      "what": "The tuskarr capital, under siege by kvaldir, and the harbour its people withdrew to — with a turtle ferry east to Moa'ki"
+    },
+    {
+      "name": "D.E.H.T.A. Encampment",
+      "what": "Druids who broke from the Cenarion Expedition to stop Hemet Nesingwary's poachers, and who keep a burning dwarf effigy to say so"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Borean Tundra",
+      "url": "https://warcraft.wiki.gg/wiki/Borean_Tundra"
+    },
+    {
+      "title": "D.E.H.T.A. Encampment",
+      "url": "https://warcraft.wiki.gg/wiki/D.E.H.T.A._Encampment"
+    },
+    {
+      "title": "Druids for the Ethical and Humane Treatment of Animals",
+      "url": "https://warcraft.wiki.gg/wiki/Druids_for_the_Ethical_and_Humane_Treatment_of_Animals"
+    },
+    {
+      "title": "Farshire",
+      "url": "https://warcraft.wiki.gg/wiki/Farshire"
+    },
+    {
+      "title": "Amber Ledge",
+      "url": "https://warcraft.wiki.gg/wiki/Amber_Ledge"
+    },
+    {
+      "title": "Blue dragonflight",
+      "url": "https://warcraft.wiki.gg/wiki/Blue_dragonflight"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,64 @@
+{
+  "zone": "Valdrakken",
+  "map": 2112,
+  "expansion": "Dragonflight",
+  "summary": "Valdrakken is the dragons' own capital, set in a bowl of Thaldraszus below the waterfalls and the aqueduct that runs down from Tyrhold, with the Seat of the Aspects at its centre and an enclave for each flight around it. The Valdrakken Accord governs from here — Alexstrasza, Nozdormu, Kalecgos, Merithra, Ebyssian and the Incarnate Vyranoth sharing a table — and the Scalesworn keep order in the streets. Mortals are welcome: the Dragonscale Expedition, the Artisan's Consortium and a black market all trade in it.",
+  "history": "The dragons built it in the ancient era of the Dragon Isles and ruled Azeroth from it, each flight taking a quarter of the city and the Aspects meeting at the top. The Sundering drained the isles of the magic that made all of it possible, and the flights left — the city was handed to the titanic watchers, drakonid and dragonspawn who stayed behind, and it waited about ten thousand years. When the isles woke, the flights came back to it with mortal allies in tow and founded the Accord in its halls. It has been quietly contested since: Primalist agitators working the crowds, and a rebellion of drakonid and dragonspawn who had spent an age being talked past, who came within a detonator of collapsing the aqueduct.",
+  "factions": [
+    "Valdrakken Accord",
+    "The five dragonflights, and the Netherwing since Amirdrassil",
+    "Drakonid and dragonspawn — including the Flightless who walked out",
+    "Dragonscale Expedition",
+    "Artisan's Consortium",
+    "Primalists, where they can pass unnoticed"
+  ],
+  "notable": [
+    {
+      "name": "Seat of the Aspects",
+      "what": "The tower at the middle of the city where the Aspects and their advisors meet, and have since before the Sundering"
+    },
+    {
+      "name": "The enclaves",
+      "what": "Ruby, Obsidian, Sapphire, Bronze and Emerald — a district apiece, each built to its flight's taste, from the blue library to the bronze hourglass"
+    },
+    {
+      "name": "The Artisan's Market",
+      "what": "The trade quarter, opened to the Artisan's Consortium once the dragons decided mortals could sell here"
+    },
+    {
+      "name": "Tyrhold",
+      "what": "The titan reservoir above the city; the aqueduct feeding down from it is what the Flightless mined to bring the place down"
+    },
+    {
+      "name": "Little Scales Daycare",
+      "what": "The whelp creche, and the clearest sign that this is a city people live in rather than a fortress"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Valdrakken",
+      "url": "https://warcraft.wiki.gg/wiki/Valdrakken"
+    },
+    {
+      "title": "Valdrakken Accord",
+      "url": "https://warcraft.wiki.gg/wiki/Valdrakken_Accord"
+    },
+    {
+      "title": "Seat of the Aspects",
+      "url": "https://warcraft.wiki.gg/wiki/Seat_of_the_Aspects"
+    },
+    {
+      "title": "Kingdom of dragons",
+      "url": "https://warcraft.wiki.gg/wiki/Kingdom_of_dragons"
+    },
+    {
+      "title": "Thaldraszus",
+      "url": "https://warcraft.wiki.gg/wiki/Thaldraszus"
+    },
+    {
+      "title": "Bronze Enclave",
+      "url": "https://warcraft.wiki.gg/wiki/Bronze_Enclave"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

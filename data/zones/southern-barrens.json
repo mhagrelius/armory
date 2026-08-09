@@ -1,0 +1,71 @@
+{
+  "zone": "Southern Barrens",
+  "map": 199,
+  "expansion": "Classic",
+  "summary": "The Southern Barrens is what the lower half of the savanna became after Deathwing split it off: a war zone with a bottleneck in the middle of it. Desolation Hold and Fort Triumph face each other across the Battlescar, the Alliance pushing inland from the coast and the Horde trying to shut the pass and cut Theramore off by land. North of the fighting the Overgrowth has swallowed the plains in jungle that kills, the tauren have sealed Mulgore behind the Great Gate, and the quilboar hold everything south down to Razorfen Kraul.",
+  "history": "Camp Taurajo was the Horde's waystation on the southern road and the Bael Modan dwarves dug at the old titan works nearby, and that was most of what happened here until Deathwing's gorge cut the region loose from the north. General Hawthorne burned Taurajo in the aftermath and earned a name the Horde still uses for him; the tauren answered by walling off Mulgore. Both sides then dug in either side of the Battlescar for the pass itself. Garrosh razed Northwatch Hold and then Fort Triumph on his march to Theramore, and the Alliance later took Northwatch back. The Fourth War hit every holding in the region, and since the armistice the lines have simply stopped moving.",
+  "factions": [
+    "Horde",
+    "Thunder Bluff tauren",
+    "Alliance",
+    "Northwatch Expeditionary Unit",
+    "Bael Modan dwarves",
+    "Razorfen quilboar",
+    "Death's Head tribe",
+    "Bilgewater cartel",
+    "Earthen Ring"
+  ],
+  "notable": [
+    {
+      "name": "The Battlescar",
+      "what": "The narrow pass at the centre of the zone, with the Horde's Desolation Hold on one side and the Alliance's Fort Triumph on the other"
+    },
+    {
+      "name": "Camp Taurajo",
+      "what": "The burnt-out tauren town whose destruction set the tone for everything that has happened here since"
+    },
+    {
+      "name": "Bael Modan",
+      "what": "The dwarven fortress and dig, cannon above and an ancient titan complex below"
+    },
+    {
+      "name": "The Overgrowth",
+      "what": "A druid's restoration experiment that ran away with itself, leaving thick hostile jungle across the north of the zone"
+    },
+    {
+      "name": "The Great Gate",
+      "what": "The wall Thunder Bluff raised across the only pass into Mulgore after Taurajo fell"
+    },
+    {
+      "name": "Honor's Stand",
+      "what": "The post on the western road between Sun Rock Retreat and the Crossroads, held by the Alliance and still wanted back"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Southern Barrens",
+      "url": "https://warcraft.wiki.gg/wiki/Southern_Barrens"
+    },
+    {
+      "title": "Desolation Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Desolation_Hold"
+    },
+    {
+      "title": "Fort Triumph",
+      "url": "https://warcraft.wiki.gg/wiki/Fort_Triumph"
+    },
+    {
+      "title": "Bael Modan",
+      "url": "https://warcraft.wiki.gg/wiki/Bael_Modan"
+    },
+    {
+      "title": "Honor's Stand",
+      "url": "https://warcraft.wiki.gg/wiki/Honor%27s_Stand"
+    },
+    {
+      "title": "Camp Una'fe",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Una%27fe"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

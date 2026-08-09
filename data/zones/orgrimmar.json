@@ -1,0 +1,69 @@
+{
+  "zone": "Orgrimmar",
+  "map": 85,
+  "expansion": "Classic",
+  "summary": "Orgrimmar is the Horde's capital, a walled warren of valleys cut into the canyons of northern Durotar and named for Orgrim Doomhammer. Grommash Hold at its centre was the warchief's seat and is now the Horde Council's, the office having been abolished rather than passed on. Each people that joined the Horde has taken a quarter of it — tauren in the Valley of Wisdom, Darkspear in the Valley of Spirits, goblins in the slums, everyone else through the embassy by the gate.",
+  "history": "Thrall's people came ashore after Mount Hyjal and raised a fortified city in a few short years, with goblin, tauren and troll hands helping and Rexxar fighting off everything in Durotar that objected. It was built to be defended, its rear wall the mountain itself. The Scourge came at the gates twice; Sylvanas sheltered here after the Wrathgate. When Thrall left for Nagrand he handed the Horde to Garrosh Hellscream, who tore the city down and rebuilt it in iron and spikes, less flammable and far more warlike, with the races pushed into separate valleys. That ended in the siege that dragged him out of a bunker under Ragefire Chasm, and after one more war the Horde stopped appointing warchiefs at all.",
+  "factions": [
+    "Horde Council",
+    "Orc clans of Durotar",
+    "Darkspear trolls",
+    "Bloodhoof tauren",
+    "Bilgewater goblins",
+    "Forsaken, blood elves, and every later Horde people through the Embassy",
+    "Earthen Ring at the Western Earthshrine"
+  ],
+  "notable": [
+    {
+      "name": "Grommash Hold",
+      "what": "The fortress in the Valley of Strength named for Grommash Hellscream; the warchief ruled from it and the Horde Council now meets there"
+    },
+    {
+      "name": "Valley of Honor",
+      "what": "The military district — arms, armour, battlemasters, the Hall of the Brave and the Ring of Valor"
+    },
+    {
+      "name": "The Cleft of Shadow",
+      "what": "The sunless hollow where rogues and warlocks keep their business, with Ragefire Chasm opening off the bottom of it"
+    },
+    {
+      "name": "Valley of Spirits",
+      "what": "The Darkspear quarter running from the main valley out to the Talon Gate"
+    },
+    {
+      "name": "Valley of Wisdom",
+      "what": "The tauren quarter, and where Grommash Hold stood before Garrosh moved it"
+    },
+    {
+      "name": "The Underhold",
+      "what": "Garrosh's private compound sunk beneath Ragefire Chasm, unknown to the city above until the siege found it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orgrimmar",
+      "url": "https://warcraft.wiki.gg/wiki/Orgrimmar"
+    },
+    {
+      "title": "Grommash Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Grommash_Hold"
+    },
+    {
+      "title": "Horde Council",
+      "url": "https://warcraft.wiki.gg/wiki/Horde_Council"
+    },
+    {
+      "title": "Valley of Honor",
+      "url": "https://warcraft.wiki.gg/wiki/Valley_of_Honor"
+    },
+    {
+      "title": "Valley of Spirits",
+      "url": "https://warcraft.wiki.gg/wiki/Valley_of_Spirits"
+    },
+    {
+      "title": "Durotar (nation)",
+      "url": "https://warcraft.wiki.gg/wiki/Durotar_(nation)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

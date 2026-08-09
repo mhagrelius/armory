@@ -1,0 +1,24 @@
+{
+  "instance": "Gruul's Lair",
+  "extract": "Gruul's Lair is located north of Ruuan Weald in the Blade's Edge Mountains of Outland. Here, Gruul the Dragonkiller, the merciless gronn overlord, rules over the ogres of Blade's Edge.\nThis raid contains two bosses, Gruul the Dragonkiller and High King Maulgar, and requires no attunement. The player must be at least level 65 and in a raid to enter.\n\n",
+  "categories": [
+    "Category:Blade's Edge Mountains",
+    "Category:Blade's Edge Mountains subzones",
+    "Category:Caves",
+    "Category:Elite areas",
+    "Category:Gronn",
+    "Category:Gruul's Lair",
+    "Category:Ogre territories",
+    "Category:Pages using deprecated templates",
+    "Category:Raids",
+    "Category:The Burning Crusade"
+  ],
+  "wikitext": "{{For|the subzone in [[Blackrock Foundry]]|Gruul&#39;s Lair (Blackrock Foundry)}}\n{{Infobox instance\n|name=Gruul's Lair\n|aka=\n|ss=Gruul's Lair loading screen.jpg\n|caption=The Gruul's Lair loading graphic\n|loc=[[Blade's Edge Mountains]]\n|race={{RaceIcon|Gronn}} [[Gronn]]<br />{{Race|Ogre }}<br />{{Race|Ogre Mage }}<br />{{RaceIcon|OgreLord}} [[Ogre lord]]\n|boss={{npc||Gruul the Dragonkiller (tactics)||Gruul the Dragonkiller|icon=Gronn}}\n|type=Raid\n|level=70+\n|lockout=1 week\n|players=25\n|crossfaction=1\n|bosses={{Gruul's Lair}}\n}}\n[[File:Gruul's Lair bosses.jpg|thumb|The Gruul's Lair bosses]]\n[[File:Gruul's Lair.jpg|thumb|Gruul's Lair]]\n\n'''Gruul's Lair''' is located north of [[Ruuan Weald]] in the [[Blade's Edge Mountains]] of [[Outland]]. Here, [[Gruul the Dragonkiller (tactics)|Gruul the Dragonkiller]], the merciless [[gronn]] overlord, rules over the ogres of Blade's Edge.\n\nThis [[raid]] contains two bosses, [[Gruul the Dragonkiller (tactics)|Gruul the Dragonkiller]] and {{npc||High King Maulgar}}, and requires no attunement. The player must be at least level 65 and in a raid to enter.\n\n==Description==\nWhen the infamous Dragon Aspect, Deathwing, discovered the Dark Portal and Draenor, he felt sure that few of Draenor's denizens would dare challenge the black dragonflight, so he scattered clutches of his eggs throughout the world. \n\nDeathwing made a serious miscalculation when he chose to leave his eggs under meager guardianship in Blade's Edge Mountains. The guardian dragons were torn from the sky by the gronn living in Blade's Edge, and the leader of the gronn, Gruul, impaled the wyrms he fought on the stone spires of the mountains. \n\nToday Gruul the Dragonkiller is worshipped as a deity by the ogres of Blade's Edge Mountains. His powerful sons ravage both the spires of their home and the plains of Nagrand. Gruul's unparalleled strength and experience in battle would pose a serious threat if he ever chose to attack Horde or Alliance forces in Outland.<ref>http://us.battle.net/wow/en/zone/gruuls-lair/</ref>\n\n==Dungeon denizens==\n* {{RaceIcon|Felhunter}} [[Felhound]]s\n* {{RaceIcon|Gronn}} [[Gronn]] (one, {{npc||Gruul the Dragonkiller (tactics)||Gruul the Dragonkiller}})\n* {{RaceIcon|Ogre|Male}} [[Ogre]]s\n* {{RaceIcon|OgreLord}} [[Ogre lord]] (one, {{npc||High King Maulgar}})\n* {{RaceIcon|Ogre Mage}} [[Ogre mage]]s\n\n==Map==\n<gallery>\nVZ-Gruul's Lair.jpg\n</gallery>\n\n==Encounters==\n{|class=\"darktable zebra\"\n!Bosses\n!Monsters\n|-valign=top\n|\n*{{RaceIcon|OgreLord}} {{mob|High King Maulgar}}\n**{{RaceIcon|OgreMage}} {{mob|Blindeye the Seer}}\n**{{RaceIcon|OgreMage2}} {{mob|Kiggler the Crazed}}\n**{{RaceIcon|OgreMage}} {{mob|Krosh Firehand}}\n**{{RaceIcon|OgreMage2}} {{mob|Olm the Summoner}}\n*{{RaceIcon|Gronn}} {{mob|Gruul the Dragonkiller (tactics)||Gruul the Dragonkiller}}\n|\n*{{RaceIcon|Ogre|Male}} {{mob|Lair Brute}}\n*{{RaceIcon|OgreMage}} {{mob|Gronn-Priest}}\n|}\n\n==Quests==\n*[[The Cudgel of Kar'desh]]\n\n==Loot==\n{{main|Gruul's Lair loot}}\n\n==Achievements==\n*[[Gruul's Lair (achievement)]]\n*[[Gruul's Lair Guild Run]]\n\n==Helpful items==\nThere are 6 [[Unstable Flasks]] available designed especially for fighting Gruul.\n\n==Patch changes==\n*{{Patch 2.0.3|note=Added.}}\n\n==References==\n{{Reflist}}\n\n==External links==\n{{Elinks-zone|3618}}\n\n{{Blade's Edge Mountains}}\n{{Dungeons|The Burning Crusade}}\n\n[[Category:Gruul's Lair| ]]\n[[Category:Raids]]\n[[Category:The Burning Crusade]]\n[[Category:Caves]]\n[[Category:Ogre territories]]\n[[Category:Gronn]]\n[[Category:Blade's Edge Mountains]]\n[[Category:Elite areas]]",
+  "sources": [
+    {
+      "title": "Gruul's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Gruul%27s_Lair"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

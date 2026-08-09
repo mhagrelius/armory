@@ -1,0 +1,84 @@
+{
+  "zone": "Suramar",
+  "map": 680,
+  "expansion": "Legion",
+  "summary": "Suramar is the centre of the Broken Isles and the last piece of the night elf empire still standing as a city rather than a ruin. Behind a shield that stayed up for ten thousand years its people became the nightborne, kept alive by the Nightwell, and Grand Magistrix Elisande has now handed both to the Legion. Outside the walls the rebels work out of Shal'Aran, the withered scavenge what the Nightwell would not give them, and the countryside is full of ley stations, collapsed Highborne towns, vrykul at Jandvik and naga in the eastern bay.",
+  "history": "This was Illidan's home city, and Malfurion's, and Tyrande's. The Legion sacked it during the War of the Ancients, and the nathrezim used its dead for the experiments that would become the Scourge ten thousand years later. Its Highborne shut the second portal the demons opened, and when the Sundering came they raised a shield over the part of the city they could hold; the rest went to the sea floor. Under that shield they became the nightborne and grew wholly dependent on the Nightwell. When the demons returned and offered terms, Elisande took them; Thalyssra's attempt to stop her failed, and her rebels have been outside the walls, starving, ever since.",
+  "factions": [
+    "Kingdom of Suramar and the nightborne",
+    "The Nightfallen rebellion",
+    "The Withered",
+    "Duskwatch",
+    "Burning Legion and the felborne",
+    "Moon Guard",
+    "Jandvik vrykul",
+    "Sashj'tar naga",
+    "Fal'dorei",
+    "Alliance and Horde champions"
+  ],
+  "notable": [
+    {
+      "name": "Suramar City",
+      "what": "The nightborne capital, its markets and terraces intact after ten thousand years, with the Nighthold and the Nightwell at its heart"
+    },
+    {
+      "name": "Shal'Aran",
+      "what": "The ruin under Meredil that Thalyssra's exiles took as a base, and the only place in the zone that will feed a withered"
+    },
+    {
+      "name": "Felsoul Hold",
+      "what": "The Legion's landing in the south-west, built around a soul engine feeding a ship meant to level Dalaran"
+    },
+    {
+      "name": "Falanaar",
+      "what": "A Highborne town in the west, half collapsed into its own tunnels since the Sundering"
+    },
+    {
+      "name": "Moon Guard Stronghold",
+      "what": "The fortress of the ancient elven sorcerers in the north, whose occupants the nightborne army has recently killed"
+    },
+    {
+      "name": "Jandvik",
+      "what": "A vrykul town on the eastern coast, under siege by naga and short one jarl"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Suramar",
+      "url": "https://warcraft.wiki.gg/wiki/Suramar"
+    },
+    {
+      "title": "Shal'Aran",
+      "url": "https://warcraft.wiki.gg/wiki/Shal%27Aran"
+    },
+    {
+      "title": "Falanaar",
+      "url": "https://warcraft.wiki.gg/wiki/Falanaar"
+    },
+    {
+      "title": "Felsoul Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Felsoul_Hold"
+    },
+    {
+      "title": "Moon Guard Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Moon_Guard_Stronghold"
+    },
+    {
+      "title": "Jandvik",
+      "url": "https://warcraft.wiki.gg/wiki/Jandvik"
+    },
+    {
+      "title": "Sashj'tar Ruins",
+      "url": "https://warcraft.wiki.gg/wiki/Sashj%27tar_Ruins"
+    },
+    {
+      "title": "Nightfallen (faction)",
+      "url": "https://warcraft.wiki.gg/wiki/Nightfallen_(faction)"
+    },
+    {
+      "title": "Moon Guard",
+      "url": "https://warcraft.wiki.gg/wiki/Moon_Guard"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

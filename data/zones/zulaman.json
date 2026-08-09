@@ -1,0 +1,68 @@
+{
+  "zone": "Zul'Aman",
+  "map": null,
+  "expansion": "Midnight",
+  "summary": "Zul'Aman is the Amani homeland in the southeast of Quel'Thalas: forest, bog and coast around a walled temple city, with shrines to the beast loa Nalorakk, Akil'zon, Jan'alai and Halazzi at its heart. What is left of a forest troll empire lives here, along with the Revantusk, Witherbark, Shadowpine, Vilebranch and Spiritpaw who share the province, under Zul'jan and his sister Zul'jarra. The Twilight's Blade has come into the country with Void magic, took the temple city outright, and has only lately been pushed back off it.",
+  "history": "The Zandalari and their allies killed the C'Thrax Kith'ix on this ground sixteen thousand years ago and built on the spot; it grew into a temple city and then into the strongest empire in the Eastern Kingdoms. Elves and the humans of Arathor ended that at the Troll Wars, and the Amani never held anything beyond this province again — though they never stopped hating the people who built Silvermoon over their burial ground. Zul'jin took them into the Old Horde, was captured and tortured by Farstriders, and died in his own halls when the Horde sent champions to kill him. Daakara reunited them with Zandalari backing and went the same way. Then the Void cult arrived.",
+  "factions": [
+    "Amani tribe and the Amani'shi",
+    "Revantusk, Witherbark, Shadowpine, Vilebranch and Spiritpaw trolls",
+    "Twilight's Blade",
+    "The beast loa and their shrines",
+    "Zandalari Empire, when it suits them",
+    "Blood elves and the Vanguard of the Light, at the Amani Pass"
+  ],
+  "notable": [
+    {
+      "name": "Atal'Aman",
+      "what": "The temple city itself, with the terraces and the Altar of Malacrass, and shrines to each of the four beast loa"
+    },
+    {
+      "name": "Amani'Zar Village",
+      "what": "The Amani's own seat and the working capital of what remains of their empire"
+    },
+    {
+      "name": "The Broken Throne",
+      "what": "An Amani ruin in the southwest, taken by the Twilight's Blade as the base for everything they have done here"
+    },
+    {
+      "name": "Den of Nalorakk",
+      "what": "The bear loa's ground, where favour is not granted but earned in front of him"
+    },
+    {
+      "name": "Amani Pass",
+      "what": "The gate between here and Eversong, fought over for Lightwood and for every other reason for two thousand years"
+    },
+    {
+      "name": "Revantusk Sedge",
+      "what": "The coastal home of the Revantusk, the tribe that broke with the Amani line and dealt with outsiders instead"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zul'Aman",
+      "url": "https://warcraft.wiki.gg/wiki/Zul%27Aman"
+    },
+    {
+      "title": "Amani tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Amani_tribe"
+    },
+    {
+      "title": "Amani Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Amani_Empire"
+    },
+    {
+      "title": "Atal'Aman",
+      "url": "https://warcraft.wiki.gg/wiki/Atal%27Aman"
+    },
+    {
+      "title": "Broken Throne",
+      "url": "https://warcraft.wiki.gg/wiki/Broken_Throne"
+    },
+    {
+      "title": "Amani'Zar Village",
+      "url": "https://warcraft.wiki.gg/wiki/Amani%27Zar_Village"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

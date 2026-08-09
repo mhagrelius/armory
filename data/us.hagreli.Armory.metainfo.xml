@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>us.hagreli.Armory</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <name>Armory</name>
+  <summary>Track a World of Warcraft account, and replay what it remembers</summary>
+
+  <description>
+    <p>
+      Armory is a companion for a World of Warcraft account that has been played
+      for a long time and is about to be played again. It shows every character
+      on the account, and it is built around one problem the existing tools do
+      not address: the account remembers everything, so nothing reads as new.
+    </p>
+    <p>
+      A run takes a snapshot of what the account already has and measures
+      progress from that point. Where an achievement was earned by a character
+      you have not enrolled, its completion flag will never move again, so
+      Armory works out progress from the things that really are per-character —
+      quests completed, statistics, encounters — instead of reading the flag.
+      Where nothing can measure it, you can mark it done yourself. Where it can
+      never be earned again, Armory says so once and then leaves it out.
+    </p>
+    <p>
+      Profile data comes from Blizzard's API and is a snapshot taken when a
+      character logs out, never a live view. An optional in-game addon adds what
+      the API has no endpoint for: currencies, the Warband bank, and which
+      character actually earned each account-wide achievement.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">us.hagreli.Armory.desktop</launchable>
+
+  <categories>
+    <category>Game</category>
+    <category>Utility</category>
+  </categories>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="0.1.0" date="2026-08-03">
+      <description>
+        <p>First release: the roster, and the groundwork for runs.</p>
+      </description>
+    </release>
+  </releases>
+
+  <developer id="us.hagreli">
+    <name>Matthew Hagrelius</name>
+  </developer>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </supports>
+</component>

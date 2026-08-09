@@ -1,0 +1,68 @@
+{
+  "zone": "Darnassus",
+  "map": 89,
+  "expansion": "Classic",
+  "summary": "Darnassus was the night elf capital, grown into the western boughs of Teldrassil around the Temple of the Moon and guarded by Sentinels and ancients — and it is ash. Sylvanas ordered the World Tree burned at the opening of the Fourth War with the city and most of its people still inside, and nothing that stands there now is lived in. The surviving kaldorei, the Sisterhood and the druids have made their home since in Bel'ameth, grown in the branches of Amirdrassil.",
+  "history": "Mortality came as a shock after the Third War, and a faction of druids under Fandral Staghelm answered it by planting a new World Tree off the northern coast of Kalimdor, hoping to buy their people's immortality back. Darnassus rose among its branches: the Temple of the Moon for Tyrande and the sisterhood, a terrace for the Sentinels, an enclave for the druids, and a lake with bridges over it. Malfurion returned to find Fandral had been turned by Xavius and was the reason the tree was sickening; the Aspects blessed it once he was imprisoned. Gilnean refugees were given an oak of their own to live in. Then came the War of the Thorns, and the Horde put the whole tree to the torch.",
+  "factions": [
+    "Sisterhood of Elune",
+    "Cenarion druids",
+    "Sentinels",
+    "Gilnean worgen refugees",
+    "Highborne returned to kaldorei society",
+    "Alliance"
+  ],
+  "notable": [
+    {
+      "name": "Temple of the Moon",
+      "what": "Elune's great temple and the seat of the high priestess, the centre of night elf faith for as long as the city stood"
+    },
+    {
+      "name": "Warrior's Terrace",
+      "what": "Also called the Hall of Justice — the Sentinels' muster and the city's training ground, at the main approach"
+    },
+    {
+      "name": "Cenarion Enclave",
+      "what": "The druids' quarter in the north, where Malfurion presided when he was not in the Dream, and where the Divine Bell was stolen from under the Alliance's guard"
+    },
+    {
+      "name": "Howling Oak",
+      "what": "A Gilnean tree grown from a seed carried out of the fallen kingdom, given to the worgen refugees as a home"
+    },
+    {
+      "name": "Rut'theran Village",
+      "what": "The port at the roots of Teldrassil, with the portal up into the city and the boats to Stormwind and the Exodar"
+    },
+    {
+      "name": "Teldrassil",
+      "what": "The World Tree the whole city grew in, planted for immortality and burned to make a point"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Darnassus",
+      "url": "https://warcraft.wiki.gg/wiki/Darnassus"
+    },
+    {
+      "title": "Teldrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Teldrassil"
+    },
+    {
+      "title": "Temple of the Moon",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_the_Moon"
+    },
+    {
+      "title": "Warrior's Terrace",
+      "url": "https://warcraft.wiki.gg/wiki/Warrior%27s_Terrace"
+    },
+    {
+      "title": "Rut'theran Village",
+      "url": "https://warcraft.wiki.gg/wiki/Rut%27theran_Village"
+    },
+    {
+      "title": "Howling Oak",
+      "url": "https://warcraft.wiki.gg/wiki/Howling_Oak"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,68 @@
+{
+  "zone": "Zereth Mortis",
+  "map": 1970,
+  "expansion": "Shadowlands",
+  "summary": "Zereth Mortis is the First Ones' workshop, folded into the fabric of the Shadowlands and closed to everybody until the Jailer forced it open. Afterlives are manufactured here, at an enormous Forge floating over the middle of the realm, and the mechanical automa left behind to run the process have kept working at it without supervision for longer than anyone can count. The Sepulcher of the First Ones sits at the far end of it, holding knowledge that would let whoever reached it rewrite what is real.",
+  "history": "Nothing about this realm was meant to be found. The First Ones built it, staffed it with automa, and left; the brokers who venerate them could argue about what its name even translates to. Zovaal spent his imprisonment working out how to get in, and once he held all five sigils of the Eternal Ones he tore his way through — he had already ripped a piece of the place loose and chained it inside Torghast, and the wound that left is still visible. The Primus forged a key out of the four replacement sigils the covenants made and followed him. The Enlightened taught the mortals who came after how to read the automa's language, which is what made the realm navigable at all.",
+  "factions": [
+    "The Enlightened",
+    "Automa",
+    "Brokers",
+    "Mawsworn",
+    "The four covenants' armies",
+    "Devourers"
+  ],
+  "notable": [
+    {
+      "name": "The Sepulcher of the First Ones",
+      "what": "What the Jailer came for — the repository whose contents would let its holder remake reality"
+    },
+    {
+      "name": "Forge of Afterlives",
+      "what": "The structure hanging at the centre of the realm that builds new afterlives, and was mid-assembly on one when mortals arrived"
+    },
+    {
+      "name": "Haven",
+      "what": "The Enlightened's settlement, raised out of Progenitor ruins and shielded when the Mawsworn came for it"
+    },
+    {
+      "name": "Zovaal's Grasp",
+      "what": "The scar left where the Jailer tore the Chained Precipice out of the land and dragged it to Torghast"
+    },
+    {
+      "name": "Antecedent Isle",
+      "what": "A fragment floating off the northern edge of the realm, and the ground the world boss Antros holds"
+    },
+    {
+      "name": "Catalyst Gardens",
+      "what": "Where the raw stuff of creation is grown and tended, overgrown now and half reclaimed by its own flora"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zereth Mortis",
+      "url": "https://warcraft.wiki.gg/wiki/Zereth_Mortis"
+    },
+    {
+      "title": "Forge of Afterlives",
+      "url": "https://warcraft.wiki.gg/wiki/Forge_of_Afterlives"
+    },
+    {
+      "title": "Sepulcher of the First Ones",
+      "url": "https://warcraft.wiki.gg/wiki/Sepulcher_of_the_First_Ones"
+    },
+    {
+      "title": "Haven",
+      "url": "https://warcraft.wiki.gg/wiki/Haven"
+    },
+    {
+      "title": "Zovaal's Grasp",
+      "url": "https://warcraft.wiki.gg/wiki/Zovaal%27s_Grasp"
+    },
+    {
+      "title": "Antecedent Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Antecedent_Isle"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

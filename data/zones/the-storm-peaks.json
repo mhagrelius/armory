@@ -1,0 +1,94 @@
+{
+  "zone": "The Storm Peaks",
+  "map": 120,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Storm Peaks are the highest mountains in Northrend and some of the highest in the world, a country of blizzards, avalanches and winds that will take a climber off a ledge. Almost every summit carries titan work: the Terrace of the Makers, the Temple of Storms where Thorim sits, and the fortress-city of Ulduar. The living here are frost giants at Dun Niffelem, the hyldnir vrykul of Brunnhildar, frostborn dwarves at Frosthold, earthen driven out of Ulduar, iron dwarves, taunka on the high plateau at Camp Tunka'lo, and a goblin trading town called K3 at the bottom of it all.",
+  "history": "Odyn had the Forge of Wills sunk into this range, and once the titans named him Prime Designate the keepers raised Ulduar above it — machine shops, libraries and Yogg-Saron's prison inside the same walls. Proximity told. The Old God worked on Loken until he killed Thorim's wife Sif and blamed the ice giants for it; the war that followed emptied the peaks of their makers. Loken had Helya tear Odyn's wing into the sky as the Halls of Valor and exiled the giants onto the mountainsides they still hold. He later lit the Forge again to turn out iron dwarves and vrykul for the thing beneath it, and Brann Bronzebeard went in after dwarven history and found that instead. Killing Loken tripped a titan failsafe: Algalon the Observer woke in Ulduar to weigh the planet and send Reply-Code Omega, the answer that has a world wiped and begun again. He was argued out of transmitting it, and the reply never left the peaks.",
+  "factions": [
+    "Sons of Hodir",
+    "Hyldnir of Brunnhildar",
+    "Frostborn dwarves",
+    "Iron dwarves and the Zann'esu",
+    "Earthen of Bouldercrag's Refuge",
+    "Titan keepers and watchers",
+    "Taunka of Camp Tunka'lo",
+    "Alliance Vanguard",
+    "Horde Expedition",
+    "Goblins of K3",
+    "Garm magnataur",
+    "Scourge"
+  ],
+  "notable": [
+    {
+      "name": "Ulduar",
+      "what": "The keepers' great titan city, holding the Forge of Wills and the prison of Yogg-Saron in the same walls"
+    },
+    {
+      "name": "Temple of Storms",
+      "what": "Thorim's open-sided hall on the highest peak in Northrend"
+    },
+    {
+      "name": "Dun Niffelem",
+      "what": "Fortress of ice spikes and iron chain belonging to the Sons of Hodir, the frost giants, under King Jokkum"
+    },
+    {
+      "name": "Brunnhildar Village",
+      "what": "Stronghold of the hyldnir, the frost vrykul women who turned the Lich King's offer down where their sisters at Valkyrion took it"
+    },
+    {
+      "name": "Frosthold",
+      "what": "A town built into a pit of ice on a mountaintop, home to the entire frostborn dwarf race and their Alliance guests"
+    },
+    {
+      "name": "K3",
+      "what": "The goblin depot at the foot of the range, permanently at war with the magnataur of Garm next door"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Storm Peaks",
+      "url": "https://warcraft.wiki.gg/wiki/Storm_Peaks"
+    },
+    {
+      "title": "Ulduar",
+      "url": "https://warcraft.wiki.gg/wiki/Ulduar"
+    },
+    {
+      "title": "Dun Niffelem",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Niffelem"
+    },
+    {
+      "title": "Brunnhildar Village",
+      "url": "https://warcraft.wiki.gg/wiki/Brunnhildar_Village"
+    },
+    {
+      "title": "Frosthold",
+      "url": "https://warcraft.wiki.gg/wiki/Frosthold"
+    },
+    {
+      "title": "Frostborn",
+      "url": "https://warcraft.wiki.gg/wiki/Frostborn"
+    },
+    {
+      "title": "Bouldercrag's Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Bouldercrag%27s_Refuge"
+    },
+    {
+      "title": "Garm herd",
+      "url": "https://warcraft.wiki.gg/wiki/Garm_herd"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    },
+    {
+      "title": "Camp Tunka'lo",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Tunka%27lo"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

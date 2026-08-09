@@ -1,0 +1,81 @@
+{
+  "zone": "Grizzly Hills",
+  "map": 116,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Grizzly Hills are pine forest and low green ridges in southeastern Northrend, the one part of the continent that looks like somewhere you could live. They are furbolg country: most of them keep to Grizzlemaw, a city built inside the stump of a failed World Tree. Around it are human trappers with their trading posts, the Venture Company clear-cutting and mining at Venture Bay, iron dwarves at Dun Argol, ice trolls holding Drak'Tharon Keep in the north, and a growing worgen cult working out of Bloodmoon Isle.",
+  "history": "These woods were the cubhood range of the bear gods Ursoc and Ursol, and Ursoc ruled here long after. Around 4,500 BDP, with saronite spreading under Northrend, Fandral Staghelm's druids planted a branch of Nordrassil over the largest deposit and grew Andrassil, the Crown of the Snow. Its roots grew down to where Yogg-Saron lay chained; the Old God turned the tree, and everything near it went mad. The Cenarion Circle felled it and renamed the stump Vordrassil, the Broken Crown, and the furbolgs later built Grizzlemaw inside it. Trappers and goblin loggers came much later. During the war against the Lich King, Arugal was raised from the dead and set to making worgen of the trappers, while the Alliance and Horde fought over the timber and the bay.",
+  "factions": [
+    "Furbolg tribes",
+    "Human trappers",
+    "Wolfcult worgen",
+    "Venture Company",
+    "Iron dwarves",
+    "Drakkari ice trolls",
+    "Taunka of Camp Oneqwah",
+    "Alliance",
+    "Horde",
+    "Scourge",
+    "Vrykul of Voldrune"
+  ],
+  "notable": [
+    {
+      "name": "Grizzlemaw",
+      "what": "The furbolg capital, built in the hollow stump of Vordrassil at the centre of the zone"
+    },
+    {
+      "name": "Vordrassil",
+      "what": "The World Tree that was planted to seal saronite, corrupted by Yogg-Saron through its roots, and cut down by the druids who grew it"
+    },
+    {
+      "name": "Bloodmoon Isle",
+      "what": "Shadowfang Tower on an island off the coast, where the Shade of Arugal was set to work turning trappers into worgen"
+    },
+    {
+      "name": "Drak'Tharon Keep",
+      "what": "The old Drakkari fortress on the Zul'Drak border, taken by the Scourge"
+    },
+    {
+      "name": "Amberpine Lodge and Conquest Hold",
+      "what": "The Alliance meeting hall the woodsmen built and the Horde's fighting-pit fortress — the two sides of the fight over Venture Bay"
+    },
+    {
+      "name": "Dun Argol",
+      "what": "The iron dwarf city that became their capital after stone giants brought Thor Modan down"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grizzly Hills",
+      "url": "https://warcraft.wiki.gg/wiki/Grizzly_Hills"
+    },
+    {
+      "title": "Grizzlemaw",
+      "url": "https://warcraft.wiki.gg/wiki/Grizzlemaw"
+    },
+    {
+      "title": "Bloodmoon Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodmoon_Isle"
+    },
+    {
+      "title": "Dun Argol",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Argol"
+    },
+    {
+      "title": "Drak'Tharon Keep",
+      "url": "https://warcraft.wiki.gg/wiki/Drak%27Tharon_Keep"
+    },
+    {
+      "title": "Amberpine Lodge",
+      "url": "https://warcraft.wiki.gg/wiki/Amberpine_Lodge"
+    },
+    {
+      "title": "Conquest Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Conquest_Hold"
+    },
+    {
+      "title": "Camp Oneqwah",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Oneqwah"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

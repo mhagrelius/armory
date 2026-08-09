@@ -1,0 +1,79 @@
+{
+  "zone": "Broken Shore",
+  "map": 646,
+  "expansion": "Legion",
+  "summary": "The Broken Shore is the black island in the south-east of the Broken Isles, dragged up off the sea floor by Gul'dan during the Second War because the Tomb of Sargeras was on it. That tomb is the Legion's door into Azeroth, and the demons built a city and a fortress around it. Deliverance Point on the western shore is where the class orders regrouped after the battle that killed a Warchief, a King and a Highlord, and Acherus hangs over the eastern end.",
+  "history": "The island was called Thal'dranath and was part of Suramar, with the Temple of Elune standing on it, until the Sundering put it under the sea. The Guardian Aegwynn chose that sunken temple to hide the body of Sargeras' avatar, and its power warped the place into the Tomb that bears his name. Gul'dan raised the island in the Second War, opened the Tomb and was torn apart by what came out. Illidan took the Eye from it after the Third War. When a second Gul'dan reopened the portal, Azeroth's combined armies landed and were broken here; the survivors came back as the Armies of Legionfall.",
+  "factions": [
+    "Burning Legion",
+    "Man'ari eredar and felborne",
+    "Armies of Legionfall",
+    "Knights of the Ebon Blade",
+    "Illidari",
+    "Valarjar",
+    "Shadowguard eredar",
+    "Naga and sea giants",
+    "Night elf spirits"
+  ],
+  "notable": [
+    {
+      "name": "Tomb of Sargeras",
+      "what": "The old Temple of Elune, twisted by the thing Aegwynn buried in it, and the gateway every invasion since has come through"
+    },
+    {
+      "name": "The Black City",
+      "what": "The Legion stronghold that rose out of the ground in moments and filled itself with demons and captured Argent knights"
+    },
+    {
+      "name": "Deliverance Point",
+      "what": "The Armies of Legionfall's base, tiered up the slope with the command centre, mage tower and nether disruptor the orders built"
+    },
+    {
+      "name": "Acherus: The Ebon Hold",
+      "what": "The death knights' necropolis, moved from the Plaguelands to hang over the eastern end of the island"
+    },
+    {
+      "name": "Aalgen Point",
+      "what": "A Valarjar camp south of the Lost Temple, vrykul fighting demons on somebody else's island"
+    },
+    {
+      "name": "Wrynnfall",
+      "what": "The ground where Varian Wrynn died covering the Alliance retreat from the Battle for the Broken Shore"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Broken Shore",
+      "url": "https://warcraft.wiki.gg/wiki/Broken_Shore"
+    },
+    {
+      "title": "Tomb of Sargeras",
+      "url": "https://warcraft.wiki.gg/wiki/Tomb_of_Sargeras"
+    },
+    {
+      "title": "Black City",
+      "url": "https://warcraft.wiki.gg/wiki/Black_City"
+    },
+    {
+      "title": "Deliverance Point",
+      "url": "https://warcraft.wiki.gg/wiki/Deliverance_Point"
+    },
+    {
+      "title": "Acherus: The Ebon Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold"
+    },
+    {
+      "title": "Aalgen Point",
+      "url": "https://warcraft.wiki.gg/wiki/Aalgen_Point"
+    },
+    {
+      "title": "Shadow Fracture",
+      "url": "https://warcraft.wiki.gg/wiki/Shadow_Fracture"
+    },
+    {
+      "title": "Armies of Legionfall",
+      "url": "https://warcraft.wiki.gg/wiki/Armies_of_Legionfall"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

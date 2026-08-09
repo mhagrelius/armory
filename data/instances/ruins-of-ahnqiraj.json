@@ -1,0 +1,49 @@
+{
+  "instance": "Ruins of Ahn'Qiraj",
+  "journal": 743,
+  "expansion": "Classic",
+  "summary": "The Ruins are the outer city of Ahn'Qiraj, the part of the qiraji capital left standing open to the sky in southern Silithus after the War of the Shifting Sands. When the gates were reopened it was where the Horde held the line while the Alliance went underneath.",
+  "history": "A thousand years ago the night elves and the dragonflights drove the qiraji back to their own capital and met a concentration of silithid at its gates that they could not break. Rather than win, they sealed: the barrier went up, and the city was left in ruins behind it. The qiraji spent the next thousand years breeding. When the Twilight's Hammer, led by the ogre mage Cho'gall, worked a ritual from outside the Scarab Wall that reached the chamber where C'Thun lay chained, the Old God woke and threw its armies at Silithus. Anachronos recognised what had stirred and knew the empire would only get stronger. With the Scepter of the Shifting Sands reassembled out of fragments scattered across the world, the gates opened and the qiraji poured out. Varok Saurfang, given command of a joint campaign by Thrall and the regent lord of Stormwind, split the assault: his own elite would take the ruined outer city and hold the swarms there while the Alliance descended into the temple below. This is that outer city, and Ossirian the Unscarred is what was holding it.",
+  "assumes": "It assumes you know why a wall was ever needed. The night elves fought this war a thousand years ago and did not win it, and the reputation the entire loot system runs on belongs to the Cenarion Circle because they are the ones who have been watching the hives ever since.",
+  "disputed": [
+    "Who raised the barrier is told two ways on the same page. One account credits the night elves and all four dragonflights; the other credits the night elves and the bronze dragonflight with help from some of the Aspects' children.",
+    "The RPG material goes further and says nobody remembers whether the Scarab Wall was built by the elves to keep the qiraji in or by the qiraji to keep the elves out."
+  ],
+  "notable": [
+    {
+      "name": "Ossirian the Unscarred",
+      "what": "Holds the General's Terrace at the far end of the ruins"
+    },
+    {
+      "name": "Kurinnaxx",
+      "what": "The first thing the Horde met deep in the hive"
+    },
+    {
+      "name": "General Rajaxx",
+      "what": "Arrives with waves of qiraji officers rather than alone"
+    },
+    {
+      "name": "Moam",
+      "what": "A stone giant that feeds on mana in the Reservoir"
+    },
+    {
+      "name": "Buru the Gorger and Ayamiss the Hunter",
+      "what": "The Hatchery and the Scarab Terrace, each guarded by one of them"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ruins of Ahn'Qiraj",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Ahn%27Qiraj"
+    },
+    {
+      "title": "Silithus",
+      "url": "https://warcraft.wiki.gg/wiki/Silithus"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

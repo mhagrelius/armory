@@ -1,0 +1,48 @@
+{
+  "instance": "Blackwing Lair",
+  "journal": 742,
+  "expansion": "Classic",
+  "summary": "Blackwing Lair is cut into Upper Blackrock Spire, in the top half of the same mountain Ragnaros held from below. It is Nefarian's laboratory, where Deathwing's son bred dragons by crossing the blood of every flight.",
+  "history": "Blackrock Mountain held two powers who tolerated each other and nothing more: Ragnaros in the fire below, and above him Nefarian with what was left of the black dragonflight. Nefarian stayed out of sight for over a decade, leaving the Dark Horde under Rend Blackhand to hold the Spire in exchange for promises of dragon support he never meant to keep. What he actually wanted was his father's abandoned project. He took captive dragons of the other flights and worked their blood together, and after years of clutches dying in the shell a few of the chromatic brood began to survive. Moira Thaurissan, watching from the ruined Dark Iron court below and expecting Nefarian to come for her people next, made sure Orgrimmar heard that the Dark Horde had sworn itself to Deathwing's son. Horde champions killed Rend at the Spire, then cut through the laboratories and the twisted things in them and killed Nefarian, and carried his head back to Orgrimmar. After the Cataclysm the Twilight's Hammer recovered his corpse and raised it, and he rebuilt further down in Blackwing Descent.",
+  "assumes": "It assumes you know who Nefarian is and why a dragon keeps a laboratory. He is Deathwing's son, finishing an experiment his father began and failed at, in a mountain that already belonged to a fire elemental.",
+  "disputed": [
+    "The wiki hedges the experiments in its own voice: Nefarian's intentions are known, his methods remain a mystery, and it is only believed that he was blending the blood of the dragonflights."
+  ],
+  "notable": [
+    {
+      "name": "Nefarian",
+      "what": "Deathwing's son, and the author of the chromatic dragonflight"
+    },
+    {
+      "name": "Razorgore the Untamed",
+      "what": "An orc bent to guarding the egg clutch, fought at the entrance to the lair"
+    },
+    {
+      "name": "Vaelastrasz the Corrupt",
+      "what": "A red dragon taken and turned, who fights while begging to be stopped"
+    },
+    {
+      "name": "Broodlord Lashlayer",
+      "what": "Holds the Dragonmaw Garrison, the fortified approach to the laboratories"
+    },
+    {
+      "name": "Chromaggus",
+      "what": "The surviving proof the experiments worked"
+    },
+    {
+      "name": "The Crimson Laboratories",
+      "what": "Where the flights' blood was combined and the failed clutches kept"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blackwing Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Blackwing_Lair"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

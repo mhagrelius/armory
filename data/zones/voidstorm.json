@@ -1,0 +1,42 @@
+{
+  "zone": "Voidstorm",
+  "map": null,
+  "expansion": "Midnight",
+  "summary": "The Voidstorm is a world remade by the Void, sitting at the nexus where Void energies across the cosmos converge, and it is the staging ground from which Xal'atath launched her assault on the Sunwell. Everything alive here survives by devouring something weaker, presided over by the domanaar and by Xal'atath's Devouring Host. It is not the Void's homeworld — it is a planet that was taken.",
+  "history": "Long before the Void claimed it, this was a world called Predacea, rich in scholarship and crowned with cities that hung in its sky. A war between its empires grew ruinous enough that one side commissioned the weaponsmith Akintunde to end it outright; the weapon he built did exactly that, razing the civilisation it was meant to save, and his employers imprisoned him in the last days before the end. Only the smallest life came through, and over aeons it evolved into something relentlessly predatory. Void creatures settled the ruins afterwards. With Dimensius sealed inside the Dark Heart, Xal'atath siphoned that power to birth the Voidstorm here, then loosed it against Quel'Danas — where the Vanguard of the Light held it at the Sunwell until Magister Umbric found a way to cross over and strike back.",
+  "factions": [
+    "The Devouring Host",
+    "Domanaar",
+    "Vanguard of the Light",
+    "Void elves"
+  ],
+  "notable": [
+    {
+      "name": "Xal'atath",
+      "what": "Rules the Voidstorm and launched its siege on the Sunwell from here"
+    },
+    {
+      "name": "The domanaar",
+      "what": "The most powerful void creatures known, ordered among themselves by conquest and deceit"
+    },
+    {
+      "name": "Akintunde the Unstoppable",
+      "what": "The weaponsmith who ended Predacea's war by ending Predacea, and was imprisoned for it"
+    },
+    {
+      "name": "Predacea",
+      "what": "The world this was before the Void — cities in the sky, and a war that left only the smallest things alive"
+    },
+    {
+      "name": "The Voidspire",
+      "what": "The raid in the zone's south, where the fight is taken to Xal'atath"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voidstorm",
+      "url": "https://warcraft.wiki.gg/wiki/Voidstorm"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

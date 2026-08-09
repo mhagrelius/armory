@@ -1,0 +1,69 @@
+{
+  "zone": "Isle of Dorn",
+  "map": null,
+  "expansion": "The War Within",
+  "summary": "The Isle of Dorn is the green surface of Khaz Algar, west of Pandaria and southeast of Kalimdor: waterfalls, ironwood forest and open mountain country with the earthen city of Dornogal at its middle. The Council of Dornogal governs it, and the villages around them are earthen too, with kobolds squatting in a hillside graveyard, fungarians in the southern basin and nerubians dug into a mine on the north shore. Dalaran's wreckage lies along the Tranquil Strand, which is what brought both factions here.",
+  "history": "When the Elemental Lords ruled the world and this was still part of Kalimdor, the land answered to Al'Akir. The titans' surveyors filed it as Sector AR-938 and sent a contingent of earthen to look into an anomaly in a fissure. What the keepers got back was unsettling: those earthen began behaving like the ones taken by the curse of flesh, though they had never met them and shared nothing with them. Archaedas set the watchers Dornic and Galan over them, and the earthen eventually rose against Dornic for how he treated them. They named the place Khaz Algar and were left alone with it for thousands of years — until a magical city fell out of the sky onto their beach.",
+  "factions": [
+    "Algari earthen and the Council of Dornogal",
+    "The Unbound, at Freywold Village",
+    "Candlelit kobolds",
+    "Nerubians out of Azj-Kahet",
+    "Fungarians",
+    "Shimmerfin gorlocs",
+    "Alliance and Horde"
+  ],
+  "notable": [
+    {
+      "name": "Dornogal",
+      "what": "The earthen capital at the centre of the island, built over the mouth of the Coreway"
+    },
+    {
+      "name": "Freywold Village",
+      "what": "The Unbound's home in the southwest — earthen who walked away from the Edicts and made a life out of choosing things"
+    },
+    {
+      "name": "Tranquil Strand",
+      "what": "The northern shore where the pieces of Dalaran came down after Xal'atath emptied it"
+    },
+    {
+      "name": "Mourning Rise",
+      "what": "A hillside graveyard in the northeast taken over by the Candlelit kobolds, with Kriegval's Rest beneath it"
+    },
+    {
+      "name": "Cinderbrew Meadery",
+      "what": "The brewery on the eastern edge, worked with cinderbee honey out of the Cinderwold's ironwood forest"
+    },
+    {
+      "name": "The Three Shields",
+      "what": "Three islands off the northeast coast, home to gorlocs, cloudrooks and one Stormrider who had had enough of company"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Isle of Dorn",
+      "url": "https://warcraft.wiki.gg/wiki/Isle_of_Dorn"
+    },
+    {
+      "title": "Dornogal",
+      "url": "https://warcraft.wiki.gg/wiki/Dornogal"
+    },
+    {
+      "title": "Dornogal (nation)",
+      "url": "https://warcraft.wiki.gg/wiki/Dornogal_(nation)"
+    },
+    {
+      "title": "Freywold Village",
+      "url": "https://warcraft.wiki.gg/wiki/Freywold_Village"
+    },
+    {
+      "title": "Mourning Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Mourning_Rise"
+    },
+    {
+      "title": "Three Shields",
+      "url": "https://warcraft.wiki.gg/wiki/Three_Shields"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

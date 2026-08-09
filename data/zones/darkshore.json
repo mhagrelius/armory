@@ -1,0 +1,74 @@
+{
+  "zone": "Darkshore",
+  "map": 62,
+  "expansion": "Classic",
+  "summary": "Darkshore is a long misted strip of northwestern coast, evergreen forest between the mountains and a rocky beach littered with ten-thousand-year-old ruins. It has been broken twice: the Cataclysm destroyed Auberdine outright and left a vortex of raw energy turning in the middle of the zone, and the Fourth War turned the whole coast into a battlefield the night elves had to take back by force. Lor'danel in the north and the Grove of the Ancients in the south are what the kaldorei still hold; naga, satyrs, grell and feral furbolgs have the rest, along with whatever the Horde left behind.",
+  "history": "Two cities stood here before the Sundering, Ameth'Aran and Bashal'Aran, and their lord Athrikus Narassin promised to save his people and instead sealed their souls in gems to power himself. Everything the night elves built afterward failed except Auberdine. Fandral Staghelm's druids planted Teldrassil from this coast. The Cataclysm then wrecked Darkshore more thoroughly than almost anywhere on Azeroth — Auberdine flattened, the ground split, whirlpools and storms — and Malfurion Stormrage went to the Eye of the Vortex and called on Cenarius's power to keep the strip from sliding into the sea. The survivors founded Lor'danel. Then the Horde marched through on its way to burn Teldrassil, and Maiev Shadowsong and the Gilneans took the coast back.",
+  "factions": [
+    "Darnassus and the Sentinels",
+    "Army of the Black Moon",
+    "Alliance",
+    "Gilneas",
+    "Circle of Ancients",
+    "Horde",
+    "Forsaken",
+    "Bilgewater Cartel",
+    "Shatterspear trolls",
+    "Blackwood furbolgs",
+    "Naga",
+    "Twilight's Hammer"
+  ],
+  "notable": [
+    {
+      "name": "Ruins of Auberdine",
+      "what": "The night elf port that was the only settlement ever to hold on this coast, destroyed by the Cataclysm and picked over since"
+    },
+    {
+      "name": "Lor'danel",
+      "what": "The town built north of the ruins to keep a night elf foothold in Darkshore, and where the last of Auberdine's refugees ended up"
+    },
+    {
+      "name": "Grove of the Ancients",
+      "what": "A sacred temple ruin around the Wildbend River in the south, held through the Shattering by the Ancients who live there and left most of them sleeping"
+    },
+    {
+      "name": "The Eye of the Vortex",
+      "what": "The swirling wound at the centre of the zone, the epicentre of the Shattering here, contained rather than closed"
+    },
+    {
+      "name": "Ameth'Aran and Bashal'Aran",
+      "what": "The twin cities of the old empire, ruined by the War of the Ancients and still full of the souls Athrikus Narassin trapped"
+    },
+    {
+      "name": "Blackwood Camp",
+      "what": "The furbolg settlement south of the ruins, its tribe long since turned on everything that walks past"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Darkshore",
+      "url": "https://warcraft.wiki.gg/wiki/Darkshore"
+    },
+    {
+      "title": "Grove of the Ancients",
+      "url": "https://warcraft.wiki.gg/wiki/Grove_of_the_Ancients"
+    },
+    {
+      "title": "Circle of Ancients",
+      "url": "https://warcraft.wiki.gg/wiki/Circle_of_Ancients"
+    },
+    {
+      "title": "Auberdine Refugee Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Auberdine_Refugee_Camp"
+    },
+    {
+      "title": "Blackwood Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Blackwood_Camp"
+    },
+    {
+      "title": "Blackwood tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Blackwood_tribe"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

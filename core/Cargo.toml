@@ -1,0 +1,39 @@
+[package]
+name = "armory-core"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "Armory's account, run, store and sources — nothing here draws"
+license = "GPL-3.0-or-later"
+
+[lib]
+name = "armory_core"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+# Blizzard's responses are read out of a `serde_json::Value` by hand rather
+# than derived into structs that would reject a field Blizzard renamed. It is
+# also the wire format `sync` hands a row across in, and the column type half
+# a dozen tables already use for a record read whole.
+serde_json = "1"
+# Baselines are dated, tokens expire, auction snapshots are hourly, and a
+# change log is ordered by when it was written.
+chrono = { version = "0.4", default-features = false, features = [
+    "std",
+    "clock",
+    "serde",
+] }
+# The store, and the one thing in this crate that opens a file handle. It
+# stays on this side of the split rather than in the shell because
+# `armory-server` is the same store with a socket in front of it: one
+# definition of the schema, one definition of every merge rule, and no way for
+# the two ends to come to disagree about what a tally does on conflict.
+#
+# libsqlite3 is already on every target and inside org.gnome.Sdk, so this
+# binds a platform library rather than adding a store. `bundled` is off for
+# the same reason.
+rusqlite = "0.40"
+
+[dev-dependencies]
+tempfile = "3"

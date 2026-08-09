@@ -1,0 +1,15 @@
+/target
+/dist
+/.flatpak-build
+/packaging/flatpak/cargo-sources.json
+
+# The shared secret and the image tag, filled in from server/.env.example.
+# Committed once, a token is in the history forever.
+/server/.env
+/packaging/.env
+
+# Per-machine Claude Code settings. `.claude/settings.json` is shared; this is not.
+/.claude/settings.local.json
+
+# Concept art gathered while sketching the addon UI — working material, not the project.
+/*.zip

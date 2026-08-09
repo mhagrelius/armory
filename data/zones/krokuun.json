@@ -1,0 +1,76 @@
+{
+  "zone": "Krokuun",
+  "map": 830,
+  "expansion": "Legion",
+  "summary": "Krokuun is the surface of Argus, and the first ground Azeroth's armies set foot on when they took the war to the Legion's home world. What were eredar cities and groves is now black soil, petrified trees and demonic machinery growing out of the rock like more rock. The Army of the Light's crashed Xenedar lies here, the Broken survivors shelter at Krokul Hovel, and the fortified city of Nath'raxas Hold looks down on all of it.",
+  "history": "Argus was the eredar's own world and this was its countryside. When Sargeras made his offer, Kil'jaeden and Archimonde accepted it and Velen fled with those who would follow, leaving the rest to be remade as the man'ari. The eredar who kept neither the Light nor the fel were broken by the planet's ruin and became the Krokul, worked as slaves in their own hills. The Army of the Light fought on from its dimensional ship for millennia. When the Vindicaar finally brought champions of Azeroth down at Darkfall Ridge they freed those slaves, made common cause with Chieftain Hatuun's people and pushed inland to Nath'raxas Hold, with Kil'jaeden's wrecked ship still burning behind them.",
+  "factions": [
+    "Burning Legion and the man'ari eredar",
+    "Grand Army of the Light",
+    "Argussian Reach",
+    "Krokul, the Broken of Argus",
+    "Illidari",
+    "Alliance and Horde champions aboard the Vindicaar"
+  ],
+  "notable": [
+    {
+      "name": "The Xenedar",
+      "what": "The Army of the Light's dimensional ship and old headquarters, split off from the Genedar when the draenei fled, now down on Argus"
+    },
+    {
+      "name": "Krokul Hovel",
+      "what": "The Broken's enclave, where Chieftain Hatuun keeps the freed slaves of Darkfall Ridge alive"
+    },
+    {
+      "name": "Nath'raxas Hold",
+      "what": "The fortified city on the heights, with the spire and the inquisitor's lair inside its keep"
+    },
+    {
+      "name": "Darkfall Ridge",
+      "what": "Peaceful eredar country once, a Legion labour camp now, and the invasion's landing ground"
+    },
+    {
+      "name": "Destiny Point",
+      "what": "The small camp the Army of the Light staged its assault on Nath'raxas from"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Krokuun",
+      "url": "https://warcraft.wiki.gg/wiki/Krokuun"
+    },
+    {
+      "title": "Xenedar",
+      "url": "https://warcraft.wiki.gg/wiki/Xenedar"
+    },
+    {
+      "title": "Krokul Hovel",
+      "url": "https://warcraft.wiki.gg/wiki/Krokul_Hovel"
+    },
+    {
+      "title": "Nath'raxas Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Nath%27raxas_Hold"
+    },
+    {
+      "title": "Darkfall Ridge",
+      "url": "https://warcraft.wiki.gg/wiki/Darkfall_Ridge"
+    },
+    {
+      "title": "Destiny Point",
+      "url": "https://warcraft.wiki.gg/wiki/Destiny_Point"
+    },
+    {
+      "title": "Argussian Reach",
+      "url": "https://warcraft.wiki.gg/wiki/Argussian_Reach"
+    },
+    {
+      "title": "Army of the Light",
+      "url": "https://warcraft.wiki.gg/wiki/Army_of_the_Light"
+    },
+    {
+      "title": "Vindicaar",
+      "url": "https://warcraft.wiki.gg/wiki/Vindicaar"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

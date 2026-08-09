@@ -1,0 +1,67 @@
+{
+  "zone": "Harandar",
+  "map": null,
+  "expansion": "Midnight",
+  "summary": "Harandar is a bioluminescent jungle in a cavern under the world, and it is where the roots of every World Tree on Azeroth come together. The haranir live in it — a reclusive people who have kept sacred ground down here without the surface ever knowing, governed by their elders from the Den. Four of their villages sit under four sets of roots, and the Rift of Aln, which the Emerald Nightmare pours out of, is also here.",
+  "history": "This place has no history of its own so much as it holds everyone else's: whatever happens to a World Tree above eventually shows in the roots below. Har'kuai in the northeast sits under Nordrassil, and water from the Well of Eternity runs down those roots, through the Vale of Mists and on into the Rift of Aln. Har'mara in the northwest sits under Teldrassil, whose roots have been smouldering since the Horde burned it in the Fourth War. Har'athir in the southeast has Amirdrassil's roots, new growth from a tree raised in the Dream. Har'alnor in the southwest reaches Shaladrassil. The haranir have guarded all of it quietly, as subterranean keepers of hidden land, for as long as anyone can establish.",
+  "factions": [
+    "Haranir",
+    "The Elders",
+    "Ruutani",
+    "Fungarians of Fungara Village",
+    "The Emerald Nightmare, out of the Rift of Aln"
+  ],
+  "notable": [
+    {
+      "name": "The Rift of Aln",
+      "what": "The fissure the Emerald Nightmare comes out of, sitting in the middle of a place built on living roots"
+    },
+    {
+      "name": "Har'kuai",
+      "what": "The northeastern village under Nordrassil's roots, where water from the Well of Eternity arrives and starts its run through the cavern"
+    },
+    {
+      "name": "Har'mara",
+      "what": "The northwestern village under Teldrassil, whose roots are still hot years after the tree above them burned"
+    },
+    {
+      "name": "Har'athir",
+      "what": "The southeastern village under Amirdrassil, the newest roots in the cavern"
+    },
+    {
+      "name": "Har'alnor",
+      "what": "The southwestern village, closest to the roots of Shaladrassil"
+    },
+    {
+      "name": "The Den",
+      "what": "The haranir's own centre, where the elders decide what their people will and will not have to do with the surface"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Harandar",
+      "url": "https://warcraft.wiki.gg/wiki/Harandar"
+    },
+    {
+      "title": "Haranir",
+      "url": "https://warcraft.wiki.gg/wiki/Haranir"
+    },
+    {
+      "title": "Har'kuai",
+      "url": "https://warcraft.wiki.gg/wiki/Har%27kuai"
+    },
+    {
+      "title": "Har'mara",
+      "url": "https://warcraft.wiki.gg/wiki/Har%27mara"
+    },
+    {
+      "title": "Har'athir",
+      "url": "https://warcraft.wiki.gg/wiki/Har%27athir"
+    },
+    {
+      "title": "Den (Harandar)",
+      "url": "https://warcraft.wiki.gg/wiki/Den_(Harandar)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

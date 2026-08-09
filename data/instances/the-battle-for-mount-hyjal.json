@@ -1,0 +1,51 @@
+{
+  "instance": "The Battle for Mount Hyjal",
+  "journal": 750,
+  "expansion": "The Burning Crusade",
+  "summary": "Less a place than a night. This is the last battle of the Third War replayed out of the Caverns of Time: night elves, Alliance and Horde holding three bases on the slopes while Archimonde climbs toward the World Tree, and the raid is fought inside a time pocket disconnected from history.",
+  "history": "By the time the Legion's second invasion reached Kalimdor it had already broken every nation in the Eastern Kingdoms and killed Cenarius. Archimonde wanted the second Well of Eternity beneath Nordrassil; with its power he could open a gateway wide enough to bring Sargeras through. Medivh, at the end of his own story, brought three factions who did not want to be allies into one line. Jaina Proudmoore's base fell first, then Thrall's, both commanders meeting Archimonde in person and being teleported clear at the last moment; Broxigar held a pass and was the only one of his company to walk out of it. The night elves gave ground last, thousands of them dying to buy the summit time. At the top Malfurion Stormrage called the wisps to Nordrassil and set off the tree's enchantments, and the blast destroyed Archimonde and nearly every demon and undead on the continent. It cost the night elves their immortality, which they had agreed in advance to spend. The Lich King used the defeat to cut himself loose from the Legion, and Medivh, satisfied the world no longer needed a Guardian, left it.",
+  "assumes": "The raid assumes Warcraft III. It drops you into the middle of a battle whose participants, stakes and ending are all established in a game you cannot play from here, and because it happens in a sealed time pocket, nothing you do in it changes anything.",
+  "disputed": [
+    "The date moved. Blizzard's first published timeline put the battle in year 20; the World of Warcraft cinematic and a Burning Crusade quest both place it in 21, and 21 is what the wiki now uses.",
+    "What actually killed Archimonde has been told several ways. Earlier accounts had druids feeding the tree their people's immortality along with the gathered energy of uncounted spirits; the Ultimate Visual Guides say wisps surrounded him. Chronicle Volume 3 settles the Legion's objective as the second Well of Eternity rather than the tree itself.",
+    "The instance was originally hinted to be an Infinite dragonflight attack on the timeline. That was dropped in favour of a time pocket disconnected from history.",
+    "Kaz'rogal, one of the four demon commanders fought here, does not appear in Warcraft III at all."
+  ],
+  "notable": [
+    {
+      "name": "Archimonde",
+      "what": "The Defiler, commanding the invasion, and the only reason the tree was destroyed"
+    },
+    {
+      "name": "Rage Winterchill",
+      "what": "The lich who opens the raid, and whose phylactery was the pretext for entering it"
+    },
+    {
+      "name": "Anetheron",
+      "what": "A dreadlord who took Tichondrius's place after his death"
+    },
+    {
+      "name": "Kaz'rogal and Azgalor",
+      "what": "The commanders who break the Horde base before the night elves are reached"
+    },
+    {
+      "name": "Nordrassil",
+      "what": "The World Tree, and the second Well of Eternity underneath it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Mount Hyjal",
+      "url": "https://warcraft.wiki.gg/wiki/Battle_of_Mount_Hyjal"
+    },
+    {
+      "title": "Mount Hyjal",
+      "url": "https://warcraft.wiki.gg/wiki/Mount_Hyjal"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

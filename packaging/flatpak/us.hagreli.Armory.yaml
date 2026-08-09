@@ -1,0 +1,52 @@
+app-id: us.hagreli.Armory
+runtime: org.gnome.Platform
+runtime-version: '49'
+sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: armory
+
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    CARGO_HOME: /run/build/armory/cargo
+
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  # Blizzard's API, and opening the sign-in page in a browser.
+  - --share=network
+  # The client secret. Without this the secret has nowhere safe to live.
+  - --talk-name=org.freedesktop.secrets
+  # Read the WoW install to find SavedVariables and to place the addon. Chosen
+  # over --filesystem=home: this is where the game keeps its prefixes, and
+  # Armory has no business anywhere else in a home directory.
+  - --filesystem=~/Games:ro
+  - --filesystem=~/.local/share/lutris:ro
+  - --filesystem=~/.wine:ro
+
+modules:
+  - name: armory
+    buildsystem: simple
+    build-commands:
+      - cargo --offline fetch --manifest-path Cargo.toml --verbose
+      - cargo --offline build --release --verbose
+      - install -Dm755 target/release/armory /app/bin/armory
+      - install -Dm644 data/us.hagreli.Armory.desktop
+        /app/share/applications/us.hagreli.Armory.desktop
+      - install -Dm644 data/us.hagreli.Armory.metainfo.xml
+        /app/share/metainfo/us.hagreli.Armory.metainfo.xml
+      - install -Dm644 data/icons/us.hagreli.Armory.svg
+        /app/share/icons/hicolor/scalable/apps/us.hagreli.Armory.svg
+      - install -Dm644 data/icons/us.hagreli.Armory-symbolic.svg
+        /app/share/icons/hicolor/symbolic/apps/us.hagreli.Armory-symbolic.svg
+      - install -Dm644 addon/Armory_Collector/Armory_Collector.toc
+        /app/share/armory/addon/Armory_Collector/Armory_Collector.toc
+      - install -Dm644 addon/Armory_Collector/Armory_Collector.lua
+        /app/share/armory/addon/Armory_Collector/Armory_Collector.lua
+    sources:
+      - type: dir
+        path: ../..
+      - cargo-sources.json

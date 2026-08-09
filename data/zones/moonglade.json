@@ -1,0 +1,69 @@
+{
+  "zone": "Moonglade",
+  "map": 80,
+  "expansion": "Classic",
+  "summary": "Moonglade is a walled-in vale in northern Kalimdor that nothing has been allowed to spoil: old forest, mounds full of sleeping druids, and Lake Elune'ara in the middle of it with Nighthaven on the shore. It is the Cenarion Circle's home and neutral ground — night elf and tauren druids train here side by side, and the Moonglade Wardens stop anyone who tries to bring a war into it. The only way in on foot is the Timbermaw tunnel through the southwestern mountains, which is why most people arrive some other way.",
+  "history": "Cenarius lived here in the age of the War of the Ancients, and it was here that Malfurion brought Tyrande and Illidan to ask the demigod for help against the Legion. After the Sundering the keepers of the grove and the dryads came out of this valley into the wider world, and during the War of the Satyr Malfurion gathered druids here and founded the Cenarion Circle. In the Third War Tichondrius sent the Scourge at the barrow dens to reach Malfurion's sleeping body; Tyrande recovered the Horn of Cenarius and woke him instead. Afterwards the vale opened to druids of every race under Keeper Remulos, and the Nightmare found a way into one wing of the dens.",
+  "factions": [
+    "Cenarion Circle",
+    "Timbermaw tribe",
+    "Green dragonflight",
+    "Keepers of the grove and dryads",
+    "Druids of the Alliance and the Horde",
+    "Jadefire satyrs",
+    "Emerald Nightmare"
+  ],
+  "notable": [
+    {
+      "name": "Nighthaven",
+      "what": "The village on the lakeshore, the Circle's seat and the centre of the Lunar Festival every year"
+    },
+    {
+      "name": "Lake Elune'ara",
+      "what": "The crystal lake named for Elune at the heart of the vale, with Omen sleeping at the bottom of it until the festival wakes him"
+    },
+    {
+      "name": "Stormrage Barrow Dens",
+      "what": "The sacred dens where druids sleep in the Emerald Dream, named for the archdruid who spent centuries in them"
+    },
+    {
+      "name": "Shrine of Remulos",
+      "what": "Where Cenarius's son, keeper and ruler of the glade, receives anyone with business concerning the Dream"
+    },
+    {
+      "name": "Timbermaw Hold",
+      "what": "The furbolg tunnel in the southwest mountains, the only land route in or out"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moonglade",
+      "url": "https://warcraft.wiki.gg/wiki/Moonglade"
+    },
+    {
+      "title": "Nighthaven",
+      "url": "https://warcraft.wiki.gg/wiki/Nighthaven"
+    },
+    {
+      "title": "Lake Elune'ara",
+      "url": "https://warcraft.wiki.gg/wiki/Lake_Elune%27ara"
+    },
+    {
+      "title": "Stormrage Barrow Dens",
+      "url": "https://warcraft.wiki.gg/wiki/Stormrage_Barrow_Dens"
+    },
+    {
+      "title": "Remulos",
+      "url": "https://warcraft.wiki.gg/wiki/Remulos"
+    },
+    {
+      "title": "Timbermaw Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Timbermaw_Hold"
+    },
+    {
+      "title": "Cenarion Circle",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Circle"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

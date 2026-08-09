@@ -1,0 +1,68 @@
+{
+  "zone": "Emerald Dream",
+  "map": null,
+  "expansion": "Dragonflight",
+  "summary": "The Emerald Dream is Azeroth as it would look if nothing had ever built on it — a spirit world outside the physical one, in layers, some of them discarded drafts of the planet. The part of it anyone walks is reached through the Dream Portal on the Ancient Bough in the Dragon Isles, where nature magic spills out into the Emerald Gardens. Merithra holds it as Aspect after her mother, the green flight keeps the Eye of Ysera, and Amirdrassil was grown here and carried out into the waking world when Fyrakk failed to burn it.",
+  "history": "Freya either wove it during the Ordering or found it already there and set about tidying it, depending on whether you ask a titan-forged or a nature spirit. She planted G'Hanir, first and tallest of trees, and set Nymue at the Wellspring Temple to keep the pattern. Ysera was bound into an endless trance to watch the world from inside it, and her flight has guarded every doorway since, seeing both sides at once with their eyes shut. Cenarius was raised in it. After the War of the Ancients Ysera tied Nordrassil to the Dream, which is what lets druids sleep here and learn. And in one corner the Rift of Aln festered, and the Nightmare came out of it.",
+  "factions": [
+    "Green dragonflight",
+    "Cenarion Circle and the druids of Azeroth",
+    "Dryads, keepers of the grove and faerie dragons",
+    "Wild Gods",
+    "The Emerald Nightmare",
+    "Fyrakk's Druids of the Flame"
+  ],
+  "notable": [
+    {
+      "name": "Eye of Ysera",
+      "what": "The green flight's seat inside the Dream, made twenty thousand years ago, from which they watch both worlds"
+    },
+    {
+      "name": "Amirdrassil",
+      "what": "The World Tree grown in the Dream as a home for the kaldorei who lost Teldrassil, defended here and then moved into the waking world"
+    },
+    {
+      "name": "Rift of Aln",
+      "what": "The fissure in a far corner of the Dream that the Emerald Nightmare came out of, and never stopped coming out of"
+    },
+    {
+      "name": "G'Hanir, the Mother Tree",
+      "what": "Freya's first planting on a high peak, from which life washed outward — a source of healing that reached the waking world too"
+    },
+    {
+      "name": "The Emerald Dreamway",
+      "what": "The paths between the Dream's portals, which is how a druid crosses a continent without walking it"
+    },
+    {
+      "name": "The Dream Portal",
+      "what": "The doorway on the Ancient Bough in the Dragon Isles, the first the green flight ever opened, with the Emerald Gardens grown up around it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Emerald Dream",
+      "url": "https://warcraft.wiki.gg/wiki/Emerald_Dream"
+    },
+    {
+      "title": "Eye of Ysera",
+      "url": "https://warcraft.wiki.gg/wiki/Eye_of_Ysera"
+    },
+    {
+      "title": "Green dragonflight",
+      "url": "https://warcraft.wiki.gg/wiki/Green_dragonflight"
+    },
+    {
+      "title": "Emerald Nightmare",
+      "url": "https://warcraft.wiki.gg/wiki/Emerald_Nightmare"
+    },
+    {
+      "title": "Cenarius",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarius"
+    },
+    {
+      "title": "Nordrassil",
+      "url": "https://warcraft.wiki.gg/wiki/Nordrassil"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,74 @@
+{
+  "zone": "Drustvar",
+  "map": 896,
+  "expansion": "Battle for Azeroth",
+  "summary": "Drustvar is the western end of Kul Tiras: cold, forested, mountainous, and harder to live in than anywhere else in the kingdom. It supplies most of the realm's ore and a good deal of its infantry, and it answers to House Waycrest from Corlain. It is also the old country of the Drust, whose ruins stand in the hills, and whose death magic came back through the Heartsbane Coven to curse whole villages and set wicker constructs walking.",
+  "history": "The Drust, vrykul who came here by sea after the Sundering, held the archipelago for millennia before humans of the Arathorian Empire landed around 2,700 BDP. The Drust refused every offer of peace and raided the new settlements out of this region for years. The Waycrest family answered by founding the Order of Embers, and the Thornspeakers broke with their own kin to help; Arom Waycrest finally took the Drust city of Gol Osigr and killed King Gorak Tul, and was made lord of the region for it. Gorak Tul was not gone. During the Fourth War he answered Lady Meredith Waycrest's plea to save her dying husband, and the price was the coven that swallowed Corlain.",
+  "factions": [
+    "House Waycrest and the Waycrest Guard",
+    "Order of Embers",
+    "Thornspeakers",
+    "Heartsbane Coven",
+    "The Drust",
+    "Irontide Raiders",
+    "Bilgewater Cartel and the Horde",
+    "Darktide naga"
+  ],
+  "notable": [
+    {
+      "name": "Corlain",
+      "what": "The regional capital, upper and lower town, with Waycrest Manor above it and the Waycrest Guard keeping order below"
+    },
+    {
+      "name": "Waycrest Manor",
+      "what": "The Waycrest seat, taken over by the coven and turned into the doorway Gorak Tul meant to walk back through"
+    },
+    {
+      "name": "Arom's Stand",
+      "what": "The town named for the first lord of Drustvar, and the base the Order of Embers works from"
+    },
+    {
+      "name": "Gol Osigr",
+      "what": "The ruined Drust city in the hills, where the old war ended and the old magic was dug up again"
+    },
+    {
+      "name": "Fallhaven",
+      "what": "A farming village in the east, frozen in place by a witch's curse until it was broken"
+    },
+    {
+      "name": "Anyport",
+      "what": "A smugglers' cove on the west coast, built around a wrecked night elf ship and fought over by pirates"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Drustvar",
+      "url": "https://warcraft.wiki.gg/wiki/Drustvar"
+    },
+    {
+      "title": "Corlain",
+      "url": "https://warcraft.wiki.gg/wiki/Corlain"
+    },
+    {
+      "title": "House Waycrest",
+      "url": "https://warcraft.wiki.gg/wiki/House_Waycrest"
+    },
+    {
+      "title": "Heartsbane Coven",
+      "url": "https://warcraft.wiki.gg/wiki/Heartsbane_Coven"
+    },
+    {
+      "title": "Arom's Stand",
+      "url": "https://warcraft.wiki.gg/wiki/Arom%27s_Stand"
+    },
+    {
+      "title": "Fallhaven",
+      "url": "https://warcraft.wiki.gg/wiki/Fallhaven"
+    },
+    {
+      "title": "Anyport",
+      "url": "https://warcraft.wiki.gg/wiki/Anyport"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

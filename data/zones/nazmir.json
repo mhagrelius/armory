@@ -1,0 +1,72 @@
+{
+  "zone": "Nazmir",
+  "map": 863,
+  "expansion": "Battle for Azeroth",
+  "summary": "Nazmir is the swamp filling the northeast of Zandalar, standing water and insects and the broken stonework of temples the jungle has half swallowed. The blood trolls hold it now, worshipping the Old God G'huun as a loa and working to break the last titan disc that keeps him sealed under Uldir. Bwonsamdi still keeps his Necropolis here, and Zandalari mothers still use the swamp to frighten their children.",
+  "history": "This was the first home of troll civilisation, and the first king led his people south out of it to found Zuldazar because of what was buried underneath. The titans had built a facility here to study the Old Gods and had accidentally made one of their own, and the seal on it has been the region's whole story since. Nazmir stayed a place of worship for the loa of death for centuries afterwards, with temples at the Necropolis and the Terrace of Sorrows, until heretics began killing and corrupting the faithful and became the blood trolls. In the Fourth War Talanji brought allies into the swamp against them, and G'huun was put down inside Uldir rather than merely sealed again.",
+  "factions": [
+    "Blood trolls of the Nazmani, Amaki and Natha'vor tribes",
+    "G'huun and the Vilescale",
+    "Zandalari Empire and Talanji's Expedition",
+    "Horde",
+    "Alliance and the 7th Legion",
+    "Bwonsamdi's dead",
+    "Tortollan Seekers",
+    "Tortaka tribe",
+    "Sethrak raiders",
+    "Faceless ones"
+  ],
+  "notable": [
+    {
+      "name": "The Necropolis",
+      "what": "Bwonsamdi's temple, where the spirits of dead trolls can be seen walking in if you are dead enough to look"
+    },
+    {
+      "name": "Uldir",
+      "what": "The titan research facility sunk into the swamp, built to study the Old Gods and the place G'huun was made"
+    },
+    {
+      "name": "Zul'Nazman",
+      "what": "The blood trolls' seat, with the Altar of Rot and the Heart of Darkness at its centre"
+    },
+    {
+      "name": "Terrace of Sorrows",
+      "what": "One of the old temples of the death loa, lost when the faithful here turned"
+    },
+    {
+      "name": "Shoaljai Tar Pits",
+      "what": "Bubbling tar and smoking vents on the western edge, the road out to the desert of Vol'dun"
+    },
+    {
+      "name": "Zo'bal Ruins",
+      "what": "A ruined settlement turned into the expedition's forward camp in the middle of the marsh"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nazmir",
+      "url": "https://warcraft.wiki.gg/wiki/Nazmir"
+    },
+    {
+      "title": "Necropolis (Nazmir)",
+      "url": "https://warcraft.wiki.gg/wiki/Necropolis_(Nazmir)"
+    },
+    {
+      "title": "G'huun",
+      "url": "https://warcraft.wiki.gg/wiki/G%27huun"
+    },
+    {
+      "title": "Uldir",
+      "url": "https://warcraft.wiki.gg/wiki/Uldir"
+    },
+    {
+      "title": "Nazmani tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Nazmani_tribe"
+    },
+    {
+      "title": "Amaki tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Amaki_tribe"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

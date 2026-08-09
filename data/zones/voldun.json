@@ -1,0 +1,75 @@
+{
+  "zone": "Vol'dun",
+  "map": 864,
+  "expansion": "Battle for Azeroth",
+  "summary": "Vol'dun is the desert filling the northwest of Zandalar — dunes, salt flats and broken rock from one coast to the other, littered with the bleached bones of enormous animals. Until recently the Zandalari used it as a death sentence, exiling criminals into it with no way back. The sethrak consider it holy ground and are split between Vorrik's Devoted and Korthek's Faithless, and the vulpera caravans survive in the gaps between them.",
+  "history": "This was jungle once, and the Zandalari shared it with the sethrak, both peoples worshipping the serpent loa Sethraliss together. Around sixteen thousand years ago the C'Thraxxi warbringer Mythrax came through in the war against the aqir and killed trolls and sethrak alike, destroying the disc at the heart of the titan pyramid Atul'Aman. Sethraliss spent her own life to stop him. Between her death and the upheavals that followed the jungle dried to sand and the trolls left. Three sethrak sealed Mythrax inside the pyramid; one of them, Korthek, later decided he wanted the C'Thrax loose and an empire of his own, and split his people in two over it.",
+  "factions": [
+    "Devoted sethrak under Vorrik",
+    "Faithless sethrak under Korthek",
+    "Vulpera caravans and the Voldunai",
+    "Zandalari exiles",
+    "Horde",
+    "Ashvane Trading Company",
+    "Alliance and the 7th Legion",
+    "Zem'lan's cursed crew",
+    "Tortaka tortollan"
+  ],
+  "notable": [
+    {
+      "name": "Atul'Aman",
+      "what": "The titan pyramid in the middle of the desert, its disc broken by Mythrax and the C'Thrax himself sealed inside it"
+    },
+    {
+      "name": "Temple of Sethraliss",
+      "what": "The dead serpent loa's temple, the holiest ground the sethrak have and the thing both their factions are fighting over"
+    },
+    {
+      "name": "Port of Zem'lan",
+      "what": "A ruined Zandalari port on the southwest coast, held by a pirate king and a crew that death did not release"
+    },
+    {
+      "name": "Vulpera Hideaway",
+      "what": "The vulpera's refuge after the Faithless burned the Abandoned Burrows out from under them"
+    },
+    {
+      "name": "Goldtusk Inn",
+      "what": "A cave inn at Whistlebloom Oasis that takes any exile who will work for the bed"
+    },
+    {
+      "name": "Redrock Harbor",
+      "what": "The bay where the Ashvane Trading Company put in to strip Azerite out of the Redrock Mines"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vol'dun",
+      "url": "https://warcraft.wiki.gg/wiki/Vol%27dun"
+    },
+    {
+      "title": "Atul'Aman",
+      "url": "https://warcraft.wiki.gg/wiki/Atul%27Aman"
+    },
+    {
+      "title": "Devoted",
+      "url": "https://warcraft.wiki.gg/wiki/Devoted"
+    },
+    {
+      "title": "Faithless",
+      "url": "https://warcraft.wiki.gg/wiki/Faithless"
+    },
+    {
+      "title": "Port of Zem'lan",
+      "url": "https://warcraft.wiki.gg/wiki/Port_of_Zem%27lan"
+    },
+    {
+      "title": "Redrock Harbor",
+      "url": "https://warcraft.wiki.gg/wiki/Redrock_Harbor"
+    },
+    {
+      "title": "Goldtusk Inn",
+      "url": "https://warcraft.wiki.gg/wiki/Goldtusk_Inn"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

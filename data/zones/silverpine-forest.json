@@ -1,0 +1,71 @@
+{
+  "zone": "Silverpine Forest",
+  "map": 21,
+  "expansion": "Classic",
+  "summary": "Silverpine is a tall, quiet pine forest down Lordaeron's western coast, mist on the needles and abandoned farms and mine shafts scattered through it. The Forsaken hold the north from the Sepulcher and their command posts, and used the southern woods as the staging ground for the invasion of Gilneas; the Bloodfang worgen and the Gilneas Liberation Front dispute everything below that, and Shadowfang Keep is now the pack's. Fenris Isle sits out in Lordamere Lake, Pyrewood and Ambermill were Gilnean towns before the Greymane Wall cut them off, and ettins have wandered up from the south since it fell.",
+  "history": "Pyrewood and Ambermill belonged to Gilneas until the Greymane Wall shut the kingdom away. The great road through these pines was the way to the capital, and Lothar brought Stormwind's refugees up it after the First War. The Scourge pushed through the forest during the Third War and stalled at that wall; Genn Greymane sent his soldiers out and watched them raised as undead, then had Archmage Arugal pull worgen out of the Emerald Dream to fight in their place. The curse got into the living, Gilneas abandoned Silverpine trying to contain it, and Arugal went mad with guilt and took Shadowfang Keep for himself and the beasts he called his children. With Lordaeron gone and Dalaran busy rebuilding, nobody was left holding the woods, so the Forsaken took them — and later marched on Gilneas from them. Sylvanas paid for that campaign with val'kyr, raising three dead Gilnean lords who had never accepted a wolf for a king; once the worgen had been pushed back over the border, Godfrey shot her in the back and ran for Shadowfang Keep with the other two, and it took her own val'kyr to raise her again.",
+  "factions": [
+    "Forsaken",
+    "Horde",
+    "Bloodfang worgen",
+    "Gilneas Liberation Front",
+    "Kingdom of Gilneas",
+    "Alliance and the 7th Legion",
+    "Dalaran mages of Ambermill",
+    "Scourge remnants",
+    "Vile Fin murlocs"
+  ],
+  "notable": [
+    {
+      "name": "Shadowfang Keep",
+      "what": "Baron Silverlaine's fortress above Pyrewood, taken by Arugal and his worgen and held since by whoever won last"
+    },
+    {
+      "name": "The Sepulcher",
+      "what": "The Forsaken's town in the middle of the forest and the hub everything here runs through"
+    },
+    {
+      "name": "Fenris Keep",
+      "what": "The keep on Fenris Isle in Lordamere Lake, once a garrison of Lordaeron's army and later Thule Ravenclaw's"
+    },
+    {
+      "name": "Pyrewood Village",
+      "what": "The hamlet below Shadowfang, Gilnean before the wall, cursed after Arugal"
+    },
+    {
+      "name": "Ambermill",
+      "what": "The mill town by the lake, held by Dalaran's mages against the Forsaken"
+    },
+    {
+      "name": "The Greymane Wall",
+      "what": "The barrier that sealed Gilneas off and cut this forest's southern towns away from their kingdom, breached in the Cataclysm"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Silverpine Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Silverpine_Forest"
+    },
+    {
+      "title": "Ambermill",
+      "url": "https://warcraft.wiki.gg/wiki/Ambermill"
+    },
+    {
+      "title": "Fenris Keep",
+      "url": "https://warcraft.wiki.gg/wiki/Fenris_Keep"
+    },
+    {
+      "title": "Forsaken High Command",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken_High_Command"
+    },
+    {
+      "title": "Forsaken Front",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken_Front"
+    },
+    {
+      "title": "Bloodfang pack",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodfang_pack"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

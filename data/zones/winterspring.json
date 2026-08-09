@@ -1,0 +1,76 @@
+{
+  "zone": "Winterspring",
+  "map": 83,
+  "expansion": "Classic",
+  "summary": "Winterspring is a snowbound valley in the far northeast of Kalimdor, deep pine forest and frozen lakes with mountain giants, wildkin and wintersabers moving through it. Everlook sits at the crossroads of its trade routes, a Steamwheedle post that will sell to anyone; Starfall Village is the night elves' end of the valley, and Mazthoril, the great ice cavern near Lake Kel'Theril, is the blue dragonflight's home on this continent. The Ruins of Kel'Theril on the lakeshore are haunted by everyone who has ever come here after the same cursed crystal.",
+  "history": "Blue dragons have lived in this valley since long before anyone counted, Haleh among them. Ten thousand years ago the Highborne city of Kel'Theril stood by the lake; its people stole the Crystal of Zin-Malor out of the temple at Eldarath, and playing with it broke both the crystal and them. The Sundering finished the city and its dead have not left. High elves under Archmage Maenius came for the shards a century before the Dark Portal and joined the ghosts; blood elves tried the same thing before the Cataclysm and were turned into wretched for it. In the Third War Tyrande and Malfurion cleared the valley and woke the Druids of the Talon in its barrow dens.",
+  "factions": [
+    "Steamwheedle Cartel",
+    "Darnassus",
+    "Blue dragonflight",
+    "Winterfall furbolgs",
+    "Timbermaw furbolgs",
+    "Explorers' League",
+    "Wintersaber Trainers",
+    "Wildkin and mountain giants",
+    "Alliance",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Everlook",
+      "what": "The goblin trading post at the valley's crossroads, complete with laboratory, and neutral because that is what pays"
+    },
+    {
+      "name": "Mazthoril",
+      "what": "The deep ice cavern near Lake Kel'Theril, the blue dragonflight's seat on Kalimdor, and lost to them for a time"
+    },
+    {
+      "name": "Ruins of Kel'Theril",
+      "what": "The Highborne city that broke itself on the Crystal of Zin-Malor, its dead still wandering the lakeshore"
+    },
+    {
+      "name": "Starfall Village",
+      "what": "The night elf settlement in the north, with the Ban'Thallow Barrow Den behind it and the Goodgrub camp along the road"
+    },
+    {
+      "name": "Winterfall Village",
+      "what": "The furbolg village whose tribe went bad, and the reason the valley's bears are hostile rather than merely large"
+    },
+    {
+      "name": "Beryl Egress",
+      "what": "Haleh's camp outside Mazthoril, made up of blue dragons who were pushed out of their own cavern"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Winterspring",
+      "url": "https://warcraft.wiki.gg/wiki/Winterspring"
+    },
+    {
+      "title": "Everlook",
+      "url": "https://warcraft.wiki.gg/wiki/Everlook"
+    },
+    {
+      "title": "Mazthoril",
+      "url": "https://warcraft.wiki.gg/wiki/Mazthoril"
+    },
+    {
+      "title": "Beryl Egress",
+      "url": "https://warcraft.wiki.gg/wiki/Beryl_Egress"
+    },
+    {
+      "title": "Ban'Thallow Barrow Den",
+      "url": "https://warcraft.wiki.gg/wiki/Ban%27Thallow_Barrow_Den"
+    },
+    {
+      "title": "Goodgrub Smoking Pit",
+      "url": "https://warcraft.wiki.gg/wiki/Goodgrub_Smoking_Pit"
+    },
+    {
+      "title": "Dun Mandarr",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Mandarr"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

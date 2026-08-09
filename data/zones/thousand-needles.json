@@ -1,0 +1,76 @@
+{
+  "zone": "Thousand Needles",
+  "map": 64,
+  "expansion": "Classic",
+  "summary": "Thousand Needles is a canyon of towering rock spires in southern Kalimdor with the sea in it. The Shattering let the water in and turned the floor of the canyon into the Shimmering Deep, so the mesa-top camps and towns that used to look down on centaur warbands now look down on a lake, and Fizzle & Pozzik's Speedbarge floats where the Mirage Raceway used to run. The Great Lift is broken, entire centaur clans drowned, and what moved in afterwards is worse: Southsea pirates at their holdfast, the Twilight's Hammer on the heights, and the Grimtotem still at Darkcloud Pinnacle.",
+  "history": "Water cut these needles out of the rock over centuries, and the tauren built on top of them to stay above the centaur who ranged the canyon floor — Freewind Post fought the Galak and the Grimtotem from up there with Horde help for years. Out east, on the salt flats, goblins and gnomes raced rocket cars at the Mirage Racetrack to settle which of them built better engines. C'Thun's armies came through during the war in Silithus. Then Deathwing returned and the sea poured in, drowning the flats, the lift and most of the Galak, and the two rival engineers moored a barge over the wreck of their own speedway. The Legion later hit the Grimtotem hard enough that Magatha asked the Earthen Ring for help.",
+  "factions": [
+    "Horde",
+    "Thunder Bluff tauren",
+    "Grimtotem tribe",
+    "Galak centaur",
+    "Southsea Freebooters",
+    "Twilight's Hammer",
+    "Alliance",
+    "Goblins and gnomes of the Speedbarge",
+    "Razorfen quilboar",
+    "Harpies"
+  ],
+  "notable": [
+    {
+      "name": "The Shimmering Deep",
+      "what": "The lake that used to be the Shimmering Flats, with the wreckage of the racetrack scattered across its floor"
+    },
+    {
+      "name": "Fizzle & Pozzik's Speedbarge",
+      "what": "A city-sized ship anchored in the middle of the water by a gnome and a goblin who cannot agree whose name should be on it"
+    },
+    {
+      "name": "The Great Lift",
+      "what": "The elevator that carried traffic up out of the canyon to the Barrens, and one of the most visible things the Cataclysm broke"
+    },
+    {
+      "name": "Freewind Post",
+      "what": "The tauren town high on its mesa, put there to be out of reach and now the Horde's struggle to hold anything here at all"
+    },
+    {
+      "name": "Darkcloud Pinnacle",
+      "what": "The Grimtotem's own mesas east of the Great Lift, and the tribe's foothold in the south"
+    },
+    {
+      "name": "Razorfen Downs",
+      "what": "The quilboar's ancestral burial ground, walled in brambles at the northern end of the canyon"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thousand Needles",
+      "url": "https://warcraft.wiki.gg/wiki/Thousand_Needles"
+    },
+    {
+      "title": "Fizzle & Pozzik's Speedbarge",
+      "url": "https://warcraft.wiki.gg/wiki/Fizzle_%26_Pozzik%27s_Speedbarge"
+    },
+    {
+      "title": "Freewind Post",
+      "url": "https://warcraft.wiki.gg/wiki/Freewind_Post"
+    },
+    {
+      "title": "Darkcloud Pinnacle",
+      "url": "https://warcraft.wiki.gg/wiki/Darkcloud_Pinnacle"
+    },
+    {
+      "title": "Splithoof Heights",
+      "url": "https://warcraft.wiki.gg/wiki/Splithoof_Heights"
+    },
+    {
+      "title": "Southsea Holdfast",
+      "url": "https://warcraft.wiki.gg/wiki/Southsea_Holdfast"
+    },
+    {
+      "title": "Razorfen Downs",
+      "url": "https://warcraft.wiki.gg/wiki/Razorfen_Downs"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

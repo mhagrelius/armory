@@ -1,0 +1,75 @@
+{
+  "zone": "Maldraxxus",
+  "map": 1536,
+  "expansion": "Shadowlands",
+  "summary": "Maldraxxus is the Shadowlands' army, and looks it: a blighted country of bone, iron and fungus where the ground itself seems to take an interest in what walks on it. Souls too stubborn to yield are sent here, made over into undead soldiers, and set against whatever threatens the realms of death from outside. The Primus who founded the place has gone missing, and the five houses that answered to him have turned their strength on each other.",
+  "history": "Necromancy was invented here, and every plague and lich Azeroth has suffered traces back to it — the Lich King's power was Maldraxxian work. The Primus built five houses to hold the realm's strength and set them competing so that only the strongest rose, which worked for as long as somebody stood above them. Then he left for the Maw and did not come back. Without him the competition became a war: the House of Eyes was wiped out and the House of Plagues rotted from within, the Chosen lost their margrave, and the House of Constructs and the sorcerers of the House of Rituals were quietly working for the Jailer the whole time. Draka's rise from the Theater of Pain is what put the houses back together.",
+  "factions": [
+    "Necrolord Covenant and the Maldraxxi",
+    "House of the Chosen",
+    "House of Rituals",
+    "House of Constructs",
+    "House of Eyes",
+    "House of Plagues",
+    "The Primus's loyalists",
+    "The Jailer's servants",
+    "Devourers"
+  ],
+  "notable": [
+    {
+      "name": "Seat of the Primus",
+      "what": "The empty seat of the realm's founder in the south, and the Necrolord sanctum built around his absence"
+    },
+    {
+      "name": "Theater of Pain",
+      "what": "The arena at the centre of the realm, where reputation in Maldraxxus is won in front of a crowd"
+    },
+    {
+      "name": "House of Rituals",
+      "what": "The necromancers, liches and sorcerers, with their halls of tomes, blades and elixirs — Kel'Thuzad's afterlife"
+    },
+    {
+      "name": "House of Constructs",
+      "what": "The stitchyards and body banks where abominations are assembled to fill out the armies"
+    },
+    {
+      "name": "Sepulcher of Knowledge",
+      "what": "The House of Eyes' archive, buried under the wreck of the necropolis Nurakkir that fell on it"
+    },
+    {
+      "name": "Plaguefall",
+      "what": "The House of Plagues' works, drowned in its own experiments and left leaking into the surrounding land"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Maldraxxus",
+      "url": "https://warcraft.wiki.gg/wiki/Maldraxxus"
+    },
+    {
+      "title": "Necrolord Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Necrolord_Covenant"
+    },
+    {
+      "title": "Primus",
+      "url": "https://warcraft.wiki.gg/wiki/Primus"
+    },
+    {
+      "title": "Seat of the Primus",
+      "url": "https://warcraft.wiki.gg/wiki/Seat_of_the_Primus"
+    },
+    {
+      "title": "Theater of Pain",
+      "url": "https://warcraft.wiki.gg/wiki/Theater_of_Pain"
+    },
+    {
+      "title": "House of Rituals",
+      "url": "https://warcraft.wiki.gg/wiki/House_of_Rituals"
+    },
+    {
+      "title": "House of Constructs",
+      "url": "https://warcraft.wiki.gg/wiki/House_of_Constructs"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

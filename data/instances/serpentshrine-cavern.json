@@ -1,0 +1,48 @@
+{
+  "instance": "Serpentshrine Cavern",
+  "journal": 748,
+  "expansion": "The Burning Crusade",
+  "summary": "The raid wing of Coilfang Reservoir, under Zangarmarsh, where Lady Vashj runs the operation that is draining the marsh above. It is a cavern of bridges and platforms over open water, and she prefers it to anywhere else Illidan could have put her.",
+  "history": "When Illidan Stormrage called for help after the Third War, a body of naga under Lady Vashj answered, and she has been his most dedicated lieutenant since. Whoever controls the water controls Outland: his words to her, and the reason Coilfang Reservoir exists. The pumps here are taking Zangarmarsh apart above ground, and Vashj oversees the draining personally rather than sit in the cold stone of the Black Temple. Her court is not only naga. Hydross the Unstable is a bound water elemental at the entrance, Leotheras the Blind is a demon hunter who lost the argument with what was inside him, Morogrim Tidewalker is a sea giant, and Fathom-Lord Karathress commands her captains. The Lurker Below has to be fished out of its own pool rather than pulled. Held in Karathress's chamber was Seer Olum, a Broken prisoner, and it was Olum who got word to Akama that Kael'thas Sunstrider had already stopped being loyal — which is how the Black Temple's own door came to be opened later.",
+  "assumes": "It assumes somebody already told you what Coilfang is for. The machinery here is why the marsh overhead is dying, and the raid never mentions Zangarmarsh at all.",
+  "disputed": [
+    "Whether Vashj serves Illidan or only herself is a question the wiki raises about her and then deliberately leaves open."
+  ],
+  "notable": [
+    {
+      "name": "Lady Vashj",
+      "what": "Illidan's most trusted lieutenant, running the reservoir from the shrine"
+    },
+    {
+      "name": "The Lurker Below",
+      "what": "Fished out of its pool rather than pulled, which is unique to this raid"
+    },
+    {
+      "name": "Fathom-Lord Karathress",
+      "what": "Commands Vashj's captains, and held Seer Olum prisoner in his own chamber"
+    },
+    {
+      "name": "Leotheras the Blind",
+      "what": "A demon hunter who lost, and fights as both halves"
+    },
+    {
+      "name": "Morogrim Tidewalker",
+      "what": "A sea giant standing between the platforms and Vashj"
+    },
+    {
+      "name": "Coilfang Reservoir",
+      "what": "The pumping works the whole complex is built around, four instances deep"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Serpentshrine Cavern",
+      "url": "https://warcraft.wiki.gg/wiki/Serpentshrine_Cavern"
+    },
+    {
+      "title": "Black Temple",
+      "url": "https://warcraft.wiki.gg/wiki/Black_Temple"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

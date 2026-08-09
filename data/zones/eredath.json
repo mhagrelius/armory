@@ -1,0 +1,68 @@
+{
+  "zone": "Eredath",
+  "map": 882,
+  "expansion": "Legion",
+  "summary": "Eredath was the jewel of Argus, the eredar's holiest and finest city, and it is the one part of the world that still looks like itself: a piece of city core torn loose and left floating above the ruin, its gardens and squares nearly intact. The Seat of the Triumvirate stands empty at the centre, and the Void has moved into it. Ethereals of the Shadowguard are working there for the darkened naaru held below, while the Army of the Light beams its people up from the surface to stop them.",
+  "history": "This was where the eredar's three rulers sat and where their scholars taught; Archimonde came out of the Conservatory of the Arcane and led its orders. When Sargeras made his offer to the Triumvirate, two of the three took it, Velen ran, and the world that had been the pinnacle of eredar civilisation became the Legion's forge. Eredath survived better than anything else on Argus, because the deformation of the planet lifted its centre clear rather than burying it. What was left standing has since been claimed twice over: by the Legion, and by the Void that gathered around a fallen naaru beneath the Seat.",
+  "factions": [
+    "Burning Legion and the man'ari eredar",
+    "Shadowguard void ethereals",
+    "Voidscarred",
+    "Grand Army of the Light",
+    "Argussian Reach",
+    "Broken of Argus"
+  ],
+  "notable": [
+    {
+      "name": "Seat of the Triumvirate",
+      "what": "The eredar's old seat of rule at the city's centre, abandoned and now full of ethereals digging for the naaru trapped under it"
+    },
+    {
+      "name": "Conservatory of the Arcane",
+      "what": "The greatest school of magic on Argus, whose orders Archimonde led and studied in"
+    },
+    {
+      "name": "Ruins of Oronaar",
+      "what": "The district that did not survive the collapse, sunk into its own foundations beside the city centre"
+    },
+    {
+      "name": "Kil'jaeden's Terrace",
+      "what": "A terrace still carrying the name of the deceiver who sold the city to Sargeras"
+    },
+    {
+      "name": "Triumvirate's End",
+      "what": "The approach the Army of the Light beams into, and where the war for a dead city's centre is fought"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eredath",
+      "url": "https://warcraft.wiki.gg/wiki/Eredath"
+    },
+    {
+      "title": "Seat of the Triumvirate",
+      "url": "https://warcraft.wiki.gg/wiki/Seat_of_the_Triumvirate"
+    },
+    {
+      "title": "Conservatory of the Arcane",
+      "url": "https://warcraft.wiki.gg/wiki/Conservatory_of_the_Arcane"
+    },
+    {
+      "title": "Shadowguard",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowguard"
+    },
+    {
+      "title": "City Center",
+      "url": "https://warcraft.wiki.gg/wiki/City_Center"
+    },
+    {
+      "title": "Army of the Light",
+      "url": "https://warcraft.wiki.gg/wiki/Army_of_the_Light"
+    },
+    {
+      "title": "Vindicaar",
+      "url": "https://warcraft.wiki.gg/wiki/Vindicaar"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

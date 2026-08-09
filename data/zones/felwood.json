@@ -1,0 +1,76 @@
+{
+  "zone": "Felwood",
+  "map": 77,
+  "expansion": "Classic",
+  "summary": "Felwood is a poisoned forest between Ashenvale and Winterspring, its ancients rotting where they stand, its wildlife mutated, and satyrs and infernals moving freely through it. The Emerald Circle works out of Emerald Sanctuary to undo that and has managed it in one place — Whisperwind Grove in the north, cleansed, with a clean moonwell in it. Against them the Shadow Council still holds Jaedenar under Lord Banehollow. Timbermaw Hold in the northeast belongs to one of the last two uncorrupted furbolg tribes left anywhere, and its tunnel is the way through to Moonglade and Winterspring.",
+  "history": "This was the northern part of Ashenvale, and ordinary forest, until Archimonde decided to weaken the night elves by rotting the ground under them on his march to Hyjal. Tichondrius did the work with the Skull of Gul'dan, and everything that grew or walked here changed. Illidan Stormrage came for the skull, killed Tichondrius with it and took its power, and his brother banished him for that. The healing has been slow and grudging ever since. After the Cataclysm the druids cleansed the north into a grove, a satyr got far enough inside the order to lead it under a false name, ooze experiments cost the Horde its only outpost, and Bilgewater goblins began strip-mining Irontree.",
+  "factions": [
+    "Emerald Circle",
+    "Cenarion Circle",
+    "Timbermaw tribe",
+    "Deadwood furbolgs",
+    "Jadefire satyrs",
+    "Shadow Council",
+    "Burning Legion",
+    "Bilgewater Cartel",
+    "Alliance",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Timbermaw Hold",
+      "what": "The uncorrupted furbolgs' capital in the northeast, and the tunnel through the mountains to Moonglade and Winterspring"
+    },
+    {
+      "name": "Jaedenar",
+      "what": "Night elf ruins and two barrow dens taken over wholesale by the Shadow Council and named in worship of Kil'jaeden, with Shadow Hold beneath"
+    },
+    {
+      "name": "Emerald Sanctuary",
+      "what": "The Emerald Circle's camp in the southeast, from which every attempt to push the corruption back is run"
+    },
+    {
+      "name": "Whisperwind Grove",
+      "what": "The patch of northern forest the druids actually managed to clean, with a moonwell that the taint has not reached"
+    },
+    {
+      "name": "Irontree Woods",
+      "what": "A forest glade in the north, corrupted like the rest and now being strip-mined by goblins out of Irontree Clearing"
+    },
+    {
+      "name": "Deadwood Village",
+      "what": "The southern furbolg settlement whose tribe went the way of the forest, fortified further after the Cataclysm"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Felwood",
+      "url": "https://warcraft.wiki.gg/wiki/Felwood"
+    },
+    {
+      "title": "Timbermaw Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Timbermaw_Hold"
+    },
+    {
+      "title": "Jaedenar",
+      "url": "https://warcraft.wiki.gg/wiki/Jaedenar"
+    },
+    {
+      "title": "Emerald Sanctuary",
+      "url": "https://warcraft.wiki.gg/wiki/Emerald_Sanctuary"
+    },
+    {
+      "title": "Irontree Woods",
+      "url": "https://warcraft.wiki.gg/wiki/Irontree_Woods"
+    },
+    {
+      "title": "Irontree Clearing",
+      "url": "https://warcraft.wiki.gg/wiki/Irontree_Clearing"
+    },
+    {
+      "title": "Deadwood Village",
+      "url": "https://warcraft.wiki.gg/wiki/Deadwood_Village"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

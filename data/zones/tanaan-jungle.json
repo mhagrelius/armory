@@ -1,0 +1,89 @@
+{
+  "zone": "Tanaan Jungle",
+  "map": 534,
+  "expansion": "Warlords of Draenor",
+  "summary": "Tanaan Jungle is the eastern peninsula of Draenor, the Bleeding Hollow clan's home ground and the place where the Iron Horde built its own Dark Portal. Cliffs and fortifications make the heart of it almost unreachable from the ground, which is exactly why the invasion was staged here and why Gul'dan kept it once the Legion had the Horde. Fel now runs down from Hellfire Citadel as the Felblight, and the Alliance at Lion's Watch and the Horde at Vol'mar hold beachheads against it.",
+  "history": "The jungle grew out of a dead sporemound, and the Bleeding Hollow built a hard, superstitious culture around surviving flora that could kill them; the Bonechewers they cast out went cannibal in the same trees. In the timeline that produced Outland, this was where Blackhand's masons raised Hellfire Citadel as the first Horde's capital and where the original Dark Portal was cut into the eastern shore — after which fel magic dried the whole peninsula out and left it the Hellfire Peninsula. Here the Iron Horde built its own portal and poured through, and the counter-attack that shut it stranded its survivors on Draenor. Gul'dan then took the Horde off Grommash for the Legion, and the Felblight ran down from the citadel until it lay in a moat around it.",
+  "factions": [
+    "Bleeding Hollow clan",
+    "Iron Horde",
+    "Burning Legion",
+    "Fel orcs and man'ari eredar",
+    "Shadow Council",
+    "Sethekk arakkoa under Iskar",
+    "Blackfang saberon",
+    "Hand of the Prophet",
+    "Vol'jin's Headhunters",
+    "Frostwolf clan",
+    "Rangari and Laughing Skull refugees"
+  ],
+  "notable": [
+    {
+      "name": "The Dark Portal",
+      "what": "The Iron Horde's own gateway to Azeroth, built here and closed at the cost of stranding the expedition that closed it"
+    },
+    {
+      "name": "Hellfire Citadel",
+      "what": "The orcish fortress at the centre, Gul'dan's seat once the Legion had the Horde, and the war's last raid"
+    },
+    {
+      "name": "Lion's Watch",
+      "what": "The Alliance's fortified landing, thrown up by Yrel and the commander for the final push"
+    },
+    {
+      "name": "Vol'mar",
+      "what": "The Horde's answering hold, run by Vol'jin's Headhunters"
+    },
+    {
+      "name": "Fang'rila",
+      "what": "The Blackfang saberon's capital in the south-east, with an arena at the heart of it"
+    },
+    {
+      "name": "Ruins of Kra'nak",
+      "what": "An old Sethekk arakkoa site in the north-west whose inhabitants took Iskar's offer and joined the Shadow Council"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tanaan Jungle",
+      "url": "https://warcraft.wiki.gg/wiki/Tanaan_Jungle"
+    },
+    {
+      "title": "Lion's Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Lion%27s_Watch"
+    },
+    {
+      "title": "Fang'rila",
+      "url": "https://warcraft.wiki.gg/wiki/Fang%27rila"
+    },
+    {
+      "title": "Ruins of Kra'nak",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Kra%27nak"
+    },
+    {
+      "title": "Ironhold Harbor",
+      "url": "https://warcraft.wiki.gg/wiki/Ironhold_Harbor"
+    },
+    {
+      "title": "Rangari Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Rangari_Refuge"
+    },
+    {
+      "title": "Hand of the Prophet",
+      "url": "https://warcraft.wiki.gg/wiki/Hand_of_the_Prophet"
+    },
+    {
+      "title": "Iron Horde",
+      "url": "https://warcraft.wiki.gg/wiki/Iron_Horde"
+    },
+    {
+      "title": "Bleeding Hollow clan",
+      "url": "https://warcraft.wiki.gg/wiki/Bleeding_Hollow_clan"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,74 @@
+{
+  "zone": "Vashj'ir",
+  "map": 203,
+  "expansion": "Cataclysm",
+  "summary": "Vashj'ir is a drowned night elf city and the sea floor around it, off the western coast of the Eastern Kingdoms, and the only zone in Azeroth played entirely underwater. The naga of the Nazjatar Empire hold it, contested by kvaldir raiders, gilblins, faceless ones and whatever the Earthen Ring and the two factions have managed to land there. It has no night: the kelp forests and the ruins glow from something nobody has explained.",
+  "history": "Vashj'ir was one of the royal seats of Azshara's empire, ruled by Matron Lestharia Vashj. The Sundering dropped the whole of it beneath the Great Sea, and Azshara and the Highborne who went down with her were not killed but dragged into the Maelstrom and remade as naga — Lestharia's daughter Vashj, the queen's handmaiden and later Illidan's lieutenant, among the first — and raised Nazjatar on the sea floor. Ten thousand years on she sent Lady Naz'jar back, not for the ruins but for the rift under them: Vashj'ir opens onto the Abyssal Maw, and N'Zoth wanted Neptulon's command of the oceans rather than his death, which would have cut every sea route between continents. The Earthen Ring raised the alarm, both factions sailed, Ozumat sank their fleets, and the shipwrecked survivors broke the naga from the seabed up.",
+  "factions": [
+    "Naga of the Nazjatar Empire",
+    "Kvaldir",
+    "Gilblins",
+    "Neptulon and his water elementals",
+    "Faceless ones",
+    "Earthen Ring",
+    "Alliance",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Kelp'thar Forest",
+      "what": "The shallow kelp beds where the wrecked fleets wash up, and the first of the region's three levels"
+    },
+    {
+      "name": "Shimmering Expanse",
+      "what": "The middle depth and the naga stronghold, built around the drowned Ruins of Vashj'ir themselves"
+    },
+    {
+      "name": "Abyssal Depths",
+      "what": "The deepest level, holding the Abyssal Breach that leads into Neptulon's Abyssal Maw"
+    },
+    {
+      "name": "Nespirah",
+      "what": "A vast living shell the naga have turned into a mine and a prison, with captured sailors chained inside it"
+    },
+    {
+      "name": "Ozumat",
+      "what": "The patriarch of krakens, summoned by the naga; the thing that sank both fleets and started the whole campaign"
+    },
+    {
+      "name": "The refuges",
+      "what": "Air-filled caves marked by yellow tube worms — the only places down here to stand, eat and light a fire"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vashj'ir",
+      "url": "https://warcraft.wiki.gg/wiki/Vashj%27ir"
+    },
+    {
+      "title": "Kelp'thar Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Kelp%27thar_Forest"
+    },
+    {
+      "title": "Shimmering Expanse",
+      "url": "https://warcraft.wiki.gg/wiki/Shimmering_Expanse"
+    },
+    {
+      "title": "Nazjatar Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Nazjatar_Empire"
+    },
+    {
+      "title": "Neptulon",
+      "url": "https://warcraft.wiki.gg/wiki/Neptulon"
+    },
+    {
+      "title": "Ozumat",
+      "url": "https://warcraft.wiki.gg/wiki/Ozumat"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 1",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_1"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

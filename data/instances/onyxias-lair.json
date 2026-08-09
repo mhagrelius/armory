@@ -1,0 +1,45 @@
+{
+  "instance": "Onyxia's Lair",
+  "journal": 760,
+  "expansion": "Classic",
+  "summary": "A cave under the Dragonmurk in Dustwallow Marsh, its entrance carved to look like the broodmother's own open mouth. Onyxia went to ground here after she was unmasked in Stormwind, and it is the smallest raid in the game.",
+  "history": "Onyxia is Deathwing's daughter and Nefarian's sister, and where her father used force and her brother used laboratories, she used politics. Living in Stormwind as the noblewoman Katrana Prestor, she worked to hollow the kingdom out from inside: she set the Defias Brotherhood against it, and when King Varian Wrynn sailed for Theramore she worked a ritual meant to strip his will away from him and leave a pliable king behind. That half of him escaped into the sea and washed up in Kalimdor with no memory of who he was. With Varian missing his son Anduin was crowned, Bolvar Fordragon was made regent lord, and Onyxia kept her seat at court through all of it. Marshal Windsor eventually exposed her, and she fled to the lair she had built in the marsh: a magma-lined cut in the ground below the Dragonmurk, ceiling groaning and shifting overhead, walls spilling lava where the heat could not be held, guarded by black dragonspawn and her own whelps. She was killed there. Her brood was still living in the cave years later.",
+  "assumes": "It assumes you have already met her. The whole point of Onyxia is the years she spent running Stormwind's court as a human noblewoman, and none of that is anywhere in the cave.",
+  "disputed": [
+    "There are two Onyxia's Lairs on the wiki. The original was a forty-player level-sixty raid released with the game; this page is the ten and twenty-five player version retuned at level eighty for the fifth anniversary in patch 3.2.2.",
+    "The dragon on the loading screen is not Onyxia. It is an image of Alexstrasza taken from the RPG book Shadows and Light."
+  ],
+  "notable": [
+    {
+      "name": "Onyxia",
+      "what": "Broodmother of the black dragonflight, and the only encounter here"
+    },
+    {
+      "name": "Katrana Prestor",
+      "what": "The name she used at Stormwind's court, and an alias her father had used before her"
+    },
+    {
+      "name": "The Dragonmurk",
+      "what": "The dismal stretch of Dustwallow Marsh the lair opens under"
+    },
+    {
+      "name": "The entrance",
+      "what": "Carved as the broodmother's own maw, which is the only warning the place gives"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Onyxia's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Onyxia%27s_Lair"
+    },
+    {
+      "title": "Dustwallow Marsh",
+      "url": "https://warcraft.wiki.gg/wiki/Dustwallow_Marsh"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

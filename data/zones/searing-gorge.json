@@ -1,0 +1,71 @@
+{
+  "zone": "Searing Gorge",
+  "map": 32,
+  "expansion": "Classic",
+  "summary": "The Searing Gorge is the northern half of the same disaster that made the Burning Steppes: a burnt valley in southern Khaz Modan below Blackrock Mountain, worked end to end by the Dark Iron clan. The Cauldron is the enormous excavation at its centre, ringed by digging machines with the Slag Pit sunk underneath, and most of the labour in it is not volunteered. On the cliffs above sit the Thorium Brotherhood at Thorium Point, Dark Irons who left the clan and now watch what it does.",
+  "history": "Some two and a half centuries ago this was a green valley in the Redridge range. Sorcerer-Thane Thaurissan and seven of his most powerful dwarves called on the old thing sleeping beneath the world to break the War of the Three Hammers in their favour, and what answered was Ragnaros; Blackrock Mountain erupted out of the ridge, the Dark Iron capital was reduced to rubble, and the valley north of it was left as it now stands. The clan rebuilt under the mountain and turned the blackened ground into a mining concern, cutting the Cauldron with captive labour. The Brotherhood split off and settled the rim, and Stonewrought Pass to Loch Modan stayed sealed for years until the Cataclysm forced it open.",
+  "factions": [
+    "Dark Iron clan",
+    "Thorium Brotherhood",
+    "Black dragonflight",
+    "Ogres of the Grimesilt camps",
+    "Ironforge mountaineers at Stonewrought Pass"
+  ],
+  "notable": [
+    {
+      "name": "The Cauldron",
+      "what": "The Dark Iron excavation filling the middle of the gorge, rimmed by their machines and fortified after Ragnaros came"
+    },
+    {
+      "name": "Thorium Point",
+      "what": "The neutral Brotherhood town on the northern cliffs, the only place in the gorge that will sell you anything"
+    },
+    {
+      "name": "Blackrock Mountain",
+      "what": "The volcano on the southern edge, joining this zone to the Burning Steppes and holding half the dungeons in the region"
+    },
+    {
+      "name": "Pyrox Flats",
+      "what": "The level ground north of the Cauldron, camped over by Dark Iron work parties"
+    },
+    {
+      "name": "Stonewrought Pass",
+      "what": "The tunnel through to Loch Modan, kept locked by Ironforge mountaineers until the Shattering made the point moot"
+    },
+    {
+      "name": "Iron Summit",
+      "what": "The hill northeast of the mountain, camped since the Cataclysm and the near end of the road to Flamestar Post"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Searing Gorge",
+      "url": "https://warcraft.wiki.gg/wiki/Searing_Gorge"
+    },
+    {
+      "title": "Cauldron",
+      "url": "https://warcraft.wiki.gg/wiki/Cauldron"
+    },
+    {
+      "title": "Thorium Point",
+      "url": "https://warcraft.wiki.gg/wiki/Thorium_Point"
+    },
+    {
+      "title": "Thorium Brotherhood",
+      "url": "https://warcraft.wiki.gg/wiki/Thorium_Brotherhood"
+    },
+    {
+      "title": "Dark Iron clan",
+      "url": "https://warcraft.wiki.gg/wiki/Dark_Iron_clan"
+    },
+    {
+      "title": "Blackrock Mountain",
+      "url": "https://warcraft.wiki.gg/wiki/Blackrock_Mountain"
+    },
+    {
+      "title": "Pyrox Flats",
+      "url": "https://warcraft.wiki.gg/wiki/Pyrox_Flats"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,37 @@
+{
+  "instance": "Magtheridon's Lair",
+  "journal": 747,
+  "expansion": "The Burning Crusade",
+  "summary": "The lowest wing on the western side of Hellfire Citadel, entered opposite the other three. A pit lord who once ruled almost all of Outland is chained inside it, kept just short of death so that his blood can be drained.",
+  "history": "After the Legion came to Outland, Magtheridon held everything but a few pockets of it, and it caught him badly off guard when Illidan Stormrage and his allies took the Black Temple off him. Most people assumed the pit lord had died in that fighting. He had not. Illidan had discovered that Magtheridon's blood does something specific to orcs — it corrupts and transforms them — and so the beaten annihilan was dragged to Hellfire Citadel rather than finished. He has been there since, held by chains both physical and magical, while Illidan's minions bleed him daily and pool what they take. What it is for is standing outside on the Hellfire Peninsula: the fel orcs are manufactured here. Anyone who has run the Blood Furnace has already seen him without being told, because he is chained in the chamber directly beneath the room where Keli'dan the Breaker is fought, which is the same operation one floor up. The raid itself is short — a handful of guards and then the prisoner.",
+  "assumes": "It assumes you know that Illidan Stormrage rules Outland and that the fel orcs overrunning Hellfire Peninsula are made rather than born. The prisoner in the chains is the factory, and the raid never connects the two out loud.",
+  "notable": [
+    {
+      "name": "Magtheridon",
+      "what": "The annihilan who ruled Outland before Illidan took it, now a blood supply"
+    },
+    {
+      "name": "Hellfire Citadel",
+      "what": "The old orcish capital of Draenor, now four instances sharing one building"
+    },
+    {
+      "name": "The Blood Furnace",
+      "what": "The dungeon one floor above, where the transformation is actually performed"
+    },
+    {
+      "name": "The fel orcs",
+      "what": "What the pooled blood is for, and what fills the peninsula outside"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Magtheridon's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Magtheridon%27s_Lair"
+    },
+    {
+      "title": "Hellfire Peninsula",
+      "url": "https://warcraft.wiki.gg/wiki/Hellfire_Peninsula"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

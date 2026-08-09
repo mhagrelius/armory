@@ -1,0 +1,74 @@
+{
+  "zone": "Nagrand",
+  "map": 107,
+  "expansion": "The Burning Crusade",
+  "summary": "Nagrand is the green heart of Outland, a plateau of grassland, lakes and floating islands that the fel corruption which shattered the rest of Draenor barely touched. It is the ancestral home of the orcs and the birthplace of their shamanism, and today it is shared by the uncorrupted Mag'har and the Broken draenei of the Kurenai. Its centre is Halaa, a plateau town that changes hands between the Alliance and the Horde as often as either can hold it.",
+  "history": "Grond's head fell here, and the elemental spirits that first took shape in his remains never left it. Mystics out of Shadowmoon Valley found them, named the place the Throne of the Elements and cut a temple into the skull, which is where shamanism began. It was there that Gul'dan drained the four elemental furies and traded the elements for fel. Garadar was a quarantine camp for orcs dying of his red pox, which is why nobody penned in it drank Mannoroth's blood and the Mag'har are uncorrupted still. Draenor shattered; Nagrand largely survived. Thrall came to Garadar generations later, met the grandmother he had never known and took Garrosh Hellscream home with him. He returned before the Cataclysm to be trained by Aggra, and the furies told him Azeroth's elements sounded as Draenor's had before it came apart.",
+  "factions": [
+    "Mag'har",
+    "Kurenai",
+    "The Consortium",
+    "Warmaul ogres"
+  ],
+  "notable": [
+    {
+      "name": "Oshu'gun",
+      "what": "The white mountain the orcs held sacred — in truth the crashed draenei vessel that carried them to Draenor, with the dying naaru K'ure inside it"
+    },
+    {
+      "name": "Halaa",
+      "what": "A plateau town at the centre of the zone, a former draenei crystal research post, now a world PvP objective either faction can take and hold for a zone-wide damage buff"
+    },
+    {
+      "name": "Throne of the Elements",
+      "what": "Neutral hub in the north where the four elemental furies of Draenor dwell and the first orc shaman learned their craft"
+    },
+    {
+      "name": "Greatmother Geyah",
+      "what": "Thrall's grandmother and matriarch of the Mag'har, at Garadar"
+    },
+    {
+      "name": "Garadar and Telaar",
+      "what": "The Mag'har village and the Kurenai settlement — the Horde and Alliance footholds in the zone; Garadar is named for Durotan's father, who stayed in the quarantine camp it grew from and died there"
+    },
+    {
+      "name": "Hemet Nesingwary",
+      "what": "The dwarf big-game hunter, camped in the northeast for the Outland leg of his safari"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nagrand",
+      "url": "https://warcraft.wiki.gg/wiki/Nagrand"
+    },
+    {
+      "title": "Halaa",
+      "url": "https://warcraft.wiki.gg/wiki/Halaa"
+    },
+    {
+      "title": "Throne of the Elements",
+      "url": "https://warcraft.wiki.gg/wiki/Throne_of_the_Elements"
+    },
+    {
+      "title": "Oshu'gun",
+      "url": "https://warcraft.wiki.gg/wiki/Oshu%27gun"
+    },
+    {
+      "title": "Mag'har",
+      "url": "https://warcraft.wiki.gg/wiki/Mag%27har"
+    },
+    {
+      "title": "Garadar",
+      "url": "https://warcraft.wiki.gg/wiki/Garadar"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

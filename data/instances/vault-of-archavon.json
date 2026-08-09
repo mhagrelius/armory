@@ -1,0 +1,41 @@
+{
+  "instance": "Vault of Archavon",
+  "journal": 753,
+  "expansion": "Wrath of the Lich King",
+  "summary": "A titan vault under Wintergrasp Fortress, holding relics and four giants set to guard them. You can only get in while your faction holds Wintergrasp, which makes it the one raid in the game gated behind a battleground.",
+  "history": "Wintergrasp is a plateau above the Dragonblight and the Borean Tundra that nobody had reason to visit for a very long time: titan fortifications, domed watchtowers, and wind going through them unheard. What changed that was elemental material in quantity and the strategic value of the fortifications themselves, and the plateau became a standing tug-of-war between the Horde and the Alliance. Under the keep is what the watchtowers were guarding. Its wardens were placed there to protect the relics inside and have been doing it without interruption ever since, and both factions breaking in on them has not improved anybody's temper. Archavon the Stone Watcher was found first; Emalon, Koralon and Toravon were each uncovered in turn as the war above ground on. Years later Wrathion came here hunting for a way to fight the Old Gods and found a great deal of material worth studying, guarded by giants who were still furious about the previous visitors.",
+  "assumes": "Entry is a prize. You cannot get in unless your side won the last battle for Wintergrasp, and ten minutes before the next one starts every watcher not already in combat turns back to stone until it is over.",
+  "notable": [
+    {
+      "name": "Archavon the Stone Watcher",
+      "what": "The first watcher found, and the one the vault is named for"
+    },
+    {
+      "name": "Emalon the Storm Watcher",
+      "what": "An iron giant, uncovered a tier later"
+    },
+    {
+      "name": "Koralon the Flame Watcher",
+      "what": "A fire giant, uncovered a tier after that"
+    },
+    {
+      "name": "Toravon the Ice Watcher",
+      "what": "The last of the four, added at the end of the expansion"
+    },
+    {
+      "name": "Wintergrasp Fortress",
+      "what": "The keep on top, and the reason the vault is only open to one side at a time"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vault of Archavon",
+      "url": "https://warcraft.wiki.gg/wiki/Vault_of_Archavon"
+    },
+    {
+      "title": "Wintergrasp",
+      "url": "https://warcraft.wiki.gg/wiki/Wintergrasp"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

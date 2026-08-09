@@ -1,0 +1,76 @@
+{
+  "zone": "Zuldazar",
+  "map": 862,
+  "expansion": "Battle for Azeroth",
+  "summary": "Zuldazar is the southern third of Zandalar and the seat of the Zandalari Empire, a golden temple city of stepped pyramids built along the highest peaks with jungle running down to the sea below it. Dazar'alor stands at its centre, the oldest continuously inhabited city on Azeroth and the harbour of the Golden Fleet. Blood trolls press the Blood Gate from Nazmir, and since the empire opened its doors the Horde keeps an embassy inside the palace itself.",
+  "history": "Trolls settled these peaks because the loa lived on them, and the shrines the Zandalar tribe raised on the highest of them grew into the temple city that every other troll nation traces itself back to. Kings were entombed at Atal'Dazar for thousands of years and envoys from every tribe came here every sixth year to talk. The Cataclysm cracked the city open, flooded its forum and left the palace leaning, and it was rebuilt. Then the blood trolls came up out of the swamp, Princess Talanji went looking for allies and found the Horde, and the prophet Zul turned on his own king. The Alliance answered by sailing into the harbour, killing Rastakhan and burning much of the fleet.",
+  "factions": [
+    "Zandalari Empire",
+    "Horde",
+    "Alliance and the 7th Legion",
+    "Zul's Atal'zul and the blood trolls",
+    "The loa",
+    "Rastari and Raptari warriors",
+    "Tortollan Seekers",
+    "Da'kani gorillas",
+    "Sethrak and naga raiders",
+    "Bilgewater Cartel and the Venture Company"
+  ],
+  "notable": [
+    {
+      "name": "Dazar'alor",
+      "what": "The great pyramid and the city around it — the throne of the empire, the Great Seal, and the Horde's embassy on two of its floors"
+    },
+    {
+      "name": "Atal'Dazar",
+      "what": "The royal tombs high on Mount Mugamba, named for the first king of the trolls and holding every one since"
+    },
+    {
+      "name": "The Blood Gate",
+      "what": "The fortification on the Nazmir border, broken by the Cataclysm and defended by Rastakhan in person"
+    },
+    {
+      "name": "Garden of the Loa",
+      "what": "The shrines where the Zandalari attend their gods, and where Zul's followers went to kill them"
+    },
+    {
+      "name": "Temple of Rezan",
+      "what": "The house of the devilsaur loa of kings, whose blessing made the Zandalari line what it is"
+    },
+    {
+      "name": "Gorilla Gorge",
+      "what": "Steam vents pushing kaja'mite to the surface, and the Da'kani gorillas that grew clever on it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zuldazar",
+      "url": "https://warcraft.wiki.gg/wiki/Zuldazar"
+    },
+    {
+      "title": "Dazar'alor",
+      "url": "https://warcraft.wiki.gg/wiki/Dazar%27alor"
+    },
+    {
+      "title": "Atal'Dazar",
+      "url": "https://warcraft.wiki.gg/wiki/Atal%27Dazar"
+    },
+    {
+      "title": "Blood Gate",
+      "url": "https://warcraft.wiki.gg/wiki/Blood_Gate"
+    },
+    {
+      "title": "Garden of the Loa",
+      "url": "https://warcraft.wiki.gg/wiki/Garden_of_the_Loa"
+    },
+    {
+      "title": "Zandalari Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Zandalari_Empire"
+    },
+    {
+      "title": "Gorilla Gorge",
+      "url": "https://warcraft.wiki.gg/wiki/Gorilla_Gorge"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

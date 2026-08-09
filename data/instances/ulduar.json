@@ -1,0 +1,53 @@
+{
+  "instance": "Ulduar",
+  "journal": 759,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The largest titan-forged complex on Azeroth, preserved in the snows of the Storm Peaks. Everyone who found it assumed a city, or a vault of relics. It is a prison, and what it was built to hold is the Old God Yogg-Saron.",
+  "history": "Ulduar has never held Yogg-Saron completely. Its blood runs through the whole continent, crystallising as saronite, and its whispers travel with it — which is how the keeper Loken was turned. Odyn had already taken one wing away long before: he had Helya tear the Halls of Valor loose and set them in the sky for an army of his own. What mattered now was that Loken had relit the Forge of Wills and was producing iron dwarves and iron vrykul loyal to the thing below. Brann Bronzebeard came to Ulduar looking for dwarven history, barely got out, and told the Kirin Tor. Varian Wrynn and Garrosh Hellscream nearly killed each other in Dalaran arguing about what to do, so the expeditions went in separately and cooperated anyway. Yogg-Saron drove several of the attackers insane and turned them on their own side, and lost regardless. Then Loken's death tripped a titan failsafe, and Algalon the Observer arrived to authorise the scouring of Azeroth. He was not defeated so much as talked out of it: he had purged worlds before and had never considered that the life on them wanted to survive this badly.",
+  "assumes": "You are expected to already know that the titans built Azeroth's keepers, and that Freya, Hodir, Thorim and Mimiron are on your side underneath what you are fighting. It also assumes you have run the Halls of Stone and the Halls of Lightning, which are other wings of the same building.",
+  "disputed": [
+    "The wiki records that an unknown entity time-travelled to Ulduar to age the titan locks holding Yogg-Saron, releasing it forty millennia early, and that a bronze dragon arrived too late to prevent the change. Who did it is left blank.",
+    "Whether Yogg-Saron is contained or merely quiet is hedged after the fact: its corpse is still imprisoned and its influence seems contained, but its whispers are still reported around Northrend and in Ulduar's own halls."
+  ],
+  "notable": [
+    {
+      "name": "Yogg-Saron",
+      "what": "The Old God the whole complex was built as a prison for, at the bottom of the Descent into Madness"
+    },
+    {
+      "name": "Algalon the Observer",
+      "what": "A constellar sent to confirm the failsafe, who arrives because Loken died"
+    },
+    {
+      "name": "Flame Leviathan",
+      "what": "The siege engine in the courtyard, fought from vehicles rather than on foot"
+    },
+    {
+      "name": "Mimiron",
+      "what": "A keeper in the Spark of Imagination, with a fight built around his own inventions"
+    },
+    {
+      "name": "Kologarn",
+      "what": "Guards the Shattered Walkway and is part of the wall he is standing in"
+    },
+    {
+      "name": "The Forge of Wills",
+      "what": "In the Halls of Stone, and the source of the iron army Loken built"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ulduar",
+      "url": "https://warcraft.wiki.gg/wiki/Ulduar"
+    },
+    {
+      "title": "The Storm Peaks",
+      "url": "https://warcraft.wiki.gg/wiki/The_Storm_Peaks"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

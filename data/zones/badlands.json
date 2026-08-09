@@ -1,0 +1,75 @@
+{
+  "zone": "Badlands",
+  "map": 15,
+  "expansion": "Classic",
+  "summary": "The Badlands are dry canyon country in southeastern Khaz Modan: cracked flats inside a ring of mountains, the Lethlor Ravine cut down the eastern side and the Scar of the Worldbreaker burnt across the west where Deathwing came up. Almost everyone here is digging — the Explorers' League and the blood elf Reliquary compete over Uldaman and the Tomb of the Watchers, the Dark Iron clan works out of Angor Fortress, and the Steamwheedle goblins at Fuselight sell to whoever is nearest. New Kargath is the Horde's, Dragon's Mouth the Alliance's, and Dustbelcher ogres and black dragons hold the ground between them.",
+  "history": "The oldest thing in the region is Uldaman, the titan vault in the northeastern hills where the earthen were made and where the dwarves' own beginnings are recorded, which is why so much traffic here is archaeological. The Second War came through when the Horde held all Khaz Modan for its ore and oil: Black Tooth Grin orcs escorted Cho'gall across these flats to inspect the refineries at Grim Batol, and killed a Stromgarde patrol on the way. Thrall later sent the Kargath Expeditionary Force to found the only Horde outpost in Khaz Modan and go after Rend Blackhand, while Ironforge prospectors and Steamwheedle goblins arrived for reasons of their own. The Cataclysm buried Kargath under an avalanche and left the long burnt scar across the west; New Kargath was raised nearby.",
+  "factions": [
+    "Kargath Expeditionary Force and the Horde",
+    "Kingdom of Ironforge and the Explorers' League",
+    "Reliquary",
+    "Steamwheedle Cartel",
+    "Dark Iron clan and the Shadowforge",
+    "Black dragonflight",
+    "Red dragonflight",
+    "Dustbelcher ogres",
+    "Stonevault troggs"
+  ],
+  "notable": [
+    {
+      "name": "Uldaman",
+      "what": "The titan-forged vault near the Loch Modan border, holding earthen, troggs and the record of where dwarves came from"
+    },
+    {
+      "name": "New Kargath",
+      "what": "The Horde stronghold rebuilt after an avalanche took the old one, and the only Horde ground in Khaz Modan"
+    },
+    {
+      "name": "Fuselight and Fuselight-by-the-Sea",
+      "what": "Two goblin towns, one inland and one on the water, neutral and interested in everyone's excavations"
+    },
+    {
+      "name": "Angor Fortress",
+      "what": "The Dark Iron keep the clan runs its own Uldaman ambitions from, with an agent of Ragnaros in residence"
+    },
+    {
+      "name": "Scar of the Worldbreaker",
+      "what": "The charred ravine Deathwing tore across the west of the zone on his way out of the earth"
+    },
+    {
+      "name": "Bloodwatcher Point",
+      "what": "The Reliquary's camp near the Tomb of the Watchers, the Horde's answer to the dwarves' digsites"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Badlands",
+      "url": "https://warcraft.wiki.gg/wiki/Badlands"
+    },
+    {
+      "title": "Angor Fortress",
+      "url": "https://warcraft.wiki.gg/wiki/Angor_Fortress"
+    },
+    {
+      "title": "Bloodwatcher Point",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodwatcher_Point"
+    },
+    {
+      "title": "Dragon's Mouth",
+      "url": "https://warcraft.wiki.gg/wiki/Dragon%27s_Mouth"
+    },
+    {
+      "title": "Dustbelch Grotto",
+      "url": "https://warcraft.wiki.gg/wiki/Dustbelch_Grotto"
+    },
+    {
+      "title": "Ironforge (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Ironforge_(kingdom)"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

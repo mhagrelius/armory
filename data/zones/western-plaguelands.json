@@ -1,0 +1,72 @@
+{
+  "zone": "Western Plaguelands",
+  "map": 22,
+  "expansion": "Classic",
+  "summary": "The Western Plaguelands are where the plague was first let into Lordaeron, and they are also the half that has largely been taken back: the Cenarion Circle lifted most of the blight during the Cataclysm, and crops grow again on farms that used to be cauldron sites. The Argent Crusade runs its Lordaeron operation out of Hearthglen and trains recruits there, while Andorhal, fought over by Alliance and Forsaken death knights, ended up in Forsaken hands. Caer Darrow out in Darrowmere Lake is the largest thing the Scourge still holds, with Scholomance beneath it.",
+  "history": "This was forest and farmland, Hearthglen the seat of the local administration and Andorhal the point every sack of northern Lordaeron's grain passed through — which is exactly why it was chosen. Kel'Thuzad's cultists infected the grain and hid plague cauldrons on four of the largest farms, and the countryside died and stood back up. The Scarlet Crusade held Mardenholde Keep at Hearthglen for years afterwards. Agents of the Argent Dawn eventually turned the cauldrons' contents against the Scourge, Tirion Fordring reclaimed his own town for the Argent Crusade, and the Cenarion Circle undid most of the corruption. The Battle for Andorhal between Thassarian and Sylvanas's forces settled who keeps the ruins.",
+  "factions": [
+    "Argent Crusade",
+    "Forsaken",
+    "Alliance",
+    "Scourge and the Cult of the Damned",
+    "Cenarion Circle",
+    "Redpine gnolls"
+  ],
+  "notable": [
+    {
+      "name": "Andorhal",
+      "what": "Lordaeron's grain city, where the plague was put into the food supply, and the ruin the Forsaken now hold"
+    },
+    {
+      "name": "Hearthglen",
+      "what": "Tirion Fordring's town and Mardenholde Keep, held by the Scarlet Crusade and now the Argent Crusade's training ground"
+    },
+    {
+      "name": "Caer Darrow",
+      "what": "The Barov keep on its island in Darrowmere Lake, with the Cult of the Damned's school, Scholomance, in the catacombs under it"
+    },
+    {
+      "name": "Uther's Tomb",
+      "what": "The Lightbringer's grave on the Path of Uther, south of the ruined farms"
+    },
+    {
+      "name": "The cauldron farms",
+      "what": "Felstone Field, Dalson's, Gahrron's Withering and the Writhing Haunt — four farmsteads chosen to hold plague cauldrons, most since recovered"
+    },
+    {
+      "name": "The Bulwark",
+      "what": "The Forsaken's wall on the Tirisfal border, built to keep the Scourge out of what they took from it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Western Plaguelands",
+      "url": "https://warcraft.wiki.gg/wiki/Western_Plaguelands"
+    },
+    {
+      "title": "Andorhal",
+      "url": "https://warcraft.wiki.gg/wiki/Andorhal"
+    },
+    {
+      "title": "Caer Darrow",
+      "url": "https://warcraft.wiki.gg/wiki/Caer_Darrow"
+    },
+    {
+      "title": "Felstone Field",
+      "url": "https://warcraft.wiki.gg/wiki/Felstone_Field"
+    },
+    {
+      "title": "Gahrron's Withering",
+      "url": "https://warcraft.wiki.gg/wiki/Gahrron%27s_Withering"
+    },
+    {
+      "title": "Bulwark",
+      "url": "https://warcraft.wiki.gg/wiki/Bulwark"
+    },
+    {
+      "title": "Argent Crusade",
+      "url": "https://warcraft.wiki.gg/wiki/Argent_Crusade"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

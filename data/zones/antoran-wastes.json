@@ -1,0 +1,70 @@
+{
+  "zone": "Antoran Wastes",
+  "map": 885,
+  "expansion": "Legion",
+  "summary": "The Antoran Wastes lie inside the rift that splits Argus, and there is nothing left of them that is not fel. Antorus, the Burning Throne fills the western half — the Legion's own seat, built into the cliff — while the port at Terminus sends its fleets out under a portal spire in the south and the works around the Spirit Crucible grind in the north. The Army of the Light holds two footholds on the edge of it and the Illidari hold a third.",
+  "history": "There were rich mines here once, in the Telaasti Reaches, and the building of Antorus swallowed them millennia ago; almost nobody remembers them. Everything since has been infrastructure for an invasion of everywhere else: a port to move ships, an armoury to defend it, and a crucible in the north to break souls into soldiers. Azeroth's campaign came at all three. The Army of the Light landed at Hope's Landing, Alleria worked the south against the Felfire Armory's guns while Illidan struck the crucible from the Veiled Den, and the throne itself was finally entered through a crack beneath an artillery platform — the main gates kill anything that walks up to them.",
+  "factions": [
+    "Burning Legion and the man'ari eredar",
+    "Grand Army of the Light",
+    "Illidari",
+    "Alliance and Horde champions aboard the Vindicaar"
+  ],
+  "notable": [
+    {
+      "name": "Antorus, the Burning Throne",
+      "what": "The Legion's seat of power, and the raid where Argus the Unmaker was fought at the end of the war"
+    },
+    {
+      "name": "Terminus",
+      "what": "The vast port that moves Legion ships, with a portal spire over it that can call the Paraxis down on the whole zone"
+    },
+    {
+      "name": "The Spirit Crucible",
+      "what": "The northern works where captured souls are processed, and the target Illidan went after"
+    },
+    {
+      "name": "Hope's Landing",
+      "what": "The Army of the Light's first beachhead in the wastes"
+    },
+    {
+      "name": "Light's Purchase",
+      "what": "The Light's south-eastern camp, which stands only while the Illidari's camp is down, and the other way round"
+    },
+    {
+      "name": "The Veiled Den",
+      "what": "The Illidari foothold, permanently under attack and holding anyway"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Antoran Wastes",
+      "url": "https://warcraft.wiki.gg/wiki/Antoran_Wastes"
+    },
+    {
+      "title": "Antorus, the Burning Throne",
+      "url": "https://warcraft.wiki.gg/wiki/Antorus,_the_Burning_Throne"
+    },
+    {
+      "title": "Terminus",
+      "url": "https://warcraft.wiki.gg/wiki/Terminus"
+    },
+    {
+      "title": "Hope's Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Hope%27s_Landing"
+    },
+    {
+      "title": "Light's Purchase",
+      "url": "https://warcraft.wiki.gg/wiki/Light%27s_Purchase"
+    },
+    {
+      "title": "Veiled Den",
+      "url": "https://warcraft.wiki.gg/wiki/Veiled_Den"
+    },
+    {
+      "title": "Vindicaar",
+      "url": "https://warcraft.wiki.gg/wiki/Vindicaar"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

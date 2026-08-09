@@ -1,0 +1,79 @@
+{
+  "zone": "Revendreth",
+  "map": 1525,
+  "expansion": "Shadowlands",
+  "summary": "Revendreth is where the Arbiter sends souls too proud or too flawed for anywhere else, and nobody arrives here glad of it. The venthyr break that pride out of them by torment, because the only thing on the far side of failure is the Maw. It is a country of red stone and gothic spires under permanent gloom, except where the Light has burned through the cloud and scorched the ground — and those patches are where souls that cannot bear it get chained.",
+  "history": "Sire Denathrius made this realm and the Court of Harvesters that runs it, each harvester embodying a sin and answerable for wringing it out of the souls in their care. Redemption was the point, and the anima recovered along the way was Revendreth's tithe to the rest of the Shadowlands. Denathrius stopped paying it. He was pouring the realm's anima into the Maw for the Jailer, having been the first of the nathrezim long before he was anyone's master, and the drought that starved every other realm started at his own table. Prince Renathal saw it, said so, and was thrown out of the castle for it; his rebellion works out of Sinfall.",
+  "factions": [
+    "Venthyr Covenant",
+    "Court of Harvesters",
+    "Prince Renathal's rebellion",
+    "Sire Denathrius' loyalists",
+    "Nathrezim",
+    "Stoneborn",
+    "Dredgers",
+    "The Jailer's forces",
+    "Brokers"
+  ],
+  "notable": [
+    {
+      "name": "Castle Nathria",
+      "what": "Denathrius' seat above the whole realm, part fortress and part mausoleum, and where the anima was going"
+    },
+    {
+      "name": "Sinfall",
+      "what": "A holding the Master once prized, now the base Prince Renathal runs his rebellion and his covenant from"
+    },
+    {
+      "name": "Pridefall Hamlet",
+      "what": "Where arriving souls land and are handed their sinstone — the ledger of what they have to atone for"
+    },
+    {
+      "name": "Halls of Atonement",
+      "what": "The cathedral in the east, once the highest place a prideful soul could be redeemed and since given over to forbidden work"
+    },
+    {
+      "name": "Court of the Harvesters",
+      "what": "Where the harvesters meet, argue, and decide what the realm and its souls are for"
+    },
+    {
+      "name": "The Endmire",
+      "what": "The edge of the realm, where the ground gives out into collapsed walls and drifting ruins"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Revendreth",
+      "url": "https://warcraft.wiki.gg/wiki/Revendreth"
+    },
+    {
+      "title": "Venthyr Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Venthyr_Covenant"
+    },
+    {
+      "title": "Castle Nathria",
+      "url": "https://warcraft.wiki.gg/wiki/Castle_Nathria"
+    },
+    {
+      "title": "Sinfall",
+      "url": "https://warcraft.wiki.gg/wiki/Sinfall"
+    },
+    {
+      "title": "Court of Harvesters",
+      "url": "https://warcraft.wiki.gg/wiki/Court_of_Harvesters"
+    },
+    {
+      "title": "Prince Renathal",
+      "url": "https://warcraft.wiki.gg/wiki/Prince_Renathal"
+    },
+    {
+      "title": "Halls of Atonement",
+      "url": "https://warcraft.wiki.gg/wiki/Halls_of_Atonement"
+    },
+    {
+      "title": "Pridefall Hamlet",
+      "url": "https://warcraft.wiki.gg/wiki/Pridefall_Hamlet"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

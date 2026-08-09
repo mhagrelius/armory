@@ -1,0 +1,78 @@
+{
+  "zone": "Dun Morogh",
+  "map": 27,
+  "expansion": "Classic",
+  "summary": "Dun Morogh is the snow country of northwestern Khaz Modan, the tallest range in the Eastern Kingdoms and the homeland of both dwarves and gnomes. Ironforge is cut into the mountain at its heart and Gnomeregan into the foothills of Chill Breeze Valley, though the gnomes irradiated their own capital and now work out of New Tinkertown at its door. Kharanos and Coldridge Valley are where new dwarves and gnomes begin; Frostmane ice trolls and troggs hold the hills and passes around them.",
+  "history": "The Frostmane ice trolls had this country first, having broken from the Drakkari after the Sundering. Gnomes emerged from Uldaman three thousand years before the Dark Portal and built fortified holds in the rock; dwarves followed five centuries later, drawn to the peaks on the horizon, and cut Ironforge beneath the tallest. The two have been useful to each other since: dwarven stonework raised Gnomeregan and gnomish engineering repaid it, while the dwarven armies broke the trolls' hold and drove them into the hills. When Doomhammer came for Khaz Modan's ore and oil the dwarves brought their own tunnels down behind them and gave up the outlying holds; both capitals held anyway, so the Horde settled for penning them in and working the mines it had taken. Gnomeregan survived that only to be lost from within during the Third War.",
+  "factions": [
+    "Kingdom of Ironforge",
+    "Kingdom of Gnomeregan",
+    "Council of Three Hammers",
+    "Alliance",
+    "Frostmane ice trolls",
+    "Rockjaw troggs",
+    "Leper gnomes",
+    "Dark Iron clan"
+  ],
+  "notable": [
+    {
+      "name": "Ironforge",
+      "what": "The dwarven capital inside Ironforge Mountain, one of the oldest cities standing on Azeroth"
+    },
+    {
+      "name": "Gnomeregan",
+      "what": "The gnomes' underground capital, flooded with radiation by its own defence and still held by troggs and leper gnomes"
+    },
+    {
+      "name": "New Tinkertown",
+      "what": "What the gnomes built outside their own front door after losing the city behind it"
+    },
+    {
+      "name": "Kharanos",
+      "what": "The village on the road below Ironforge, with the Thunderbrew Distillery next to it"
+    },
+    {
+      "name": "Coldridge Valley",
+      "what": "The sheltered valley behind Anvilmar where every dwarf and gnome starts, walled off from the rest of the range"
+    },
+    {
+      "name": "Frostmane Hold",
+      "what": "The ice trolls' base in the western mountains, and the centre of their long guerrilla war with Ironforge"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dun Morogh",
+      "url": "https://warcraft.wiki.gg/wiki/Dun_Morogh"
+    },
+    {
+      "title": "Ironforge",
+      "url": "https://warcraft.wiki.gg/wiki/Ironforge"
+    },
+    {
+      "title": "Gnomeregan",
+      "url": "https://warcraft.wiki.gg/wiki/Gnomeregan"
+    },
+    {
+      "title": "Anvilmar",
+      "url": "https://warcraft.wiki.gg/wiki/Anvilmar"
+    },
+    {
+      "title": "Frostmane Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Frostmane_Hold"
+    },
+    {
+      "title": "Frostmane tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Frostmane_tribe"
+    },
+    {
+      "title": "Brewnall Village",
+      "url": "https://warcraft.wiki.gg/wiki/Brewnall_Village"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

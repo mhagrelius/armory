@@ -1,0 +1,71 @@
+{
+  "zone": "Hrothgar's Landing",
+  "map": 170,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Hrothgar's Landing is a small fog-bound island in the North Sea off the top of Icecrown, reachable only by air, and the northernmost ground a traveller can freely stand on. The kvaldir took it from the tuskarr who lived there and hold it under Drottinn Hrothgar, using the mists as cover for raids on shipping in the strait below. It exists in play as the far end of the Argent Tournament: the daily work given to those the Argent Crusade has named Crusader.",
+  "history": "There was a tuskarr village on this island — the dead scattered across it are still called Tualiq, which is probably what the place was called too — until Drottinn Hrothgar's kvaldir came out of the sea, killed or drove off everybody in it, and put his name on it instead. The kvaldir are the drowned spirits of vrykul raiders bound to Helya, and the ones who reached these waters were roused when pirates looted a vrykul burial ground down in the Howling Fjord. During the war against the Lich King the island became their staging point against the Silver Covenant and Sunreaver ships in the Sea Reaver's Run, with mistcallers hiding the fleet and deepcallers pulling krakens up out of the strait to break it.",
+  "factions": [
+    "Kvaldir",
+    "Kalu'ak tuskarr",
+    "Argent Crusade",
+    "Silver Covenant",
+    "Sunreavers"
+  ],
+  "notable": [
+    {
+      "name": "Drottinn Hrothgar",
+      "what": "The kvaldir raider who took the island off the tuskarr and gave it his name"
+    },
+    {
+      "name": "Mistcaller's Cave",
+      "what": "The cave on the western shore from which Mistcaller Yngvar works the fog that hides the kvaldir and the beasts they call"
+    },
+    {
+      "name": "The Sea Reaver's Run",
+      "what": "The strait between the island and Icecrown, where the Silver Covenant and Sunreaver ships hold station against harpooners and a kraken"
+    },
+    {
+      "name": "Bor's Fury",
+      "what": "A kvaldir longship riding at anchor in the fog off the southeastern coast, crewed by a mist binder"
+    },
+    {
+      "name": "The Tualiq dead",
+      "what": "Slain tuskarr left where they fell across the island, whose spirits Crusaders are sent to release"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hrothgar's Landing",
+      "url": "https://warcraft.wiki.gg/wiki/Hrothgar%27s_Landing"
+    },
+    {
+      "title": "Drottinn Hrothgar",
+      "url": "https://warcraft.wiki.gg/wiki/Drottinn_Hrothgar"
+    },
+    {
+      "title": "Kvaldir",
+      "url": "https://warcraft.wiki.gg/wiki/Kvaldir"
+    },
+    {
+      "title": "Mistcaller's Cave",
+      "url": "https://warcraft.wiki.gg/wiki/Mistcaller%27s_Cave"
+    },
+    {
+      "title": "Sea Reaver's Run",
+      "url": "https://warcraft.wiki.gg/wiki/Sea_Reaver%27s_Run"
+    },
+    {
+      "title": "Bor's Fury",
+      "url": "https://warcraft.wiki.gg/wiki/Bor%27s_Fury"
+    },
+    {
+      "title": "Slain Tualiq Villager",
+      "url": "https://warcraft.wiki.gg/wiki/Slain_Tualiq_Villager"
+    },
+    {
+      "title": "Howling Fjord",
+      "url": "https://warcraft.wiki.gg/wiki/Howling_Fjord"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

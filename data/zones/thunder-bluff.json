@@ -1,0 +1,60 @@
+{
+  "zone": "Thunder Bluff",
+  "map": 88,
+  "expansion": "Classic",
+  "summary": "Thunder Bluff is the tauren capital: four mesas standing several hundred feet over the grass of northern Mulgore, roped together by bridges and reachable only by wooden lift, wyvern or zeppelin. Baine Bloodhoof rules the united tribes from the chieftain's tent, with the Cenarion Circle on Elder Rise and the shaman keeping the Pools of Vision on Spirit Rise. It is a trade city and a hunters' refuge, and the least fortified capital either faction has.",
+  "history": "The tauren spent centuries moving, harried by centaur, until the Third War brought Thrall's orcs into Mulgore and the two together drove the raiders off. Cairne Bloodhoof settled his people on the mesas and the scattered tribes came in under his banner, and the city was raised as a place any tribe could come to. It held until Garrosh Hellscream killed Cairne in a rigged duel and Magatha Grimtotem used the moment to seize the bluffs, murdering druids, shaman and the whole Skychaser tribe as she went. Baine bought weapons, came back by zeppelin, split her forces and took the city; Magatha went into exile and he has been high chieftain since.",
+  "factions": [
+    "United tauren tribes",
+    "Bloodhoof tribe",
+    "Cenarion Circle",
+    "Earthen Ring shaman",
+    "Grimtotem tribe, the loyal half of it",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Elder Rise",
+      "what": "The druids' mesa and the Cenarion Circle's home here, where Hamuul Runetotem trains and teaches"
+    },
+    {
+      "name": "Spirit Rise",
+      "what": "The shamanic mesa, with the Pools of Vision in the cave beneath and the zeppelin tower on its western edge"
+    },
+    {
+      "name": "Hunter Rise",
+      "what": "The hunters' mesa — and the only ground in any capital where two players may lawfully duel"
+    },
+    {
+      "name": "The lifts",
+      "what": "Rope-and-timber elevators up the cliff face, a tauren invention and the only way up on foot"
+    },
+    {
+      "name": "Mulgore",
+      "what": "The sheltered plain below, walled in by mountains, that the tauren fought the centaur for"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thunder Bluff",
+      "url": "https://warcraft.wiki.gg/wiki/Thunder_Bluff"
+    },
+    {
+      "title": "United tauren tribes",
+      "url": "https://warcraft.wiki.gg/wiki/United_tauren_tribes"
+    },
+    {
+      "title": "Baine Bloodhoof",
+      "url": "https://warcraft.wiki.gg/wiki/Baine_Bloodhoof"
+    },
+    {
+      "title": "Elder Rise",
+      "url": "https://warcraft.wiki.gg/wiki/Elder_Rise"
+    },
+    {
+      "title": "Mulgore",
+      "url": "https://warcraft.wiki.gg/wiki/Mulgore"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

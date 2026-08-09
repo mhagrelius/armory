@@ -1,0 +1,49 @@
+{
+  "instance": "Black Temple",
+  "journal": 751,
+  "expansion": "The Burning Crusade",
+  "summary": "Illidan Stormrage's seat, in Shadowmoon Valley. It was the Temple of Karabor first — the draenei's holiest site, designed by Exarch Hataaru and built on the strongest ley line nexus on Draenor — and it has been taken, renamed and defiled by four powers since.",
+  "history": "Velen sheltered at Karabor, and when the orcs came for the draenei the temple held out against Gul'dan's assault. So the Shadow Council did something worse: they called on the Dark Star, and a column of Void energy came down on Karabor, killing many defenders instantly and driving others mad. Velen got the survivors to the harbour. The building was black afterwards and the name stuck. The Shadow Council ruled from it; Mannoroth was first summoned to Draenor here, and it was in the courtyard pool that the pit lord's blood was shed for the curse the orcs later drank at the Throne of Kil'jaeden. Ner'zhul used it as a fortress and tore the world apart from it. Magtheridon seized it when Outland was all that remained, and Illidan took it off Magtheridon with the Twin Blades of Azzinoth. Kil'jaeden then appeared to punish Illidan for failing to destroy the Lich King, and he came back from Icecrown beaten by Arthas and stayed. Akama, who had served him, opened the way in for Maiev Shadowsong and everyone behind her.",
+  "assumes": "It assumes you know Illidan lost. He is not building toward anything here — he came back from Icecrown defeated, replaying it in his head, and has been sitting in a stolen fortress waiting for whoever comes next.",
+  "disputed": [
+    "The wiki flags its own page as an unfinished merge of two articles that needs checking, and its RPG section credits Ner'zhul with raising the building, which does not fit the draenei history above it.",
+    "Whether Karabor was named after K'ara, the fallen naaru the orcs called the Dark Star, is marked as speculation rather than settled."
+  ],
+  "notable": [
+    {
+      "name": "Illidan Stormrage",
+      "what": "Lord of Outland, on the temple summit, with the Twin Blades of Azzinoth"
+    },
+    {
+      "name": "Supremus",
+      "what": "Holds the courtyard, above the pool where Mannoroth's blood was shed"
+    },
+    {
+      "name": "Teron Gorefiend",
+      "what": "The warlock who murdered Karabor's captured clerics outside its own walls"
+    },
+    {
+      "name": "Mother Shahraz",
+      "what": "The gate the other four bosses have to be cleared to open"
+    },
+    {
+      "name": "The Reliquary of Souls",
+      "what": "In the Halls of Anguish, and one of the reasons the place is called what it is"
+    },
+    {
+      "name": "The Shrine of Lost Souls",
+      "what": "The power source that let Illidan command demons without being corrupted by them"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Temple",
+      "url": "https://warcraft.wiki.gg/wiki/Black_Temple"
+    },
+    {
+      "title": "Shadowmoon Valley",
+      "url": "https://warcraft.wiki.gg/wiki/Shadowmoon_Valley"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

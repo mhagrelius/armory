@@ -1,0 +1,64 @@
+{
+  "zone": "Isle of Quel'Danas",
+  "map": null,
+  "expansion": "Classic",
+  "summary": "The Isle of Quel'Danas is the northernmost of the three parts of Quel'Thalas, an island whose whole purpose is the Sunwell — the fount Dath'Remar made from a stolen vial of the Well of Eternity, destroyed by the elves themselves and since restored as a source of Light as well as arcane. Sun's Reach is the harbour and staging town, the Magisters' Terrace overlooks the well, and Dawnstar Village sits on the shore below. It is a front line again: Xal'atath's Devouring Host has struck the island, and the Vanguard of the Light musters here against her.",
+  "history": "Dath'Remar's exiled Highborne emptied their stolen vial into a lake here some sixty-eight centuries before the Dark Portal, and the fount that erupted made the high elves what they became. Arthas came for it in the Third War, freezing a bridge across the strait, killing High King Anasterian Sunstrider on the way, and using the well to raise Kel'Thuzad as a lich — which fouled it, and through it everything the elves had built. Kael'thas concluded the corrupted well would eventually kill his people and had it destroyed outright. The Shattered Sun Offensive landed here later to stop him reopening it as a door for Kil'jaeden, and the well was restored in the aftermath.",
+  "factions": [
+    "Kingdom of Quel'Thalas",
+    "Shattered Sun Offensive",
+    "Vanguard of the Light",
+    "Sunfury",
+    "Burning Legion",
+    "Xal'atath's Devouring Host"
+  ],
+  "notable": [
+    {
+      "name": "The Sunwell",
+      "what": "The fount on the Sunwell Plateau, the heart of elven civilisation, destroyed by its own keepers and brought back"
+    },
+    {
+      "name": "Sun's Reach",
+      "what": "The blood elf town and harbour the Shattered Sun Offensive ran its campaign from"
+    },
+    {
+      "name": "Magisters' Terrace",
+      "what": "The magisters' halls above the plateau, with a balcony out over the well itself"
+    },
+    {
+      "name": "Dawnstar Village",
+      "what": "The small blood elf settlement on the island's coast"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Isle of Quel'Danas",
+      "url": "https://warcraft.wiki.gg/wiki/Isle_of_Quel%27Danas"
+    },
+    {
+      "title": "Sunwell",
+      "url": "https://warcraft.wiki.gg/wiki/Sunwell"
+    },
+    {
+      "title": "Sun's Reach",
+      "url": "https://warcraft.wiki.gg/wiki/Sun%27s_Reach"
+    },
+    {
+      "title": "Magisters' Terrace",
+      "url": "https://warcraft.wiki.gg/wiki/Magisters%27_Terrace"
+    },
+    {
+      "title": "Dawnstar Village",
+      "url": "https://warcraft.wiki.gg/wiki/Dawnstar_Village"
+    },
+    {
+      "title": "Shattered Sun Offensive",
+      "url": "https://warcraft.wiki.gg/wiki/Shattered_Sun_Offensive"
+    },
+    {
+      "title": "Vanguard of the Light",
+      "url": "https://warcraft.wiki.gg/wiki/Vanguard_of_the_Light"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

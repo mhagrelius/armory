@@ -1,0 +1,72 @@
+{
+  "zone": "Northern Barrens",
+  "map": 10,
+  "expansion": "Classic",
+  "summary": "The Northern Barrens is the upper half of the old Barrens savanna, dry veld dotted with scrub, hills and three oases, and it is the road country that ties Orgrimmar to the rest of Kalimdor. The Crossroads sits where the north-south and east-west roads meet and is the busiest Horde town in central Kalimdor; the goblin port of Ratchet takes anyone's coin on the eastern shore, and the Mor'shan Rampart guards the northern approach from Ashenvale. Its southern edge is the Great Divide, the magma-filled gorge Deathwing left, which is why the zone has a compass point in its name at all.",
+  "history": "This was quilboar and centaur range long before the Horde crossed the Southfury, and the orcs took it as their road: the Crossroads was raised at the junction, Grol'dom and the other farms behind it, and generations of young Horde soldiers cut their teeth on Razormane and Witchwing raiders. Beneath the oasis to the south the druid Naralex tried to dream the Barrens green again and touched the Emerald Nightmare instead, which is what the Wailing Caverns are. Deathwing's flight tore the gorge across the middle and left the northern half alone with its trade routes. Kor'kron work camps went up here during the rebellion against Garrosh, the Legion picked it as an invasion point and lost, and the Scourge came back through during Death Rising.",
+  "factions": [
+    "Horde",
+    "Steamwheedle Cartel at Ratchet",
+    "Bilgewater cartel",
+    "Venture Company",
+    "Razormane quilboar",
+    "Witchwing harpies",
+    "Kolkar centaur",
+    "Burning Blade",
+    "Southsea Freebooters",
+    "Alliance"
+  ],
+  "notable": [
+    {
+      "name": "The Crossroads",
+      "what": "The zone's hub, where the Gold Road meets the road running from Ratchet out to Stonetalon, and the town every Horde character remembers being attacked at"
+    },
+    {
+      "name": "Ratchet",
+      "what": "The Steamwheedle port on the east coast, neutral on principle and profitable because of it"
+    },
+    {
+      "name": "Wailing Caverns",
+      "what": "The cave system under the southern oasis where Naralex's attempt to restore the Barrens through the Emerald Dream went wrong"
+    },
+    {
+      "name": "Mor'shan Rampart",
+      "what": "The palisade at the northern end of the Gold Road, built against Alliance pressure out of Ashenvale and fought over ever since"
+    },
+    {
+      "name": "The Great Divide",
+      "what": "The lava-floored canyon Deathwing carved from Stonetalon to the coast, now the southern border and the reason there are two Barrens"
+    },
+    {
+      "name": "Boulder Lode Mine",
+      "what": "A Horde mine in the northeast taken over by the Venture Company and run by Boss Copperplug"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Northern Barrens",
+      "url": "https://warcraft.wiki.gg/wiki/Northern_Barrens"
+    },
+    {
+      "title": "Crossroads",
+      "url": "https://warcraft.wiki.gg/wiki/Crossroads"
+    },
+    {
+      "title": "Mor'shan Rampart",
+      "url": "https://warcraft.wiki.gg/wiki/Mor%27shan_Rampart"
+    },
+    {
+      "title": "Mor'shan Base Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Mor%27shan_Base_Camp"
+    },
+    {
+      "title": "Boulder Lode Mine",
+      "url": "https://warcraft.wiki.gg/wiki/Boulder_Lode_Mine"
+    },
+    {
+      "title": "Steamwheedle Cartel",
+      "url": "https://warcraft.wiki.gg/wiki/Steamwheedle_Cartel"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,92 @@
+{
+  "zone": "Krasarang Wilds",
+  "map": 418,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Krasarang Wilds are the jungle along Pandaria's southern coast: heavy air, vine-covered ruins, and saurok who have held the undergrowth since they turned on the mogu who made them. Chi-Ji's Temple of the Red Crane stands inland, and the Sha of Despair is loose from its bindings there. Since the war reached the continent the beaches have been a front line, Lion's Landing for the Alliance and Domination Point for the Horde, with the Anglers fishing off the coast between them.",
+  "history": "This was the outer edge of the mogu empire, and the edge is where it split. The saurok the mogu had built as soldiers rebelled here, killed Emperor Dojan II, and vanished into undergrowth they hold to this day. Long afterwards, with the world beyond the mists assumed destroyed, Liu Lang put to sea from the beach on a young turtle to check; a statue on the sand marks it. Then visions of a light in the jungle drew two expeditions inland — night elves after a mogu spring said to grant endless life, which turned out only to move it from one body to another, and Sunwalker Dezco's tauren, who buried his wife here. Behind them the Sha of Despair came out of the Temple of the Red Crane and took Chi-Ji himself.",
+  "factions": [
+    "Alliance and Operation: Shieldwall",
+    "Horde and the Dominance Offensive",
+    "Crane Wing order",
+    "The Anglers",
+    "Dawnchaser tauren",
+    "Fallsong jinyu",
+    "Riverblade saurok",
+    "Mogu",
+    "Sha of Despair",
+    "Night elf Sentinels"
+  ],
+  "notable": [
+    {
+      "name": "Temple of the Red Crane",
+      "what": "Chi-Ji's temple in the middle of the jungle, kept by the red-robed Crane Wing order, and where the Sha of Despair got out"
+    },
+    {
+      "name": "Turtle Beach",
+      "what": "Where Liu Lang first sailed off on Shen-zin Su; the statue raised when he stopped coming back is still there"
+    },
+    {
+      "name": "Domination Point and Lion's Landing",
+      "what": "The Horde keep and the Alliance fortress, thrown up facing each other across the Southern Isles"
+    },
+    {
+      "name": "Anglers Wharf",
+      "what": "The Anglers' base off the south coast, tucked between the Narsong Spires"
+    },
+    {
+      "name": "Crane Wing Refuge",
+      "what": "A camp of people driven out of their homes, on the river in the Deepwild"
+    },
+    {
+      "name": "Fallsong Village",
+      "what": "A jinyu village on the Krasarang River below the falls, with a small temple at its centre"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Krasarang Wilds",
+      "url": "https://warcraft.wiki.gg/wiki/Krasarang_Wilds"
+    },
+    {
+      "title": "Chi-Ji",
+      "url": "https://warcraft.wiki.gg/wiki/Chi-Ji"
+    },
+    {
+      "title": "Crane Wing order",
+      "url": "https://warcraft.wiki.gg/wiki/Crane_Wing_order"
+    },
+    {
+      "title": "Crane Wing Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Crane_Wing_Refuge"
+    },
+    {
+      "title": "Anglers",
+      "url": "https://warcraft.wiki.gg/wiki/Anglers"
+    },
+    {
+      "title": "Anglers Wharf",
+      "url": "https://warcraft.wiki.gg/wiki/Anglers_Wharf"
+    },
+    {
+      "title": "Domination Point",
+      "url": "https://warcraft.wiki.gg/wiki/Domination_Point"
+    },
+    {
+      "title": "Fallsong Village",
+      "url": "https://warcraft.wiki.gg/wiki/Fallsong_Village"
+    },
+    {
+      "title": "Dominance Offensive",
+      "url": "https://warcraft.wiki.gg/wiki/Dominance_Offensive"
+    },
+    {
+      "title": "Dawnchaser tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Dawnchaser_tribe"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

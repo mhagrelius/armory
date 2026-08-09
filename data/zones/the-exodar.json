@@ -1,0 +1,65 @@
+{
+  "zone": "The Exodar",
+  "map": 103,
+  "expansion": "The Burning Crusade",
+  "summary": "The Exodar is a wrecked starship the draenei live in: a piece of the naaru dimensional fortress Tempest Keep, stolen to escape Outland and brought down on the western shore of Azuremyst Isle, its halls still lit by arcane current and one whole district still too broken to enter. Velen guides its people and the Triumvirate of the Hand governs, with the vindicators of the Hand of Argus keeping order. It is the quietest capital in the Alliance and the furthest from anywhere.",
+  "history": "The naaru built the ship, three of them shaping a district each, and it hung as part of Tempest Keep until Kael'thas seized the fortress and took M'uru for Silvermoon's magisters to drain. Velen led a raid to take one satellite back, and with the naaru O'ros aboard the draenei ran for Azeroth. Blood elf saboteurs got in first: the vessel lost control somewhere over northern Kalimdor, shedding crystal as it went, and came apart on the islands off Darkshore. The wreckage poisoned a whole neighbouring isle red. The survivors made the largest intact section their capital, and when it was finally repaired and the argument came to fly home to Outland, Velen said they would stay.",
+  "factions": [
+    "Exodar draenei",
+    "Hand of Argus",
+    "Triumvirate of the Hand",
+    "Lightforged draenei",
+    "Alliance",
+    "Broken and Lost Ones",
+    "Sunhawk blood elves, on the islands outside"
+  ],
+  "notable": [
+    {
+      "name": "Seat of the Naaru",
+      "what": "The chamber at the ship's core, where O'ros kept watch over the people it carried across the Nether"
+    },
+    {
+      "name": "Vault of Lights",
+      "what": "The great hall of the paladins and vindicators, one of the three districts a naaru designed"
+    },
+    {
+      "name": "Crystal Hall",
+      "what": "The draenei's library and school of the arcane, and where their shaman are taught"
+    },
+    {
+      "name": "Trader's Tier",
+      "what": "The market ring — bank, auction house and the traffic of a capital, such as it gets"
+    },
+    {
+      "name": "Valaar's Berth",
+      "what": "The small harbour behind the ship, with the boat to Rut'theran Village that almost nobody takes"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Exodar",
+      "url": "https://warcraft.wiki.gg/wiki/The_Exodar"
+    },
+    {
+      "title": "Exodar (nation)",
+      "url": "https://warcraft.wiki.gg/wiki/Exodar_(nation)"
+    },
+    {
+      "title": "O'ros",
+      "url": "https://warcraft.wiki.gg/wiki/O%27ros"
+    },
+    {
+      "title": "Hand of Argus",
+      "url": "https://warcraft.wiki.gg/wiki/Hand_of_Argus"
+    },
+    {
+      "title": "Velen",
+      "url": "https://warcraft.wiki.gg/wiki/Velen"
+    },
+    {
+      "title": "Bloodmyst Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Bloodmyst_Isle"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

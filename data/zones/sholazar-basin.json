@@ -1,0 +1,72 @@
+{
+  "zone": "Sholazar Basin",
+  "map": 119,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Sholazar Basin is a hot, humid jungle sunk into the middle of an arctic continent, and none of it is natural: a ring of titan pillars around the basin floor pours life magic into the air, holding the climate steady and the Scourge out. It is Freya's nursery, and the wildlife in it is larger and stranger than anything outside. Two tribes are at each other's throats across it — the wolvar of the Frenzyheart and the gorlocs who call themselves the Oracles — while Hemet Nesingwary's safari shoots its way through the middle and the Scourge press in through a gap in the north.",
+  "history": "Freya shaped the basin as one of three sites where the Well of Eternity's energies had gathered, the others being Un'Goro Crater and the Vale of Eternal Blossoms, and all three were run as experiments in life. Wild Gods came out of these cradles. The earliest work was housed at Wintergrasp and the most promising of it was moved here. During the war against the Lich King, the Cult of the Damned brought down the Lifeblood Pillar in the east; the snows of Icecrown poured through the breach as the Avalanche, and the blighted Lost Lands spread out beneath it. Freya had left a failsafe — an Avatar of herself — which has been holding the line there ever since, with help.",
+  "factions": [
+    "Frenzyheart Tribe wolvar",
+    "The Oracles",
+    "Nesingwary Safari",
+    "Scourge and the Cult of the Damned",
+    "Titan watchers and the Avatar of Freya",
+    "Goblins of Swindlegrin's Dig"
+  ],
+  "notable": [
+    {
+      "name": "The pillars",
+      "what": "Titan buttes ringing the basin, each with a device hanging above it feeding life magic into the air — the reason a jungle sits inside Northrend"
+    },
+    {
+      "name": "The Lifeblood Pillar and the Lost Lands",
+      "what": "The pillar the Cult of the Damned brought down in the east, and the blighted, yellow-aired dead ground the Scourge poured into behind it"
+    },
+    {
+      "name": "Frenzyheart Hill",
+      "what": "The wolvar village, founded by refugees the Scourge drove out of their own lands before the war"
+    },
+    {
+      "name": "Rainspeaker Canopy",
+      "what": "The gorloc home in the mangal — open-sided huts on stilts — and the seat of the Oracles, who guard titan relics they do not understand"
+    },
+    {
+      "name": "Nesingwary Base Camp",
+      "what": "Hemet Nesingwary's Northrend safari, working up to the proto-drake Broodmother Slivina"
+    },
+    {
+      "name": "The Waygate",
+      "what": "Titan gateway in the Makers' Overlook that opens straight through to Un'Goro Crater, Sholazar's twin experiment"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sholazar Basin",
+      "url": "https://warcraft.wiki.gg/wiki/Sholazar_Basin"
+    },
+    {
+      "title": "Frenzyheart Tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Frenzyheart_Tribe"
+    },
+    {
+      "title": "Frenzyheart Hill",
+      "url": "https://warcraft.wiki.gg/wiki/Frenzyheart_Hill"
+    },
+    {
+      "title": "Oracles",
+      "url": "https://warcraft.wiki.gg/wiki/Oracles"
+    },
+    {
+      "title": "Rainspeaker Canopy",
+      "url": "https://warcraft.wiki.gg/wiki/Rainspeaker_Canopy"
+    },
+    {
+      "title": "Nesingwary Base Camp",
+      "url": "https://warcraft.wiki.gg/wiki/Nesingwary_Base_Camp"
+    },
+    {
+      "title": "Nesingwary Safari (group)",
+      "url": "https://warcraft.wiki.gg/wiki/Nesingwary_Safari_(group)"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

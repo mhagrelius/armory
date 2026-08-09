@@ -1,0 +1,73 @@
+{
+  "zone": "Bastion",
+  "map": 1533,
+  "expansion": "Shadowlands",
+  "summary": "Bastion is the kyrian realm of the Shadowlands: white spires and gardens under an endless bright sky, every part of it built around one process. The Arbiter sends souls inclined to service here to be stripped of the burdens they died carrying, and those that come through it earn wings and become the Ascended, who carry other souls in turn. That machinery is not running cleanly — the Forsworn, aspirants who broke rather than let go, hold parts of the realm against their own kind.",
+  "history": "Bastion was wild before it was orderly; its beasts were dangerous until the Ascended Korinna tamed them. Long ago the Void came for the Shadowlands through here and caught the kyrian unready, and Agthia, the Paragon of Courage of that age, spent her own life to throw back Tezulat the Annihilator — the hulks of the colossi from that day still lie where they fell. A devourer incursion later killed Mercia, the first Paragon of Humility. The realm's worst wound was internal: doubt about whether the forgetting demanded of every aspirant was a mercy or a theft split the kyrian, the Forsworn turned on the temples, and their sympathies ran as far as the Maw itself.",
+  "factions": [
+    "Kyrian Covenant",
+    "The Ascended and their aspirants",
+    "Stewards",
+    "Forsworn",
+    "Centurions",
+    "Maldraxxi",
+    "Brokers"
+  ],
+  "notable": [
+    {
+      "name": "Elysian Hold",
+      "what": "The Archon's seat, high in the Spires of Ascension in the northeast, and the covenant's own sanctum"
+    },
+    {
+      "name": "Vestibule of Eternity",
+      "what": "Where every soul sent to Bastion arrives, is greeted, and is walked through its first purification"
+    },
+    {
+      "name": "Aspirant's Crucible",
+      "what": "Where training begins, ending in the First Cleansing in the Chamber of First Reflection"
+    },
+    {
+      "name": "Temple of Purity",
+      "what": "The holy site in the southeast where aspirants work their remaining doubts out of themselves"
+    },
+    {
+      "name": "Temple of Courage",
+      "what": "The western temple where kyrian are taught to fight, overseen by the Paragon of Courage and home to the Bearers"
+    },
+    {
+      "name": "Agthia's Repose",
+      "what": "The old battlefield against the Void, still scattered with wrecked colossi, named for the paragon who died holding it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bastion",
+      "url": "https://warcraft.wiki.gg/wiki/Bastion"
+    },
+    {
+      "title": "Kyrian Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Kyrian_Covenant"
+    },
+    {
+      "title": "Elysian Hold",
+      "url": "https://warcraft.wiki.gg/wiki/Elysian_Hold"
+    },
+    {
+      "title": "Forsworn",
+      "url": "https://warcraft.wiki.gg/wiki/Forsworn"
+    },
+    {
+      "title": "Temple of Courage",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_Courage"
+    },
+    {
+      "title": "Temple of Purity",
+      "url": "https://warcraft.wiki.gg/wiki/Temple_of_Purity"
+    },
+    {
+      "title": "Vestibule of Eternity",
+      "url": "https://warcraft.wiki.gg/wiki/Vestibule_of_Eternity"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

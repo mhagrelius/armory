@@ -1,0 +1,53 @@
+{
+  "instance": "Icecrown Citadel",
+  "journal": 758,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Scourge's greatest fortress, raised in saronite around the Frozen Throne on the Icecrown Glacier — a cathedral of blades and claws the size of a city, wrapped in layer after layer of cursed metal. It is the last raid of Wrath of the Lich King and the end of Arthas Menethil.",
+  "history": "Kil'jaeden threw Ner'zhul's prison at Azeroth and it struck this glacier. As the Lich King's reach spread, the Scourge and the nathrezim built the citadel around the throne. Arthas Menethil and Illidan Stormrage then fought each other for it in the wake of the Third War; Arthas won, shattered the ice and merged with Ner'zhul, and death knights were trained in these halls for years afterwards. Tirion Fordring's strike force came in from above: Horde and Alliance gunships dropped their forces at separate points, and the invaders cut in as far as the Halls of Reflection before the Lich King met them himself and drove them out. The Argent Crusade broke the gates for the second attempt, at heavy cost. At the throne the Lich King tore souls out of his attackers with Frostmourne, froze Tirion where he stood and began raising the dead. Tirion broke loose and shattered Frostmourne with the Ashbringer; every soul in the blade came out at once, Terenas Menethil raised the fallen, and Arthas died. Bolvar Fordragon, hanging in chains above the throne, took the helm so the Scourge would not be left masterless.",
+  "assumes": "Nearly everything. Who Arthas was, what Frostmourne did to him, why a paladin is hanging in chains over the throne — the raid assumes Warcraft III, the death knight starting experience and the whole Wrath campaign, and explains none of it to anyone arriving cold.",
+  "disputed": [
+    "The wiki calls Angrathar the Wrathgate the citadel's southern entrance, while the Dragonblight page treats the same gate as that zone's barred way into Icecrown. Both descriptions are on the wiki; they are looking at it from opposite sides.",
+    "The exterior was redesigned in patch 3.3.0 when the raid opened — a taller, more cylindrical spire with a platform of ice added at the top — so the citadel players flew past for the expansion's first year is not the building the entrance now sits in."
+  ],
+  "notable": [
+    {
+      "name": "The Lich King",
+      "what": "Arthas Menethil on the Frozen Throne, and the end of the expansion"
+    },
+    {
+      "name": "The Frozen Throne",
+      "what": "What is left of the block of ice Kil'jaeden threw at the world, with the whole fortress built around it"
+    },
+    {
+      "name": "The Halls of Reflection",
+      "what": "As far as the first assault got before the Lich King came out to meet it in person"
+    },
+    {
+      "name": "The gunships",
+      "what": "The attack begins in the air; both factions land their own forces at different points"
+    },
+    {
+      "name": "Court of Bones and Court of Skulls",
+      "what": "The northern and southern approaches, each with an army of Boneguard in it"
+    },
+    {
+      "name": "Saronite",
+      "what": "What the citadel and all three of Icecrown's gates are made from — and it is an Old God's crystallised blood"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Icecrown Citadel",
+      "url": "https://warcraft.wiki.gg/wiki/Icecrown_Citadel"
+    },
+    {
+      "title": "Icecrown",
+      "url": "https://warcraft.wiki.gg/wiki/Icecrown"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

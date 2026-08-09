@@ -1,0 +1,68 @@
+{
+  "zone": "Korthia",
+  "map": 1961,
+  "expansion": "Shadowlands",
+  "summary": "Korthia is an old realm of the Shadowlands that was deliberately hidden and is no longer hidden. The Jailer's chains hauled it out of the In-Between and set it down in the southeast of the Maw, and his Mawsworn have been digging through its vaults ever since for whatever the First Ones left in them. Its attendants survived the journey, the covenants landed an army behind them under Death's Advance, and both sides are now racing the other to the relics.",
+  "history": "Korthia was put in the In-Between on purpose, by people who wanted what it held kept away from exactly the sort of hands that eventually came for it. A fatescribe ran the place and an archivist kept its records, working a lodestaff that can find any artefact if the Netherstar is feeding it. The Primus, knowing what was coming for him, left his sigil in the vaults here before the Jailer took him. Dragging the realm into the Maw tore the fabric of the Shadowlands where it had been. Death's Advance crossed over to hold it, the surviving scholars organised into the Archivists' Codex, and Roh-Suir was made archivist in the middle of it.",
+  "factions": [
+    "Mawsworn",
+    "Death's Advance",
+    "Archivists' Codex",
+    "Korthian attendants",
+    "Nathrezim",
+    "Devourers"
+  ],
+  "notable": [
+    {
+      "name": "Keeper's Respite",
+      "what": "The one safe ground in the realm, the Reliquary of Remembrance, and the waystone back to Oribos"
+    },
+    {
+      "name": "Vault of Secrets",
+      "what": "The southern vault the Jailer's forces are trying to open, and the whole reason Korthia was moved"
+    },
+    {
+      "name": "Chamber of the Sigil",
+      "what": "Where the Primus hid his own sigil, reachable only when the portal in the vault is opened"
+    },
+    {
+      "name": "Caverns of Contemplation",
+      "what": "The cave system running under Keeper's Respite, entered from the Scholar's Den"
+    },
+    {
+      "name": "Estuary of Awakening",
+      "what": "Overrun by devourers eating the anima and the razorwings alike"
+    },
+    {
+      "name": "Mauler's Outlook",
+      "what": "A Mawsworn position looking down over the excavation of the ruins"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Korthia",
+      "url": "https://warcraft.wiki.gg/wiki/Korthia"
+    },
+    {
+      "title": "Keeper's Respite",
+      "url": "https://warcraft.wiki.gg/wiki/Keeper%27s_Respite"
+    },
+    {
+      "title": "Death's Advance",
+      "url": "https://warcraft.wiki.gg/wiki/Death%27s_Advance"
+    },
+    {
+      "title": "Archivists' Codex",
+      "url": "https://warcraft.wiki.gg/wiki/Archivists%27_Codex"
+    },
+    {
+      "title": "Chamber of the Sigil",
+      "url": "https://warcraft.wiki.gg/wiki/Chamber_of_the_Sigil"
+    },
+    {
+      "title": "Archivist Roh-Suir",
+      "url": "https://warcraft.wiki.gg/wiki/Archivist_Roh-Suir"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

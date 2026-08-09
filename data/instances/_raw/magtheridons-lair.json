@@ -1,0 +1,21 @@
+{
+  "instance": "Magtheridon's Lair",
+  "extract": "Magtheridon's Lair is the raid wing of the Hellfire Citadel dungeon in Outland where you fight the brutish pit lord Magtheridon himself. You can find the entrance to Magtheridon's Lair on the very bottom of the western side of the Citadel (opposite side from the other 3 entrances). It is a quick raid encounter (like Onyxia's Lair, which contains four \"guard mobs\" before the boss encounter, Onyxia).",
+  "categories": [
+    "Category:Fel Horde",
+    "Category:Hellfire Peninsula",
+    "Category:Magtheridon's Lair",
+    "Category:Pages using deprecated templates",
+    "Category:Prisons",
+    "Category:Raids",
+    "Category:The Burning Crusade"
+  ],
+  "wikitext": "{{About||the main strategy guide|Magtheridon (tactics)|the [[TCG]] set|Magtheridon's Lair (TCG)}}\n{{Infobox instance\n|name=Magtheridon's Lair\n|aka=Mag\n|ss=Magtheridon's Lair loading screen.jpg\n|caption=The Magtheridon's Lair Loading Screen\n|loc=[[Hellfire Citadel]], [[Hellfire Peninsula]]\n|race={{RaceIcon|PitLord}} [[Annihilan]]<br />{{Race|Fel Orc }}\n|boss={{RaceIcon|PitLord}} [[Magtheridon (tactics)|Magtheridon]]\n|type=Raid\n|level=70+\n|players=25\n|crossfaction=1\n|bosses={{Magtheridon's Lair}}\n}}\n{{Hellfire Citadel wings}}\n'''Magtheridon's Lair''' is the raid wing of the [[Hellfire Citadel]] dungeon in [[Outland]] where you fight the brutish [[pit lord]] [[Magtheridon]] himself. You can find the entrance to Magtheridon's Lair on the very bottom of the western side of the Citadel (opposite side from the other 3 entrances). It is a quick raid encounter (like [[Onyxia's Lair]], which contains four \"guard mobs\" before the boss encounter, [[Onyxia]]).\n\n==Description==\nAfter the [[Burning Legion|Legion]] came to [[Outland]], [[Magtheridon]] controlled all but small pockets of Outland. Even so, he was taken largely by surprise when [[Illidan]] and his allies conquered the [[Black Temple]]. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on [[orc]]s, the beaten [[pit lord]] was dragged to [[Hellfire Citadel]]. \n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric [[fel orc]]s.<ref>http://us.battle.net/wow/en/zone/magtheridons-lair/</ref>\n\n==Instance map==\n<gallery>\nVZ-Magtheridon's Lair.jpg|Instance Map\n</gallery>\n\n==Dungeon Denizens==\n[[File:Magtheridon's Lair boss.jpg|thumb|The only boss in Magtheridon's Lair]]\n{|class=\"darktable zebra\"\n!Bosses\n!Monsters\n|-valign=top\n|\n*{{RaceIcon|PitLord}} {{mob|Magtheridon (tactics)||Magtheridon}}\n**{{RaceIcon|CultistOrc|Female}} {{mob|Hellfire Channeler}}\n***{{RaceIcon|Abyssal}} {{mob|Burning Abyssal}}\n|\n*{{RaceIcon|Orc|Female}} {{mob|Hellfire Warder}}\n|}\n\n==Loot==\n{{main|Magtheridon's Lair loot}}\n\n==Quests==\n{| class=\"darktable zebra\"\n! Quest name\n! Quest giver\n! Subzone\n! Pre-requisite\n|-\n| [[The Fall of Magtheridon]]\n| [[Magtheridon's Head]]<br>Drops from {{NPC|icon=PitLord|Magtheridon (tactics)|Magtheridon}}\n| Magtheridon's Lair\n| \n|-\n| [[Trial of the Naaru: Magtheridon]]\n| {{NPC|icon=Naaru|Neutral|A'dal}}\n| [[Terrace of Light]], [[Shattrath City]]\n| [[Trial of the Naaru: Mercy]]<br>[[Trial of the Naaru: Strength]]<br>[[Trial of the Naaru: Tenacity]]\n|}\n\n==Achievements==\n*[[Magtheridon's Lair (achievement)]]\n*[[Magtheridon's Lair Guild Run]]\n\n==Notes==\n*Players can get a preview of Magtheridon by doing the [[Blood Furnace]] instance. He is being held captive underneath the room where you fight [[Keli'dan the Breaker]].\n\n==Patch changes==\n*{{Patch 2.0.3|note=Added.}}\n\n==References==\n{{Reflist}}\n\n==External links==\n{{Elinks-zone|3836}}\n\n{{Dungeons|The Burning Crusade}}\n\n[[Category:Magtheridon's Lair| ]]\n[[Category:Raids]]\n[[Category:The Burning Crusade]]\n[[Category:Prisons]]\n[[Category:Fel Horde]]\n[[Category:Hellfire Peninsula]]",
+  "sources": [
+    {
+      "title": "Magtheridon's Lair",
+      "url": "https://warcraft.wiki.gg/wiki/Magtheridon%27s_Lair"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

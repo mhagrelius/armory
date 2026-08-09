@@ -1,0 +1,91 @@
+{
+  "zone": "Vale of Eternal Blossoms",
+  "map": 390,
+  "expansion": "Mists of Pandaria",
+  "summary": "The Vale of Eternal Blossoms is the golden bowl at the centre of Pandaria, sealed off for thousands of years and reopened when the war arrived on the continent. Its eastern half is wrecked: Garrosh Hellscream's diggers tore the Heart of Y'Shaarj out of the ground, the sacred pools went with it, and a tree planted by Shaohao's spirit is what stands in the crater. The Shrine of Seven Stars and the Shrine of Two Moons are the two war capitals here, and Mogu'shan Palace on the eastern edge was the mogu empire's seat.",
+  "history": "Freya made this a cradle of life, the same work as Un'Goro and Sholazar, and the Wild Gods who became the August Celestials came out of it. The jinyu rose from the vale's pools and governed Pandaria until Lei Shen took it from them by slaughter. After he died the mogu moved their imperial seat here, ruled the continent from Mogu'shan Palace, and turned the waters to the work of holding the pandaren down; when the pandaren threw them out, the Celestials sealed the basin and left it to the Golden Lotus. Xuen reopened it for outsiders who passed his trials, over the Shado-Pan's objection, and the mogu came straight back for it. A warlord massing at Mogu'shan pushed hundreds of warriors up the hidden path above Guo-Lai and reached the palace steps before the Golden Lotus and the champions they had recruited put him down; Xin the Weaponmaster then gathered the surviving clans under his own banner while the Shao-Tien came at the basin from the west, and that push got inside Mogu'shan itself. Both attempts were groundwork for the Thunder King's return.",
+  "factions": [
+    "Golden Lotus",
+    "Lorewalkers",
+    "August Celestials",
+    "Shado-Pan",
+    "Alliance",
+    "Horde",
+    "Mogu of the Shao-Tien and the clans gathered at Mogu'shan Palace",
+    "Sha",
+    "Mantid at the Gate of the Setting Sun"
+  ],
+  "notable": [
+    {
+      "name": "Mogu'shan Palace",
+      "what": "The mogu capital on the vale's eastern edge, with an inner complex under it that the desecration exposed"
+    },
+    {
+      "name": "Shrine of Seven Stars and Shrine of Two Moons",
+      "what": "The Alliance and Horde capitals in Pandaria, and the two places anyone actually restocks"
+    },
+    {
+      "name": "Guo-Lai Halls",
+      "what": "Mogu ruins in the northwest with vaults, statue halls and a ritual chamber beneath them"
+    },
+    {
+      "name": "Gate of the Setting Sun",
+      "what": "The Serpent's Spine's gate on the vale's western side, and the point the swarm broke through"
+    },
+    {
+      "name": "Golden Lotus",
+      "what": "The order the Celestials pick by hand to guard the vale; they let outsiders in once mogu scouts started getting past the gates"
+    },
+    {
+      "name": "The Summer Fields",
+      "what": "Farmland the Bilgewater goblins were ordered to excavate, destroying one of the six sacred pools in the process"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vale of Eternal Blossoms",
+      "url": "https://warcraft.wiki.gg/wiki/Vale_of_Eternal_Blossoms"
+    },
+    {
+      "title": "Mogu'shan Palace",
+      "url": "https://warcraft.wiki.gg/wiki/Mogu%27shan_Palace"
+    },
+    {
+      "title": "Guo-Lai Halls",
+      "url": "https://warcraft.wiki.gg/wiki/Guo-Lai_Halls"
+    },
+    {
+      "title": "Gate of the Setting Sun",
+      "url": "https://warcraft.wiki.gg/wiki/Gate_of_the_Setting_Sun"
+    },
+    {
+      "title": "Golden Lotus",
+      "url": "https://warcraft.wiki.gg/wiki/Golden_Lotus"
+    },
+    {
+      "title": "Lorewalkers",
+      "url": "https://warcraft.wiki.gg/wiki/Lorewalkers"
+    },
+    {
+      "title": "August Celestial",
+      "url": "https://warcraft.wiki.gg/wiki/August_Celestial"
+    },
+    {
+      "title": "Pandaren Empire",
+      "url": "https://warcraft.wiki.gg/wiki/Pandaren_Empire"
+    },
+    {
+      "title": "Mogu empire",
+      "url": "https://warcraft.wiki.gg/wiki/Mogu_empire"
+    },
+    {
+      "title": "Mistfall Village",
+      "url": "https://warcraft.wiki.gg/wiki/Mistfall_Village"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 4",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_4"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

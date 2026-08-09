@@ -1,0 +1,71 @@
+{
+  "zone": "Stormsong Valley",
+  "map": 942,
+  "expansion": "Battle for Azeroth",
+  "summary": "Stormsong Valley is the northern end of Kul Tiras, green rolling farmland between two mountain ranges, reached from the rest of the island only through the Highland Pass. It grows most of the kingdom's food and builds most of its ships, which the tidesages of House Stormsong bless before they ever touch water. The house has since sold itself to Azshara, the shipyards have stopped, quilboar press in from the south and the Horde has cut a camp out of the northern woods, so the militia of Storm's Wake holds what is left from Brennadam.",
+  "history": "The valley took its name from the family that settled it, and the tidesages that the last lord's father brought with him made it the religious heart of a kingdom already devoted to the sea. Everything here bent toward one purpose: grain from the hills, timber floated down the Twin Rivers, hulls laid at Mariner's Strand and each one consecrated at the Shrine of the Storm before it sailed. The Kul Tirans even drained a bay for more fields, holding the ocean back behind the wall at Fort Daelin. When the Alliance came looking for that navy in the Fourth War, they found the shrine's own priests had turned to the Queen of the Naga and the void beneath her, and the work stopped.",
+  "factions": [
+    "House Stormsong",
+    "Tidesages",
+    "Storm's Wake",
+    "Alliance",
+    "Horde",
+    "Briarback quilboar",
+    "Tortollan Seekers",
+    "Naga and the k'thir",
+    "Ettins of Widow's Peak"
+  ],
+  "notable": [
+    {
+      "name": "Brennadam",
+      "what": "The valley's own town and the biggest market in Kul Tiras outside the capital; where the militia rallied"
+    },
+    {
+      "name": "Shrine of the Storm",
+      "what": "House Stormsong's seat on a mountain rising out of the northern sea, carved with kraken faces, and where the tidesages' devotion turned"
+    },
+    {
+      "name": "Mariner's Strand",
+      "what": "The shipbuilding island, its yards and rigging houses feeding the Addington slipways, seized by corrupted tidesages"
+    },
+    {
+      "name": "Fort Daelin",
+      "what": "A star fort on the west coast named for Daelin Proudmoore, holding the levee that keeps the drained bay dry"
+    },
+    {
+      "name": "Briarback Kraul",
+      "what": "The quilboar stronghold in a gorge below Widow's Peak, pushing out into the farmland"
+    },
+    {
+      "name": "Warfang Hold",
+      "what": "The Horde's foothold in the north, logging the Clearcut behind Shatterfall Pass"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stormsong Valley",
+      "url": "https://warcraft.wiki.gg/wiki/Stormsong_Valley"
+    },
+    {
+      "title": "Brennadam",
+      "url": "https://warcraft.wiki.gg/wiki/Brennadam"
+    },
+    {
+      "title": "House Stormsong",
+      "url": "https://warcraft.wiki.gg/wiki/House_Stormsong"
+    },
+    {
+      "title": "Mariner's Strand",
+      "url": "https://warcraft.wiki.gg/wiki/Mariner%27s_Strand"
+    },
+    {
+      "title": "Fort Daelin",
+      "url": "https://warcraft.wiki.gg/wiki/Fort_Daelin"
+    },
+    {
+      "title": "Briarback Kraul",
+      "url": "https://warcraft.wiki.gg/wiki/Briarback_Kraul"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,75 @@
+{
+  "zone": "Tanaris",
+  "map": 71,
+  "expansion": "Classic",
+  "summary": "Tanaris is the great desert of southeastern Kalimdor, rolling dunes under a cloudless sky with sandstorms crossing them and enormous cave systems running underneath. Gadgetzan is the Steamwheedle Cartel's capital and, since the Cataclysm put the sea at its doorstep, a port as well; the wreck of Steamwheedle Port down the coast belongs to the Southsea pirates now. The rest of the desert is other people's: Farraki sand trolls at Zul'Farrak, Dunemaul ogres and Wastewander bandits fighting over the only water, silithid in the Gaping Chasm, and the bronze dragonflight beneath it all at the Caverns of Time.",
+  "history": "This was jungle once, tauren country and the edge of the Gurubashi Empire, until the Sundering broke the landmass and left sand — and left the Farraki stranded here to become sand trolls. The bronze dragons have always kept their home under it, and the titans left a way into Uldum in the southern mountains. When silithid hives out in the wastes struck at Anachronos, the bronze flight joined the War of the Shifting Sands in Silithus. Cho'gall's cult made a base in the caves and abandoned it once Garona started killing them one at a time. Later the Scourge came twice and C'Thun's armies once. The Cataclysm drowned Steamwheedle Port and made a beach town of Gadgetzan.",
+  "factions": [
+    "Steamwheedle Cartel",
+    "Farraki tribe",
+    "Dunemaul clan",
+    "Wastewander bandits",
+    "Southsea Freebooters",
+    "Bronze dragonflight and the Timewalkers",
+    "Horde",
+    "Alliance",
+    "Silithid"
+  ],
+  "notable": [
+    {
+      "name": "Gadgetzan",
+      "what": "The Steamwheedle capital in the northern desert, neutral ground for everyone and beachfront property since the water arrived"
+    },
+    {
+      "name": "Caverns of Time",
+      "what": "Nozdormu's home in the east of the zone, where the Timewalkers keep the ways back into Warcraft's own history"
+    },
+    {
+      "name": "Zul'Farrak",
+      "what": "The Farraki city out in the western sands, the largest thing the sand trolls have built since they were stranded"
+    },
+    {
+      "name": "The Gaping Chasm",
+      "what": "One of the most active silithid hives on Azeroth, sunk into the southern desert with Bootlegger Outpost perched on its edge"
+    },
+    {
+      "name": "Dunemaul Compound",
+      "what": "The ogre mound in the south, its clan under Sandscraper and courted by goblin recruiters as cheap labour"
+    },
+    {
+      "name": "Valley of the Watchers",
+      "what": "The titan works in the far south, with the gate to Uldum in it and rival Horde and Alliance digs camped outside"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tanaris",
+      "url": "https://warcraft.wiki.gg/wiki/Tanaris"
+    },
+    {
+      "title": "Gadgetzan",
+      "url": "https://warcraft.wiki.gg/wiki/Gadgetzan"
+    },
+    {
+      "title": "Caverns of Time",
+      "url": "https://warcraft.wiki.gg/wiki/Caverns_of_Time"
+    },
+    {
+      "title": "Dunemaul Compound",
+      "url": "https://warcraft.wiki.gg/wiki/Dunemaul_Compound"
+    },
+    {
+      "title": "Bootlegger Outpost",
+      "url": "https://warcraft.wiki.gg/wiki/Bootlegger_Outpost"
+    },
+    {
+      "title": "Farraki tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Farraki_tribe"
+    },
+    {
+      "title": "Gunstan's Dig",
+      "url": "https://warcraft.wiki.gg/wiki/Gunstan%27s_Dig"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

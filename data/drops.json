@@ -1,0 +1,10862 @@
+{
+ "101570": {
+  "estimated": false,
+  "from": [
+   "Moonfang"
+  ],
+  "name": "Moon Moon",
+  "npcs": [
+   71992
+  ],
+  "one_in": 17,
+  "spell": 144761
+ },
+ "101571": {
+  "estimated": false,
+  "from": [],
+  "name": "Moonfang Shroud",
+  "npcs": [
+   71992
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "103670": {
+  "estimated": false,
+  "from": [],
+  "name": "Lil' Bling",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 147124
+ },
+ "104156": {
+  "estimated": false,
+  "from": [],
+  "name": "Ashleaf Spriteling",
+  "npcs": [
+   73277
+  ],
+  "one_in": 66,
+  "spell": 148046
+ },
+ "104157": {
+  "estimated": false,
+  "from": [
+   "Obtained by opening Crane Nests on the Timeless Isle"
+  ],
+  "name": "Azure Crane Chick",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 148047
+ },
+ "104158": {
+  "estimated": false,
+  "from": [],
+  "name": "Blackfuse Bombling",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 148049
+ },
+ "104159": {
+  "estimated": false,
+  "from": [],
+  "name": "Ruby Droplet",
+  "npcs": [
+   73282
+  ],
+  "one_in": 33,
+  "spell": 148050
+ },
+ "104160": {
+  "estimated": false,
+  "from": [],
+  "name": "Dandelion Frolicker",
+  "npcs": [
+   71826,
+   71823
+  ],
+  "one_in": 1250,
+  "spell": 148051
+ },
+ "104161": {
+  "estimated": false,
+  "from": [],
+  "name": "Death Adder Hatchling",
+  "npcs": [
+   73163
+  ],
+  "one_in": 50,
+  "spell": 148052
+ },
+ "104162": {
+  "estimated": false,
+  "from": [],
+  "name": "Droplet of Y'Shaarj",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 148058
+ },
+ "104163": {
+  "estimated": false,
+  "from": [],
+  "name": "Gooey Sha-ling",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 148059
+ },
+ "104164": {
+  "estimated": false,
+  "from": [],
+  "name": "Jademist Dancer",
+  "npcs": [
+   72767
+  ],
+  "one_in": 200,
+  "spell": 148060
+ },
+ "104165": {
+  "estimated": false,
+  "from": [],
+  "name": "Kovok",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 148061
+ },
+ "104166": {
+  "estimated": false,
+  "from": [],
+  "name": "Ominous Flame",
+  "npcs": [
+   73162
+  ],
+  "one_in": 200,
+  "spell": 148062
+ },
+ "104167": {
+  "estimated": false,
+  "from": [],
+  "name": "Skunky Alemental",
+  "npcs": [
+   71919
+  ],
+  "one_in": 33,
+  "spell": 148063
+ },
+ "104168": {
+  "estimated": false,
+  "from": [],
+  "name": "Spineclaw Crab",
+  "npcs": [
+   73166
+  ],
+  "one_in": 60,
+  "spell": 148066
+ },
+ "104169": {
+  "estimated": false,
+  "from": [],
+  "name": "Gulp Froglet",
+  "npcs": [
+   72775
+  ],
+  "one_in": 33,
+  "spell": 148067
+ },
+ "104202": {
+  "estimated": false,
+  "from": [
+   "Obtained by opening Timeless Chests on the Timeless Isle"
+  ],
+  "name": "Bonkers",
+  "npcs": [],
+  "one_in": 70,
+  "spell": 148373
+ },
+ "104253": {
+  "estimated": false,
+  "from": [],
+  "name": "Kor'kron Juggernaut",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 148417
+ },
+ "104262": {
+  "estimated": false,
+  "from": [],
+  "name": "Odd Polished Stone",
+  "npcs": [
+   72970,
+   72809
+  ],
+  "one_in": 250,
+  "spell": null
+ },
+ "104269": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Thundering Onyx Cloud Serpent",
+  "npcs": [
+   73167
+  ],
+  "one_in": 100,
+  "spell": 148476
+ },
+ "104291": {
+  "estimated": false,
+  "from": [],
+  "name": "Gu'chi Swarmling",
+  "npcs": [
+   72909
+  ],
+  "one_in": 50,
+  "spell": 148527
+ },
+ "104294": {
+  "estimated": false,
+  "from": [],
+  "name": "Rime of the Time-Lost Mariner",
+  "npcs": [
+   73281
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "104302": {
+  "estimated": false,
+  "from": [],
+  "name": "Blackflame Daggers",
+  "npcs": [
+   73171
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "104307": {
+  "estimated": false,
+  "from": [],
+  "name": "Jadefire Spirit",
+  "npcs": [
+   72769
+  ],
+  "one_in": 50,
+  "spell": 148552
+ },
+ "104309": {
+  "estimated": false,
+  "from": [],
+  "name": "Eternal Kiln",
+  "npcs": [
+   72896
+  ],
+  "one_in": 250,
+  "spell": null
+ },
+ "104317": {
+  "estimated": false,
+  "from": [],
+  "name": "Rotten Helper Box",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 148567
+ },
+ "104318": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Flyer Controller",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "104329": {
+  "estimated": false,
+  "from": [
+   "High Priest of Ordos",
+   "High Priest of Ordos",
+   "High Priest of Ordos",
+   "High Priest of Ordos",
+   "High Priest of Ordos",
+   "High Priest of Ordos"
+  ],
+  "name": "Ash-Covered Horn",
+  "npcs": [
+   72898
+  ],
+  "one_in": 72,
+  "spell": null
+ },
+ "104331": {
+  "estimated": false,
+  "from": [],
+  "name": "Warning Sign",
+  "npcs": [
+   73169
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "105898": {
+  "estimated": false,
+  "from": [],
+  "name": "Moonfang's Paw",
+  "npcs": [
+   71992
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "10822": {
+  "estimated": false,
+  "from": [],
+  "name": "Dark Whelpling",
+  "npcs": [
+   4324,
+   42042,
+   2725,
+   46916,
+   7049,
+   4323,
+   46914
+  ],
+  "one_in": 1000,
+  "spell": 10695
+ },
+ "108631": {
+  "estimated": false,
+  "from": [
+   "Drakum"
+  ],
+  "name": "Crashin' Thrashin' Roller Controller",
+  "npcs": [
+   98283
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "108632": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Flamer Controller",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "108633": {
+  "estimated": false,
+  "from": [
+   "Gondar"
+  ],
+  "name": "Crashin' Thrashin' Cannon Controller",
+  "npcs": [
+   98284
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "108634": {
+  "estimated": false,
+  "from": [
+   "Smashum Grabb"
+  ],
+  "name": "Crashin' Thrashin' Mortar Controller",
+  "npcs": [
+   98285
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "113554": {
+  "estimated": false,
+  "from": [],
+  "name": "Zomstrok",
+  "npcs": [
+   82262,
+   82261,
+   84921
+  ],
+  "one_in": 100,
+  "spell": 167336
+ },
+ "113558": {
+  "estimated": false,
+  "from": [],
+  "name": "Weebomination",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 158261
+ },
+ "113623": {
+  "estimated": false,
+  "from": [],
+  "name": "Spectral Bell",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 167731
+ },
+ "11474": {
+  "estimated": false,
+  "from": [],
+  "name": "Sprite Darter Egg",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 15067
+ },
+ "114919": {
+  "estimated": false,
+  "from": [
+   "Fished anywhere in Draenor (except your garrison) with the help of Nat Pagle"
+  ],
+  "name": "Sea Calf",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 168977
+ },
+ "115483": {
+  "estimated": false,
+  "from": [],
+  "name": "Sky-Bo",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 170292
+ },
+ "116064": {
+  "estimated": false,
+  "from": [
+   "Christoph VonFeasel"
+  ],
+  "name": "Syd the Squid",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 170774
+ },
+ "116400": {
+  "estimated": false,
+  "from": [],
+  "name": "Silver-Plated Turkey Shooter",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "116403": {
+  "estimated": false,
+  "from": [],
+  "name": "Frightened Bush Chicken",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 171500
+ },
+ "116456": {
+  "estimated": false,
+  "from": [],
+  "name": "Scroll of Storytelling",
+  "npcs": [],
+  "one_in": 8,
+  "spell": null
+ },
+ "116658": {
+  "estimated": false,
+  "from": [
+   "Vengeance",
+   "Doomroller",
+   "Deathtalon",
+   "Terrorfist"
+  ],
+  "name": "Tundra Icehoof",
+  "npcs": [
+   95044,
+   95054,
+   95053,
+   95056
+  ],
+  "one_in": 30,
+  "spell": 171619
+ },
+ "116660": {
+  "estimated": false,
+  "from": [],
+  "name": "Ironhoof Destroyer",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 171621
+ },
+ "116663": {
+  "estimated": false,
+  "from": [],
+  "name": "Shadowhide Pearltusk",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 171624
+ },
+ "116669": {
+  "estimated": false,
+  "from": [
+   "Vengeance",
+   "Doomroller",
+   "Deathtalon",
+   "Terrorfist"
+  ],
+  "name": "Armored Razorback",
+  "npcs": [
+   95044,
+   95054,
+   95053,
+   95056
+  ],
+  "one_in": 30,
+  "spell": 171630
+ },
+ "116671": {
+  "estimated": false,
+  "from": [
+   "Dropped from monsters in Fang'rila"
+  ],
+  "name": "Wild Goretusk",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 171633
+ },
+ "116673": {
+  "estimated": false,
+  "from": [],
+  "name": "Giant Coldsnout",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 171635
+ },
+ "116689": {
+  "estimated": false,
+  "from": [],
+  "name": "Pineapple Lounge Cushion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "116690": {
+  "estimated": false,
+  "from": [],
+  "name": "Safari Lounge Cushion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "116691": {
+  "estimated": false,
+  "from": [],
+  "name": "Zhevra Lounge Cushion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "116692": {
+  "estimated": false,
+  "from": [],
+  "name": "Fuzzy Green Lounge Cushion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "116763": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Shredder Controller",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "116771": {
+  "estimated": false,
+  "from": [],
+  "name": "Solar Spirehawk",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 171828
+ },
+ "116779": {
+  "estimated": false,
+  "from": [],
+  "name": "Garn Steelmaw",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 171836
+ },
+ "116780": {
+  "estimated": false,
+  "from": [
+   "Vengeance",
+   "Doomroller",
+   "Deathtalon",
+   "Terrorfist"
+  ],
+  "name": "Warsong Direfang",
+  "npcs": [
+   95044,
+   95054,
+   95053,
+   95056
+  ],
+  "one_in": 30,
+  "spell": 171837
+ },
+ "116786": {
+  "estimated": false,
+  "from": [],
+  "name": "Smoky Direwolf",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 171843
+ },
+ "116794": {
+  "estimated": false,
+  "from": [],
+  "name": "Garn Nighthowl",
+  "npcs": [
+   81001
+  ],
+  "one_in": 1,
+  "spell": 171851
+ },
+ "117404": {
+  "estimated": false,
+  "from": [
+   "Fished anywhere in Draenor (except your garrison) with the help of Nat Pagle"
+  ],
+  "name": "Land Shark",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 172695
+ },
+ "118101": {
+  "estimated": false,
+  "from": [
+   "Bleakclaw",
+   "Chaos Pup",
+   "Corrupted Thundertail",
+   "Cursed Spirit",
+   "Dark Gazer",
+   "Defiled Earth",
+   "Dreadwalker",
+   "Direflame",
+   "Felfly",
+   "Felsworn Sentry",
+   "Mirecroak",
+   "Netherfist",
+   "Skrillix",
+   "Tainted Maulclaw",
+   "Vile Blood of Draenor"
+  ],
+  "name": "Zangar Spore",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 173532
+ },
+ "118105": {
+  "estimated": false,
+  "from": [
+   "Bleakclaw",
+   "Chaos Pup",
+   "Corrupted Thundertail",
+   "Cursed Spirit",
+   "Dark Gazer",
+   "Defiled Earth",
+   "Dreadwalker",
+   "Direflame",
+   "Felfly",
+   "Felsworn Sentry",
+   "Mirecroak",
+   "Netherfist",
+   "Skrillix",
+   "Tainted Maulclaw",
+   "Vile Blood of Draenor"
+  ],
+  "name": "Seaborne Spore",
+  "npcs": [],
+  "one_in": 333,
+  "spell": 173544
+ },
+ "118578": {
+  "estimated": false,
+  "from": [],
+  "name": "Firewing",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 170291
+ },
+ "118595": {
+  "estimated": false,
+  "from": [],
+  "name": "Nightshade Sproutling",
+  "npcs": [
+   85407,
+   85408,
+   85409,
+   85410,
+   85411,
+   85412,
+   95132
+  ],
+  "one_in": 1000,
+  "spell": 167394
+ },
+ "118598": {
+  "estimated": false,
+  "from": [],
+  "name": "Sun Sproutling",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 167397
+ },
+ "118675": {
+  "estimated": false,
+  "from": [],
+  "name": "Time-Locked Box",
+  "npcs": [
+   82458,
+   77653,
+   78193,
+   76886,
+   77767,
+   77790,
+   78921,
+   77090,
+   76556,
+   78345,
+   82774,
+   78348,
+   78670,
+   76673,
+   77771,
+   76189,
+   77640,
+   77101,
+   78695,
+   77724,
+   78488,
+   77643,
+   78696,
+   77723,
+   77644,
+   78667,
+   73458,
+   76672,
+   82918,
+   73446,
+   77721,
+   82451,
+   73459,
+   78674,
+   76651
+  ],
+  "one_in": 500,
+  "spell": 10699
+ },
+ "118919": {
+  "estimated": false,
+  "from": [],
+  "name": "Red Goren Egg",
+  "npcs": [
+   85294
+  ],
+  "one_in": 1000,
+  "spell": 170280
+ },
+ "119170": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Observation",
+  "npcs": [
+   87668
+  ],
+  "one_in": 8,
+  "spell": 170275
+ },
+ "119178": {
+  "estimated": false,
+  "from": [],
+  "name": "Black Whirlwind",
+  "npcs": [
+   85026
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "119211": {
+  "estimated": false,
+  "from": [],
+  "name": "Golden Hearthstone Card: Lord Jaraxxus",
+  "npcs": [
+   99999
+  ],
+  "one_in": 275,
+  "spell": null
+ },
+ "119431": {
+  "estimated": false,
+  "from": [],
+  "name": "Servant of Demidos",
+  "npcs": [
+   84911
+  ],
+  "one_in": 7,
+  "spell": 170278
+ },
+ "119432": {
+  "estimated": false,
+  "from": [
+   "Basten"
+  ],
+  "name": "Botani Camouflage",
+  "npcs": [
+   86257
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "119434": {
+  "estimated": false,
+  "from": [],
+  "name": "Albino Chimaeraling",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 177212
+ },
+ "119467": {
+  "estimated": false,
+  "from": [],
+  "name": "Puddle Terror",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 119467
+ },
+ "119468": {
+  "estimated": false,
+  "from": [],
+  "name": "Sunfire Kaliri",
+  "npcs": [],
+  "one_in": 15,
+  "spell": 177227
+ },
+ "120276": {
+  "estimated": false,
+  "from": [],
+  "name": "Outrider's Bridle Chain",
+  "npcs": [
+   81330
+  ],
+  "one_in": 8,
+  "spell": null
+ },
+ "122104": {
+  "estimated": false,
+  "from": [],
+  "name": "Leviathan Egg",
+  "npcs": [
+   22887
+  ],
+  "one_in": 10,
+  "spell": 179830
+ },
+ "122105": {
+  "estimated": false,
+  "from": [],
+  "name": "Grotesque Statue",
+  "npcs": [
+   17842
+  ],
+  "one_in": 10,
+  "spell": 179811
+ },
+ "122106": {
+  "estimated": false,
+  "from": [],
+  "name": "Shard of Supremus",
+  "npcs": [
+   22898
+  ],
+  "one_in": 10,
+  "spell": 179831
+ },
+ "122107": {
+  "estimated": false,
+  "from": [],
+  "name": "Fragment of Anger",
+  "npcs": [
+   23420
+  ],
+  "one_in": 10,
+  "spell": 179832
+ },
+ "122108": {
+  "estimated": false,
+  "from": [],
+  "name": "Fragment of Suffering",
+  "npcs": [
+   23420
+  ],
+  "one_in": 10,
+  "spell": 179833
+ },
+ "122109": {
+  "estimated": false,
+  "from": [],
+  "name": "Fragment of Desire",
+  "npcs": [
+   23420
+  ],
+  "one_in": 10,
+  "spell": 179834
+ },
+ "122110": {
+  "estimated": false,
+  "from": [],
+  "name": "Sultry Grimoire",
+  "npcs": [
+   22947
+  ],
+  "one_in": 10,
+  "spell": 179835
+ },
+ "122111": {
+  "estimated": false,
+  "from": [],
+  "name": "Smelly Gravestone",
+  "npcs": [
+   17808
+  ],
+  "one_in": 10,
+  "spell": 179836
+ },
+ "122112": {
+  "estimated": false,
+  "from": [],
+  "name": "Hyjal Wisp",
+  "npcs": [
+   17968
+  ],
+  "one_in": 10,
+  "spell": 179837
+ },
+ "122113": {
+  "estimated": false,
+  "from": [],
+  "name": "Sunblade Rune of Activation",
+  "npcs": [
+   24882
+  ],
+  "one_in": 10,
+  "spell": 179838
+ },
+ "122114": {
+  "estimated": false,
+  "from": [],
+  "name": "Void Collar",
+  "npcs": [
+   25840
+  ],
+  "one_in": 10,
+  "spell": 179839
+ },
+ "122115": {
+  "estimated": false,
+  "from": [],
+  "name": "Servant's Bell",
+  "npcs": [
+   25165,
+   25166
+  ],
+  "one_in": 10,
+  "spell": 179840
+ },
+ "122304": {
+  "estimated": false,
+  "from": [],
+  "name": "Fandral's Seed Pouch",
+  "npcs": [
+   52571
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "122532": {
+  "estimated": false,
+  "from": [],
+  "name": "Bone Serpent",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 177238
+ },
+ "122533": {
+  "estimated": false,
+  "from": [],
+  "name": "Young Talbuk",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 177218
+ },
+ "122534": {
+  "estimated": false,
+  "from": [],
+  "name": "Slithershock Elver",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 177223
+ },
+ "123890": {
+  "estimated": false,
+  "from": [],
+  "name": "Felsteel Annihilator",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 182912
+ },
+ "127655": {
+  "estimated": false,
+  "from": [
+   "Imp-Master Valessa"
+  ],
+  "name": "Sassy Imp",
+  "npcs": [
+   90429
+  ],
+  "one_in": 3,
+  "spell": null
+ },
+ "127749": {
+  "estimated": false,
+  "from": [],
+  "name": "Corrupted Nest Guardian",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 187532
+ },
+ "127753": {
+  "estimated": false,
+  "from": [
+   "Bleakclaw",
+   "Chaos Pup",
+   "Corrupted Thundertail",
+   "Cursed Spirit",
+   "Dark Gazer",
+   "Defiled Earth",
+   "Dreadwalker",
+   "Direflame",
+   "Felfly",
+   "Felsworn Sentry",
+   "Mirecroak",
+   "Netherfist",
+   "Skrillix",
+   "Tainted Maulclaw",
+   "Vile Blood of Draenor"
+  ],
+  "name": "Nightmare Bell",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 185055
+ },
+ "127754": {
+  "estimated": false,
+  "from": [
+   "Bleakclaw",
+   "Chaos Pup",
+   "Corrupted Thundertail",
+   "Cursed Spirit",
+   "Dark Gazer",
+   "Defiled Earth",
+   "Dreadwalker",
+   "Direflame",
+   "Felfly",
+   "Felsworn Sentry",
+   "Mirecroak",
+   "Netherfist",
+   "Skrillix",
+   "Tainted Maulclaw",
+   "Vile Blood of Draenor"
+  ],
+  "name": "Periwinkle Calf",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 187555
+ },
+ "128477": {
+  "estimated": false,
+  "from": [
+   "Dropped from monsters in Fang'rila"
+  ],
+  "name": "Savage Cub",
+  "npcs": [],
+  "one_in": 1500,
+  "spell": 190682
+ },
+ "128481": {
+  "estimated": false,
+  "from": [
+   "Dropped from monsters in Fang'rila"
+  ],
+  "name": "Bristling Hellboar",
+  "npcs": [],
+  "one_in": 5000,
+  "spell": 190690
+ },
+ "128636": {
+  "estimated": false,
+  "from": [],
+  "name": "Endothermic Blaster",
+  "npcs": [],
+  "one_in": 200,
+  "spell": null
+ },
+ "128671": {
+  "estimated": false,
+  "from": [],
+  "name": "Minion of Grumpus",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 191314
+ },
+ "128770": {
+  "estimated": false,
+  "from": [
+   "Obtained by opening Snow Mound in Frostfire Ridge",
+   "Snow Mound"
+  ],
+  "name": "Grumpling",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 191967
+ },
+ "128776": {
+  "estimated": false,
+  "from": [],
+  "name": "Red Wooden Sled",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "128794": {
+  "estimated": false,
+  "from": [],
+  "name": "Sack of Spectral Spiders",
+  "npcs": [
+   96323
+  ],
+  "one_in": 8,
+  "spell": null
+ },
+ "128807": {
+  "estimated": false,
+  "from": [],
+  "name": "Coin of Many Faces",
+  "npcs": [
+   96535,
+   96538,
+   96637,
+   96536
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "129113": {
+  "estimated": false,
+  "from": [],
+  "name": "Faintly Glowing Flagon of Mead",
+  "npcs": [
+   91892
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "129216": {
+  "estimated": false,
+  "from": [
+   "Rukdug"
+  ],
+  "name": "Vibrating Arcane Crystal",
+  "npcs": [
+   98198
+  ],
+  "one_in": 10,
+  "spell": 193572
+ },
+ "129217": {
+  "estimated": false,
+  "from": [
+   "Pugg"
+  ],
+  "name": "Warm Arcane Crystal",
+  "npcs": [
+   98199
+  ],
+  "one_in": 10,
+  "spell": 193588
+ },
+ "129218": {
+  "estimated": false,
+  "from": [
+   "Guk"
+  ],
+  "name": "Glittering Arcane Crystal",
+  "npcs": [
+   98200
+  ],
+  "one_in": 10,
+  "spell": 193589
+ },
+ "130167": {
+  "estimated": false,
+  "from": [
+   "Sylvia Hartshorn"
+  ],
+  "name": "Thistleleaf Adventurer",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 195369
+ },
+ "13335": {
+  "estimated": false,
+  "from": [],
+  "name": "Deathcharger's Reins",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 17481
+ },
+ "133543": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Infinite Timereaver",
+  "npcs": [
+   644,
+   643,
+   1763,
+   646,
+   647,
+   639,
+   645,
+   11489,
+   11487,
+   11488,
+   11496,
+   11486,
+   14327,
+   13280,
+   11490,
+   11492,
+   7272,
+   7795,
+   8127,
+   7271,
+   7273,
+   7275,
+   7267,
+   10813,
+   10516,
+   10558,
+   10808,
+   11143,
+   11032,
+   10997,
+   10811,
+   10436,
+   10437,
+   10438,
+   10435,
+   10439,
+   24723,
+   24744,
+   24560,
+   24664,
+   16807,
+   20923,
+   16809,
+   16808,
+   18341,
+   18343,
+   18344,
+   22930,
+   17381,
+   17380,
+   17377,
+   17976,
+   17975,
+   17978,
+   17980,
+   17977,
+   17770,
+   18105,
+   17826,
+   17882,
+   26731,
+   26763,
+   26794,
+   26723,
+   26796,
+   26798,
+   28586,
+   28587,
+   28546,
+   28923,
+   29304,
+   29573,
+   29305,
+   29306,
+   29932,
+   28684,
+   28921,
+   29120,
+   36497,
+   36502,
+   23953,
+   24201,
+   23954,
+   40586,
+   40765,
+   40788,
+   44566,
+   43878,
+   43873,
+   43875,
+   43438,
+   43214,
+   42188,
+   42333,
+   44577,
+   43612,
+   44819,
+   49045,
+   54431,
+   54445,
+   54123,
+   54544,
+   54432,
+   39665,
+   39679,
+   39698,
+   39700,
+   39705,
+   56906,
+   56589,
+   56636,
+   56877,
+   56448,
+   59051,
+   58826,
+   56732,
+   56439,
+   56637,
+   56717,
+   59479,
+   56747,
+   56541,
+   56719,
+   56884,
+   61444,
+   61243,
+   61398,
+   58633,
+   59184,
+   59153,
+   58722,
+   59080,
+   83846,
+   82682,
+   84550,
+   83894,
+   81522,
+   74366,
+   74787,
+   75786,
+   74790,
+   75839,
+   76177,
+   75927,
+   77734,
+   75509,
+   75829,
+   75452,
+   76407,
+   75964,
+   76141,
+   76379,
+   76266,
+   77803,
+   79545,
+   80005,
+   98542,
+   98696,
+   98949,
+   94923,
+   104215,
+   104217,
+   101831,
+   96512,
+   103344,
+   99200,
+   99192,
+   91784,
+   91789,
+   91797,
+   91808,
+   96028,
+   91003,
+   91004,
+   91005,
+   91007,
+   95885,
+   96015,
+   95886,
+   99865,
+   95888,
+   129614,
+   129399,
+   143577,
+   129412,
+   129732,
+   129431,
+   126847,
+   129432,
+   126969,
+   129440,
+   135322,
+   134993,
+   135470,
+   136160,
+   134056,
+   134063,
+   134058,
+   139737,
+   134069,
+   133379,
+   133944,
+   133384,
+   133389,
+   133392,
+   135360,
+   131667,
+   131863,
+   131527,
+   131545,
+   131864
+  ],
+  "one_in": 4000,
+  "spell": 201098
+ },
+ "13379": {
+  "estimated": false,
+  "from": [],
+  "name": "Piccolo of the Flaming Fire",
+  "npcs": [
+   10558
+  ],
+  "one_in": 4,
+  "spell": null
+ },
+ "134019": {
+  "estimated": false,
+  "from": [],
+  "name": "Don Carlos' Famous Hat",
+  "npcs": [
+   28132
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "134022": {
+  "estimated": false,
+  "from": [],
+  "name": "Burgy Blackheart's Handsome Hat",
+  "npcs": [
+   50052
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "134023": {
+  "estimated": false,
+  "from": [
+   "Kal'tik the Blight"
+  ],
+  "name": "Bottled Tornado",
+  "npcs": [
+   50749
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "136901": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Inquisition",
+  "npcs": [
+   101878
+  ],
+  "one_in": 100,
+  "spell": 210673
+ },
+ "136903": {
+  "estimated": false,
+  "from": [],
+  "name": "Nightmare Whelpling",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 210675
+ },
+ "136905": {
+  "estimated": false,
+  "from": [],
+  "name": "Ridgeback Piglet",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 210678
+ },
+ "136908": {
+  "estimated": false,
+  "from": [],
+  "name": "Thaumaturgical Piglet",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 210681
+ },
+ "136911": {
+  "estimated": false,
+  "from": [],
+  "name": "Knockoff Blingtron",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 210683
+ },
+ "137574": {
+  "estimated": false,
+  "from": [],
+  "name": "Living Infernal Core",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 213134
+ },
+ "137575": {
+  "estimated": false,
+  "from": [],
+  "name": "Fiendish Hellfire Core",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 171827
+ },
+ "139337": {
+  "estimated": false,
+  "from": [],
+  "name": "Disposable Winter Veil Suits",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "139789": {
+  "estimated": false,
+  "from": [],
+  "name": "Transmutant",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 221906
+ },
+ "140160": {
+  "estimated": false,
+  "from": [],
+  "name": "Stormforged Vrykul Horn",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "140495": {
+  "estimated": false,
+  "from": [],
+  "name": "Torn Invitation",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 171850
+ },
+ "140780": {
+  "estimated": false,
+  "from": [],
+  "name": "Fal'dorei Egg",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "140786": {
+  "estimated": false,
+  "from": [],
+  "name": "Ley Spider Eggs",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141297": {
+  "estimated": false,
+  "from": [],
+  "name": "Arcano-Shower",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141298": {
+  "estimated": false,
+  "from": [],
+  "name": "Displacer Meditation Stone",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141299": {
+  "estimated": false,
+  "from": [],
+  "name": "Kaldorei Light Globe",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141301": {
+  "estimated": false,
+  "from": [],
+  "name": "Unstable Powder Box",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141306": {
+  "estimated": false,
+  "from": [],
+  "name": "Wisp in a Bottle",
+  "npcs": [],
+  "one_in": 33,
+  "spell": null
+ },
+ "141349": {
+  "estimated": false,
+  "from": [
+   "Warmage Silva"
+  ],
+  "name": "Strange Humming Crystal",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 226682
+ },
+ "142083": {
+  "estimated": false,
+  "from": [],
+  "name": "Giant Worm Egg",
+  "npcs": [
+   34797
+  ],
+  "one_in": 10,
+  "spell": 229090
+ },
+ "142084": {
+  "estimated": false,
+  "from": [],
+  "name": "Magnataur Hunting Horn",
+  "npcs": [
+   34797
+  ],
+  "one_in": 33,
+  "spell": 229091
+ },
+ "142085": {
+  "estimated": false,
+  "from": [],
+  "name": "Nerubian Relic",
+  "npcs": [
+   34564
+  ],
+  "one_in": 10,
+  "spell": 229092
+ },
+ "142086": {
+  "estimated": false,
+  "from": [],
+  "name": "Red-Hot Coal",
+  "npcs": [
+   33118
+  ],
+  "one_in": 10,
+  "spell": 229093
+ },
+ "142087": {
+  "estimated": false,
+  "from": [],
+  "name": "Ironbound Collar",
+  "npcs": [
+   33186
+  ],
+  "one_in": 10,
+  "spell": 229094
+ },
+ "142088": {
+  "estimated": false,
+  "from": [],
+  "name": "Stormforged Rune",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 229095
+ },
+ "142089": {
+  "estimated": false,
+  "from": [],
+  "name": "Glittering Ball of Yarn",
+  "npcs": [
+   33515
+  ],
+  "one_in": 10,
+  "spell": 229096
+ },
+ "142090": {
+  "estimated": false,
+  "from": [],
+  "name": "Ominous Pile of Snow",
+  "npcs": [
+   32845
+  ],
+  "one_in": 10,
+  "spell": 229097
+ },
+ "142091": {
+  "estimated": false,
+  "from": [],
+  "name": "Blessed Seed",
+  "npcs": [
+   32906
+  ],
+  "one_in": 10,
+  "spell": 229098
+ },
+ "142092": {
+  "estimated": false,
+  "from": [],
+  "name": "Overcomplicated Controller",
+  "npcs": [
+   33350
+  ],
+  "one_in": 10,
+  "spell": 229099
+ },
+ "142093": {
+  "estimated": false,
+  "from": [],
+  "name": "Wriggling Darkness",
+  "npcs": [
+   33288
+  ],
+  "one_in": 10,
+  "spell": 229100
+ },
+ "142094": {
+  "estimated": false,
+  "from": [],
+  "name": "Fragment of Frozen Bone",
+  "npcs": [
+   36612
+  ],
+  "one_in": 10,
+  "spell": 229101
+ },
+ "142095": {
+  "estimated": false,
+  "from": [],
+  "name": "Remains of a Blood Beast",
+  "npcs": [
+   37813
+  ],
+  "one_in": 10,
+  "spell": 229102
+ },
+ "142096": {
+  "estimated": false,
+  "from": [],
+  "name": "Putricide's Alchemy Supplies",
+  "npcs": [
+   36678
+  ],
+  "one_in": 10,
+  "spell": 229103
+ },
+ "142097": {
+  "estimated": false,
+  "from": [],
+  "name": "Skull of a Frozen Whelp",
+  "npcs": [
+   36853
+  ],
+  "one_in": 10,
+  "spell": 229104
+ },
+ "142098": {
+  "estimated": false,
+  "from": [],
+  "name": "Drudge Remains",
+  "npcs": [
+   36597
+  ],
+  "one_in": 10,
+  "spell": 229105
+ },
+ "142099": {
+  "estimated": false,
+  "from": [],
+  "name": "Call of the Frozen Blade",
+  "npcs": [
+   36597
+  ],
+  "one_in": 10,
+  "spell": 229106
+ },
+ "142236": {
+  "estimated": false,
+  "from": [],
+  "name": "Midnight's Eternal Reins",
+  "npcs": [
+   114262
+  ],
+  "one_in": 100,
+  "spell": 229499
+ },
+ "142265": {
+  "estimated": false,
+  "from": [
+   "Doctor Weavil"
+  ],
+  "name": "Big Red Raygun",
+  "npcs": [
+   15552
+  ],
+  "one_in": 33,
+  "spell": null
+ },
+ "142448": {
+  "estimated": false,
+  "from": [
+   "Crysa"
+  ],
+  "name": "Albino Buzzard",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 231017
+ },
+ "142552": {
+  "estimated": false,
+  "from": [],
+  "name": "Smoldering Ember Wyrm",
+  "npcs": [
+   114895
+  ],
+  "one_in": 5,
+  "spell": 231428
+ },
+ "143544": {
+  "estimated": false,
+  "from": [],
+  "name": "Skull of Corruption",
+  "npcs": [
+   105503,
+   111022
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "143643": {
+  "estimated": false,
+  "from": [],
+  "name": "Abyss Worm",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 232519
+ },
+ "143754": {
+  "estimated": false,
+  "from": [
+   "Muyani"
+  ],
+  "name": "Cavern Moccasin",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 233333
+ },
+ "143755": {
+  "estimated": false,
+  "from": [
+   "Muyani"
+  ],
+  "name": "Young Venomfang",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 233335
+ },
+ "143756": {
+  "estimated": false,
+  "from": [
+   "Muyani"
+  ],
+  "name": "Everliving Spore",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 233331
+ },
+ "143764": {
+  "estimated": false,
+  "from": [],
+  "name": "Leywoven Flying Carpet",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 233364
+ },
+ "146953": {
+  "estimated": false,
+  "from": [],
+  "name": "Scraps",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 240064
+ },
+ "147804": {
+  "estimated": false,
+  "from": [],
+  "name": "Wild Dreamrunner",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 242875
+ },
+ "147805": {
+  "estimated": false,
+  "from": [],
+  "name": "Valarjar Stormwing",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 242882
+ },
+ "147806": {
+  "estimated": false,
+  "from": [],
+  "name": "Cloudwing Hippogryph",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 242881
+ },
+ "147807": {
+  "estimated": false,
+  "from": [],
+  "name": "Highmountain Elderhorn",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 242874
+ },
+ "147841": {
+  "estimated": false,
+  "from": [],
+  "name": "Orphaned Felbat",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 243136
+ },
+ "147843": {
+  "estimated": false,
+  "from": [],
+  "name": "Sira's Extra Cloak",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "147867": {
+  "estimated": false,
+  "from": [],
+  "name": "Pilfered Sweeper",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "151265": {
+  "estimated": false,
+  "from": [],
+  "name": "Blight Boar Microphone",
+  "npcs": [
+   122899
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "151343": {
+  "estimated": false,
+  "from": [],
+  "name": "Hearthstation",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "151344": {
+  "estimated": false,
+  "from": [],
+  "name": "Hearthstation",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "151348": {
+  "estimated": false,
+  "from": [],
+  "name": "Toy Weapon Set",
+  "npcs": [],
+  "one_in": 200,
+  "spell": null
+ },
+ "151349": {
+  "estimated": false,
+  "from": [],
+  "name": "Toy Weapon Set",
+  "npcs": [],
+  "one_in": 200,
+  "spell": null
+ },
+ "151645": {
+  "estimated": false,
+  "from": [
+   "Environeer Bert"
+  ],
+  "name": "Model D1-BB-L3R",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 233647
+ },
+ "151828": {
+  "estimated": false,
+  "from": [
+   "Chromie"
+  ],
+  "name": "Ageless Bronze Drake",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 248240
+ },
+ "151829": {
+  "estimated": false,
+  "from": [
+   "Chromie"
+  ],
+  "name": "Bronze Proto-Whelp",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 248025
+ },
+ "152789": {
+  "estimated": false,
+  "from": [],
+  "name": "Shackled Ur'zul",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 243651
+ },
+ "152790": {
+  "estimated": false,
+  "from": [
+   "Houndmaster Kerrax"
+  ],
+  "name": "Vile Fiend",
+  "npcs": [
+   127288
+  ],
+  "one_in": 30,
+  "spell": 243652
+ },
+ "152814": {
+  "estimated": false,
+  "from": [
+   "Wrangler Kravos"
+  ],
+  "name": "Maddened Chaosrunner",
+  "npcs": [
+   126852
+  ],
+  "one_in": 30,
+  "spell": 253058
+ },
+ "152816": {
+  "estimated": false,
+  "from": [],
+  "name": "Antoran Charhound",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 253088
+ },
+ "152840": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Scintillating Mana Ray",
+  "npcs": [],
+  "one_in": 16,
+  "spell": 253109
+ },
+ "152841": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Felglow Mana Ray",
+  "npcs": [],
+  "one_in": 16,
+  "spell": 253108
+ },
+ "152842": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Vibrant Mana Ray",
+  "npcs": [],
+  "one_in": 16,
+  "spell": 253106
+ },
+ "152843": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Darkspore Mana Ray",
+  "npcs": [],
+  "one_in": 16,
+  "spell": 235764
+ },
+ "152844": {
+  "estimated": false,
+  "from": [
+   "Venomtail Skyfin"
+  ],
+  "name": "Lambent Mana Ray",
+  "npcs": [
+   126867
+  ],
+  "one_in": 30,
+  "spell": 253107
+ },
+ "152903": {
+  "estimated": false,
+  "from": [
+   "Puscilla",
+   "Vrax'thul"
+  ],
+  "name": "Biletooth Gnasher",
+  "npcs": [
+   126040,
+   126199
+  ],
+  "one_in": 30,
+  "spell": 253660
+ },
+ "152904": {
+  "estimated": false,
+  "from": [
+   "Skreeg the Devourer"
+  ],
+  "name": "Acid Belcher",
+  "npcs": [
+   126912
+  ],
+  "one_in": 30,
+  "spell": 253662
+ },
+ "152905": {
+  "estimated": false,
+  "from": [
+   "Blistermaw"
+  ],
+  "name": "Crimson Slavermaw",
+  "npcs": [
+   122958
+  ],
+  "one_in": 30,
+  "spell": 253661
+ },
+ "152912": {
+  "estimated": false,
+  "from": [],
+  "name": "Pond Nettle",
+  "npcs": [],
+  "one_in": 2000,
+  "spell": 253711
+ },
+ "152966": {
+  "estimated": false,
+  "from": [],
+  "name": "Rough-Hewn Remote",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253788
+ },
+ "152967": {
+  "estimated": false,
+  "from": [],
+  "name": "Experiment-In-A-Jar",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253790
+ },
+ "152968": {
+  "estimated": false,
+  "from": [],
+  "name": "Shadowy Pile of Bones",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253799
+ },
+ "152969": {
+  "estimated": false,
+  "from": [],
+  "name": "Odd Twilight Egg",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253805
+ },
+ "152970": {
+  "estimated": false,
+  "from": [],
+  "name": "Lesser Circle of Binding",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253809
+ },
+ "152972": {
+  "estimated": false,
+  "from": [],
+  "name": "Twilight Summoning Portal",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253813
+ },
+ "152973": {
+  "estimated": false,
+  "from": [],
+  "name": "Zephyr's Call",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253816
+ },
+ "152974": {
+  "estimated": false,
+  "from": [],
+  "name": "Breezy Essence",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253818
+ },
+ "152975": {
+  "estimated": false,
+  "from": [],
+  "name": "Smoldering Treat",
+  "npcs": [
+   53691
+  ],
+  "one_in": 10,
+  "spell": 253916
+ },
+ "152976": {
+  "estimated": false,
+  "from": [],
+  "name": "Cinderweb Egg",
+  "npcs": [
+   52498
+  ],
+  "one_in": 10,
+  "spell": 253918
+ },
+ "152977": {
+  "estimated": false,
+  "from": [],
+  "name": "Vibrating Stone",
+  "npcs": [
+   53494
+  ],
+  "one_in": 10,
+  "spell": 253924
+ },
+ "152978": {
+  "estimated": false,
+  "from": [],
+  "name": "Fandral's Pet Carrier",
+  "npcs": [
+   52571
+  ],
+  "one_in": 10,
+  "spell": 253925
+ },
+ "152979": {
+  "estimated": false,
+  "from": [],
+  "name": "Puddle of Black Liquid",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253926
+ },
+ "152980": {
+  "estimated": false,
+  "from": [],
+  "name": "Elementium Back Plate",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253927
+ },
+ "152981": {
+  "estimated": false,
+  "from": [],
+  "name": "Severed Tentacle",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 253928
+ },
+ "152982": {
+  "estimated": false,
+  "from": [],
+  "name": "Vixx's Chest of Tricks",
+  "npcs": [
+   127882
+  ],
+  "one_in": 4,
+  "spell": null
+ },
+ "153004": {
+  "estimated": false,
+  "from": [],
+  "name": "Unstable Portal Emitter",
+  "npcs": [
+   127882
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "153042": {
+  "estimated": false,
+  "from": [],
+  "name": "Glorious Felcrusher",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 254069
+ },
+ "153043": {
+  "estimated": false,
+  "from": [],
+  "name": "Blessed Felcrusher",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 254258
+ },
+ "153044": {
+  "estimated": false,
+  "from": [],
+  "name": "Avenging Felcrusher",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 254259
+ },
+ "153045": {
+  "estimated": false,
+  "from": [
+   "Obtained by gathering herbs on Argus"
+  ],
+  "name": "Fel Lasher",
+  "npcs": [],
+  "one_in": 4000,
+  "spell": 254271
+ },
+ "153054": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Docile Skyfin",
+  "npcs": [],
+  "one_in": 5,
+  "spell": 254295
+ },
+ "153055": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Fel-Afflicted Skyfin",
+  "npcs": [],
+  "one_in": 5,
+  "spell": 254296
+ },
+ "153056": {
+  "estimated": false,
+  "from": [
+   "Ataxon"
+  ],
+  "name": "Grasping Manifestation",
+  "npcs": [
+   126887
+  ],
+  "one_in": 6,
+  "spell": 254297
+ },
+ "153057": {
+  "estimated": false,
+  "from": [
+   "Obtained by skinning creatures on Argus"
+  ],
+  "name": "Fossorial Bile Larva",
+  "npcs": [],
+  "one_in": 2000,
+  "spell": 254298
+ },
+ "153124": {
+  "estimated": false,
+  "from": [
+   "Sister Subversia"
+  ],
+  "name": "Spire of Spite",
+  "npcs": [
+   123464
+  ],
+  "one_in": 12,
+  "spell": null
+ },
+ "153126": {
+  "estimated": false,
+  "from": [
+   "Wrath-Lord Yarez"
+  ],
+  "name": "Micro-Artillery Controller",
+  "npcs": [
+   126338
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "153179": {
+  "estimated": false,
+  "from": [
+   "Instructor Tarahna"
+  ],
+  "name": "Blue Conservatory Scroll",
+  "npcs": [
+   126900
+  ],
+  "one_in": 9,
+  "spell": null
+ },
+ "153180": {
+  "estimated": false,
+  "from": [
+   "Instructor Tarahna"
+  ],
+  "name": "Yellow Conservatory Scroll",
+  "npcs": [
+   126900
+  ],
+  "one_in": 9,
+  "spell": null
+ },
+ "153181": {
+  "estimated": false,
+  "from": [
+   "Instructor Tarahna"
+  ],
+  "name": "Red Conservatory Scroll",
+  "npcs": [
+   126900
+  ],
+  "one_in": 9,
+  "spell": null
+ },
+ "153182": {
+  "estimated": false,
+  "from": [],
+  "name": "Holy Lightsphere",
+  "npcs": [],
+  "one_in": 8,
+  "spell": null
+ },
+ "153183": {
+  "estimated": false,
+  "from": [
+   "Vigilant Kuro",
+   "Vigilant Thanos"
+  ],
+  "name": "Barrier Generator",
+  "npcs": [
+   126865,
+   126866
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "153190": {
+  "estimated": false,
+  "from": [
+   "Varga",
+   "Naroua",
+   "Sabuul"
+  ],
+  "name": "Fel-Spotted Egg",
+  "npcs": [
+   126898,
+   126208,
+   126419
+  ],
+  "one_in": 2,
+  "spell": null
+ },
+ "153193": {
+  "estimated": false,
+  "from": [
+   "Baarut the Bloodthirsty"
+  ],
+  "name": "Baarut the Brisk",
+  "npcs": [
+   126862
+  ],
+  "one_in": 3,
+  "spell": null
+ },
+ "153194": {
+  "estimated": false,
+  "from": [
+   "Doomcaster Suprax"
+  ],
+  "name": "Legion Communication Orb",
+  "npcs": [
+   127703
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "153195": {
+  "estimated": false,
+  "from": [
+   "The Many-Faced Devourer"
+  ],
+  "name": "Uuna's Doll",
+  "npcs": [
+   127581
+  ],
+  "one_in": 20,
+  "spell": 254763
+ },
+ "153252": {
+  "estimated": false,
+  "from": [
+   "Mother Rosula"
+  ],
+  "name": "Rebellious Imp",
+  "npcs": [
+   127705
+  ],
+  "one_in": 16,
+  "spell": 254749
+ },
+ "153253": {
+  "estimated": false,
+  "from": [
+   "Squadron Commander Vishax"
+  ],
+  "name": "S.F.E. Interceptor",
+  "npcs": [
+   127700
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "153293": {
+  "estimated": false,
+  "from": [
+   "Rezira the Seer"
+  ],
+  "name": "Sightless Eye",
+  "npcs": [
+   127706
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "156851": {
+  "estimated": false,
+  "from": [
+   "Qroshekx",
+   "Xaarshej",
+   "Ssinkrix"
+  ],
+  "name": "Silithid Mini-Tank",
+  "npcs": [
+   132578,
+   132584,
+   132580
+  ],
+  "one_in": 10,
+  "spell": 261755
+ },
+ "157782": {
+  "estimated": false,
+  "from": [],
+  "name": "Pterrordax Egg",
+  "npcs": [
+   128658,
+   122114,
+   126618,
+   126702,
+   128653,
+   122113,
+   135853,
+   120593,
+   128647,
+   128343,
+   125207,
+   135852,
+   128434,
+   131718
+  ],
+  "one_in": 2500,
+  "spell": null
+ },
+ "159842": {
+  "estimated": false,
+  "from": [],
+  "name": "Sharkbait's Favorite Crackers",
+  "npcs": [
+   126983
+  ],
+  "one_in": 200,
+  "spell": 254813
+ },
+ "159921": {
+  "estimated": false,
+  "from": [],
+  "name": "Mummified Raptor Skull",
+  "npcs": [
+   99999
+  ],
+  "one_in": 200,
+  "spell": 266058
+ },
+ "160704": {
+  "estimated": false,
+  "from": [
+   "Gol'than the Malodorous"
+  ],
+  "name": "Filthy Bucket",
+  "npcs": [
+   135448
+  ],
+  "one_in": 10,
+  "spell": 273184
+ },
+ "160829": {
+  "estimated": false,
+  "from": [],
+  "name": "Underrot Crawg Harness",
+  "npcs": [
+   99999
+  ],
+  "one_in": 200,
+  "spell": 273541
+ },
+ "160832": {
+  "estimated": false,
+  "from": [],
+  "name": "Viable Cobra Egg",
+  "npcs": [
+   133384
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "162973": {
+  "estimated": false,
+  "from": [],
+  "name": "Greatfather Winter's Hearthstone",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "163131": {
+  "estimated": false,
+  "from": [],
+  "name": "Great Sea Ray",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 278803
+ },
+ "163573": {
+  "estimated": false,
+  "from": [],
+  "name": "Goldenmane's Reins",
+  "npcs": [
+   129750,
+   131646,
+   135585,
+   138167,
+   138332,
+   141143,
+   137202,
+   138168,
+   130641,
+   131166,
+   138226,
+   130897,
+   135584,
+   140209,
+   137893,
+   138170,
+   137156,
+   130006,
+   131404,
+   136158,
+   130039,
+   132226,
+   138340,
+   137155,
+   130531
+  ],
+  "one_in": 3000,
+  "spell": 260175
+ },
+ "163574": {
+  "estimated": false,
+  "from": [],
+  "name": "Chewed-On Reins of the Terrified Pack Mule",
+  "npcs": [
+   131534,
+   133892,
+   133889,
+   141642,
+   131519,
+   137134,
+   133736,
+   131530,
+   131529
+  ],
+  "one_in": 4000,
+  "spell": 260174
+ },
+ "163575": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of a Tamed Bloodfeaster",
+  "npcs": [
+   126888,
+   126187,
+   133077,
+   122239,
+   127919,
+   120607,
+   136639,
+   127224,
+   136293,
+   133279,
+   133063,
+   128734,
+   127928,
+   120606,
+   124547,
+   124688
+  ],
+  "one_in": 3000,
+  "spell": 243795
+ },
+ "163576": {
+  "estimated": false,
+  "from": [],
+  "name": "Captured Dune Scavenger",
+  "npcs": [
+   128682,
+   123774,
+   136191,
+   134429,
+   129778,
+   134427,
+   129652,
+   134560,
+   134103,
+   128678,
+   123773,
+   134559,
+   123775,
+   128749,
+   127406,
+   122746,
+   123864,
+   136545,
+   122782,
+   123863
+  ],
+  "one_in": 3000,
+  "spell": 237286
+ },
+ "163578": {
+  "estimated": false,
+  "from": [
+   "Knight-Captain Aldrin"
+  ],
+  "name": "Broken Highland Mustang",
+  "npcs": [
+   142739
+  ],
+  "one_in": 33,
+  "spell": 279457
+ },
+ "163579": {
+  "estimated": false,
+  "from": [
+   "Doomrider Helgrim"
+  ],
+  "name": "Highland Mustang",
+  "npcs": [
+   142741
+  ],
+  "one_in": 33,
+  "spell": 279456
+ },
+ "163582": {
+  "estimated": false,
+  "from": [],
+  "name": "Qinsho's Eternal Hound",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 279469
+ },
+ "163583": {
+  "estimated": false,
+  "from": [],
+  "name": "Craghorn Chasm-Leaper",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 279467
+ },
+ "163584": {
+  "estimated": false,
+  "from": [],
+  "name": "Twilight Avenger",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 279466
+ },
+ "163585": {
+  "estimated": false,
+  "from": [],
+  "name": "Surf Jelly",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 278979
+ },
+ "163586": {
+  "estimated": false,
+  "from": [],
+  "name": "Squawks",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 254811
+ },
+ "163644": {
+  "estimated": false,
+  "from": [
+   "Beastrider Kama"
+  ],
+  "name": "Swift Albino Raptor",
+  "npcs": [
+   142709
+  ],
+  "one_in": 33,
+  "spell": 279569
+ },
+ "163645": {
+  "estimated": false,
+  "from": [
+   "Skullripper"
+  ],
+  "name": "Skullripper",
+  "npcs": [
+   142437
+  ],
+  "one_in": 33,
+  "spell": 279611
+ },
+ "163646": {
+  "estimated": false,
+  "from": [
+   "Overseer Krix",
+   "Overseer Krix",
+   "Cave Entrance"
+  ],
+  "name": "Lil' Donkey",
+  "npcs": [
+   142423
+  ],
+  "one_in": 33,
+  "spell": 279608
+ },
+ "163648": {
+  "estimated": false,
+  "from": [
+   "Venomarus"
+  ],
+  "name": "Fuzzy Creepling",
+  "npcs": [
+   142438
+  ],
+  "one_in": 20,
+  "spell": 279631
+ },
+ "163650": {
+  "estimated": false,
+  "from": [
+   "Branchlord Aldrus"
+  ],
+  "name": "Aldrusian Sproutling",
+  "npcs": [
+   142508
+  ],
+  "one_in": 20,
+  "spell": 279638
+ },
+ "163652": {
+  "estimated": false,
+  "from": [
+   "Darbel Montrose",
+   "Darbel Montrose"
+  ],
+  "name": "Tiny Grimoire",
+  "npcs": [
+   142688
+  ],
+  "one_in": 20,
+  "spell": 279643
+ },
+ "163677": {
+  "estimated": false,
+  "from": [
+   "Echo of Myzrael"
+  ],
+  "name": "Teeny Titan Orb",
+  "npcs": [
+   141668
+  ],
+  "one_in": 20,
+  "spell": 279657
+ },
+ "163684": {
+  "estimated": false,
+  "from": [
+   "Yogursa"
+  ],
+  "name": "Scabby",
+  "npcs": [
+   142440
+  ],
+  "one_in": 20,
+  "spell": 279686
+ },
+ "163689": {
+  "estimated": false,
+  "from": [
+   "Ragebeak",
+   "Ragebeak"
+  ],
+  "name": "Angry Egg",
+  "npcs": [
+   142436
+  ],
+  "one_in": 20,
+  "spell": 279723
+ },
+ "163690": {
+  "estimated": false,
+  "from": [
+   "Plaguefeather"
+  ],
+  "name": "Plagued Egg",
+  "npcs": [
+   142435
+  ],
+  "one_in": 20,
+  "spell": 279724
+ },
+ "163706": {
+  "estimated": false,
+  "from": [
+   "Nimar the Slayer"
+  ],
+  "name": "Witherbark Direwing",
+  "npcs": [
+   142692
+  ],
+  "one_in": 33,
+  "spell": 279868
+ },
+ "163711": {
+  "estimated": false,
+  "from": [
+   "Fozruk"
+  ],
+  "name": "Shard of Fozruk",
+  "npcs": [
+   142433
+  ],
+  "one_in": 20,
+  "spell": 279929
+ },
+ "163712": {
+  "estimated": false,
+  "from": [
+   "Man-Hunter Rog"
+  ],
+  "name": "Mana-Warped Egg",
+  "npcs": [
+   142716
+  ],
+  "one_in": 20,
+  "spell": 279930
+ },
+ "163713": {
+  "estimated": false,
+  "from": [
+   "Geomancer Flintdagger"
+  ],
+  "name": "Brazier Cap",
+  "npcs": [
+   142662
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163735": {
+  "estimated": false,
+  "from": [
+   "Foulbelly",
+   "Cave Entrance"
+  ],
+  "name": "Foul Belly",
+  "npcs": [
+   142686
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163736": {
+  "estimated": false,
+  "from": [
+   "Horrific Apparition",
+   "Horrific Apparition"
+  ],
+  "name": "Spectral Visage",
+  "npcs": [
+   142725
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163738": {
+  "estimated": false,
+  "from": [
+   "Singer",
+   "Singer"
+  ],
+  "name": "Syndicate Mask",
+  "npcs": [
+   142690
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163741": {
+  "estimated": false,
+  "from": [
+   "Ruul Onestone"
+  ],
+  "name": "Magic Fun Rock",
+  "npcs": [
+   142683
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163744": {
+  "estimated": false,
+  "from": [
+   "Kor'gresh Coldrage",
+   "Cave Entrance"
+  ],
+  "name": "Coldrage's Cooler",
+  "npcs": [
+   142112
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163745": {
+  "estimated": false,
+  "from": [
+   "Zalas Witherbark"
+  ],
+  "name": "Witherbark Gong",
+  "npcs": [
+   142682
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163750": {
+  "estimated": false,
+  "from": [
+   "Kovork",
+   "Cave Entrance"
+  ],
+  "name": "Kovork Kostume",
+  "npcs": [
+   142684
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163775": {
+  "estimated": false,
+  "from": [
+   "Molok the Crusher"
+  ],
+  "name": "Molok Morion",
+  "npcs": [
+   141942
+  ],
+  "one_in": 30,
+  "spell": null
+ },
+ "163795": {
+  "estimated": false,
+  "from": [],
+  "name": "Oomgut Ritual Drum",
+  "npcs": [],
+  "one_in": 250,
+  "spell": null
+ },
+ "163797": {
+  "estimated": false,
+  "from": [],
+  "name": "Scuttle",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177244
+ },
+ "163798": {
+  "estimated": false,
+  "from": [],
+  "name": "Captain Nibs",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177243
+ },
+ "163799": {
+  "estimated": false,
+  "from": [],
+  "name": "Barnaby",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177242
+ },
+ "163800": {
+  "estimated": false,
+  "from": [],
+  "name": "Poro",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177241
+ },
+ "163801": {
+  "estimated": false,
+  "from": [],
+  "name": "Octopode Fry",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177240
+ },
+ "163802": {
+  "estimated": false,
+  "from": [],
+  "name": "Inky",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177239
+ },
+ "163803": {
+  "estimated": false,
+  "from": [],
+  "name": "Sparkleshell Sandcrawler",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177237
+ },
+ "163804": {
+  "estimated": false,
+  "from": [],
+  "name": "Kindleweb Spiderling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177236
+ },
+ "163805": {
+  "estimated": false,
+  "from": [],
+  "name": "Craghoof Kid",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177235
+ },
+ "163806": {
+  "estimated": false,
+  "from": [],
+  "name": "False Knucklebump",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177231
+ },
+ "163807": {
+  "estimated": false,
+  "from": [],
+  "name": "Tinder Pup",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177230
+ },
+ "163808": {
+  "estimated": false,
+  "from": [],
+  "name": "Sandshell Chitterer",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177229
+ },
+ "163809": {
+  "estimated": false,
+  "from": [],
+  "name": "Deathsting Scorpid",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177228
+ },
+ "163810": {
+  "estimated": false,
+  "from": [],
+  "name": "Thistlebrush Bud",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177226
+ },
+ "163811": {
+  "estimated": false,
+  "from": [],
+  "name": "Giggling Flame",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177225
+ },
+ "163812": {
+  "estimated": false,
+  "from": [],
+  "name": "Laughing Stonekin",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177224
+ },
+ "163813": {
+  "estimated": false,
+  "from": [],
+  "name": "Playful Frostkin",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177222
+ },
+ "163814": {
+  "estimated": false,
+  "from": [],
+  "name": "Mischievous Zephyr",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177221
+ },
+ "163815": {
+  "estimated": false,
+  "from": [],
+  "name": "Littlehoof",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177219
+ },
+ "163816": {
+  "estimated": false,
+  "from": [],
+  "name": "Snapper",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 177217
+ },
+ "163817": {
+  "estimated": false,
+  "from": [],
+  "name": "Sunscale Hatchling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280331
+ },
+ "163818": {
+  "estimated": false,
+  "from": [],
+  "name": "Bloodstone Tunneler",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280332
+ },
+ "163819": {
+  "estimated": false,
+  "from": [],
+  "name": "Snort",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280333
+ },
+ "163820": {
+  "estimated": false,
+  "from": [],
+  "name": "Muskflank Calfling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280334
+ },
+ "163821": {
+  "estimated": false,
+  "from": [],
+  "name": "Juvenile Brineshell",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280335
+ },
+ "163822": {
+  "estimated": false,
+  "from": [],
+  "name": "Kunchong Hatchling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280336
+ },
+ "163823": {
+  "estimated": false,
+  "from": [],
+  "name": "Coldlight Surfrunner",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280337
+ },
+ "163824": {
+  "estimated": false,
+  "from": [],
+  "name": "Voru'kar Leecher",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 280338
+ },
+ "163828": {
+  "estimated": false,
+  "from": [
+   "Doom's Howl"
+  ],
+  "name": "Toy Siege Tower",
+  "npcs": [
+   138122
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "163829": {
+  "estimated": false,
+  "from": [
+   "The Lion's Roar"
+  ],
+  "name": "Toy War Machine",
+  "npcs": [
+   137374
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "163858": {
+  "estimated": false,
+  "from": [],
+  "name": "Ball of Tentacles",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 280619
+ },
+ "163859": {
+  "estimated": false,
+  "from": [],
+  "name": "Baby Crawg",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 279435
+ },
+ "163860": {
+  "estimated": false,
+  "from": [],
+  "name": "Wind-Up Frog",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 280617
+ },
+ "163861": {
+  "estimated": false,
+  "from": [],
+  "name": "Undulating Blue Sac",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 280618
+ },
+ "163924": {
+  "estimated": false,
+  "from": [],
+  "name": "Whiskerwax Candle",
+  "npcs": [],
+  "one_in": 250,
+  "spell": null
+ },
+ "164373": {
+  "estimated": false,
+  "from": [],
+  "name": "Enchanted Soup Stone",
+  "npcs": [],
+  "one_in": 250,
+  "spell": null
+ },
+ "164374": {
+  "estimated": false,
+  "from": [],
+  "name": "Magic Monkey Banana",
+  "npcs": [],
+  "one_in": 250,
+  "spell": null
+ },
+ "164375": {
+  "estimated": false,
+  "from": [],
+  "name": "Bad Mojo Banana",
+  "npcs": [],
+  "one_in": 250,
+  "spell": null
+ },
+ "165846": {
+  "estimated": false,
+  "from": [],
+  "name": "Enchanted Talon of Pa'ku",
+  "npcs": [
+   99999
+  ],
+  "one_in": 50,
+  "spell": 286483
+ },
+ "165847": {
+  "estimated": false,
+  "from": [],
+  "name": "Thundering Scale of Akunda",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": 286482
+ },
+ "165848": {
+  "estimated": false,
+  "from": [],
+  "name": "Spawn of Krag'wa",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": 286484
+ },
+ "166308": {
+  "estimated": false,
+  "from": [],
+  "name": "For da Blood God!",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166358": {
+  "estimated": false,
+  "from": [],
+  "name": "Proper Parrot",
+  "npcs": [
+   229169,
+   227644,
+   229189,
+   229171,
+   228582,
+   229168,
+   228583,
+   228580,
+   229190
+  ],
+  "one_in": 100,
+  "spell": 288054
+ },
+ "166428": {
+  "estimated": false,
+  "from": [
+   "Blackpaw"
+  ],
+  "name": "Blackpaw",
+  "npcs": [
+   149660
+  ],
+  "one_in": 20,
+  "spell": 288438
+ },
+ "166432": {
+  "estimated": false,
+  "from": [
+   "Alash'anir"
+  ],
+  "name": "Ashenvale Chimaera",
+  "npcs": [
+   148787
+  ],
+  "one_in": 20,
+  "spell": 288495
+ },
+ "166434": {
+  "estimated": false,
+  "from": [
+   "Moxo the Beheader"
+  ],
+  "name": "Captured Umber Nightsaber",
+  "npcs": [
+   147701
+  ],
+  "one_in": 20,
+  "spell": 288503
+ },
+ "166435": {
+  "estimated": false,
+  "from": [
+   "Shadowclaw"
+  ],
+  "name": "Kaldorei Nightsaber",
+  "npcs": [
+   149663
+  ],
+  "one_in": 20,
+  "spell": 288505
+ },
+ "166437": {
+  "estimated": false,
+  "from": [
+   "Croz Bloodrage"
+  ],
+  "name": "Captured Kaldorei Nightsaber",
+  "npcs": [
+   149655
+  ],
+  "one_in": 20,
+  "spell": 288505
+ },
+ "166438": {
+  "estimated": false,
+  "from": [
+   "Agathe Wyrmwood"
+  ],
+  "name": "Caged Bear",
+  "npcs": [
+   149652
+  ],
+  "one_in": 20,
+  "spell": 288438
+ },
+ "166448": {
+  "estimated": false,
+  "from": [
+   "Cyclarus"
+  ],
+  "name": "Binding of Cyclarus",
+  "npcs": [
+   147241
+  ],
+  "one_in": 7,
+  "spell": 288582
+ },
+ "166449": {
+  "estimated": false,
+  "from": [
+   "Burninator Mark V",
+   "Athil Dewfire"
+  ],
+  "name": "Darkshore Sentinel",
+  "npcs": [
+   148037,
+   149141
+  ],
+  "one_in": 7,
+  "spell": 288486
+ },
+ "166451": {
+  "estimated": false,
+  "from": [
+   "Conflagros"
+  ],
+  "name": "Rattling Bones",
+  "npcs": [
+   147260
+  ],
+  "one_in": 7,
+  "spell": 288592
+ },
+ "166452": {
+  "estimated": false,
+  "from": [
+   "Hydrath"
+  ],
+  "name": "Bottled Essence of Hydrath",
+  "npcs": [
+   147240
+  ],
+  "one_in": 7,
+  "spell": 288595
+ },
+ "166453": {
+  "estimated": false,
+  "from": [
+   "Zim'kaga",
+   "Onu"
+  ],
+  "name": "Everburning Treant",
+  "npcs": [
+   147664,
+   147758
+  ],
+  "one_in": 7,
+  "spell": 288597
+ },
+ "166454": {
+  "estimated": false,
+  "from": [
+   "Soggoth the Slitherer"
+  ],
+  "name": "Squishy Purple Goo",
+  "npcs": [
+   147897
+  ],
+  "one_in": 7,
+  "spell": 288598
+ },
+ "166455": {
+  "estimated": false,
+  "from": [
+   "Twilight Prophet Graeme"
+  ],
+  "name": "Zur'aj the Depleted",
+  "npcs": [
+   147942
+  ],
+  "one_in": 7,
+  "spell": 288600
+ },
+ "166466": {
+  "estimated": false,
+  "from": [],
+  "name": "Risen Mare",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 288722
+ },
+ "166467": {
+  "estimated": false,
+  "from": [],
+  "name": "Island Thunderscale",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 288721
+ },
+ "166468": {
+  "estimated": false,
+  "from": [],
+  "name": "Bloodgorged Hunter",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 288720
+ },
+ "166470": {
+  "estimated": false,
+  "from": [],
+  "name": "Stonehide Elderhorn",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 288712
+ },
+ "166486": {
+  "estimated": false,
+  "from": [],
+  "name": "Baby Stonehide",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288867
+ },
+ "166487": {
+  "estimated": false,
+  "from": [],
+  "name": "Leatherwing Screecher",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288868
+ },
+ "166488": {
+  "estimated": false,
+  "from": [],
+  "name": "Rotting Ghoul",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288870
+ },
+ "166489": {
+  "estimated": false,
+  "from": [],
+  "name": "Needleback Pup",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288875
+ },
+ "166492": {
+  "estimated": false,
+  "from": [],
+  "name": "Shadefeather Hatchling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288889
+ },
+ "166493": {
+  "estimated": false,
+  "from": [],
+  "name": "Firesting Buzzer",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288895
+ },
+ "166494": {
+  "estimated": false,
+  "from": [],
+  "name": "Lord Woofington",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288901
+ },
+ "166495": {
+  "estimated": false,
+  "from": [],
+  "name": "Tonguelasher",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288910
+ },
+ "166498": {
+  "estimated": false,
+  "from": [],
+  "name": "Scritches",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288914
+ },
+ "166499": {
+  "estimated": false,
+  "from": [],
+  "name": "Thunderscale Whelpling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 288916
+ },
+ "166518": {
+  "estimated": false,
+  "from": [],
+  "name": "G.M.O.D.",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 289083
+ },
+ "166525": {
+  "estimated": false,
+  "from": [
+   "Orwell Stevenson",
+   "Grimhorn"
+  ],
+  "name": "Nightwreathed Egg",
+  "npcs": [
+   149659,
+   149662
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "166701": {
+  "estimated": false,
+  "from": [],
+  "name": "Warbeast Kraal Dinner Bell",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166702": {
+  "estimated": false,
+  "from": [],
+  "name": "Proudmoore Music Box",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166703": {
+  "estimated": false,
+  "from": [],
+  "name": "Goldtusk Inn Breakfast Buffet",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166704": {
+  "estimated": false,
+  "from": [],
+  "name": "Bowl of Glowing Pufferfish",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166705": {
+  "estimated": false,
+  "from": [],
+  "name": "Glacial Tidestorm",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 289555
+ },
+ "166714": {
+  "estimated": false,
+  "from": [],
+  "name": "Albatross Feather",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 289606
+ },
+ "166716": {
+  "estimated": false,
+  "from": [],
+  "name": "Pair of Tiny Bat Wings",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 289622
+ },
+ "166718": {
+  "estimated": false,
+  "from": [],
+  "name": "Cobalt Raven Hatchling",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 289629
+ },
+ "166719": {
+  "estimated": false,
+  "from": [],
+  "name": "Violet Abyssal Eel",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 289633
+ },
+ "166784": {
+  "estimated": false,
+  "from": [
+   "Athrikus Narassin"
+  ],
+  "name": "Narassin's Soul Gem",
+  "npcs": [
+   147708
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "166785": {
+  "estimated": false,
+  "from": [
+   "Gren Tornfur"
+  ],
+  "name": "Detoxified Blight Grenade",
+  "npcs": [
+   148031
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "166787": {
+  "estimated": false,
+  "from": [
+   "Commander Ral'esh"
+  ],
+  "name": "Twiddle Twirler: Sentinel's Glaive",
+  "npcs": [
+   148025
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "166788": {
+  "estimated": false,
+  "from": [
+   "Burninator Mark V",
+   "Sapper Odette"
+  ],
+  "name": "Twiddle Twirler: Shredder Blade",
+  "npcs": [
+   148103,
+   149141
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "166790": {
+  "estimated": false,
+  "from": [
+   "Commander Drald",
+   "Thelar Moonstrike"
+  ],
+  "name": "Highborne Memento",
+  "npcs": [
+   147435,
+   147845
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "166803": {
+  "estimated": false,
+  "from": [
+   "Athil Dewfire"
+  ],
+  "name": "Umber Nightsaber",
+  "npcs": [
+   148037
+  ],
+  "one_in": 20,
+  "spell": 288503
+ },
+ "166808": {
+  "estimated": false,
+  "from": [],
+  "name": "Bewitching Tea Set",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166877": {
+  "estimated": false,
+  "from": [
+   "Magni Bronzebeard"
+  ],
+  "name": "Azerite Firework Launcher",
+  "npcs": [],
+  "one_in": 8,
+  "spell": null
+ },
+ "166879": {
+  "estimated": false,
+  "from": [],
+  "name": "Rallying War Banner",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "166880": {
+  "estimated": false,
+  "from": [],
+  "name": "Meerah's Jukebox",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "167047": {
+  "estimated": false,
+  "from": [],
+  "name": "Stoneclaw",
+  "npcs": [
+   59915,
+   60043,
+   60047,
+   60051
+  ],
+  "one_in": 4,
+  "spell": 291513
+ },
+ "167048": {
+  "estimated": false,
+  "from": [],
+  "name": "Wayward Spirit",
+  "npcs": [
+   60143
+  ],
+  "one_in": 10,
+  "spell": 291515
+ },
+ "167049": {
+  "estimated": false,
+  "from": [],
+  "name": "Celestial Gift",
+  "npcs": [
+   99999
+  ],
+  "one_in": 4,
+  "spell": 291517
+ },
+ "167050": {
+  "estimated": false,
+  "from": [],
+  "name": "Mogu Statue",
+  "npcs": [
+   60400,
+   60399
+  ],
+  "one_in": 4,
+  "spell": 291533
+ },
+ "167051": {
+  "estimated": false,
+  "from": [],
+  "name": "Azure Cloud Serpent Egg",
+  "npcs": [
+   99999
+  ],
+  "one_in": 3,
+  "spell": 291537
+ },
+ "167052": {
+  "estimated": false,
+  "from": [],
+  "name": "Spirit of the Spring",
+  "npcs": [
+   99999
+  ],
+  "one_in": 4,
+  "spell": 291547
+ },
+ "167053": {
+  "estimated": false,
+  "from": [],
+  "name": "Tiny Amber Wings",
+  "npcs": [
+   62543
+  ],
+  "one_in": 3,
+  "spell": 291549
+ },
+ "167054": {
+  "estimated": false,
+  "from": [],
+  "name": "Spawn of Garalon",
+  "npcs": [
+   63191
+  ],
+  "one_in": 4,
+  "spell": 291553
+ },
+ "167055": {
+  "estimated": false,
+  "from": [],
+  "name": "Amber Goo Puddle",
+  "npcs": [
+   62511
+  ],
+  "one_in": 4,
+  "spell": 291556
+ },
+ "167056": {
+  "estimated": false,
+  "from": [],
+  "name": "Essence of Pride",
+  "npcs": [
+   62837
+  ],
+  "one_in": 10,
+  "spell": 291560
+ },
+ "167058": {
+  "estimated": false,
+  "from": [],
+  "name": "Kor'thik Swarmling",
+  "npcs": [
+   62980
+  ],
+  "one_in": 4,
+  "spell": 291548
+ },
+ "167931": {
+  "estimated": false,
+  "from": [],
+  "name": "Mechagonian Sawblades",
+  "npcs": [
+   152007
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "168370": {
+  "estimated": false,
+  "from": [
+   "Rustfeather"
+  ],
+  "name": "Rusted Keys to the Junkheap Drifter",
+  "npcs": [
+   152182
+  ],
+  "one_in": 200,
+  "spell": 297157
+ },
+ "168823": {
+  "estimated": false,
+  "from": [
+   "Arachnoid Harvester"
+  ],
+  "name": "Rusty Mechanocrawler",
+  "npcs": [
+   154342,
+   151934
+  ],
+  "one_in": 333,
+  "spell": 291492
+ },
+ "168826": {
+  "estimated": false,
+  "from": [],
+  "name": "Mechagon Peacekeeper",
+  "npcs": [
+   150190
+  ],
+  "one_in": 200,
+  "spell": 299158
+ },
+ "169163": {
+  "estimated": false,
+  "from": [],
+  "name": "Silent Glider",
+  "npcs": [
+   152290
+  ],
+  "one_in": 200,
+  "spell": 300149
+ },
+ "169198": {
+  "estimated": false,
+  "from": [],
+  "name": "Royal Snapdragon",
+  "npcs": [],
+  "one_in": 19,
+  "spell": 294038
+ },
+ "169205": {
+  "estimated": false,
+  "from": [],
+  "name": "Ghostly Whelpling",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 300367
+ },
+ "169303": {
+  "estimated": false,
+  "from": [
+   "The Grand Executor"
+  ],
+  "name": "Hell-Bent Bracers",
+  "npcs": [
+   158636
+  ],
+  "one_in": 33,
+  "spell": null
+ },
+ "169322": {
+  "estimated": false,
+  "from": [],
+  "name": "Adventurous Hopling Pack",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 300934
+ },
+ "169347": {
+  "estimated": false,
+  "from": [
+   "The Rusty Prince"
+  ],
+  "name": "Judgment of Mechagon",
+  "npcs": [
+   154225
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "169348": {
+  "estimated": false,
+  "from": [],
+  "name": "Zanj'ir Poker",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 301015
+ },
+ "169350": {
+  "estimated": false,
+  "from": [],
+  "name": "Glittering Diamondshell",
+  "npcs": [
+   152795
+  ],
+  "one_in": 8,
+  "spell": 301021
+ },
+ "169351": {
+  "estimated": false,
+  "from": [],
+  "name": "Sandclaw Nestseeker",
+  "npcs": [],
+  "one_in": 250,
+  "spell": 301022
+ },
+ "169352": {
+  "estimated": false,
+  "from": [],
+  "name": "Pearlescent Glimmershell",
+  "npcs": [
+   152448
+  ],
+  "one_in": 100,
+  "spell": 301023
+ },
+ "169355": {
+  "estimated": false,
+  "from": [],
+  "name": "Chitterspine Needler",
+  "npcs": [
+   152465
+  ],
+  "one_in": 8,
+  "spell": 301026
+ },
+ "169356": {
+  "estimated": false,
+  "from": [
+   "Caverndark Terror"
+  ],
+  "name": "Caverndark Nightmare",
+  "npcs": [
+   152464
+  ],
+  "one_in": 25,
+  "spell": 301027
+ },
+ "169358": {
+  "estimated": false,
+  "from": [],
+  "name": "Lightless Ambusher",
+  "npcs": [
+   99999
+  ],
+  "one_in": 8,
+  "spell": 301029
+ },
+ "169359": {
+  "estimated": false,
+  "from": [
+   "Elderspawn Nalaada"
+  ],
+  "name": "Spawn of Nalaada",
+  "npcs": [
+   152555
+  ],
+  "one_in": 10,
+  "spell": 301030
+ },
+ "169360": {
+  "estimated": false,
+  "from": [],
+  "name": "Mindlost Bloodfrenzy",
+  "npcs": [
+   99999
+  ],
+  "one_in": 8,
+  "spell": 301031
+ },
+ "169361": {
+  "estimated": false,
+  "from": [],
+  "name": "Daggertooth Frenzy",
+  "npcs": [
+   152756
+  ],
+  "one_in": 6,
+  "spell": 301032
+ },
+ "169362": {
+  "estimated": false,
+  "from": [],
+  "name": "Nameless Octopode",
+  "npcs": [
+   99999
+  ],
+  "one_in": 8,
+  "spell": 301033
+ },
+ "169363": {
+  "estimated": false,
+  "from": [],
+  "name": "Amethyst Softshell",
+  "npcs": [
+   152794
+  ],
+  "one_in": 8,
+  "spell": 301034
+ },
+ "169366": {
+  "estimated": false,
+  "from": [],
+  "name": "Wriggler",
+  "npcs": [
+   144644
+  ],
+  "one_in": 9,
+  "spell": 301037
+ },
+ "169367": {
+  "estimated": false,
+  "from": [
+   "Prince Typhonus"
+  ],
+  "name": "Seafury",
+  "npcs": [
+   152681
+  ],
+  "one_in": 14,
+  "spell": 301038
+ },
+ "169368": {
+  "estimated": false,
+  "from": [
+   "Prince Vortran"
+  ],
+  "name": "Stormwrath",
+  "npcs": [
+   152682
+  ],
+  "one_in": 8,
+  "spell": 301039
+ },
+ "169369": {
+  "estimated": false,
+  "from": [],
+  "name": "Sandkeep",
+  "npcs": [
+   151870
+  ],
+  "one_in": 20,
+  "spell": 301040
+ },
+ "169370": {
+  "estimated": false,
+  "from": [
+   "Scale Matriarch Vynara",
+   "Scale Matriarch Gratinax",
+   "Scale Matriarch Zodia"
+  ],
+  "name": "Scalebrood Hydra",
+  "npcs": [
+   152545,
+   152548,
+   152542
+  ],
+  "one_in": 20,
+  "spell": 301041
+ },
+ "169371": {
+  "estimated": false,
+  "from": [
+   "King Gakula"
+  ],
+  "name": "Murgle",
+  "npcs": [
+   152323
+  ],
+  "one_in": 4,
+  "spell": 301042
+ },
+ "169372": {
+  "estimated": false,
+  "from": [
+   "Blindlight"
+  ],
+  "name": "Necrofin Tadpole",
+  "npcs": [
+   152712
+  ],
+  "one_in": 8,
+  "spell": 301043
+ },
+ "169373": {
+  "estimated": false,
+  "from": [
+   "Avarius"
+  ],
+  "name": "Brinestone Algan",
+  "npcs": [
+   150191
+  ],
+  "one_in": 18,
+  "spell": 301044
+ },
+ "169374": {
+  "estimated": false,
+  "from": [],
+  "name": "Budding Algan",
+  "npcs": [
+   150583
+  ],
+  "one_in": 4,
+  "spell": 301045
+ },
+ "169375": {
+  "estimated": false,
+  "from": [
+   "Carnivorous Lasher"
+  ],
+  "name": "Coral Lashling",
+  "npcs": [
+   149653
+  ],
+  "one_in": 12,
+  "spell": 301046
+ },
+ "169376": {
+  "estimated": false,
+  "from": [
+   "Vor'koth"
+  ],
+  "name": "Skittering Eel",
+  "npcs": [
+   150468
+  ],
+  "one_in": 13,
+  "spell": 301047
+ },
+ "169378": {
+  "estimated": false,
+  "from": [],
+  "name": "Golden Snorf",
+  "npcs": [
+   150397
+  ],
+  "one_in": 65,
+  "spell": 301049
+ },
+ "169379": {
+  "estimated": false,
+  "from": [],
+  "name": "Snowsoft Nibbler",
+  "npcs": [
+   151884
+  ],
+  "one_in": 5,
+  "spell": 301050
+ },
+ "169382": {
+  "estimated": false,
+  "from": [
+   "Malfunctioning Beastbot"
+  ],
+  "name": "Lost Robogrip",
+  "npcs": [
+   151933
+  ],
+  "one_in": 20,
+  "spell": 301053
+ },
+ "169385": {
+  "estimated": false,
+  "from": [],
+  "name": "Microbot 8D",
+  "npcs": [
+   150190
+  ],
+  "one_in": 50,
+  "spell": 301056
+ },
+ "169392": {
+  "estimated": false,
+  "from": [
+   "Bonepicker"
+  ],
+  "name": "Bonebiter",
+  "npcs": [
+   152001
+  ],
+  "one_in": 6,
+  "spell": 301136
+ },
+ "169393": {
+  "estimated": false,
+  "from": [
+   "Mecharantula"
+  ],
+  "name": "Arachnoid Skitterbot",
+  "npcs": [
+   151672
+  ],
+  "one_in": 14,
+  "spell": 301137
+ },
+ "169396": {
+  "estimated": false,
+  "from": [
+   "Reclamation Rig"
+  ],
+  "name": "Echoing Oozeling",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 301162
+ },
+ "169886": {
+  "estimated": false,
+  "from": [
+   "The Kleptoboss"
+  ],
+  "name": "Spraybot 0D",
+  "npcs": [
+   152113
+  ],
+  "one_in": 8,
+  "spell": 303023
+ },
+ "170072": {
+  "estimated": false,
+  "from": [
+   "Armored Vaultbot"
+  ],
+  "name": "Armored Vaultbot",
+  "npcs": [],
+  "one_in": 75,
+  "spell": 303784
+ },
+ "170187": {
+  "estimated": false,
+  "from": [
+   "Shassera"
+  ],
+  "name": "Shadescale",
+  "npcs": [
+   152552
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "170196": {
+  "estimated": false,
+  "from": [
+   "Tidemistress Leth'sindra"
+  ],
+  "name": "Shirakess Warning Sign",
+  "npcs": [
+   154148
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "170199": {
+  "estimated": false,
+  "from": [],
+  "name": "Zanj'ir Weapon Rack",
+  "npcs": [
+   155860,
+   154194,
+   155689,
+   155920,
+   152621,
+   155813,
+   153962,
+   153739,
+   153960,
+   153738,
+   154312,
+   152883,
+   153753,
+   153352,
+   153300,
+   152884,
+   152881,
+   152827,
+   150541,
+   153741,
+   153740,
+   154310,
+   152906,
+   154311,
+   153299,
+   155619,
+   154222,
+   152724,
+   153027,
+   153019,
+   153303,
+   153311,
+   155840,
+   152962,
+   152963
+  ],
+  "one_in": 400,
+  "spell": null
+ },
+ "170203": {
+  "estimated": false,
+  "from": [],
+  "name": "Flopping Fish",
+  "npcs": [],
+  "one_in": 8,
+  "spell": null
+ },
+ "170469": {
+  "estimated": false,
+  "from": [],
+  "name": "Memento of the Deeps",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "170476": {
+  "estimated": false,
+  "from": [],
+  "name": "Underlight Sealamp",
+  "npcs": [
+   153078,
+   153080,
+   151946,
+   145324,
+   153334
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "172219": {
+  "estimated": false,
+  "from": [],
+  "name": "Wild Holly",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "172222": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Juggernaught",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "172223": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Battleship",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "172493": {
+  "estimated": false,
+  "from": [
+   "Honey Smasher"
+  ],
+  "name": "Snarling Butterfly Crate",
+  "npcs": [
+   154154
+  ],
+  "one_in": 20,
+  "spell": 309522
+ },
+ "173726": {
+  "estimated": false,
+  "from": [],
+  "name": "Box With Faintly Glowing 'Air' Holes",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 312029
+ },
+ "173887": {
+  "estimated": false,
+  "from": [
+   "Ha-Li"
+  ],
+  "name": "Clutch of Ha-Li",
+  "npcs": [
+   157153
+  ],
+  "one_in": 33,
+  "spell": 312751
+ },
+ "174230": {
+  "estimated": false,
+  "from": [
+   "Cave Entrance",
+   "Rei Lun"
+  ],
+  "name": "Pristine Cloud Serpent Scale",
+  "npcs": [
+   157162
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "174446": {
+  "estimated": false,
+  "from": [],
+  "name": "Fractured Obsidian Claw",
+  "npcs": [
+   99999
+  ],
+  "one_in": 5,
+  "spell": 315221
+ },
+ "174447": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Scarred Anubisath",
+  "npcs": [
+   99999
+  ],
+  "one_in": 8,
+  "spell": 315225
+ },
+ "174448": {
+  "estimated": false,
+  "from": [],
+  "name": "Aqir Hivespawn",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 315229
+ },
+ "174449": {
+  "estimated": false,
+  "from": [],
+  "name": "Ra'kim",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 315231
+ },
+ "174452": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Corruption",
+  "npcs": [
+   99999
+  ],
+  "one_in": 10,
+  "spell": 315270
+ },
+ "174456": {
+  "estimated": false,
+  "from": [],
+  "name": "Bottle of Gloop",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 315285
+ },
+ "174457": {
+  "estimated": false,
+  "from": [],
+  "name": "C'Thuffer",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315290
+ },
+ "174458": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Scarred Hare",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315297
+ },
+ "174459": {
+  "estimated": false,
+  "from": [],
+  "name": "Voidwoven Cat Collar",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315298
+ },
+ "174461": {
+  "estimated": false,
+  "from": [],
+  "name": "Swirling Black Bottle",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315302
+ },
+ "174473": {
+  "estimated": false,
+  "from": [
+   "The Forgotten"
+  ],
+  "name": "K'uddly",
+  "npcs": [
+   157176
+  ],
+  "one_in": 33,
+  "spell": 315339
+ },
+ "174474": {
+  "estimated": false,
+  "from": [
+   "Will of N'zoth"
+  ],
+  "name": "Corrupted Tentacle",
+  "npcs": [
+   154495
+  ],
+  "one_in": 50,
+  "spell": 315353
+ },
+ "174475": {
+  "estimated": false,
+  "from": [
+   "Lord Aj'qirai"
+  ],
+  "name": "Stinky Sack",
+  "npcs": [
+   154604
+  ],
+  "one_in": 50,
+  "spell": 315355
+ },
+ "174476": {
+  "estimated": false,
+  "from": [
+   "Skikx'traz"
+  ],
+  "name": "Black Chitinous Plate",
+  "npcs": [
+   162140
+  ],
+  "one_in": 75,
+  "spell": 315360
+ },
+ "174478": {
+  "estimated": false,
+  "from": [
+   "Amalgamation of Flesh"
+  ],
+  "name": "Wicked Lurker",
+  "npcs": [
+   157593
+  ],
+  "one_in": 50,
+  "spell": 315370
+ },
+ "174479": {
+  "estimated": false,
+  "from": [],
+  "name": "Jade Defender",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315371
+ },
+ "174481": {
+  "estimated": false,
+  "from": [],
+  "name": "Cursed Dune Watcher",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 315367
+ },
+ "174641": {
+  "estimated": false,
+  "from": [
+   "Ishak of the Four Winds"
+  ],
+  "name": "Reins of the Drake of the Four Winds",
+  "npcs": [
+   157134
+  ],
+  "one_in": 33,
+  "spell": 315847
+ },
+ "174646": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Link Frostwolf Collar",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 312030
+ },
+ "174653": {
+  "estimated": false,
+  "from": [],
+  "name": "Mail Muncher",
+  "npcs": [
+   160708
+  ],
+  "one_in": 100,
+  "spell": 315987
+ },
+ "174753": {
+  "estimated": false,
+  "from": [
+   "Rotfeaster"
+  ],
+  "name": "Waste Marauder",
+  "npcs": [
+   157146
+  ],
+  "one_in": 33,
+  "spell": 316275
+ },
+ "174769": {
+  "estimated": false,
+  "from": [
+   "Corpse Eater"
+  ],
+  "name": "Malevolent Drone",
+  "npcs": [
+   162147
+  ],
+  "one_in": 100,
+  "spell": 316337
+ },
+ "174840": {
+  "estimated": false,
+  "from": [
+   "Anh-De the Loyal"
+  ],
+  "name": "Xinlao",
+  "npcs": [
+   157466
+  ],
+  "one_in": 33,
+  "spell": 316723
+ },
+ "174841": {
+  "estimated": false,
+  "from": [
+   "Houndlord Ren"
+  ],
+  "name": "Ren's Stalwart Hound",
+  "npcs": [
+   157160
+  ],
+  "one_in": 33,
+  "spell": 316722
+ },
+ "174842": {
+  "estimated": false,
+  "from": [
+   "Dunegorger Kraulok"
+  ],
+  "name": "Slightly Damp Pile of Fur",
+  "npcs": [
+   138794
+  ],
+  "one_in": 100,
+  "spell": 298367
+ },
+ "174872": {
+  "estimated": false,
+  "from": [],
+  "name": "Ny'alotha Allseer",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 308814
+ },
+ "174873": {
+  "estimated": false,
+  "from": [
+   "Tashara"
+  ],
+  "name": "Trans-mogu-rifier",
+  "npcs": [
+   155958
+  ],
+  "one_in": 33,
+  "spell": null
+ },
+ "174874": {
+  "estimated": false,
+  "from": [
+   "Yiphrim the Will Ravager",
+   "Yiphrim the Will Ravager",
+   "Yiphrim the Will Ravager"
+  ],
+  "name": "Budget K'thir Disguise",
+  "npcs": [
+   157473
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "174924": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Touched Souvenir Totem",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "174926": {
+  "estimated": false,
+  "from": [],
+  "name": "Overly Sensitive Void Spectacles",
+  "npcs": [
+   158284
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "174927": {
+  "estimated": false,
+  "from": [],
+  "name": "Zan-Tien Lasso",
+  "npcs": [
+   157345,
+   153095,
+   153099,
+   153094,
+   157101,
+   157103,
+   155957,
+   156675,
+   157097,
+   153106,
+   153107,
+   157156,
+   157443,
+   157171,
+   157291,
+   157160
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "175141": {
+  "estimated": false,
+  "from": [
+   "Will of N'zoth"
+  ],
+  "name": "All-Seeing Left Eye",
+  "npcs": [
+   154495
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "175142": {
+  "estimated": false,
+  "from": [
+   "Gaze of N'Zoth"
+  ],
+  "name": "All-Seeing Right Eye",
+  "npcs": [
+   158633
+  ],
+  "one_in": 75,
+  "spell": null
+ },
+ "178530": {
+  "estimated": false,
+  "from": [],
+  "name": "Wreath-A-Rang",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "180461": {
+  "estimated": false,
+  "from": [
+   "Harika the Horrid"
+  ],
+  "name": "Horrid Dredwing",
+  "npcs": [
+   165290
+  ],
+  "one_in": 100,
+  "spell": 332882
+ },
+ "180581": {
+  "estimated": false,
+  "from": [
+   "Hopecrusher"
+  ],
+  "name": "Hopecrusher Gargon",
+  "npcs": [
+   166679
+  ],
+  "one_in": 100,
+  "spell": 312753
+ },
+ "180582": {
+  "estimated": false,
+  "from": [
+   "Famu the Infinite"
+  ],
+  "name": "Endmire Flyer Tether",
+  "npcs": [
+   166521
+  ],
+  "one_in": 100,
+  "spell": 332905
+ },
+ "180583": {
+  "estimated": true,
+  "from": [
+   "Worldedge Gorger"
+  ],
+  "name": "Impressionable Gorger Spawn",
+  "npcs": [
+   160821
+  ],
+  "one_in": 100,
+  "spell": 333027
+ },
+ "180584": {
+  "estimated": false,
+  "from": [
+   "Tomb Burster"
+  ],
+  "name": "Blushing Spiderling",
+  "npcs": [
+   155779
+  ],
+  "one_in": 50,
+  "spell": 333794
+ },
+ "180585": {
+  "estimated": false,
+  "from": [
+   "Manifestation of Wrath",
+   "Prideful Hulk"
+  ],
+  "name": "Bottled Up Rage",
+  "npcs": [
+   170048,
+   165175
+  ],
+  "one_in": 20,
+  "spell": 333795
+ },
+ "180586": {
+  "estimated": false,
+  "from": [
+   "Amalgamation of Light"
+  ],
+  "name": "Lightbinders",
+  "npcs": [
+   164388,
+   160604,
+   165687
+  ],
+  "one_in": 1000,
+  "spell": 333796
+ },
+ "180587": {
+  "estimated": false,
+  "from": [
+   "Scrivener Lenua"
+  ],
+  "name": "Animated Tome",
+  "npcs": [
+   160675
+  ],
+  "one_in": 20,
+  "spell": 333797
+ },
+ "180588": {
+  "estimated": false,
+  "from": [
+   "Bog Beast"
+  ],
+  "name": "Bucket of Primordial Sludge",
+  "npcs": [
+   166292
+  ],
+  "one_in": 11,
+  "spell": 333799
+ },
+ "180589": {
+  "estimated": false,
+  "from": [],
+  "name": "Soullocked Sinstone",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 333800
+ },
+ "180591": {
+  "estimated": false,
+  "from": [],
+  "name": "Vial of Roiling Emotions",
+  "npcs": [
+   162102
+  ],
+  "one_in": 100,
+  "spell": 333802
+ },
+ "180592": {
+  "estimated": false,
+  "from": [],
+  "name": "Trapped Stonefiend",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 333803
+ },
+ "180601": {
+  "estimated": false,
+  "from": [],
+  "name": "Stonewing Dredwing Pup",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 339590
+ },
+ "180602": {
+  "estimated": false,
+  "from": [],
+  "name": "Crimson Dredwing Pup",
+  "npcs": [
+   161206,
+   169154,
+   163893,
+   156077,
+   156395,
+   165290
+  ],
+  "one_in": 2000,
+  "spell": 333865
+ },
+ "180635": {
+  "estimated": false,
+  "from": [],
+  "name": "Hungry Burrower",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 334149
+ },
+ "180730": {
+  "estimated": false,
+  "from": [
+   "Valfir the Unrelenting"
+  ],
+  "name": "Wild Glimmerfur Prowler",
+  "npcs": [
+   168647
+  ],
+  "one_in": 100,
+  "spell": 334366
+ },
+ "180762": {
+  "estimated": false,
+  "from": [
+   "Penitence of Purity"
+  ],
+  "name": "Phalynx of Humility",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 334386
+ },
+ "180856": {
+  "estimated": false,
+  "from": [
+   "Stewart's Stewpendous Stew"
+  ],
+  "name": "Silvershell Snapper",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 335050
+ },
+ "180866": {
+  "estimated": true,
+  "from": [],
+  "name": "Gilded Wader",
+  "npcs": [],
+  "one_in": 300,
+  "spell": 335076
+ },
+ "180869": {
+  "estimated": false,
+  "from": [],
+  "name": "Devoured Wader",
+  "npcs": [
+   171041,
+   171013,
+   171040
+  ],
+  "one_in": 20,
+  "spell": 335083
+ },
+ "180873": {
+  "estimated": false,
+  "from": [
+   "Sire Ladinas"
+  ],
+  "name": "Smolderheart",
+  "npcs": [
+   160857
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "181171": {
+  "estimated": false,
+  "from": [],
+  "name": "Luminous Webspinner",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 335762
+ },
+ "181172": {
+  "estimated": false,
+  "from": [
+   "Sister Chelicerae"
+  ],
+  "name": "Boneweave Hatchling",
+  "npcs": [
+   159886
+  ],
+  "one_in": 33,
+  "spell": 335764
+ },
+ "181173": {
+  "estimated": false,
+  "from": [],
+  "name": "Skittering Venomspitter",
+  "npcs": [],
+  "one_in": 75,
+  "spell": 335765
+ },
+ "181262": {
+  "estimated": false,
+  "from": [],
+  "name": "Bubbling Pustule",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 335966
+ },
+ "181263": {
+  "estimated": false,
+  "from": [
+   "Deadly Dapperling"
+  ],
+  "name": "Shy Melvin",
+  "npcs": [
+   162711
+  ],
+  "one_in": 3,
+  "spell": 335969
+ },
+ "181265": {
+  "estimated": false,
+  "from": [
+   "Smorgas the Feaster"
+  ],
+  "name": "Corpselouse Larva",
+  "npcs": [
+   162528
+  ],
+  "one_in": 100,
+  "spell": 335974
+ },
+ "181266": {
+  "estimated": false,
+  "from": [
+   "Smorgas the Feaster"
+  ],
+  "name": "Feasting Larva",
+  "npcs": [
+   162528
+  ],
+  "one_in": 25,
+  "spell": 335977
+ },
+ "181267": {
+  "estimated": false,
+  "from": [
+   "Scunner"
+  ],
+  "name": "Writhing Spine",
+  "npcs": [
+   158406
+  ],
+  "one_in": 50,
+  "spell": 335979
+ },
+ "181269": {
+  "estimated": false,
+  "from": [],
+  "name": "Micromancer's Mystical Cowl",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 336020
+ },
+ "181270": {
+  "estimated": false,
+  "from": [
+   "Oily Invertebrate"
+  ],
+  "name": "Invertebrate Oil",
+  "npcs": [
+   157312
+  ],
+  "one_in": 40,
+  "spell": 336021
+ },
+ "181271": {
+  "estimated": false,
+  "from": [],
+  "name": "Sludge Feeler",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 336022
+ },
+ "181283": {
+  "estimated": false,
+  "from": [
+   "Ravenomous"
+  ],
+  "name": "Foulwing Buzzer",
+  "npcs": [
+   159753
+  ],
+  "one_in": 20,
+  "spell": 336031
+ },
+ "181794": {
+  "estimated": false,
+  "from": [
+   "Orophea"
+  ],
+  "name": "Orophea's Lyre",
+  "npcs": [
+   172577
+  ],
+  "one_in": 2,
+  "spell": null
+ },
+ "181815": {
+  "estimated": true,
+  "from": [
+   "Sabriel the Bonecleaver"
+  ],
+  "name": "Armored Bonehoof Tauralus",
+  "npcs": [
+   168147
+  ],
+  "one_in": 100,
+  "spell": 332466
+ },
+ "181819": {
+  "estimated": false,
+  "from": [],
+  "name": "Marrowfang's Reins",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 336036
+ },
+ "182075": {
+  "estimated": false,
+  "from": [
+   "Tahonta"
+  ],
+  "name": "Bonehoof Tauralus",
+  "npcs": [
+   162586
+  ],
+  "one_in": 100,
+  "spell": 332457
+ },
+ "182079": {
+  "estimated": false,
+  "from": [
+   "Violet Mistake"
+  ],
+  "name": "Slime-Covered Reins of the Hulking Deathroc",
+  "npcs": [
+   157309
+  ],
+  "one_in": 33,
+  "spell": 336042
+ },
+ "182080": {
+  "estimated": false,
+  "from": [
+   "Gieger"
+  ],
+  "name": "Predatory Plagueroc",
+  "npcs": [
+   162741
+  ],
+  "one_in": 33,
+  "spell": 336045
+ },
+ "182081": {
+  "estimated": true,
+  "from": [],
+  "name": "Reins of the Colossal Slaughterclaw",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 327405
+ },
+ "182084": {
+  "estimated": false,
+  "from": [
+   "Nerissa Heartless"
+  ],
+  "name": "Gorespine",
+  "npcs": [
+   162690
+  ],
+  "one_in": 50,
+  "spell": 332480
+ },
+ "182085": {
+  "estimated": false,
+  "from": [
+   "Warbringer Mal'Korak"
+  ],
+  "name": "Blisterback Bloodtusk",
+  "npcs": [
+   162819
+  ],
+  "one_in": 33,
+  "spell": 332478
+ },
+ "183115": {
+  "estimated": false,
+  "from": [],
+  "name": "Tower Deathroach",
+  "npcs": [
+   155250,
+   155251,
+   156239
+  ],
+  "one_in": 25,
+  "spell": 340721
+ },
+ "183116": {
+  "estimated": false,
+  "from": [],
+  "name": "Hissing Deathroach",
+  "npcs": [
+   155251,
+   156239,
+   155250
+  ],
+  "one_in": 33,
+  "spell": 340722
+ },
+ "183117": {
+  "estimated": false,
+  "from": [],
+  "name": "Severs",
+  "npcs": [
+   159190,
+   157122,
+   171422,
+   155945
+  ],
+  "one_in": 400,
+  "spell": 340723
+ },
+ "183191": {
+  "estimated": false,
+  "from": [],
+  "name": "Maw Crawler",
+  "npcs": [
+   153451,
+   156015,
+   155945,
+   153165,
+   169859
+  ],
+  "one_in": 200,
+  "spell": 341289
+ },
+ "183192": {
+  "estimated": false,
+  "from": [],
+  "name": "Frenzied Mawrat",
+  "npcs": [
+   151329,
+   153165,
+   151331
+  ],
+  "one_in": 100,
+  "spell": 341293
+ },
+ "183193": {
+  "estimated": false,
+  "from": [],
+  "name": "Jar of Ashes",
+  "npcs": [
+   153165,
+   151329,
+   151331
+  ],
+  "one_in": 100,
+  "spell": 341292
+ },
+ "183194": {
+  "estimated": false,
+  "from": [],
+  "name": "Maw Stalker",
+  "npcs": [
+   159755,
+   151331,
+   169859,
+   171422
+  ],
+  "one_in": 200,
+  "spell": 341295
+ },
+ "183195": {
+  "estimated": false,
+  "from": [],
+  "name": "Torghast Lurker",
+  "npcs": [
+   152995,
+   170418,
+   153174,
+   153011,
+   153382
+  ],
+  "one_in": 100,
+  "spell": 341298
+ },
+ "183395": {
+  "estimated": false,
+  "from": [],
+  "name": "Pommel Jewel of Remornia",
+  "npcs": [
+   99999
+  ],
+  "one_in": 33,
+  "spell": 341302
+ },
+ "183407": {
+  "estimated": false,
+  "from": [
+   "Eternas the Tormentor"
+  ],
+  "name": "Contained Essence of Dread",
+  "npcs": [
+   154330
+  ],
+  "one_in": 8,
+  "spell": 341492
+ },
+ "183408": {
+  "estimated": false,
+  "from": [],
+  "name": "Undying Deathroach",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 341493
+ },
+ "183409": {
+  "estimated": false,
+  "from": [],
+  "name": "Decaying Mawrat",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 341494
+ },
+ "183410": {
+  "estimated": false,
+  "from": [
+   "Sanngror the Torturer"
+  ],
+  "name": "Sharpclaw",
+  "npcs": [
+   172521
+  ],
+  "one_in": 20,
+  "spell": 341495
+ },
+ "183623": {
+  "estimated": false,
+  "from": [],
+  "name": "Spinemaw Gormling",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 341519
+ },
+ "183741": {
+  "estimated": false,
+  "from": [
+   "Cache of the Ascended"
+  ],
+  "name": "Ascended Skymane",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 342335
+ },
+ "183798": {
+  "estimated": false,
+  "from": [],
+  "name": "Silessa's Battle Harness",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 333023
+ },
+ "183800": {
+  "estimated": true,
+  "from": [],
+  "name": "Amber Ardenmoth",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 342666
+ },
+ "183855": {
+  "estimated": true,
+  "from": [],
+  "name": "Stony's Infused Ruby",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 339674
+ },
+ "183901": {
+  "estimated": false,
+  "from": [
+   "Darklord Taraxis"
+  ],
+  "name": "Bonestorm Top",
+  "npcs": [
+   158025
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "184062": {
+  "estimated": true,
+  "from": [
+   "Theater of Pain"
+  ],
+  "name": "Gnawed Reins of the Battle-Bound Warhound",
+  "npcs": [
+   162873,
+   162880,
+   162875,
+   162853,
+   162874,
+   162872
+  ],
+  "one_in": 100,
+  "spell": 344228
+ },
+ "184104": {
+  "estimated": false,
+  "from": [],
+  "name": "Blight-Touched Egg",
+  "npcs": [
+   162258,
+   162588,
+   172390,
+   162259,
+   170456,
+   162589,
+   170893,
+   164587
+  ],
+  "one_in": 500,
+  "spell": null
+ },
+ "184159": {
+  "estimated": false,
+  "from": [],
+  "name": "Necroray Egg",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "184160": {
+  "estimated": false,
+  "from": [],
+  "name": "Bulbous Necroray",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 344574
+ },
+ "184161": {
+  "estimated": false,
+  "from": [],
+  "name": "Infested Necroray",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 344576
+ },
+ "184162": {
+  "estimated": false,
+  "from": [],
+  "name": "Pestilent Necroray",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 344575
+ },
+ "184167": {
+  "estimated": false,
+  "from": [
+   "Gorged Shadehound"
+  ],
+  "name": "Mawsworn Soulhunter",
+  "npcs": [
+   174861
+  ],
+  "one_in": 50,
+  "spell": 312762
+ },
+ "184292": {
+  "estimated": false,
+  "from": [
+   "Morguliax"
+  ],
+  "name": "Ancient Elethium Coin",
+  "npcs": [
+   162849
+  ],
+  "one_in": 8,
+  "spell": null
+ },
+ "184312": {
+  "estimated": false,
+  "from": [
+   "Borr-Geth"
+  ],
+  "name": "Borr-Geth's Fiery Brimstone",
+  "npcs": [
+   157833
+  ],
+  "one_in": 4,
+  "spell": null
+ },
+ "184318": {
+  "estimated": false,
+  "from": [
+   "Blackhound Cache"
+  ],
+  "name": "Battlecry of Krexus",
+  "npcs": [],
+  "one_in": 25,
+  "spell": null
+ },
+ "184396": {
+  "estimated": true,
+  "from": [],
+  "name": "Malfunctioning Goliath Gauntlet",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "184397": {
+  "estimated": false,
+  "from": [],
+  "name": "Lost Featherling",
+  "npcs": [
+   157054,
+   156559,
+   156560,
+   157212
+  ],
+  "one_in": 150,
+  "spell": 345741
+ },
+ "184399": {
+  "estimated": false,
+  "from": [],
+  "name": "Larion Cub",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 345744
+ },
+ "184401": {
+  "estimated": false,
+  "from": [
+   "Larionrider Orstus"
+  ],
+  "name": "Larion Pouncer",
+  "npcs": [
+   156340
+  ],
+  "one_in": 25,
+  "spell": 345742
+ },
+ "184404": {
+  "estimated": false,
+  "from": [
+   "Enforcer Aegeon"
+  ],
+  "name": "Ever-Abundant Hearth",
+  "npcs": [
+   171009
+  ],
+  "one_in": 8,
+  "spell": null
+ },
+ "184413": {
+  "estimated": false,
+  "from": [
+   "Unstable Memory"
+  ],
+  "name": "Mnemonic Attunement Pane",
+  "npcs": [
+   171008
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "184415": {
+  "estimated": false,
+  "from": [],
+  "name": "Soothing Vesper",
+  "npcs": [],
+  "one_in": 12,
+  "spell": null
+ },
+ "184418": {
+  "estimated": false,
+  "from": [],
+  "name": "Acrobatic Steward",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "184435": {
+  "estimated": true,
+  "from": [],
+  "name": "Mark of Purity",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "184447": {
+  "estimated": false,
+  "from": [],
+  "name": "Kevin's Party Supplies",
+  "npcs": [],
+  "one_in": 11,
+  "spell": null
+ },
+ "184476": {
+  "estimated": false,
+  "from": [
+   "Bubbleblood"
+  ],
+  "name": "Regenerating Slime Vial",
+  "npcs": [
+   162727
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "184495": {
+  "estimated": true,
+  "from": [],
+  "name": "Infested Arachnid Casing",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "184507": {
+  "estimated": true,
+  "from": [],
+  "name": "Lucy's Lost Collar",
+  "npcs": [
+   175390
+  ],
+  "one_in": 100,
+  "spell": 346192
+ },
+ "184867": {
+  "estimated": false,
+  "from": [],
+  "name": "Squibbles",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 348561
+ },
+ "185973": {
+  "estimated": false,
+  "from": [],
+  "name": "Chain of Bahmethra",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 352309
+ },
+ "185996": {
+  "estimated": false,
+  "from": [],
+  "name": "Harvester's Dredwing Saddle",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 332904
+ },
+ "186000": {
+  "estimated": false,
+  "from": [],
+  "name": "Legsplitter War Harness",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 352441
+ },
+ "186103": {
+  "estimated": false,
+  "from": [],
+  "name": "Undying Darkhound's Harness",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 352742
+ },
+ "186449": {
+  "estimated": false,
+  "from": [
+   "Gralebboih"
+  ],
+  "name": "Amaranthine Stinger",
+  "npcs": [
+   177979
+  ],
+  "one_in": 25,
+  "spell": 353570
+ },
+ "186534": {
+  "estimated": false,
+  "from": [
+   "P.O.S.T. Master"
+  ],
+  "name": "Gizmo",
+  "npcs": [
+   175646
+  ],
+  "one_in": 10,
+  "spell": 353525
+ },
+ "186538": {
+  "estimated": false,
+  "from": [],
+  "name": "Gnashtooth",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353666
+ },
+ "186541": {
+  "estimated": false,
+  "from": [],
+  "name": "Mosscoated Hopper",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353664
+ },
+ "186542": {
+  "estimated": false,
+  "from": [
+   "Cave Entrance",
+   "Zelnithop"
+  ],
+  "name": "Korthian Specimen",
+  "npcs": [
+   177336
+  ],
+  "one_in": 50,
+  "spell": 353663
+ },
+ "186546": {
+  "estimated": false,
+  "from": [],
+  "name": "Copperback Etherwyrm",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353451
+ },
+ "186547": {
+  "estimated": false,
+  "from": [],
+  "name": "Invasive Buzzer",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353569
+ },
+ "186549": {
+  "estimated": false,
+  "from": [],
+  "name": "Gilded Darknight",
+  "npcs": [
+   179526,
+   176578,
+   179433
+  ],
+  "one_in": 7,
+  "spell": 353656
+ },
+ "186550": {
+  "estimated": false,
+  "from": [],
+  "name": "Mawsworn Minion",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 353658
+ },
+ "186552": {
+  "estimated": false,
+  "from": [],
+  "name": "Rook",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353661
+ },
+ "186554": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Allseeing",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 353648
+ },
+ "186555": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Extermination",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 353649
+ },
+ "186557": {
+  "estimated": false,
+  "from": [],
+  "name": "Fodder",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353529
+ },
+ "186558": {
+  "estimated": false,
+  "from": [],
+  "name": "Irongrasp",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 353639
+ },
+ "186559": {
+  "estimated": false,
+  "from": [],
+  "name": "Grappling Gauntlet",
+  "npcs": [
+   177321,
+   177323,
+   177164,
+   177397,
+   178671,
+   178744,
+   177805,
+   179260,
+   178727,
+   177244,
+   179305,
+   179284,
+   179217,
+   177292,
+   177293,
+   177201,
+   161849,
+   170694,
+   175708,
+   166398,
+   170157,
+   167323,
+   173138,
+   175702,
+   167322,
+   175697,
+   157824
+  ],
+  "one_in": 200,
+  "spell": 353638
+ },
+ "186564": {
+  "estimated": false,
+  "from": [
+   "Helsworn Soulseeker"
+  ],
+  "name": "Golden Eye",
+  "npcs": [
+   177132
+  ],
+  "one_in": 500,
+  "spell": 353644
+ },
+ "186638": {
+  "estimated": false,
+  "from": [],
+  "name": "Cartel Master's Gearglider",
+  "npcs": [
+   180863
+  ],
+  "one_in": 50,
+  "spell": 353263
+ },
+ "186641": {
+  "estimated": false,
+  "from": [],
+  "name": "Tamed Mauler Harness",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 347536
+ },
+ "186642": {
+  "estimated": false,
+  "from": [],
+  "name": "Vengeance's Reins",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 351195
+ },
+ "186644": {
+  "estimated": false,
+  "from": [],
+  "name": "Beryl Shardhide",
+  "npcs": [],
+  "one_in": 8,
+  "spell": 347810
+ },
+ "186645": {
+  "estimated": true,
+  "from": [
+   "Malbog"
+  ],
+  "name": "Crimson Shardhide",
+  "npcs": [
+   179684
+  ],
+  "one_in": 100,
+  "spell": 354357
+ },
+ "186646": {
+  "estimated": false,
+  "from": [
+   "The Mawshrooms are obtained from treasure nodes called Invasive Mawshroom in Korthia.",
+   "Darkmaul"
+  ],
+  "name": "Darkmaul",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 354358
+ },
+ "186649": {
+  "estimated": false,
+  "from": [],
+  "name": "Fierce Razorwing",
+  "npcs": [],
+  "one_in": 8,
+  "spell": 354359
+ },
+ "186651": {
+  "estimated": false,
+  "from": [
+   "Dropped from various creatures in Korthia",
+   "Razorwing Nest"
+  ],
+  "name": "Dusklight Razorwing",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 354361
+ },
+ "186652": {
+  "estimated": true,
+  "from": [
+   "Reliwik the Defiant"
+  ],
+  "name": "Garnet Razorwing",
+  "npcs": [
+   180160
+  ],
+  "one_in": 100,
+  "spell": 354360
+ },
+ "186656": {
+  "estimated": false,
+  "from": [],
+  "name": "Sanctum Gloomcharger's Reins",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 354351
+ },
+ "186657": {
+  "estimated": false,
+  "from": [],
+  "name": "Soulbound Gloomcharger's Reins",
+  "npcs": [],
+  "one_in": 8,
+  "spell": 354352
+ },
+ "186659": {
+  "estimated": false,
+  "from": [
+   "Fallen Charger"
+  ],
+  "name": "Fallen Charger's Reins",
+  "npcs": [
+   179460
+  ],
+  "one_in": 7,
+  "spell": 354353
+ },
+ "187075": {
+  "estimated": false,
+  "from": [],
+  "name": "Box of Rattling Chains",
+  "npcs": [
+   171422,
+   153011,
+   151331,
+   153165,
+   156239,
+   155250,
+   155251,
+   155945,
+   170418,
+   153451,
+   153382,
+   169859,
+   157122,
+   159190,
+   159755,
+   152995,
+   151329,
+   153174,
+   156015
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "187113": {
+  "estimated": true,
+  "from": [],
+  "name": "Personal Ball and Chain",
+  "npcs": [],
+  "one_in": 10,
+  "spell": null
+ },
+ "187139": {
+  "estimated": false,
+  "from": [
+   "Torglluun"
+  ],
+  "name": "Bottled Shade Heart",
+  "npcs": [
+   179735
+  ],
+  "one_in": 8,
+  "spell": null
+ },
+ "187174": {
+  "estimated": false,
+  "from": [],
+  "name": "Shaded Judgment Stone",
+  "npcs": [
+   179913,
+   179608,
+   179914,
+   179911,
+   179853
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187176": {
+  "estimated": false,
+  "from": [
+   "Wild Worldcracker"
+  ],
+  "name": "Vesper of Harmony",
+  "npcs": [
+   180032
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187181": {
+  "estimated": false,
+  "from": [
+   "Fleshwing"
+  ],
+  "name": "Small Corpsefly Egg",
+  "npcs": [
+   180042
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187183": {
+  "estimated": true,
+  "from": [
+   "Konthrogz the Obliterator"
+  ],
+  "name": "Rampaging Mauler",
+  "npcs": [
+   179472
+  ],
+  "one_in": 50,
+  "spell": 356501
+ },
+ "187185": {
+  "estimated": false,
+  "from": [],
+  "name": "Vesper of Faith",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "187281": {
+  "estimated": true,
+  "from": [
+   "Escaped Wilderling"
+  ],
+  "name": "Wilderling Saddle",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 353859
+ },
+ "187282": {
+  "estimated": false,
+  "from": [
+   "Wild Worldcracker"
+  ],
+  "name": "Intact Aquilon Core",
+  "npcs": [
+   180032
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187283": {
+  "estimated": false,
+  "from": [
+   "Stygian Stonecrusher"
+  ],
+  "name": "Gravewing Crystal",
+  "npcs": [
+   179985
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187416": {
+  "estimated": true,
+  "from": [],
+  "name": "Jailer's Cage",
+  "npcs": [],
+  "one_in": 15,
+  "spell": null
+ },
+ "187417": {
+  "estimated": false,
+  "from": [],
+  "name": "Adamant Vaults Cell",
+  "npcs": [
+   176578,
+   179526,
+   179433
+  ],
+  "one_in": 11,
+  "spell": null
+ },
+ "187419": {
+  "estimated": false,
+  "from": [],
+  "name": "Steward's First Feather",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "187420": {
+  "estimated": false,
+  "from": [
+   "Observer Yorik"
+  ],
+  "name": "Maw-Ocular Viewfinder",
+  "npcs": [
+   179914
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "187422": {
+  "estimated": false,
+  "from": [],
+  "name": "Rockin' Rollin' Racer Customizer 19.9.3",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "187512": {
+  "estimated": false,
+  "from": [],
+  "name": "Tome of Small Sins",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "187662": {
+  "estimated": false,
+  "from": [
+   "Hirukon"
+  ],
+  "name": "Strange Goop",
+  "npcs": [],
+  "one_in": 1333,
+  "spell": 342680
+ },
+ "187676": {
+  "estimated": false,
+  "from": [
+   "Hirukon"
+  ],
+  "name": "Deepstar Polyp",
+  "npcs": [
+   180978
+  ],
+  "one_in": 100,
+  "spell": 342680
+ },
+ "187735": {
+  "estimated": false,
+  "from": [],
+  "name": "Geordy",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 359606
+ },
+ "187840": {
+  "estimated": false,
+  "from": [],
+  "name": "Sparkle Wings",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "187913": {
+  "estimated": false,
+  "from": [],
+  "name": "Apprentice Slimemancer's Boots",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "188700": {
+  "estimated": false,
+  "from": [],
+  "name": "Sturdy Silver Mawrat Harness",
+  "npcs": [
+   179526,
+   179433,
+   176578,
+   169859,
+   159755,
+   153165,
+   171422,
+   153451,
+   159190,
+   151329,
+   151331,
+   155945,
+   170418,
+   156239,
+   155250,
+   155251,
+   157122,
+   153174,
+   156015,
+   1,
+   5,
+   2022,
+   185026,
+   185027,
+   185028,
+   153011
+  ],
+  "one_in": 100,
+  "spell": 363178
+ },
+ "190177": {
+  "estimated": false,
+  "from": [],
+  "name": "Sphere of Enlightened Cogitation",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "190238": {
+  "estimated": false,
+  "from": [
+   "Xy'rath the Covetous"
+  ],
+  "name": "Xy'rath's Booby-Trapped Cache",
+  "npcs": [
+   183737
+  ],
+  "one_in": 6,
+  "spell": null
+ },
+ "190734": {
+  "estimated": false,
+  "from": [],
+  "name": "Makaris's Satchel of Mines",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "190765": {
+  "estimated": false,
+  "from": [
+   "Rhuv, Gorger of Ruin"
+  ],
+  "name": "Iska's Mawrat Leash",
+  "npcs": [
+   182120
+  ],
+  "one_in": 100,
+  "spell": 368105
+ },
+ "190766": {
+  "estimated": false,
+  "from": [],
+  "name": "Spectral Mawrat's Tail",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 368128
+ },
+ "190768": {
+  "estimated": false,
+  "from": [],
+  "name": "Fractal Cypher of the Zereth Overseer",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 368158
+ },
+ "191915": {
+  "estimated": false,
+  "from": [],
+  "name": "Shaggy",
+  "npcs": [],
+  "one_in": 66,
+  "spell": 371534
+ },
+ "191925": {
+  "estimated": false,
+  "from": [],
+  "name": "Falling Star Flinger",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "191930": {
+  "estimated": false,
+  "from": [
+   "Warden Entrix"
+  ],
+  "name": "Wakyn",
+  "npcs": [
+   200960
+  ],
+  "one_in": 20,
+  "spell": 371594
+ },
+ "191937": {
+  "estimated": false,
+  "from": [],
+  "name": "Falling Star Catcher",
+  "npcs": [],
+  "one_in": 100,
+  "spell": null
+ },
+ "192764": {
+  "estimated": false,
+  "from": [],
+  "name": "Verdant Skitterfly",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 374048
+ },
+ "192772": {
+  "estimated": false,
+  "from": [
+   "Mad-Eye Carrey",
+   "Warden Entrix",
+   "Vraken the Hunter",
+   "Veltrax",
+   "Ookbeard",
+   "Wyrmslayer Angvardi",
+   "Duzalgor",
+   "Grugoth the Hullcrusher",
+   "Volcanakk",
+   "Reisa the Drowned",
+   "Galakhad",
+   "Pyrachniss",
+   "Lady Shaz'ra",
+   "Bonesifter Marwak",
+   "Ishyra",
+   "Gahz'raxes"
+  ],
+  "name": "Ancient Salamanther",
+  "npcs": [
+   201181,
+   200960,
+   200584,
+   200904,
+   200956,
+   201013,
+   200610,
+   200721,
+   200911,
+   200600,
+   200717,
+   200978,
+   200885,
+   200681,
+   200579,
+   200537
+  ],
+  "one_in": 80,
+  "spell": 374090
+ },
+ "192785": {
+  "estimated": false,
+  "from": [
+   "Dropped from the final bosses of Froststone Vault Primal Storm.",
+   "Froststone Vault Primal Storm"
+  ],
+  "name": "Gooey Snailemental",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 374157
+ },
+ "192791": {
+  "estimated": false,
+  "from": [],
+  "name": "Plainswalker Bearer",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 374196
+ },
+ "193235": {
+  "estimated": false,
+  "from": [
+   "Luttrok"
+  ],
+  "name": "Luvvy",
+  "npcs": [
+   200742
+  ],
+  "one_in": 25,
+  "spell": 374895
+ },
+ "193363": {
+  "estimated": false,
+  "from": [],
+  "name": "Bunbo",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 375045
+ },
+ "193364": {
+  "estimated": false,
+  "from": [
+   "Vraken the Hunter"
+  ],
+  "name": "Scruffles",
+  "npcs": [
+   200584
+  ],
+  "one_in": 25,
+  "spell": 375047
+ },
+ "193374": {
+  "estimated": false,
+  "from": [
+   "Bonesifter Marwak"
+  ],
+  "name": "Ashenwing",
+  "npcs": [
+   200681
+  ],
+  "one_in": 20,
+  "spell": 375085
+ },
+ "193835": {
+  "estimated": false,
+  "from": [],
+  "name": "Brightfeather",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 375448
+ },
+ "193854": {
+  "estimated": false,
+  "from": [],
+  "name": "Berylmane",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 375553
+ },
+ "198409": {
+  "estimated": false,
+  "from": [
+   "Sunscale Behemoth"
+  ],
+  "name": "Personal Shell",
+  "npcs": [
+   193133
+  ],
+  "one_in": 2,
+  "spell": null
+ },
+ "199337": {
+  "estimated": false,
+  "from": [],
+  "name": "Bag of Furious Winds",
+  "npcs": [
+   193647,
+   193653,
+   193674,
+   193684
+  ],
+  "one_in": 150,
+  "spell": null
+ },
+ "200116": {
+  "estimated": false,
+  "from": [],
+  "name": "Everlasting Horn of Lavaswimming",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": null
+ },
+ "200148": {
+  "estimated": false,
+  "from": [
+   "Phleep",
+   "Sandana the Tempest",
+   "Innumerable Ruination",
+   "Lord Epochbrgl"
+  ],
+  "name": "A Collection Of Me",
+  "npcs": [
+   193210,
+   193176,
+   193126,
+   193241
+  ],
+  "one_in": 6,
+  "spell": null
+ },
+ "200160": {
+  "estimated": false,
+  "from": [
+   "Notfar the Unbearable"
+  ],
+  "name": "Notfar's Favorite Food",
+  "npcs": [
+   198703
+  ],
+  "one_in": 6,
+  "spell": null
+ },
+ "200178": {
+  "estimated": false,
+  "from": [
+   "Blightpaw the Depraved",
+   "High Shaman Rotknuckle",
+   "Blightfur"
+  ],
+  "name": "Infected Ichor",
+  "npcs": [
+   193128,
+   197356,
+   193178
+  ],
+  "one_in": 12,
+  "spell": null
+ },
+ "200183": {
+  "estimated": false,
+  "from": [],
+  "name": "Echo of the Cave",
+  "npcs": [
+   203739,
+   203740,
+   203741,
+   203742,
+   197092,
+   197091,
+   197169,
+   186724,
+   191507,
+   197075,
+   191899,
+   186727,
+   187306,
+   197135,
+   186859,
+   192696,
+   187366,
+   201537,
+   197120,
+   191661,
+   201538,
+   197088,
+   185168,
+   191508,
+   186728,
+   201539,
+   192334,
+   186608,
+   185357,
+   197119,
+   192341,
+   192340,
+   191658,
+   196834,
+   197118,
+   201555,
+   196398,
+   197076,
+   194119,
+   197121,
+   191654,
+   193198,
+   186735,
+   191898,
+   195837,
+   195839,
+   186620,
+   191680,
+   197128,
+   197125,
+   197124,
+   190737,
+   188009,
+   186632,
+   196835,
+   191677,
+   197902,
+   184453,
+   185353,
+   192694,
+   198343,
+   191129,
+   186605,
+   197132,
+   185147,
+   197126,
+   197353,
+   201553,
+   201554,
+   201535,
+   195836,
+   191902,
+   187867,
+   186607,
+   186606,
+   193664,
+   197136,
+   186609,
+   191678,
+   193688,
+   201540,
+   201561,
+   201550,
+   201558,
+   186512,
+   201559,
+   201556,
+   197140,
+   184444,
+   190776,
+   184461,
+   197123,
+   197142,
+   192699,
+   197134,
+   187932,
+   187886,
+   197138,
+   197130,
+   186612,
+   197122,
+   201552,
+   194120,
+   190778,
+   197087,
+   190780,
+   187599,
+   190779,
+   192703,
+   194798,
+   197129,
+   186599,
+   201549,
+   201557,
+   186627,
+   187600,
+   187813,
+   192700,
+   192702,
+   187602,
+   187919,
+   192582,
+   194797,
+   196772,
+   186600,
+   197344,
+   195815,
+   197131,
+   187928,
+   195814,
+   186602,
+   193152,
+   196336,
+   185465,
+   190996,
+   190995,
+   187868,
+   190738,
+   187923,
+   193244,
+   207337,
+   186604,
+   197133,
+   186783,
+   190991,
+   188044,
+   194912,
+   187889,
+   191363,
+   186239,
+   185350,
+   191901,
+   186630,
+   186594,
+   196193,
+   195448,
+   186628,
+   197139,
+   186626,
+   191637,
+   203744,
+   191479,
+   186684,
+   197356,
+   186624,
+   188014,
+   199298,
+   186109,
+   186792
+  ],
+  "one_in": 1000,
+  "spell": 389143
+ },
+ "200198": {
+  "estimated": false,
+  "from": [],
+  "name": "Primalist Prison",
+  "npcs": [
+   187209,
+   193669,
+   190991,
+   193171,
+   191354,
+   193658,
+   193668,
+   193680,
+   193165,
+   193215,
+   202613,
+   193654,
+   193173,
+   201559,
+   201545,
+   193682,
+   201558,
+   201556,
+   193652,
+   193655,
+   193677,
+   193675,
+   201557,
+   193647,
+   193684,
+   193650,
+   193645,
+   193686,
+   193644,
+   193648,
+   193674,
+   193653
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "200249": {
+  "estimated": false,
+  "from": [],
+  "name": "Mage's Chewed Wand",
+  "npcs": [
+   194401,
+   184853,
+   192949,
+   193273,
+   187111,
+   193148,
+   192983,
+   193632,
+   193163,
+   193201,
+   193130,
+   193229,
+   193153,
+   193209,
+   191305,
+   193259,
+   193133,
+   192737,
+   193240,
+   189822,
+   194438,
+   193217,
+   193266,
+   190968,
+   194409,
+   194760,
+   197009,
+   193143,
+   193161,
+   193125,
+   197353,
+   191450,
+   194608,
+   194761,
+   195283,
+   193246,
+   183984,
+   190986,
+   193735,
+   193634,
+   193341,
+   193885,
+   195132,
+   191103,
+   194392,
+   193666,
+   193140,
+   193154,
+   194251,
+   194624,
+   195417,
+   194601,
+   197371,
+   195093,
+   193170,
+   193269,
+   190907,
+   193251,
+   194240,
+   193853,
+   190161,
+   195430,
+   193123,
+   195101,
+   193330,
+   193311,
+   194225,
+   193708,
+   193120,
+   193220,
+   190985,
+   201535,
+   193234,
+   201537
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "200255": {
+  "estimated": false,
+  "from": [],
+  "name": "Echo of the Inferno",
+  "npcs": [
+   203753,
+   203754,
+   203755,
+   203756,
+   203757,
+   186859,
+   192696,
+   191507,
+   196834,
+   201557,
+   197169,
+   186728,
+   197122,
+   197125,
+   193664,
+   201535,
+   191476,
+   193967,
+   197124,
+   192340,
+   197135,
+   191902,
+   197076,
+   185357,
+   192341,
+   185168,
+   197121,
+   197120,
+   186724,
+   191508,
+   186727,
+   201538,
+   191899,
+   197128,
+   197119,
+   197132,
+   197118,
+   186735,
+   185147,
+   191658,
+   187306,
+   197138,
+   201552,
+   197075,
+   186627,
+   192694,
+   187366,
+   186609,
+   186632,
+   201553,
+   201540,
+   201561,
+   201559,
+   194119,
+   198343,
+   191129,
+   201554,
+   201558,
+   201556,
+   191680,
+   197142,
+   186605,
+   197126,
+   186607,
+   191661,
+   201549,
+   201550,
+   193522,
+   185353,
+   187867,
+   191654,
+   190737,
+   191898,
+   186606,
+   197344,
+   197129,
+   194912,
+   193688,
+   201555,
+   197130,
+   195836,
+   184453,
+   184461,
+   193198,
+   197134,
+   186600,
+   187928,
+   186612,
+   201539,
+   186602,
+   197140,
+   184444,
+   197123,
+   192703,
+   192699,
+   197133,
+   187889,
+   197131,
+   188009,
+   195839,
+   196835,
+   191677,
+   197087,
+   190780,
+   192700,
+   186783,
+   187932,
+   196772,
+   187886,
+   197354,
+   197356,
+   201537,
+   186620,
+   186512,
+   197902,
+   190776,
+   187813,
+   192702,
+   187602,
+   187599,
+   187919,
+   190738,
+   193244,
+   192582,
+   194797,
+   186604,
+   190991,
+   197353,
+   193776,
+   191678,
+   192334,
+   187600,
+   185465,
+   190996,
+   196336,
+   190995,
+   187868,
+   190779,
+   187923,
+   195448,
+   207337,
+   194798,
+   191363,
+   195815,
+   197136,
+   191901,
+   186594,
+   196973,
+   186628,
+   188014,
+   197139,
+   186626,
+   191637,
+   203744,
+   186638,
+   192371,
+   186792,
+   186599,
+   191672,
+   185350,
+   195837,
+   199298,
+   186624,
+   186684,
+   191479
+  ],
+  "one_in": 1000,
+  "spell": 389363
+ },
+ "200260": {
+  "estimated": false,
+  "from": [],
+  "name": "Echo of the Depths",
+  "npcs": [
+   203747,
+   203748,
+   203750,
+   203752,
+   197169,
+   201540,
+   192334,
+   186859,
+   191658,
+   193688,
+   197130,
+   191507,
+   186727,
+   186728,
+   196834,
+   197129,
+   187306,
+   192340,
+   197131,
+   201538,
+   201556,
+   191654,
+   197119,
+   197118,
+   197088,
+   197132,
+   197120,
+   191680,
+   195838,
+   185357,
+   185168,
+   191898,
+   197138,
+   201537,
+   195836,
+   186602,
+   192341,
+   197125,
+   197124,
+   187366,
+   197135,
+   191508,
+   185353,
+   197121,
+   192696,
+   186724,
+   201550,
+   201561,
+   201559,
+   191902,
+   197076,
+   194119,
+   197128,
+   186735,
+   197134,
+   186609,
+   201553,
+   197122,
+   193198,
+   192699,
+   186605,
+   191661,
+   197136,
+   186612,
+   201549,
+   186594,
+   186512,
+   186627,
+   192694,
+   192703,
+   195815,
+   186599,
+   186632,
+   201555,
+   197075,
+   197123,
+   187867,
+   191129,
+   197126,
+   186607,
+   190737,
+   193664,
+   195837,
+   188009,
+   201558,
+   191476,
+   191899,
+   197140,
+   184453,
+   184444,
+   184461,
+   187919,
+   197142,
+   198343,
+   187886,
+   186606,
+   195839,
+   201554,
+   201552,
+   201539,
+   194120,
+   193522,
+   190778,
+   191679,
+   194798,
+   186600,
+   187932,
+   197354,
+   194912,
+   201557,
+   186620,
+   197902,
+   190780,
+   187600,
+   190776,
+   187813,
+   187599,
+   192702,
+   187602,
+   190779,
+   207337,
+   194797,
+   197133,
+   185147,
+   196772,
+   197353,
+   197344,
+   201535,
+   186630,
+   196835,
+   196398,
+   185465,
+   192700,
+   196336,
+   190996,
+   190995,
+   187868,
+   190738,
+   187923,
+   193244,
+   192582,
+   186604,
+   186783,
+   187889,
+   193776,
+   191363,
+   185350,
+   193139,
+   186598,
+   196973,
+   196972,
+   191677,
+   196193,
+   195448,
+   186628,
+   186624,
+   186626,
+   188044,
+   197356,
+   203744,
+   187928,
+   186239,
+   188014,
+   199298,
+   190991,
+   191479,
+   197139,
+   186684,
+   186109
+  ],
+  "one_in": 1000,
+  "spell": 389378
+ },
+ "200263": {
+  "estimated": false,
+  "from": [],
+  "name": "Echo of the Heights",
+  "npcs": [
+   203743,
+   203744,
+   203745,
+   203746,
+   203747,
+   193967,
+   201556,
+   194119,
+   193688,
+   192696,
+   191661,
+   191658,
+   193664,
+   186724,
+   191680,
+   191654,
+   186727,
+   201549,
+   186859,
+   185357,
+   192340,
+   186728,
+   197075,
+   191507,
+   201540,
+   201550,
+   201552,
+   197119,
+   197118,
+   197124,
+   192341,
+   185168,
+   186735,
+   197135,
+   191508,
+   201558,
+   196834,
+   197169,
+   206162,
+   197129,
+   197131,
+   197138,
+   201535,
+   186594,
+   196398,
+   197088,
+   192694,
+   197128,
+   197121,
+   197126,
+   190737,
+   191898,
+   186606,
+   186609,
+   191899,
+   185353,
+   186605,
+   197132,
+   197125,
+   186607,
+   186632,
+   201537,
+   196835,
+   201538,
+   201559,
+   192703,
+   198343,
+   191129,
+   193198,
+   197120,
+   194798,
+   187306,
+   187366,
+   197122,
+   191902,
+   191940,
+   184444,
+   197134,
+   185147,
+   186600,
+   197353,
+   201555,
+   186512,
+   184453,
+   184461,
+   187867,
+   194797,
+   194912,
+   195839,
+   197130,
+   201554,
+   201557,
+   191677,
+   194120,
+   186598,
+   193522,
+   190778,
+   190780,
+   190776,
+   197123,
+   192702,
+   197142,
+   190779,
+   192699,
+   187886,
+   197356,
+   197354,
+   195815,
+   186599,
+   191901,
+   186620,
+   186627,
+   192700,
+   187599,
+   187602,
+   190995,
+   187919,
+   190738,
+   192582,
+   197133,
+   187932,
+   185350,
+   197344,
+   186239,
+   196973,
+   191678,
+   201561,
+   195836,
+   201539,
+   186602,
+   192334,
+   197076,
+   187600,
+   187813,
+   196336,
+   190996,
+   185465,
+   187923,
+   195448,
+   186604,
+   188044,
+   188009,
+   187928,
+   186612,
+   186630,
+   196972,
+   191476,
+   187868,
+   188014,
+   193244,
+   207337,
+   186628,
+   186624,
+   197139,
+   196772,
+   186783,
+   190991,
+   195837,
+   195814,
+   186638,
+   187889,
+   199298,
+   191479,
+   191637,
+   186626,
+   186684,
+   186109,
+   186792
+  ],
+  "one_in": 1000,
+  "spell": 389384
+ },
+ "200276": {
+  "estimated": false,
+  "from": [],
+  "name": "Ohuna Companion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 389429
+ },
+ "200290": {
+  "estimated": false,
+  "from": [],
+  "name": "Bakar Companion",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 389503
+ },
+ "200857": {
+  "estimated": false,
+  "from": [],
+  "name": "Talisman of Sargha",
+  "npcs": [
+   186892,
+   186592,
+   195187,
+   189734,
+   186483,
+   193443,
+   189834,
+   190115,
+   190117,
+   189557,
+   186109,
+   191524,
+   190079,
+   192344,
+   191876,
+   189768,
+   186239,
+   190116,
+   193442,
+   186915,
+   186511,
+   186638,
+   187907,
+   186509,
+   187599,
+   187908,
+   187867,
+   187600,
+   187813,
+   187602,
+   188693,
+   193232,
+   191940,
+   196336,
+   190983,
+   192371,
+   199298,
+   186783,
+   187598
+  ],
+  "one_in": 1000,
+  "spell": null
+ },
+ "200999": {
+  "estimated": false,
+  "from": [
+   "The Great Shellkhan"
+  ],
+  "name": "The Super Shellkhan Gang",
+  "npcs": [
+   191305
+  ],
+  "one_in": 3,
+  "spell": null
+ },
+ "201260": {
+  "estimated": false,
+  "from": [
+   "Earthshatter Elemental"
+  ],
+  "name": "Dust Spirit",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 374755
+ },
+ "201261": {
+  "estimated": false,
+  "from": [
+   "Fire Elemental"
+  ],
+  "name": "Blaze Spirit",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 374840
+ },
+ "201262": {
+  "estimated": false,
+  "from": [
+   "Stormbound Colossus"
+  ],
+  "name": "Gale Spirit",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 374883
+ },
+ "201265": {
+  "estimated": false,
+  "from": [
+   "Force of the Springs"
+  ],
+  "name": "Tide Spirit",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 374751
+ },
+ "201440": {
+  "estimated": false,
+  "from": [
+   "Breezebiter"
+  ],
+  "name": "Reins of the Liberated Slyvern",
+  "npcs": [
+   195353
+  ],
+  "one_in": 50,
+  "spell": 359622
+ },
+ "201815": {
+  "estimated": false,
+  "from": [],
+  "name": "Cloak of Many Faces",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "202042": {
+  "estimated": false,
+  "from": [
+   "Immaculate Sac of Swog Treasures"
+  ],
+  "name": "Aquatic Shades",
+  "npcs": [],
+  "one_in": 2,
+  "spell": null
+ },
+ "204079": {
+  "estimated": false,
+  "from": [
+   "Entrance to Zskera Vaults"
+  ],
+  "name": "Gilded Mechafrog",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 403072
+ },
+ "204257": {
+  "estimated": false,
+  "from": [],
+  "name": "Holoviewer: The Lady of Dreams",
+  "npcs": [],
+  "one_in": 5,
+  "spell": null
+ },
+ "204262": {
+  "estimated": false,
+  "from": [],
+  "name": "Holoviewer: The Timeless One",
+  "npcs": [],
+  "one_in": 5,
+  "spell": null
+ },
+ "204687": {
+  "estimated": false,
+  "from": [],
+  "name": "Obsidian Battle Horn",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "205002": {
+  "estimated": false,
+  "from": [
+   "Kretchenwrath",
+   "Shadeisethal"
+  ],
+  "name": "Blaise",
+  "npcs": [
+   201673,
+   203411
+  ],
+  "one_in": 50,
+  "spell": 407918
+ },
+ "205003": {
+  "estimated": false,
+  "from": [
+   "Kretchenwrath",
+   "Shadeisethal"
+  ],
+  "name": "Ambre",
+  "npcs": [
+   201673,
+   203411
+  ],
+  "one_in": 50,
+  "spell": 407921
+ },
+ "205026": {
+  "estimated": false,
+  "from": [],
+  "name": "Devourer Lobstrok",
+  "npcs": [],
+  "one_in": 7,
+  "spell": 408039
+ },
+ "205114": {
+  "estimated": false,
+  "from": [
+   "Chest of Massive Gains"
+  ],
+  "name": "Brul",
+  "npcs": [],
+  "one_in": 35,
+  "spell": 408110
+ },
+ "205147": {
+  "estimated": false,
+  "from": [
+   "Karokta"
+  ],
+  "name": "Ridged Shalewing",
+  "npcs": [
+   203625
+  ],
+  "one_in": 20,
+  "spell": 408251
+ },
+ "205152": {
+  "estimated": false,
+  "from": [
+   "Kob'rok"
+  ],
+  "name": "Skaarn",
+  "npcs": [
+   203462
+  ],
+  "one_in": 20,
+  "spell": 408264
+ },
+ "205154": {
+  "estimated": false,
+  "from": [
+   "Aquifon"
+  ],
+  "name": "Aquapo",
+  "npcs": [
+   203468
+  ],
+  "one_in": 20,
+  "spell": 408308
+ },
+ "205159": {
+  "estimated": false,
+  "from": [
+   "Underlight Queen"
+  ],
+  "name": "Teardrop Moth",
+  "npcs": [
+   203593
+  ],
+  "one_in": 20,
+  "spell": 408317
+ },
+ "205203": {
+  "estimated": false,
+  "from": [
+   "Karokta"
+  ],
+  "name": "Cobalt Shalewing",
+  "npcs": [
+   203625
+  ],
+  "one_in": 100,
+  "spell": 408647
+ },
+ "205204": {
+  "estimated": false,
+  "from": [],
+  "name": "Flaming Shalewing Subject 01",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 408651
+ },
+ "205419": {
+  "estimated": false,
+  "from": [
+   "Dinn"
+  ],
+  "name": "Dinn's Drum",
+  "npcs": [
+   203646
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "205463": {
+  "estimated": false,
+  "from": [
+   "Moltenbinder's Disciple"
+  ],
+  "name": "Molten Lava Ball",
+  "npcs": [
+   208658
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "205796": {
+  "estimated": false,
+  "from": [
+   "Invoq"
+  ],
+  "name": "Molten Lava Pack",
+  "npcs": [
+   203627
+  ],
+  "one_in": 33,
+  "spell": null
+ },
+ "206018": {
+  "estimated": false,
+  "from": [],
+  "name": "Baa'lial Soulstone",
+  "npcs": [
+   205490
+  ],
+  "one_in": 4,
+  "spell": 411791
+ },
+ "206043": {
+  "estimated": false,
+  "from": [
+   "Kretchenwrath",
+   "Shadeisethal"
+  ],
+  "name": "Fyrakk's Frenzy",
+  "npcs": [
+   201673,
+   203411
+  ],
+  "one_in": 33,
+  "spell": null
+ },
+ "206673": {
+  "estimated": false,
+  "from": [],
+  "name": "Horn of the White War Wolf",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414316
+ },
+ "206674": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Ravenous Black Gryphon",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414323
+ },
+ "206675": {
+  "estimated": false,
+  "from": [],
+  "name": "Gold-Toed Albatross",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414324
+ },
+ "206676": {
+  "estimated": false,
+  "from": [],
+  "name": "Felstorm Dragon",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414326
+ },
+ "206678": {
+  "estimated": false,
+  "from": [],
+  "name": "Sulfur Hound's Leash",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414327
+ },
+ "206679": {
+  "estimated": false,
+  "from": [],
+  "name": "Perfected Juggernaut",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414328
+ },
+ "206680": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Scourgebound Vanquisher",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 414334
+ },
+ "20769": {
+  "estimated": false,
+  "from": [],
+  "name": "Disgusting Oozeling",
+  "npcs": [],
+  "one_in": 85,
+  "spell": 25162
+ },
+ "208008": {
+  "estimated": false,
+  "from": [],
+  "name": "Doomrubble",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418039
+ },
+ "208009": {
+  "estimated": false,
+  "from": [],
+  "name": "Gill'dan",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418036
+ },
+ "208010": {
+  "estimated": false,
+  "from": [],
+  "name": "Jeepers",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418038
+ },
+ "208011": {
+  "estimated": false,
+  "from": [],
+  "name": "Obsidian Warwhelp",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418045
+ },
+ "208012": {
+  "estimated": false,
+  "from": [],
+  "name": "Briarhorn Hatchling",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418029
+ },
+ "208013": {
+  "estimated": false,
+  "from": [],
+  "name": "Killbot 9000",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418041
+ },
+ "208138": {
+  "estimated": false,
+  "from": [],
+  "name": "N'Ruby",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 418050
+ },
+ "208216": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Quantum Courser",
+  "npcs": [
+   199000
+  ],
+  "one_in": 50,
+  "spell": null
+ },
+ "209859": {
+  "estimated": false,
+  "from": [],
+  "name": "Festive Trans-Dimensional Bird Whistle",
+  "npcs": [],
+  "one_in": 4,
+  "spell": null
+ },
+ "209947": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Blossoming Dreamstag",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 423871
+ },
+ "209950": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Rekindled Dreamstag",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 423877
+ },
+ "210057": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Morning Flourish Dreamsaber",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 424482
+ },
+ "210058": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Evening Sun Dreamsaber",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 424479
+ },
+ "210059": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Winter Night Dreamsaber",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 424476
+ },
+ "210061": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of Anu'relos, Flame's Guidance",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 424484
+ },
+ "210769": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Springtide Dreamtalon",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 426955
+ },
+ "210775": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Snowfluff Dreamtalon",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 427043
+ },
+ "211271": {
+  "estimated": false,
+  "from": [],
+  "name": "Arfus",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 406225
+ },
+ "212599": {
+  "estimated": false,
+  "from": [],
+  "name": "Noble Flying Carpet",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 432455
+ },
+ "212645": {
+  "estimated": false,
+  "from": [],
+  "name": "Clayscale Hornstrider",
+  "npcs": [
+   208029
+  ],
+  "one_in": 200,
+  "spell": 432610
+ },
+ "21301": {
+  "estimated": false,
+  "from": [],
+  "name": "Green Helper Box",
+  "npcs": [],
+  "one_in": 4,
+  "spell": 26533
+ },
+ "21305": {
+  "estimated": false,
+  "from": [],
+  "name": "Red Helper Box",
+  "npcs": [],
+  "one_in": 4,
+  "spell": 26541
+ },
+ "21308": {
+  "estimated": false,
+  "from": [],
+  "name": "Jingling Bell",
+  "npcs": [],
+  "one_in": 4,
+  "spell": 26529
+ },
+ "21309": {
+  "estimated": false,
+  "from": [],
+  "name": "Snowman Kit",
+  "npcs": [],
+  "one_in": 4,
+  "spell": 26045
+ },
+ "21321": {
+  "estimated": false,
+  "from": [],
+  "name": "Red Qiraji Resonating Crystal",
+  "npcs": [
+   15311,
+   15250,
+   15247,
+   15246,
+   15264,
+   15262,
+   15277,
+   15312,
+   15252,
+   15249
+  ],
+  "one_in": 100,
+  "spell": 26054
+ },
+ "223155": {
+  "estimated": false,
+  "from": [],
+  "name": "Bop",
+  "npcs": [
+   218523,
+   214661
+  ],
+  "one_in": 30,
+  "spell": 446024
+ },
+ "223265": {
+  "estimated": false,
+  "from": [],
+  "name": "Nesting Swarmite",
+  "npcs": [
+   239581
+  ],
+  "one_in": 100,
+  "spell": 447189
+ },
+ "223269": {
+  "estimated": false,
+  "from": [],
+  "name": "Machine Defense Unit 1-11",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 448188
+ },
+ "223270": {
+  "estimated": false,
+  "from": [],
+  "name": "Alunira",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 447213
+ },
+ "223315": {
+  "estimated": false,
+  "from": [],
+  "name": "Beledar's Spawn",
+  "npcs": [
+   207802
+  ],
+  "one_in": 20,
+  "spell": 448941
+ },
+ "223318": {
+  "estimated": false,
+  "from": [],
+  "name": "Dauntless Imperial Lynx",
+  "npcs": [],
+  "one_in": 150,
+  "spell": 448979
+ },
+ "223487": {
+  "estimated": false,
+  "from": [],
+  "name": "Writhing Transmutagen",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 446059
+ },
+ "223501": {
+  "estimated": false,
+  "from": [],
+  "name": "Regurgitated Mole Reins",
+  "npcs": [
+   220285
+  ],
+  "one_in": 20,
+  "spell": 449258
+ },
+ "224025": {
+  "estimated": false,
+  "from": [],
+  "name": "Crackling Shard",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 450842
+ },
+ "224147": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Sureki Skyrazor",
+  "npcs": [
+   99999
+  ],
+  "one_in": 150,
+  "spell": 451486
+ },
+ "224151": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Ascendant Skyrazor",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 451491
+ },
+ "225548": {
+  "estimated": false,
+  "from": [],
+  "name": "Wick's Lead",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": 449264
+ },
+ "226683": {
+  "estimated": false,
+  "from": [],
+  "name": "Malfunctioning Mechsuit",
+  "npcs": [
+   99999
+  ],
+  "one_in": 200,
+  "spell": 442358
+ },
+ "229937": {
+  "estimated": false,
+  "from": [],
+  "name": "Blackwater Bonecrusher",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 466001
+ },
+ "229943": {
+  "estimated": false,
+  "from": [],
+  "name": "Steamwheedle Supplier",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 466014
+ },
+ "229949": {
+  "estimated": false,
+  "from": [
+   "Angelo Rustbin"
+  ],
+  "name": "Personalized Goblin S.C.R.A.Per",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 466020
+ },
+ "229951": {
+  "estimated": false,
+  "from": [],
+  "name": "Venture Co-ordinator",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 466022
+ },
+ "229953": {
+  "estimated": false,
+  "from": [
+   "Gallagio Garbage",
+   "Gallagio Garbage",
+   "Gallagio Garbage",
+   "Gallagio Garbage",
+   "Gallagio Garbage",
+   "Gallagio Garbage",
+   "Gallagio Garbage"
+  ],
+  "name": "Salvaged Goblin Gazillionaire's Flying Machine",
+  "npcs": [
+   234621
+  ],
+  "one_in": 50,
+  "spell": 466026
+ },
+ "229955": {
+  "estimated": false,
+  "from": [
+   "Darkfuse Precipitant"
+  ],
+  "name": "Darkfuse Spy-Eye",
+  "npcs": [
+   231310
+  ],
+  "one_in": 25,
+  "spell": 466027
+ },
+ "229957": {
+  "estimated": false,
+  "from": [],
+  "name": "Bilgewater Bombardier",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 466024
+ },
+ "232531": {
+  "estimated": false,
+  "from": [],
+  "name": "Grunch",
+  "npcs": [],
+  "one_in": 150,
+  "spell": 471121
+ },
+ "232569": {
+  "estimated": false,
+  "from": [],
+  "name": "Cyclonic Runekey",
+  "npcs": [
+   231357
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "232838": {
+  "estimated": false,
+  "from": [
+   "Angelo Rustbin"
+  ],
+  "name": "Viridian Mechasaur",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 471944
+ },
+ "232926": {
+  "estimated": false,
+  "from": [],
+  "name": "Love Witch's Sweeper",
+  "npcs": [],
+  "one_in": 666,
+  "spell": 472479
+ },
+ "233064": {
+  "estimated": false,
+  "from": [],
+  "name": "Bronze Goblin Waveshredder",
+  "npcs": [],
+  "one_in": 3,
+  "spell": 473188
+ },
+ "234379": {
+  "estimated": false,
+  "from": [],
+  "name": "Crackleroar",
+  "npcs": [
+   230827,
+   231353
+  ],
+  "one_in": 100,
+  "spell": 1213821
+ },
+ "235017": {
+  "estimated": false,
+  "from": [],
+  "name": "Glittering Vault Shard",
+  "npcs": [
+   228159,
+   231368,
+   227550
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "235626": {
+  "estimated": false,
+  "from": [],
+  "name": "Keys to the Big G",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 1217760
+ },
+ "235658": {
+  "estimated": false,
+  "from": [],
+  "name": "Spring Butterfly",
+  "npcs": [],
+  "one_in": 666,
+  "spell": 1218013
+ },
+ "235793": {
+  "estimated": false,
+  "from": [],
+  "name": "Parrot Cage (Void-Scarred Parrot)",
+  "npcs": [],
+  "one_in": 12,
+  "spell": 1218379
+ },
+ "235794": {
+  "estimated": false,
+  "from": [],
+  "name": "Eye of Chaos",
+  "npcs": [],
+  "one_in": 12,
+  "spell": 1218378
+ },
+ "235795": {
+  "estimated": false,
+  "from": [],
+  "name": "Void Scarred Scorpid",
+  "npcs": [],
+  "one_in": 12,
+  "spell": 1218381
+ },
+ "235797": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Scarred Egg",
+  "npcs": [],
+  "one_in": 12,
+  "spell": 1218383
+ },
+ "236687": {
+  "estimated": false,
+  "from": [],
+  "name": "Explosive Hearthstone",
+  "npcs": [
+   99999
+  ],
+  "one_in": 25,
+  "spell": null
+ },
+ "236768": {
+  "estimated": false,
+  "from": [],
+  "name": "Craboom",
+  "npcs": [
+   226396
+  ],
+  "one_in": 5,
+  "spell": 1220834
+ },
+ "236960": {
+  "estimated": false,
+  "from": [],
+  "name": "Prototype A.S.M.R.",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 1221155
+ },
+ "23720": {
+  "estimated": false,
+  "from": [],
+  "name": "Riding Turtle",
+  "npcs": [
+   81171,
+   85715
+  ],
+  "one_in": 200,
+  "spell": 30174
+ },
+ "239563": {
+  "estimated": false,
+  "from": [],
+  "name": "Void-Scarred Lynx",
+  "npcs": [],
+  "one_in": 125,
+  "spell": 1228865
+ },
+ "242323": {
+  "estimated": false,
+  "from": [],
+  "name": "Cyclonic Runekey",
+  "npcs": [
+   232098
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "242734": {
+  "estimated": false,
+  "from": [],
+  "name": "Curious Slateback",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 1233561
+ },
+ "243061": {
+  "estimated": false,
+  "from": [],
+  "name": "Unbound Star-Eater",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 1234573
+ },
+ "244467": {
+  "estimated": false,
+  "from": [],
+  "name": "Veridian Thorntail",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1237377
+ },
+ "244468": {
+  "estimated": false,
+  "from": [],
+  "name": "Scrappy Thorntail",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1237379
+ },
+ "244907": {
+  "estimated": false,
+  "from": [],
+  "name": "Dread Horrorling",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238270
+ },
+ "244909": {
+  "estimated": false,
+  "from": [],
+  "name": "Impartial Watcher",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238271
+ },
+ "244914": {
+  "estimated": false,
+  "from": [],
+  "name": "Xanthous Siphonmite",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238282
+ },
+ "244915": {
+  "estimated": false,
+  "from": [],
+  "name": "Jimmy",
+  "npcs": [
+   232108
+  ],
+  "one_in": 5,
+  "spell": 1238283
+ },
+ "244916": {
+  "estimated": false,
+  "from": [],
+  "name": "Cyan Siphonmite",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238284
+ },
+ "245212": {
+  "estimated": false,
+  "from": [],
+  "name": "Vitriolic Inchshifter",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238328
+ },
+ "245214": {
+  "estimated": false,
+  "from": [],
+  "name": "Palek'ti, the Mouth of Nothingness",
+  "npcs": [
+   245997
+  ],
+  "one_in": 5,
+  "spell": 1238330
+ },
+ "245215": {
+  "estimated": false,
+  "from": [],
+  "name": "Shimmering Inchshifter",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238331
+ },
+ "245252": {
+  "estimated": false,
+  "from": [],
+  "name": "Graceful Cosmic Ray Pup",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238332
+ },
+ "245253": {
+  "estimated": false,
+  "from": [],
+  "name": "Inquisitive Cosmic Ray Pup",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238335
+ },
+ "245254": {
+  "estimated": false,
+  "from": [],
+  "name": "Duskthief",
+  "npcs": [
+   232111
+  ],
+  "one_in": 5,
+  "spell": 1238336
+ },
+ "245272": {
+  "estimated": false,
+  "from": [],
+  "name": "Heka'Tarnos, Bringer of Discord",
+  "npcs": [
+   245998
+  ],
+  "one_in": 5,
+  "spell": 1238338
+ },
+ "245273": {
+  "estimated": false,
+  "from": [],
+  "name": "Copper Lapbug",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238341
+ },
+ "245274": {
+  "estimated": false,
+  "from": [],
+  "name": "Cerulean Lapbug",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1238346
+ },
+ "246067": {
+  "estimated": false,
+  "from": [],
+  "name": "Pearlescent Krolusk",
+  "npcs": [
+   232195
+  ],
+  "one_in": 10,
+  "spell": 1240632
+ },
+ "246160": {
+  "estimated": false,
+  "from": [],
+  "name": "Sthaarbs's Last Lunch",
+  "npcs": [
+   234845
+  ],
+  "one_in": 10,
+  "spell": 1241076
+ },
+ "246264": {
+  "estimated": false,
+  "from": [],
+  "name": "Inarius' Charger",
+  "npcs": [
+   205490
+  ],
+  "one_in": 50,
+  "spell": 1241429
+ },
+ "246565": {
+  "estimated": false,
+  "from": [],
+  "name": "Cosmic Hearthstone",
+  "npcs": [
+   99999
+  ],
+  "one_in": 25,
+  "spell": null
+ },
+ "246735": {
+  "estimated": false,
+  "from": [],
+  "name": "Rootstalker Grimlynx",
+  "npcs": [
+   248741,
+   249849,
+   249962,
+   250086,
+   250226,
+   250246,
+   250321,
+   250358,
+   249844,
+   249902,
+   249997,
+   250180,
+   250231,
+   250317,
+   250347
+  ],
+  "one_in": 100,
+  "spell": 1243597
+ },
+ "247721": {
+  "estimated": false,
+  "from": [],
+  "name": "The Headless Horseman's Ghoulish Charger",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 1245198
+ },
+ "248761": {
+  "estimated": false,
+  "from": [],
+  "name": "Brewfest Bomber",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 1247662
+ },
+ "252012": {
+  "estimated": false,
+  "from": [],
+  "name": "Vibrant Petalwing",
+  "npcs": [
+   248741,
+   249849,
+   249962,
+   250086,
+   250226,
+   250246,
+   250321,
+   250358,
+   249844,
+   249902,
+   249997,
+   250180,
+   250231,
+   250317,
+   250347,
+   246735
+  ],
+  "one_in": 100,
+  "spell": 1253927
+ },
+ "257085": {
+  "estimated": false,
+  "from": [],
+  "name": "Augmented Stormray",
+  "npcs": [
+   244272,
+   244272,
+   256923,
+   256925,
+   256808,
+   256770,
+   245044,
+   238498,
+   256922,
+   256924,
+   256926,
+   257027,
+   245182,
+   256821
+  ],
+  "one_in": 100,
+  "spell": 1261155
+ },
+ "257147": {
+  "estimated": false,
+  "from": [],
+  "name": "Cobalt Dragonhawk",
+  "npcs": [
+   246332,
+   240129,
+   250719,
+   250754,
+   250841,
+   250826,
+   255302,
+   255348,
+   246633,
+   250582,
+   250683,
+   250876,
+   250780,
+   250806,
+   255329
+  ],
+  "one_in": 100,
+  "spell": 1261302
+ },
+ "257152": {
+  "estimated": false,
+  "from": [],
+  "name": "Amani Sharptalon",
+  "npcs": [
+   242023,
+   242025,
+   245975,
+   242031,
+   242033,
+   242035,
+   242027,
+   245692,
+   242024,
+   242028,
+   247976,
+   242032,
+   242034,
+   242026,
+   245691
+  ],
+  "one_in": 100,
+  "spell": 1261316
+ },
+ "257156": {
+  "estimated": false,
+  "from": [],
+  "name": "Cerulean Hawkstrider",
+  "npcs": [
+   246332,
+   240129,
+   250719,
+   250754,
+   250841,
+   250826,
+   255302,
+   255348,
+   246633,
+   250582,
+   250683,
+   250876,
+   250780,
+   250806,
+   255329
+  ],
+  "one_in": 100,
+  "spell": 1261323
+ },
+ "257176": {
+  "estimated": false,
+  "from": [],
+  "name": "Duskbrute Harrower",
+  "npcs": [],
+  "one_in": 5,
+  "spell": 1261332
+ },
+ "257180": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Contained Stormarion Defender",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1261334
+ },
+ "257200": {
+  "estimated": false,
+  "from": [],
+  "name": "Escaped Witherbark Pango",
+  "npcs": [
+   242023,
+   242025,
+   245975,
+   242031,
+   242033,
+   242035,
+   242027,
+   245692,
+   242024,
+   242028,
+   247976,
+   242032,
+   242034,
+   242026,
+   245691
+  ],
+  "one_in": 100,
+  "spell": 1261351
+ },
+ "260231": {
+  "estimated": false,
+  "from": [],
+  "name": "Lucent Hawkstrider",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": 1265784
+ },
+ "260635": {
+  "estimated": false,
+  "from": [],
+  "name": "Sanguine Harrower",
+  "npcs": [
+   244272,
+   244272,
+   256923,
+   256925,
+   256808,
+   256770,
+   245044,
+   238498,
+   256922,
+   256924,
+   256926,
+   257027,
+   245182,
+   256821
+  ],
+  "one_in": 100,
+  "spell": 1266700
+ },
+ "260916": {
+  "estimated": false,
+  "from": [],
+  "name": "Lost Nether Drake",
+  "npcs": [],
+  "one_in": 2000,
+  "spell": 3363
+ },
+ "260942": {
+  "estimated": false,
+  "from": [],
+  "name": "Bubbly Snapling",
+  "npcs": [
+   256201
+  ],
+  "one_in": 500,
+  "spell": 1267090
+ },
+ "262914": {
+  "estimated": false,
+  "from": [],
+  "name": "Spectral Hawkstrider",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": 1263635
+ },
+ "264672": {
+  "estimated": false,
+  "from": [],
+  "name": "Cosmic Ritual Stone",
+  "npcs": [
+   99999
+  ],
+  "one_in": 25,
+  "spell": null
+ },
+ "264892": {
+  "estimated": false,
+  "from": [],
+  "name": "Nova",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 1272755
+ },
+ "265609": {
+  "estimated": false,
+  "from": [],
+  "name": "Princess Bloodshed",
+  "npcs": [
+   255348
+  ],
+  "one_in": 20,
+  "spell": 1276430
+ },
+ "268728": {
+  "estimated": false,
+  "from": [],
+  "name": "Saptor Salve",
+  "npcs": [
+   99999
+  ],
+  "one_in": 20,
+  "spell": null
+ },
+ "268730": {
+  "estimated": false,
+  "from": [],
+  "name": "Nether-Warped Egg",
+  "npcs": [],
+  "one_in": 2500,
+  "spell": null
+ },
+ "27388": {
+  "estimated": false,
+  "from": [],
+  "name": "Mr. Pinchy",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 33050
+ },
+ "29960": {
+  "estimated": false,
+  "from": [],
+  "name": "Captured Firefly",
+  "npcs": [
+   20197
+  ],
+  "one_in": 1000,
+  "spell": 36034
+ },
+ "30480": {
+  "estimated": false,
+  "from": [],
+  "name": "Fiery Warhorse's Reins",
+  "npcs": [
+   16152
+  ],
+  "one_in": 100,
+  "spell": 36702
+ },
+ "32458": {
+  "estimated": false,
+  "from": [],
+  "name": "Ashes of Al'ar",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 40192
+ },
+ "32768": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Raven Lord",
+  "npcs": [
+   23035
+  ],
+  "one_in": 67,
+  "spell": 41252
+ },
+ "32782": {
+  "estimated": false,
+  "from": [],
+  "name": "Time-Lost Figurine",
+  "npcs": [
+   21838
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "33816": {
+  "estimated": false,
+  "from": [
+   "Cupri",
+   "Old Man Barlo"
+  ],
+  "name": "Toothy's Bucket",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 43697
+ },
+ "33818": {
+  "estimated": false,
+  "from": [
+   "Cupri",
+   "Old Man Barlo"
+  ],
+  "name": "Muckbreaths's Bucket",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 43698
+ },
+ "33977": {
+  "estimated": false,
+  "from": [],
+  "name": "Swift Brewfest Ram",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 43900
+ },
+ "33993": {
+  "estimated": false,
+  "from": [],
+  "name": "Mojo",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 43918
+ },
+ "34425": {
+  "estimated": false,
+  "from": [],
+  "name": "Clockwork Rocket Bot",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 54187
+ },
+ "34484": {
+  "estimated": false,
+  "from": [],
+  "name": "Old Ironjaw",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": null
+ },
+ "34486": {
+  "estimated": false,
+  "from": [],
+  "name": "Old Crafty",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": null
+ },
+ "34535": {
+  "estimated": false,
+  "from": [],
+  "name": "Azure Whelpling",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 10696
+ },
+ "34955": {
+  "estimated": false,
+  "from": [],
+  "name": "Scorched Stone",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 45890
+ },
+ "35275": {
+  "estimated": false,
+  "from": [],
+  "name": "Orb of the Sin'dorei",
+  "npcs": [
+   24664,
+   24744,
+   24723,
+   24560
+  ],
+  "one_in": 60,
+  "spell": null
+ },
+ "35349": {
+  "estimated": false,
+  "from": [
+   "Cupri",
+   "Old Man Barlo"
+  ],
+  "name": "Snarly's Bucket",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 46425
+ },
+ "35350": {
+  "estimated": false,
+  "from": [
+   "Cupri",
+   "Old Man Barlo"
+  ],
+  "name": "Chuck's Bucket",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 46426
+ },
+ "35504": {
+  "estimated": false,
+  "from": [
+   "Kael'thas Sunstrider"
+  ],
+  "name": "Phoenix Hatchling",
+  "npcs": [
+   24664
+  ],
+  "one_in": 11,
+  "spell": 46599
+ },
+ "35513": {
+  "estimated": false,
+  "from": [],
+  "name": "Swift White Hawkstrider",
+  "npcs": [
+   24664
+  ],
+  "one_in": 33,
+  "spell": 46628
+ },
+ "36862": {
+  "estimated": false,
+  "from": [],
+  "name": "Worn Troll Dice",
+  "npcs": [
+   26550,
+   34838,
+   34734,
+   30037,
+   34728,
+   34839,
+   23663,
+   29880,
+   23665,
+   23660,
+   39438,
+   27260,
+   28465,
+   28504,
+   28123,
+   31258,
+   27424,
+   23655,
+   28388,
+   28836
+  ],
+  "one_in": 300,
+  "spell": null
+ },
+ "36863": {
+  "estimated": false,
+  "from": [],
+  "name": "Decahedral Dwarven Dice",
+  "npcs": [
+   27357,
+   32149,
+   29614,
+   27367,
+   27203,
+   29330
+  ],
+  "one_in": 300,
+  "spell": null
+ },
+ "37012": {
+  "estimated": false,
+  "from": [],
+  "name": "The Horseman's Reins",
+  "npcs": [],
+  "one_in": 200,
+  "spell": 48025
+ },
+ "37710": {
+  "estimated": false,
+  "from": [],
+  "name": "Crashin' Thrashin' Racer Controller",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "37828": {
+  "estimated": false,
+  "from": [],
+  "name": "Great Brewfest Kodo",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 49379
+ },
+ "43698": {
+  "estimated": false,
+  "from": [],
+  "name": "Giant Sewer Rat",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 59250
+ },
+ "43952": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Azure Drake",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 59567
+ },
+ "43953": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Blue Drake",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 59568
+ },
+ "43959": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Grand Black War Mammoth",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 61465
+ },
+ "43962": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the White Polar Bear",
+  "npcs": [],
+  "one_in": 33,
+  "spell": 54753
+ },
+ "44083": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Grand Black War Mammoth",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 61467
+ },
+ "44151": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Blue Proto-Drake",
+  "npcs": [
+   26693,
+   174062
+  ],
+  "one_in": 77,
+  "spell": 59996
+ },
+ "44707": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Green Proto-Drake",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 61294
+ },
+ "44719": {
+  "estimated": false,
+  "from": [],
+  "name": "Frenzyheart Brew",
+  "npcs": [],
+  "one_in": 4,
+  "spell": null
+ },
+ "44983": {
+  "estimated": false,
+  "from": [],
+  "name": "Strand Crawler",
+  "npcs": [
+   85715,
+   81171
+  ],
+  "one_in": 1000,
+  "spell": 62561
+ },
+ "45693": {
+  "estimated": false,
+  "from": [],
+  "name": "Mimiron's Head",
+  "npcs": [
+   33288
+  ],
+  "one_in": 100,
+  "spell": 63796
+ },
+ "45984": {
+  "estimated": false,
+  "from": [],
+  "name": "Unusual Compass",
+  "npcs": [],
+  "one_in": 20,
+  "spell": null
+ },
+ "46109": {
+  "estimated": false,
+  "from": [],
+  "name": "Sea Turtle",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 64731
+ },
+ "46709": {
+  "estimated": false,
+  "from": [],
+  "name": "MiniZep Controller",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "48114": {
+  "estimated": false,
+  "from": [],
+  "name": "Deviate Hatchling",
+  "npcs": [
+   3636,
+   3637
+  ],
+  "one_in": 500,
+  "spell": 67414
+ },
+ "48116": {
+  "estimated": false,
+  "from": [],
+  "name": "Gundrak Hatchling",
+  "npcs": [
+   29334
+  ],
+  "one_in": 1000,
+  "spell": 67415
+ },
+ "48126": {
+  "estimated": false,
+  "from": [],
+  "name": "Razzashi Hatchling",
+  "npcs": [],
+  "one_in": 5000,
+  "spell": 67420
+ },
+ "49636": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Onyxian Drake",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 69395
+ },
+ "50250": {
+  "estimated": false,
+  "from": [],
+  "name": "Big Love Rocket",
+  "npcs": [],
+  "one_in": 3333,
+  "spell": 71342
+ },
+ "50446": {
+  "estimated": false,
+  "from": [],
+  "name": "Toxic Wasteling",
+  "npcs": [],
+  "one_in": 14,
+  "spell": 71840
+ },
+ "50471": {
+  "estimated": false,
+  "from": [],
+  "name": "The Heartbreaker",
+  "npcs": [],
+  "one_in": 83,
+  "spell": null
+ },
+ "50818": {
+  "estimated": false,
+  "from": [],
+  "name": "Invincible's Reins",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 72286
+ },
+ "53641": {
+  "estimated": false,
+  "from": [
+   "Ahune"
+  ],
+  "name": "Ice Chip",
+  "npcs": [],
+  "one_in": 25,
+  "spell": 74932
+ },
+ "60954": {
+  "estimated": false,
+  "from": [],
+  "name": "Fossilized Raptor",
+  "npcs": [],
+  "one_in": 30,
+  "spell": 84751
+ },
+ "63040": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Drake of the North Wind",
+  "npcs": [
+   43873
+  ],
+  "one_in": 100,
+  "spell": 88742
+ },
+ "63041": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Drake of the South Wind",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 88744
+ },
+ "63043": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Vitreous Stone Drake",
+  "npcs": [
+   43214
+  ],
+  "one_in": 100,
+  "spell": 88746
+ },
+ "63046": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Grey Riding Camel",
+  "npcs": [],
+  "one_in": 20,
+  "spell": 88750
+ },
+ "63269": {
+  "estimated": false,
+  "from": [],
+  "name": "Loaded Gnomish Dice",
+  "npcs": [
+   45174,
+   49124,
+   47595,
+   46320,
+   48629
+  ],
+  "one_in": 300,
+  "spell": null
+ },
+ "64403": {
+  "estimated": false,
+  "from": [],
+  "name": "Fox Kit",
+  "npcs": [
+   47676
+  ],
+  "one_in": 1000,
+  "spell": 90637
+ },
+ "64883": {
+  "estimated": false,
+  "from": [],
+  "name": "Scepter of Azj'Aqir",
+  "npcs": [],
+  "one_in": 500,
+  "spell": 92155
+ },
+ "66076": {
+  "estimated": false,
+  "from": [],
+  "name": "Mr. Grubbs",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 93739
+ },
+ "67282": {
+  "estimated": false,
+  "from": [
+   "Obtained by mining Elementium Vein"
+  ],
+  "name": "Elementium Geode",
+  "npcs": [],
+  "one_in": 2000,
+  "spell": 93838
+ },
+ "68823": {
+  "estimated": false,
+  "from": [],
+  "name": "Armored Razzashi Raptor",
+  "npcs": [
+   52151
+  ],
+  "one_in": 100,
+  "spell": 96491
+ },
+ "68824": {
+  "estimated": false,
+  "from": [],
+  "name": "Swift Zulian Panther",
+  "npcs": [
+   52059
+  ],
+  "one_in": 100,
+  "spell": 96499
+ },
+ "69224": {
+  "estimated": false,
+  "from": [],
+  "name": "Smoldering Egg of Millagazor",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 97493
+ },
+ "71665": {
+  "estimated": false,
+  "from": [],
+  "name": "Flametalon of Alysrazor",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 101542
+ },
+ "73797": {
+  "estimated": false,
+  "from": [],
+  "name": "Lump of Coal",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 103125
+ },
+ "73953": {
+  "estimated": false,
+  "from": [],
+  "name": "Sea Pony",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 103588
+ },
+ "76755": {
+  "estimated": false,
+  "from": [],
+  "name": "Tyrael's Charger",
+  "npcs": [
+   205490
+  ],
+  "one_in": 100,
+  "spell": 107203
+ },
+ "77067": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Blazing Drake",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 107842
+ },
+ "77069": {
+  "estimated": false,
+  "from": [],
+  "name": "Life-Binder's Handmaiden",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 107845
+ },
+ "78919": {
+  "estimated": false,
+  "from": [],
+  "name": "Experiment 12-B",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 110039
+ },
+ "80008": {
+  "estimated": false,
+  "from": [],
+  "name": "Darkmoon Rabbit",
+  "npcs": [
+   58336
+  ],
+  "one_in": 10,
+  "spell": 114090
+ },
+ "8491": {
+  "estimated": false,
+  "from": [],
+  "name": "Cat Carrier (Black Tabby)",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 10675
+ },
+ "8492": {
+  "estimated": false,
+  "from": [],
+  "name": "Parrot Cage (Green Wing Macaw)",
+  "npcs": [
+   48522
+  ],
+  "one_in": 33,
+  "spell": 10683
+ },
+ "8494": {
+  "estimated": false,
+  "from": [],
+  "name": "Parrot Cage (Hyacinth Macaw)",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 10682
+ },
+ "8498": {
+  "estimated": false,
+  "from": [],
+  "name": "Emerald Whelpling",
+  "npcs": [
+   740,
+   741,
+   39384
+  ],
+  "one_in": 1000,
+  "spell": 10698
+ },
+ "8499": {
+  "estimated": false,
+  "from": [],
+  "name": "Tiny Crimson Whelpling",
+  "npcs": [],
+  "one_in": 10000,
+  "spell": 10697
+ },
+ "86547": {
+  "estimated": false,
+  "from": [],
+  "name": "Skyshard",
+  "npcs": [],
+  "one_in": 1000,
+  "spell": 90655
+ },
+ "86563": {
+  "estimated": false,
+  "from": [],
+  "name": "Hollow Reed",
+  "npcs": [
+   50776
+  ],
+  "one_in": 10,
+  "spell": 126249
+ },
+ "86564": {
+  "estimated": false,
+  "from": [],
+  "name": "Imbued Jade Fragment",
+  "npcs": [
+   50347
+  ],
+  "one_in": 10,
+  "spell": 126251
+ },
+ "86565": {
+  "estimated": false,
+  "from": [
+   "Blackhoof",
+   "Blackhoof",
+   "Blackhoof",
+   "Blackhoof"
+  ],
+  "name": "Battle Horn",
+  "npcs": [
+   51059
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "86568": {
+  "estimated": false,
+  "from": [],
+  "name": "Mr. Smite's Brass Compass",
+  "npcs": [
+   50336
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "86571": {
+  "estimated": false,
+  "from": [],
+  "name": "Kang's Bindstone",
+  "npcs": [
+   50349
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "86573": {
+  "estimated": false,
+  "from": [
+   "Havak"
+  ],
+  "name": "Shard of Archstone",
+  "npcs": [
+   50354
+  ],
+  "one_in": 6,
+  "spell": null
+ },
+ "86575": {
+  "estimated": false,
+  "from": [],
+  "name": "Chalice of Secrets",
+  "npcs": [
+   50359
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "86578": {
+  "estimated": false,
+  "from": [
+   "Gar'lok",
+   "Gar'lok",
+   "Gar'lok"
+  ],
+  "name": "Eternal Warrior's Sigil",
+  "npcs": [
+   50739
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86581": {
+  "estimated": false,
+  "from": [],
+  "name": "Farwater Conch",
+  "npcs": [
+   50769
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86582": {
+  "estimated": false,
+  "from": [
+   "Sahn Tidehunter"
+  ],
+  "name": "Aqua Jewel",
+  "npcs": [
+   50780
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "86583": {
+  "estimated": false,
+  "from": [
+   "Salyin Warscout",
+   "Salyin Warscout",
+   "Salyin Warscout"
+  ],
+  "name": "Salyin Battle Banner",
+  "npcs": [
+   50783
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86584": {
+  "estimated": false,
+  "from": [
+   "Nessos the Oracle"
+  ],
+  "name": "Hardened Shell",
+  "npcs": [
+   50789
+  ],
+  "one_in": 6,
+  "spell": null
+ },
+ "86586": {
+  "estimated": false,
+  "from": [],
+  "name": "Panflute of Pandaria",
+  "npcs": [
+   50806
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86588": {
+  "estimated": false,
+  "from": [],
+  "name": "Pandaren Firework Launcher",
+  "npcs": [
+   50817
+  ],
+  "one_in": 10,
+  "spell": null
+ },
+ "86589": {
+  "estimated": false,
+  "from": [],
+  "name": "Ai-Li's Skymirror",
+  "npcs": [
+   50821
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86590": {
+  "estimated": false,
+  "from": [
+   "Ai-Ran the Shifting Cloud"
+  ],
+  "name": "Essence of the Breeze",
+  "npcs": [
+   50822
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "86593": {
+  "estimated": false,
+  "from": [],
+  "name": "Hozen Beach Ball",
+  "npcs": [
+   50836
+  ],
+  "one_in": 7,
+  "spell": null
+ },
+ "86594": {
+  "estimated": false,
+  "from": [
+   "Major Nanners"
+  ],
+  "name": "Helpful Wikky's Whistle",
+  "npcs": [
+   50840
+  ],
+  "one_in": 5,
+  "spell": null
+ },
+ "87771": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Heavenly Onyx Cloud Serpent",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 127158
+ },
+ "87777": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Astral Cloud Serpent",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 127170
+ },
+ "87791": {
+  "estimated": false,
+  "from": [
+   "Fished anywhere in Draenor (except your garrison) with the help of Nat Pagle"
+  ],
+  "name": "Reins of the Crimson Water Strider",
+  "npcs": [],
+  "one_in": 100,
+  "spell": 127271
+ },
+ "89139": {
+  "estimated": false,
+  "from": [],
+  "name": "Chain Pet Leash",
+  "npcs": [],
+  "one_in": 2,
+  "spell": null
+ },
+ "89587": {
+  "estimated": false,
+  "from": [],
+  "name": "Porcupette",
+  "npcs": [],
+  "one_in": 250,
+  "spell": 118414
+ },
+ "89783": {
+  "estimated": false,
+  "from": [],
+  "name": "Son of Galleon's Saddle",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 130965
+ },
+ "90883": {
+  "estimated": false,
+  "from": [],
+  "name": "The Pigskin",
+  "npcs": [],
+  "one_in": 50,
+  "spell": null
+ },
+ "90888": {
+  "estimated": false,
+  "from": [],
+  "name": "Special Edition Foot Ball",
+  "npcs": [],
+  "one_in": 75,
+  "spell": null
+ },
+ "90900": {
+  "estimated": false,
+  "from": [],
+  "name": "Imperial Moth",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 132574
+ },
+ "90902": {
+  "estimated": false,
+  "from": [],
+  "name": "Imperial Silkworm",
+  "npcs": [],
+  "one_in": 10,
+  "spell": 132580
+ },
+ "91040": {
+  "estimated": false,
+  "from": [
+   "Jeremy Feasel"
+  ],
+  "name": "Darkmoon Eye",
+  "npcs": [],
+  "one_in": 50,
+  "spell": 132789
+ },
+ "93029": {
+  "estimated": false,
+  "from": [],
+  "name": "Gluth's Bone",
+  "npcs": [
+   15932
+  ],
+  "one_in": 10,
+  "spell": 135257
+ },
+ "93030": {
+  "estimated": false,
+  "from": [],
+  "name": "Dusty Clutch of Eggs",
+  "npcs": [
+   15952
+  ],
+  "one_in": 10,
+  "spell": 135254
+ },
+ "93032": {
+  "estimated": false,
+  "from": [],
+  "name": "Blighted Spore",
+  "npcs": [
+   16011
+  ],
+  "one_in": 10,
+  "spell": 135255
+ },
+ "93033": {
+  "estimated": false,
+  "from": [],
+  "name": "Mark of Flame",
+  "npcs": [
+   12098
+  ],
+  "one_in": 10,
+  "spell": 135258
+ },
+ "93034": {
+  "estimated": false,
+  "from": [],
+  "name": "Blazing Rune",
+  "npcs": [
+   11982
+  ],
+  "one_in": 10,
+  "spell": 135259
+ },
+ "93035": {
+  "estimated": false,
+  "from": [],
+  "name": "Core of Hardened Ash",
+  "npcs": [
+   11988
+  ],
+  "one_in": 10,
+  "spell": 135261
+ },
+ "93036": {
+  "estimated": false,
+  "from": [],
+  "name": "Unscathed Egg",
+  "npcs": [
+   12435
+  ],
+  "one_in": 10,
+  "spell": 135263
+ },
+ "93037": {
+  "estimated": false,
+  "from": [],
+  "name": "Blackwing Banner",
+  "npcs": [
+   12017
+  ],
+  "one_in": 10,
+  "spell": 135265
+ },
+ "93038": {
+  "estimated": false,
+  "from": [],
+  "name": "Whistle of Chromatic Bone",
+  "npcs": [
+   14020
+  ],
+  "one_in": 10,
+  "spell": 135264
+ },
+ "93039": {
+  "estimated": false,
+  "from": [],
+  "name": "Viscidus Globule",
+  "npcs": [
+   15299
+  ],
+  "one_in": 10,
+  "spell": 135266
+ },
+ "93040": {
+  "estimated": false,
+  "from": [],
+  "name": "Anubisath Idol",
+  "npcs": [
+   15276
+  ],
+  "one_in": 10,
+  "spell": 135267
+ },
+ "93041": {
+  "estimated": false,
+  "from": [],
+  "name": "Jewel of Maddening Whispers",
+  "npcs": [
+   15263
+  ],
+  "one_in": 10,
+  "spell": 135268
+ },
+ "93666": {
+  "estimated": false,
+  "from": [],
+  "name": "Spawn of Horridon",
+  "npcs": [
+   99999
+  ],
+  "one_in": 66,
+  "spell": 136471
+ },
+ "94124": {
+  "estimated": false,
+  "from": [
+   "Haywire Sunreaver Construct"
+  ],
+  "name": "Sunreaver Micro-Sentry",
+  "npcs": [
+   50358
+  ],
+  "one_in": 5,
+  "spell": 138082
+ },
+ "94125": {
+  "estimated": false,
+  "from": [],
+  "name": "Living Sandling",
+  "npcs": [
+   69944
+  ],
+  "one_in": 200,
+  "spell": 137977
+ },
+ "94126": {
+  "estimated": false,
+  "from": [],
+  "name": "Zandalari Kneebiter",
+  "npcs": [
+   69925
+  ],
+  "one_in": 50,
+  "spell": 138087
+ },
+ "94152": {
+  "estimated": false,
+  "from": [],
+  "name": "Son of Animus",
+  "npcs": [
+   99999
+  ],
+  "one_in": 200,
+  "spell": 138161
+ },
+ "94208": {
+  "estimated": false,
+  "from": [],
+  "name": "Sunfur Panda",
+  "npcs": [],
+  "one_in": 7,
+  "spell": 138380
+ },
+ "94209": {
+  "estimated": false,
+  "from": [],
+  "name": "Snowy Panda",
+  "npcs": [],
+  "one_in": 7,
+  "spell": 138381
+ },
+ "94210": {
+  "estimated": false,
+  "from": [],
+  "name": "Mountain Panda",
+  "npcs": [],
+  "one_in": 7,
+  "spell": 138382
+ },
+ "94228": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Cobalt Primordial Direhorn",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 138423
+ },
+ "94229": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Slate Primordial Direhorn",
+  "npcs": [
+   69769
+  ],
+  "one_in": 20,
+  "spell": 138425
+ },
+ "94230": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Amber Primordial Direhorn",
+  "npcs": [
+   69841
+  ],
+  "one_in": 20,
+  "spell": 138424
+ },
+ "94231": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Jade Primordial Direhorn",
+  "npcs": [
+   69842
+  ],
+  "one_in": 20,
+  "spell": 138426
+ },
+ "94290": {
+  "estimated": false,
+  "from": [
+   "Dropped from dinosaurs on Isle of Giants"
+  ],
+  "name": "Reins of the Bone-White Primal Raptor",
+  "npcs": [],
+  "one_in": 9999,
+  "spell": 138640
+ },
+ "94295": {
+  "estimated": false,
+  "from": [],
+  "name": "Primal Egg",
+  "npcs": [
+   69983,
+   69991,
+   69992,
+   69993,
+   70004,
+   70005,
+   70006,
+   70007,
+   70008,
+   70009,
+   70010,
+   70011,
+   70012,
+   70013,
+   70014,
+   70015,
+   70016,
+   70017,
+   70018,
+   70019,
+   70020,
+   70021
+  ],
+  "one_in": 100,
+  "spell": null
+ },
+ "94573": {
+  "estimated": false,
+  "from": [],
+  "name": "Direhorn Runt",
+  "npcs": [
+   70019,
+   69983,
+   70016,
+   70017,
+   70018,
+   69992,
+   70015,
+   70012,
+   70013,
+   70014
+  ],
+  "one_in": 250,
+  "spell": 139153
+ },
+ "94574": {
+  "estimated": false,
+  "from": [],
+  "name": "Pygmy Direhorn",
+  "npcs": [
+   99999
+  ],
+  "one_in": 50,
+  "spell": 138825
+ },
+ "94835": {
+  "estimated": false,
+  "from": [],
+  "name": "Ji-Kun Hatchling",
+  "npcs": [
+   99999
+  ],
+  "one_in": 200,
+  "spell": 139148
+ },
+ "95057": {
+  "estimated": false,
+  "from": [],
+  "name": "Reins of the Thundering Cobalt Cloud Serpent",
+  "npcs": [
+   99999
+  ],
+  "one_in": 100,
+  "spell": 139442
+ },
+ "95059": {
+  "estimated": false,
+  "from": [],
+  "name": "Clutch of Ji-Kun",
+  "npcs": [
+   99999
+  ],
+  "one_in": 50,
+  "spell": 139448
+ },
+ "95422": {
+  "estimated": false,
+  "from": [],
+  "name": "Zandalari Anklerender",
+  "npcs": [
+   69925
+  ],
+  "one_in": 50,
+  "spell": 139932
+ },
+ "95423": {
+  "estimated": false,
+  "from": [],
+  "name": "Zandalari Footslasher",
+  "npcs": [
+   69925
+  ],
+  "one_in": 50,
+  "spell": 139933
+ },
+ "95424": {
+  "estimated": false,
+  "from": [],
+  "name": "Zandalari Toenibbler",
+  "npcs": [
+   69925
+  ],
+  "one_in": 50,
+  "spell": 139934
+ },
+ "97548": {
+  "estimated": false,
+  "from": [],
+  "name": "Spiky Collar",
+  "npcs": [
+   17521
+  ],
+  "one_in": 14,
+  "spell": 141433
+ },
+ "97549": {
+  "estimated": false,
+  "from": [],
+  "name": "Instant Arcane Sanctum Security Kit",
+  "npcs": [
+   15691
+  ],
+  "one_in": 33,
+  "spell": 141434
+ },
+ "97550": {
+  "estimated": false,
+  "from": [],
+  "name": "Netherspace Portal-Stone",
+  "npcs": [
+   15690
+  ],
+  "one_in": 33,
+  "spell": 141435
+ },
+ "97551": {
+  "estimated": false,
+  "from": [],
+  "name": "Satyr Charm",
+  "npcs": [
+   15688
+  ],
+  "one_in": 33,
+  "spell": 141451
+ },
+ "97552": {
+  "estimated": false,
+  "from": [],
+  "name": "Shell of Tide-Calling",
+  "npcs": [
+   21213
+  ],
+  "one_in": 20,
+  "spell": 141436
+ },
+ "97553": {
+  "estimated": false,
+  "from": [],
+  "name": "Tainted Core",
+  "npcs": [
+   21216
+  ],
+  "one_in": 25,
+  "spell": 141437
+ },
+ "97554": {
+  "estimated": false,
+  "from": [],
+  "name": "Dripping Strider Egg",
+  "npcs": [
+   21212
+  ],
+  "one_in": 250,
+  "spell": 141446
+ },
+ "97555": {
+  "estimated": false,
+  "from": [],
+  "name": "Tiny Fel Engine Key",
+  "npcs": [
+   19516
+  ],
+  "one_in": 25,
+  "spell": 141447
+ },
+ "97556": {
+  "estimated": false,
+  "from": [],
+  "name": "Crystal of the Void",
+  "npcs": [
+   18805
+  ],
+  "one_in": 20,
+  "spell": 141448
+ },
+ "97557": {
+  "estimated": false,
+  "from": [],
+  "name": "Brilliant Phoenix Hawk Feather",
+  "npcs": [
+   19514
+  ],
+  "one_in": 33,
+  "spell": 141449
+ },
+ "97821": {
+  "estimated": false,
+  "from": [],
+  "name": "Gahz'rooki's Summoning Stone",
+  "npcs": [
+   71012,
+   73590
+  ],
+  "one_in": 1000,
+  "spell": 141789
+ },
+ "97959": {
+  "estimated": false,
+  "from": [],
+  "name": "Quivering Blob",
+  "npcs": [
+   99999
+  ],
+  "one_in": 50,
+  "spell": 142028
+ },
+ "97960": {
+  "estimated": false,
+  "from": [],
+  "name": "Dark Quivering Blob",
+  "npcs": [
+   99999
+  ],
+  "one_in": 50,
+  "spell": 142029
+ },
+ "97961": {
+  "estimated": false,
+  "from": [],
+  "name": "Half-Empty Food Container",
+  "npcs": [
+   69251
+  ],
+  "one_in": 750,
+  "spell": 142030
+ },
+ "98136": {
+  "estimated": false,
+  "from": [],
+  "name": "Gastropod Shell",
+  "npcs": [
+   68220
+  ],
+  "one_in": 150,
+  "spell": null
+ }
+}

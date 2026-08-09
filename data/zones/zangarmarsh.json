@@ -1,0 +1,85 @@
+{
+  "zone": "Zangarmarsh",
+  "map": 102,
+  "expansion": "The Burning Crusade",
+  "summary": "Zangarmarsh is a luminous swamp west of Hellfire Peninsula, roofed by mushrooms the size of trees and lit from below by its own phosphorescent flora. It belongs to the sporeling colony of Sporeggar, three tribes of Lost Ones, and the ogres and naga taking pieces of it — Lady Vashj's followers drained lake after lake into the Coilfang Reservoir and still hold ground here. The Cenarion Expedition set up at the Cenarion Refuge to work out what was killing the marsh, and the Alliance and Horde each keep a foothold at Telredor and Zabra'jin.",
+  "history": "The marsh is what is left of the Zangar Sea, grown from the rotting sporemound Zang; the fungal bloom that made it spread inland from Zangarra. When Shattrath was given up as lost, Velen brought the civilians here to Telredor, a shrine on an island the artificers hid behind a lattice of arcanite crystals. Survivors kept arriving, and those the orcs' red pox had deformed into Broken were driven back out by their own people; the Lost One tribes descend from them. Fel magic dried the sea into swamp. Lady Vashj settled it much later, enslaved the Wastewalker Broken and built pumping machines on every major lake to drain the water into Coilfang Reservoir, meaning to hold Outland by holding its water. The Alliance went in after her, struck the chains off the Broken and killed her there.",
+  "factions": [
+    "Cenarion Expedition",
+    "Sporeggar",
+    "Lady Vashj's naga",
+    "Ango'rosh ogres",
+    "Daggerfen, Feralfen and Umbrafen Lost Ones",
+    "Draenei of Telredor and Orebor Harborage",
+    "Darkspear trolls of Zabra'jin"
+  ],
+  "notable": [
+    {
+      "name": "Coilfang Reservoir",
+      "what": "The naga's artificial cavern under Serpent Lake — a pumping station with Vashj's Serpentshrine Cavern at the bottom of it, and the marsh's water inside"
+    },
+    {
+      "name": "Telredor",
+      "what": "A draenei town built into a hollowed mushroom, once a quiet shrine and then the refuge Velen's survivors hid in while the orcs hunted them"
+    },
+    {
+      "name": "Sporeggar",
+      "what": "The sporelings' village, and the one faction in Outland you earn standing with by feeding mushrooms to fungal people"
+    },
+    {
+      "name": "The Dead Mire",
+      "what": "The northeastern lakebed the naga pumped completely dry — grey mud, dead mushrooms and nothing living"
+    },
+    {
+      "name": "Cenarion Refuge",
+      "what": "The druids' base, from which the Cenarion Expedition grew into its own faction separate from the Circle back home"
+    },
+    {
+      "name": "Ango'rosh Stronghold",
+      "what": "An ogre fort on a floating island in the northwest, reached across a fallen mushroom"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zangarmarsh",
+      "url": "https://warcraft.wiki.gg/wiki/Zangarmarsh"
+    },
+    {
+      "title": "Coilfang Reservoir",
+      "url": "https://warcraft.wiki.gg/wiki/Coilfang_Reservoir"
+    },
+    {
+      "title": "Cenarion Refuge",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Refuge"
+    },
+    {
+      "title": "Cenarion Expedition",
+      "url": "https://warcraft.wiki.gg/wiki/Cenarion_Expedition"
+    },
+    {
+      "title": "Ango'rosh Stronghold",
+      "url": "https://warcraft.wiki.gg/wiki/Ango%27rosh_Stronghold"
+    },
+    {
+      "title": "Anchorite Ahuurn",
+      "url": "https://warcraft.wiki.gg/wiki/Anchorite_Ahuurn"
+    },
+    {
+      "title": "Daggerfen tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Daggerfen_tribe"
+    },
+    {
+      "title": "Telredor",
+      "url": "https://warcraft.wiki.gg/wiki/Telredor"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

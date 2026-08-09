@@ -1,0 +1,113 @@
+# armory-server, for Synology Container Manager.
+#
+# Container Manager → Project → Create, point it at the folder holding this
+# file and the `.env` beside it. See server/README.md for the whole path.
+#
+# **Do not type this into Container Manager's compose editor.** It carries the
+# previous line's indentation onto the next one and adds what you type to it,
+# so six lines in everything is nested under everything else. Upload the file.
+# The `YAML Configurations` tab on an existing project is read-only.
+#
+# Values come from `.env` in the same folder. Nothing secret is in this file,
+# which is why this one is in git and that one is not.
+
+services:
+  armory-server:
+    image: ${ARMORY_SERVER_IMAGE:?set ARMORY_SERVER_IMAGE in .env to the tag deploy-server.sh pushed}
+    container_name: armory-server
+    restart: unless-stopped
+
+    # Root, and this was arrived at the hard way on this NAS.
+    #
+    # The image runs as uid 10001, which is right on an ordinary Docker host
+    # where a chown on the mount is all it takes. It does not work on a
+    # Synology: /volume1 carries Synology's own ACLs, which override POSIX
+    # ownership, and a container uid that is not a DSM user cannot be granted
+    # access through them. The chown reports success and the writes still fail.
+    #
+    # planner-server keeps this line as insurance against a mount it does not
+    # have yet. This one has the mount, and the whole account is in it — so
+    # here it is the difference between a server and a container that starts
+    # green and answers `Permission denied (os error 13)` to every push.
+    user: "0:0"
+
+    environment:
+      # No defaults on purpose: compose refuses to start without a token rather
+      # than inventing one, which is the same posture the binary takes.
+      ARMORY_TOKEN: ${ARMORY_TOKEN:?set ARMORY_TOKEN in .env, 32 characters or more}
+      ARMORY_ADDR: 0.0.0.0:8084
+      # Matches the mount below. The binary defaults to the same path, so this
+      # is written out to keep the two facts next to each other — changing the
+      # mount and not this one gives an empty account on a fresh file, silently.
+      ARMORY_DATA: /var/lib/armory
+
+    volumes:
+      # The account itself: one SQLite file, plus the `-wal` and `-shm` beside
+      # it, because `Store::migrate` sets `journal_mode = WAL`.
+      #
+      # **The source folder must exist before this starts.** Synology's Docker
+      # refuses to create a missing bind-mount source where vanilla Docker
+      # would, and says `Bind mount failed: … does not exist`. Make it in File
+      # Station: Create → Create folder.
+      #
+      # One level down from the project folder on purpose: the compose file and
+      # the `.env` holding the token stay outside the mount, so nothing inside
+      # the container can see the secret it was started with.
+      - /volume1/docker/armory-server/data:/var/lib/armory
+
+    ports:
+      # Every interface, which on a home LAN means every device on it — and the
+      # token then crosses that LAN in clear text, because this speaks plain
+      # HTTP.
+      #
+      # The obvious fix is to bind the NAS's Tailscale address so the traffic
+      # stays inside WireGuard. **It does not work on this NAS, and the failure
+      # is worth writing down:** Tailscale runs there as a DSM package in
+      # userspace mode, so 100.x.y.z is not assigned to any local interface and
+      # Docker refuses the container with
+      #
+      #     Error starting userland proxy: listen tcp4 100.101.102.103:8084:
+      #     bind: cannot assign requested address
+      #
+      # brain-server on 8082 and planner-server on 8083 are bound the same way
+      # for the same reason. What keeps this acceptable is that nothing is
+      # forwarded on the router, so "every interface" means the LAN and the
+      # tailnet and nowhere else. Set ARMORY_BIND in .env on a host where the
+      # tailnet address is real.
+      #
+      # 8084 because 5002 is DSM, 5050 the registry, 8081 llama-embed, 8082
+      # brain-server and 8083 planner-server.
+      - "${ARMORY_BIND:-0.0.0.0}:8084:8084"
+
+    # Read-only everywhere except the mount, and for this container that is a
+    # claim worth having checked rather than assumed. It writes the database,
+    # the WAL and the shared-memory file, all of them inside /var/lib/armory;
+    # it opens no other file, logs to stdout, and holds no cache. The deploy
+    # script starts the built image with --read-only for exactly this reason.
+    #
+    # A service that needs to write somewhere else fails here in a way that
+    # looks like the Synology ACL problem and is not, which is the confusion
+    # this comment exists to head off.
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+
+    healthcheck:
+      # The image carries no curl, so the binary asks itself. /health needs no
+      # token, which is what lets this work without handing the secret to
+      # Docker as well.
+      test: ["CMD", "/usr/local/bin/armory-server", "--health"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
+
+    # No `logging:` block. Naming a driver here makes Container Manager's Log
+    # tab show nothing at all, and that tab is unreliable enough already —
+    # when a container will not start, go to `sudo docker logs` over SSH
+    # rather than believing a blank panel.
+
+# No `networks:` block. There is nothing to join: the account is a file on the
+# mount, not a database in another project, so this container talks to nothing
+# on the NAS and only the published port matters. planner-server declares
+# `postgres_default` because it has a database to reach.

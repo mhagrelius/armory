@@ -1,0 +1,80 @@
+{
+  "zone": "Shattrath City",
+  "map": 111,
+  "expansion": "The Burning Crusade",
+  "summary": "Shattrath is the one place in Outland that is not a battlefield: a terraced sanctuary in northwestern Terokkar Forest ruled by the naaru of the Sha'tar from the Terrace of Light, open to Alliance and Horde alike on the condition that neither brings the war inside. Two orders share it badly — the draenei priesthood of the Aldor on one rise, the blood elf defectors of the Scryers on the other, each courting A'dal's favour at the other's expense. Below them the Lower City holds everyone the broken world displaced.",
+  "history": "The draenei founded it roughly two centuries before the Dark Portal on the wreck of Goria, the ogre capital the elements swallowed at the orcs' asking; the ruins lay unclaimed because nobody native would go near them. Exarch Hataaru designed what replaced them, the finest thing the draenei built on Draenor. A century later Imperator Hok'lon came to take the site back and lost his generals and his life to Akama, Maraad and Nobundo; no ogre tried the walls again. Then the orcs came. With Karabor lost the draenei chose to stand here as a decoy; Velen blessed everyone who stayed and led the civilians out to Telredor. Plague bombs came over the walls and infernals fell inside them, and the ruins sat dark for years until Aldor priests crept back into a temple and their rites drew A'dal in. Under the Sha'tar the refuge became a base as well: the naaru Xi'ri led its forces into Shadowmoon Valley and into the storming of the Black Temple, and when Kael'thas began drawing Kil'jaeden through the Sunwell, A'dal's answer was to put the Aldor and the Scryers — two orders that will not willingly share a stair — into a single army. That was the Shattered Sun Offensive, and it sailed from here to Quel'Danas to take the island back.",
+  "factions": [
+    "Sha'tar",
+    "Aldor",
+    "Scryers",
+    "Lower City refugees — arakkoa, sporelings, Broken, ethereals and ogres",
+    "Alliance",
+    "Horde"
+  ],
+  "notable": [
+    {
+      "name": "Terrace of Light",
+      "what": "A'dal's court at the top of the city, and the room every campaign in Outland was argued out in"
+    },
+    {
+      "name": "Aldor Rise",
+      "what": "The draenei priesthood's quarter, an order older than the city that was reduced to a handful of survivors and came back to the ruins anyway"
+    },
+    {
+      "name": "Scryer's Tier",
+      "what": "The blood elves who were sent to take Shattrath for Illidan, were shown something by A'dal, and stayed as its defenders instead"
+    },
+    {
+      "name": "Lower City",
+      "what": "The bowl beneath everything else, where the refugees of a dozen peoples and as many faiths live on top of one another"
+    },
+    {
+      "name": "Goria",
+      "what": "The ogre capital that stood here first, and the seat of the Gorian Empire until the orcs' shaman asked the elements to bury it; it lay unclaimed for two hundred years after"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shattrath City",
+      "url": "https://warcraft.wiki.gg/wiki/Shattrath_City"
+    },
+    {
+      "title": "Sha'tar",
+      "url": "https://warcraft.wiki.gg/wiki/Sha%27tar"
+    },
+    {
+      "title": "Aldor",
+      "url": "https://warcraft.wiki.gg/wiki/Aldor"
+    },
+    {
+      "title": "Scryers",
+      "url": "https://warcraft.wiki.gg/wiki/Scryers"
+    },
+    {
+      "title": "Lower City",
+      "url": "https://warcraft.wiki.gg/wiki/Lower_City"
+    },
+    {
+      "title": "Velen",
+      "url": "https://warcraft.wiki.gg/wiki/Velen"
+    },
+    {
+      "title": "Goria",
+      "url": "https://warcraft.wiki.gg/wiki/Goria"
+    },
+    {
+      "title": "Isle of Quel'Danas",
+      "url": "https://warcraft.wiki.gg/wiki/Isle_of_Quel%27Danas"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

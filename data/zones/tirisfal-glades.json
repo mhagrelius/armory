@@ -1,0 +1,78 @@
+{
+  "zone": "Tirisfal Glades",
+  "map": 18,
+  "expansion": "Classic",
+  "summary": "Tirisfal Glades is the Forsaken's home ground on the northern coast of Lordaeron, wooded hills under a permanently green-tinted sky where the plague never really left the soil. Brill is the town, Deathknell the village the newly risen wake up in, and the Ruins of Lordaeron stand over the Undercity, which has been uninhabitable since the Battle for Lordaeron. The Scarlet Crusade keeps its monastery and outposts here, Scourge remnants hold Agamand Mills and the abandoned farms, and the whole glade is named for a titan keeper who died in it.",
+  "history": "The name is vrykul for Tyr's Fall. The keeper died here fighting the C'Thrax Zakajz, and both were buried where they fell beneath his silver hand; vrykul settled to guard the tomb, their cursed children grew into something else, and humanity began in this glade. Dath'Remar's exiled Highborne landed here next, but whatever lies under the ground began driving them mad and they moved north to found Quel'Thalas instead. Thoradin won the Tirisfal tribe by pilgrimage rather than force, and the country they held was later named Lordaeron for their general. The Second War arrived without warning: Doomhammer came out of Alterac's passes into these glades and had the capital under bombardment before the Alliance knew he had crossed. The plague took all of it during the Third War, and Sylvanas's free-willed dead took what the Scourge left behind. The Alliance came for the capital at the opening of the Fourth War, put Brill down to its foundations and drove Sylvanas out of the throne room; she answered by venting blight over the ground between the town and the ruins, which is why nothing grows on it and why the Undercity is shut. The Forsaken hold the glades again, without their city.",
+  "factions": [
+    "Forsaken and the Desolate Council",
+    "Horde",
+    "Scarlet Crusade",
+    "Scourge",
+    "Rotbrain undead",
+    "Rot Hide gnolls",
+    "Vile Fin murlocs",
+    "Alliance"
+  ],
+  "notable": [
+    {
+      "name": "Ruins of Lordaeron",
+      "what": "The shell of the capital, with the Undercity beneath it — the Forsaken's own city, and no longer liveable"
+    },
+    {
+      "name": "Brill",
+      "what": "The small town every new Forsaken is sent to, and the practical centre of the glade"
+    },
+    {
+      "name": "Deathknell",
+      "what": "The guarded valley village where the Forsaken get up, short of everything including gold"
+    },
+    {
+      "name": "Scarlet Monastery",
+      "what": "The seat of the Scarlet Crusade's faith, still occupied and still hostile to everything outside its walls"
+    },
+    {
+      "name": "Agamand Mills",
+      "what": "The Agamand family's windmills in the northern highlands, and the largest Scourge holding in the zone"
+    },
+    {
+      "name": "The Tomb of Tyr",
+      "what": "Where the keeper and the C'Thrax were buried, under the silver hand the glade takes its name from"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tirisfal Glades",
+      "url": "https://warcraft.wiki.gg/wiki/Tirisfal_Glades"
+    },
+    {
+      "title": "Brill",
+      "url": "https://warcraft.wiki.gg/wiki/Brill"
+    },
+    {
+      "title": "Deathknell",
+      "url": "https://warcraft.wiki.gg/wiki/Deathknell"
+    },
+    {
+      "title": "Agamand Mills",
+      "url": "https://warcraft.wiki.gg/wiki/Agamand_Mills"
+    },
+    {
+      "title": "Ruins of Lordaeron",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Lordaeron"
+    },
+    {
+      "title": "Balnir Farmstead",
+      "url": "https://warcraft.wiki.gg/wiki/Balnir_Farmstead"
+    },
+    {
+      "title": "Forsaken",
+      "url": "https://warcraft.wiki.gg/wiki/Forsaken"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

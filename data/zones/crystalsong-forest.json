@@ -1,0 +1,80 @@
+{
+  "zone": "Crystalsong Forest",
+  "map": 127,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Crystalsong Forest is the landlocked wood at the centre of Northrend, and every tree in it is glass — the whole forest was turned to crystal in a single botched spell and has stayed that way. What moves through it are the warped remnants of what was living when the spell went off: crystal dryads, satyrs and drifting elven spirits among the Ruins of Shandaral. Dalaran floats overhead since the Kirin Tor brought the city north, with the Silver Covenant at Windrunner's Overlook and the Sunreavers at Sunreaver's Command in two ruined Highborne towers, and the blue dragonflight holding the Azure Front below.",
+  "history": "It was called Moonsong, and the Kaldorei Empire kept an outpost here named Shandaral to store arcane relics. The Sundering cut it off from everything, and its Highborne were left without a source of power and slowly failing. Watching blue dragons crystallise living things and draw energy from them, they infiltrated the Nexus to learn how, and stole relics while they were there. The dragons came for Shandaral. The sorcerers gathered on a cliff meaning to crystallise a piece of the forest and use it as a weapon, and lost control of it: the spell took the whole forest at once, shattering nearly everything alive and binding the dead to wander it. Dalaran arrived above it thousands of years later.",
+  "factions": [
+    "Kirin Tor",
+    "Silver Covenant",
+    "Sunreavers",
+    "Blue dragonflight",
+    "The Unbound",
+    "Crystal dryads and satyrs"
+  ],
+  "notable": [
+    {
+      "name": "Dalaran",
+      "what": "The Kirin Tor's city, lifted off its Lordaeron foundations and parked in the sky here for the war against the Lich King"
+    },
+    {
+      "name": "Ruins of Shandaral",
+      "what": "The night elf outpost whose sorcerers cast the spell that glassed the forest, in the middle of the Unbound Thicket"
+    },
+    {
+      "name": "The Azure Front",
+      "what": "The blue dragonflight's camp in the south, drawing power out of the largest crystal tree through a chain of surge needles"
+    },
+    {
+      "name": "Windrunner's Overlook and Sunreaver's Command",
+      "what": "Two ruined Highborne towers taken over by the Silver Covenant and the Sunreavers, watching each other across the thicket"
+    },
+    {
+      "name": "Violet Stand",
+      "what": "The Kirin Tor's ground-level outpost under Dalaran, kept behind a barrier — and long since gone in later accounts"
+    },
+    {
+      "name": "The Great Tree",
+      "what": "Grown from one of the Nordrassil branches Fandral Staghelm planted across Northrend to stop saronite spreading"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crystalsong Forest",
+      "url": "https://warcraft.wiki.gg/wiki/Crystalsong_Forest"
+    },
+    {
+      "title": "Ruins of Shandaral",
+      "url": "https://warcraft.wiki.gg/wiki/Ruins_of_Shandaral"
+    },
+    {
+      "title": "Azure Front",
+      "url": "https://warcraft.wiki.gg/wiki/Azure_Front"
+    },
+    {
+      "title": "Violet Stand",
+      "url": "https://warcraft.wiki.gg/wiki/Violet_Stand"
+    },
+    {
+      "title": "Sunreaver's Command",
+      "url": "https://warcraft.wiki.gg/wiki/Sunreaver%27s_Command"
+    },
+    {
+      "title": "Silver Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Silver_Covenant"
+    },
+    {
+      "title": "Sunreavers",
+      "url": "https://warcraft.wiki.gg/wiki/Sunreavers"
+    },
+    {
+      "title": "Highborne",
+      "url": "https://warcraft.wiki.gg/wiki/Highborne"
+    },
+    {
+      "title": "Dalaran",
+      "url": "https://warcraft.wiki.gg/wiki/Dalaran"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

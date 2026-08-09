@@ -1,0 +1,49 @@
+{
+  "instance": "Naxxramas",
+  "journal": 754,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Kel'Thuzad's flying necropolis, hanging over the Carrion Fields in the Dragonblight. Four quarters and a frostwyrm lair, functioning at once as a torture house, a workshop and a military academy for death knights.",
+  "history": "Kel'Thuzad went north to answer the Lich King's call and was let inside Naxxramas, where Anub'arak walked him through four wings stacked with plague cauldrons and supplies. What he understood from it — that the Lich King was preparing a war on everything living — frightened him enough to try to teleport out, and he was intercepted before he got anywhere. Ner'zhul took his oath and handed him the necropolis, along with a vision of cultists tearing it out of the ground and putting it in the sky. It first appeared over the Plaguelands, warded so heavily nobody could enter until the Argent Dawn adapted an old Kirin Tor cloaking cantrip. Darion Mograine went in to free his father's trapped soul and met the Four Horsemen, whose leader turned out to be Alexandros Mograine himself; almost everyone with him died. Bolvar Fordragon later sent Alliance heroes who cut through to Kel'Thuzad and killed him, and the necropolis drifted back to Northrend. It has returned over the Dragonblight with him seated in it again. The Scourge credit an architect named Obrahiim as pivotal to its design.",
+  "assumes": "The Naxxramas you can enter is the second one. The first stood over the Plaguelands, took forty people at level sixty, and moved; the Adventure Guide's version is the Northrend rebuild, and nothing inside it explains what happened the first time or who Kel'Thuzad was to begin with.",
+  "disputed": [
+    "The wiki keeps the Classic necropolis on a separate page and treats this as a distinct instance rather than a retuning, which is a decision about what counts as the same raid rather than a fact about the place.",
+    "The Classic-era account is flagged as an incomplete stub pending the Ashbringer comic, so how much of Darion Mograine's raid is canon in its current form is not settled on the page itself."
+  ],
+  "notable": [
+    {
+      "name": "Kel'Thuzad",
+      "what": "The archlich the necropolis was given to, in the frozen heart of it"
+    },
+    {
+      "name": "Sapphiron",
+      "what": "The frostwyrm on the way up, and for years the only source of the key to the Eye of Eternity"
+    },
+    {
+      "name": "The Four Horsemen",
+      "what": "The Military Quarter's end, once led by Alexandros Mograine wearing the Ashbringer"
+    },
+    {
+      "name": "Instructor Razuvious",
+      "what": "Trains death knights here, and has to be fought using his own students"
+    },
+    {
+      "name": "Patchwerk",
+      "what": "The Construct Quarter's opening argument, and the game's original benchmark fight"
+    },
+    {
+      "name": "The four quarters",
+      "what": "Arachnid, Plague, Military and Construct, any of which can be taken first"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Naxxramas",
+      "url": "https://warcraft.wiki.gg/wiki/Naxxramas"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 3",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_3"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,73 @@
+{
+  "zone": "Westfall",
+  "map": 52,
+  "expansion": "Classic",
+  "summary": "Westfall is Stormwind's ruined breadbasket, a coast of yellowed pasture and empty farmhouses where rogue harvest golems still clank through the fields and carrion birds work the rest. Sentinel Hill is the seat of the Westfall Brigade, who broke the Defias Brotherhood twice; Moonbrook and the mine beneath it were the Brotherhood's own ground, and the mine is the Deadmines. Since the surviving stonemasons were pardoned the farmers have begun again as the Breadbasket Guild, though drifters and the homeless still fill the sheds.",
+  "history": "Westfall fed the kingdom for centuries and was burned three times for it: by gnolls whose assaults on the capital were a feint that left the farms uncovered; by a Gurubashi raiding party that slipped the patrols and put three towns to the torch, which is what sent Stormwind to war in the jungle; and by orc raiders in the First War. What finished it was not war but debt. The Stonemasons Guild went unpaid for rebuilding Stormwind, Onyxia worked both sides of the quarrel, and when Edwin VanCleef pressed for the money the guild was dissolved; the riots killed Queen Tiffin, and the masons fled here as the Defias Brotherhood. A decade of banditry drove off farmers and garrison alike, and the harvests stopped. Vanessa VanCleef raised the Brotherhood again after the Cataclysm and burned Sentinel Hill.",
+  "factions": [
+    "Kingdom of Stormwind",
+    "Westfall Brigade",
+    "Breadbasket Guild",
+    "Defias Brotherhood",
+    "Riverpaw gnolls",
+    "Kobolds of the Jangolode Mine",
+    "Murlocs of the Longshore"
+  ],
+  "notable": [
+    {
+      "name": "Sentinel Hill",
+      "what": "The tower and camp the Westfall Brigade run the region from, burned down once by the second Defias and rebuilt"
+    },
+    {
+      "name": "Moonbrook",
+      "what": "A mining town razed by orcs, rebuilt, then lost to the Defias — the closest thing the region has to a ghost town"
+    },
+    {
+      "name": "The Deadmines",
+      "what": "The workings under Moonbrook that VanCleef turned into a shipyard and a headquarters"
+    },
+    {
+      "name": "Westfall Lighthouse",
+      "what": "The light on the Longshore, kept by the ghost of Captain Grayson"
+    },
+    {
+      "name": "Furlbrow's Pumpkin Farm",
+      "what": "One of the northern farms the Defias took; the family survived it and the harvest watchers did not stop"
+    },
+    {
+      "name": "Mortwake's Tower",
+      "what": "The rogue Klaven Mortwake's tower on the southeastern river, above the Dagger Hills"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Westfall",
+      "url": "https://warcraft.wiki.gg/wiki/Westfall"
+    },
+    {
+      "title": "Moonbrook",
+      "url": "https://warcraft.wiki.gg/wiki/Moonbrook"
+    },
+    {
+      "title": "Deadmines",
+      "url": "https://warcraft.wiki.gg/wiki/Deadmines"
+    },
+    {
+      "title": "Furlbrow's Pumpkin Farm",
+      "url": "https://warcraft.wiki.gg/wiki/Furlbrow%27s_Pumpkin_Farm"
+    },
+    {
+      "title": "Westfall Brigade",
+      "url": "https://warcraft.wiki.gg/wiki/Westfall_Brigade"
+    },
+    {
+      "title": "Breadbasket Guild",
+      "url": "https://warcraft.wiki.gg/wiki/Breadbasket_Guild"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,70 @@
+{
+  "zone": "Mechagon",
+  "map": 1462,
+  "expansion": "Battle for Azeroth",
+  "summary": "Mechagon is a small island northwest of Kul Tiras, green on the surface and hollowed out underneath by the gnomish city its king spent four centuries building. Its people replaced their own flesh with machinery to stop growing old, and then split over how far that should go: Prince Erazmin's Rustbolt Resistance against King Mechagon's Arcforged. Scrapbone troggs hold the northern hills and the junk of the whole project litters the coast.",
+  "history": "Mimiron kept a vault of titan work on this island long before anyone settled it, and vrykul and tortollan left traces here before the gnomes did. Four hundred years ago the king of Gnomeregan took his followers out to look for a land of machines, told nobody where he was going, and passed into legend at home. He found it, claimed it, and had Mechagon City dug out beneath the surface, where his gnomes began trading flesh for parts. His last project was the Mechoriginator, a machine meant to strip the Curse of Flesh from every titan creation whether it wanted that or not. His son's attempt to stop him was betrayed to him, and the civil war that followed brought the Alliance and Horde in on the prince's side.",
+  "factions": [
+    "Rustbolt Resistance",
+    "Arcforged",
+    "Scrapbone troggs",
+    "Alliance and the Overspark expedition",
+    "Horde and Gazlowe's Greasemonkeys",
+    "Bilgewater Cartel",
+    "Explorers' League",
+    "Gnomeregan"
+  ],
+  "notable": [
+    {
+      "name": "Mechagon City",
+      "what": "The underground city Walton Cogfrenzy built for the king, with the Robodrome arena at its gate and the Mechoriginator inside"
+    },
+    {
+      "name": "Rustbolt",
+      "what": "The scrapyard town on the northeast coast that the prince's rebels hold, ransacked once already"
+    },
+    {
+      "name": "Junkwatt Depot",
+      "what": "The fortified workyard over the city gates in the southwestern hills, and where the loyalists penned their prisoners"
+    },
+    {
+      "name": "Scrapbone Den",
+      "what": "The troggs' warren in the northern mountains, living off whatever the machines throw away"
+    },
+    {
+      "name": "The Heaps",
+      "what": "Bondo's yard and the dumping ground for four centuries of discarded parts"
+    },
+    {
+      "name": "Mimiron's vault",
+      "what": "The titan cache at the Abandoned Junkheap, whose greeting message kills anyone scanned as not a gnome"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mechagon Island",
+      "url": "https://warcraft.wiki.gg/wiki/Mechagon_Island"
+    },
+    {
+      "title": "Mechagon City",
+      "url": "https://warcraft.wiki.gg/wiki/Mechagon_City"
+    },
+    {
+      "title": "Rustbolt",
+      "url": "https://warcraft.wiki.gg/wiki/Rustbolt"
+    },
+    {
+      "title": "Junkwatt Depot",
+      "url": "https://warcraft.wiki.gg/wiki/Junkwatt_Depot"
+    },
+    {
+      "title": "Arcforged",
+      "url": "https://warcraft.wiki.gg/wiki/Arcforged"
+    },
+    {
+      "title": "Rustbolt Resistance",
+      "url": "https://warcraft.wiki.gg/wiki/Rustbolt_Resistance"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

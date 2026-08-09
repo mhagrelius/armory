@@ -1,0 +1,51 @@
+[package]
+name = "armory-server"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "One account, shared between one person's machines"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "armory-server"
+path = "src/main.rs"
+
+[lib]
+name = "armory_server"
+path = "src/lib.rs"
+
+[dependencies]
+# The schema, the merge rules and the change log — which is to say almost all
+# of this program. `armory-server` is `armory-core`'s store with a socket in
+# front of it and no second opinion about anything: the same triggers, the same
+# `Store::apply`, the same `MAX` on a tally.
+#
+# This is the reason the workspace exists. Brain and Planner share a *record
+# type* with their servers; Armory shares the whole store, because its merges
+# are twenty-seven tables of rules that took evidence to arrive at and a second
+# implementation of `save_collected` would be a bug waiting for somebody to
+# change one of them.
+armory-core = { path = "../core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# No Postgres, and that is a deliberate parting from the siblings.
+#
+# `planner-server` takes Postgres because its whole job is one atomic
+# refuse-a-stale-write, and against a directory of files that is a lock plus a
+# read-modify-write. The same argument points the other way here: the
+# arbitration is already written, in SQL, in `armory-core`, tested against a
+# real database — and the only thing needed to run it on the server is the
+# same SQLite file. Porting two thousand lines of it to Postgres would buy
+# concurrency this does not have (one person, three machines, a mutex) at the
+# cost of the one property worth the most, which is that both ends run the
+# same code.
+
+# No HTTP crate. Four routes, JSON bodies, a handful of clients, on a private
+# network: request line, headers to the blank line, Content-Length, body,
+# respond, close. That is about a hundred lines of exhaustively testable
+# parsing. If this ever needs keep-alive, chunked bodies or TLS it should take
+# a real server rather than grow one.
+
+[dev-dependencies]
+tempfile = "3"

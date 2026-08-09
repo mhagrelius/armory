@@ -1,0 +1,49 @@
+{
+  "instance": "Sunwell Plateau",
+  "journal": 752,
+  "expansion": "The Burning Crusade",
+  "summary": "The plateau the Highborne raised around the Sunwell when they made it, on the Isle of Quel'Danas north of Silvermoon. The Legion came back to use the drained fount as a doorway, and this is the raid that closed it.",
+  "history": "Around six thousand eight hundred years before the Dark Portal, Dath'Remar Sunstrider poured a stolen vial of the Well of Eternity into a lake sitting on a ley line convergence, and his followers built the plateau around what came up out of it. The Scourge took it during the Third War: Dar'Khan Drathir dropped the shields for Arthas, killed members of the Convocation of Silvermoon inside the plateau, and bound the well's energies for his new masters. Kael'thas Sunstrider destroyed it himself rather than let it corrupt what was left of his people. Years later the Legion returned to the island to open a gateway through the ruined fount, and the Shattered Sun Offensive formed at Shattrath to stop them. Champions fought up through Legion demons, Sunfury and felblood elves, freed the blue dragon Kalecgos from the dreadlord Sathrovarr, and killed the imprisoned naaru M'uru. Kil'jaeden rose out of the well itself; Anveena Teague spent the last of herself against him, and the weakened demon was banished and the gate shut. Velen then found a spark left in M'uru's heart and relit the Sunwell with it, as Light as well as arcane.",
+  "assumes": "It assumes the whole blood elf story. The well at the centre is why their race is named what it is and why they were starving for magic, Kael'thas destroyed it with his own hands before this, and the raid never mentions that the demon at the end is the one who made the Lich King.",
+  "disputed": [
+    "The wiki's account is written from the Alliance side — Alliance adventurers infiltrating the plateau — for a raid both factions ran under the same banner.",
+    "Kil'jaeden was banished, not killed, and the wiki credits the turn to Anveena Teague's sacrifice rather than to the raid, which leaves who actually beat him unresolved."
+  ],
+  "notable": [
+    {
+      "name": "Kil'jaeden",
+      "what": "Rises out of the Sunwell itself, through a rift in its depths"
+    },
+    {
+      "name": "M'uru",
+      "what": "The captive naaru in the Sanguine Chamber, whose heart Velen later used to relight the well"
+    },
+    {
+      "name": "Kalecgos",
+      "what": "A blue dragon held here and ridden by the dreadlord Sathrovarr"
+    },
+    {
+      "name": "Brutallus and Felmyst",
+      "what": "The two guardians on the terrace, the second made from the first"
+    },
+    {
+      "name": "The Eredar Twins",
+      "what": "Grand Warlock Alythess and Lady Sacrolash, who have to be killed together"
+    },
+    {
+      "name": "The three gates",
+      "what": "Agamath, Rohendor and Archonisus, which Blizzard unlocked weeks apart in 2008"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sunwell Plateau",
+      "url": "https://warcraft.wiki.gg/wiki/Sunwell_Plateau"
+    },
+    {
+      "title": "Isle of Quel'Danas",
+      "url": "https://warcraft.wiki.gg/wiki/Isle_of_Quel%27Danas"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

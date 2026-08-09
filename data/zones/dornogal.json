@@ -1,0 +1,65 @@
+{
+  "zone": "Dornogal",
+  "map": 2339,
+  "expansion": "The War Within",
+  "summary": "Dornogal is the earthen city at the centre of the Isle of Dorn, greener than a city of living stone has any right to be, built around the mouth of the Coreway — the titan shaft that runs down into Azeroth itself. The Council of Dornogal rules it, and after thousands of years of isolation in Khaz Algar its people have their own turns of phrase and their own way of doing things. Both factions keep embassies here now, and the portals in its halls are the way to the Ringing Deeps, Azj-Kahet, Undermine and K'aresh.",
+  "history": "It was raised as the fortress guarding the Coreway, the shaft the titan-forged sank so the worldsoul could be studied without being harmed, and named for the watchers Dornic and Galan. Isolation did the rest: no contact with anyone for thousands of years, an earthen society running on the Edicts and on memories filed away in the Archive at the end of each rotation. When Adelgonn and the Stonebound broke with the Edicts and walked out, the city lost people it could not replace and began to run down. Then Dalaran fell out of the sky nearby, the nerubians came up through the Coreway in the confusion, and Dornogal took in the survivors of a city it had never heard of.",
+  "factions": [
+    "Council of Dornogal",
+    "Algari earthen",
+    "The Unbound, readmitted after their exile",
+    "Alliance and Horde, through their embassies",
+    "Survivors of Dalaran",
+    "Nerubians of Azj-Kahet, in the tunnels below",
+    "Kobolds"
+  ],
+  "notable": [
+    {
+      "name": "The Coreway",
+      "what": "The titan-forged shaft the city was built to guard, once running all the way to Azeroth's core and now ending in the Ringing Deeps"
+    },
+    {
+      "name": "The Archive",
+      "what": "Where an earthen's memories are catalogued and cycled at the end of a rotation, and the closest thing this people has to a soul-keeping"
+    },
+    {
+      "name": "Foundation Hall",
+      "what": "The council's building in the northwest, and the room the war against Xal'atath is run out of"
+    },
+    {
+      "name": "The Fissure",
+      "what": "The city's underside in the eastern corner, where Steelvein's business and a good deal else that is not official gets done"
+    },
+    {
+      "name": "The Forgegrounds",
+      "what": "The crafting quarter in the southeast, full of earthen who would rather be shaping stone than arguing about it"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dornogal",
+      "url": "https://warcraft.wiki.gg/wiki/Dornogal"
+    },
+    {
+      "title": "Dornogal (nation)",
+      "url": "https://warcraft.wiki.gg/wiki/Dornogal_(nation)"
+    },
+    {
+      "title": "Council of Dornogal",
+      "url": "https://warcraft.wiki.gg/wiki/Council_of_Dornogal"
+    },
+    {
+      "title": "Coreway",
+      "url": "https://warcraft.wiki.gg/wiki/Coreway"
+    },
+    {
+      "title": "Archive",
+      "url": "https://warcraft.wiki.gg/wiki/Archive"
+    },
+    {
+      "title": "Fissure",
+      "url": "https://warcraft.wiki.gg/wiki/Fissure"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

@@ -1,0 +1,75 @@
+{
+  "zone": "Howling Fjord",
+  "map": 117,
+  "expansion": "Wrath of the Lich King",
+  "summary": "The Howling Fjord is the southeastern corner of Northrend, a country of green meadows, pine forest and cold rivers cut through by cliffs high enough that the settlements are joined by lifts rather than roads. It is vrykul land: Utgarde Keep, the hall of King Ymiron, stands over Daggercap Bay, and the villages around it have been reoccupied by giants who slept through several thousand years. Alliance settlers at Valgarde and Westguard, Forsaken apothecaries at Vengeance Landing and New Agamand, taunka at Camp Winterhoof, tuskarr on the Isle of Spears and pirates at Scalawag Point all keep footholds along the coast.",
+  "history": "The vrykul were made here, and when the Curse of Flesh began turning them from stone to mortal flesh they went into the earth to sleep through it — which meant they also slept through the Sundering, and the fjord stood empty of them for millennia. Some accounts put Arthas Menethil's Northrend landing on this coast, where he burned his own ships to keep the 1st Legion from being recalled. Later the Lich King's Scourge went through the barrows waking the vrykul, who came out and took back the keeps they had abandoned. About the same time, pirates of the Northsea Freebooters looted a burial ground at Shield Hill and roused the kvaldir out of the sea. The Valiance Expedition made its beachhead into all of this.",
+  "factions": [
+    "Vrykul of the Dragonflayer clan",
+    "Scourge",
+    "Valiance Expedition",
+    "Forsaken and the Royal Apothecary Society",
+    "Kalu'ak tuskarr",
+    "Taunka of Camp Winterhoof",
+    "Explorers' League",
+    "Northsea Freebooters",
+    "Kvaldir"
+  ],
+  "notable": [
+    {
+      "name": "Utgarde Keep",
+      "what": "The vrykul fortress above Daggercap Bay, seat of King Ymiron, with Prince Keleseth installed inside it running Scourge business"
+    },
+    {
+      "name": "Valgarde",
+      "what": "The Alliance port wedged into the bottom of the fjord, raided from the cliffs above almost continuously"
+    },
+    {
+      "name": "Vengeance Landing and New Agamand",
+      "what": "The Forsaken foothold and the plague works behind it, named for the mills of a Tirisfal that is not coming back"
+    },
+    {
+      "name": "Halgrind",
+      "what": "A vrykul town used as a test bed for the New Plague, its chieftain Thorvald driven out into the woods"
+    },
+    {
+      "name": "Kamagua",
+      "what": "The tuskarr village on the Isle of Spears, and the turtle ferry west to Moa'ki Harbor and the Borean Tundra"
+    },
+    {
+      "name": "Nifflevar and Shield Hill",
+      "what": "A cliff-top Dragonflayer town, and the burial ground whose robbing by pirates called the kvaldir in from the sea"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Howling Fjord",
+      "url": "https://warcraft.wiki.gg/wiki/Howling_Fjord"
+    },
+    {
+      "title": "Halgrind",
+      "url": "https://warcraft.wiki.gg/wiki/Halgrind"
+    },
+    {
+      "title": "New Agamand",
+      "url": "https://warcraft.wiki.gg/wiki/New_Agamand"
+    },
+    {
+      "title": "Nifflevar",
+      "url": "https://warcraft.wiki.gg/wiki/Nifflevar"
+    },
+    {
+      "title": "Northsea Freebooters",
+      "url": "https://warcraft.wiki.gg/wiki/Northsea_Freebooters"
+    },
+    {
+      "title": "Camp Winterhoof",
+      "url": "https://warcraft.wiki.gg/wiki/Camp_Winterhoof"
+    },
+    {
+      "title": "Kalu'ak",
+      "url": "https://warcraft.wiki.gg/wiki/Kalu%27ak"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

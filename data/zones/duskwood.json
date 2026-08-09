@@ -1,0 +1,78 @@
+{
+  "zone": "Duskwood",
+  "map": 47,
+  "expansion": "Classic",
+  "summary": "Duskwood is the fiefdom south of Elwynn where the sun does not come up: twisted trees under a standing black fog, left that way by the fel energy of Medivh's death. Darkshire holds the centre and the Night Watch patrols the road through it, against the dead of Raven Hill Cemetery, the Nightbane worgen in the orchards and the Splinter Fist ogres at Vul'Gol. In the north stands the Twilight Grove, one of Fandral Staghelm's great trees, with a way into the Emerald Dream open at its roots.",
+  "history": "A branch cut from Nordrassil was planted here four and a half thousand years before the Dark Portal and grew into the tree at the Twilight Grove. The region was southern Elwynn then, called Brightwood, with Grand Hamlet and Raven Hill for towns. Blackhand's raiders razed villages here in the First War, and Brightwood was one of three fiefs the Horde took before closing on Stormwind. Then Medivh died at Karazhan and the fel energy loosed spilled over the border; the trees blackened, the spiders swelled to monstrous size, and the wolves fled north into Elwynn. Morbent Fel's necromancy filled the graveyards afterwards. Velinde Starsong died here carrying the Scythe of Elune, and the artefact's long passage through these woods — lost, found, hunted by the Dark Riders — killed the Yorgen family and left the Nightbane pack behind.",
+  "factions": [
+    "Night Watch",
+    "Kingdom of Stormwind",
+    "Nightbane worgen",
+    "Gilnean worgen at Raven Hill",
+    "Splinter Fist ogres",
+    "Undead of Raven Hill and the Tranquil Gardens",
+    "Dark Riders",
+    "Green dragonflight"
+  ],
+  "notable": [
+    {
+      "name": "Darkshire",
+      "what": "Grand Hamlet as it used to be called, the one town still lit, run by the Ebonlockes and defended by the Night Watch"
+    },
+    {
+      "name": "Raven Hill Cemetery",
+      "what": "The graveyard west of town, its catacombs full of what necromancy has made of the buried"
+    },
+    {
+      "name": "Twilight Grove",
+      "what": "The great tree in the northern woods and the portal beneath it into the Emerald Dream"
+    },
+    {
+      "name": "Manor Mistmantle",
+      "what": "Stalvan Mistmantle's house, rotted through and kept by his ghouls, north of Darkshire"
+    },
+    {
+      "name": "Vul'Gol Ogre Mound",
+      "what": "The Splinter Fist ogres' cave in the southwest, a newer problem than the darkness"
+    },
+    {
+      "name": "The Rotting Orchard",
+      "what": "Dead fruit trees and derelict buildings south of Darkshire, taken over by the Nightbane"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Duskwood",
+      "url": "https://warcraft.wiki.gg/wiki/Duskwood"
+    },
+    {
+      "title": "Darkshire",
+      "url": "https://warcraft.wiki.gg/wiki/Darkshire"
+    },
+    {
+      "title": "Raven Hill",
+      "url": "https://warcraft.wiki.gg/wiki/Raven_Hill"
+    },
+    {
+      "title": "Manor Mistmantle",
+      "url": "https://warcraft.wiki.gg/wiki/Manor_Mistmantle"
+    },
+    {
+      "title": "Rotting Orchard",
+      "url": "https://warcraft.wiki.gg/wiki/Rotting_Orchard"
+    },
+    {
+      "title": "Night Watch",
+      "url": "https://warcraft.wiki.gg/wiki/Night_Watch"
+    },
+    {
+      "title": "Nightbane pack",
+      "url": "https://warcraft.wiki.gg/wiki/Nightbane_pack"
+    },
+    {
+      "title": "Warcraft Chronicle Volume 2",
+      "url": "https://warcraft.wiki.gg/wiki/Warcraft_Chronicle_Volume_2"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

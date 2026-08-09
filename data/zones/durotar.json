@@ -1,0 +1,71 @@
+{
+  "zone": "Durotar",
+  "map": 1,
+  "expansion": "Classic",
+  "summary": "Durotar is the orcs' homeland on Kalimdor's eastern coast — red rock, cracked soil, scorpids and canyons — with Orgrimmar set into the mountains at its northern end and the Darkspear trolls holding the Echo Isles off the southern shore. The Southfury broke its banks in the Cataclysm and turned the western strip to marsh, and Garrosh Hellscream answered by ringing the zone in iron: battlements, watchtowers and the Dranosh'ar Blockade drawn across the ground in front of the city gates. Kul Tiran marines still sit in the ruins of Tiragarde Keep and in a foothold west of Sen'jin Village.",
+  "history": "The land was quilboar country, the eastern edge of the Barrens, until Thrall's Horde drove the Razormane out during the Third War. After Mount Hyjal the orcs settled here and named it for Durotan, Thrall's murdered father, raising Orgrimmar with tauren and Darkspear help. The peace lasted until Grand Admiral Daelin Proudmoore's fleet arrived to finish the orcs off; Rexxar unravelled the plot, and Jaina let her father die rather than break the truce. The Darkspear spent years exiled from the Echo Isles by the traitor Zalazane and killed him only after the Lich King fell. Then the Cataclysm pushed the Southfury over a quarter of the zone and burned much of Orgrimmar, and Garrosh rebuilt both as a garrison.",
+  "factions": [
+    "Horde",
+    "Orcs of Durotar",
+    "Darkspear tribe",
+    "Razormane quilboar",
+    "Burning Blade",
+    "Alliance",
+    "Northwatch Expeditionary Unit",
+    "Kolkar centaur and Dustwind harpies",
+    "Spitescale naga"
+  ],
+  "notable": [
+    {
+      "name": "Orgrimmar",
+      "what": "The Horde's capital, named for Orgrim Doomhammer and built into the valleys at the zone's northern edge"
+    },
+    {
+      "name": "Valley of Trials",
+      "what": "The enclosed canyon in the southwest where young orcs are sent to earn the right to be counted warriors"
+    },
+    {
+      "name": "Echo Isles",
+      "what": "The Darkspear tribe's islands off the south coast, lost to the witch doctor Zalazane and taken back by Vol'jin"
+    },
+    {
+      "name": "Razor Hill",
+      "what": "The crossroads town of central Durotar, garrison and quest hub for everything south of the capital"
+    },
+    {
+      "name": "Dranosh'ar Blockade",
+      "what": "Garrosh's line of fortifications outside the gates of Orgrimmar, running from Skull Rock west to Rocktusk Farm"
+    },
+    {
+      "name": "Tiragarde Keep and Northwatch Foothold",
+      "what": "The wreck of Daelin Proudmoore's landing, still manned, and the newer Kul Tiran beachhead west of Sen'jin Village"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Durotar",
+      "url": "https://warcraft.wiki.gg/wiki/Durotar"
+    },
+    {
+      "title": "Orgrimmar",
+      "url": "https://warcraft.wiki.gg/wiki/Orgrimmar"
+    },
+    {
+      "title": "Darkspear tribe",
+      "url": "https://warcraft.wiki.gg/wiki/Darkspear_tribe"
+    },
+    {
+      "title": "Darkspear Isle",
+      "url": "https://warcraft.wiki.gg/wiki/Darkspear_Isle"
+    },
+    {
+      "title": "Dranosh'ar Blockade",
+      "url": "https://warcraft.wiki.gg/wiki/Dranosh%27ar_Blockade"
+    },
+    {
+      "title": "Northwatch Foothold",
+      "url": "https://warcraft.wiki.gg/wiki/Northwatch_Foothold"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

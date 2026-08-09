@@ -1,0 +1,69 @@
+{
+  "zone": "Hallowfall",
+  "map": null,
+  "expansion": "The War Within",
+  "summary": "Hallowfall is a cavern the size of a country under western Khaz Algar, lit by Beledar — a vast crystal set in the ceiling that gives the place warmth, seasons and crops, and that the plants below turn to follow. The Hallowfall Arathi hold it from their capital at Mereldar, moving between farms, docks and dawntowers by airship, and they fight on two fronts: kobyss coming ashore out of the Undersea to the west, and nerubian swarms pushing up from Azj-Kahet. Beledar no longer only gives light; at intervals it turns, and everything under it goes to Void.",
+  "history": "An emperor of the Arathi was given a vision by the Sacred Flame — a light somewhere beneath the world — and sent a fleet of airships across the Storming Sea to find it. The light found them first: it swallowed the expedition whole and put it down inside the cavern, wrecked and with no way home. That was a little over a decade ago. The ground fed them, so they stayed, named the crystal for the vision that brought them and built towns under it, taking the whole place for a revelation they were meant to keep clean. Then Sargeras drove his sword into Azeroth. The cavern shook, and from that day Beledar has been shifting into something else.",
+  "factions": [
+    "Hallowfall Arathi",
+    "The Lamplighters",
+    "Church of the Sacred Flame",
+    "Kobyss, out of the Undersea",
+    "Nerubians of Azj-Kahet",
+    "Fungarians",
+    "Alliance and Horde, once the Dawnbreaker's survivors arrived"
+  ],
+  "notable": [
+    {
+      "name": "Beledar",
+      "what": "The crystal in the cavern roof that stands in for a sun, and that turns Void on its own schedule"
+    },
+    {
+      "name": "Mereldar",
+      "what": "The Arathi capital in the west, named for one of the first human priests ever to touch the Holy Light"
+    },
+    {
+      "name": "Tenir's Ascent",
+      "what": "The main airship dock in the south-central cavern, with the Dawnbreaker berthed there and a dawntower at its end"
+    },
+    {
+      "name": "The Aegis Wall",
+      "what": "The fortified line in the southeast holding back what climbs up from the nerubian kingdom, and the first thing to be overrun"
+    },
+    {
+      "name": "Priory of the Sacred Flame",
+      "what": "The order's house on a rise near Beledar, where the Arathi train the people who carry the Light into the dark"
+    },
+    {
+      "name": "The Undersea",
+      "what": "The lightless water along the western edge, and the road the kobyss raid in by"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hallowfall",
+      "url": "https://warcraft.wiki.gg/wiki/Hallowfall"
+    },
+    {
+      "title": "Mereldar",
+      "url": "https://warcraft.wiki.gg/wiki/Mereldar"
+    },
+    {
+      "title": "Aegis Wall",
+      "url": "https://warcraft.wiki.gg/wiki/Aegis_Wall"
+    },
+    {
+      "title": "Tenir's Ascent",
+      "url": "https://warcraft.wiki.gg/wiki/Tenir%27s_Ascent"
+    },
+    {
+      "title": "Priory of the Sacred Flame",
+      "url": "https://warcraft.wiki.gg/wiki/Priory_of_the_Sacred_Flame"
+    },
+    {
+      "title": "Light's Redoubt",
+      "url": "https://warcraft.wiki.gg/wiki/Light%27s_Redoubt"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

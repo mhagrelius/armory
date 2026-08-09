@@ -1,0 +1,69 @@
+{
+  "zone": "Dalaran",
+  "map": 41,
+  "expansion": "Wrath of the Lich King",
+  "summary": "Dalaran is the Kirin Tor's flying city, a magocracy under the Council of Six that lifted itself off the ground rather than be besieged again, and then went where the war was — Northrend, the Broken Isles, and finally Khaz Algar. It is neutral by charter: both factions keep quarters in it and are expected to behave, which has held better in some centuries than others. It is also gone. Xal'atath drained it into the Dark Heart and broke it apart over the Isle of Dorn, and the pieces lie along the Tranquil Strand; the versions still walked in are earlier ones, above Crystalsong Forest and the Broken Isles.",
+  "history": "Magi of Arathor founded it as a city-state after the Troll Wars, on the southern shore of Lordamere Lake, and the Kirin Tor ruled it out of the Violet Citadel with the deepest library of human history anywhere. The Scourge besieged it and Archimonde pulled it down; the survivors came back, walled the heart of it in a dome and eventually raised the whole city into the air so that nothing walking could ever reach them. From there it followed the wars. It hung over Northrend for the campaigns against Malygos and the Lich King, admitted blood elves and high elves as rival delegations, expelled the Horde in a single afternoon after a theft, moved to the Broken Isles for the Legion, and ended over Khaz Algar.",
+  "factions": [
+    "Kirin Tor",
+    "Council of Six",
+    "Silver Covenant",
+    "Sunreavers",
+    "Alliance",
+    "Horde",
+    "The Underbelly's less official trade"
+  ],
+  "notable": [
+    {
+      "name": "Violet Citadel",
+      "what": "The inner fortress and the Council of Six's seat, the centre of arcane study for the whole of human history"
+    },
+    {
+      "name": "The Violet Hold",
+      "what": "The prison for the things the Kirin Tor would rather not destroy and cannot let out"
+    },
+    {
+      "name": "The Underbelly",
+      "what": "The sewers beneath the streets, with their own guard, their own economy and a rat problem nobody has solved"
+    },
+    {
+      "name": "Krasus' Landing",
+      "what": "The open terrace where everything that flies in arrives, named for the red dragon who kept a seat on the Council"
+    },
+    {
+      "name": "Silver Enclave and Sunreaver's Sanctuary",
+      "what": "The two factions' quarters, kept deliberately apart — the high elves of the Silver Covenant on one side, Aethas Sunreaver's blood elves on the other"
+    },
+    {
+      "name": "Tranquil Strand",
+      "what": "The beach on the Isle of Dorn where the wreckage came down after Xal'atath emptied the city into the Dark Heart"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dalaran",
+      "url": "https://warcraft.wiki.gg/wiki/Dalaran"
+    },
+    {
+      "title": "Dalaran (kingdom)",
+      "url": "https://warcraft.wiki.gg/wiki/Dalaran_(kingdom)"
+    },
+    {
+      "title": "Kirin Tor",
+      "url": "https://warcraft.wiki.gg/wiki/Kirin_Tor"
+    },
+    {
+      "title": "Council of Six",
+      "url": "https://warcraft.wiki.gg/wiki/Council_of_Six"
+    },
+    {
+      "title": "Silver Covenant",
+      "url": "https://warcraft.wiki.gg/wiki/Silver_Covenant"
+    },
+    {
+      "title": "Sunreavers",
+      "url": "https://warcraft.wiki.gg/wiki/Sunreavers"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}

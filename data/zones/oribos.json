@@ -1,0 +1,68 @@
+{
+  "zone": "Oribos",
+  "map": null,
+  "expansion": "Shadowlands",
+  "summary": "Oribos is the first thing a soul sees after dying: a ringed city of strange metal at the centre of the Shadowlands, built by the First Ones, where the Arbiter judged every arrival and sent them on to the afterlife that fit them. Souls still pour up its central pillar, but for a long stretch they went nowhere except the Maw, because the Arbiter had gone dark. Attendants run the city, brokers run the trade, and Alliance and Horde are both admitted on the strict condition they leave the war outside.",
+  "history": "The city predates anyone's memory of it, and the brokers who make their living inside it cannot find its ore anywhere else — one of them calls the place an ancient engine, which is closer to the truth than a description. For as long as there had been mortal souls the Arbiter sat in the Crucible at its crown and sorted every one of them. Then she was struck down, the sorting stopped, and everything that died fell into the Maw while the other realms starved for the anima those souls carried. Oribos became a war camp for the living: the covenants' representatives, both factions' leaders and the former Lich King all working out of the Enclave. Pelagos took up the judgement afterwards.",
+  "factions": [
+    "Attendants",
+    "Brokers",
+    "The four covenants",
+    "Alliance",
+    "Horde",
+    "Knights of the Ebon Blade"
+  ],
+  "notable": [
+    {
+      "name": "The Crucible",
+      "what": "The chamber at the crown of the city where the Arbiter judged every mortal soul that ever arrived"
+    },
+    {
+      "name": "The Enclave",
+      "what": "The quarter of the Ring of Fates where the covenants keep envoys and where every campaign in the Shadowlands began and ended"
+    },
+    {
+      "name": "Soul Pillar",
+      "what": "The column of arriving souls running up the middle of the city — for years, all of it draining into the Maw"
+    },
+    {
+      "name": "Ring of Transference",
+      "what": "The outer ring, with the portals and flight paths to every realm and the way home to Orgrimmar and Stormwind"
+    },
+    {
+      "name": "Broker's Den",
+      "what": "The room under the Idyllia where the brokers settled in and set up their own market"
+    },
+    {
+      "name": "Hall of Curiosities",
+      "what": "The broker stalls on the Ring of Fates, and the closest thing the dead have to a bazaar"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Oribos",
+      "url": "https://warcraft.wiki.gg/wiki/Oribos"
+    },
+    {
+      "title": "Arbiter",
+      "url": "https://warcraft.wiki.gg/wiki/Arbiter"
+    },
+    {
+      "title": "Enclave",
+      "url": "https://warcraft.wiki.gg/wiki/Enclave"
+    },
+    {
+      "title": "Broker's Den",
+      "url": "https://warcraft.wiki.gg/wiki/Broker%27s_Den"
+    },
+    {
+      "title": "Broker",
+      "url": "https://warcraft.wiki.gg/wiki/Broker"
+    },
+    {
+      "title": "Hall of Holding",
+      "url": "https://warcraft.wiki.gg/wiki/Hall_of_Holding"
+    }
+  ],
+  "licence": "CC BY-SA 4.0"
+}
