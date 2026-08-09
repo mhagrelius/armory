@@ -48,6 +48,14 @@ pub struct Service {
     host: String,
     token: String,
     machine: String,
+    account: String,
+}
+
+/// One account the server is holding.
+#[derive(Debug, Clone, serde::Deserialize)]
+pub struct Held {
+    pub name: String,
+    pub rows: i64,
 }
 
 impl Service {
@@ -57,7 +65,7 @@ impl Service {
     /// connecting in the clear would be the worst of the three possible
     /// behaviours: the address would say the traffic was encrypted and it
     /// would not be.
-    pub fn new(url: &str, token: &str, machine: &str) -> Result<Service, SyncError> {
+    pub fn new(url: &str, token: &str, machine: &str, account: &str) -> Result<Service, SyncError> {
         let url = url.trim();
         if url.starts_with("https://") {
             return Err(SyncError(
@@ -81,11 +89,28 @@ impl Service {
             host,
             token: token.trim().to_string(),
             machine: machine.to_string(),
+            account: account.trim().to_string(),
         })
     }
 
     pub fn address(&self) -> &str {
         &self.host
+    }
+
+    /// Every account this server holds, and how much each one is.
+    pub fn accounts(&self) -> Result<Vec<Held>, SyncError> {
+        self.call("GET", "/accounts", None, TIMEOUT)
+    }
+
+    /// Delete one, and everything in it.
+    ///
+    /// The name goes in the path and again in `confirm`, because the server
+    /// refuses unless they match. There is no undo and no second copy on the
+    /// server afterwards — whatever a client still holds locally is the only
+    /// one left.
+    pub fn forget_account(&self, name: &str) -> Result<(), SyncError> {
+        let path = format!("/accounts/{name}?confirm={name}");
+        self.send("DELETE", &path, None, TIMEOUT).map(|_| ())
     }
 
     /// Ask whether it is there at all, without sending anything.
@@ -117,12 +142,14 @@ impl Service {
              Host: {}\r\n\
              Authorization: Bearer {}\r\n\
              X-Armory-Machine: {}\r\n\
+             X-Armory-Account: {}\r\n\
              Content-Type: application/json\r\n\
              Content-Length: {}\r\n\
              Connection: close\r\n\r\n",
             self.host,
             self.token,
             self.machine,
+            self.account,
             body.len()
         );
 
@@ -238,16 +265,17 @@ mod tests {
 
     #[test]
     fn a_bare_host_gets_the_servers_port() {
-        let service = Service::new("http://nas.example:8084", "t", "m").expect("a service");
+        let service =
+            Service::new("http://nas.example:8084", "t", "m", "a").expect("a service");
         assert_eq!(service.address(), "nas.example:8084");
 
-        let bare = Service::new("http://nas.example", "t", "m").expect("a service");
+        let bare = Service::new("http://nas.example", "t", "m", "a").expect("a service");
         assert_eq!(bare.address(), "nas.example:8084");
     }
 
     #[test]
     fn a_trailing_slash_is_not_part_of_the_address() {
-        let service = Service::new("http://nas:8084/", "t", "m").expect("a service");
+        let service = Service::new("http://nas:8084/", "t", "m", "a").expect("a service");
         assert_eq!(service.address(), "nas:8084");
     }
 
@@ -255,14 +283,14 @@ mod tests {
     fn https_is_refused_rather_than_quietly_downgraded() {
         // Connecting in the clear to an address that says otherwise is the
         // worst of the three things this could do.
-        let error = Service::new("https://nas:8084", "t", "m").expect_err("refused");
+        let error = Service::new("https://nas:8084", "t", "m", "a").expect_err("refused");
         assert!(error.0.contains("plain HTTP"), "{}", error.0);
     }
 
     #[test]
     fn an_empty_address_is_refused() {
-        assert!(Service::new("", "t", "m").is_err());
-        assert!(Service::new("http://", "t", "m").is_err());
+        assert!(Service::new("", "t", "m", "a").is_err());
+        assert!(Service::new("http://", "t", "m", "a").is_err());
     }
 
     #[test]

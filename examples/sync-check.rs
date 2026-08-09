@@ -38,7 +38,7 @@ impl Machine {
         store.set_machine(name).expect("named");
         Machine {
             name,
-            server: Service::new(url, token, name).expect("a server"),
+            server: Service::new(url, token, name, "sync-check").expect("a server"),
             store,
         }
     }

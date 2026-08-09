@@ -64,6 +64,16 @@ pub struct Settings {
     /// half of it silently is how you get an installation that looks
     /// configured and never syncs.
     pub sync_url: String,
+    /// Which account on that server this machine belongs to.
+    ///
+    /// One server can hold several — a second Battle.net account is a second
+    /// account here, not a second server — and they are kept in separate
+    /// databases so they cannot merge. Empty means `default`, which is where
+    /// everything sent before accounts existed was adopted.
+    ///
+    /// Letters, digits, dash, underscore and dot. The server refuses anything
+    /// else, because this name becomes a directory on it.
+    pub sync_account: String,
 }
 
 impl Default for Settings {
@@ -77,6 +87,7 @@ impl Default for Settings {
             journal_automatic: true,
             journal_server: crate::source::journal::DEFAULT_SERVER.to_string(),
             sync_url: String::new(),
+            sync_account: String::new(),
         }
     }
 }
@@ -164,6 +175,7 @@ mod tests {
             journal_automatic: false,
             journal_server: "http://127.0.0.1:9090".into(),
             sync_url: "http://nas.example:8084".into(),
+            sync_account: "PLAYER1".into(),
         };
         settings.save(&path).expect("saved");
         assert_eq!(Settings::load(&path), settings);

@@ -240,6 +240,8 @@ mod imp {
         pub pass_due: RefCell<Option<glib::SourceId>>,
         /// The sync dialog, while it is open, so a pass can redraw it.
         pub sync_dialog: RefCell<Option<super::SyncDialog>>,
+        /// What the server last said it was holding. `None` until asked.
+        pub held: RefCell<Option<Vec<(String, i64)>>>,
     }
 
     /// What one pass did, as the sync page reports it.
@@ -3494,7 +3496,8 @@ impl ArmoryApplication {
         if token.trim().is_empty() {
             return None;
         }
-        match Service::new(&url, &token, &self.machine()) {
+        let account = self.imp().settings.borrow().sync_account.trim().to_string();
+        match Service::new(&url, &token, &self.machine(), &account) {
             Ok(service) => Some(service),
             Err(error) => {
                 eprintln!("armory: {error}");
@@ -3749,7 +3752,9 @@ impl ArmoryApplication {
         let dialog = SyncDialog::new();
 
         let app = self.clone();
-        dialog.connect_save(move |address, token| app.save_sync_target(&address, token.as_deref()));
+        dialog.connect_save(move |address, token, account| {
+            app.save_sync_target(&address, token.as_deref(), &account)
+        });
 
         let app = self.clone();
         dialog.connect_pass(move || app.share_now());
@@ -3757,9 +3762,13 @@ impl ArmoryApplication {
         let app = self.clone();
         dialog.connect_resend(move || app.confirm_resend());
 
+        let app = self.clone();
+        dialog.connect_forget(move |name| app.confirm_forget_account(&name));
+
         dialog.show_state(&self.sync_state());
         *self.imp().sync_dialog.borrow_mut() = Some(dialog.clone());
         dialog.present(Some(&self.window()));
+        self.refresh_accounts();
     }
 
     /// Redraw the sync dialog if it is open. Cheap when it is not.
@@ -3840,12 +3849,98 @@ impl ArmoryApplication {
                     failed: pass.failed.clone(),
                 }),
             failures: self.imp().failures.get(),
+            account: self.imp().settings.borrow().sync_account.trim().to_string(),
+            held: self.imp().held.borrow().clone(),
         }
     }
 
+    /// Ask before deleting an account off the server.
+    ///
+    /// The one thing here that destroys somebody else's copy rather than this
+    /// machine's, so it names the account, says what survives, and puts the
+    /// destructive styling on the button that does it.
+    fn confirm_forget_account(&self, name: &str) {
+        let mine = self.imp().settings.borrow().sync_account.trim().to_string();
+        let is_mine = name == mine || (mine.is_empty() && name == "default");
+
+        let mut detail = format!(
+            "“{name}” and everything in it will be removed from the server — every \
+             evening, every collection, every counter it holds. There is no undo, and \
+             the server has no second copy."
+        );
+        if is_mine {
+            detail.push_str(
+                "\n\nThis is the account this machine syncs to. Nothing here is deleted: \
+                 the whole account stays on this machine, and Send Again would put it \
+                 back on the server.",
+            );
+        } else {
+            detail.push_str(
+                "\n\nThis is not the account this machine syncs to. Whatever holds it \
+                 locally keeps its copy; nothing else does.",
+            );
+        }
+
+        let dialog = adw::AlertDialog::new(Some(&format!("Delete “{name}”?")), Some(&detail));
+        dialog.add_response("cancel", "Cancel");
+        dialog.add_response("delete", "Delete");
+        dialog.set_response_appearance("delete", adw::ResponseAppearance::Destructive);
+        dialog.set_default_response(Some("cancel"));
+        dialog.set_close_response("cancel");
+
+        let app = self.clone();
+        let name = name.to_string();
+        dialog.connect_response(None, move |dialog, response| {
+            dialog.close();
+            if response != "delete" {
+                return;
+            }
+            let Some(service) = app.sync_target() else {
+                return;
+            };
+            let app = app.clone();
+            let name = name.clone();
+            glib::spawn_future_local(async move {
+                let carrier = service.clone();
+                let asked = name.clone();
+                let gone = gio::spawn_blocking(move || carrier.forget_account(&asked)).await;
+                match gone {
+                    Ok(Ok(())) => app.refresh_accounts(),
+                    Ok(Err(error)) => eprintln!("armory: could not delete {name}: {error}"),
+                    Err(_) => eprintln!("armory: the worker went away"),
+                }
+            });
+        });
+
+        dialog.present(Some(&self.window()));
+    }
+
+    /// Ask the server what it is holding, and redraw the list.
+    fn refresh_accounts(&self) {
+        let Some(service) = self.sync_target() else {
+            return;
+        };
+        let app = self.clone();
+        glib::spawn_future_local(async move {
+            let carrier = service.clone();
+            if let Ok(Ok(held)) = gio::spawn_blocking(move || carrier.accounts()).await {
+                *app.imp().held.borrow_mut() = Some(
+                    held.into_iter()
+                        .map(|account| (account.name, account.rows))
+                        .collect(),
+                );
+                app.show_sync_state();
+            }
+        });
+    }
+
     /// Remember where to share to, and start or stop doing it.
-    fn save_sync_target(&self, address: &str, token: Option<&str>) {
-        self.imp().settings.borrow_mut().sync_url = address.trim().to_string();
+    fn save_sync_target(&self, address: &str, token: Option<&str>, account: &str) {
+        {
+            let mut settings = self.imp().settings.borrow_mut();
+            settings.sync_url = address.trim().to_string();
+            settings.sync_account = account.trim().to_string();
+        }
         self.save_settings();
 
         if let Some(token) = token {

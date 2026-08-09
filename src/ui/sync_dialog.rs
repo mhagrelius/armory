@@ -23,13 +23,16 @@ use gtk::glib;
 /// empty on every launch — the same rule the Battle.net secret follows, and
 /// the row's subtitle says whether one is held rather than leaving somebody
 /// hunting for a value Armory is already holding.
-type SaveHandler = Box<dyn Fn(String, Option<String>)>;
+type SaveHandler = Box<dyn Fn(String, Option<String>, String)>;
 
 /// Told to run a pass now.
 type PassHandler = Box<dyn Fn()>;
 
 /// Told to forget what the server knows and offer everything up again.
 type ResendHandler = Box<dyn Fn()>;
+
+/// Told to delete a named account from the server.
+type ForgetHandler = Box<dyn Fn(String)>;
 
 /// Everything the dialog draws, gathered by the application.
 #[derive(Debug, Clone, Default)]
@@ -50,6 +53,13 @@ pub struct State {
     pub last: Option<Pass>,
     /// Consecutive failures. Three is where it stops being noise.
     pub failures: usize,
+    /// Which account on the server this machine belongs to.
+    pub account: String,
+    /// Every account the server holds, as it last answered.
+    ///
+    /// `None` until it has been asked, which is not the same as "none" — an
+    /// empty list means a server holding nothing.
+    pub held: Option<Vec<(String, i64)>>,
 }
 
 #[derive(Debug, Clone)]
@@ -76,6 +86,10 @@ mod imp {
         pub on_save: RefCell<Option<super::SaveHandler>>,
         pub on_pass: RefCell<Option<super::PassHandler>>,
         pub on_resend: RefCell<Option<super::ResendHandler>>,
+        pub on_forget: RefCell<Option<super::ForgetHandler>>,
+        pub account: RefCell<Option<adw::EntryRow>>,
+        pub held: RefCell<Option<adw::PreferencesGroup>>,
+        pub held_rows: RefCell<Vec<adw::ActionRow>>,
     }
 
     #[glib::object_subclass]
@@ -138,10 +152,27 @@ impl SyncDialog {
 
         let address = adw::EntryRow::builder().title("Address").build();
         let token = adw::PasswordEntryRow::builder().title("Token").build();
+        // One server can hold several accounts, kept in separate databases so
+        // that two Battle.net accounts cannot merge into one roster.
+        let account = adw::EntryRow::builder()
+            .title("Account — leave empty for “default”")
+            .build();
 
         where_group.add(&address);
         where_group.add(&token);
+        where_group.add(&account);
         page.add(&where_group);
+
+        // -- what the server is holding ---------------------------------------
+
+        let held = adw::PreferencesGroup::builder()
+            .title("On the server")
+            .description(
+                "Every account this server holds. Deleting one removes it and everything \
+                 in it; the copy on each machine is untouched and is what is left.",
+            )
+            .build();
+        page.add(&held);
 
         // -- what is waiting --------------------------------------------------
 
@@ -213,6 +244,8 @@ impl SyncDialog {
         let imp = self.imp();
         *imp.server.borrow_mut() = Some(address);
         *imp.token.borrow_mut() = Some(token);
+        *imp.account.borrow_mut() = Some(account);
+        *imp.held.borrow_mut() = Some(held);
         *imp.queue.borrow_mut() = Some(queue);
         *imp.state_rows.borrow_mut() = vec![machine, last];
 
@@ -249,9 +282,87 @@ impl SyncDialog {
         if let Some(last) = rows.get(1) {
             last.set_subtitle(&describe(state));
         }
+        if let Some(row) = imp.account.borrow().as_ref() {
+            if row.text() != state.account {
+                row.set_text(&state.account);
+            }
+        }
         drop(rows);
 
         self.show_queue(state);
+        self.show_held(state);
+    }
+
+    /// The accounts the server is holding, each with a way to remove it.
+    fn show_held(&self, state: &State) {
+        let imp = self.imp();
+        let Some(group) = imp.held.borrow().clone() else {
+            return;
+        };
+        for row in imp.held_rows.borrow_mut().drain(..) {
+            group.remove(&row);
+        }
+
+        let say = |title: &str, subtitle: &str| {
+            adw::ActionRow::builder()
+                .title(title)
+                .subtitle(subtitle)
+                .build()
+        };
+
+        let rows: Vec<adw::ActionRow> = match &state.held {
+            None if state.server.is_empty() => {
+                vec![say("Not sharing", "Set an address and a token above.")]
+            }
+            None => vec![say("Not asked yet", "Run a pass and this fills in.")],
+            Some(held) if held.is_empty() => {
+                vec![say("Nothing yet", "This server is holding no accounts.")]
+            }
+            Some(held) => held
+                .iter()
+                .map(|(name, rows)| {
+                    let mine =
+                        *name == state.account || (state.account.is_empty() && name == "default");
+                    let row = adw::ActionRow::builder()
+                        .title(name)
+                        .subtitle(if mine {
+                            "this machine's account"
+                        } else {
+                            "another account"
+                        })
+                        .build();
+
+                    let count = gtk::Label::builder()
+                        .label(rows.to_string())
+                        .valign(gtk::Align::Center)
+                        .build();
+                    count.add_css_class("al-figure");
+                    row.add_suffix(&count);
+
+                    let remove = gtk::Button::builder()
+                        .icon_name("user-trash-symbolic")
+                        .tooltip_text("Delete this account from the server")
+                        .valign(gtk::Align::Center)
+                        .build();
+                    remove.add_css_class("flat");
+                    remove.add_css_class("destructive-action");
+                    let dialog = self.clone();
+                    let named = name.clone();
+                    remove.connect_clicked(move |_| {
+                        if let Some(forget) = dialog.imp().on_forget.borrow().as_ref() {
+                            forget(named.clone());
+                        }
+                    });
+                    row.add_suffix(&remove);
+                    row
+                })
+                .collect(),
+        };
+
+        for row in rows {
+            group.add(&row);
+            imp.held_rows.borrow_mut().push(row);
+        }
     }
 
     fn show_queue(&self, state: &State) {
@@ -311,7 +422,7 @@ impl SyncDialog {
         }
     }
 
-    pub fn connect_save<F: Fn(String, Option<String>) + 'static>(&self, handler: F) {
+    pub fn connect_save<F: Fn(String, Option<String>, String) + 'static>(&self, handler: F) {
         *self.imp().on_save.borrow_mut() = Some(Box::new(handler));
     }
 
@@ -321,6 +432,10 @@ impl SyncDialog {
 
     pub fn connect_resend<F: Fn() + 'static>(&self, handler: F) {
         *self.imp().on_resend.borrow_mut() = Some(Box::new(handler));
+    }
+
+    pub fn connect_forget<F: Fn(String) + 'static>(&self, handler: F) {
+        *self.imp().on_forget.borrow_mut() = Some(Box::new(handler));
     }
 
     fn save(&self) {
@@ -341,8 +456,15 @@ impl SyncDialog {
             .map(|row| row.text().trim().to_string())
             .filter(|text| !text.is_empty());
 
+        let account = imp
+            .account
+            .borrow()
+            .as_ref()
+            .map(|row| row.text().trim().to_string())
+            .unwrap_or_default();
+
         if let Some(save) = imp.on_save.borrow().as_ref() {
-            save(address, token);
+            save(address, token, account);
         }
         self.close();
     }

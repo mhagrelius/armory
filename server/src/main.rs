@@ -5,7 +5,6 @@ use std::net::{TcpListener, TcpStream};
 use std::path::PathBuf;
 use std::sync::Arc;
 
-use armory_core::store::Store;
 use armory_server::http::{self, Response};
 use armory_server::{check_token, Changes, Server};
 
@@ -55,31 +54,35 @@ fn run() -> Result<(), String> {
 
     std::fs::create_dir_all(&settings.data)
         .map_err(|error| format!("could not make {}: {error}", settings.data.display()))?;
-    let path = settings.data.join("armory.db");
-    let store = Store::open(&path)
-        .map_err(|error| format!("could not open {}: {error}", path.display()))?;
-
-    // The server's own name in the log. It never writes a row of its own —
-    // every change carries the machine that pushed it — but the store wants a
-    // name and a client with an empty one would then be handed the server's
-    // rows back as if they were somebody else's.
-    store
-        .set_machine("server")
-        .map_err(|error| format!("could not name the store: {error}"))?;
+    // A store from before accounts existed is moved under `default` rather
+    // than stranded — its clients have drained their outboxes and will not
+    // push it again.
+    match armory_server::accounts::adopt_old_store(&settings.data) {
+        Ok(true) => println!("armory-server: adopted the existing store as the account 'default'"),
+        Ok(false) => {}
+        Err(error) => return Err(format!("could not adopt the existing store: {error}")),
+    }
 
     let listener = TcpListener::bind(&settings.address)
         .map_err(|error| format!("could not listen on {}: {error}", settings.address))?;
 
     // Printed rather than logged: Container Manager's Log tab is unreliable,
     // and this is the line that says the process got past its configuration.
+    let held = armory_server::accounts::known(&settings.data);
     println!(
-        "armory-server listening on {}, account at {}",
+        "armory-server listening on {}, {} account(s) at {}: {}",
         settings.address,
-        path.display()
+        held.len(),
+        settings.data.display(),
+        if held.is_empty() {
+            "none yet".to_string()
+        } else {
+            held.join(", ")
+        }
     );
 
     let server = Arc::new(Server::new(
-        store,
+        settings.data.clone(),
         settings.token,
         Arc::new(Changes::default()),
     ));

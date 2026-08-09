@@ -33,6 +33,8 @@
 //! machine's batch take a `seq` inside another's — which is the one way a
 //! cursor can step over a row it never saw.
 
+use std::collections::HashMap;
+use std::path::PathBuf;
 use std::sync::atomic::{AtomicI64, Ordering};
 use std::sync::{Arc, Condvar, Mutex};
 use std::time::Duration;
@@ -42,6 +44,7 @@ use armory_core::store::Store;
 use armory_core::sync::{Applied, Parcel};
 use serde::Serialize;
 
+pub mod accounts;
 pub mod http;
 
 use http::{Request, Response};
@@ -119,7 +122,14 @@ impl Changes {
 }
 
 pub struct Server {
-    store: Mutex<Store>,
+    /// Every account's store, opened when it is first asked for.
+    ///
+    /// One `Mutex` over the whole map rather than one per account: this
+    /// serves one person's handful of machines, and a lock per account buys
+    /// concurrency nobody is waiting on while making "list them" and "delete
+    /// one" races that have to be reasoned about.
+    stores: Mutex<HashMap<String, Store>>,
+    root: PathBuf,
     token: String,
     changes: Arc<Changes>,
     /// How far the log reached, readable without the lock.
@@ -151,6 +161,19 @@ struct Health {
     rows: i64,
 }
 
+/// One account the server holds.
+#[derive(Debug, Serialize)]
+struct Held {
+    name: String,
+    rows: i64,
+}
+
+/// What a deletion removed.
+#[derive(Debug, Serialize)]
+struct Forgotten {
+    forgot: String,
+}
+
 /// What a push did, as the client's sync page shows it.
 #[derive(Debug, Serialize)]
 struct Report {
@@ -162,14 +185,50 @@ struct Report {
 }
 
 impl Server {
-    pub fn new(store: Store, token: String, changes: Arc<Changes>) -> Self {
-        let rows = AtomicI64::new(store.high_water());
+    pub fn new(root: PathBuf, token: String, changes: Arc<Changes>) -> Self {
         Self {
-            store: Mutex::new(store),
+            stores: Mutex::new(HashMap::new()),
+            root,
             token,
             changes,
-            rows,
+            rows: AtomicI64::new(0),
         }
+    }
+
+    /// The account a request is about.
+    ///
+    /// A client that names none is talking about `default`, which is where a
+    /// store from before accounts existed was adopted — so an older client
+    /// keeps talking to its own data rather than starting a second, empty
+    /// account beside it.
+    fn account_of(request: &Request) -> String {
+        let named = request
+            .header("x-armory-account")
+            .unwrap_or_default()
+            .trim();
+        if named.is_empty() {
+            accounts::DEFAULT.to_string()
+        } else {
+            named.to_string()
+        }
+    }
+
+    /// Do something with one account's store, opening it if this is the first
+    /// time anyone has asked.
+    ///
+    /// `None` when the name is not one this server will turn into a path. The
+    /// caller answers 400 — a refusal, rather than a store quietly made
+    /// somewhere unintended.
+    fn with_store<T>(&self, name: &str, work: impl FnOnce(&mut Store) -> T) -> Option<T> {
+        let home = accounts::directory(&self.root, name)?;
+        let mut stores = self.stores.lock().ok()?;
+        if !stores.contains_key(name) {
+            std::fs::create_dir_all(&home).ok()?;
+            let store = Store::open(&home.join("armory.db")).ok()?;
+            store.set_machine("server").ok()?;
+            stores.insert(name.to_string(), store);
+        }
+        Some(work(stores.get_mut(name)?))
     }
 
     pub fn handle(&self, request: &Request) -> Response {
@@ -186,7 +245,11 @@ impl Server {
             ("POST", "/push") => self.push(request),
             ("GET", "/pull") => self.pull(request),
             ("GET", "/wait") => self.wait(request),
-            (_, "/health" | "/push" | "/pull" | "/wait") => {
+            ("GET", "/accounts") => self.accounts(),
+            ("DELETE", path) if path.starts_with("/accounts/") => {
+                self.forget(request, path.trim_start_matches("/accounts/"))
+            }
+            (_, "/health" | "/push" | "/pull" | "/wait" | "/accounts") => {
                 Response::text(405, "wrong method for that route")
             }
             _ => Response::text(404, "no such route"),
@@ -218,15 +281,17 @@ impl Server {
             Err(error) => return Response::text(400, &format!("that is not a parcel: {error}")),
         };
 
-        let Ok(mut store) = self.store.lock() else {
-            return Response::text(503, "the store is poisoned");
+        let account = Self::account_of(request);
+        let Some(outcome) = self.with_store(&account, |store| {
+            let applied = store.apply(&parcel, Recording::As(machine))?;
+            Ok::<_, armory_core::store::StoreError>((applied, store.high_water()))
+        }) else {
+            return Response::text(400, "that is not an account name this server will take");
         };
-        let applied = match store.apply(&parcel, Recording::As(machine)) {
-            Ok(applied) => applied,
+        let (applied, cursor) = match outcome {
+            Ok(outcome) => outcome,
             Err(error) => return Response::text(500, &format!("could not apply: {error}")),
         };
-        let cursor = store.high_water();
-        drop(store);
         self.rows.store(cursor, Ordering::Relaxed);
 
         // Only when something actually landed. `Applied::kept` counts rows
@@ -242,12 +307,70 @@ impl Server {
         let since = number(request, "since", 0);
         let limit = number(request, "limit", BATCH as i64).clamp(1, BATCH as i64) as usize;
 
-        let Ok(store) = self.store.lock() else {
-            return Response::text(503, "the store is poisoned");
+        let account = Self::account_of(request);
+        let machine = request.machine().to_string();
+        let Some(pulled) =
+            self.with_store(&account, |store| store.log_since(since, &machine, limit))
+        else {
+            return Response::text(400, "that is not an account name this server will take");
         };
-        match store.log_since(since, request.machine(), limit) {
+        match pulled {
             Ok(pulled) => Response::json(200, &pulled),
             Err(error) => Response::text(500, &format!("could not read the log: {error}")),
+        }
+    }
+
+    /// What the server is holding, and how much of each.
+    ///
+    /// The list a client draws so that deleting one is a thing done to a named
+    /// account with a size beside it, rather than to a path typed into a
+    /// terminal.
+    fn accounts(&self) -> Response {
+        let mut held = Vec::new();
+        for name in accounts::known(&self.root) {
+            let rows = self
+                .with_store(&name, |store| store.high_water())
+                .unwrap_or(0);
+            held.push(Held { name, rows });
+        }
+        Response::json(200, &held)
+    }
+
+    /// Remove an account and everything in it.
+    ///
+    /// Irreversible, and the only route here that destroys anything — so it
+    /// takes the name in the path *and* again in `?confirm=`, and refuses
+    /// unless they match. Not security: the token is that. It is so that a
+    /// mistyped or half-built URL cannot delete an account, because there is
+    /// no undo and the client's copy is the only one left afterwards.
+    fn forget(&self, request: &Request, name: &str) -> Response {
+        let Some(home) = accounts::directory(&self.root, name) else {
+            return Response::text(400, "that is not an account name this server will take");
+        };
+        if request.query("confirm").as_deref() != Some(name) {
+            return Response::text(400, "confirm the account by name to delete it");
+        }
+        if !home.exists() {
+            return Response::text(404, "no such account");
+        }
+
+        // Out of the map first. A store left open on a directory that is being
+        // removed would go on answering from a file nothing can reach, and the
+        // next push would recreate it half way through the deletion.
+        if let Ok(mut stores) = self.stores.lock() {
+            stores.remove(name);
+        }
+        match std::fs::remove_dir_all(&home) {
+            Ok(()) => {
+                self.changes.announce();
+                Response::json(
+                    200,
+                    &Forgotten {
+                        forgot: name.into(),
+                    },
+                )
+            }
+            Err(error) => Response::text(500, &format!("could not delete it: {error}")),
         }
     }
 
@@ -261,11 +384,11 @@ impl Server {
         // would look like it had stopped syncing.
         let mark = self.changes.mark();
 
-        let (already, cursor) = {
-            let Ok(store) = self.store.lock() else {
-                return Response::text(503, "the store is poisoned");
-            };
+        let account = Self::account_of(request);
+        let Some((already, cursor)) = self.with_store(&account, |store| {
             (store.anything_since(since, &machine), store.high_water())
+        }) else {
+            return Response::text(400, "that is not an account name this server will take");
         };
         if already {
             return Response::json(
@@ -280,16 +403,13 @@ impl Server {
         // Nothing is held while parked — not the lock, not a store handle.
         self.changes.wait(mark, MAX_WAIT);
 
-        let Ok(store) = self.store.lock() else {
-            return Response::text(503, "the store is poisoned");
+        let Some(waited) = self.with_store(&account, |store| Waited {
+            changed: store.anything_since(since, &machine),
+            cursor: store.high_water(),
+        }) else {
+            return Response::text(400, "that is not an account name this server will take");
         };
-        Response::json(
-            200,
-            &Waited {
-                changed: store.anything_since(since, &machine),
-                cursor: store.high_water(),
-            },
-        )
+        Response::json(200, &waited)
     }
 }
 
@@ -339,11 +459,13 @@ mod tests {
     const TOKEN: &str = "0123456789abcdef0123456789abcdef";
 
     fn server() -> Server {
-        Server::new(
-            Store::in_memory().expect("a store"),
-            TOKEN.to_string(),
-            Arc::new(Changes::default()),
-        )
+        // A real directory, because accounts are directories now and the
+        // route that deletes one deletes a directory.
+        let home = tempfile::tempdir().expect("a directory");
+        let root = home.path().to_path_buf();
+        // Kept alive for the test's length; the store is opened underneath it.
+        std::mem::forget(home);
+        Server::new(root, TOKEN.to_string(), Arc::new(Changes::default()))
     }
 
     fn get(path: &str, machine: &str, token: Option<&str>) -> Request {
@@ -403,7 +525,8 @@ mod tests {
         // up after three seconds, and the server is reported unhealthy exactly
         // when it is working hardest.
         let server = server();
-        let held = server.store.lock().expect("the store");
+        // Hold the map the way a long push does.
+        let held = server.stores.lock().expect("the stores");
 
         let response = server.handle(&get("/health", "", None));
         assert_eq!(response.status, 200);
@@ -542,10 +665,9 @@ mod tests {
         push(&server, "one", &watched(4306, "Silk Cloth"));
 
         let mark = server.changes.mark();
-        let held = {
-            let store = server.store.lock().unwrap();
-            store.anything_since(0, "one")
-        };
+        let held = server
+            .with_store(accounts::DEFAULT, |store| store.anything_since(0, "one"))
+            .expect("the store");
         assert!(!held, "a machine must not be woken by its own writes");
         let _ = mark;
     }
@@ -558,6 +680,176 @@ mod tests {
         changes.announce();
         // And the park returns at once rather than sleeping through it.
         assert!(changes.wait(mark, Duration::from_millis(50)));
+    }
+
+    fn with_account(method: &str, path: &str, account: &str, body: Vec<u8>) -> Request {
+        let mut request = request(method, path, "one", Some(TOKEN), body);
+        request
+            .headers
+            .insert("x-armory-account".into(), account.to_string());
+        request
+    }
+
+    fn listed(server: &Server) -> serde_json::Value {
+        let response = server.handle(&get("/accounts", "one", Some(TOKEN)));
+        assert_eq!(response.status, 200);
+        serde_json::from_slice(&response.body).unwrap()
+    }
+
+    #[test]
+    fn two_accounts_do_not_see_each_other() {
+        // The whole reason accounts are separate files. Every merge rule in
+        // the store is written to fold two views of *one* account together; a
+        // shared store would fold two accounts together and call it agreement.
+        let server = server();
+        let parcel = serde_json::to_vec(&watched(4306, "Silk Cloth")).unwrap();
+        server.handle(&with_account("POST", "/push", "first", parcel));
+
+        let mine = server.handle(&with_account("GET", "/pull?since=0", "first", Vec::new()));
+        let mine: serde_json::Value = serde_json::from_slice(&mine.body).unwrap();
+        assert_eq!(
+            mine["parcel"]["rows"].as_array().unwrap().len(),
+            0,
+            "own rows"
+        );
+
+        let others = server.handle(&{
+            let mut r = with_account("GET", "/pull?since=0", "first", Vec::new());
+            r.headers.insert("x-armory-machine".into(), "two".into());
+            r
+        });
+        let others: serde_json::Value = serde_json::from_slice(&others.body).unwrap();
+        assert_eq!(others["parcel"]["rows"].as_array().unwrap().len(), 1);
+
+        // And the second account has never heard of any of it.
+        let elsewhere = server.handle(&{
+            let mut r = with_account("GET", "/pull?since=0", "second", Vec::new());
+            r.headers.insert("x-armory-machine".into(), "two".into());
+            r
+        });
+        let elsewhere: serde_json::Value = serde_json::from_slice(&elsewhere.body).unwrap();
+        assert_eq!(elsewhere["parcel"]["rows"].as_array().unwrap().len(), 0);
+    }
+
+    #[test]
+    fn a_client_that_names_no_account_gets_the_default_one() {
+        let server = server();
+        push(&server, "one", &watched(1, "thing"));
+        let held = listed(&server);
+        assert_eq!(held[0]["name"], accounts::DEFAULT);
+    }
+
+    #[test]
+    fn accounts_are_listed_with_how_much_each_holds() {
+        let server = server();
+        for name in ["alpha", "beta"] {
+            let parcel = serde_json::to_vec(&watched(1, "thing")).unwrap();
+            server.handle(&with_account("POST", "/push", name, parcel));
+        }
+        let held = listed(&server);
+        let names: Vec<&str> = held
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|entry| entry["name"].as_str().unwrap())
+            .collect();
+        assert_eq!(names, vec!["alpha", "beta"]);
+        assert!(held[0]["rows"].as_i64().unwrap() > 0);
+    }
+
+    #[test]
+    fn deleting_an_account_needs_it_named_twice() {
+        // No undo, and the client's copy is the only one left afterwards. The
+        // token is the security; this is against a mistyped or half-built URL.
+        let server = server();
+        let parcel = serde_json::to_vec(&watched(1, "thing")).unwrap();
+        server.handle(&with_account("POST", "/push", "alpha", parcel));
+
+        let bare = server.handle(&with_account(
+            "DELETE",
+            "/accounts/alpha",
+            "alpha",
+            Vec::new(),
+        ));
+        assert_eq!(bare.status, 400);
+
+        let wrong = server.handle(&with_account(
+            "DELETE",
+            "/accounts/alpha?confirm=beta",
+            "alpha",
+            Vec::new(),
+        ));
+        assert_eq!(wrong.status, 400);
+        assert_eq!(listed(&server).as_array().unwrap().len(), 1, "still there");
+
+        let right = server.handle(&with_account(
+            "DELETE",
+            "/accounts/alpha?confirm=alpha",
+            "alpha",
+            Vec::new(),
+        ));
+        assert_eq!(right.status, 200);
+        assert!(listed(&server).as_array().unwrap().is_empty());
+    }
+
+    #[test]
+    fn deleting_one_account_leaves_the_others_alone() {
+        let server = server();
+        for name in ["alpha", "beta"] {
+            let parcel = serde_json::to_vec(&watched(1, "thing")).unwrap();
+            server.handle(&with_account("POST", "/push", name, parcel));
+        }
+        server.handle(&with_account(
+            "DELETE",
+            "/accounts/alpha?confirm=alpha",
+            "alpha",
+            Vec::new(),
+        ));
+        let held = listed(&server);
+        assert_eq!(held.as_array().unwrap().len(), 1);
+        assert_eq!(held[0]["name"], "beta");
+    }
+
+    #[test]
+    fn an_account_name_that_is_a_path_is_refused_everywhere() {
+        // The one string off the network that becomes a filesystem path.
+        let server = server();
+        for bad in ["../escape", "a/b", ".."] {
+            let parcel = serde_json::to_vec(&watched(1, "thing")).unwrap();
+            let pushed = server.handle(&with_account("POST", "/push", bad, parcel));
+            assert_eq!(pushed.status, 400, "push accepted {bad:?}");
+        }
+        assert!(listed(&server).as_array().unwrap().is_empty());
+    }
+
+    #[test]
+    fn deleting_an_account_that_is_not_there_is_a_404_rather_than_a_success() {
+        let server = server();
+        let response = server.handle(&with_account(
+            "DELETE",
+            "/accounts/ghost?confirm=ghost",
+            "ghost",
+            Vec::new(),
+        ));
+        assert_eq!(response.status, 404);
+    }
+
+    #[test]
+    fn listing_and_deleting_need_the_token() {
+        let server = server();
+        assert_eq!(server.handle(&get("/accounts", "one", None)).status, 401);
+        assert_eq!(
+            server
+                .handle(&request(
+                    "DELETE",
+                    "/accounts/a?confirm=a",
+                    "one",
+                    None,
+                    Vec::new()
+                ))
+                .status,
+            401
+        );
     }
 
     #[test]
