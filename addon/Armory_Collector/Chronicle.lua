@@ -1732,7 +1732,44 @@ end
 -- `ArmoryCollectorDB = ArmoryCollectorDB or {}` at file scope would replace a
 -- decade of collected account data with an empty table and write that back on
 -- the way out.
+--- What is still available to replace what the combat log used to give.
+---
+--- Probed rather than assumed. 12.0 took the combat log and introduced
+--- "secret values" — figures an addon may hold and may not read — so a
+--- function existing is not the same as it answering. The `type` of what
+--- comes back is the part that matters: a number is usable, anything else is
+--- a value this addon cannot record.
+local function probe()
+	local out = {}
+	local health = CreateFrame("Frame")
+	local ok = pcall(health.RegisterUnitEvent, health, "UNIT_HEALTH", "player")
+	out.unitHealthEvent = (ok and health:IsEventRegistered("UNIT_HEALTH")) and 1 or 0
+	health:UnregisterAllEvents()
+
+	local _, value = pcall(UnitHealth, "player")
+	out.unitHealth = type(value)
+	local _, most = pcall(UnitHealthMax, "player")
+	out.unitHealthMax = type(most)
+	local _, rank = pcall(UnitClassification, "player")
+	out.classification = type(rank)
+
+	out.deathInfo = C_DeathInfo and 1 or 0
+	out.recapEvents = (C_DeathInfo and C_DeathInfo.GetRecapEvents) and 1 or 0
+	out.getStatistic = GetStatistic and 1 or 0
+	if GetStatistic then
+		-- 60 is "Total deaths" and 1197 "Total kills" on the wiki; recorded as
+		-- whatever they answer rather than trusted, because a statistic id is
+		-- exactly the sort of thing that gets renumbered.
+		local _, deaths = pcall(GetStatistic, 60)
+		local _, killed = pcall(GetStatistic, 1197)
+		out.stat60 = tostring(deaths)
+		out.stat1197 = tostring(killed)
+	end
+	return out
+end
+
 wiring = {
+	able = probe(),
 	asked = #wanted,
 	refused = refused,
 	cleu = frame:IsEventRegistered("COMBAT_LOG_EVENT_UNFILTERED") and 1 or 0,

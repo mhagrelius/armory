@@ -26,6 +26,25 @@ globals = {
 
 -- Everything the client provides, which the addon may read and never assign.
 read_globals = {
+	-- Added after a scope audit found them used and undeclared here. A
+	-- linter that is noisy about real API calls hides the one warning that
+	-- matters.
+	"GetStatistic",
+	"C_DeathInfo",
+	"UnitHealth",
+	"UnitHealthMax",
+	"UnitExists",
+	"C_Map",
+	"strsplit",
+	"C_GossipInfo",
+	"C_DelvesUI",
+	"C_TalkingHead",
+	"IsInCinematicScene",
+	"GetNumSavedInstances",
+	"GetSavedInstanceInfo",
+	"C_ProfSpecs",
+	"GetQuestID",
+
 	-- Frames, timers and the Lua the client adds to the standard library.
 	"CreateFrame",
 	"C_Timer",
