@@ -213,6 +213,17 @@ local longestFight = 0
 local worstHit, worstHitBy = 0, nil
 local lowestHealth = 100
 
+--- How much of the combat log actually arrived, and what it looked like.
+---
+--- Diagnostic, and here because an evening of twenty kills and a death came
+--- back with `kills = 0`, `worstHit = 0` and `lowestHealth = 100` while every
+--- other kind of event recorded normally. Everything those three depend on is
+--- one handler, so the question is which step of it is silent: the event not
+--- arriving at all, no killing blow being attributed, or no damage landing on
+--- a GUID that matches the player's. Counting each separately answers it in
+--- one evening instead of by reading the code again.
+local cleuSeen, cleuKills, cleuHits, cleuMine = 0, 0, 0, 0
+
 --- Forward declaration, for the same reason as `noteInstance` below it:
 --- `noteZone` credits the zone being left, and the function that does it is
 --- defined further down beside the rest of the session bookkeeping.
@@ -645,6 +656,10 @@ local function closeSession()
 	current.worstHitBy = worstHitBy
 	current.longestFight = longestFight
 	current.lowestHealth = lowestHealth
+	-- Diagnostic; see `cleuSeen`. Read straight out of the file rather than
+	-- through the desktop application, which does not know this key and
+	-- ignores it.
+	current.cleu = { cleuSeen, cleuKills, cleuHits, cleuMine, playerGUID or "no-guid" }
 	current.travelled = math.floor(travelled)
 
 	-- The zone being sat in when the client closed had no zone change to end
@@ -739,6 +754,7 @@ local function openSession()
 	longestFight = 0
 	worstHit, worstHitBy = 0, nil
 	lowestHealth = 100
+	cleuSeen, cleuKills, cleuHits, cleuMine = 0, 0, 0, 0
 
 	snapshotStandings()
 
@@ -1075,8 +1091,13 @@ handlers.COMBAT_LOG_EVENT_UNFILTERED = function()
 	end
 
 	local _, subevent, _, sourceGUID, sourceName, _, _, destGUID = CombatLogGetCurrentEventInfo()
+	cleuSeen = cleuSeen + 1
+	if destGUID == playerGUID then
+		cleuMine = cleuMine + 1
+	end
 
 	if subevent == "PARTY_KILL" then
+		cleuKills = cleuKills + 1
 		kills = kills + 1
 		-- `UnitClassification` needs a unit token, and the only one that can
 		-- describe the thing that just died is the current target.
@@ -1104,6 +1125,7 @@ handlers.COMBAT_LOG_EVENT_UNFILTERED = function()
 		and sourceGUID ~= destGUID
 		and subevent:find("_DAMAGE", 1, true)
 	then
+		cleuHits = cleuHits + 1
 		killedBy = sourceName
 
 		-- The two numbers a person actually retells. Eleven arguments are
