@@ -33,6 +33,7 @@
 //! machine's batch take a `seq` inside another's — which is the one way a
 //! cursor can step over a row it never saw.
 
+use std::sync::atomic::{AtomicI64, Ordering};
 use std::sync::{Arc, Condvar, Mutex};
 use std::time::Duration;
 
@@ -121,6 +122,15 @@ pub struct Server {
     store: Mutex<Store>,
     token: String,
     changes: Arc<Changes>,
+    /// How far the log reached, readable without the lock.
+    ///
+    /// `/health` must never queue behind a push. A first sync applies
+    /// thousands of rows at a time while holding the store, and the container
+    /// healthcheck gives up after three seconds — so a health route that took
+    /// the lock would report the server unhealthy during precisely the
+    /// operation it exists to survive, and would say nothing at all to anyone
+    /// asking whether the sync was working.
+    rows: AtomicI64,
 }
 
 /// The answer to `/wait`.
@@ -153,10 +163,12 @@ struct Report {
 
 impl Server {
     pub fn new(store: Store, token: String, changes: Arc<Changes>) -> Self {
+        let rows = AtomicI64::new(store.high_water());
         Self {
             store: Mutex::new(store),
             token,
             changes,
+            rows,
         }
     }
 
@@ -182,14 +194,12 @@ impl Server {
     }
 
     fn health(&self) -> Response {
-        let Ok(store) = self.store.lock() else {
-            return Response::text(503, "the store is poisoned");
-        };
+        // Deliberately does not touch the store. See `Server::rows`.
         Response::json(
             200,
             &Health {
                 ok: true,
-                rows: store.high_water(),
+                rows: self.rows.load(Ordering::Relaxed),
             },
         )
     }
@@ -217,6 +227,7 @@ impl Server {
         };
         let cursor = store.high_water();
         drop(store);
+        self.rows.store(cursor, Ordering::Relaxed);
 
         // Only when something actually landed. `Applied::kept` counts rows
         // both sides already agreed on, and waking every parked client for a
@@ -383,6 +394,37 @@ mod tests {
     fn health_needs_no_token_because_the_container_asks_it() {
         let response = server().handle(&get("/health", "", None));
         assert_eq!(response.status, 200);
+    }
+
+    #[test]
+    fn health_answers_while_the_store_is_busy() {
+        // The failure this exists for: a first sync holds the store for the
+        // length of a two-thousand-row apply, the container healthcheck gives
+        // up after three seconds, and the server is reported unhealthy exactly
+        // when it is working hardest.
+        let server = server();
+        let held = server.store.lock().expect("the store");
+
+        let response = server.handle(&get("/health", "", None));
+        assert_eq!(response.status, 200);
+        let body: serde_json::Value = serde_json::from_slice(&response.body).unwrap();
+        assert_eq!(body["ok"], true);
+
+        drop(held);
+    }
+
+    #[test]
+    fn health_reports_what_the_last_push_left_behind() {
+        let server = server();
+        assert_eq!(rows_of(&server), 0);
+        push(&server, "one", &watched(4306, "Silk Cloth"));
+        assert!(rows_of(&server) > 0);
+    }
+
+    fn rows_of(server: &Server) -> i64 {
+        let response = server.handle(&get("/health", "", None));
+        let body: serde_json::Value = serde_json::from_slice(&response.body).unwrap();
+        body["rows"].as_i64().unwrap()
     }
 
     #[test]
