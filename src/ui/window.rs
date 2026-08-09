@@ -317,6 +317,10 @@ impl ArmoryWindow {
         journal.append(Some("Journal Setup…"), Some("app.journal-setup"));
         menu.append_section(None, &journal);
 
+        let run = gtk::gio::Menu::new();
+        run.append(Some("Start a New Run…"), Some("app.new-run"));
+        menu.append_section(None, &run);
+
         let account = gtk::gio::Menu::new();
         account.append(Some("Sharing…"), Some("app.sync-status"));
         account.append(Some("Connect Battle.net Account…"), Some("app.setup"));

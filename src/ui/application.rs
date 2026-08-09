@@ -554,6 +554,16 @@ impl ArmoryApplication {
         write_all.connect_activate(move |_, _| app.write_all());
         self.add_action(&write_all);
 
+        // Starting over. The Run page's own "Start a run" button lives in its
+        // empty state, so with a run already in place there is otherwise no
+        // way to begin a different one — and a run's cohort is frozen at its
+        // baseline, so re-aiming one at another character is not a thing that
+        // can be done to it.
+        let new_run = gio::SimpleAction::new("new-run", None);
+        let app = self.clone();
+        new_run.connect_activate(move |_, _| app.confirm_new_run());
+        self.add_action(&new_run);
+
         // A pass is silent when it works, so there has to be somewhere to ask.
         let share = gio::SimpleAction::new("sync-status", None);
         let app = self.clone();
@@ -3178,6 +3188,71 @@ impl ArmoryApplication {
     }
 
     // -- runs -----------------------------------------------------------------
+
+    /// Ask before throwing a run away, and say what that costs.
+    ///
+    /// Destructive and unrecoverable — the attestations especially, which are
+    /// somebody answering a question nothing else could measure. Worth a
+    /// sentence naming them rather than a generic "are you sure".
+    fn confirm_new_run(&self) {
+        let held = self.imp().run.borrow().clone();
+        let enrolled = self.imp().cohort.borrow().len();
+
+        let Some((id, run)) = held else {
+            // No run to replace; the Run page's own button is the way in.
+            self.start_run();
+            return;
+        };
+
+        let attested = run
+            .goals
+            .iter()
+            .filter(|goal| goal.attestation.is_some())
+            .count();
+
+        let mut detail = format!(
+            "“{}” was measured from {}. Starting over throws away its baseline \
+             and everything planned against it",
+            run.name,
+            run.baseline.taken_at.format("%-d %B %Y")
+        );
+        if attested > 0 {
+            detail.push_str(&format!(
+                ", including {attested} goal{} you attested to by hand",
+                if attested == 1 { "" } else { "s" }
+            ));
+        }
+        detail.push_str(&format!(
+            ". The new run will be about the {} character{} enrolled on Roster, \
+             and measured from now.",
+            enrolled,
+            if enrolled == 1 { "" } else { "s" }
+        ));
+
+        let dialog = adw::AlertDialog::new(Some("Start a new run?"), Some(&detail));
+        dialog.add_response("cancel", "Cancel");
+        dialog.add_response("start", "Start Over");
+        dialog.set_response_appearance("start", adw::ResponseAppearance::Destructive);
+        dialog.set_default_response(Some("cancel"));
+        dialog.set_close_response("cancel");
+
+        let app = self.clone();
+        dialog.connect_response(None, move |dialog, response| {
+            dialog.close();
+            if response != "start" {
+                return;
+            }
+            if let Err(error) = app.store().borrow_mut().forget_run(id) {
+                eprintln!("armory: could not forget the run: {error}");
+                return;
+            }
+            *app.imp().run.borrow_mut() = None;
+            app.start_run();
+            app.refresh_views();
+        });
+
+        dialog.present(Some(&self.window()));
+    }
 
     /// Start a run: freeze what the account has now, and plan from it.
     fn start_run(&self) {

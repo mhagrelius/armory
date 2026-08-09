@@ -2323,6 +2323,26 @@ impl Store {
         Ok(id)
     }
 
+    /// Forget a run and everything planned for it.
+    ///
+    /// The deliberate end of a run, not a tidy-up: the baseline, the goals,
+    /// every attestation and every exclusion go. It exists because a run's
+    /// cohort is frozen the moment the baseline is taken, so a run started
+    /// around one character cannot be re-aimed at another — the only honest
+    /// way to change who a run is about is to start a different one.
+    ///
+    /// The goals go first. A run row deleted while its goals remained would
+    /// leave rows keyed to a run that no longer exists, and `outward_key`
+    /// would then refuse to name them on the wire — stranding them on this
+    /// machine with nothing to say why.
+    pub fn forget_run(&mut self, id: i64) -> Result<()> {
+        let transaction = self.connection.transaction()?;
+        transaction.execute("DELETE FROM goal WHERE run_id = ?1", params![id])?;
+        transaction.execute("DELETE FROM run WHERE id = ?1", params![id])?;
+        transaction.commit()?;
+        Ok(())
+    }
+
     /// The run currently being looked at, if there is one.
     pub fn current_run(&self) -> Result<Option<(i64, Run)>> {
         let row: Option<(i64, String, String, String)> = self
@@ -3432,6 +3452,41 @@ mod tests {
 
         let store = Store::open(&path).expect("reopened");
         assert_eq!(store.roster().expect("read").len(), 1);
+    }
+
+    #[test]
+    fn forgetting_a_run_takes_its_goals_with_it() {
+        use crate::run::{Baseline, Bucket, Goal, Run, Standing};
+
+        let mut store = Store::in_memory().expect("a store");
+        let run = Run {
+            name: "Fresh start".into(),
+            baseline: Baseline {
+                taken_at: Utc::now(),
+                collected: vec![],
+                completed: vec![],
+            },
+            cohort: Cohort::default(),
+            goals: vec![Goal {
+                achievement_id: 1234,
+                standing: Standing::Unearned,
+                bucket: Bucket::Observable,
+                attestation: None,
+                nearest: None,
+                evaluation: None,
+            }],
+        };
+        let id = store.save_run(None, &run).expect("saved");
+        assert!(store.current_run().expect("read").is_some());
+
+        store.forget_run(id).expect("forgotten");
+
+        assert!(store.current_run().expect("read").is_none());
+        let orphans: i64 = store
+            .connection
+            .query_row("SELECT COUNT(*) FROM goal", [], |row| row.get(0))
+            .expect("counted");
+        assert_eq!(orphans, 0, "goals outlived the run they belong to");
     }
 
     #[test]
