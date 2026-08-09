@@ -660,6 +660,7 @@ local function closeSession()
 	-- through the desktop application, which does not know this key and
 	-- ignores it.
 	current.cleu = { cleuSeen, cleuKills, cleuHits, cleuMine, playerGUID or "no-guid" }
+	current.wiring = wiring
 	current.travelled = math.floor(travelled)
 
 	-- The zone being sat in when the client closed had no zone change to end
@@ -1665,12 +1666,42 @@ end)
 -- the client does not know. A patch renaming one event should cost that one
 -- event, not the whole addon — the file would otherwise fail to load and take
 -- every other thing it records with it.
+-- Collected first, because `handlers[event] = nil` inside `pairs(handlers)`
+-- mutates the table being traversed. Lua permits clearing the key `next` just
+-- returned, but nothing here needs to rely on that.
+local wanted = {}
 for event in pairs(handlers) do
+	wanted[#wanted + 1] = event
+end
+
+local refused = {}
+for _, event in ipairs(wanted) do
 	local ok = pcall(frame.RegisterEvent, frame, event)
 	if not ok then
+		refused[#refused + 1] = event
 		handlers[event] = nil
 	end
 end
+
+-- What the client would not wire up, and whether the one that matters took.
+--
+-- Diagnostic: an evening came back with every combat-log number at its
+-- starting value and a counter proving the handler had not run once, while
+-- fifty-nine other handlers worked. That is either a refused registration or
+-- an event that is registered and never delivered, and those want different
+-- fixes.
+--
+-- **Held in a local and written at logout, never here.** A saved variable is
+-- not restored until after the addon's files have run, so
+-- `ArmoryCollectorDB = ArmoryCollectorDB or {}` at file scope would replace a
+-- decade of collected account data with an empty table and write that back on
+-- the way out.
+local wiring = {
+	asked = #wanted,
+	refused = refused,
+	cleu = frame:IsEventRegistered("COMBAT_LOG_EVENT_UNFILTERED") and 1 or 0,
+	handler = handlers.COMBAT_LOG_EVENT_UNFILTERED ~= nil and 1 or 0,
+}
 
 -- What the client refused, and to whom.
 --
