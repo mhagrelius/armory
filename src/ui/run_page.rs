@@ -722,6 +722,20 @@ impl RunPage {
 
     /// The longest fight, the hardest hit and the closest call.
     ///
+    /// How long a fight took, without the reader having to guess at the units.
+    ///
+    /// `0:10` was the obvious formatting and it is genuinely ambiguous — a
+    /// duration written that way reads as ten minutes about as easily as ten
+    /// seconds, and the card carries no unit anywhere near it. So anything
+    /// under a minute is said outright, and past that `m:ss` means what it
+    /// looks like.
+    fn fight_length(seconds: u32) -> String {
+        if seconds < 60 {
+            return format!("{seconds}s");
+        }
+        format!("{}:{:02}", seconds / 60, seconds % 60)
+    }
+
     /// Public to the module so the chronicle card draws the same three, at the
     /// smaller size. Nothing in the game names the *opponent* of the longest
     /// fight — only the hardest hit carries one — so where there is no name
@@ -732,11 +746,7 @@ impl RunPage {
         if digest.longest_fight > 0 {
             cards.push(almanac::stat(
                 "Longest fight",
-                &format!(
-                    "{}:{:02}",
-                    digest.longest_fight / 60,
-                    digest.longest_fight % 60
-                ),
+                &Self::fight_length(digest.longest_fight),
                 "",
                 small,
             ));

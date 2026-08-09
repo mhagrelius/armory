@@ -231,6 +231,12 @@ pub fn account_attempts(tallies: &Tallies) -> Vec<Tally> {
 /// Rounded to the minute below an hour and to the hour above about a day: "17
 /// hours" is the fact, and "17 hours 3 minutes" is a spreadsheet.
 pub fn spent(seconds: u64) -> String {
+    // Under a minute, say seconds. Flooring to minutes turned a ten-second
+    // fight into "0 minutes" — a thing that happened, reported as no time at
+    // all — and did the same to a zone somebody passed through.
+    if seconds < 60 {
+        return crate::chronicle::plural(seconds as usize, "second", "seconds");
+    }
     let minutes = seconds / 60;
     if minutes < 60 {
         return crate::chronicle::plural(minutes as usize, "minute", "minutes");
@@ -301,6 +307,12 @@ mod tests {
 
     #[test]
     fn time_and_distance_are_said_the_way_a_person_says_them() {
+        // Below a minute it is seconds, not "0 minutes". A ten-second fight
+        // is short, not absent.
+        assert_eq!(spent(10), "10 seconds");
+        assert_eq!(spent(1), "1 second");
+        assert_eq!(spent(59), "59 seconds");
+        assert_eq!(spent(60), "1 minute");
         assert_eq!(spent(90), "1 minute");
         assert_eq!(spent(3_600), "1 hour");
         assert_eq!(spent(5_400), "1 hr 30 min");
