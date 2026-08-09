@@ -561,6 +561,33 @@ the API is the optional half.
   refused registration throws nothing, which is exactly how a dead handler sat
   there looking wired up.
 
+- **What survived the combat log closing, and what did not.** Of the addon's
+  sixty events exactly one is refused on 12.0.7, and it is
+  `COMBAT_LOG_EVENT_UNFILTERED`. Five things came off it. Three came back by
+  other routes: rare kills through `UNIT_DIED`, which Blizzard restored in the
+  same patch as a frame event carrying the dying unit's GUID; what killed you
+  through `C_DeathRecap.GetRecapEvents`; and the evening's kill count from the
+  account's own statistics, which are exact and which Armory already fetches
+  from `/achievements/statistics`. Two are gone with no replacement — the
+  hardest hit taken and the lowest health reached — because `UnitHealth`
+  returns a *secret value* in combat, and secrets cannot be compared or
+  arithmetic'd, so a running minimum is not computable at all.
+
+- **`UNIT_DIED` is not a kill count and must not be used as one.** It fires
+  for anything dying nearby, including other people's work, and 12.0 left no
+  killing-blow attribution anywhere in the API. It answers one narrower
+  question honestly — was the thing I had targeted, and a rare, the thing that
+  died — and the GUID is secret on instanced maps, so it records world rares
+  and quietly records nothing in a dungeon. That is the right way round: the
+  attempt counters are about world rares.
+
+- **A secret value written to a SavedVariable becomes nil, silently.**
+  Blizzard replaces it and leaves a comment in the file; nothing errors. So
+  anything the addon persists that could be secret in combat is a field that
+  will be empty on some evenings and full on others, with no signal
+  distinguishing the two. `type()` still reports the underlying type, so a
+  type check does not detect one — `issecretvalue` does.
+
 - **The CLEU damage amount is read by position from the front, never the back.**
   Eleven arguments are common to every subevent; a swing puts the amount
   twelfth, a spell fifteenth, the environment thirteenth. Counting from the end

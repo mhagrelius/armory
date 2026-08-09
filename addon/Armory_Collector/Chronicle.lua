@@ -128,7 +128,6 @@ local lastInstance = nil
 local killedBy = nil
 
 --- How many things the party finished off.
-local kills = 0
 
 --- The player's own GUID, read once.
 ---
@@ -210,19 +209,7 @@ local longestFight = 0
 
 --- The hardest single hit taken this session, and the lowest the health bar got
 --- without the character dying.
-local worstHit, worstHitBy = 0, nil
-local lowestHealth = 100
 
---- How much of the combat log actually arrived, and what it looked like.
----
---- Diagnostic, and here because an evening of twenty kills and a death came
---- back with `kills = 0`, `worstHit = 0` and `lowestHealth = 100` while every
---- other kind of event recorded normally. Everything those three depend on is
---- one handler, so the question is which step of it is silent: the event not
---- arriving at all, no killing blow being attributed, or no damage landing on
---- a GUID that matches the player's. Counting each separately answers it in
---- one evening instead of by reading the code again.
-local cleuSeen, cleuKills, cleuHits, cleuMine = 0, 0, 0, 0
 
 --- What the client would and would not wire up, filled in at the bottom of
 --- this file. Declared here because `closeSession` writes it and is defined
@@ -652,20 +639,14 @@ local function closeSession()
 	-- How much was killed, as one number rather than as thousands of events.
 	-- "About two hundred things in Azj-Kahet" is a fact about an evening that
 	-- nothing else records; two hundred rows saying so is a file nobody loads.
-	current.kills = kills
 	current.risen = risenWith()
 	-- Three numbers that only mean anything at the end. The worst hit and the
 	-- lowest the health bar got are what a journal entry is made of; the
 	-- longest fight is the difference between an evening of trash and one boss
 	-- that took eleven minutes.
-	current.worstHit = worstHit
-	current.worstHitBy = worstHitBy
 	current.longestFight = longestFight
-	current.lowestHealth = lowestHealth
-	-- Diagnostic; see `cleuSeen`. Read straight out of the file rather than
-	-- through the desktop application, which does not know this key and
-	-- ignores it.
-	current.cleu = { cleuSeen, cleuKills, cleuHits, cleuMine, playerGUID or "no-guid" }
+	-- Diagnostic. Read straight out of the file rather than through the
+	-- desktop application, which does not know this key and ignores it.
 	current.wiring = wiring
 	current.travelled = math.floor(travelled)
 
@@ -745,7 +726,6 @@ local function openSession()
 	wipe(equipped)
 	lastInstance = nil
 	killedBy = nil
-	kills = 0
 	playerGUID = UnitGUID("player")
 	context = nil
 	repairCost = 0
@@ -759,9 +739,6 @@ local function openSession()
 	lastX, lastY, lastContinent = nil, nil, nil
 	fightSince = 0
 	longestFight = 0
-	worstHit, worstHitBy = 0, nil
-	lowestHealth = 100
-	cleuSeen, cleuKills, cleuHits, cleuMine = 0, 0, 0, 0
 
 	snapshotStandings()
 
@@ -981,13 +958,40 @@ handlers.PLAYER_LEVEL_UP = function(level)
 	capture("level", tostring(level))
 end
 
---- Who hit you last, from the combat log.
+--- Who hit you last, from the client's own death recap.
 ---
 --- `PLAYER_DEAD` says a character died and never says what to. "Died to a
 --- Gorian Warlock at Halaa" is a story beat; "died in Nagrand" is a
---- coordinate. This is the whole reason the combat log is read at all.
+--- coordinate.
+---
+--- This used to come from the combat log, which 12.0 closed. The recap is the
+--- sanctioned replacement and it is what the game's own death window is drawn
+--- from — but the namespace and the shape of an entry have both moved before,
+--- so every step is guarded and a death with no name attached is the ordinary
+--- answer rather than a failure.
+local function whatKilledMe()
+	local recap = C_DeathRecap or C_DeathInfo
+	if not recap or not recap.GetRecapEvents then
+		return nil
+	end
+	local ok, events = pcall(recap.GetRecapEvents)
+	if not ok or type(events) ~= "table" then
+		return nil
+	end
+	-- Last entry first: the killing blow is the one that mattered.
+	for index = #events, 1, -1 do
+		local event = events[index]
+		local name = type(event) == "table" and (event.nameOverride or event.spellName) or nil
+		if type(name) == "string" and name ~= "" then
+			return name
+		end
+	end
+	return nil
+end
+
 handlers.PLAYER_DEAD = function()
 	local zone, subzone = whereAmI()
+	killedBy = killedBy or whatKilledMe()
 	note("death", zone, subzone, killedBy)
 	-- Which of them keeps doing it is a fact about months rather than about
 	-- tonight, and is funnier and more useful than the count of deaths.
@@ -1092,93 +1096,46 @@ end
 --- only readable while the thing is targeted. Checking the target at the
 --- moment of the kill catches the rare you were fighting and misses rares
 --- somebody else in the party tagged, which is the right way round.
---- **Not registered, and cannot be: the combat log is closed to addons.**
+--- Something died near enough to notice.
 ---
---- Patch 12.0 ("addon apocalypse") made `COMBAT_LOG_EVENT` and
---- `COMBAT_LOG_EVENT_UNFILTERED` refuse registration outright, deliberately,
---- to stop addons making decisions from combat information. The client
---- reports the frame as not registered and the handler below is never called
---- — which is why `kills`, `worstHit` and `lowestHealth` came back at their
---- starting values for every evening on 12.0.7 while everything else recorded
---- normally.
+--- `UNIT_DIED` was a combat-log subevent until 12.0 closed the combat log to
+--- addons; Blizzard put it back as a frame event in the same patch, carrying
+--- the dying unit's GUID. That is what makes rare kills recordable again.
 ---
---- Kept rather than deleted because it is correct for any client that still
---- allows it, and `registerCombatLog` below asks once and records the answer
---- instead of assuming either way. Nothing here is a workaround: there is no
---- replacement API, and the three numbers are simply unavailable until one
---- exists. Turning on Advanced Combat Logging changes the payload of an event
---- that never arrives, so it does not help.
-handlers.COMBAT_LOG_EVENT_UNFILTERED = function()
-	if not current then
+--- **It is not a kill count.** The event fires for anything dying nearby,
+--- including other people's work, and there is no killing-blow attribution
+--- left anywhere in the API. So this asks a narrower question it can answer
+--- honestly: *was the thing I had targeted, and a rare, the thing that died.*
+--- The evening's kill count now comes from the account's own statistics
+--- instead, which are exact and which Armory already fetches.
+---
+--- The GUID is secret on instanced maps for anything that is not the player
+--- or their party, so this records rares in the open world and quietly
+--- records nothing in a dungeon. That is the right way round: world rares are
+--- what the attempt counters are about.
+handlers.UNIT_DIED = function(unitGUID)
+	if not current or not unitGUID then
 		return
 	end
-
-	local _, subevent, _, sourceGUID, sourceName, _, _, destGUID = CombatLogGetCurrentEventInfo()
-	cleuSeen = cleuSeen + 1
-	if destGUID == playerGUID then
-		cleuMine = cleuMine + 1
-	end
-
-	if subevent == "PARTY_KILL" then
-		cleuKills = cleuKills + 1
-		kills = kills + 1
-		-- `UnitClassification` needs a unit token, and the only one that can
-		-- describe the thing that just died is the current target.
-		if destGUID and UnitGUID("target") == destGUID then
-			local rank = UnitClassification("target")
-			if rank == "rare" or rank == "rareelite" or rank == "worldboss" then
-				local name = UnitName("target")
-				note("rare", name, rank)
-				-- Counted for life as well as for the evening. A world rare
-				-- raises no ENCOUNTER_END, so this is the only record of how
-				-- many times somebody has gone back for the thing it drops.
-				tally("rare", name, 1, name)
-				capture("rare", name)
-			end
-		end
+	if UnitGUID("target") ~= unitGUID then
 		return
 	end
-
-	-- Anything that damaged the player. Held rather than noted, because most
-	-- of them are followed by the player not dying.
-	if
-		destGUID == playerGUID
-		and sourceName
-		and sourceName ~= ""
-		and sourceGUID ~= destGUID
-		and subevent:find("_DAMAGE", 1, true)
-	then
-		cleuHits = cleuHits + 1
-		killedBy = sourceName
-
-		-- The two numbers a person actually retells. Eleven arguments are
-		-- common to every subevent and the payload follows, so the amount is
-		-- read by position from the front — a swing puts it first, a spell
-		-- after the three that name the spell, and the environment after the
-		-- one that says what the environment was. Counting from the *end*
-		-- would be shorter and wrong: a trailing nil shortens the list.
-		local amount
-		if subevent:find("^SWING") then
-			amount = select(12, CombatLogGetCurrentEventInfo())
-		elseif subevent:find("^ENVIRONMENTAL") then
-			amount = select(13, CombatLogGetCurrentEventInfo())
-		else
-			amount = select(15, CombatLogGetCurrentEventInfo())
-		end
-		amount = tonumber(amount)
-		if amount and amount > worstHit then
-			worstHit, worstHitBy = amount, sourceName
-		end
-
-		local health = UnitHealth("player") or 0
-		local maximum = UnitHealthMax("player") or 0
-		if maximum > 0 and health > 0 then
-			local percent = math.floor(health / maximum * 100)
-			if percent < lowestHealth then
-				lowestHealth = percent
-			end
-		end
+	-- `UnitClassification` needs a unit token, and the only one that can
+	-- describe the thing that just died is the current target.
+	local rank = UnitClassification("target")
+	if rank ~= "rare" and rank ~= "rareelite" and rank ~= "worldboss" then
+		return
 	end
+	local name = UnitName("target")
+	if not name then
+		return
+	end
+	note("rare", name, rank)
+	-- Counted for life as well as for the evening. A world rare raises no
+	-- ENCOUNTER_END, so this is the only record of how many times somebody has
+	-- gone back for the thing it drops.
+	tally("rare", name, 1, name)
+	capture("rare", name)
 end
 
 --- How long the longest fight of the evening was.
@@ -1753,8 +1710,14 @@ local function probe()
 	local _, rank = pcall(UnitClassification, "player")
 	out.classification = type(rank)
 
+	local recap = C_DeathRecap or C_DeathInfo
+	out.deathRecap = C_DeathRecap and 1 or 0
 	out.deathInfo = C_DeathInfo and 1 or 0
-	out.recapEvents = (C_DeathInfo and C_DeathInfo.GetRecapEvents) and 1 or 0
+	out.recapEvents = (recap and recap.GetRecapEvents) and 1 or 0
+	if recap and recap.GetRecapEvents then
+		local ok, events = pcall(recap.GetRecapEvents)
+		out.recapShape = ok and type(events) or "err"
+	end
 	out.getStatistic = GetStatistic and 1 or 0
 	if GetStatistic then
 		-- 60 is "Total deaths" and 1197 "Total kills" on the wiki; recorded as
