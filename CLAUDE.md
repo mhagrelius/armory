@@ -44,7 +44,8 @@ the merge rules.**
   and binds a port; run it after anything that touches sharing. It needs no
   network and no NAS.
 - `packaging/deploy-server.sh` — test, build, smoke-test the image, push to the
-  NAS registry. `server/README.md` has the rest of the path.
+  NAS registry. `server/README.md` has the rest of the path, and `SETUP.md` is
+  the client half: what a second gaming PC needs, start to finish.
 - **Never run `dbus-run-session` or `xvfb-run -a dbus-run-session` directly** —
   use `isolated-bus [--headless] -- CMD`. A private bus activates its own
   `xdg-document-portal`, which mounts over `/run/user/$UID/doc` and takes the

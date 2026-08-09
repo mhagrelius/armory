@@ -59,6 +59,9 @@ already spent.
 ./install-addon.sh    # optional; copies the collector addon into your WoW install
 ```
 
+`SETUP.md` is the same thing at length, for a machine you are setting up from
+scratch — build dependencies, the addon, and pointing it at a server.
+
 There are two ways in, and the addon-only one needs nothing from Blizzard.
 
 **Addon only.** Install the addon, log in on a character, log out. That is the
@@ -236,6 +239,7 @@ nowhere to go. The token goes into your login keyring. The same page shows what
 is waiting to go up, which is the answer to "did tonight's session reach the
 server" — and a button for when you do not want to wait.
 
+`SETUP.md` is the whole path for a machine that is not this one.
 `server/README.md` is how to stand the server up, and what to check when the
 status dot is green and it still is not working.
 

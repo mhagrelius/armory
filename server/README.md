@@ -85,9 +85,16 @@ upload `server/docker-compose.yml`.
 
 **Uncheck "Start the project once it is created."** The compose file requires
 `ARMORY_TOKEN`, and it arrives in a `.env` that does not exist yet — starting
-first just fails. Copy `.env.example` to `.env`, fill in the token and the image
-tag the deploy script printed, upload it into the project folder through File
-Station, then Action → Build.
+first just fails.
+
+`deploy-server.sh` leaves a filled-in `server/.env` behind on the workstation,
+with the token and the tag it just pushed. **Upload that file itself** through
+File Station rather than making a fresh one on the NAS: the token is sixty-four
+hex characters, and a truncated paste is indistinguishable from a correct one
+until a client is refused. Then Action → Build.
+
+Keep the workstation copy. It is the only place the token is written down, and
+every client needs it — see `SETUP.md`.
 
 **Do not type the compose file into Container Manager's editor.** It carries the
 previous line's indentation onto the next and adds what you type to it, so six
