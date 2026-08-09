@@ -365,13 +365,9 @@ mod tests {
             start_item_level: 600,
             end_item_level: 600,
             moments,
-            kills: 0,
             risen: Vec::new(),
             travelled: 0,
             longest_fight: 0,
-            worst_hit: 0,
-            worst_hit_by: None,
-            lowest_health: 100,
         }
     }
 

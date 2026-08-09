@@ -89,10 +89,6 @@ pub struct Session {
     /// How many things the party finished off, across the whole evening.
     ///
     /// A session total rather than a moment, because that is what it is — and
-    /// because the addon produces it at logout, when the event list may
-    /// already be full.
-    #[serde(default)]
-    pub kills: u32,
     /// Factions that went up a rank, with the rank reached. The threshold is
     /// the milestone; three hundred more reputation is not.
     #[serde(default)]
@@ -110,24 +106,6 @@ pub struct Session {
     /// took eleven minutes, which is otherwise the same "1 boss".
     #[serde(default)]
     pub longest_fight: u32,
-    /// The hardest single hit taken, and what landed it.
-    #[serde(default)]
-    pub worst_hit: u64,
-    #[serde(default)]
-    pub worst_hit_by: Option<String>,
-    /// The lowest the health bar got without the character dying, as a
-    /// percentage.
-    ///
-    /// Defaults to 100 rather than 0, because an addon that predates the field
-    /// recorded nothing rather than a character who spent the evening at
-    /// death's door.
-    #[serde(default = "full_health")]
-    pub lowest_health: u8,
-}
-
-/// What `lowest_health` means when nothing recorded it.
-fn full_health() -> u8 {
-    100
 }
 
 /// One thing that happened, and how far into the session it happened.
@@ -659,7 +637,6 @@ pub struct Digest {
     /// know them. See [`Digest::pictures`].
     pub shots: Vec<(u32, String)>,
     /// How much was killed, and which factions moved up a rank.
-    pub kills: u32,
     pub risen: Vec<(String, u8)>,
     /// Yards covered, on foot and in the air together.
     pub travelled: u64,
@@ -669,12 +646,8 @@ pub struct Digest {
     /// took eleven minutes, which is otherwise the same "1 boss".
     pub longest_fight: u32,
     /// The hardest single hit taken, and what landed it.
-    pub worst_hit: u64,
-    pub worst_hit_by: Option<String>,
     /// The lowest the health bar got without the character dying, as a
     /// percentage. 100 means nothing ever touched them.
-    pub lowest_health: u8,
-
     pub start_level: u8,
     pub end_level: u8,
     pub start_item_level: u16,
@@ -1054,13 +1027,9 @@ impl Session {
             crafted,
             flights,
             shots,
-            kills: self.kills,
             risen: self.risen.clone(),
             travelled: self.travelled,
             longest_fight: self.longest_fight,
-            worst_hit: self.worst_hit,
-            worst_hit_by: self.worst_hit_by.clone(),
-            lowest_health: self.lowest_health,
             start_level: self.start_level,
             end_level: self.end_level,
             start_item_level: self.start_item_level,
@@ -1445,13 +1414,9 @@ mod tests {
             start_item_level: 600,
             end_item_level: 604,
             moments,
-            kills: 0,
             risen: Vec::new(),
             travelled: 0,
             longest_fight: 0,
-            worst_hit: 0,
-            worst_hit_by: None,
-            lowest_health: 100,
         }
     }
 

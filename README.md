@@ -148,11 +148,17 @@ apart, and repairs separated from anything else you bought from the same
 merchant. Gold an alt mailed you is marked as a transfer rather than counted as
 income, because it is money the account already had.
 
-**Three numbers and a name.** The longest single fight of the evening, the
-hardest hit you took and who landed it, and how close you came to dying — the
-things you would actually retell. And where a piece of gear came from: nothing
-in the game connects an item to the boss that dropped it, so Armory puts the
-loot back together with the kill and the card says the belt came off Durn.
+**A number and a name.** The longest single fight of the evening — the
+difference between a boss that took eleven minutes and an evening of
+six-second pulls. And where a piece of gear came from: nothing in the game
+connects an item to the boss that dropped it, so Armory puts the loot back
+together with the kill and the card says the belt came off Durn.
+
+The hardest hit you took and how close you came to dying used to sit beside
+that fight. Patch 12.0 closed the combat log to addons and made `UnitHealth`
+answer with a value an addon may hold and may not read, so neither is a
+number anything can work out any more. They are gone rather than showing
+zero.
 
 **What you have ever done.** Two flasks tonight is barely worth saying; four
 hundred and twelve of them is a character. The same goes for who keeps turning

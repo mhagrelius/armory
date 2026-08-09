@@ -276,13 +276,9 @@ fn evening(name: &str, day: i64) -> Session {
                 map: None,
             },
         }],
-        kills: 0,
         risen: Vec::new(),
         travelled: 0,
         longest_fight: 0,
-        worst_hit: 0,
-        worst_hit_by: None,
-        lowest_health: 100,
     }
 }
 

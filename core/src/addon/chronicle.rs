@@ -138,23 +138,13 @@ fn session(entry: &Value) -> Option<Session> {
         // Session totals rather than moments, and written at logout — which is
         // also why they are fields and not events: by then the event list may
         // be at its cap and silently dropping what it is handed.
-        kills: number(entry, "kills") as u32,
+        //
+        // A kill count, the hardest hit taken and the lowest health reached
+        // were read here until patch 12.0 closed the combat log to addons.
+        // Older files still carry them and are simply not asked; nothing can
+        // produce them now, so nothing pretends to.
         travelled: number(entry, "travelled"),
         longest_fight: number(entry, "longestFight") as u32,
-        worst_hit: number(entry, "worstHit"),
-        worst_hit_by: entry
-            .get("worstHitBy")
-            .and_then(Value::as_str)
-            .filter(|name| !name.is_empty())
-            .map(str::to_string),
-        // Absent means the addon predates the field, and "nothing ever touched
-        // them" is the right reading of that: it suppresses the row rather
-        // than reporting a character who spent every evening at nought percent.
-        lowest_health: entry
-            .get("lowestHealth")
-            .and_then(Value::as_f64)
-            .map(|percent| percent as u8)
-            .unwrap_or(100),
         risen: entry
             .get("risen")
             .map(|list| {
@@ -514,9 +504,6 @@ ArmoryChronicleDB = {
         );
         assert_eq!(digest.travelled, 41_288);
         assert_eq!(digest.longest_fight, 664);
-        assert_eq!(digest.worst_hit, 812_004);
-        assert_eq!(digest.worst_hit_by.as_deref(), Some("Durn the Hungerer"));
-        assert_eq!(digest.lowest_health, 7);
         assert_eq!(digest.companions, ["Velkurai"]);
         assert_eq!(digest.purse, 250_000);
     }

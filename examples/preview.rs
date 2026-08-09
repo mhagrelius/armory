@@ -984,13 +984,9 @@ fn sample_sessions() -> Vec<Session> {
                 },
             ),
         ],
-        kills: 214,
         risen: vec![("The Consortium".into(), 7)],
         travelled: 41_288,
         longest_fight: 664,
-        worst_hit: 812_004,
-        worst_hit_by: Some("Durn the Hungerer".into()),
-        lowest_health: 7,
     };
 
     let quiet = Session {
@@ -1038,13 +1034,9 @@ fn sample_sessions() -> Vec<Session> {
                 },
             ),
         ],
-        kills: 18,
         risen: Vec::new(),
         travelled: 3_120,
         longest_fight: 0,
-        worst_hit: 0,
-        worst_hit_by: None,
-        lowest_health: 100,
     };
 
     vec![busy, quiet]

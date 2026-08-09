@@ -1074,9 +1074,6 @@ impl ChroniclePage {
         if !digest.companions.is_empty() {
             row.add_row(&fact("Alongside", &digest.companions.join(", ")));
         }
-        if digest.kills > 0 {
-            row.add_row(&fact("Killed", &format!("about {}", digest.kills)));
-        }
         if !digest.crafted.is_empty() {
             row.add_row(&fact(
                 "Crafted",
@@ -1104,22 +1101,6 @@ impl ChroniclePage {
             row.add_row(&fact(
                 "Longest fight",
                 &tally::spent(u64::from(digest.longest_fight)),
-            ));
-        }
-        if digest.worst_hit > 0 {
-            row.add_row(&fact(
-                "Hardest hit taken",
-                &match &digest.worst_hit_by {
-                    Some(who) => format!("{} from {who}", digest.worst_hit),
-                    None => digest.worst_hit.to_string(),
-                },
-            ));
-        }
-        // 100 is "nothing ever touched them", which is not a fact worth a row.
-        if digest.lowest_health < 100 {
-            row.add_row(&fact(
-                "Closest call",
-                &format!("{}% health", digest.lowest_health),
             ));
         }
         row.add_row(&fact("Purse", &purse(digest.purse)));
@@ -1692,13 +1673,9 @@ mod tests {
                     },
                 },
             ],
-            kills: 0,
             risen: Vec::new(),
             travelled: 0,
             longest_fight: 0,
-            worst_hit: 0,
-            worst_hit_by: None,
-            lowest_health: 100,
         }
         .digest()
     }

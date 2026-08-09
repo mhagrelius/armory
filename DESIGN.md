@@ -658,15 +658,22 @@ single character is being looked at. "Everyone has made four hundred flasks" is
 nobody's achievement, and eight open lists would push tonight's evening off a
 page that is supposed to be a journal.
 
-### Three numbers and a join
+### One number and a join
 
-Three things an evening has that a list of events does not. The **longest single
-fight**, from `PLAYER_REGEN_DISABLED`/`ENABLED`, which is the difference between
-a boss that took eleven minutes and an evening of six-second pulls. The
-**hardest single hit taken** and the **lowest the health bar got** — the near
-death somebody would actually be thinking about afterwards. All three are
-session fields rather than moments, because they only mean anything once the
+Something an evening has that a list of events does not: the **longest single
+fight**, from `PLAYER_REGEN_DISABLED`/`ENABLED`, which is the difference
+between a boss that took eleven minutes and an evening of six-second pulls. A
+session field rather than a moment, because it only means anything once the
 evening is over.
+
+There were three. The **hardest single hit taken** and the **lowest the health
+bar got** — the near death somebody would actually be thinking about
+afterwards — both came off the combat log, and patch 12.0 closed that to
+addons outright. `UnitHealth` now answers with a *secret value* in combat: a
+figure an addon may hold and may not compare, so a running minimum is not
+computable rather than merely unavailable. Both were removed rather than left
+reporting zero, which is the same rule `Outcome::Empty` follows elsewhere —
+a thing that cannot be measured is not a thing measured as nought.
 
 And one join. Nothing in the game connects a piece of gear to the thing that
 dropped it: the loot event names an item, the encounter event names a boss, and

@@ -865,8 +865,15 @@ local function whoIsTalking()
 	local name = UnitName("npc")
 	-- `Creature-0-serverID-instanceID-zoneUID-creatureID-spawnUID`. The sixth
 	-- field is the one that is stable across every copy of that NPC.
+	--
+	-- **The extra parentheses are the whole of this line working.** `select(6,
+	-- ...)` returns everything from the sixth value on, not the sixth value —
+	-- so the spawn UID arrived as `tonumber`'s *base* argument and the call
+	-- died with "bad argument #2 (number expected, got string)" on every
+	-- single NPC. Truncating to one value is what `(f())` means in Lua, and it
+	-- is the same idiom the toy handler already uses.
 	local guid = UnitGUID("npc")
-	local creature = guid and tonumber(select(6, strsplit("-", guid)))
+	local creature = guid and tonumber((select(6, strsplit("-", guid))))
 	return name, creature
 end
 

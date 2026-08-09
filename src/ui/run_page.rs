@@ -736,9 +736,14 @@ impl RunPage {
         format!("{}:{:02}", seconds / 60, seconds % 60)
     }
 
-    /// Public to the module so the chronicle card draws the same three, at the
-    /// smaller size. Nothing in the game names the *opponent* of the longest
-    /// fight — only the hardest hit carries one — so where there is no name
+    /// Public to the module so the chronicle card draws the same ones, at the
+    /// smaller size.
+    ///
+    /// There used to be three. The hardest hit taken and the closest call went
+    /// with the combat log in patch 12.0 — `UnitHealth` answers a *secret
+    /// value* in combat now, and a secret cannot be compared, so a running
+    /// minimum is not a number an addon can hold. What is left is the one the
+    /// game still tells us, and nothing here names the opponent of a fight, so
     /// there is no footnote rather than a plausible guess at one.
     pub(super) fn three_numbers(digest: &Digest, small: bool) -> Vec<gtk::Box> {
         let mut cards = Vec::new();
@@ -748,29 +753,6 @@ impl RunPage {
                 "Longest fight",
                 &Self::fight_length(digest.longest_fight),
                 "",
-                small,
-            ));
-        }
-        if digest.worst_hit > 0 {
-            cards.push(almanac::stat(
-                "Hardest hit taken",
-                &almanac::thousands(digest.worst_hit),
-                digest.worst_hit_by.as_deref().unwrap_or(""),
-                small,
-            ));
-        }
-        if digest.lowest_health < 100 {
-            cards.push(almanac::stat(
-                "Closest to dying",
-                &format!("{}%", digest.lowest_health),
-                // Only when the evening ended with the character alive and
-                // something else dead. Otherwise it is a claim about a fight
-                // nobody recorded the end of.
-                if digest.deaths.is_empty() && !digest.felled.is_empty() {
-                    "and then it died first"
-                } else {
-                    ""
-                },
                 small,
             ));
         }
@@ -1444,13 +1426,9 @@ mod tests {
             start_item_level: 0,
             end_item_level: 0,
             moments: Vec::new(),
-            kills: 0,
             risen: Vec::new(),
             travelled: 0,
             longest_fight: 0,
-            worst_hit: 0,
-            worst_hit_by: None,
-            lowest_health: 100,
         }
     }
 

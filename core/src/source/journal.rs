@@ -521,36 +521,15 @@ pub fn brief(digest: &Digest) -> String {
             .collect::<Vec<_>>(),
     );
 
-    if digest.kills > 0 {
-        out.push_str(&format!(
-            "\nAbout {} enemies were killed over the session, which is a measure of how \
-             busy it was rather than a list worth naming.\n",
-            digest.kills
-        ));
-    }
-
-    // The three numbers that are a sentence rather than a statistic. The
-    // longest fight is what separates a boss that took eleven minutes from an
-    // evening of six-second pulls, and the other two are the near-death the
-    // character would actually be thinking about afterwards.
+    // The one number here that is a sentence rather than a statistic: what
+    // separates a boss that took eleven minutes from an evening of six-second
+    // pulls. The near-death that used to sit beside it went with the combat
+    // log in 12.0.
     if digest.longest_fight >= 60 {
         out.push_str(&format!(
             "\nThe longest single fight lasted {}.\n",
             tally::spent(u64::from(digest.longest_fight))
         ));
-    }
-    if digest.lowest_health < 35 {
-        out.push_str(&match &digest.worst_hit_by {
-            Some(who) => format!(
-                "\nThe closest call of the evening was {}% health, and the hardest single blow \
-                 taken was {} from {who}.\n",
-                digest.lowest_health, digest.worst_hit
-            ),
-            None => format!(
-                "\nThe closest call of the evening was {}% health.\n",
-                digest.lowest_health
-            ),
-        });
     }
     if digest.flights > 0 || digest.travelled > 0 {
         out.push_str(&format!(
@@ -762,13 +741,9 @@ mod tests {
                     },
                 },
             ],
-            kills: 412,
             risen: vec![("The Severed Threads".into(), 7)],
             travelled: 41_288,
             longest_fight: 664,
-            worst_hit: 812_004,
-            worst_hit_by: Some("Durn the Hungerer".into()),
-            lowest_health: 7,
         }
         .digest()
     }
