@@ -3445,15 +3445,16 @@ impl ArmoryApplication {
         // application and one of them may one day be inside a write. Skipping
         // is the right answer to that rather than a crash: the next redraw
         // arms it, and the backstop timer is behind that.
-        let waiting = self
-            .store()
-            .try_borrow()
-            .ok()
-            .and_then(|store| store.queued().ok());
-        match waiting {
-            Some(waiting) if waiting.is_empty() => return,
-            None => return,
-            Some(_) => {}
+        let held = self.store();
+        let Ok(store) = held.try_borrow() else {
+            return;
+        };
+        // An account that has never been offered up has work to do even when
+        // the log is empty — that is exactly the state `seed_log` exists for.
+        let idle = store.seeded() && store.queued().is_ok_and(|waiting| waiting.is_empty());
+        drop(store);
+        if idle {
+            return;
         }
         if let Some(pending) = self.imp().pass_due.borrow_mut().take() {
             pending.remove();
@@ -3474,6 +3475,15 @@ impl ArmoryApplication {
         let Some(service) = self.sync_target() else {
             return;
         };
+
+        // Everything this machine held before sharing was set up, offered up
+        // once. The triggers only record writes, so without this a store with
+        // a decade in it starts with an empty log and pushes nothing — and
+        // says "nothing waiting" while it does so.
+        if let Err(error) = self.store().borrow().seed_log() {
+            eprintln!("armory: could not offer up the account: {error}");
+        }
+
         self.imp().passing.set(true);
 
         let app = self.clone();

@@ -140,6 +140,63 @@ impl Store {
             .flatten())
     }
 
+    /// Enqueue everything this machine already holds.
+    ///
+    /// The triggers record *writes*, and an account that was here before
+    /// sharing was set up was written before the triggers existed. So the log
+    /// starts empty and a first pass sends nothing at all — and nothing about
+    /// that looks wrong from either end. The client reports nothing waiting,
+    /// the server reports an empty account, and a decade of play quietly never
+    /// leaves the machine it was recorded on. Only rows written from that
+    /// moment on would ever travel.
+    ///
+    /// So the first pass on a configured machine seeds the log from the tables
+    /// themselves. Once: `seeded` in `sync_state` is the mark, because doing
+    /// it twice would re-send an account that is already on the server.
+    ///
+    /// `DO NOTHING` on conflict rather than replace: an entry that is already
+    /// there was made by a trigger, which means that row has moved since, and
+    /// its place in the queue is the newer fact.
+    ///
+    /// The `WHERE true` is not decoration. Without it SQLite cannot tell
+    /// whether `ON CONFLICT` belongs to the `INSERT` or is a join constraint
+    /// on the `SELECT`, and refuses the statement outright.
+    pub fn seed_log(&self) -> Result<usize> {
+        if self.setting("seeded")?.as_deref() == Some("1") {
+            return Ok(0);
+        }
+
+        let machine = self.machine();
+        let mut seeded = 0;
+        for table in crate::sync::TABLES {
+            let keys = table
+                .key
+                .iter()
+                .map(|column| column.to_string())
+                .collect::<Vec<_>>()
+                .join(", ");
+            seeded += self.connection.execute(
+                &format!(
+                    "INSERT INTO change (scope, key, gone, at, machine)
+                     SELECT '{0}', json_array({keys}), 0,
+                            strftime('%Y-%m-%dT%H:%M:%SZ', 'now'), ?1
+                     FROM {0} WHERE true
+                     ON CONFLICT (scope, key) DO NOTHING",
+                    table.name
+                ),
+                [&machine],
+            )?;
+        }
+
+        self.set_setting("seeded", "1")?;
+        Ok(seeded)
+    }
+
+    /// Whether the account this machine already held has been offered up.
+    pub fn seeded(&self) -> bool {
+        self.setting("seeded").ok().flatten().as_deref() == Some("1")
+    }
+
     // -- reading rows out ----------------------------------------------------
 
     /// The next batch to push, and the highest `seq` in it.
@@ -1476,6 +1533,91 @@ mod tests {
             phantom.is_empty(),
             "these are described on the wire and are not in the schema: {phantom:?}"
         );
+    }
+
+    #[test]
+    fn an_account_that_predates_sharing_is_offered_up_rather_than_stranded() {
+        // The failure this exists for is silent on both sides: the triggers
+        // only fire on writes, so a store filled in before sharing was set up
+        // has an empty log. The client says nothing is waiting, the server
+        // says it holds nothing, and neither is wrong.
+        let store = Store::in_memory().unwrap();
+
+        // Written with recording off, which is exactly what "these rows
+        // predate the triggers" looks like from the log's point of view.
+        store.record(false).unwrap();
+        store.watch_item(4306, "Silk Cloth").unwrap();
+        store.watch_item(2589, "Linen Cloth").unwrap();
+        store.record(true).unwrap();
+        store.set_machine("one").unwrap();
+
+        assert!(
+            store.queued().unwrap().is_empty(),
+            "nothing should be queued yet"
+        );
+        assert!(!store.seeded());
+
+        let seeded = store.seed_log().unwrap();
+        assert!(seeded >= 2, "seeded {seeded}");
+        assert!(store.seeded());
+
+        let (parcel, _) = store.outbox(100).unwrap();
+        let watched: Vec<&Row> = parcel
+            .rows
+            .iter()
+            .filter(|row| row.scope == "watched")
+            .collect();
+        assert_eq!(watched.len(), 2, "{:?}", parcel.rows);
+        // And the rows carry their contents, not just their keys.
+        assert!(watched.iter().all(|row| row.fields.is_some()));
+    }
+
+    #[test]
+    fn seeding_twice_does_not_re_send_the_account() {
+        let store = Store::in_memory().unwrap();
+        store.set_machine("one").unwrap();
+        store.record(false).unwrap();
+        store.watch_item(4306, "Silk Cloth").unwrap();
+        store.record(true).unwrap();
+
+        store.seed_log().unwrap();
+        store.drain(store.high_water()).unwrap();
+
+        assert_eq!(store.seed_log().unwrap(), 0, "the account went up twice");
+        assert!(store.queued().unwrap().is_empty());
+    }
+
+    #[test]
+    fn seeding_does_not_displace_something_already_waiting() {
+        // A row the triggers already logged has moved since; its place at the
+        // back of the queue is the newer fact and must survive the seed.
+        let store = Store::in_memory().unwrap();
+        store.set_machine("one").unwrap();
+        store.record(false).unwrap();
+        store.watch_item(1, "old").unwrap();
+        store.record(true).unwrap();
+        store.watch_item(2, "new").unwrap();
+
+        let before: i64 = store
+            .connection
+            .query_row(
+                "SELECT seq FROM change WHERE scope = 'watched' AND key = '[2]'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+
+        store.seed_log().unwrap();
+
+        let after: i64 = store
+            .connection
+            .query_row(
+                "SELECT seq FROM change WHERE scope = 'watched' AND key = '[2]'",
+                [],
+                |row| row.get(0),
+            )
+            .unwrap();
+        assert_eq!(before, after);
     }
 
     #[test]
