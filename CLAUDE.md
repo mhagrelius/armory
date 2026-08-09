@@ -327,6 +327,29 @@ the API is the optional half.
   written down as an unverified `C_Container` index for weeks. It was a scan
   that never ran, on a character standing at the bank with Blacksmithing.
 
+- **`GetItemInfo`'s fourth return is the *base* item level, not the effective
+  one.** `C_Item.GetDetailedItemLevelInfo` is the one that includes upgrades,
+  and it is what the gear strip, the session baseline and the
+  `PLAYER_EQUIPMENT_CHANGED` upgrade test all use now. The base level is worse
+  than useless here: a whole Veteran-to-Myth track shares one base item, so a
+  fully upgraded piece and the drop it came from record identically —
+  "weakest slot first" sorts on a number that does not vary with the thing it
+  is about, and upgrading an item in place produces no journal entry at all.
+
+- **`C_ToyBox.GetNumToys` and `GetToyFromIndex` are two different index
+  spaces.** The count is every toy in the game; the index is into what the toy
+  box is *showing*, which is `GetNumFilteredToys`. Counting with one and
+  indexing the other returns `-1` for the overhang, the id guard swallows it,
+  and the only symptom is a collection quietly shorter than it should be.
+
+- **The pet and toy scans read through the player's filters, and do not clear
+  them.** The comment claimed the documented clear-and-restore dance; it was
+  never performed. It is left that way deliberately — reaching into journal
+  filter state on every logout is exactly what 12.0 is in the business of
+  refusing — and what makes it survivable is that both tables merge rather
+  than replace, so a filtered scan records fewer entries and never fewer than
+  are already known.
+
 - **The client hides Lua errors unless you ask for them.** `scriptErrors` is
   0 by default, so an addon that throws on every NPC or every logout looks
   exactly like an addon that works and finds nothing. Two features had been

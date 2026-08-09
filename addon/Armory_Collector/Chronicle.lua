@@ -658,7 +658,7 @@ local function closeSession()
 	current.endedAt = time()
 	keep("endLevel", UnitLevel("player"))
 	keep("endMoney", GetMoney())
-	keep("endItemLevel", select(2, GetAverageItemLevel()))
+	keep("endItemLevel", (select(2, GetAverageItemLevel())))
 
 	if #current.events > 0 then
 		local store = db()
@@ -757,7 +757,7 @@ local function openSession()
 	for slot = 1, 17 do
 		local link = GetInventoryItemLink("player", slot)
 		if link then
-			equipped[slot] = select(4, C_Item.GetItemInfo(link))
+			equipped[slot] = C_Item.GetDetailedItemLevelInfo(link)
 		end
 	end
 
@@ -988,9 +988,20 @@ local function whatKilledMe()
 	-- Last entry first: the killing blow is the one that mattered.
 	for index = #events, 1, -1 do
 		local event = events[index]
-		local name = type(event) == "table" and (event.nameOverride or event.spellName) or nil
-		if type(name) == "string" and name ~= "" then
-			return name
+		if type(event) == "table" then
+			-- `sourceName` is the creature, which is what the sentence wants.
+			-- `spellName` is the spell and is the fallback, because a melee
+			-- blow, a fall and a drowning carry no spell at all — and reading
+			-- the spell first walked backwards past them to whatever last
+			-- named one, which is a different mob seconds earlier recorded as
+			-- the killer for life.
+			local name = event.sourceName
+			if type(name) ~= "string" or name == "" then
+				name = event.spellName
+			end
+			if type(name) == "string" and name ~= "" then
+				return name
+			end
 		end
 	end
 	return nil
@@ -1386,7 +1397,11 @@ handlers.PLAYER_EQUIPMENT_CHANGED = function(slot)
 		equipped[slot] = nil
 		return
 	end
-	local name, _, _, level = C_Item.GetItemInfo(link)
+	-- The effective level, upgrades included. The base level would make an
+	-- upgrade in place invisible — same item, same base — and a sidegrade
+	-- with a higher base and a lower actual level read as a promotion.
+	local level = C_Item.GetDetailedItemLevelInfo(link)
+	local name = C_Item.GetItemInfo(link)
 	if not name or not level then
 		return
 	end

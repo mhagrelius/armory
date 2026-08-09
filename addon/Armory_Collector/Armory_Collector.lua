@@ -282,9 +282,18 @@ local function scanCollections()
 		end
 	end
 
-	-- Pets and toys are filter-sensitive: the journal returns what the player's
-	-- UI filters currently allow, so a scan without clearing them silently
-	-- misses whole swathes. Clearing and restoring is the documented dance.
+	-- Pets and toys are filter-sensitive: both journals answer with what the
+	-- player's UI filters currently allow, so a scan sees the toy box and the
+	-- pet journal as they are on screen rather than as they are.
+	--
+	-- **The filters are not cleared, and this comment used to say they were.**
+	-- Clearing and restoring them is the documented dance, and it means an
+	-- addon reaching into the journals' filter state on every logout — which
+	-- 12.0 is exactly the patch to start refusing. What saves it is that these
+	-- tables merge rather than replace: a filtered scan records fewer entries,
+	-- never fewer than are already known. So this degrades to "a run with a
+	-- search box open contributes less" rather than to a collection emptying.
+	-- Mounts are unaffected; `GetMountIDs` ignores filters.
 	local numPets = C_PetJournal.GetNumPets()
 	for index = 1, numPets do
 		local _, speciesID, owned = C_PetJournal.GetPetInfoByIndex(index)
@@ -324,7 +333,15 @@ local function scanCollections()
 		end
 	end
 
-	for index = 1, C_ToyBox.GetNumToys() do
+	-- `GetNumFilteredToys`, not `GetNumToys`. They are two different index
+	-- spaces: the first counts every toy in the game, the second counts what
+	-- the toy box is currently showing, and `GetToyFromIndex` indexes the
+	-- second. Counting with one and indexing the other returns -1 for the
+	-- overhang, which the guard below swallows — so the only sign of it is a
+	-- collection quietly shorter than it should be.
+	local filtered = C_ToyBox.GetNumFilteredToys and C_ToyBox.GetNumFilteredToys()
+		or C_ToyBox.GetNumToys()
+	for index = 1, filtered do
 		local itemID = C_ToyBox.GetToyFromIndex(index)
 		if itemID and itemID > 0 then
 			-- `itemID, toyName, icon, isFavorite, hasFanfare, itemQuality`.
@@ -666,7 +683,15 @@ local function equipment()
 		local index, name = slot[1], slot[2]
 		local link = GetInventoryItemLink("player", index)
 		if link then
-			local title, _, _, level = C_Item.GetItemInfo(link)
+			-- `GetDetailedItemLevelInfo`, not `GetItemInfo`. The fourth
+			-- return of `GetItemInfo` is the *base* level, before upgrades —
+			-- and a whole Veteran-to-Myth track shares one base item, so a
+			-- fully upgraded piece and the drop it came from record
+			-- identically. Sorting the character page weakest-slot-first on
+			-- that number sorts on something that does not vary with the
+			-- thing it is about.
+			local level = C_Item.GetDetailedItemLevelInfo(link)
+			local title = C_Item.GetItemInfo(link)
 			local cosmetic = name == "SHIRT" or name == "TABARD"
 			worn[#worn + 1] = {
 				name,
@@ -770,8 +795,11 @@ local function scanCharacter()
 	keep("level", UnitLevel("player"))
 	keep("money", GetMoney())
 	keep("spec", specName)
-	keep("guild", GetGuildInfo("player"))
-	keep("itemLevel", select(2, GetAverageItemLevel()))
+	keep("guild", (GetGuildInfo("player")))
+	-- Parenthesised for the same reason the quest giver is: `select(2, …)`
+	-- expands to every remaining return, so this passes `keep` three
+	-- arguments and works only because it ignores the third.
+	keep("itemLevel", (select(2, GetAverageItemLevel())))
 	-- Genuinely per character, and the single most useful thing here: a
 	-- replayed character's quest log grows even when the account-wide
 	-- achievement it feeds has been lit for a decade.

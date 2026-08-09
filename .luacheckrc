@@ -31,6 +31,7 @@ read_globals = {
 	-- matters.
 	"GetStatistic",
 	"C_DeathInfo",
+	"C_ToyBoxInfo",
 	"C_DeathRecap",
 	"UnitHealth",
 	"UnitHealthMax",
