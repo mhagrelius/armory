@@ -314,6 +314,26 @@ the API is the optional half.
   structure and progress only. Meaning is joined on from a catalogue
   (`Criteria.Type`/`Asset` in the client DB, or the addon). Do not invent kinds
   in `profile::read_criterion`.
+- **One bad API call used to take the whole account read with it.** The five
+  collector scans — character, currencies, collections, Warband bank,
+  achievements — ran as bare calls in a row. `knowledge()` handed a table to
+  `C_CurrencyInfo.GetCurrencyInfo`, which throws, so on any character with a
+  specialised profession `scanCharacter` died part way and *every step after
+  it never ran*. It also lost the professions, the equipment and the raid
+  locks, which are written after the loop that failed. Each step is its own
+  `pcall` now and a failure is recorded in `ArmoryCollectorDB.broke`.
+
+  **The Warband bank reading empty was this, not the bag indices.** That was
+  written down as an unverified `C_Container` index for weeks. It was a scan
+  that never ran, on a character standing at the bank with Blacksmithing.
+
+- **The client hides Lua errors unless you ask for them.** `scriptErrors` is
+  0 by default, so an addon that throws on every NPC or every logout looks
+  exactly like an addon that works and finds nothing. Two features had been
+  dead since they were written — quest givers, and the whole tail of the
+  account scan — and both surfaced within minutes of `/console scriptErrors 1`.
+  Turn it on before concluding that a collector is reading an empty account.
+
 - **The keyring attribute is `us.hagreli.Armory`, not `armory`.** It is the
   application id, and a `SearchItems` call with the wrong one answers zero
   unlocked and zero locked — which reads exactly like a keyring with nothing in

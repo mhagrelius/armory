@@ -393,26 +393,28 @@ end
 
 --- How much knowledge a profession has ever been given.
 ---
---- The currency behind a specialisation tree. `quantity` is what is left to
---- spend, which is nearly always nought and says nothing; the total earned is
---- the figure that measures a year of weekly knowledge, so it is preferred
---- where the game tracks it and the unspent amount is the fallback.
+--- Knowledge left to spend on a specialisation tree.
+---
+--- `GetCurrencyInfoForSkillLine` returns a `SpecializationCurrencyInfo` — a
+--- table of `numAvailable` and `currencyName` — and has done since 10.0.2. It
+--- was read here as a currency id and handed to
+--- `C_CurrencyInfo.GetCurrencyInfo`, which threw "bad argument #1 (outside of
+--- expected range)" on every character with a specialised profession. See
+--- `scanEverything` for what that cost.
+---
+--- **Unspent only.** The total ever earned is the figure that would measure a
+--- year of weekly knowledge, and this API does not expose it — the currency
+--- id that would reach `totalEarned` is not in the table. Reporting the
+--- unspent amount is honest; inferring the total from it would not be.
 local function knowledge(skillLine)
 	if not skillLine or not C_ProfSpecs or not C_ProfSpecs.GetCurrencyInfoForSkillLine then
 		return 0
 	end
-	local currencyID = C_ProfSpecs.GetCurrencyInfoForSkillLine(skillLine)
-	if not currencyID then
+	local info = C_ProfSpecs.GetCurrencyInfoForSkillLine(skillLine)
+	if type(info) ~= "table" then
 		return 0
 	end
-	local info = C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo(currencyID)
-	if not info then
-		return 0
-	end
-	if info.useTotalEarnedForMaxQty and info.totalEarned and info.totalEarned > 0 then
-		return info.totalEarned
-	end
-	return info.quantity or 0
+	return info.numAvailable or 0
 end
 
 -- Recipes ---------------------------------------------------------------------
@@ -813,12 +815,41 @@ end
 
 -- Wiring ---------------------------------------------------------------------
 
+--- Everything the collector reads, each step on its own.
+---
+--- **Guarded individually, and that guard is the whole point.** These ran as
+--- five bare calls until one of them threw: `knowledge` handed a table to an
+--- API expecting a number, `scanCharacter` died at that line, and every step
+--- after it — the currencies, the collections, the Warband bank, the whole
+--- achievement catalogue — never ran at all on any character with a
+--- specialised profession. It also took the professions, the equipment and
+--- the raid locks with it, because those are written after the loop that
+--- failed.
+---
+--- Nothing said so. The client hides Lua errors by default, and an account
+--- read that silently stops half way looks exactly like an account with less
+--- in it. The Warband bank reading empty was blamed on unverified bag indices
+--- for weeks; it was this.
+---
+--- So a step that throws now costs that step. The same rule the event
+--- registration already follows: a patch renaming one thing should not take
+--- everything else with it.
 local function scanEverything()
-	scanCharacter()
-	scanCurrencies()
-	scanCollections()
-	scanWarbandBank()
-	scanAchievements()
+	for _, step in ipairs({
+		{ "character", scanCharacter },
+		{ "currencies", scanCurrencies },
+		{ "collections", scanCollections },
+		{ "warband bank", scanWarbandBank },
+		{ "achievements", scanAchievements },
+	}) do
+		local ok, err = pcall(step[2])
+		if not ok then
+			ArmoryCollectorDB = ArmoryCollectorDB or {}
+			local broke = ArmoryCollectorDB.broke or {}
+			broke[step[1]] = tostring(err)
+			ArmoryCollectorDB.broke = broke
+		end
+	end
 end
 
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
