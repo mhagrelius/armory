@@ -439,13 +439,21 @@ the API is the optional half.
   for a scrape or a retrieval step to make entries "know the lore" is solving a
   problem the screen already solved.
 
-- **A screenshot's filename is unknowable to the addon.** `Screenshot()`
-  returns nothing and no API reports what the client called the file. So the
-  addon records the *moment* and `Digest::pictures` matches it against the
-  folder's modification times, within `SHUTTER`. The window is one-directional
-  on purpose: a file written *before* the addon asked is somebody pressing
-  Print Screen themselves, and claiming it would put a stranger's picture in
-  their journal.
+- **The addon cannot take a screenshot, and no longer tries.** `Screenshot()`
+  needs a hardware event behind it; called from an event handler or a timer
+  there is none, and the client answers with the "blocked from an action only
+  available to the Blizzard UI" dialog — so every notable moment put a popup on
+  screen instead of a picture in the journal. The moment is still noted, and
+  `Digest::pictures` still matches it against the Screenshots folder's
+  modification times within `SHUTTER`; the picture is now one the *player*
+  took. A filename was never knowable either way, which is why the correlation
+  was ever by time.
+
+- **The addon says what the client refused it.** The blocked-action dialog
+  names the addon and not the function, so diagnosing one otherwise means
+  reading every call and guessing. `ADDON_ACTION_BLOCKED` is recorded into
+  `ArmoryCollectorDB.blocked` as a function name and a count — a fault report,
+  which is why it is in the account file rather than in an evening.
 
 - **The quest text is only readable while the quest frame is open.** So the
   turn-in text is captured at `QUEST_COMPLETE` and attached at

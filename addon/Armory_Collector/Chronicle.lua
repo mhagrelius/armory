@@ -324,25 +324,37 @@ local lastShot = 0
 --- The shortest gap between automatic screenshots, in seconds.
 local SHOT_GAP = 20
 
---- Take a picture of something worth remembering.
+--- Note a moment worth a picture.
 ---
---- `Screenshot()` writes a timestamped file into the client's own Screenshots
---- folder, and Armory finds it again by matching that timestamp against the
---- moment recorded here. There is no way for an addon to learn the filename —
---- so the correlation is by time, which is why the moment is noted whether or
---- not anybody is ever going to look at the picture.
+--- It does not take one. An addon cannot: `Screenshot()` wants a hardware
+--- event behind it and there is none inside an event handler, so asking put
+--- the client's "blocked from an action only available to the Blizzard UI"
+--- dialog on screen at every notable moment instead.
+---
+--- What is left still works. Armory matches these moments against the
+--- modification times of files in the client's own Screenshots folder, so a
+--- picture *you* take when something happens is attached to that evening.
+--- There is no way for an addon to learn a filename either way, which is why
+--- the correlation was ever by time.
 local function capture(what, subject)
 	local at = time()
 	if at - lastShot < SHOT_GAP then
 		return
 	end
 	lastShot = at
-	-- A frame later, so the achievement toast or the level-up flash is on
-	-- screen rather than half-drawn. This is a picture of a moment, and the
-	-- moment includes the game telling you about it.
-	C_Timer.After(0.6, function()
-		Screenshot()
-	end)
+	-- **The addon does not press the shutter.**
+	--
+	-- `Screenshot()` needs a hardware event behind it — a real keypress or
+	-- click. Called from a timer, as this was, there is none in the call
+	-- stack, and the client answers with the "blocked from an action only
+	-- available to the Blizzard UI" dialog. Every notable moment then put a
+	-- popup on screen instead of a picture in the journal.
+	--
+	-- So the moment is recorded and nothing is taken. `Digest::pictures`
+	-- matches these against the modification times of files in the
+	-- Screenshots folder, which still works — it just means the picture has
+	-- to be one you took. Press Print Screen when something happens and it is
+	-- attached to that evening.
 	note("shot", what, subject)
 end
 
@@ -1637,6 +1649,31 @@ for event in pairs(handlers) do
 		handlers[event] = nil
 	end
 end
+
+-- What the client refused, and to whom.
+--
+-- A blocked action is a dialog the player sees and a fact the addon otherwise
+-- never learns: the popup names the addon and not the function, so working out
+-- which call was refused means guessing. This writes the function down so the
+-- next read says outright. Kept in the account file rather than the session,
+-- because it is a fault report and not something that happened in the evening.
+-- Guarded like the loop above, and for the same reason: an event name the
+-- client does not know throws, and a fault reporter is not worth taking the
+-- addon down over.
+pcall(frame.RegisterEvent, frame, "ADDON_ACTION_BLOCKED")
+pcall(frame.RegisterEvent, frame, "ADDON_ACTION_FORBIDDEN")
+handlers["ADDON_ACTION_BLOCKED"] = function(who, what)
+	if who ~= ADDON then
+		return
+	end
+	ArmoryCollectorDB = ArmoryCollectorDB or {}
+	local blocked = ArmoryCollectorDB.blocked or {}
+	-- One entry per function, with a count. A blocked call in a loop would
+	-- otherwise fill the file with the same line.
+	blocked[what or "?"] = (blocked[what or "?"] or 0) + 1
+	ArmoryCollectorDB.blocked = blocked
+end
+handlers["ADDON_ACTION_FORBIDDEN"] = handlers["ADDON_ACTION_BLOCKED"]
 
 SLASH_ARMORYLOG1 = "/armorylog"
 SlashCmdList["ARMORYLOG"] = function()
