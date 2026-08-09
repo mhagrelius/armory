@@ -198,40 +198,42 @@ yet. See step 4.
 
 ---
 
-## Handing the server to a different Battle.net account
+## More than one Battle.net account
 
-The server holds **one** account. Two Battle.net accounts sharing it would
-merge: one roster with both sets of characters, collections and achievements
-added together, and a run measuring a cohort drawn from both. Nothing would
-report an error — it would just be wrong.
+The server holds as many accounts as you give it, each in a **separate
+database**. They cannot merge — which matters, because every merge rule in
+Armory is written to fold two views of *one* account together. A shared store
+would fold two accounts together and call it agreement: one roster with both
+sets of characters, collections added up, a run measuring a cohort drawn from
+both, and not one error anywhere.
 
-So swapping accounts means emptying the server first.
+**Naming one.** Sharing… → *Account*. Letters, digits, dash, underscore and
+dot; the server refuses anything else, because the name becomes a directory on
+it. Leave it empty and you get `default`, which is where everything sent
+before accounts existed lives.
 
-**1. On the NAS.** Container Manager → `armory-server` → Action → **Stop**.
-Then File Station → `/volume1/docker/armory-server/data` → delete `armory.db`,
-`armory.db-wal` and `armory.db-shm`. All three: the `-wal` holds recent writes
-and leaving it behind restores half the old account. Then Action → **Start**.
-The server makes an empty database on the way up.
+Point each machine at the account it belongs to. Two machines on the same
+Battle.net account share a name; a machine on a different one gets its own.
 
-```bash
-curl -s http://nas.example.ts.net:8084/health     # {"ok":true,"rows":0}
-```
+**Seeing them.** The same dialog lists every account the server holds with a
+row count each, and marks which is this machine's.
 
-`rows: 0` is the proof it is empty.
+**Deleting one.** The bin beside it. It confirms first, names what goes, and
+says what survives — the server keeps no second copy, but **nothing local is
+touched**: the whole account stays on every machine that holds it. If you
+delete the account this machine syncs to, *Send Again* puts it straight back.
 
-**2. On each machine.** Menu → *Sharing…* → **Send Again**.
+That is also how to swap: delete the old account, set *Account* to the new
+name, and the next pass starts it fresh. No SSH, no File Station, nothing
+stopped.
 
-That is not optional, and it is why the button exists. After a wipe, a client's
-cursor points past the end of a log that no longer exists, so it pulls nothing;
-and its seed mark says the account has already been offered up, so it pushes
-nothing. Both ends report themselves healthy and nothing moves, forever. *Send
-Again* forgets both and offers the whole account up from scratch.
+**Send Again** is for one other case — after a server database has been
+removed by hand. A client is then silently stuck: its cursor points past the
+end of a log that no longer exists so it pulls nothing, and its seed mark says
+the account has already gone up so it pushes nothing. Both ends report
+themselves healthy and nothing moves again. *Send Again* clears both.
 
-Machines still holding the **old** account should not be sent again — they
-would refill the server with what you just removed. Take those off sharing
-first by emptying the address in the same dialog.
-
-**3. If both accounts share one WoW install.** `WTF/Account/` then has a folder
+**If both accounts share one WoW install.** `WTF/Account/` then has a folder
 each, and Armory picks one. It records which in `wow_account` in
 `~/.config/armory/settings.json` and says so on stderr when there is more than
 one; change that value to the other folder name to switch. Reading the wrong

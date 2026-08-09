@@ -27,9 +27,23 @@ schema through the same `armory-core`, so `save_collected`'s merge and a tally's
 | `POST /push` | Apply these rows, stamped with the pushing machine. |
 | `GET /pull?since=&limit=` | Everything in the log above `since` that this machine did not write. |
 | `GET /wait?since=` | Park until there is something above `since`, or fifty seconds. |
+| `GET /accounts` | Every account held, with how many rows each. |
+| `DELETE /accounts/{name}?confirm={name}` | Remove one and everything in it. |
 
 Everything but `/health` needs `Authorization: Bearer $ARMORY_TOKEN`, and
 everything but `/health` needs `X-Armory-Machine: <id>`.
+
+`X-Armory-Account: <name>` says which account a request is about. One server
+holds as many as it is given, each in its own SQLite file under
+`data/accounts/<name>/` — so two Battle.net accounts cannot merge, which they
+would in a shared store without raising a single error. A request that names
+no account is about `default`, which is where a database from before accounts
+existed is moved on the first start after upgrading.
+
+**Deletion takes the name twice**, in the path and in `?confirm=`, and refuses
+unless they match. The token is the security; this is so that a mistyped or
+half-built URL cannot remove an account, because there is no undo and the
+server keeps no second copy. What is on each client is untouched.
 
 The token is checked as a guard before the route table rather than route by
 route, so a route added later is authenticated by default — forgetting to add
