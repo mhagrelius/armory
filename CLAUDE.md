@@ -547,6 +547,20 @@ the API is the optional half.
   somebody earn the same gold on every character they own. `Purpose::Mail` is
   the honest "we could not tell".
 
+- **The combat log is closed to addons as of patch 12.0, and this is why three
+  numbers are always empty.** `COMBAT_LOG_EVENT` and
+  `COMBAT_LOG_EVENT_UNFILTERED` refuse registration — Blizzard's "addon
+  apocalypse", aimed squarely at addons making decisions from combat
+  information. So `kills`, `worstHit` and `lowestHealth` sit at their starting
+  values on 12.0.7 while every other handler records normally, and the pages
+  that draw them are already guarded on `> 0` so they simply do not appear.
+  There is no replacement API and Advanced Combat Logging does not help: it
+  changes the payload of an event that never arrives. The handler is kept for
+  clients that still allow it, and the registration loop now asks
+  `IsEventRegistered` rather than trusting that no error meant success — a
+  refused registration throws nothing, which is exactly how a dead handler sat
+  there looking wired up.
+
 - **The CLEU damage amount is read by position from the front, never the back.**
   Eleven arguments are common to every subevent; a swing puts the amount
   twelfth, a spell fifteenth, the environment thirteenth. Counting from the end

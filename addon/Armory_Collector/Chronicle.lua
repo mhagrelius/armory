@@ -1092,6 +1092,22 @@ end
 --- only readable while the thing is targeted. Checking the target at the
 --- moment of the kill catches the rare you were fighting and misses rares
 --- somebody else in the party tagged, which is the right way round.
+--- **Not registered, and cannot be: the combat log is closed to addons.**
+---
+--- Patch 12.0 ("addon apocalypse") made `COMBAT_LOG_EVENT` and
+--- `COMBAT_LOG_EVENT_UNFILTERED` refuse registration outright, deliberately,
+--- to stop addons making decisions from combat information. The client
+--- reports the frame as not registered and the handler below is never called
+--- — which is why `kills`, `worstHit` and `lowestHealth` came back at their
+--- starting values for every evening on 12.0.7 while everything else recorded
+--- normally.
+---
+--- Kept rather than deleted because it is correct for any client that still
+--- allows it, and `registerCombatLog` below asks once and records the answer
+--- instead of assuming either way. Nothing here is a workaround: there is no
+--- replacement API, and the three numbers are simply unavailable until one
+--- exists. Turning on Advanced Combat Logging changes the payload of an event
+--- that never arrives, so it does not help.
 handlers.COMBAT_LOG_EVENT_UNFILTERED = function()
 	if not current then
 		return
@@ -1682,8 +1698,13 @@ end
 
 local refused = {}
 for _, event in ipairs(wanted) do
+	-- Asked for, and then *checked*. `pcall` only catches an error, and an
+	-- event the client declines to register does not necessarily raise one —
+	-- the combat log on 12.0 registers no frame and throws nothing, which is
+	-- how a dead handler sat there looking wired up. `IsEventRegistered` is
+	-- the only answer worth trusting.
 	local ok = pcall(frame.RegisterEvent, frame, event)
-	if not ok then
+	if not ok or not frame:IsEventRegistered(event) then
 		refused[#refused + 1] = event
 		handlers[event] = nil
 	end
