@@ -224,6 +224,12 @@ local lowestHealth = 100
 --- one evening instead of by reading the code again.
 local cleuSeen, cleuKills, cleuHits, cleuMine = 0, 0, 0, 0
 
+--- What the client would and would not wire up, filled in at the bottom of
+--- this file. Declared here because `closeSession` writes it and is defined
+--- long before the wiring runs — a `local` at the point it is built is not in
+--- scope up here, and the write would silently be reading a nil global.
+local wiring = nil
+
 --- Forward declaration, for the same reason as `noteInstance` below it:
 --- `noteZone` credits the zone being left, and the function that does it is
 --- defined further down beside the rest of the session bookkeeping.
@@ -1696,7 +1702,7 @@ end
 -- `ArmoryCollectorDB = ArmoryCollectorDB or {}` at file scope would replace a
 -- decade of collected account data with an empty table and write that back on
 -- the way out.
-local wiring = {
+wiring = {
 	asked = #wanted,
 	refused = refused,
 	cleu = frame:IsEventRegistered("COMBAT_LOG_EVENT_UNFILTERED") and 1 or 0,
