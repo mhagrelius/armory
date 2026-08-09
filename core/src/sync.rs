@@ -83,6 +83,7 @@ pub enum Scope {
     WatchedRealm,
     Session,
     Entry,
+    Forgotten,
     Response,
 }
 
@@ -524,6 +525,14 @@ pub const TABLES: &[Table] = &[
             Column::stamp("written_at"),
         ],
         guard: Guard::Newer("written_at"),
+        local_id: None,
+    },
+    Table {
+        scope: Scope::Forgotten,
+        name: "forgotten",
+        key: &["realm_slug", "name", "started_at"],
+        columns: &[Column::take("at")],
+        guard: Guard::Always,
         local_id: None,
     },
     Table {

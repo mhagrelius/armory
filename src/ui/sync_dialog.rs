@@ -395,6 +395,7 @@ fn pretty(scope: &str) -> String {
         "watched_realm" => "Watched realms",
         "session" => "Evenings",
         "entry" => "Journal entries",
+        "forgotten" => "Evenings you threw away",
         "response" => "Cached replies",
         other => other,
     }

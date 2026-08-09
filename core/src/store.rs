@@ -636,6 +636,26 @@ impl Store {
              CREATE INDEX IF NOT EXISTS response_fetched_at
                ON response (fetched_at);
 
+             -- Evenings deliberately thrown away, so they stay thrown away.
+             --
+             -- Deleting the row is not enough on its own. The addon's own file
+             -- is the source and it is re-read on every launch, so a forgotten
+             -- evening is re-imported by the next read and reappears — which
+             -- looks exactly like the application ignoring the instruction.
+             -- The addon keeps its last forty sessions, so this outlives the
+             -- file that caused it by design.
+             --
+             -- It travels, because forgetting is a decision rather than an
+             -- observation: an evening thrown away here must not come back
+             -- from the machine that still has it in its own SavedVariables.
+             CREATE TABLE IF NOT EXISTS forgotten (
+               realm_slug TEXT NOT NULL,
+               name       TEXT NOT NULL,
+               started_at TEXT NOT NULL,
+               at         TEXT NOT NULL,
+               PRIMARY KEY (realm_slug, name, started_at)
+             );
+
              -- Which rows have moved, and in what order.
              --
              -- One entry a row rather than one an edit: a write deletes the
@@ -2524,9 +2544,16 @@ impl Store {
         let transaction = self.connection.transaction()?;
         let mut added = 0;
         {
+            // `WHERE NOT EXISTS` rather than a filter in Rust, so that an
+            // evening thrown away on another machine is refused the moment
+            // that decision arrives, without this having to be told twice.
             let mut insert = transaction.prepare(
                 "INSERT OR IGNORE INTO session (realm_slug, name, started_at, ended_at, json)
-                 VALUES (?1, ?2, ?3, ?4, ?5)",
+                 SELECT ?1, ?2, ?3, ?4, ?5
+                 WHERE NOT EXISTS (
+                   SELECT 1 FROM forgotten
+                   WHERE realm_slug = ?1 AND name = ?2 AND started_at = ?3
+                 )",
             )?;
             for session in sessions {
                 let json = serde_json::to_string(session).unwrap_or_default();
@@ -2650,6 +2677,20 @@ impl Store {
         self.connection.execute(
             "DELETE FROM session WHERE realm_slug = ?1 AND name = ?2 AND started_at = ?3",
             key,
+        )?;
+        // The part that makes it stick. Without this the next addon read puts
+        // the evening straight back, and nothing about that looks like a bug
+        // from the outside — it looks like Forget doing nothing.
+        self.connection.execute(
+            "INSERT INTO forgotten (realm_slug, name, started_at, at)
+             VALUES (?1, ?2, ?3, ?4)
+             ON CONFLICT (realm_slug, name, started_at) DO NOTHING",
+            params![
+                id.character.realm_slug,
+                id.character.name,
+                id.started_at.to_rfc3339(),
+                Utc::now().to_rfc3339()
+            ],
         )?;
         Ok(())
     }
@@ -3256,6 +3297,52 @@ mod tests {
         let entries = store.entries().expect("entries");
         assert_eq!(entries.len(), 1);
         assert_eq!(entries[&session.id()].title, "Second Thoughts");
+    }
+
+    #[test]
+    fn an_evening_thrown_away_does_not_come_back_on_the_next_addon_read() {
+        // The failure this exists for: `forget_session` deleted the row and
+        // nothing else, but the addon's own file is the source and is re-read
+        // on every launch. The evening came straight back, which from the
+        // outside looks exactly like Forget doing nothing at all.
+        let mut store = Store::in_memory().expect("a store");
+        let session = evening("Mattydormu", 4);
+        store
+            .save_sessions(std::slice::from_ref(&session))
+            .expect("saved");
+        assert_eq!(store.sessions(10).expect("read").len(), 1);
+
+        store.forget_session(&session.id()).expect("forgotten");
+        assert!(store.sessions(10).expect("read").is_empty());
+
+        // The addon file still holds it, and the next read offers it again.
+        let added = store
+            .save_sessions(std::slice::from_ref(&session))
+            .expect("read again");
+
+        assert_eq!(added, 0, "the evening was re-imported");
+        assert!(
+            store.sessions(10).expect("read").is_empty(),
+            "a forgotten evening came back"
+        );
+    }
+
+    #[test]
+    fn forgetting_one_evening_does_not_refuse_the_others() {
+        let mut store = Store::in_memory().expect("a store");
+        let gone = evening("Mattydormu", 4);
+        let kept = evening("Mattydormu", 3);
+        store
+            .save_sessions(&[gone.clone(), kept.clone()])
+            .expect("saved");
+
+        store.forget_session(&gone.id()).expect("forgotten");
+        let survivor = kept.started_at;
+        store.save_sessions(&[gone, kept]).expect("read again");
+
+        let held = store.sessions(10).expect("read");
+        assert_eq!(held.len(), 1);
+        assert_eq!(held[0].started_at, survivor);
     }
 
     #[test]
