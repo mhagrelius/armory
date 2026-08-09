@@ -1704,9 +1704,18 @@ for _, event in ipairs(wanted) do
 	-- how a dead handler sat there looking wired up. `IsEventRegistered` is
 	-- the only answer worth trusting.
 	local ok = pcall(frame.RegisterEvent, frame, event)
-	if not ok or not frame:IsEventRegistered(event) then
+	if not ok then
+		-- A name this client does not know. The handler goes, because there
+		-- is nothing left to call it.
 		refused[#refused + 1] = event
 		handlers[event] = nil
+	elseif not frame:IsEventRegistered(event) then
+		-- Asked for, not refused, and not listening — the combat log's
+		-- signature on 12.0. **Recorded and nothing else.** Deleting the
+		-- handler on this alone would mean one unreliable answer from
+		-- `IsEventRegistered` silently switching off a part of the addon that
+		-- works, which is a worse failure than the one being diagnosed.
+		refused[#refused + 1] = event .. " (silent)"
 	end
 end
 
