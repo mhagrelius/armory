@@ -322,7 +322,10 @@ impl ArmoryWindow {
         menu.append_section(None, &run);
 
         let account = gtk::gio::Menu::new();
-        account.append(Some("Sharing…"), Some("app.sync-status"));
+        // Named for both halves. It answers which Battle.net account this
+        // machine reads as well as where that goes, and somebody looking for
+        // the first would not open a menu item called "Sharing".
+        account.append(Some("Account & Sharing…"), Some("app.sync-status"));
         account.append(Some("Connect Battle.net Account…"), Some("app.setup"));
         account.append(Some("Sign Out"), Some("app.sign-out"));
         menu.append_section(None, &account);

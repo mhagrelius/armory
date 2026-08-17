@@ -16,14 +16,34 @@ use adw::prelude::*;
 use adw::subclass::prelude::*;
 use gtk::glib;
 
-/// Told the server address and, when one was typed, a new token.
+/// What somebody chose, when they pressed Save.
 ///
-/// `None` for the token means "keep the one you have". The field cannot be
-/// pre-filled without reading the secret back out to display it, so it is
-/// empty on every launch — the same rule the Battle.net secret follows, and
-/// the row's subtitle says whether one is held rather than leaving somebody
-/// hunting for a value Armory is already holding.
-type SaveHandler = Box<dyn Fn(String, Option<String>, String)>;
+/// A struct rather than four arguments in a row: two of them are account names
+/// and two are optional, and `save(a, b, c, d)` at the call site said nothing
+/// about which was which.
+#[derive(Debug, Clone, Default)]
+pub struct Chosen {
+    /// `http://host:port`, or empty to stop sharing.
+    pub address: String,
+    /// `None` means keep the token that is held.
+    ///
+    /// The field cannot be pre-filled without reading the secret back out to
+    /// display it, so it is empty on every launch — the same rule the
+    /// Battle.net secret follows, and the row's title says whether one is held
+    /// rather than leaving somebody hunting for a value Armory is already
+    /// holding.
+    pub token: Option<String>,
+    /// Which account on the server this machine belongs to.
+    pub account: String,
+    /// Which `WTF/Account/<NAME>` folder to read.
+    ///
+    /// `None` when this install has none to choose between, which is not the
+    /// same as an empty name: it means leave the setting where it is.
+    pub game_account: Option<String>,
+}
+
+/// Told what was chosen.
+type SaveHandler = Box<dyn Fn(Chosen)>;
 
 /// Told to run a pass now.
 type PassHandler = Box<dyn Fn()>;
@@ -60,6 +80,13 @@ pub struct State {
     /// `None` until it has been asked, which is not the same as "none" — an
     /// empty list means a server holding nothing.
     pub held: Option<Vec<(String, i64)>>,
+    /// The `WTF/Account/<NAME>` folders this WoW install has.
+    ///
+    /// Empty when no install was found, which is a thing to say rather than a
+    /// picker with nothing in it.
+    pub game_accounts: Vec<String>,
+    /// Which of them Armory is reading.
+    pub game_account: String,
 }
 
 #[derive(Debug, Clone)]
@@ -74,7 +101,7 @@ pub struct Pass {
 
 mod imp {
     use super::*;
-    use std::cell::RefCell;
+    use std::cell::{Cell, RefCell};
 
     #[derive(Default)]
     pub struct SyncDialog {
@@ -87,7 +114,20 @@ mod imp {
         pub on_pass: RefCell<Option<super::PassHandler>>,
         pub on_resend: RefCell<Option<super::ResendHandler>>,
         pub on_forget: RefCell<Option<super::ForgetHandler>>,
-        pub account: RefCell<Option<adw::EntryRow>>,
+        pub account: RefCell<Option<adw::ComboRow>>,
+        /// What the account combo is showing, in its order. The trailing
+        /// “make one” row is not in here, so its index is this list's length.
+        pub account_names: RefCell<Vec<String>>,
+        pub new_account: RefCell<Option<adw::EntryRow>>,
+        pub game: RefCell<Option<adw::ComboRow>>,
+        pub game_names: RefCell<Vec<String>>,
+        /// Whether the dialog is drawing itself rather than answering a person.
+        ///
+        /// Setting a combo's selection raises the same signal a click does, and
+        /// one of those handlers offers the game account's name for the server.
+        /// Without this, opening the dialog on a machine whose chosen folder is
+        /// not the first one would make that offer unbidden.
+        pub settling: Cell<bool>,
         pub held: RefCell<Option<adw::PreferencesGroup>>,
         pub held_rows: RefCell<Vec<adw::ActionRow>>,
     }
@@ -125,10 +165,10 @@ impl SyncDialog {
     }
 
     fn build(&self) {
-        self.set_title("Sharing");
+        self.set_title("Account & Sharing");
 
         let page = adw::PreferencesPage::builder()
-            .title("Sharing")
+            .title("Account & Sharing")
             .icon_name("folder-remote-symbolic")
             .build();
 
@@ -143,6 +183,27 @@ impl SyncDialog {
             .build();
         page.add(&about);
 
+        // -- which account this machine is reading ------------------------------
+
+        // The other half of the same question. One server account holds one
+        // Battle.net account's play, and this is where that play is read from —
+        // so choosing the wrong folder here and the right account below fills a
+        // shared account with somebody else's characters.
+        let game_group = adw::PreferencesGroup::builder()
+            .title("This machine")
+            .description(
+                "Which Battle.net account's folder the addon is read from. One is the \
+                 usual case; a second appears when a second login has used this install, \
+                 and the two hold different characters, different collections and \
+                 different achievements.",
+            )
+            .build();
+        let game = adw::ComboRow::builder().title("Game account").build();
+        let dialog = self.clone();
+        game.connect_selected_notify(move |row| dialog.offer_account(row.selected()));
+        game_group.add(&game);
+        page.add(&game_group);
+
         // -- where -----------------------------------------------------------
 
         let where_group = adw::PreferencesGroup::builder()
@@ -153,14 +214,25 @@ impl SyncDialog {
         let address = adw::EntryRow::builder().title("Address").build();
         let token = adw::PasswordEntryRow::builder().title("Token").build();
         // One server can hold several accounts, kept in separate databases so
-        // that two Battle.net accounts cannot merge into one roster.
-        let account = adw::EntryRow::builder()
-            .title("Account — leave empty for “default”")
+        // that two Battle.net accounts cannot merge into one roster. Chosen
+        // from what the server answered rather than typed: a name that differs
+        // from the one on the server by a letter is a second account holding
+        // nothing, and it looks exactly like a sync that has stopped working.
+        let account = adw::ComboRow::builder()
+            .title("Account")
+            .subtitle("Which one on the server this machine belongs to")
             .build();
+        let new_account = adw::EntryRow::builder()
+            .title("New account name")
+            .visible(false)
+            .build();
+        let dialog = self.clone();
+        account.connect_selected_notify(move |row| dialog.show_new_account(row.selected()));
 
         where_group.add(&address);
         where_group.add(&token);
         where_group.add(&account);
+        where_group.add(&new_account);
         page.add(&where_group);
 
         // -- what the server is holding ---------------------------------------
@@ -245,6 +317,8 @@ impl SyncDialog {
         *imp.server.borrow_mut() = Some(address);
         *imp.token.borrow_mut() = Some(token);
         *imp.account.borrow_mut() = Some(account);
+        *imp.new_account.borrow_mut() = Some(new_account);
+        *imp.game.borrow_mut() = Some(game);
         *imp.held.borrow_mut() = Some(held);
         *imp.queue.borrow_mut() = Some(queue);
         *imp.state_rows.borrow_mut() = vec![machine, last];
@@ -255,6 +329,7 @@ impl SyncDialog {
     /// Redraw everything the application knows.
     pub fn show_state(&self, state: &State) {
         let imp = self.imp();
+        imp.settling.set(true);
 
         if let Some(row) = imp.server.borrow().as_ref() {
             // Only when it differs, or setting the text moves the cursor out
@@ -282,15 +357,150 @@ impl SyncDialog {
         if let Some(last) = rows.get(1) {
             last.set_subtitle(&describe(state));
         }
-        if let Some(row) = imp.account.borrow().as_ref() {
-            if row.text() != state.account {
-                row.set_text(&state.account);
-            }
-        }
         drop(rows);
 
+        self.show_game(state);
+        self.show_accounts(state);
         self.show_queue(state);
         self.show_held(state);
+        imp.settling.set(false);
+    }
+
+    /// The account folders this install has, and which one is being read.
+    ///
+    /// Kept present and insensitive when there is no install rather than
+    /// hidden: a row that appears and disappears between launches is harder to
+    /// learn than one that greys out and says why.
+    fn show_game(&self, state: &State) {
+        let imp = self.imp();
+        let Some(row) = imp.game.borrow().clone() else {
+            return;
+        };
+
+        if *imp.game_names.borrow() != state.game_accounts {
+            imp.game_names.borrow_mut().clone_from(&state.game_accounts);
+            let labels: Vec<&str> = if state.game_accounts.is_empty() {
+                vec!["No install found"]
+            } else {
+                state.game_accounts.iter().map(String::as_str).collect()
+            };
+            row.set_model(Some(&gtk::StringList::new(&labels)));
+        }
+
+        row.set_sensitive(!state.game_accounts.is_empty());
+        row.set_subtitle(match state.game_accounts.len() {
+            0 => "Armory has not found a World of Warcraft install to read",
+            1 => "The only Battle.net account this install has",
+            _ => "This install has been used by more than one",
+        });
+
+        if let Some(index) = state
+            .game_accounts
+            .iter()
+            .position(|name| *name == state.game_account)
+        {
+            row.set_selected(index as u32);
+        }
+    }
+
+    /// The accounts the server will take, and which one this machine belongs to.
+    ///
+    /// The model is rebuilt only when the names change, because this redraws on
+    /// every pass and rebuilding it under somebody who is choosing would drag
+    /// the selection back to where they started.
+    fn show_accounts(&self, state: &State) {
+        let imp = self.imp();
+        let Some(row) = imp.account.borrow().clone() else {
+            return;
+        };
+
+        let showing = self.account_choice();
+        let names = options(state.held.as_deref(), &state.account);
+        if *imp.account_names.borrow() == names {
+            return;
+        }
+        imp.account_names.borrow_mut().clone_from(&names);
+
+        let mut labels: Vec<&str> = names.iter().map(String::as_str).collect();
+        labels.push(NEW_ACCOUNT);
+        row.set_model(Some(&gtk::StringList::new(&labels)));
+
+        // What was on screen wins over what was saved: the server answering
+        // mid-choice is what rebuilds this, and it must not undo a choice.
+        let index = match showing.as_deref() {
+            None => selected(&names, &state.account).unwrap_or(0),
+            Some("") => names.len(),
+            Some(name) => selected(&names, name).unwrap_or(0),
+        };
+        row.set_selected(index as u32);
+        self.show_new_account(index as u32);
+    }
+
+    /// Which account the combo is on.
+    ///
+    /// `Some("")` for the row that makes one, which is a choice; `None` before
+    /// the model has been built at all, which is not.
+    fn account_choice(&self) -> Option<String> {
+        let imp = self.imp();
+        let names = imp.account_names.borrow();
+        if names.is_empty() {
+            return None;
+        }
+        let index = imp.account.borrow().as_ref()?.selected() as usize;
+        if index == names.len() {
+            return Some(String::new());
+        }
+        names.get(index).cloned()
+    }
+
+    /// The name field appears only when the choice is to make one.
+    fn show_new_account(&self, selected: u32) {
+        let imp = self.imp();
+        let last = imp.account_names.borrow().len() as u32;
+        let row = imp.new_account.borrow().clone();
+        if let Some(row) = row {
+            row.set_visible(selected == last);
+        }
+    }
+
+    /// A chosen game account is a name for the server account too.
+    ///
+    /// Only offered while the server account is still `default`. Moving a
+    /// machine that already belongs to a named account is a different act, and
+    /// doing it as a side effect of saying which folder to read would be a
+    /// surprise rather than a convenience.
+    fn offer_account(&self, selected: u32) {
+        let imp = self.imp();
+        if imp.settling.get() {
+            return;
+        }
+
+        let offered = {
+            let names = imp.game_names.borrow();
+            let Some(folder) = names.get(selected as usize) else {
+                return;
+            };
+            account_from_folder(folder)
+        };
+        if offered == DEFAULT_ACCOUNT {
+            return;
+        }
+        if self.account_choice().as_deref() != Some(DEFAULT_ACCOUNT) {
+            return;
+        }
+
+        // Every borrow is done with before either setter runs: setting the
+        // selection raises the signal that shows the name field, and that
+        // handler borrows both of these.
+        let last = imp.account_names.borrow().len() as u32;
+        let entry = imp.new_account.borrow().clone();
+        let account = imp.account.borrow().clone();
+        if let Some(entry) = entry {
+            entry.set_text(&offered);
+        }
+        if let Some(account) = account {
+            account.set_selected(last);
+        }
     }
 
     /// The accounts the server is holding, each with a way to remove it.
@@ -422,7 +632,7 @@ impl SyncDialog {
         }
     }
 
-    pub fn connect_save<F: Fn(String, Option<String>, String) + 'static>(&self, handler: F) {
+    pub fn connect_save<F: Fn(Chosen) + 'static>(&self, handler: F) {
         *self.imp().on_save.borrow_mut() = Some(Box::new(handler));
     }
 
@@ -456,17 +666,145 @@ impl SyncDialog {
             .map(|row| row.text().trim().to_string())
             .filter(|text| !text.is_empty());
 
-        let account = imp
-            .account
-            .borrow()
-            .as_ref()
-            .map(|row| row.text().trim().to_string())
-            .unwrap_or_default();
+        let Some(account) = self.chosen_account() else {
+            // The typed name would be refused by the server, which answers
+            // 400 to a name it will not turn into a directory. Said here,
+            // against the field, rather than as a failed pass an hour later.
+            return;
+        };
+
+        let game_account = {
+            let names = imp.game_names.borrow();
+            imp.game
+                .borrow()
+                .as_ref()
+                .and_then(|row| names.get(row.selected() as usize))
+                .cloned()
+        };
 
         if let Some(save) = imp.on_save.borrow().as_ref() {
-            save(address, token, account);
+            save(Chosen {
+                address,
+                token,
+                account,
+                game_account,
+            });
         }
         self.close();
+    }
+
+    /// The account name to save, or `None` when the typed one is not one.
+    ///
+    /// Marks the field and says the rule rather than closing on a name the
+    /// server will refuse.
+    fn chosen_account(&self) -> Option<String> {
+        let typed = match self.account_choice() {
+            Some(name) if !name.is_empty() => return Some(name),
+            // Either the row that makes one, or a dialog nobody has drawn.
+            _ => self
+                .imp()
+                .new_account
+                .borrow()
+                .as_ref()
+                .map(|row| row.text().trim().to_string())
+                .unwrap_or_default(),
+        };
+
+        let row = self.imp().new_account.borrow().clone();
+        let Some(row) = row else {
+            return Some(DEFAULT_ACCOUNT.to_string());
+        };
+        if valid_account(&typed) {
+            row.remove_css_class("error");
+            row.set_title("New account name");
+            return Some(typed);
+        }
+        row.add_css_class("error");
+        row.set_title("New account name — letters, digits, dash, underscore and dot");
+        row.grab_focus();
+        None
+    }
+}
+
+/// The row that makes an account rather than choosing one.
+const NEW_ACCOUNT: &str = "New account…";
+
+/// The account this machine belongs to when nothing has been chosen.
+///
+/// An empty `sync_account` means this, and it is where a store from before the
+/// server held more than one was adopted.
+const DEFAULT_ACCOUNT: &str = "default";
+
+/// The longest name the server will take. `accounts::MAX_NAME` on its side.
+const MAX_ACCOUNT: usize = 64;
+
+/// The accounts worth offering: what the server holds, and the two that are
+/// true whether it has answered or not.
+///
+/// `default` is always there because an empty setting means it. The current
+/// choice is always there because a server that has not been asked yet — or
+/// that has just been emptied — must not quietly move this machine somewhere
+/// else while the list is short.
+fn options(held: Option<&[(String, i64)]>, current: &str) -> Vec<String> {
+    let mut names: Vec<String> = held
+        .unwrap_or_default()
+        .iter()
+        .map(|(name, _)| name.clone())
+        .collect();
+    for known in [DEFAULT_ACCOUNT, current.trim()] {
+        if !known.is_empty() && !names.iter().any(|name| name == known) {
+            names.push(known.to_string());
+        }
+    }
+    names
+}
+
+/// Which option is this machine's, as an index into them.
+fn selected(options: &[String], current: &str) -> Option<usize> {
+    let current = current.trim();
+    let wanted = if current.is_empty() {
+        DEFAULT_ACCOUNT
+    } else {
+        current
+    };
+    options.iter().position(|name| name == wanted)
+}
+
+/// Whether the server will take this as an account name.
+///
+/// The same allow-list as `accounts::directory` on its side, which is what
+/// stands between a string off the network and that machine's filesystem.
+fn valid_account(name: &str) -> bool {
+    !name.is_empty()
+        && name.len() <= MAX_ACCOUNT
+        && name
+            .chars()
+            .all(|c| c.is_ascii_alphanumeric() || c == '-' || c == '_' || c == '.')
+        && !name.chars().all(|c| c == '.')
+}
+
+/// A WoW account folder as a name the server will take.
+///
+/// A Battle.net folder is very often `12345678#1`, and offering that verbatim
+/// would be offering a name that is saved, sent, and refused with a 400 an hour
+/// later on a pass nobody is watching.
+fn account_from_folder(folder: &str) -> String {
+    let cleaned: String = folder
+        .trim()
+        .chars()
+        .map(|c| {
+            if c.is_ascii_alphanumeric() || c == '-' || c == '_' || c == '.' {
+                c
+            } else {
+                '-'
+            }
+        })
+        .take(MAX_ACCOUNT)
+        .collect();
+    if valid_account(&cleaned) {
+        cleaned
+    } else {
+        DEFAULT_ACCOUNT.to_string()
     }
 }
 
@@ -654,5 +992,62 @@ mod tests {
     #[test]
     fn with_no_server_it_says_sharing_is_off_rather_than_never() {
         assert_eq!(describe(&State::default()), "Sharing is off.");
+    }
+
+    fn held(names: &[&str]) -> Vec<(String, i64)> {
+        names.iter().map(|name| ((*name).into(), 1)).collect()
+    }
+
+    #[test]
+    fn a_server_that_has_not_answered_still_offers_default() {
+        assert_eq!(options(None, ""), vec!["default".to_string()]);
+        assert_eq!(selected(&options(None, ""), ""), Some(0));
+    }
+
+    /// The case that would otherwise move a machine somewhere else: the server
+    /// has been emptied, so it holds nothing this machine has heard of, and the
+    /// list it answers with does not contain the account this machine is on.
+    #[test]
+    fn the_account_this_machine_is_on_is_offered_even_when_the_server_lost_it() {
+        let chosen = options(Some(&held(&["someone-else"])), "PLAYER1");
+        assert!(chosen.contains(&"PLAYER1".to_string()), "{chosen:?}");
+        assert_eq!(
+            selected(&chosen, "PLAYER1"),
+            chosen.iter().position(|n| n == "PLAYER1")
+        );
+    }
+
+    #[test]
+    fn an_account_the_server_holds_is_not_offered_twice() {
+        let chosen = options(Some(&held(&["default", "PLAYER1"])), "PLAYER1");
+        assert_eq!(chosen, vec!["default".to_string(), "PLAYER1".to_string()]);
+    }
+
+    /// The refusal list is the server's, and a name that fails here is a 400 on
+    /// a pass an hour later if it is allowed through.
+    #[test]
+    fn a_name_the_server_would_refuse_is_not_a_name() {
+        for bad in [
+            "", ".", "..", "...", "a/b", "../etc", "a b", "réalto", "a#1",
+        ] {
+            assert!(!valid_account(bad), "{bad:?} should be refused");
+        }
+        assert!(!valid_account(&"a".repeat(MAX_ACCOUNT + 1)));
+        for good in ["default", "PLAYER1", "second-account_2.0", "a"] {
+            assert!(valid_account(good), "{good:?} should be allowed");
+        }
+    }
+
+    /// Battle.net folders are very often `12345678#1`, which is the whole
+    /// reason this is not a straight copy of the folder name.
+    #[test]
+    fn a_folder_name_becomes_one_the_server_will_take() {
+        assert_eq!(account_from_folder("PLAYER1"), "PLAYER1");
+        assert_eq!(account_from_folder("12345678#1"), "12345678-1");
+        assert_eq!(account_from_folder("  PLAYER1  "), "PLAYER1");
+        // Nothing usable left, rather than a name made of dashes.
+        assert_eq!(account_from_folder(".."), "default");
+        assert_eq!(account_from_folder(""), "default");
+        assert!(valid_account(&account_from_folder(&"x".repeat(200))));
     }
 }

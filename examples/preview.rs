@@ -45,8 +45,8 @@ use armory::model::source::blizzard::profile::FactionStanding;
 use armory::model::source::blizzard::{media, Region};
 use armory::model::tally::{Counting, Tallies, Tally};
 use armory::ui::{
-    AchievementDialog, ChroniclePage, CollectibleDialog, CollectionPage, Images, MarketPage,
-    Onboarding, Quote, ReputationsPage, RosterPage, RunPage, Warband,
+    sync_dialog, AchievementDialog, ChroniclePage, CollectibleDialog, CollectionPage, Images,
+    MarketPage, Onboarding, Quote, ReputationsPage, RosterPage, RunPage, SyncDialog, Warband,
 };
 
 fn main() {
@@ -416,6 +416,26 @@ fn main() {
         700,
         &format!("{out}/achievement-{suffix}.png"),
     );
+
+    // The account dialog: which Battle.net folder this machine reads, and which
+    // account on the server that goes to. Painted into a window rather than on
+    // its own, because an `AdwDialog` cannot be a window's child.
+    let sharing = SyncDialog::new();
+    sharing.show_state(&sync_dialog::State {
+        server: "http://nas.example:8084".into(),
+        token_held: true,
+        machine: "desk-01".into(),
+        account: "PLAYER1".into(),
+        held: Some(vec![
+            ("PLAYER1".into(), 102_133),
+            ("second-account".into(), 4_182),
+        ]),
+        game_accounts: vec!["PLAYER1".into(), "12345678#1".into()],
+        game_account: "PLAYER1".into(),
+        queued: vec![("session".into(), 3), ("entry".into(), 1)],
+        ..Default::default()
+    });
+    render_dialog(&sharing, 700, 1000, &format!("{out}/sharing-{suffix}.png"));
 
     // The whole window, assembled. Every picture above is of a page with no
     // chrome around it, and a page that reads well on its own can still be
@@ -1603,6 +1623,40 @@ fn sample_run() -> Run {
         cohort: sample_cohort(),
         goals,
     }
+}
+
+/// Paint a dialog, which has to be presented rather than parented.
+///
+/// `AdwDialog` draws inside the window it was presented on, so the window is
+/// what gets snapshotted. It needs to be an `AdwWindow` for that: presented on
+/// a plain `GtkWindow` a dialog becomes a window of its own, and the picture
+/// then has nothing in it.
+fn render_dialog(dialog: &impl IsA<adw::Dialog>, width: i32, height: i32, path: &str) {
+    let window = adw::Window::builder()
+        .default_width(width)
+        .default_height(height)
+        .content(&gtk::Box::new(gtk::Orientation::Vertical, 0))
+        .build();
+    window.present();
+    settle();
+
+    dialog.as_ref().present(Some(&window));
+    // `settle` returns as soon as no work is *ready*, and a dialog that has just
+    // been presented has none until the window's frame clock ticks — the
+    // picture without this is the window, empty, with nothing on it.
+    settle();
+    soak(1);
+
+    if !snapshot(
+        &window,
+        window.width().max(width),
+        window.height().max(height),
+        path,
+    ) {
+        eprintln!("{path}: nothing was drawn");
+    }
+    dialog.as_ref().force_close();
+    window.destroy();
 }
 
 /// Paint a page on its own.

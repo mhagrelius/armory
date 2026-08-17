@@ -90,7 +90,7 @@ Launch Armory. If this machine has no Battle.net API client registered, take
 the *Skip* path in onboarding — the addon supplies everything except the Market
 tab and alts you have never logged in on.
 
-Then **Main menu → Sharing…**
+Then **Main menu → Account & Sharing…**
 
 | | |
 |---|---|
@@ -137,9 +137,9 @@ curl -s http://nas.example.ts.net:8084/health
 it climbs as machines push. A refusal here is a network problem, not a token
 one: `/health` takes no token.
 
-Then, from a machine that already had the account: open **Sharing…** and check
-`Last pass` says something came down. Or just look at the Chronicle — an
-evening recorded on the other PC should be there.
+Then, from a machine that already had the account: open **Account & Sharing…**
+and check `Last pass` says something came down. Or just look at the Chronicle —
+an evening recorded on the other PC should be there.
 
 ---
 
@@ -172,7 +172,7 @@ the last month off everything else.
 
 ## If it is not syncing
 
-**The Sharing dialog says "Not sharing".** No address, or no token. Both.
+**The dialog says "Not sharing".** No address, or no token. Both.
 
 **"The server refused the token."** The token does not match `ARMORY_TOKEN` on
 the server. Copy it again from `server/.env` — it is 64 hex characters and a
@@ -207,13 +207,22 @@ would fold two accounts together and call it agreement: one roster with both
 sets of characters, collections added up, a run measuring a cohort drawn from
 both, and not one error anywhere.
 
-**Naming one.** Sharing… → *Account*. Letters, digits, dash, underscore and
-dot; the server refuses anything else, because the name becomes a directory on
-it. Leave it empty and you get `default`, which is where everything sent
-before accounts existed lives.
+**Choosing one.** Account & Sharing… → *Account*. It lists what the server
+answered plus `default`, which is where everything sent before accounts existed
+lives. **New account…** at the bottom is how a name that is not there yet gets
+made: letters, digits, dash, underscore and dot, because the name becomes a
+directory on the server and it refuses anything else. The field says so and
+will not save a name that would be turned away.
 
 Point each machine at the account it belongs to. Two machines on the same
 Battle.net account share a name; a machine on a different one gets its own.
+
+**And which one this machine is reading.** The same dialog, *Game account* at
+the top. A WoW install used by two Battle.net logins has a `WTF/Account` folder
+each, holding different characters, collections and achievements — so the
+folder and the server account are two halves of one answer, and getting the
+first wrong fills a shared account with somebody else's roster. Changing it
+re-reads the addon straight away; there is nothing to restart.
 
 **Seeing them.** The same dialog lists every account the server holds with a
 row count each, and marks which is this machine's.
@@ -223,8 +232,8 @@ says what survives — the server keeps no second copy, but **nothing local is
 touched**: the whole account stays on every machine that holds it. If you
 delete the account this machine syncs to, *Send Again* puts it straight back.
 
-That is also how to swap: delete the old account, set *Account* to the new
-name, and the next pass starts it fresh. No SSH, no File Station, nothing
+That is also how to swap: delete the old account, choose the new one under
+*Account*, and the next pass starts it fresh. No SSH, no File Station, nothing
 stopped.
 
 **Send Again** is for one other case — after a server database has been

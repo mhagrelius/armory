@@ -32,7 +32,7 @@ mod reputations_page;
 mod roster_page;
 pub mod run_page;
 mod sync;
-mod sync_dialog;
+pub mod sync_dialog;
 mod watch_dialog;
 mod window;
 pub mod zone_page;

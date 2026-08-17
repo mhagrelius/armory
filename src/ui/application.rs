@@ -242,6 +242,12 @@ mod imp {
         pub sync_dialog: RefCell<Option<super::SyncDialog>>,
         /// What the server last said it was holding. `None` until asked.
         pub held: RefCell<Option<Vec<(String, i64)>>>,
+        /// The `WTF/Account/<NAME>` folders this install has.
+        ///
+        /// Read when the watch is set up rather than when the dialog asks: it
+        /// is a directory off a disk, the dialog redraws on every pass, and
+        /// folders do not appear while somebody is looking at a list of them.
+        pub game_accounts: RefCell<Vec<String>>,
     }
 
     /// What one pass did, as the sync page reports it.
@@ -1221,6 +1227,7 @@ impl ArmoryApplication {
         // achievements. So the choice is remembered rather than guessed again
         // every launch, and a machine with more than one says so.
         let accounts = crate::model::addon::accounts(&wow);
+        self.imp().game_accounts.borrow_mut().clone_from(&accounts);
         let chosen = self.imp().settings.borrow().wow_account.clone();
         let account = match chosen {
             Some(named) if accounts.contains(&named) => named,
@@ -1236,7 +1243,7 @@ impl ArmoryApplication {
                 if accounts.len() > 1 {
                     eprintln!(
                         "armory: {} Battle.net accounts in this install; reading {first:?}. \
-                         Set wow_account in settings.json to choose.",
+                         Main Menu → Account & Sharing… is where to choose.",
                         accounts.len()
                     );
                 }
@@ -3752,9 +3759,7 @@ impl ArmoryApplication {
         let dialog = SyncDialog::new();
 
         let app = self.clone();
-        dialog.connect_save(move |address, token, account| {
-            app.save_sync_target(&address, token.as_deref(), &account)
-        });
+        dialog.connect_save(move |chosen| app.save_sync_target(&chosen));
 
         let app = self.clone();
         dialog.connect_pass(move || app.share_now());
@@ -3851,6 +3856,14 @@ impl ArmoryApplication {
             failures: self.imp().failures.get(),
             account: self.imp().settings.borrow().sync_account.trim().to_string(),
             held: self.imp().held.borrow().clone(),
+            game_accounts: self.imp().game_accounts.borrow().clone(),
+            game_account: self
+                .imp()
+                .settings
+                .borrow()
+                .wow_account
+                .clone()
+                .unwrap_or_default(),
         }
     }
 
@@ -3934,16 +3947,32 @@ impl ArmoryApplication {
         });
     }
 
-    /// Remember where to share to, and start or stop doing it.
-    fn save_sync_target(&self, address: &str, token: Option<&str>, account: &str) {
-        {
+    /// Remember where to share to and which account to read, and start or stop
+    /// sharing.
+    fn save_sync_target(&self, chosen: &sync_dialog::Chosen) {
+        // A different Battle.net folder is a different roster, a different
+        // collection and a different set of achievements, so the watch is
+        // re-pointed rather than left reading the one it started on. `Watch`
+        // delivers once as soon as it is made, which is what makes the change
+        // visible without a relaunch.
+        let moved = {
             let mut settings = self.imp().settings.borrow_mut();
-            settings.sync_url = address.trim().to_string();
-            settings.sync_account = account.trim().to_string();
-        }
+            settings.sync_url = chosen.address.trim().to_string();
+            settings.sync_account = chosen.account.trim().to_string();
+            match &chosen.game_account {
+                Some(named) if settings.wow_account.as_deref() != Some(named.as_str()) => {
+                    settings.wow_account = Some(named.clone());
+                    true
+                }
+                _ => false,
+            }
+        };
         self.save_settings();
+        if moved {
+            self.start_watching();
+        }
 
-        if let Some(token) = token {
+        if let Some(token) = chosen.token.as_deref() {
             if let Ok(keyring) = Keyring::open() {
                 let _ = keyring.store(keyring::SYNC_TOKEN, token, "Armory sync token");
             }
