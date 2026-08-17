@@ -110,15 +110,19 @@ fi
 echo "    read-only root with a writable volume"
 volume="$(mktemp -d)"
 container="armory-server-smoke-$$"
+token="0123456789abcdef0123456789abcdef"
 # Not `--rm` on the run below: a container that exited immediately is the case
 # worth reading the logs of, and `--rm` takes them away before anything can.
 # The trap is what stops that costing a stray container.
 trap 'podman rm -f "$container" >/dev/null 2>&1 || true; rm -rf "$volume"' EXIT
 
+# Published on an ephemeral loopback port, because the check below has to make
+# a real request and the image carries no curl to make one from inside.
 podman run --detach --name "$container" \
     --read-only \
     --user 0:0 \
-    -e ARMORY_TOKEN=0123456789abcdef0123456789abcdef \
+    -p 127.0.0.1::8084 \
+    -e ARMORY_TOKEN="$token" \
     -v "$volume:/var/lib/armory:Z" \
     "$IMAGE" >/dev/null
 
@@ -139,17 +143,35 @@ if [ -z "$started" ]; then
 fi
 echo "    answers --health"
 
+# A store is opened the first time a request names its account, and never at
+# startup — `Server::health` touches none on purpose, so a container that has
+# only been asked whether it is well leaves the volume empty and a file check
+# here would be testing the order of two unrelated events. One authenticated
+# pull is what makes the mount answer, and it proves the token, the routing and
+# the account path on the way past.
+address="$(podman port "$container" 8084 | head -n 1)"
+if ! curl -fsS -m 10 \
+    -H "Authorization: Bearer $token" \
+    -H "X-Armory-Machine: smoke" \
+    "http://127.0.0.1:${address##*:}/pull?since=0" >/dev/null; then
+    echo "    the image did not answer an authenticated pull on $address, it said:" >&2
+    podman logs "$container" >&2 || true
+    exit 1
+fi
+echo "    opens an account on request"
+
 podman rm -f "$container" >/dev/null 2>&1 || true
 
 # The account has to have landed in the volume rather than on the root
 # filesystem, or the mount is decorative and the NAS loses everything on the
-# next Build.
-if [ -f "$volume/armory.db" ]; then
+# next Build. A client that names no account is talking about `default`, which
+# is where `accounts::adopt_old_store` puts a pre-account database too.
+if [ -f "$volume/accounts/default/armory.db" ]; then
     echo "    keeps the account in the volume"
 else
     echo "    nothing was written to the volume; the mount is not where the" >&2
     echo "    database went, and a restart on the NAS would lose it." >&2
-    ls -la "$volume" >&2
+    ls -laR "$volume" >&2
     exit 1
 fi
 
