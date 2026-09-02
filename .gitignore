@@ -13,3 +13,6 @@
 
 # Concept art gathered while sketching the addon UI — working material, not the project.
 /*.zip
+
+# Python bytecode from the helper scripts.
+__pycache__/
