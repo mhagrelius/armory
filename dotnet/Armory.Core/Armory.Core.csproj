@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Armory</RootNamespace>
+    <Description>Armory's account, run, store and sources. Nothing here draws.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <!-- Design-time only: what `dotnet ef migrations add` needs. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Armory.Core.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- The zone corpus and the instance stand-ins, the same files the Rust
+         binary compiles in. Linked, not copied, so there is one of each. -->
+    <EmbeddedResource Include="../../data/zones.json" LogicalName="zones.json" />
+    <EmbeddedResource Include="../../data/instances.json" LogicalName="instances.json" />
+  </ItemGroup>
+</Project>

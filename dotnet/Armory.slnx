@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Armory.App/Armory.App.csproj" />
+  <Project Path="Armory.Client/Armory.Client.csproj" />
+  <Project Path="Armory.Core.Tests/Armory.Core.Tests.csproj" />
+  <Project Path="Armory.Core/Armory.Core.csproj" />
+  <Project Path="Armory.Inspect/Armory.Inspect.csproj" />
+  <Project Path="Armory.SyncCheck/Armory.SyncCheck.csproj" />
+</Solution>

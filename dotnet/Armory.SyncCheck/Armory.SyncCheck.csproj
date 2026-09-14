@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Armory.SyncCheck</RootNamespace>
+    <Description>Two stores against one real armory-server, driven by the real client transport.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Armory.Core/Armory.Core.csproj" />
+    <ProjectReference Include="../Armory.Client/Armory.Client.csproj" />
+  </ItemGroup>
+</Project>

@@ -258,3 +258,42 @@ cd ~/Projects/armory && git pull && ./install.sh && ./install-addon.sh
 
 `install-addon.sh` is worth re-running even when the addon has not changed,
 because of the interface-version stamp.
+
+## A Windows machine
+
+The C# build under `dotnet/` is the same application for Windows, and it talks
+to the same server. What a Windows gaming PC needs, start to finish:
+
+1. **The runtime.** `winget install Microsoft.WindowsAppRuntime.1.8`. That is
+   the only dependency: the published build carries its own .NET.
+2. **The build.** Either copy a folder somebody published with
+   `dotnet/publish.ps1` anywhere you like, or build and install it here:
+   `winget install Microsoft.DotNet.SDK.10`, then `pwsh dotnet/install.ps1`,
+   which publishes, puts the folder under `%LOCALAPPDATA%\Programs\Armory`
+   and adds a Start Menu shortcut. `pwsh dotnet/uninstall.ps1` reverses it
+   and leaves your settings and database alone.
+3. **The addon**: `pwsh dotnet/install-addon.ps1`. It finds the install under
+   Program Files on its own, or takes the path to it, and goes into every
+   client folder it finds, stamped with each client's interface number.
+4. **Tailscale**, signed in, so the NAS answers. `curl http://nas.example.ts.net:8084/health`
+   is the check.
+5. **Log in once and log out**, exactly as in step 4 above. Armory finds the
+   `_retail_` folder under Program Files on its own; Settings is where to
+   point it elsewhere.
+6. **Point it at the server**: Settings → Account & Sharing…, the same
+   address, token and account as step 5 above. The token goes into the
+   Windows Password Vault, never into a file.
+7. **The journal, optionally.** The Windows build can write entries through
+   a llama-server as the Linux one does, or through the Claude Code
+   command-line signed in to your own subscription: install it
+   (`irm https://claude.ai/install.ps1 | iex`), run `claude` once and sign
+   in, then choose *Claude Code* under Settings → Journal and press Test.
+   Armory never sees the login; it runs `claude -p` with the evening's brief
+   and reads the entry back. Do not set `ANTHROPIC_API_KEY` in your
+   environment expecting it to be used — Armory withholds it from the CLI on
+   purpose, because a key is billed per token and the subscription is not.
+
+Settings live in `%APPDATA%\Armory\settings.json` and are the same JSON the
+Linux build writes, so copying one across works. The store and the image cache
+live in `%LOCALAPPDATA%\Armory`. Do not copy the store between machines: the
+machine id inside it is what tells the server whose rows are whose.

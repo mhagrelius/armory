@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Armory.Tests</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <!-- xunit v3 runs on Microsoft.Testing.Platform; `dotnet test` on the
+         .NET 10 SDK refuses the old VSTest path. dotnet.config beside the
+         solution opts the CLI in. -->
+    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Armory.Core/Armory.Core.csproj" />
+    <ProjectReference Include="../Armory.Client/Armory.Client.csproj" />
+  </ItemGroup>
+</Project>

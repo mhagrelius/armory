@@ -1,0 +1,53 @@
+<Window
+  x:Class="Armory.App.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Armory">
+  <Window.SystemBackdrop>
+    <MicaBackdrop />
+  </Window.SystemBackdrop>
+  <Grid>
+    <!-- The GTK application's two accelerators, on the window's content so they
+         hold whichever page has focus. -->
+    <Grid.KeyboardAccelerators>
+      <KeyboardAccelerator Key="Q" Modifiers="Control" Invoked="Quit_Invoked" />
+      <KeyboardAccelerator Key="R" Modifiers="Control" Invoked="Sync_Invoked" />
+    </Grid.KeyboardAccelerators>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="32" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <!-- The title bar: a 16px icon at 12px, then the app name in caption text. -->
+    <Grid x:Name="TitleBar" Grid.Row="0" Height="32" Background="Transparent">
+      <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0,0,0" Spacing="8">
+        <Image x:Name="Mark" Width="16" Height="16" VerticalAlignment="Center" />
+        <TextBlock x:Name="Caption" Text="Armory" Style="{StaticResource CaptionTextBlockStyle}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" VerticalAlignment="Center" />
+      </StackPanel>
+    </Grid>
+
+    <NavigationView
+      x:Name="Navigation"
+      Grid.Row="1"
+      PaneDisplayMode="Auto"
+      OpenPaneLength="260"
+      CompactModeThresholdWidth="641"
+      ExpandedModeThresholdWidth="1008"
+      IsBackButtonVisible="Collapsed"
+      IsSettingsVisible="True"
+      IsTitleBarAutoPaddingEnabled="False"
+      SelectionChanged="Navigation_SelectionChanged"
+      ItemInvoked="Navigation_ItemInvoked">
+      <NavigationView.AutoSuggestBox>
+        <AutoSuggestBox x:Name="Search" PlaceholderText="Search this page" QueryIcon="Find" TextChanged="Search_TextChanged" />
+      </NavigationView.AutoSuggestBox>
+      <Grid>
+        <Frame x:Name="Shell" />
+        <!-- A sync in flight: a thin indeterminate bar along the top of the content, the way the GTK's header spinner did it. -->
+        <ProgressBar x:Name="Busy" IsIndeterminate="True" Visibility="Collapsed" VerticalAlignment="Top" />
+        <InfoBar x:Name="Notice" Severity="Warning" IsOpen="False" VerticalAlignment="Top" Margin="32,8,32,0" />
+        <InfoBar x:Name="Toast" Severity="Informational" IsOpen="False" VerticalAlignment="Bottom" Margin="32,0,32,16" IsClosable="True" />
+      </Grid>
+    </NavigationView>
+  </Grid>
+</Window>

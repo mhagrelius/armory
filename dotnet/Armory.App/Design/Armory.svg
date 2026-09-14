@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+  <!--
+    The Windows icon. The same shield and three bars as the GTK icon
+    (data/icons/us.hagreli.Armory.svg), the run in miniature, drawn in the
+    game's own colours: dark steel-blue plate, worn gold rim, two crossed
+    blades behind it as an armory's mark. Nothing of Blizzard's here.
+  -->
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3d5c"/>
+      <stop offset="1" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="0.5" stop-color="#e0aa2e"/>
+      <stop offset="1" stop-color="#8a5a0c"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6fa"/>
+      <stop offset="0.5" stop-color="#aab4c4"/>
+      <stop offset="1" stop-color="#5c6778"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="1" stop-color="#c8891a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Two blades crossed behind the shield, hilts down. -->
+  <g id="blade">
+    <path d="M22 106 L84 30 L92 22 L96 26 L88 34 L26 110 Z" fill="url(#steel)"/>
+    <path d="M22 106 L84 30 L88 34 L26 110 Z" fill="#ffffff" opacity="0.35"/>
+    <!-- guard and grip -->
+    <path d="M14 96 L30 112 L26 116 L10 100 Z" fill="url(#gold)"/>
+    <path d="M12 108 L20 116 L12 124 L4 116 Z" fill="url(#gold)"/>
+  </g>
+  <use href="#blade" transform="matrix(-1 0 0 1 128 0)"/>
+
+  <!-- The shield: gold rim, a darker bevel, the plate. -->
+  <path d="M64 8 110 22v42c0 27-19 46-46 56C37 110 18 91 18 64V22Z" fill="url(#rim)"/>
+  <path d="M64 15 104 27v37c0 23.5-16.5 40.5-40 49.5C40.5 104.5 24 87.5 24 64V27Z" fill="#3a2a08" opacity="0.55"/>
+  <path d="M64 18 101 29v35c0 22-15.5 38.5-37 47C42.5 102.5 27 86 27 64V29Z" fill="url(#plate)"/>
+  <!-- a highlight along the upper plate, as on beaten metal -->
+  <path d="M64 18 101 29v6L64 24 27 35v-6Z" fill="#ffffff" opacity="0.14"/>
+
+  <!-- Three bars: done, in progress, and the one not started. -->
+  <g fill="url(#gold)">
+    <rect x="42" y="44" width="44" height="9" rx="4.5"/>
+    <rect x="42" y="61" width="27" height="9" rx="4.5" opacity="0.78"/>
+    <rect x="42" y="78" width="14" height="9" rx="4.5" opacity="0.5"/>
+  </g>
+</svg>

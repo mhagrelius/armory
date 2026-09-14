@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Armory.Client</RootNamespace>
+    <Description>The half of the shell that opens sockets and is not a window: the server transport, and later Blizzard, the render service and the journal.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Armory.Core.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Armory.Core/Armory.Core.csproj" />
+  </ItemGroup>
+</Project>
