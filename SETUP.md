@@ -63,17 +63,18 @@ cd ~/Projects/armory && ./install-addon.sh
 ```
 
 This finds the WoW install the same way Armory does and copies
-`Armory_Collector` into `Interface/AddOns`. If it cannot find it, pass the path
-to `_retail_`:
+`Armory_Collector` into `Interface/AddOns` of every client under it — retail,
+Classic Era, and whatever else is installed beside them. If it cannot find
+it, pass the path to the `World of Warcraft` folder:
 
 ```bash
-./install-addon.sh "$HOME/Games/battlenet/compatdata/pfx/drive_c/Program Files (x86)/World of Warcraft/_retail_"
+./install-addon.sh "$HOME/Games/battlenet/compatdata/pfx/drive_c/Program Files (x86)/World of Warcraft"
 ```
 
-It also stamps the addon's `## Interface:` line with your client's version.
-That matters: WoW greys out an addon whose interface number does not match,
-and an addon that silently does not load looks exactly like Armory being
-broken. **Re-run `./install-addon.sh` after a WoW patch.**
+It also stamps the addon's `## Interface:` line with every installed client's
+version. That matters: WoW greys out an addon whose interface number does not
+match, and an addon that silently does not load looks exactly like Armory
+being broken. **Re-run `./install-addon.sh` after a WoW patch.**
 
 ## 4. Log in once, and log out
 
