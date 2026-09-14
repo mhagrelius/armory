@@ -902,6 +902,12 @@ impl ChroniclePage {
         if !digest.scenarios.is_empty() {
             row.add_row(&fact("Scenarios", &digest.scenarios.join(", ")));
         }
+        if !digest.world_tiers.is_empty() {
+            row.add_row(&fact("World tier", &digest.world_tiers.join(", then ")));
+        }
+        if !digest.weather.is_empty() {
+            row.add_row(&fact("Weather", &digest.weather.join(", then ")));
+        }
         for quest in &digest.quests {
             let quest_row = adw::ActionRow::builder()
                 .title(&quest.title)

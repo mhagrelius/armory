@@ -189,10 +189,26 @@ pub enum Happening {
     /// front door of the same building are one zone name.
     Entered {
         name: String,
-        /// `party`, `raid`, `scenario`, `arena` or `pvp`, with the difficulty
-        /// where the game gives one.
+        /// `party`, `raid`, `scenario`, `lair`, `arena` or `pvp`, with the
+        /// difficulty where the game gives one.
         kind: String,
         group: u8,
+    },
+    /// The open world's difficulty changed — or was first seen — on a map that
+    /// has one. `Normal`, `Heroic` or `Mythic`, as 12.0.7 named them.
+    ///
+    /// Recorded for the reason a delve's tier is: the same quests at Mythic
+    /// tier are a different evening, and nothing else on the card says so.
+    WorldTier {
+        tier: String,
+    },
+    /// The weather turned: `Rain`, `Snow`, `Sandstorm`, `Clear`, over the zone
+    /// the character was in. 12.1.5's `C_Weather`, and the journal's — "it
+    /// was raining in Stormwind" is a fact the game has always known and never
+    /// told anybody outside the renderer.
+    Weather {
+        kind: String,
+        zone: Option<String>,
     },
     /// A keystone finished.
     Keystone {
@@ -352,6 +368,16 @@ pub enum Happening {
     Fought {
         name: String,
         won: bool,
+    },
+    /// How far a wipe got: the boss's health, in percent, when the pull ended.
+    ///
+    /// Its own moment rather than a field on [`Happening::Fought`] because the
+    /// addon writes it as its own row — the encounter row's last position was
+    /// already spoken for. Present only where the client gave a readable
+    /// number (12.0.7 and later, and not a secret value).
+    Wiped {
+        name: String,
+        remaining: u8,
     },
     Earned {
         achievement: u32,
@@ -586,11 +612,17 @@ pub struct Digest {
     /// Where each death happened, and what did it.
     pub deaths: Vec<Death>,
     pub felled: Vec<String>,
+    /// Bosses wiped on and never killed, with the best pull where the client
+    /// said: `"Fyrakk (down to 4%)"`.
     pub lost_to: Vec<String>,
     /// Rares and world bosses, which are the ones you stopped for.
     pub rares: Vec<String>,
     /// Instances entered, deduplicated: `("Halls of Atonement", "party, Mythic Keystone")`.
     pub instances: Vec<(String, String)>,
+    /// World tiers the open world was played at, in the order they were set.
+    pub world_tiers: Vec<String>,
+    /// What the sky did, deduplicated: `"Rain over Nagrand"`.
+    pub weather: Vec<String>,
     /// Keystones finished.
     pub keystones: Vec<Keystone>,
     pub scenarios: Vec<String>,
@@ -707,9 +739,13 @@ impl Session {
         let mut levels = Vec::new();
         let mut deaths: Vec<Death> = Vec::new();
         let mut felled = Vec::new();
-        let mut lost_to = Vec::new();
+        let mut lost_to: Vec<String> = Vec::new();
+        // The best pull per boss: the lowest the client said it got to.
+        let mut best_pull: Vec<(String, u8)> = Vec::new();
         let mut rares: Vec<String> = Vec::new();
         let mut instances: Vec<(String, String)> = Vec::new();
+        let mut world_tiers: Vec<String> = Vec::new();
+        let mut weather: Vec<String> = Vec::new();
         let mut keystones = Vec::new();
         let mut scenarios: Vec<String> = Vec::new();
         let mut achievements = Vec::new();
@@ -805,6 +841,20 @@ impl Session {
                     let entry = (name.clone(), kind.clone());
                     if !instances.contains(&entry) {
                         instances.push(entry);
+                    }
+                }
+                Happening::WorldTier { tier } => {
+                    if !world_tiers.contains(tier) {
+                        world_tiers.push(tier.clone());
+                    }
+                }
+                Happening::Weather { kind, zone } => {
+                    let said = match zone {
+                        Some(zone) => format!("{kind} over {zone}"),
+                        None => kind.clone(),
+                    };
+                    if !weather.contains(&said) {
+                        weather.push(said);
                     }
                 }
                 Happening::Keystone {
@@ -920,6 +970,12 @@ impl Session {
                         lost_to.push(name.clone());
                     }
                 }
+                Happening::Wiped { name, remaining } => {
+                    match best_pull.iter_mut().find(|(seen, _)| seen == name) {
+                        Some((_, best)) => *best = (*best).min(*remaining),
+                        None => best_pull.push((name.clone(), *remaining)),
+                    }
+                }
                 Happening::Earned { achievement, name } => {
                     achievements.push((*achievement, name.clone()))
                 }
@@ -944,6 +1000,14 @@ impl Session {
 
         // A boss that was both won and lost against was, on balance, killed.
         lost_to.retain(|name| !felled.contains(name));
+        // The best pull is attached after that, so the name the retain
+        // matched on is the one the addon wrote and not one with a number in
+        // it.
+        for name in &mut lost_to {
+            if let Some((_, best)) = best_pull.iter().find(|(seen, _)| seen == name.as_str()) {
+                name.push_str(&format!(" (down to {best}%)"));
+            }
+        }
         // A rare that also came through as a boss kill is one thing, not two.
         rares.retain(|name| !felled.contains(name));
         // The upgrade that mattered is the biggest jump, so it leads.
@@ -1006,6 +1070,8 @@ impl Session {
             lost_to,
             rares,
             instances,
+            world_tiers,
+            weather,
             keystones,
             scenarios,
             achievements,
@@ -1590,6 +1656,158 @@ mod tests {
         assert_eq!(digest.lost_to, ["Fyrakk"]);
         assert!(digest.felled.is_empty());
         assert!(digest.is_worth_writing());
+    }
+
+    #[test]
+    fn the_best_pull_is_the_number_a_wipe_keeps() {
+        let digest = session(vec![
+            at(
+                100,
+                Happening::Fought {
+                    name: "Fyrakk".into(),
+                    won: false,
+                },
+            ),
+            at(
+                100,
+                Happening::Wiped {
+                    name: "Fyrakk".into(),
+                    remaining: 40,
+                },
+            ),
+            at(
+                200,
+                Happening::Fought {
+                    name: "Fyrakk".into(),
+                    won: false,
+                },
+            ),
+            at(
+                200,
+                Happening::Wiped {
+                    name: "Fyrakk".into(),
+                    remaining: 4,
+                },
+            ),
+            at(
+                300,
+                Happening::Fought {
+                    name: "Fyrakk".into(),
+                    won: false,
+                },
+            ),
+            at(
+                300,
+                Happening::Wiped {
+                    name: "Fyrakk".into(),
+                    remaining: 22,
+                },
+            ),
+        ])
+        .digest();
+
+        assert_eq!(digest.lost_to, ["Fyrakk (down to 4%)"]);
+    }
+
+    #[test]
+    fn a_wipe_number_does_not_outlive_the_kill() {
+        let digest = session(vec![
+            at(
+                100,
+                Happening::Fought {
+                    name: "Fyrakk".into(),
+                    won: false,
+                },
+            ),
+            at(
+                100,
+                Happening::Wiped {
+                    name: "Fyrakk".into(),
+                    remaining: 4,
+                },
+            ),
+            at(
+                200,
+                Happening::Fought {
+                    name: "Fyrakk".into(),
+                    won: true,
+                },
+            ),
+        ])
+        .digest();
+
+        assert_eq!(digest.felled, ["Fyrakk"]);
+        assert!(digest.lost_to.is_empty());
+    }
+
+    #[test]
+    fn a_world_tier_is_said_once_per_setting() {
+        let digest = session(vec![
+            at(
+                0,
+                Happening::WorldTier {
+                    tier: "Heroic".into(),
+                },
+            ),
+            at(
+                600,
+                Happening::WorldTier {
+                    tier: "Mythic".into(),
+                },
+            ),
+            at(
+                900,
+                Happening::WorldTier {
+                    tier: "Heroic".into(),
+                },
+            ),
+        ])
+        .digest();
+
+        assert_eq!(digest.world_tiers, ["Heroic", "Mythic"]);
+        // A difficulty setting is not an evening on its own.
+        assert!(!digest.is_worth_writing());
+    }
+
+    #[test]
+    fn the_weather_is_said_once_per_turn() {
+        let digest = session(vec![
+            at(
+                100,
+                Happening::Weather {
+                    kind: "Rain".into(),
+                    zone: Some("Nagrand".into()),
+                },
+            ),
+            at(
+                700,
+                Happening::Weather {
+                    kind: "Clear".into(),
+                    zone: Some("Nagrand".into()),
+                },
+            ),
+            at(
+                900,
+                Happening::Weather {
+                    kind: "Rain".into(),
+                    zone: Some("Nagrand".into()),
+                },
+            ),
+            at(
+                1200,
+                Happening::Weather {
+                    kind: "Snow".into(),
+                    zone: None,
+                },
+            ),
+        ])
+        .digest();
+
+        assert_eq!(
+            digest.weather,
+            ["Rain over Nagrand", "Clear over Nagrand", "Snow"]
+        );
+        assert!(!digest.is_worth_writing());
     }
 
     #[test]

@@ -124,6 +124,13 @@ local lastZone, lastSubzone, lastMap
 --- Which instance, at which difficulty, was last recorded.
 local lastInstance = nil
 
+--- Which world tier was last recorded, by name.
+local lastWorldTier = nil
+
+--- What the weather was last recorded as, by name. Declared here beside the
+--- rest of the per-session state so `openSession` can reset it.
+local lastWeather = nil
+
 --- The last thing to damage the player, held until they either die or do not.
 local killedBy = nil
 
@@ -563,6 +570,17 @@ local function whereAmI()
 	return zone, subzone, map
 end
 
+--- The equipped item level, where the client has such a thing.
+---
+--- Classic Era does not: gear has a level and a character does not. Zero
+--- there, which `keep` below already treats as nothing to say.
+local function itemLevel()
+	if not GetAverageItemLevel then
+		return 0
+	end
+	return (select(2, GetAverageItemLevel())) or 0
+end
+
 --- Keep whatever number is real.
 ---
 --- At logout `GetMoney` answers 0 and `GetAverageItemLevel` answers 0, so a
@@ -658,7 +676,7 @@ local function closeSession()
 	current.endedAt = time()
 	keep("endLevel", UnitLevel("player"))
 	keep("endMoney", GetMoney())
-	keep("endItemLevel", (select(2, GetAverageItemLevel())))
+	keep("endItemLevel", itemLevel())
 
 	if #current.events > 0 then
 		local store = db()
@@ -694,12 +712,12 @@ local function openSession()
 		faction = UnitFactionGroup("player"),
 		startLevel = UnitLevel("player"),
 		startMoney = money,
-		startItemLevel = select(2, GetAverageItemLevel()),
+		startItemLevel = itemLevel(),
 		-- Seeded with the opening figures so that a session ending in a logout,
 		-- where every one of these reads as zero, still closes with the truth.
 		endLevel = UnitLevel("player"),
 		endMoney = money,
-		endItemLevel = select(2, GetAverageItemLevel()),
+		endItemLevel = itemLevel(),
 		events = {},
 	}
 
@@ -725,6 +743,8 @@ local function openSession()
 	wipe(skills)
 	wipe(equipped)
 	lastInstance = nil
+	lastWorldTier = nil
+	lastWeather = nil
 	killedBy = nil
 	playerGUID = UnitGUID("player")
 	context = nil
@@ -826,6 +846,56 @@ end
 
 local handlers = {}
 
+--- What the sky was doing, when it changed.
+---
+--- 12.1.5 gives addons the weather: `C_Weather.GetCurrentWeather` answers a
+--- type and an intensity, and `WEATHER_CHANGED` says when either moved.
+--- Written for the journal, which is the one reader that wants "it was
+--- raining in Stormwind" — a fact the game has always known and never told
+--- anybody outside the renderer.
+---
+--- The type's name comes off `Enum.WeatherType` rather than a table here,
+--- for the reason the world tier's does. Recorded once per change, with the
+--- zone it changed over, and clear skies are recorded too: the rain stopping
+--- is as much a beat as it starting. What is not recorded is clear skies at
+--- login, which is the ordinary state of most of the world.
+---
+--- Wired before the client has the function. The registration below is
+--- guarded, so on 12.1.0 this handler is never called and costs nothing.
+local function noteWeather()
+	if not current or not C_Weather or not C_Weather.GetCurrentWeather then
+		return
+	end
+	local ok, info = pcall(C_Weather.GetCurrentWeather)
+	if not ok or type(info) ~= "table" or info.type == nil then
+		return
+	end
+	local names = Enum and Enum.WeatherType
+	if type(names) ~= "table" then
+		return
+	end
+	local said = nil
+	for name, value in pairs(names) do
+		if value == info.type then
+			said = name
+			break
+		end
+	end
+	if not said or said == lastWeather then
+		return
+	end
+	if lastWeather == nil and said == "Clear" then
+		lastWeather = said
+		return
+	end
+	lastWeather = said
+	-- The intensity is written as the client gives it. Its scale is not
+	-- documented, so nothing here rounds it into a scale it might not have.
+	note("weather", said, lastZone or "", tonumber(info.intensity) or 0)
+end
+
+handlers.WEATHER_CHANGED = noteWeather
+
 handlers.PLAYER_ENTERING_WORLD = function()
 	-- A zone-in mid-session — a dungeon portal, a boat — is not a new evening.
 	-- Only a login or a reload is, and both of those leave `current` nil,
@@ -836,6 +906,7 @@ handlers.PLAYER_ENTERING_WORLD = function()
 	else
 		openSession()
 	end
+	noteWeather()
 end
 
 handlers.PLAYER_LOGOUT = closeSession
@@ -1175,12 +1246,58 @@ handlers.PLAYER_REGEN_ENABLED = function()
 	end
 end
 
+--- How far a wipe got, from the boss's own health when the fight ended.
+---
+--- 12.0.7 added `encounterUnitStatus` to `ENCOUNTER_END`: every boss unit in
+--- the encounter and the health it had left. That is the "got him to four
+--- percent" a group remembers, and the only place left to read it from —
+--- `UnitHealth` on a boss in combat is a secret value, so nothing could have
+--- been sampled during the pull.
+---
+--- Read with the same suspicion as everything else 12.0 touched: the list is
+--- absent on an older client, the percent may itself be secret, and either is
+--- an ordinary wipe with no number attached rather than a failure.
+---
+--- The unit the encounter is named after is the one people mean by "how far
+--- did we get". Failing that, the lowest thing still standing — a unit at
+--- zero is one the group did kill, which is not what a wipe number is about.
+local function wipedAt(name, status)
+	if type(status) ~= "table" then
+		return nil
+	end
+	local boss, lowest = nil, nil
+	for _, unit in ipairs(status) do
+		if type(unit) == "table" then
+			local left = unit.remainingHealthPercent
+			if type(left) == "number" and not (issecretvalue and issecretvalue(left)) and left > 0 then
+				if unit.creatureName == name then
+					boss = left
+				elseif lowest == nil or left < lowest then
+					lowest = left
+				end
+			end
+		end
+	end
+	local left = boss or lowest
+	return left and math.floor(left + 0.5) or nil
+end
+
 --- A wipe is as much of a story as a kill, and more of one on the tenth
 --- attempt, so both are recorded and the outcome is a field.
-handlers.ENCOUNTER_END = function(_, name, difficulty, _, success)
+---
+--- The percent left on a wipe is its own row rather than a sixth field: a row
+--- has five positions and this one's last is the difficulty, which nothing
+--- reads yet and which an older Armory would read a percent back as.
+handlers.ENCOUNTER_END = function(_, name, difficulty, _, success, status)
 	note("encounter", name, success == 1 and 1 or 0, difficulty)
 	if not name or name == "" then
 		return
+	end
+	if success ~= 1 then
+		local left = wipedAt(name, status)
+		if left then
+			note("wipe", name, left)
+		end
 	end
 	-- Attempts and defeats separately rather than a ratio, because the ratio
 	-- can be computed from the two and neither can be recovered from it. The
@@ -1298,13 +1415,66 @@ end
 --- `difficultyName` are the difference between "Halls of Atonement" and "Halls
 --- of Atonement, Mythic Keystone, five of us".
 ---
+--- The open world's own difficulty, where it has one.
+---
+--- 12.0.7 gave outdoor zones a tier of their own — Normal, Heroic, Mythic —
+--- chosen by the player. `GetInstanceInfo` grew an eleventh return saying
+--- whether the map has one, and `GetWorldTierDifficultyForActivePlayer` says
+--- which. An evening of Mythic-tier questing is a different evening from the
+--- same quests at Normal, in the way a tier 11 delve differs from a tier 2,
+--- so it is recorded the same way: once, and again only when it changes.
+---
+--- The name comes from `Enum.WorldTierDifficulty` rather than a table here,
+--- because the numbering is exactly the kind of thing a patch renumbers and
+--- the enum is what the client says it means today.
+local function noteWorldTier(hasWorldTier)
+	if not hasWorldTier or not C_DelvesUI or not C_DelvesUI.GetWorldTierDifficultyForActivePlayer then
+		return
+	end
+	local ok, tier = pcall(C_DelvesUI.GetWorldTierDifficultyForActivePlayer)
+	local names = Enum and Enum.WorldTierDifficulty
+	if not ok or tier == nil or type(names) ~= "table" then
+		return
+	end
+	local said = nil
+	for name, value in pairs(names) do
+		if value == tier then
+			said = name
+			break
+		end
+	end
+	if not said or said == lastWorldTier then
+		return
+	end
+	lastWorldTier = said
+	note("worldtier", said)
+end
+
+--- Whether the instance being stood in is a lair.
+---
+--- Lairs arrived in 12.1 as what world bosses became: instanced, scaled to
+--- the group, with a difficulty. `GetInstanceInfo` reports one as whatever
+--- instance type it is built on, and the word that tells the card "a lair"
+--- from "a raid" is this one call.
+local function inLair()
+	if not C_DelvesUI or not C_DelvesUI.IsInLair then
+		return false
+	end
+	local ok, answer = pcall(C_DelvesUI.IsInLair)
+	return ok and answer == true
+end
+
 --- Assigned rather than declared: the local is forward-declared at the top so
 --- `openSession` can reach it.
 function noteInstance()
-	local name, kind, _, difficulty, _, _, _, _, size = GetInstanceInfo()
+	local name, kind, _, difficulty, _, _, _, _, size, _, hasWorldTier = GetInstanceInfo()
+	noteWorldTier(hasWorldTier)
 	if not name or kind == "none" or kind == nil then
 		lastInstance = nil
 		return
+	end
+	if inLair() then
+		kind = "lair"
 	end
 	local key = name .. "|" .. (difficulty or "")
 	if key == lastInstance then

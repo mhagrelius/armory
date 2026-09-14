@@ -276,6 +276,12 @@ pub fn brief(digest: &Digest) -> String {
             .collect::<Vec<_>>(),
     );
     section(&mut out, "Scenarios and delves finished", &digest.scenarios);
+    section(
+        &mut out,
+        "World tier the open world was set to (its difficulty)",
+        &digest.world_tiers,
+    );
+    section(&mut out, "Weather, as it changed", &digest.weather);
 
     // Before the quests, because it is the frame they hang in: the model has to
     // know that eight turn-ins were chapters of one story before it reads them

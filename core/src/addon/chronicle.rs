@@ -217,6 +217,8 @@ fn moment(row: &Value) -> Option<Moment> {
             kind: b.unwrap_or_default(),
             group: c.and_then(|size| size.parse().ok()).unwrap_or(0),
         },
+        "worldtier" => Happening::WorldTier { tier: a? },
+        "weather" => Happening::Weather { kind: a?, zone: b },
         // `dungeon|level|onTime|upgrades` in one field, because five positions
         // is what a row has and a keystone needs six. Packed at the addon end
         // and unpacked here rather than widening every row in the file for one
@@ -289,6 +291,10 @@ fn moment(row: &Value) -> Option<Moment> {
         "encounter" => Happening::Fought {
             name: a?,
             won: b.as_deref() == Some("1"),
+        },
+        "wipe" => Happening::Wiped {
+            name: a?,
+            remaining: b?.parse().ok()?,
         },
         "achievement" => Happening::Earned {
             achievement: a?.parse().ok()?,
@@ -382,8 +388,15 @@ ArmoryChronicleDB = {
 				{ 640, "questpay", 9999, 45000, 1200 },
 				{ 900, "level", 71, "Nagrand", "" },
 				{ 1200, "death", "Nagrand", "Halaa", "" },
+				{ 950, "worldtier", "Heroic", "", "" },
+				{ 960, "weather", "Rain", "Nagrand", 0.4 },
 				{ 1500, "encounter", "Durn the Hungerer", 0, 14 },
+				{ 1500, "wipe", "Durn the Hungerer", 31, "" },
 				{ 1800, "encounter", "Durn the Hungerer", 1, 14 },
+				{ 1900, "encounter", "Tarlna the Ageless", 0, 14 },
+				{ 1900, "wipe", "Tarlna the Ageless", 12, "" },
+				{ 1950, "encounter", "Tarlna the Ageless", 0, 14 },
+				{ 1950, "wipe", "Tarlna the Ageless", 4, "" },
 				{ 2000, "loot", 32458, "Ashes of Al'ar", 5 },
 				{ 2100, "gained", "mount", "Ashes of Al'ar", "" },
 				{ 2200, "achievement", 4956, "Loremaster of Kalimdor", "" },
@@ -451,9 +464,13 @@ ArmoryChronicleDB = {
         assert_eq!(digest.quests[0].money, 45_000);
         assert_eq!(digest.levels, [(71, "Nagrand".to_string())]);
         assert_eq!(digest.deaths[0].subzone.as_deref(), Some("Halaa"));
-        // Wiped on, then killed. It counts as killed.
+        // Wiped on, then killed. It counts as killed, and the wipe's number
+        // goes with it.
         assert_eq!(digest.felled, ["Durn the Hungerer"]);
-        assert!(digest.lost_to.is_empty());
+        // Wiped on twice and never killed: the best pull is the one kept.
+        assert_eq!(digest.lost_to, ["Tarlna the Ageless (down to 4%)"]);
+        assert_eq!(digest.world_tiers, ["Heroic"]);
+        assert_eq!(digest.weather, ["Rain over Nagrand"]);
         assert_eq!(digest.loot, [(32458, "Ashes of Al'ar".to_string(), 5)]);
         assert_eq!(
             digest.acquired,
