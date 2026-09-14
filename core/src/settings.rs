@@ -53,6 +53,20 @@ pub struct Settings {
     /// Not a secret and not a credential, so it lives here rather than in the
     /// keyring — it is an address, and it travels in plain sight.
     pub journal_server: String,
+    /// What writes the entries.
+    ///
+    /// The GTK build writes through the llama-server only; the WinUI port
+    /// under `dotnet/` can also shell out to the Claude Code command-line
+    /// signed in on that machine. The field is here so that a
+    /// `settings.json` written there still reads here — `deny_unknown_fields`
+    /// would otherwise throw the whole file away over one key — and it is
+    /// read by nothing in this crate.
+    pub journal_backend: JournalBackend,
+    /// Which model Claude Code is asked for, as the CLI names them. An alias
+    /// such as `sonnet` or `opus`, or a full model id. Kept for the same
+    /// reason as `journal_backend` and ignored by a llama-server, which
+    /// serves whatever it was launched with.
+    pub journal_model: String,
     /// Where this account is shared to, if it is.
     ///
     /// `http://nas.example:8084`. Empty means Armory keeps to itself,
@@ -76,6 +90,22 @@ pub struct Settings {
     pub sync_account: String,
 }
 
+/// What writes a journal entry. Serialised as kebab-case codes, which is what
+/// the C# port writes.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default, Serialize, Deserialize)]
+#[serde(rename_all = "kebab-case")]
+pub enum JournalBackend {
+    /// llama.cpp's server on this machine, at `journal_server`.
+    #[default]
+    LlamaServer,
+    /// The `claude` command-line, signed in to the person's own subscription.
+    /// The WinUI port only; this crate has no subprocess seam for it.
+    ClaudeCode,
+}
+
+/// The Claude Code alias asked for unless said otherwise.
+pub const DEFAULT_JOURNAL_MODEL: &str = "sonnet";
+
 impl Default for Settings {
     fn default() -> Self {
         Settings {
@@ -86,6 +116,8 @@ impl Default for Settings {
             addon_only: false,
             journal_automatic: true,
             journal_server: crate::source::journal::DEFAULT_SERVER.to_string(),
+            journal_backend: JournalBackend::LlamaServer,
+            journal_model: DEFAULT_JOURNAL_MODEL.to_string(),
             sync_url: String::new(),
             sync_account: String::new(),
         }
@@ -174,11 +206,30 @@ mod tests {
             addon_only: false,
             journal_automatic: false,
             journal_server: "http://127.0.0.1:9090".into(),
+            journal_backend: JournalBackend::ClaudeCode,
+            journal_model: "opus".into(),
             sync_url: "http://nas.example:8084".into(),
             sync_account: "PLAYER1".into(),
         };
         settings.save(&path).expect("saved");
         assert_eq!(Settings::load(&path), settings);
+        // The code the C# port writes, so a file from that machine reads here.
+        let json = std::fs::read_to_string(&path).expect("read back");
+        assert!(json.contains("\"journal_backend\": \"claude-code\""), "{json}");
+    }
+
+    #[test]
+    fn a_settings_file_from_before_the_journal_had_a_choice_of_writer_keeps_the_server() {
+        let directory = tempfile::tempdir().expect("a directory");
+        let path = directory.path().join("settings.json");
+        std::fs::write(
+            &path,
+            br#"{"region":"us","client_id":"","wow_path":null,"wow_account":null,"addon_only":false,"journal_automatic":true,"journal_server":"http://127.0.0.1:8080","sync_url":"","sync_account":""}"#,
+        )
+        .expect("written");
+        let settings = Settings::load(&path);
+        assert_eq!(settings.journal_backend, JournalBackend::LlamaServer);
+        assert_eq!(settings.journal_model, DEFAULT_JOURNAL_MODEL);
     }
 
     #[test]
