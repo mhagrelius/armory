@@ -1002,13 +1002,10 @@ impl CollectionPage {
             .icon_name(self.placeholder())
             .title("Nothing synced yet")
             .description(if self.kind() == Kind::Decor {
-                // Decor is the one collection the addon has nothing to say
-                // about. Sending somebody to install one would be sending them
-                // to fix a problem it cannot fix.
-                "Sync to fetch the housing catalogue and what your account has of it. \
-                 Decor came to the API with Midnight's housing and is the one \
-                 collection here that needs a Battle.net client — the collector addon \
-                 does not read it."
+                "Sync to fetch the housing catalogue and what your account has of it, \
+                 or log out once with the collector addon installed: it reads the \
+                 catalogue the in-game window does, with the source text and the \
+                 counts the web API has no field for."
             } else {
                 "Sync to fetch what your account has collected and what exists to \
                  collect. Logging out once with the collector addon installed brings \

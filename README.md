@@ -99,6 +99,8 @@ endpoint for:
 | The roster itself | Not needed from the API at all — every character you log in on describes itself |
 | What you did last night | The profile API is a logout snapshot with no history in it. It will say you have finished 4,312 quests and never which twelve of those were tonight |
 | Who earned the reputation | Standings are account-wide and sit at whatever the furthest character reached. Nothing anywhere says which character did the work |
+| The Great Vault | No endpoint. The weekly frame is client-side state, and the addon reads it slot by slot at logout |
+| Housing decor, with its counts | The web API has the catalogue; only the client says where a piece comes from and how many are in storage, placed, or waiting to be redeemed |
 
 It is capture-only: it reads documented APIs and writes one SavedVariables file.
 It makes no decisions, changes nothing, and automates nothing.
@@ -276,8 +278,8 @@ and fill in over successive syncs.
   1 in 100, weekly lockout" is the next real increment.
 - **Transmog.** The appearance endpoints exist and the dedup problem is
   interesting; neither is built.
-- **The weekly vault and raid lockouts.** Blizzard exposes neither, and the
-  addon does not read them yet.
+- **Raid lockouts beyond this week.** The client knows the current reset and
+  nothing before it; the lifetime record is the web API's alone.
 - **A house editor.** The API returns placed objects and several web tools
   already render them. Armory tracks the decor collection and stops there.
 - **Writing back to the game.** The addon channel only runs one way so far.
@@ -294,8 +296,10 @@ and fill in over successive syncs.
   game itself displayed, so there is nothing to fetch and nothing to upload.
 - **Pretend to be live.** Blizzard's profile data is a snapshot written when a
   character logs out. Every view says when it was taken.
-- **Support Classic.** Those auction endpoints have been answering 404 since
-  April 2026 with no fix in sight.
+- **Ask Blizzard about Classic.** Those auction endpoints have been answering
+  404 since April 2026 with no fix in sight. The addon runs on Classic Era and
+  is written to run on Forever, and stamps which client it came out of; the
+  desktop application reading those files is the next step, not this one.
 - **Keep a backlog of the impossible.** Spent goals are reported once and then
   filtered out.
 

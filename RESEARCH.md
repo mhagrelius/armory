@@ -422,7 +422,7 @@ produces a usable page.
 | Mounts, pets, toys — owned and catalogue | Yes | Yes |
 | **Where a collectible comes from, in a sentence** | No — one word or nothing | **Yes** |
 | Collectible artwork | Renders are addressable from the display id the addon supplies | Supplies the display id |
-| Housing decor — owned and catalogue | **Yes** | Not read |
+| Housing decor — owned and catalogue | **Yes** | Yes, with `sourceText` and the stored, placed and unredeemed counts |
 | Achievements: completion and criteria trees | Yes, account-wide | Yes, plus a flat tree |
 | **Which character earned an account-wide achievement** | **No — no field exists** | **Yes (`earnedBy`)** |
 | **What a criterion measures** | No — structure without meaning | **Yes** |
@@ -430,7 +430,7 @@ produces a usable page.
 | Completed quests, statistics, encounters | Yes, per character | Quests only |
 | **Currencies** | **No endpoint** | **Yes** |
 | **Warband bank** | **No endpoint, and none planned** | **Yes** |
-| **Weekly vault, raid lockouts** | No | Would need one; unbuilt |
+| **Weekly vault, raid lockouts** | No | **Yes**: `C_WeeklyRewards.GetActivities` and `GetSavedInstanceInfo`, this week only |
 | Auction prices and the token | Yes | — |
 | Realm and connected-realm lists | Yes | — |
 

@@ -21,7 +21,9 @@ use chrono::{DateTime, TimeZone, Utc};
 
 use super::lua::{self, Value};
 use crate::achievement::{Criterion, CriterionKind, PrimaryData};
-use crate::character::{Character, CharacterKey, Detail, Equipped, Faction, Profession, RaidLock};
+use crate::character::{
+    Character, CharacterKey, Detail, Equipped, Faction, Profession, RaidLock, VaultRow, VaultSlot,
+};
 use crate::market::{Reagent, Recipe, RecipeBooks};
 use crate::provenance::{Earned, EarnedCurrency, EarnedReputation};
 use crate::source::blizzard::collections::{Collectible, Kind, Source};
@@ -101,6 +103,49 @@ pub struct Collected {
     pub pets_held: HashMap<u32, u32>,
     /// When the addon last wrote, as it saw the clock.
     pub written_at: Option<DateTime<Utc>>,
+    /// Which game client wrote this. Absent from files older than the field.
+    pub client: Option<Client>,
+}
+
+/// Which World of Warcraft this file came out of.
+///
+/// The same addon runs on the retail client, on Classic Era, and on whatever
+/// Forever turns out to be, and a character called Aeltor on Whitemane can
+/// exist on two of them at once. The project id is the client's own word for
+/// which it is; the version is there because Blizzard mints a new project id
+/// for every Classic flavour and a reader that only knows today's ids needs
+/// something a person can read.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct Client {
+    /// `WOW_PROJECT_ID`: 1 is the retail client, 2 is Classic Era. Others are
+    /// the Classic flavours Blizzard has shipped since, each with its own.
+    pub project: u32,
+    /// `12.1.0`, `1.15.9`, and so on.
+    pub version: String,
+    pub build: u32,
+    /// The interface number the `.toc` is matched against.
+    pub interface: u32,
+}
+
+impl Client {
+    /// Whether this is the retail client, which is the only one the web API
+    /// and every retail-only system — the vault, housing, delves — describe.
+    pub fn is_mainline(&self) -> bool {
+        self.project == 1
+    }
+}
+
+/// `{ project, version, build, interface }`, as the addon writes it.
+fn read_client(db: &Value) -> Option<Client> {
+    let [project, version, build, interface, ..] = db.get("flavour")?.items() else {
+        return None;
+    };
+    Some(Client {
+        project: project.as_u32()?,
+        version: version.as_str().unwrap_or_default().to_string(),
+        build: build.as_u32().unwrap_or(0),
+        interface: interface.as_u32().unwrap_or(0),
+    })
 }
 
 impl Collected {
@@ -157,6 +202,8 @@ pub struct CollectedCharacter {
     pub character: Character,
     pub detail: Detail,
     pub quests: HashSet<u32>,
+    /// Which game client this character lives on.
+    pub client: Option<Client>,
 }
 
 impl CollectedCharacter {
@@ -214,6 +261,7 @@ pub fn read(source: &str) -> Result<Collected, ReadError> {
 
     let mut collected = Collected {
         written_at: db.get("writtenAt").and_then(Value::as_f64).and_then(epoch),
+        client: read_client(db),
         ..Collected::default()
     };
 
@@ -474,6 +522,10 @@ pub fn read(source: &str) -> Result<Collected, ReadError> {
         ("mounts", Kind::Mount),
         ("pets", Kind::Pet),
         ("toys", Kind::Toy),
+        // Filed under the catalogue's record id, on the addon's assumption
+        // that it is the id `/data/wow/decor/{id}` answers to. The item goes
+        // in the link column, because Wowhead indexes decor by the item.
+        ("decor", Kind::Decor),
     ] {
         let Some(table) = db.get(key) else { continue };
 
@@ -664,11 +716,14 @@ pub fn read_character(source: &str) -> Result<CollectedCharacter, ReadError> {
         // field beside this one.
         raids: None,
         raid_locks: read_raid_locks(db),
+        vault: read_vault(db),
+        vault_ready: db.get("vaultReady").and_then(Value::as_u32) == Some(1),
     };
 
     Ok(CollectedCharacter {
         character,
         detail,
+        client: read_client(db),
         quests: db
             .get("quests")
             .map(|list| {
@@ -808,6 +863,37 @@ fn read_raid_locks(db: &Value) -> Option<Vec<RaidLock>> {
     Some(locks)
 }
 
+/// `{ type, index, threshold, progress, level, levelName }` per slot.
+///
+/// Absent and empty differ here the way they do for lockouts: an older
+/// collector never wrote the field, and a Classic client has no vault, and
+/// neither should read as a vault with nothing in it.
+fn read_vault(db: &Value) -> Option<Vec<VaultSlot>> {
+    let slots = db
+        .get("vault")?
+        .items()
+        .iter()
+        .filter_map(|entry| {
+            let [row, index, threshold, progress, level, rest @ ..] = entry.items() else {
+                return None;
+            };
+            Some(VaultSlot {
+                row: VaultRow::from_number(row.as_u32()?),
+                index: index.as_u32().unwrap_or(0) as u8,
+                threshold: threshold.as_u32().unwrap_or(0) as u16,
+                progress: progress.as_u32().unwrap_or(0) as u16,
+                level: level.as_u32().unwrap_or(0) as u16,
+                level_name: rest
+                    .first()
+                    .and_then(Value::as_str)
+                    .unwrap_or_default()
+                    .to_string(),
+            })
+        })
+        .collect();
+    Some(slots)
+}
+
 /// Seconds since the epoch, as the game counts them.
 fn epoch(seconds: f64) -> Option<DateTime<Utc>> {
     Utc.timestamp_opt(seconds as i64, 0).single()
@@ -917,6 +1003,11 @@ ArmoryCollectorDB = {
 	["toys"] = {
 		[128471] = { "Sturdy Love Fool", 0, "", 0 },
 	},
+	["decor"] = {
+		[1234] = { "Sturdy Oak Chair", 1, "Vendor: Furnisher, Stormwind", 0, 240001, "", 5321, 0, 2, -1, "", 6 },
+		[1235] = { "Gilded Lantern", 0, "Drop: Rasha'nan, Nerub-ar Palace", 0, 240002, "", 5322, 0, 3, -1, "", 0 },
+	},
+	["flavour"] = { 1, "12.1.0", 69814, 120100 },
 }
 "#;
 
@@ -947,6 +1038,14 @@ ArmoryCollectorCharDB = {
 	["raidLocks"] = {
 		{ "Liberation of Undermine", "Heroic", 2, 8, 15 },
 	},
+	["vault"] = {
+		{ 1, 1, 1, 1, 12, "" },
+		{ 1, 2, 4, 3, 10, "" },
+		{ 3, 1, 2, 2, 15, "Heroic" },
+		{ 6, 1, 2, 0, 8, "" },
+	},
+	["vaultReady"] = 1,
+	["flavour"] = { 1, "12.1.0", 69814, 120100 },
 }
 "#;
 
@@ -1293,6 +1392,50 @@ ArmoryCollectorCharDB = {
     }
 
     #[test]
+    fn the_vault_is_the_clients_to_answer() {
+        let read = read_character(CHARACTER).expect("read");
+        let vault = read.detail.vault.expect("a vault");
+        assert_eq!(vault.len(), 4);
+        assert_eq!(vault[0].row, VaultRow::Dungeons);
+        assert!(vault[0].is_unlocked());
+        assert_eq!(vault[0].reward(), "+12");
+        assert!(!vault[1].is_unlocked(), "three of four is not a slot");
+        assert_eq!(vault[2].row, VaultRow::Raids);
+        assert_eq!(vault[2].reward(), "Heroic", "the client spelled it");
+        assert_eq!(vault[3].row, VaultRow::World);
+        assert_eq!(vault[3].reward(), "Tier 8");
+        assert!(read.detail.vault_ready);
+    }
+
+    #[test]
+    fn the_file_says_which_game_it_came_out_of() {
+        let account = read(SAMPLE).expect("read");
+        let client = account.client.expect("a client");
+        assert!(client.is_mainline());
+        assert_eq!(client.version, "12.1.0");
+        assert_eq!(client.interface, 120_100);
+
+        let character = read_character(CHARACTER).expect("read");
+        assert_eq!(character.client, Some(client));
+    }
+
+    #[test]
+    fn decor_is_a_collection_the_addon_now_reads() {
+        let collected = read(SAMPLE).expect("read");
+        let chair = collected
+            .collectibles
+            .iter()
+            .find(|entry| entry.kind == Kind::Decor && entry.id == 1234)
+            .expect("the chair");
+        assert_eq!(chair.name, "Sturdy Oak Chair");
+        // Linked by the item, which is what Wowhead indexes decor under.
+        assert_eq!(chair.link_id, 240_001);
+        assert_eq!(chair.icon, Some(5321));
+        assert!(collected.owned.contains(&(Kind::Decor, 1234)));
+        assert!(!collected.owned.contains(&(Kind::Decor, 1235)));
+    }
+
+    #[test]
     fn a_collector_file_from_before_the_gear_scan_is_silence_not_a_naked_character() {
         // The same rule as the pets' two extra columns. `Some(vec![])` here
         // would say "this character is wearing nothing", which is a real state
@@ -1308,5 +1451,7 @@ ArmoryCollectorCharDB = {
         let read = read_character(older).expect("read");
         assert_eq!(read.detail.equipment, None);
         assert_eq!(read.detail.raid_locks, None);
+        assert_eq!(read.detail.vault, None);
+        assert_eq!(read.client, None);
     }
 }

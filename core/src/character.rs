@@ -166,12 +166,97 @@ pub struct Detail {
     /// lifetime numbers would invent a decade of raiding out of one reset.
     #[serde(default)]
     pub raid_locks: Option<Vec<RaidLock>>,
-    // No Great Vault field. There is no endpoint for it: the weekly rewards
-    // frame is client-side state and the Profile API has never exposed it. The
-    // mythic keystone profile gives this season's runs, which is the input to a
-    // vault slot and not the slot itself. When this arrives it will come from
-    // the addon, and it will be honest about being a snapshot from the last
-    // logout like everything else here.
+    /// The Great Vault, slot by slot, as the client last saw it.
+    ///
+    /// Addon only. There is no endpoint for it: the weekly rewards frame is
+    /// client-side state and the Profile API has never exposed it. The mythic
+    /// keystone profile gives this season's runs, which is the input to a
+    /// vault slot and not the slot itself. `None` is a character the addon
+    /// has not described, or a client with no vault at all.
+    #[serde(default)]
+    pub vault: Option<Vec<VaultSlot>>,
+    /// Whether last week's vault is still waiting to be opened.
+    #[serde(default)]
+    pub vault_ready: bool,
+}
+
+/// Which row of the Great Vault a slot is in.
+///
+/// Blizzard's `WeeklyRewardChestThresholdType`, by the numbers the addon
+/// writes. `Other` is a row this version does not know, which is shown by its
+/// number rather than dropped — a new row is still a slot.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+pub enum VaultRow {
+    /// Mythic+ dungeons. The level is the keystone the slot pays out at.
+    Dungeons,
+    /// Rated PvP.
+    Pvp,
+    /// Raids. The level is a difficulty id; the addon spells it.
+    Raids,
+    /// The world row: delves and world content. The level is a tier.
+    World,
+    Other(u32),
+}
+
+impl VaultRow {
+    pub fn from_number(number: u32) -> VaultRow {
+        match number {
+            1 => VaultRow::Dungeons,
+            2 => VaultRow::Pvp,
+            3 => VaultRow::Raids,
+            6 => VaultRow::World,
+            other => VaultRow::Other(other),
+        }
+    }
+
+    pub fn label(self) -> String {
+        match self {
+            VaultRow::Dungeons => "Dungeons".into(),
+            VaultRow::Pvp => "PvP".into(),
+            VaultRow::Raids => "Raids".into(),
+            VaultRow::World => "World".into(),
+            VaultRow::Other(number) => format!("Row {number}"),
+        }
+    }
+}
+
+/// One slot of the Great Vault.
+///
+/// From the game client, which is the only thing that knows it, and true as
+/// of the last logout: a slot that filled while another character was being
+/// played is not here until this one logs in again.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+pub struct VaultSlot {
+    pub row: VaultRow,
+    /// First, second or third slot in the row.
+    pub index: u8,
+    /// How many runs, kills or activities the slot wants.
+    pub threshold: u16,
+    /// How many it has.
+    pub progress: u16,
+    /// What decides the reward: a keystone level, a difficulty, a tier.
+    pub level: u16,
+    /// The level spelled by the client where a number would mislead — a raid
+    /// difficulty's name. Empty where the number speaks for itself.
+    pub level_name: String,
+}
+
+impl VaultSlot {
+    pub fn is_unlocked(&self) -> bool {
+        self.threshold > 0 && self.progress >= self.threshold
+    }
+
+    /// The reward tier as a person would say it: `+12`, `Heroic`, `Tier 8`.
+    pub fn reward(&self) -> String {
+        if !self.level_name.is_empty() {
+            return self.level_name.clone();
+        }
+        match self.row {
+            VaultRow::Dungeons => format!("+{}", self.level),
+            VaultRow::World => format!("Tier {}", self.level),
+            _ => self.level.to_string(),
+        }
+    }
 }
 
 impl Detail {
@@ -208,6 +293,12 @@ impl Detail {
         keep(&mut self.equipment, fresh.equipment);
         keep(&mut self.raids, fresh.raids);
         keep(&mut self.raid_locks, fresh.raid_locks);
+        // The flag travels with the slots: an answer that has the vault has
+        // both halves of it, and one that does not has neither.
+        if fresh.vault.is_some() {
+            self.vault = fresh.vault;
+            self.vault_ready = fresh.vault_ready;
+        }
 
         if !fresh.professions.is_empty() {
             self.professions = fresh

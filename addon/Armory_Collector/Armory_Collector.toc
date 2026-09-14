@@ -1,4 +1,4 @@
-## Interface: 120007
+## Interface: 120100, 11509, 38002, 50504
 ## Title: Armory Collector
 ## Notes: Records what the Battle.net API cannot see, for the Armory desktop app.
 ## Author: Matthew Hagrelius

@@ -50,7 +50,7 @@ use gtk::glib;
 
 use super::almanac::{self, Bar, Tone};
 use super::images::{Art, Images};
-use crate::model::character::{Character, Detail, Equipped, RaidLock, RaidTier};
+use crate::model::character::{Character, Detail, Equipped, RaidLock, RaidTier, VaultRow};
 use crate::model::chronicle::Digest;
 use crate::model::source::blizzard::{media, Region};
 use crate::model::tally::{Counting, Tally};
@@ -234,6 +234,7 @@ impl CharacterPage {
 
         let right = almanac::column(20);
         right.append(&Self::keys(held));
+        right.append(&Self::vault(&held.detail));
         right.append(&Self::raids(&held.detail));
         pair.append(&right);
 
@@ -905,11 +906,73 @@ impl CharacterPage {
             ));
         }
 
-        // This sentence ships. It is the comment in `model/character.rs` said
-        // out loud, and it is the answer to the question this card raises.
         card.append(&almanac::caption(
-            "There is no Great Vault endpoint — the weekly frame is client-side \
-             state. Armory shows the runs that feed a slot and not the slot itself.",
+            "The rating above comes from Blizzard and covers the whole season; \
+             these are the runs Armory saw.",
+        ));
+        section
+    }
+
+    /// The Great Vault as the client last saw it.
+    ///
+    /// There is no endpoint for this — the weekly frame is client-side state —
+    /// so it comes from the addon or not at all, and the card says which.
+    fn vault(detail: &Detail) -> gtk::Box {
+        let card = almanac::card(9);
+        let section = almanac::titled("THE VAULT", &card);
+
+        let Some(slots) = &detail.vault else {
+            card.append(&almanac::caption(
+                "There is no Great Vault endpoint — the weekly frame is client-side \
+                 state. The collector addon reads it at logout; nothing has arrived \
+                 for this character yet.",
+            ));
+            return section;
+        };
+
+        if detail.vault_ready {
+            card.append(&almanac::chip("REWARD WAITING", Tone::Gold));
+        }
+
+        let mut last_row: Option<VaultRow> = None;
+        for slot in slots {
+            if last_row.is_some_and(|row| row != slot.row) {
+                card.append(&almanac::hairline());
+            }
+            last_row = Some(slot.row);
+
+            let line = almanac::row(9);
+            line.set_baseline_position(gtk::BaselinePosition::Center);
+
+            let name = almanac::label(&slot.row.label(), &[]);
+            name.set_hexpand(true);
+            name.set_xalign(0.0);
+            name.set_valign(gtk::Align::Baseline);
+            line.append(&name);
+
+            let count = almanac::mono(
+                &format!("{}/{}", slot.progress, slot.threshold),
+                &["al-footnote"],
+            );
+            count.set_valign(gtk::Align::Baseline);
+            line.append(&count);
+
+            // An unlocked slot names what it pays; a locked one is a count and
+            // nothing to promise.
+            let reward = if slot.is_unlocked() {
+                almanac::mono(&slot.reward().to_uppercase(), &["al-stat-figure", "al-gold"])
+            } else {
+                almanac::mono("LOCKED", &["al-footnote"])
+            };
+            reward.set_valign(gtk::Align::Baseline);
+            line.append(&reward);
+            card.append(&line);
+        }
+
+        card.append(&almanac::caption(
+            "From the game client at this character's last logout. A slot that \
+             filled on another character's evening is not here until this one \
+             logs in again.",
         ));
         section
     }

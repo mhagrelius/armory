@@ -46,6 +46,23 @@ read_globals = {
 	"GetSavedInstanceInfo",
 	"C_ProfSpecs",
 	"GetQuestID",
+	"C_SpecializationInfo",
+	-- 12.0's secret values: a number an addon may hold and may not read.
+	-- Asked before anything a boss's health is compared with.
+	"issecretvalue",
+	-- The vault, the housing catalogue, and 12.1.5's weather.
+	"C_WeeklyRewards",
+	"GetDifficultyInfo",
+	"C_HousingCatalog",
+	"C_Weather",
+	-- Which client this is. Classic Era keeps professions in the skill
+	-- window, under headers the client names in its own language.
+	"WOW_PROJECT_ID",
+	"GetBuildInfo",
+	"GetNumSkillLines",
+	"GetSkillLineInfo",
+	"TRADE_SKILLS",
+	"SECONDARY_SKILLS",
 
 	-- Frames, timers and the Lua the client adds to the standard library.
 	"CreateFrame",

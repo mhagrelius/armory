@@ -258,7 +258,11 @@ end
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 frame:RegisterEvent("PLAYER_LOGOUT")
 frame:RegisterEvent("UPDATE_FACTION")
-frame:RegisterEvent("MAJOR_FACTION_RENOWN_LEVEL_CHANGED")
+-- Renown is a Dragonflight system and a Classic client has never heard of
+-- the event; asking for it there throws, and a throw at file scope takes the
+-- whole file with it. Unguarded, this line was the reason nothing in this
+-- file ran on Classic Era.
+pcall(frame.RegisterEvent, frame, "MAJOR_FACTION_RENOWN_LEVEL_CHANGED")
 
 frame:SetScript("OnEvent", function(_, event)
 	if event == "PLAYER_ENTERING_WORLD" then

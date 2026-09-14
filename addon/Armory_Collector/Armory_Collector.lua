@@ -60,10 +60,30 @@ local function whoami()
 	return name .. "-" .. realm
 end
 
+--- Which game this is, and which build of it.
+---
+--- The same addon runs on the retail client, Classic Era, and whatever
+--- Forever turns out to be, and a character called Whitemane-Aeltor exists on
+--- two of them at once. `WOW_PROJECT_ID` is the client's own word for which
+--- one it is; the version string is there because a project id is a number
+--- that Blizzard has minted a new value of for every Classic flavour so far,
+--- and a reader that only knows the ids of today needs something human to
+--- fall back on. Written to both files, so each can be told apart on its own.
+local function flavour()
+	local version, build, _, interface = GetBuildInfo()
+	return {
+		WOW_PROJECT_ID or 0,
+		version or "",
+		tonumber(build) or 0,
+		interface or 0,
+	}
+end
+
 local function db()
 	ArmoryCollectorDB = ArmoryCollectorDB or {}
 	local store = ArmoryCollectorDB
 	store.format = FORMAT
+	store.flavour = flavour()
 	store.achievements = store.achievements or {}
 	store.completed = store.completed or {}
 	store.tree = store.tree or {}
@@ -74,6 +94,7 @@ local function db()
 	store.mounts = store.mounts or {}
 	store.pets = store.pets or {}
 	store.toys = store.toys or {}
+	store.decor = store.decor or {}
 	-- Which characters this addon has ever run on. Not read by Armory, which
 	-- learns the roster from the per-character files — it is here for the
 	-- chronicle, which needs to tell gold an alt mailed over from gold
@@ -90,6 +111,7 @@ local function chardb()
 	ArmoryCollectorCharDB = ArmoryCollectorCharDB or {}
 	local store = ArmoryCollectorCharDB
 	store.format = FORMAT
+	store.flavour = flavour()
 	return store
 end
 
@@ -156,8 +178,17 @@ end
 --- produces no change here at all, which is precisely why Armory cannot track a
 --- replay from completion flags and has to recompute from per-character data.
 local function scanAchievements()
+	-- Classic Era has no achievements and no functions to ask about them.
+	-- Checked here rather than left to the step's pcall, because the walk
+	-- runs inside a ticker and a ticker's error is nobody's to catch.
+	if not GetCategoryList or not GetAchievementInfo or not GetCategoryNumAchievements then
+		return
+	end
 	local store = db()
 	local categories = GetCategoryList()
+	if type(categories) ~= "table" or #categories == 0 then
+		return
+	end
 	local category = 1
 	local index = 1
 
@@ -239,17 +270,27 @@ end
 
 -- Collections ----------------------------------------------------------------
 
---- Every mount, pet and toy: what exists, what is collected, and where from.
+--- Every mount, pet, toy and piece of decor: what exists, what is collected,
+--- and where from.
 ---
 --- Better than the web API on the one axis that matters. `/data/wow/mount/{id}`
 --- gives a one-word `source` type — `DROP` — with no NPC, no zone and no drop
 --- rate, and pets have no source field at all. The journals carry `sourceText`,
 --- which is the sentence Wowhead would show: "Drop: Attumen the Huntsman,
 --- Karazhan". That is the difference between a list and an answer.
-local function scanCollections()
+---
+--- One function per journal, and each is its own step in `scanEverything`.
+--- They used to be one function, which meant a pet journal that threw took
+--- the toy box and the mounts with it — and on a Classic client, where there
+--- is no pet journal and no toy box at all, it would have meant no mounts
+--- either. A journal the client does not have is a step that returns.
+local function scanMounts()
+	if not C_MountJournal or not C_MountJournal.GetMountIDs then
+		return
+	end
 	local store = db()
 
-	for _, mountID in ipairs(C_MountJournal.GetMountIDs()) do
+	for _, mountID in ipairs(C_MountJournal.GetMountIDs() or {}) do
 		-- `name, spellID, icon, isActive, isUsable, sourceType, isFavorite,
 		--  isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID`
 		local name, spellID, icon, _, _, sourceType, _, factionSpecific, faction, _, collected =
@@ -281,19 +322,26 @@ local function scanCollections()
 			}
 		end
 	end
+end
 
-	-- Pets and toys are filter-sensitive: both journals answer with what the
-	-- player's UI filters currently allow, so a scan sees the toy box and the
-	-- pet journal as they are on screen rather than as they are.
-	--
-	-- **The filters are not cleared, and this comment used to say they were.**
-	-- Clearing and restoring them is the documented dance, and it means an
-	-- addon reaching into the journals' filter state on every logout — which
-	-- 12.0 is exactly the patch to start refusing. What saves it is that these
-	-- tables merge rather than replace: a filtered scan records fewer entries,
-	-- never fewer than are already known. So this degrades to "a run with a
-	-- search box open contributes less" rather than to a collection emptying.
-	-- Mounts are unaffected; `GetMountIDs` ignores filters.
+--- Pets and toys are filter-sensitive: both journals answer with what the
+--- player's UI filters currently allow, so a scan sees the toy box and the
+--- pet journal as they are on screen rather than as they are.
+---
+--- **The filters are not cleared, and this comment used to say they were.**
+--- Clearing and restoring them is the documented dance, and it means an
+--- addon reaching into the journals' filter state on every logout — which
+--- 12.0 is exactly the patch to start refusing. What saves it is that these
+--- tables merge rather than replace: a filtered scan records fewer entries,
+--- never fewer than are already known. So this degrades to "a run with a
+--- search box open contributes less" rather than to a collection emptying.
+--- Mounts are unaffected; `GetMountIDs` ignores filters.
+local function scanPets()
+	if not C_PetJournal or not C_PetJournal.GetNumPets then
+		return
+	end
+	local store = db()
+
 	local numPets = C_PetJournal.GetNumPets()
 	for index = 1, numPets do
 		local _, speciesID, owned = C_PetJournal.GetPetInfoByIndex(index)
@@ -332,13 +380,20 @@ local function scanCollections()
 			end
 		end
 	end
+end
 
-	-- `GetNumFilteredToys`, not `GetNumToys`. They are two different index
-	-- spaces: the first counts every toy in the game, the second counts what
-	-- the toy box is currently showing, and `GetToyFromIndex` indexes the
-	-- second. Counting with one and indexing the other returns -1 for the
-	-- overhang, which the guard below swallows — so the only sign of it is a
-	-- collection quietly shorter than it should be.
+--- `GetNumFilteredToys`, not `GetNumToys`. They are two different index
+--- spaces: the first counts every toy in the game, the second counts what
+--- the toy box is currently showing, and `GetToyFromIndex` indexes the
+--- second. Counting with one and indexing the other returns -1 for the
+--- overhang, which the guard below swallows — so the only sign of it is a
+--- collection quietly shorter than it should be.
+local function scanToys()
+	if not C_ToyBox or not C_ToyBox.GetToyFromIndex or not PlayerHasToy then
+		return
+	end
+	local store = db()
+
 	local filtered = C_ToyBox.GetNumFilteredToys and C_ToyBox.GetNumFilteredToys()
 		or C_ToyBox.GetNumToys()
 	for index = 1, filtered do
@@ -370,6 +425,106 @@ local function scanCollections()
 				}
 			end
 		end
+	end
+end
+
+--- The housing catalogue: every piece of decor, and how many the account has.
+---
+--- The web API has this one — `/data/wow/decor` arrived with Midnight — and
+--- for a while that was the reason not to read it here. Two things the client
+--- knows and the endpoint does not: `sourceText`, the same sentence the mount
+--- journal gives, and the counts. Decor is owned in quantities, and the
+--- catalogue says how many are in storage, how many are placed in a house,
+--- and how many were granted and never redeemed. Owned is any of those being
+--- above zero, which is what the collection page asks.
+---
+--- Read through a searcher rather than an index, because that is the only
+--- enumeration the catalogue offers: the same object the in-game catalogue
+--- window uses, with every filter opened. `GetAllSearchItems` is the whole
+--- source collection and answers at once; the search itself is asynchronous
+--- and is only run if that came back empty. The searcher is held in a local
+--- at file scope, because a callback on a collected object is a callback
+--- that never fires.
+---
+--- Only decor. The catalogue also lists rooms, which are a house's shape
+--- rather than a thing collected, and Armory's fourth collection is decor.
+---
+--- The record id is what Armory files the row under, on the assumption that
+--- it is the same id the web API's `/data/wow/decor/{id}` answers to. The
+--- item id goes in the link column, because a piece of decor is indexed on
+--- Wowhead by the item that grants it.
+local decorSearcher = nil
+
+local function recordDecor(ids)
+	if type(ids) ~= "table" then
+		return 0
+	end
+	local wanted = Enum and Enum.HousingCatalogEntryType and Enum.HousingCatalogEntryType.Decor or 1
+	local store = db()
+	local seen = 0
+	for _, entry in ipairs(ids) do
+		if type(entry) == "table" and entry.recordID and entry.entryType == wanted then
+			local info = C_HousingCatalog.GetCatalogEntryInfo({
+				recordID = entry.recordID,
+				entryType = entry.entryType,
+			})
+			if info and info.name and info.name ~= "" then
+				local held = (info.totalNumStored or 0) + (info.totalNumPlaced or 0) + (info.remainingRedeemable or 0)
+				store.decor[entry.recordID] = {
+					info.name,
+					held > 0 and 1 or 0,
+					info.sourceText or "",
+					0,
+					info.itemID or 0,
+					"",
+					-- A file id when the entry has a texture, and an atlas name
+					-- when it has the other kind of icon. Only the number is
+					-- something the desktop side can look up.
+					tonumber(info.iconTexture) or 0,
+					0,
+					info.quality or 0,
+					-1,
+					"",
+					held,
+				}
+				seen = seen + 1
+			end
+		end
+	end
+	return seen
+end
+
+local function scanDecor()
+	if not C_HousingCatalog or not C_HousingCatalog.CreateCatalogSearcher or not C_HousingCatalog.GetCatalogEntryInfo then
+		return
+	end
+	if not decorSearcher then
+		decorSearcher = C_HousingCatalog.CreateCatalogSearcher()
+		if not decorSearcher then
+			return
+		end
+		-- Every filter opened, so the search is the catalogue and not the
+		-- catalogue as somebody last left the window.
+		decorSearcher:SetAutoUpdateOnParamChanges(false)
+		decorSearcher:SetCollected(true)
+		decorSearcher:SetUncollected(true)
+		decorSearcher:SetBaseVariantOnly(true)
+		decorSearcher:SetAllowedIndoors(true)
+		decorSearcher:SetAllowedOutdoors(true)
+		decorSearcher:SetResultsUpdatedCallback(function()
+			-- Guarded the same way a step is: this runs on the client's
+			-- schedule, outside `scanEverything`'s pcall.
+			local ok, err = pcall(recordDecor, decorSearcher:GetCatalogSearchResults())
+			if not ok then
+				ArmoryCollectorDB = ArmoryCollectorDB or {}
+				ArmoryCollectorDB.broke = ArmoryCollectorDB.broke or {}
+				ArmoryCollectorDB.broke["decor"] = tostring(err)
+			end
+		end)
+	end
+
+	if recordDecor(decorSearcher:GetAllSearchItems()) == 0 then
+		decorSearcher:RunSearch()
 	end
 end
 
@@ -574,7 +729,7 @@ end
 --- valorstones.
 local function scanCurrencies()
 	local me = whoami()
-	if not me then
+	if not me or not C_CurrencyInfo or not C_CurrencyInfo.GetCurrencyListSize then
 		return
 	end
 
@@ -733,6 +888,128 @@ local function raidLocks()
 	return locks
 end
 
+--- What this character can do for a living.
+---
+--- Two clients, two ways of asking. `GetProfessions` arrived in Cataclysm
+--- and is the retail answer: up to two primary slots plus fishing and cooking,
+--- each an index into `GetProfessionInfo`. Classic Era predates it and keeps
+--- professions where vanilla did — in the skill window, as lines under the
+--- "Professions" and "Secondary Skills" headers, read through
+--- `GetSkillLineInfo`. The headers are matched against the client's own
+--- strings for them rather than English, because the header is localised
+--- and so are the strings.
+---
+--- Both produce the same six-column row, so the reader does not care which
+--- client wrote it. Specialisation trees and knowledge are retail systems
+--- and come back empty from a client that lacks them.
+---
+--- One honest gap on the Classic path: a header somebody has collapsed in
+--- the skill window hides its lines from `GetSkillLineInfo`, and expanding
+--- it from here would be the addon changing a thing on the player's screen.
+--- A collapsed "Professions" header is a character with no professions
+--- recorded until it is opened again, and `keep` holds the last good read.
+local function professions()
+	local out = {}
+
+	if GetProfessions and GetProfessionInfo then
+		local first, second, _, fishing, cooking = GetProfessions()
+		for _, slot in ipairs({ first, second, fishing, cooking }) do
+			if slot then
+				-- The seventh return is the skill line, which is what every
+				-- specialisation call is keyed by. `GetProfessionInfo` takes
+				-- the *index* from `GetProfessions` and not a profession id.
+				local name, _, rank, maxRank, _, _, skillLine = GetProfessionInfo(slot)
+				if name then
+					-- Coerced, never passed through. If either of these ever
+					-- answered nil the row would carry an interior hole, and
+					-- WoW's serializer writes a table with a hole as *keyed*
+					-- entries rather than as a padded array — so the row
+					-- would come back to Armory as four elements and the two
+					-- new columns would vanish without any error anywhere.
+					-- That trap is written down for `Chronicle.lua` and
+					-- applies here just as much.
+					local trees = specialisations(skillLine) or {}
+					out[#out + 1] = {
+						name,
+						rank or 0,
+						maxRank or 0,
+						(slot == first or slot == second) and 1 or 0,
+						trees,
+						knowledge(skillLine) or 0,
+					}
+				end
+			end
+		end
+		return out
+	end
+
+	if not GetNumSkillLines or not GetSkillLineInfo then
+		return out
+	end
+	local primaryHeader = TRADE_SKILLS
+	local secondaryHeader = SECONDARY_SKILLS
+	local under = nil
+	for index = 1, GetNumSkillLines() do
+		local name, isHeader, _, rank, _, _, maxRank = GetSkillLineInfo(index)
+		if isHeader then
+			if name == primaryHeader then
+				under = 1
+			elseif name == secondaryHeader then
+				under = 0
+			else
+				under = nil
+			end
+		elseif under and name then
+			out[#out + 1] = { name, rank or 0, maxRank or 0, under, {}, 0 }
+		end
+	end
+	return out
+end
+
+--- The Great Vault, slot by slot.
+---
+--- No endpoint. The weekly rewards frame is client-side state and the profile
+--- API has never carried it, which is why `model/character.rs` spent a comment
+--- saying the field would come from here when it came. `GetActivities` is the
+--- same call the vault window makes: one row per slot, with the threshold the
+--- slot wants, the progress towards it, and the `level` that decides what it
+--- pays — a keystone level for dungeons, a difficulty id for raids, a tier
+--- for the world row.
+---
+--- The difficulty id is turned into a word here, because `GetDifficultyInfo`
+--- is a client call and the desktop side has no table of them. Dungeon and
+--- world levels are left as numbers; "+12" and "Tier 8" are the reader's to
+--- spell.
+---
+--- A snapshot from the last logout like everything else in this file, and
+--- honest about it: the vault is a thing the server knows and the client is
+--- told, and a slot that filled on another character's evening is not here
+--- until this one logs in again.
+local function vault()
+	if not C_WeeklyRewards or not C_WeeklyRewards.GetActivities then
+		return nil
+	end
+	local raid = Enum and Enum.WeeklyRewardChestThresholdType and Enum.WeeklyRewardChestThresholdType.Raid or 3
+	local slots = {}
+	for _, activity in ipairs(C_WeeklyRewards.GetActivities() or {}) do
+		local kind = activity.type or 0
+		local level = activity.level or 0
+		local said = ""
+		if kind == raid and level > 0 and GetDifficultyInfo then
+			said = GetDifficultyInfo(level) or ""
+		end
+		slots[#slots + 1] = {
+			kind,
+			activity.index or 0,
+			activity.threshold or 0,
+			activity.progress or 0,
+			level,
+			said,
+		}
+	end
+	return slots
+end
+
 --- Everything about the character being played.
 ---
 --- Goes in the per-character file. The completed-quest list alone is several
@@ -778,10 +1055,21 @@ local function scanCharacter()
 
 	local _, class = UnitClass("player")
 	local _, race = UnitRace("player")
-	local specIndex = GetSpecialization()
+	-- `GetSpecialization` moved into `C_SpecializationInfo` in 11.1.7 and the
+	-- global became a deprecation shim. 12.1.5 deletes ten such shim files in
+	-- one go, so the namespaced call is asked first and the global is only
+	-- for a client that predates it. Classic Era has neither, and has no
+	-- specialisations to name: a character there has a talent tree and no
+	-- word for it.
+	local specs = C_SpecializationInfo or {}
+	local whichSpec = specs.GetSpecialization or GetSpecialization
+	local specInfo = specs.GetSpecializationInfo or GetSpecializationInfo
 	local specName = nil
-	if specIndex then
-		_, specName = GetSpecializationInfo(specIndex)
+	if whichSpec and specInfo then
+		local specIndex = whichSpec()
+		if specIndex then
+			_, specName = specInfo(specIndex)
+		end
 	end
 
 	-- Identity is always available and never wrong, so it is assigned rather
@@ -799,44 +1087,26 @@ local function scanCharacter()
 	-- Parenthesised for the same reason the quest giver is: `select(2, …)`
 	-- expands to every remaining return, so this passes `keep` three
 	-- arguments and works only because it ignores the third.
-	keep("itemLevel", (select(2, GetAverageItemLevel())))
+	-- Classic Era has no item level to average; the gear is still read piece
+	-- by piece below.
+	if GetAverageItemLevel then
+		keep("itemLevel", (select(2, GetAverageItemLevel())))
+	end
 	-- Genuinely per character, and the single most useful thing here: a
 	-- replayed character's quest log grows even when the account-wide
 	-- achievement it feeds has been lit for a decade.
-	keep("quests", C_QuestLog.GetAllCompletedQuestIDs())
-
-	local professions = {}
-	local first, second, _, fishing, cooking = GetProfessions()
-	for _, slot in ipairs({ first, second, fishing, cooking }) do
-		if slot then
-			-- The seventh return is the skill line, which is what every
-			-- specialisation call is keyed by. `GetProfessionInfo` takes the
-			-- *index* from `GetProfessions` and not a profession id.
-			local name, _, rank, maxRank, _, _, skillLine = GetProfessionInfo(slot)
-			if name then
-				-- Coerced, never passed through. If either of these ever
-				-- answered nil the row would carry an interior hole, and
-				-- WoW's serializer writes a table with a hole as *keyed*
-				-- entries rather than as a padded array — so the row would
-				-- come back to Armory as four elements and the two new
-				-- columns would vanish without any error anywhere. That trap
-				-- is written down for `Chronicle.lua` and applies here just
-				-- as much.
-				local trees = specialisations(skillLine) or {}
-				professions[#professions + 1] = {
-					name,
-					rank or 0,
-					maxRank or 0,
-					(slot == first or slot == second) and 1 or 0,
-					trees,
-					knowledge(skillLine) or 0,
-				}
-			end
-		end
+	if C_QuestLog and C_QuestLog.GetAllCompletedQuestIDs then
+		keep("quests", C_QuestLog.GetAllCompletedQuestIDs())
 	end
-	keep("professions", professions)
+
+	keep("professions", professions())
 	keep("equipment", equipment())
 	keep("raidLocks", raidLocks())
+	keep("vault", vault())
+	-- Assigned, not kept: a claimed vault is a one that has to become a zero.
+	if C_WeeklyRewards and C_WeeklyRewards.HasAvailableRewards then
+		store.vaultReady = C_WeeklyRewards.HasAvailableRewards() and 1 or 0
+	end
 
 	store.scannedAt = time()
 end
@@ -866,7 +1136,10 @@ local function scanEverything()
 	for _, step in ipairs({
 		{ "character", scanCharacter },
 		{ "currencies", scanCurrencies },
-		{ "collections", scanCollections },
+		{ "mounts", scanMounts },
+		{ "pets", scanPets },
+		{ "toys", scanToys },
+		{ "decor", scanDecor },
 		{ "warband bank", scanWarbandBank },
 		{ "achievements", scanAchievements },
 	}) do
@@ -880,18 +1153,31 @@ local function scanEverything()
 	end
 end
 
-frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-frame:RegisterEvent("PLAYER_LOGOUT")
-frame:RegisterEvent("BANKFRAME_OPENED")
-frame:RegisterEvent("CURRENCY_DISPLAY_UPDATE")
+-- Guarded, for the reason `Chronicle.lua` guards its list: `RegisterEvent`
+-- throws on a name the client does not know, and a Classic client does not
+-- know the vault or the housing storage. One event that does not exist there
+-- should cost that event, not the file.
+local function listen(event)
+	pcall(frame.RegisterEvent, frame, event)
+end
+
+listen("PLAYER_ENTERING_WORLD")
+listen("PLAYER_LOGOUT")
+listen("BANKFRAME_OPENED")
+listen("CURRENCY_DISPLAY_UPDATE")
 -- The recipe book cannot be read at login: `GetAllRecipeIDs` answers an empty
 -- table until the profession window has been opened, and there is no API that
 -- substitutes. So it is read from the window itself.
-frame:RegisterEvent("TRADE_SKILL_LIST_UPDATE")
-frame:RegisterEvent("TRADE_SKILL_SHOW")
+listen("TRADE_SKILL_LIST_UPDATE")
+listen("TRADE_SKILL_SHOW")
 -- And every recipe learned after that, so the book stays current without
 -- anybody having to remember to open a window again.
-frame:RegisterEvent("NEW_RECIPE_LEARNED")
+listen("NEW_RECIPE_LEARNED")
+-- The server tells the client about the vault when something changes it —
+-- a key finished, a boss down, a reset — and this is that message.
+listen("WEEKLY_REWARDS_UPDATE")
+-- Decor arriving in storage, which is a piece of the collection arriving.
+listen("HOUSING_STORAGE_UPDATED")
 
 frame:SetScript("OnEvent", function(_, event, ...)
 	if event == "PLAYER_ENTERING_WORLD" then
@@ -910,6 +1196,16 @@ frame:SetScript("OnEvent", function(_, event, ...)
 		C_Timer.After(1, scanWarbandBank)
 	elseif event == "CURRENCY_DISPLAY_UPDATE" then
 		scanCurrencies()
+	elseif event == "WEEKLY_REWARDS_UPDATE" then
+		-- Only the vault half of the character scan, and a moment later:
+		-- the event announces the update rather than following it.
+		C_Timer.After(1, function()
+			pcall(scanCharacter)
+		end)
+	elseif event == "HOUSING_STORAGE_UPDATED" then
+		C_Timer.After(1, function()
+			pcall(scanDecor)
+		end)
 	elseif event == "NEW_RECIPE_LEARNED" then
 		learnRecipe(...)
 	elseif event == "TRADE_SKILL_LIST_UPDATE" or event == "TRADE_SKILL_SHOW" then

@@ -1349,7 +1349,17 @@ impl ArmoryApplication {
                 .store()
                 .borrow_mut()
                 .save_collectibles(&collected.collectibles);
-            for kind in Kind::ALL {
+            // Only the kinds this file described. `save_owned` is wholesale,
+            // so an empty set for a kind the addon did not scan — decor from
+            // a collector older than the catalogue read, or anything but
+            // mounts from a Classic client — would un-own everything the
+            // web API had said was owned.
+            let described: HashSet<Kind> = collected
+                .collectibles
+                .iter()
+                .map(|entry| entry.kind)
+                .collect();
+            for kind in Kind::ALL.into_iter().filter(|kind| described.contains(kind)) {
                 let owned: HashSet<u32> = collected
                     .owned
                     .iter()
